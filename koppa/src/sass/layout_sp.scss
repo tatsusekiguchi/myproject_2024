@@ -1,0 +1,926 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topTitlePanel {
+      padding: 60px 0 30px;
+      .secWrap01 {
+        background: url(https://horie-works.co.jp/system_panel/uploads/images/top_kv_star.png)
+          right 15px top no-repeat;
+        background-size: 100px auto;
+      }
+      .topTitle {
+        margin: 0 0 30px;
+        font-size: 30px;
+      }
+      .dl {
+        .dt {
+          font-size: 20px;
+        }
+      }
+    }
+    .topKvPanel {
+      .topKv {
+        height: 250px;
+      }
+    }
+    .bnrPanel {
+      padding: 60px 0;
+    }
+    .secTtlBox {
+      margin: 0 0 40px;
+      padding: 0 0 15px;
+      &:after {
+        width: 60px;
+      }
+      .secTtl {
+        font-size: 24px;
+      }
+    }
+    .sec01 {
+      margin: 0 0 40px;
+      padding: 0 0 40px;
+      &::before {
+        display: none;
+      }
+      .secBox {
+        .photoBox {
+          .photo {
+            max-width: 600px;
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec01_icon.png)
+            right 20px bottom no-repeat;
+          background-size: 100px auto;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .txt {
+            margin: 0 0 20px;
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 0 0 80px;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 2);
+          }
+        }
+      }
+    }
+    .sec02 {
+      margin: 0 0 40px;
+      padding: 0 0 40px;
+      &::before {
+        display: none;
+      }
+      .secBox {
+        .photoBox {
+          .photo {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec02_icon.png)
+            right bottom 100px no-repeat;
+          background-size: 100px auto;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .txt {
+            margin: 0 0 20px;
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+          .btnMore {
+            margin: 0 auto;
+            + .btnMore {
+              margin: 20px auto 0;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      .secTtlBox {
+        top: 30px;
+      }
+      .btnMore {
+        top: 0;
+        margin: 20px auto 0;
+      }
+    }
+    .sec04 {
+      padding: 50px 0;
+      .listBox {
+        max-width: 400px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .ttl {
+            margin: 10px 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+      .btnMore {
+        margin: 50px auto 0;
+      }
+    }
+    .sec05 {
+      padding: 50px 0;
+      .listBox {
+        max-width: 350px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+      .btnMore {
+        margin: 50px auto 0;
+      }
+    }
+    .sec06 {
+      padding: 60px 0;
+      .secBox {
+        .ttlBox {
+          margin: 0 0 30px;
+        }
+        .txtBox {
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .sec07 {
+      padding: 60px 0;
+      .secWrap01 {
+        background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec07_icon.png)
+          left bottom no-repeat;
+        background-size: 100px auto;
+      }
+      .newsListBox {
+        .webgene-item {
+          padding: 15px 0;
+          .dl {
+            display: block;
+            > * {
+              display: block;
+            }
+            .dt {
+              width: 100%;
+              margin: 0 0 10px;
+            }
+          }
+        }
+      }
+      .btnMore {
+        margin: 50px auto 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	crafts
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .craftsMain {
+    .sec01 {
+      padding: 40px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 50px 0 0;
+            }
+          }
+        }
+        .secBox {
+          max-width: 300px;
+          margin: 0 auto;
+          .txtBox {
+            padding: 20px 0 0;
+            .txt {
+              + .txt {
+                margin: 20px 0 0;
+              }
+            }
+            .btnMoreDl {
+              margin: 30px auto 0;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -60px 0 0;
+            .li {
+              width: 48%;
+              margin: 60px 0 0;
+            }
+          }
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            .photo {
+              width: 40%;
+            }
+            .txtBox {
+              width: 55%;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 80px;
+      .secContainer {
+        padding: 50px 0;
+      }
+      .secPanel01 {
+        .secBox {
+          .photoBox {
+            max-width: 600px;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttlBox {
+              margin: 0 0 15px;
+              .ttl02 {
+                font-size: 20px;
+              }
+            }
+            .txt {
+              margin: 0 0 30px;
+            }
+          }
+        }
+      }
+      .secPanel02 {
+        .ttlBox {
+          max-width: 400px;
+          .ttl {
+            padding: 0 15px;
+            font-size: 20px;
+          }
+        }
+        .listBox {
+          max-width: 500px;
+          margin: 0 auto;
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .guideMain {
+    .topSection {
+      padding: 40px 0;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+      .secBox {
+        background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec01_icon.png)
+          right 20px bottom no-repeat;
+        background-size: 80px auto;
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 40px 0 0;
+      .secPanelList {
+        padding: 0 0 60px;
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 50px 0 0;
+        }
+        &:nth-child(odd) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: auto;
+            width: 50vw;
+            height: 300px;
+            background: #fff5f7;
+          }
+        }
+        &:nth-child(even) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            width: 50vw;
+            height: 300px;
+            background: #fff5f7;
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          padding: 30px 0 0;
+          .ttlBox {
+            display: block;
+            margin: 0 0 15px;
+            .num {
+              width: 80px;
+              &:after {
+                display: none;
+              }
+              .span {
+                font-size: 14px;
+              }
+              .em {
+                font-size: 24px;
+              }
+            }
+            .ttl {
+              padding: 10px 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .optionContainer {
+        padding: 60px 0;
+        .ttlBox {
+          max-width: 500px;
+          margin: 0 auto 30px;
+          .ttl {
+            position: relative;
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 20px;
+            letter-spacing: 0.2em;
+            background: #fff5f8;
+            &::before {
+              content: "";
+              position: absolute;
+              top: -35px;
+              left: 0;
+              right: 0;
+              width: 180px;
+              height: 85px;
+              margin: 0 auto;
+              background: url(https://horie-works.co.jp/system_panel/uploads/images/guide_option_ttl_bg.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        .listBox {
+          max-width: 600px;
+          margin: 0 auto;
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .dl {
+              .dt {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .sec01 {
+      padding: 40px 0;
+      .secPanelList {
+      }
+      .secPanel {
+      }
+      .secBox {
+        .photoBox {
+          .photo {
+            max-width: 180px;
+          }
+        }
+        .txtBox {
+          padding: 30px 0 0;
+          .ttlBox {
+            margin: 0 0 15px;
+            .num {
+              .span {
+                font-size: 14px;
+              }
+              .em {
+                font-size: 24px;
+              }
+            }
+            .ttl {
+              padding: 0 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0;
+      .secBox {
+        + .secBox {
+          margin: 40px 0 0;
+        }
+        .ttlBox {
+          padding: 10px 20px;
+          .ttl01 {
+            margin: 0 20px 0 0;
+          }
+          .ttl02 {
+          }
+        }
+        .txt {
+          padding: 20px;
+        }
+      }
+    }
+    .sec03 {
+      padding: 40px 0 80px;
+      .secWrap01 {
+        background: url(https://horie-works.co.jp/system_panel/uploads/images/flow_sec03_icon.png)
+          right bottom no-repeat;
+        background-size: 80px auto;
+      }
+      .infoBox {
+        @media (max-width: 767px) {
+          .dl {
+            display: block;
+            padding: 20px;
+            .dt {
+              width: 100%;
+              margin: 0 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 60px 0;
+      .name {
+        margin: 30px 0 0;
+        font-size: 18px;
+        .em {
+          font-size: 26px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secWrap01 {
+        background: url(https://horie-works.co.jp/system_panel/uploads/images/company_sec02_icon.png)
+          right bottom no-repeat;
+        background-size: 80px auto;
+      }
+      .infoBox {
+        @media (max-width: 767px) {
+          .dl {
+            display: block;
+            padding: 20px;
+            .dt {
+              width: 100%;
+              margin: 0 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .contactSec {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .telBox {
+        .ttl {
+          font-size: 18px;
+        }
+        .tel {
+          a {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+        > p {
+          font-size: 12px;
+        }
+      }
+      .snsBox {
+        .ttl {
+          font-size: 18px;
+        }
+        .ul {
+          max-width: 240px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          &:after {
+            width: 100%;
+          }
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 60px 0 80px;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          margin: 0 auto 10px;
+          padding: 0 0 10px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            padding: 10px 10px 30px;
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          padding: 15px;
+          .info {
+            display: block;
+            margin: 0 0 10px;
+          }
+          .ttlBox {
+            display: block;
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	item
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .itemMain {
+    .searchSection {
+      padding: 60px 0;
+      .searchPanel {
+        padding: 20px;
+      }
+      .webgene-search-form-block {
+        + .webgene-search-form-block {
+          margin: 40px 0 0;
+        }
+      }
+      .search-title-wrapper {
+        margin: 0 0 10px;
+        padding: 10px 0;
+        &::before {
+          width: 80px;
+        }
+      }
+      .search-contents-wrapper {
+        > label {
+          display: block;
+          margin: 0;
+          + label {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .btnItems {
+        display: block;
+        max-width: 220px;
+        margin: 40px auto 0;
+      }
+      .search-clear {
+        margin: 0 0 20px;
+      }
+    }
+    .blogSection {
+      padding: 60px 0 80px;
+    }
+    .catePanel {
+      .dl {
+        + .dl {
+          margin: 30px 0 0;
+        }
+        .dt {
+          font-size: 18px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            padding: 10px 10px 30px;
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .leftPanel {
+          margin: 0 0 30px;
+        }
+        .rightPanel {
+          .secBox {
+            .ttl {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}

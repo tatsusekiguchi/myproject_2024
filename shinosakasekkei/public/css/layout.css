@@ -1,0 +1,2164 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 60px;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: calc(100vh - 100px);
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTitleBox {
+  position: absolute;
+  left: 50px;
+  bottom: 180px;
+  width: 90%;
+  max-width: 480px;
+  padding: 0 20px;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvPanel .kvTitleBox .kvTitle01 {
+  padding: 0 20px 15px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_kv_ttl_line.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.topMain .topKvPanel .kvTitleBox .kvTitle02 {
+  padding: 10px 20px 0;
+}
+.topMain .topKvPanel .scrollBox {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  width: 10px;
+  height: 74px;
+  text-align: center;
+}
+.topMain .topKvPanel .scrollBox .scroll {
+  display: inline-block;
+}
+.topMain .topMainContainer {
+  padding: 0 60px 80px;
+}
+.topMain .sec01 {
+  margin: 0 0 40px;
+  padding: 100px 0;
+  color: #ffffff;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secWrap01 {
+  position: relative;
+}
+.topMain .sec01 .pageTitleBox .sub {
+  color: #ffffff;
+}
+.topMain .sec01 .secBox .leftBox {
+  padding: 40px 0 0;
+}
+.topMain .sec01 .secBox .leftBox .ttl01 {
+  margin: 0 0 5px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.topMain .sec01 .secBox .rightBox .btnMore {
+  margin: 30px 0 0;
+}
+.topMain .sec01 .img {
+  max-width: 220px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .leftBox {
+    width: 48%;
+  }
+  .topMain .sec01 .secBox .rightBox {
+    width: 50%;
+  }
+  .topMain .sec01 .img {
+    position: absolute;
+    left: 20%;
+    bottom: -110px;
+  }
+}
+.topMain .sec02 {
+  margin: 0 0 40px;
+  padding: 100px 0;
+  background: #ffffff;
+}
+.topMain .sec02 .secWrap01 {
+  position: relative;
+}
+.topMain .sec02 .listBox {
+  margin: 30px 0 0;
+}
+.topMain .sec02 .listBox .ul a {
+  display: block;
+}
+.topMain .sec02 .listBox .ul .photo {
+  overflow: hidden;
+  position: relative;
+}
+.topMain .sec02 .listBox .ul .dl {
+  margin: 15px 0 0;
+}
+.topMain .sec02 .listBox .ul .dl .dt {
+  margin: 0 0 15px;
+  font-size: 22px;
+  letter-spacing: 0.2rem;
+}
+.topMain .sec02 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+  .topMain .sec02 .listBox .ul .photo img {
+    transition: 0.6s;
+  }
+  .topMain .sec02 .listBox .ul a:hover .photo img {
+    transform: scale(1.03);
+  }
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .btnMore {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+}
+.topMain .sec03 {
+  margin: 0 0 40px;
+  padding: 60px 0;
+  background: #ffffff;
+}
+.topMain .sec03 .secWrap01 {
+  position: relative;
+}
+.topMain .sec03 .secBox {
+  max-width: 800px;
+}
+.topMain .sec03 .secBox .txtBox .txt {
+  margin: 0 0 20px;
+}
+.topMain .sec03 .img {
+  width: 180px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec03 .img {
+    position: absolute;
+    right: 40px;
+    bottom: -80px;
+  }
+}
+.topMain .sec04 {
+  margin: 0 0 40px;
+  padding: 100px 0;
+  color: #ffffff;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_sec04_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .wrap {
+  position: relative;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+.topMain .sec04 .pageTitleBox .sub {
+  color: #ffffff;
+}
+.topMain .sec04 .titleBox {
+  position: relative;
+  margin: -60px 0 40px;
+  text-align: center;
+  z-index: 1;
+}
+.topMain .sec04 .titleBox .title {
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+.topMain .sec04 .titleBox .line {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.topMain .sec04 .listBox .ul a {
+  position: relative;
+  display: block;
+  color: #ffffff;
+}
+.topMain .sec04 .listBox .ul .photo {
+  overflow: hidden;
+}
+.topMain .sec04 .listBox .ul .ttl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .sec04 .listBox .ul .ttl .span {
+  font-size: 18px;
+}
+.topMain .sec04 .listBox .ul .ttl .em {
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .listBox .ul .li {
+    width: calc(50% - 20px);
+  }
+  .topMain .sec04 .listBox .ul .photo img {
+    transition: 0.6s;
+  }
+  .topMain .sec04 .listBox .ul a {
+    opacity: 1;
+  }
+  .topMain .sec04 .listBox .ul a:hover .photo img {
+    transform: scale(1.03);
+  }
+}
+.topMain .sec04 .img {
+  max-width: 340px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .img {
+    position: absolute;
+    top: 260px;
+    right: 40px;
+  }
+}
+.topMain .sec05 {
+  margin: 0 0 40px;
+  padding: 100px 0;
+  background: #ffffff;
+}
+.topMain .sec05 .wrap {
+  position: relative;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+.topMain .sec05 .secWrap01 {
+  position: relative;
+}
+.topMain .sec05 .newsPanel {
+  position: relative;
+  margin: 40px 0 0;
+  z-index: 1;
+}
+.topMain .sec05 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec05 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec05 .webgene-blog .webgene-item .photo {
+  position: relative;
+}
+.topMain .sec05 .webgene-blog .webgene-item .txtBox {
+  padding: 15px 0;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox .time {
+  font-size: 14px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox .cate {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  min-width: 80px;
+  padding: 1px 10px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: #f9a826;
+}
+.topMain .sec05 .img {
+  width: 240px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -35px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 35px);
+    margin: 0 0 0 35px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item .photo {
+    height: 300px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec05 .btnMore {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .btnMore {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+  .topMain .sec05 .img {
+    position: absolute;
+    right: 40px;
+    bottom: -80px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	ページ共通
+///////////////////////////////////////////////////////////*/
+.pageMainContainer {
+  padding: 0 60px 120px;
+}
+
+.pageSec01 {
+  margin: 0 0 100px;
+  padding: 100px 0;
+  color: #ffffff;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.pageSec01 .secWrap01 {
+  position: relative;
+}
+.pageSec01 .pageTitleBox {
+  margin: 0 0 30px;
+}
+.pageSec01 .pageTitleBox .sub {
+  color: #ffffff;
+}
+.pageSec01 .secBox .leftBox .ttl01 {
+  margin: 0 0 5px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.pageSec01 .secBox .leftBox .photo {
+  max-width: 440px;
+  margin: 30px 0 0;
+}
+.pageSec01 .secBox .rightBox .name {
+  margin: 30px 0 0;
+  text-align: right;
+}
+.pageSec01 .visionImg {
+  max-width: 220px;
+}
+.pageSec01 .serviceImg {
+  max-width: 180px;
+}
+.pageSec01 .worksImg {
+  max-width: 380px;
+}
+.pageSec01 .styleImg {
+  max-width: 380px;
+}
+@media (min-width: 1025px) {
+  .pageSec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pageSec01 .secBox .leftBox {
+    width: 48%;
+  }
+  .pageSec01 .secBox .rightBox {
+    width: 50%;
+  }
+  .pageSec01 .visionImg {
+    position: absolute;
+    left: 20%;
+    bottom: -110px;
+  }
+  .pageSec01 .serviceImg {
+    position: absolute;
+    left: 20%;
+    bottom: -110px;
+  }
+  .pageSec01 .worksImg {
+    position: absolute;
+    left: 15%;
+    bottom: -110px;
+  }
+  .pageSec01 .styleImg {
+    position: absolute;
+    left: 15%;
+    bottom: -110px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	vision
+///////////////////////////////////////////////////////////*/
+.visionMain .sec02 .secContainer01 {
+  margin: 0 0 80px;
+}
+.visionMain .sec02 .secContainer01 .pageTitleBox {
+  margin: 0 0 40px;
+}
+.visionMain .sec02 .secContainer01 .secBox {
+  margin: 0 0 60px;
+}
+.visionMain .sec02 .secContainer01 .secBox .txtBox {
+  padding: 30px 0;
+}
+.visionMain .sec02 .secContainer01 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+@media (min-width: 1025px) {
+  .visionMain .sec02 .secContainer01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .visionMain .sec02 .secContainer01 .secBox .imgBox {
+    width: 40%;
+  }
+  .visionMain .sec02 .secContainer01 .secBox .imgBox .img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .visionMain .sec02 .secContainer01 .secBox .txtBox {
+    width: 55%;
+  }
+}
+.visionMain .sec02 .secContainer02 {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 100px 0;
+  background: #ffffff;
+}
+.visionMain .sec02 .secContainer02 .cntTtl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.visionMain .sec02 .secContainer02 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.visionMain .sec02 .secContainer02 .secBox .txtBox .ttlBox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.visionMain .sec02 .secContainer02 .secBox .txtBox .ttlBox .ttl {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.visionMain .sec02 .secContainer02 .secBox .txtBox .ttlBox .num {
+  font-size: 80px;
+  color: #e1e1e1;
+  line-height: 1;
+}
+@media (min-width: 1025px) {
+  .visionMain .sec02 .secContainer02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .visionMain .sec02 .secContainer02 .secBox .photo {
+    position: relative;
+    width: 42%;
+    height: 335px;
+  }
+  .visionMain .sec02 .secContainer02 .secBox .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .visionMain .sec02 .secContainer02 .secBox .txtBox {
+    width: 55%;
+  }
+  .visionMain .sec02 .secContainer02 .secBox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.visionMain .sec02 .secContainer03 {
+  padding: 60px 0 100px;
+}
+.visionMain .sec02 .secContainer03 .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+@media (min-width: 1025px) {
+  .visionMain .sec02 .secContainer03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .visionMain .sec02 .secContainer03 .secBox .imgBox {
+    width: 45%;
+  }
+  .visionMain .sec02 .secContainer03 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.visionMain .sec02 .arrow {
+  width: 70px;
+  margin: 0 auto;
+}
+.visionMain .sec03 {
+  padding: 80px 0;
+  color: #ffffff;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/vision_sec03_bg.png) no-repeat;
+  background-size: cover;
+}
+.visionMain .sec03 .secWrap01 {
+  position: relative;
+}
+.visionMain .sec03 .pageTitleBox {
+  display: inline-block;
+  padding: 0 0 15px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/vision_sec03_ttl_line.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.visionMain .sec03 .pageTitleBox .sub {
+  color: #ffffff;
+}
+.visionMain .sec03 .topTxt {
+  padding: 10px 0 40px;
+}
+.visionMain .sec03 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.visionMain .sec03 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.visionMain .sec03 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.visionMain .sec03 .img {
+  width: 200px;
+}
+@media (min-width: 1025px) {
+  .visionMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .visionMain .sec03 .secBox .photo {
+    width: 48%;
+  }
+  .visionMain .sec03 .secBox .txtBox {
+    width: 48%;
+  }
+  .visionMain .sec03 .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sec02 {
+  position: relative;
+  margin: 0 0 80px;
+  padding: 80px 0;
+  background: #ffffff;
+}
+.serviceMain .sec02 .secBoxList {
+  margin: 60px 0 0;
+}
+.serviceMain .sec02 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.serviceMain .sec02 .secBox .dl {
+  max-width: 1400px;
+}
+.serviceMain .sec02 .secBox .dl .dt {
+  position: relative;
+}
+.serviceMain .sec02 .secBox .dl .dt .num {
+  font-size: 80px;
+  color: #e1e1e1;
+  line-height: 1;
+}
+.serviceMain .sec02 .secBox .dl .dt .ttl {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  margin: auto 0;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.serviceMain .sec02 .secBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .secBox .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .sec02 .secBox .dl .dt {
+    width: 39%;
+  }
+  .serviceMain .sec02 .secBox .dl .dd {
+    width: 60%;
+  }
+}
+.serviceMain .sec02 .img {
+  width: 250px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .img {
+    position: absolute;
+    top: -40px;
+    right: 10%;
+  }
+}
+.serviceMain .sec03 {
+  margin: 0 0 120px;
+}
+.serviceMain .sec03 .pageTitleBox {
+  margin: 0 0 60px;
+}
+.serviceMain .sec03 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.serviceMain .sec03 .secBox .txtBox .ttlBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.serviceMain .sec03 .secBox .txtBox .ttlBox .num {
+  margin: 0 20px 0 0;
+  font-size: 34px;
+  color: #0565ed;
+  line-height: 1;
+}
+.serviceMain .sec03 .secBox .txtBox .ttlBox .ttl {
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec03 .secBox .photo {
+    width: 35%;
+  }
+  .serviceMain .sec03 .secBox .txtBox {
+    width: 60%;
+  }
+}
+.serviceMain .sec03 .detailBox {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 20px;
+  background: #ffffff;
+}
+.serviceMain .sec03 .detailBox + .detailBox {
+  margin: 40px 0 0;
+}
+.serviceMain .sec03 .detailBox .ttl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.serviceMain .sec03 .detailBox .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.serviceMain .sec03 .detailBox .ul {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec03 .detailBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec03 .detailBox .ul .li {
+    width: 30%;
+  }
+}
+.serviceMain .sec04 {
+  padding: 60px 0;
+  background: #ffffff;
+}
+.serviceMain .sec04 .secWrap01 {
+  position: relative;
+}
+.serviceMain .sec04 .secBox {
+  max-width: 800px;
+}
+.serviceMain .sec04 .secBox .txtBox .txt {
+  margin: 0 0 20px;
+}
+.serviceMain .sec04 .img {
+  width: 180px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .sec04 .img {
+    position: absolute;
+    right: 40px;
+    bottom: -80px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  .worksMain .pageSec01 .secWrap01 {
+    min-height: 250px;
+  }
+}
+.worksMain .sec02 .pageTitleBox {
+  margin: 0 0 40px;
+}
+.worksMain .sec02 .mv {
+  margin: 0 0 20px;
+}
+.worksMain .sec02 .secPanel {
+  padding: 40px 0;
+  border-bottom: 1px solid #4d4d4d;
+}
+.worksMain .sec02 .secPanel .ttlBox {
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.worksMain .sec02 .secPanel .txtBox {
+  padding: 10px 0 0;
+}
+.worksMain .sec02 .secPanel .txtBox .cateBox {
+  margin: 0 0 30px;
+}
+.worksMain .sec02 .secPanel .txtBox .cateBox .dl {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.worksMain .sec02 .secPanel .txtBox .cateBox .dl .dt {
+  width: 90px;
+  margin: 0 15px 0 0;
+}
+.worksMain .sec02 .secPanel .txtBox .cateBox .dl .dt p {
+  padding: 0 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  letter-spacing: 0.1em;
+  background: #0565ed;
+}
+@media (min-width: 1025px) {
+  .worksMain .sec02 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .worksMain .sec02 .secPanel .ttlBox {
+    width: 40%;
+  }
+  .worksMain .sec02 .secPanel .txtBox {
+    width: 58%;
+  }
+  .worksMain .sec02 .secPanel .txtBox .cateBox {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .sec02 {
+  margin: 0 0 120px;
+}
+.recruitMain .sec02 .secPanel {
+  margin: 40px 0 0;
+  padding: 40px 10px;
+  background: #ffffff;
+}
+.recruitMain .sec02 .secPanel .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .dl {
+  margin: 20px 0 0;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .dl .dt {
+  margin: 0 0 10px;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .dl .dt p {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  letter-spacing: 0.1em;
+  background: #0565ed;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec02 .secPanel .secBox .photo {
+    width: 40%;
+  }
+  .recruitMain .sec02 .secPanel .secBox .txtBox {
+    width: 55%;
+  }
+}
+.recruitMain .sec03 {
+  margin: 0 0 120px;
+}
+.recruitMain .sec03 .secWrap01 {
+  position: relative;
+}
+.recruitMain .sec03 .listBox {
+  margin: 30px 0 0;
+}
+.recruitMain .sec03 .listBox .ul .photo {
+  overflow: hidden;
+  position: relative;
+}
+.recruitMain .sec03 .listBox .ul .dl {
+  margin: 15px 0 0;
+}
+.recruitMain .sec03 .listBox .ul .dl .dt {
+  margin: 0 0 15px;
+  font-size: 22px;
+  letter-spacing: 0.2rem;
+}
+.recruitMain .sec03 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec03 .btnMore {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+}
+.recruitMain .sec04 {
+  margin: 0 0 120px;
+  padding: 80px 0;
+  color: #ffffff;
+  background: #345dc3;
+}
+.recruitMain .sec04 .pageTitleBox .sub {
+  color: #ffffff;
+}
+.recruitMain .sec04 .secBoxList {
+  margin: 60px 0 0;
+}
+.recruitMain .sec04 .secBox + .secBox {
+  margin: 40px 0 0;
+}
+.recruitMain .sec04 .secBox .dl {
+  max-width: 1400px;
+}
+.recruitMain .sec04 .secBox .dl .dt {
+  position: relative;
+}
+.recruitMain .sec04 .secBox .dl .dt .num {
+  font-size: 80px;
+  color: #1d77fb;
+  line-height: 1;
+}
+.recruitMain .sec04 .secBox .dl .dt .ttl {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  margin: auto 0;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.recruitMain .sec04 .secBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec04 .secBox .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recruitMain .sec04 .secBox .dl .dt {
+    width: 39%;
+  }
+  .recruitMain .sec04 .secBox .dl .dd {
+    width: 60%;
+  }
+}
+.recruitMain .sec05 {
+  margin: 0 0 120px;
+}
+.recruitMain .sec05 .infoBox {
+  margin: 40px 0;
+}
+.recruitMain .sec05 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.recruitMain .sec05 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.recruitMain .sec05 .infoBox .dl .dt {
+  width: 250px;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #0969f7;
+}
+.recruitMain .sec05 .infoBox .dl .dd {
+  width: calc(100% - 252px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #f9a826;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec05 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec05 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+.recruitMain .sec06 {
+  padding: 80px 0;
+  background: #ffffff;
+}
+.recruitMain .sec06 .pageTitleBox {
+  margin: 0 0 40px;
+}
+.recruitMain .sec06 .topTxt {
+  margin: 0 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	style
+///////////////////////////////////////////////////////////*/
+.styleMain .sec02 {
+  margin: 0 0 120px;
+}
+.styleMain .sec02 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+.styleMain .sec02 .secBox .btnMore {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .styleMain .sec02 .secBox .img {
+    width: 340px;
+  }
+  .styleMain .sec02 .secBox .txtBox {
+    width: calc(100% - 380px);
+  }
+}
+.styleMain .sec03 .secBox {
+  margin: 0 0 60px;
+}
+.styleMain .sec03 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+  .styleMain .sec03 .secBox .img {
+    width: 400px;
+  }
+  .styleMain .sec03 .secBox .txtBox {
+    width: calc(100% - 420px);
+  }
+}
+.styleMain .sec03 .listBox {
+  margin: 0 0 60px;
+}
+.styleMain .sec03 .listBox .ul .li {
+  color: #ffffff;
+  text-align: center;
+  background: #0565ed;
+}
+.styleMain .sec03 .listBox .ul .li .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 30px 10px;
+}
+.styleMain .sec03 .listBox .ul .li .box .span {
+  margin: 0 0 5px;
+  font-size: 13px;
+  color: #c6dcfb;
+}
+.styleMain .sec03 .listBox .ul .li .box .em {
+  font-size: 26px;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec03 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .styleMain .sec03 .listBox .ul .li {
+    width: calc(25% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .styleMain .sec03 .listBox .ul .li .box {
+    min-height: 280px;
+  }
+}
+.styleMain .sec03 .specialBox .dl + .dl {
+  margin: 40px 0 0;
+}
+.styleMain .sec03 .specialBox .dl .dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #f9a826;
+}
+.styleMain .sec03 .specialBox .dl .dt .span {
+  font-size: 13px;
+}
+.styleMain .sec03 .specialBox .dl .dt .em {
+  font-size: 26px;
+}
+.styleMain .sec03 .specialBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec03 .specialBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .styleMain .sec03 .specialBox .dl .dt {
+    width: 350px;
+  }
+  .styleMain .sec03 .specialBox .dl .dd {
+    width: calc(100% - 380px);
+  }
+}
+.styleMain .slidePanel {
+  margin: 0 0 120px;
+}
+.styleMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.styleMain .slidePanel .slideBox .ul .li {
+  width: 25%;
+  margin: 0 10px;
+}
+.styleMain .sec04 .pageTitleBox {
+  margin: 0 0 60px;
+}
+.styleMain .sec04 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.styleMain .sec04 .secBox .photo.top {
+  max-width: 350px;
+}
+.styleMain .sec04 .secBox .txtBox .ttlBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.styleMain .sec04 .secBox .txtBox .ttlBox .num {
+  margin: 0 20px 0 0;
+  font-size: 34px;
+  color: #0565ed;
+  line-height: 1;
+}
+.styleMain .sec04 .secBox .txtBox .ttlBox .ttl {
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .styleMain .sec04 .secBox .photo {
+    width: 35%;
+  }
+  .styleMain .sec04 .secBox .photo.top {
+    margin: 30px 0 0;
+  }
+  .styleMain .sec04 .secBox .txtBox {
+    width: 60%;
+  }
+}
+.styleMain .sec04 .detailBox {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 20px;
+  background: #ffffff;
+}
+.styleMain .sec04 .detailBox + .detailBox {
+  margin: 40px 0 0;
+}
+.styleMain .sec04 .detailBox .ttl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.styleMain .sec04 .detailBox .detailTtl {
+  margin: 0 0 15px;
+}
+.styleMain .sec04 .detailBox .detailTtl p {
+  display: inline-block;
+}
+.styleMain .sec04 .detailBox .detailTtl .em {
+  margin: 0 15px 0 0;
+  font-weight: bold;
+}
+.styleMain .sec04 .detailBox .detailTtl .span {
+  font-size: 13px;
+}
+.styleMain .sec04 .detailBox .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.styleMain .sec04 .detailBox .ul {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .styleMain .sec04 .detailBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .styleMain .sec04 .detailBox .ul .li {
+    width: 30%;
+  }
+  .styleMain .sec04 .detailBox .photoList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .styleMain .sec04 .detailBox .photoList .photo {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .sec02 {
+  margin: 0 0 120px;
+}
+.companyMain .sec02 .secBox {
+  padding: 40px 0 80px;
+}
+.companyMain .sec02 .secBox .txtBox .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.companyMain .sec02 .secBox .txtBox .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.companyMain .sec02 .secBox .txtBox .infoBox .dl .dt {
+  width: 150px;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #0969f7;
+}
+.companyMain .sec02 .secBox .txtBox .infoBox .dl .dd {
+  width: calc(100% - 152px);
+  padding: 10px 20px;
+  border-bottom: 1px solid #f9a826;
+}
+.companyMain .sec02 .secBox .txtBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec02 .secBox .photo {
+    width: 34%;
+  }
+  .companyMain .sec02 .secBox .txtBox {
+    width: 63%;
+  }
+}
+.companyMain .sec03 .historyBox {
+  padding: 40px 0 80px;
+}
+.companyMain .sec03 .historyBox .dl {
+  position: relative;
+  display: flex;
+  line-height: 2;
+}
+.companyMain .sec03 .historyBox .dl .dt {
+  position: relative;
+  width: 170px;
+  padding: 15px 30px 30px;
+  letter-spacing: 0.2em;
+  border-right: 1px solid #0969f7;
+}
+.companyMain .sec03 .historyBox .dl .dt:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  width: 11px;
+  height: 12px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/company_sec03_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.companyMain .sec03 .historyBox .dl .dd {
+  width: calc(100% - 170px);
+  padding: 15px 60px 30px;
+}
+.companyMain .sec03 .historyBox .dl .dd p + p {
+  margin: 30px 0 0;
+}
+.companyMain .sec03 .secBox .photoList {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .companyMain .sec03 .secBox .historyBox {
+    width: calc(100% - 350px);
+  }
+  .companyMain .sec03 .secBox .photoList {
+    display: block;
+    width: 300px;
+  }
+  .companyMain .sec03 .secBox .photoList .ul .li + .li {
+    margin: 50px 0 0;
+  }
+  .companyMain .sec03 .secBox .photoList .ul .li:nth-child(even) {
+    position: relative;
+    left: 100px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .mainTitlePanel {
+  background: #ffffff;
+}
+.contactMain .sec01 {
+  margin: 80px 0 120px;
+}
+.contactMain .sec01 .pageTitleBox {
+  margin: 0 0 20px;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 30px;
+}
+.contactMain .sec02 .pageTitleBox {
+  margin: 0 0 20px;
+}
+.contactMain .sec02 .telBox {
+  padding: 30px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+.contactMain .sec02 .telBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+  background-size: 23px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #f1f1f1;
+  border-radius: 0;
+  background: #f1f1f1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm.white input[type=text],
+.formMain .contactForm.white input[type=email],
+.formMain .contactForm.white input[type=tel] {
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+  resize: none;
+}
+.formMain .contactForm.white textarea {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 160px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 10px;
+  font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #0565ed;
+  background-size: 5px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button[type=submit]:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d6d6dd;
+  background: #f7f7f8;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #0f4c6a;
+  border-right: 3px solid #0f4c6a;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d6d6dd;
+  background: #f7f7f8;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #0f4c6a;
+}
+.formMain .contactForm .form .postalBox {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 140px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #707070;
+  background: #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: table;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 300px;
+  padding: 5px 0 5px 20px;
+  border-bottom: 1px solid #0969f7;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 20px;
+  background: #f9a826;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 302px);
+  padding: 5px 10px;
+  border-bottom: 1px solid #f9a826;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #e4e4e4;
+  background: #e4e4e4;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .catePanel {
+  margin: 0 0 60px;
+}
+.newsMain .catePanel .categoryBox {
+  padding: 15px 0;
+}
+.newsMain .catePanel .webgene-header {
+  display: none;
+}
+.newsMain .catePanel .allItem a,
+.newsMain .catePanel .webgene-item a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #0565ed;
+}
+@media (min-width: 1025px) {
+  .newsMain .catePanel .categoryBox,
+.newsMain .catePanel .webgene-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsMain .catePanel .categoryBox .allItem,
+.newsMain .catePanel .categoryBox .webgene-item,
+.newsMain .catePanel .webgene-blog .allItem,
+.newsMain .catePanel .webgene-blog .webgene-item {
+    width: 200px;
+  }
+  .newsMain .catePanel .categoryBox .webgene-header,
+.newsMain .catePanel .webgene-blog .webgene-header {
+    margin: 0;
+  }
+  .newsMain .catePanel .categoryBox .webgene-item,
+.newsMain .catePanel .webgene-blog .webgene-item {
+    margin: 0 0 0 20px;
+  }
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item {
+  padding: 0 0 20px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  font-size: 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: #f9a826;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -80px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 80px);
+    margin: 60px 0 0 80px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 280px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background: #cdcdcd;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev a {
+  height: 45px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/webgene_pagination_prev.png) center no-repeat;
+  background-size: 15px auto;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next a {
+  height: 45px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/webgene_pagination_next.png) center no-repeat;
+  background-size: 15px auto;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #0f0b09;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail {
+  padding: 60px 20px 120px;
+  background: #ffffff;
+}
+.newsMain .blogPanel--detail .webgene-blog {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  vertical-align: middle;
+  background: #f9a826;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/page_sec_ttl_icon.png) left center no-repeat;
+  background-size: 14px auto;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 auto 10px;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    width: auto;
+    max-height: 600px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 80%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .btnBackBox {
+  margin: 60px 0 0;
+  text-align: center;
+}
+.newsMain .btnBack {
+  display: inline-block;
+  width: 180px;
+  margin: 0 5px;
+}
+.newsMain .btnBack a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/btn_back_arrow.png) left 15px center no-repeat #0565ed;
+}
+.newsMain .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.newsMain .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  border-radius: 20px;
+  background: #f0823d;
+}

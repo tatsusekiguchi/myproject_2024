@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/print.css">
+	<!-- js-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body id="top">
+	<!-- ▽header▽-->
+	<header>
+		<div class="headWrap">
+			<div class="title"><a href="">
+					<h1>学校薬剤師検査入力表システム</h1>
+					<p>学校薬剤師委員会</p>
+				</a></div>
+			<div class="logout"><a href="/login/?a=logout"><img src="image/common/btn_logout.png" alt="ログアウト"></a></div>
+		</div>
+	</header>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<main id="loginMain">
+		<h2>学校薬剤師検査入力表システム</h2>
+		<div class="loginBox">
+			<div id="wpmem_login"><a id="login"></a>
+				<form action="http://www.nagoya-yakuzaishi.com/membersite/aggregate/hello-world/" method="POST" id="wpmem_login_form" class="form"><input type="hidden" id="_wpmem_login_nonce" name="_wpmem_login_nonce" value="c3db44d94e"><input type="hidden" name="_wp_http_referer" value="/membersite/aggregate/">
+					<fieldset>
+						<legend>既存ユーザのログイン</legend><label for="log">ユーザー名またはメールアドレス</label>
+						<div class="div_text"><input name="log" type="text" id="log" value="" class="username" required=""></div><label for="pwd">パスワード</label>
+						<div class="div_text"><input name="pwd" type="password" id="pwd" class="password" required=""></div><input name="redirect_to" type="hidden" value="/membersite/aggregate/"><input name="a" type="hidden" value="login">
+						<div class="button_div"><input name="rememberme" type="checkbox" id="rememberme" value="forever">&nbsp;<label for="rememberme">ログイン状態を保存する</label>&nbsp;&nbsp;<input type="submit" name="Submit" value="ログイン" class="buttons"></div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="subLink"><a href="/">← 名古屋市薬剤師会 オフィシャルページへ</a></div>
+	</main>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<footer>
+		<p class="copy">&copy; Nagoya Pharmaceutical Association.</p>
+	</footer>
+	<!-- △footer△-->
+</body>
+
+</html>

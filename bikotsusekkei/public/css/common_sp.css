@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .logo {
+    width: 120px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 70px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 8px 0;
+  }
+  .navBox .navList .ul .contact a {
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #75b7d3;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navItem {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .navBox .navItem .tel {
+    margin: 0 0 20px;
+  }
+  .navBox .navItem .tel a {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 26px;
+    background: url(https://misakikenchikusekkei240719.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 25px auto;
+  }
+  .navBox .navItem .contact {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-align: center;
+    background: #f5c71e;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 70px 0 0;
+  }
+
+  .pageKvPanel {
+    padding: 20px 0 0;
+  }
+  .pageKvPanel .kvTitle {
+    padding: 0 0 15px;
+  }
+  .pageKvPanel .kvTitle h1 {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+  .pageKvPanel .kvTitleMulti {
+    padding: 0 0 15px;
+  }
+  .pageKvPanel .kvTitleMulti p {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+  .pageKvPanel .kvTitleMulti h1 {
+    font-size: 16px;
+  }
+  .pageKvPanel .kv {
+    height: 200px;
+  }
+
+  .secTtlBox {
+    margin: 0 0 30px;
+  }
+  .secTtlBox p {
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
+  .secTtlBox h2,
+.secTtlBox h3 {
+    min-width: 150px;
+    font-size: 18px;
+    background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/sec_ttl_bg.png) center bottom no-repeat;
+    background-size: 150px auto;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore a {
+    padding: 15px 30px;
+  }
+  .btnMore a:after {
+    width: 25px;
+  }
+
+  .pageBtnList .btnMore + .btnMore {
+    margin: 20px 0 0;
+  }
+
+  .pageBtnSec {
+    padding: 40px 0 0;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact h3 {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .btnList {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footContact .btnList .ul {
+    display: block;
+  }
+  .footer .footContact .btnList .ul .li {
+    width: 100%;
+  }
+  .footer .footContact .btnList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .footer .footPanel {
+    padding: 40px 0;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 60px;
+    cursor: pointer;
+  }
+  .footer .footPanel .footBox {
+    border: none;
+  }
+  .footer .footPanel .logo {
+    width: 180px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .sns {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .footNav {
+    display: none;
+  }
+}

@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: #ffffff;
+    .logo {
+      width: 140px;
+      a {
+        display: block;
+      }
+    }
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: 40px;
+      z-index: 10000;
+      .span {
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 1px;
+        transform: translateX(-50%);
+        transition: 0.4s;
+
+        &:nth-of-type(1) {
+          top: 10px;
+        }
+
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:nth-of-type(3) {
+          bottom: 10px;
+        }
+      }
+
+      &.is-open {
+        .span:nth-of-type(1) {
+          transform: translate(-50%, 9px) rotate(-45deg);
+        }
+
+        .span:nth-of-type(2) {
+          opacity: 0;
+        }
+
+        .span:nth-of-type(3) {
+          transform: translate(-50%, -9px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 60px;
+    z-index: 999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+    &.active {
+      top: 61px;
+      opacity: 1;
+      z-index: 999;
+    }
+    .navList {
+      margin: 0 0 20px;
+      text-align: center;
+      .ul {
+        .li {
+          + .li {
+            margin: 15px 0 0;
+          }
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .navItem {
+      text-align: center;
+      .mail {
+        width: 30px;
+        margin: 0 auto 15px;
+        a {
+          display: block;
+        }
+      }
+      .line {
+        margin: 0 0 15px;
+        a {
+          display: inline-block;
+        }
+      }
+      .language {
+        position: relative;
+        width: 100px;
+        margin: 0 auto;
+        .lang {
+          display: inline-block;
+          padding: 0 20px 0 0;
+          cursor: pointer;
+          background: url(https://kenbyu.info/system_panel/uploads/images/header_lang_arrow.png)
+            right center no-repeat;
+          background-size: 13px auto;
+        }
+        .langList {
+          .ul {
+            border: 1px solid #cccccc;
+            .li {
+              + .li {
+                border-top: 1px solid #cccccc;
+              }
+              a {
+                display: block;
+                padding: 5px 10px;
+                font-size: 13px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 61px 0 0;
+  }
+  .pageTitlePanel {
+    padding: 40px 20px;
+    .pageTitle {
+      font-size: 20px;
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    .pageSecTtl {
+      top: 30px;
+      font-size: 24px;
+      letter-spacing: 0.1em;
+    }
+    .sub {
+      font-size: 80px;
+      white-space: nowrap;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 60px 0;
+      .txpTxt {
+        margin: 0 0 40px;
+      }
+      .contactItemList {
+        .contactItem {
+          + .contactItem {
+            margin: 40px 0 0;
+          }
+          .moreBox {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 60px 0 15px;
+      .pagetop {
+        top: 20px;
+        right: 20px;
+      }
+      .footBox {
+        .leftBox {
+          .logo {
+            width: 180px;
+            margin: 0 0 20px;
+          }
+        }
+        .rightBox {
+          display: none;
+        }
+      }
+      .copy {
+        margin: 60px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}

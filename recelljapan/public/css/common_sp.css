@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/*--------------------------------------------------
+  header
+--------------------------------------------------*/
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #000000;
+  }
+  .header .logo {
+    position: relative;
+    top: 5px;
+    z-index: 9999;
+    width: 150px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #000000;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 60px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #cccccc;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #cccccc;
+  }
+  .navBox .navItem {
+    width: 210px;
+    margin: 20px auto 0;
+  }
+  .navBox .navItem .telBox a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .navItem .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 24px;
+    line-height: 1.2;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navItem .telBox .span {
+    font-size: 12px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 200px;
+    padding: 60px 0;
+  }
+  .pageKvPanel .pageKvTitle {
+    padding: 15px 20px;
+    font-size: 30px;
+  }
+  .pageKvPanel .pageKvTitle p {
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 0 0 40px;
+  }
+  .footer .footContact::before {
+    height: 300px;
+  }
+  .footer .footContact .secPanel {
+    padding: 40px 20px;
+  }
+  .footer .footContact .secPanel .secTtl {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .secPanel .secTtl p {
+    font-size: 24px;
+  }
+  .footer .footContact .secPanel .contactItem {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .footer .footContact .secPanel .contactItem .tel {
+    width: 100%;
+  }
+  .footer .footContact .secPanel .contactItem .line,
+.footer .footContact .secPanel .contactItem .mail {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .footer .footContact .secPanel .contactItem .line > a,
+.footer .footContact .secPanel .contactItem .mail > a {
+    font-size: 24px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .footBox {
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .logo {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+  .footer .footPanel .footBox .sns .insta {
+    display: inline-block;
+  }
+  .footer .footPanel .copy {
+    text-align: center;
+  }
+}

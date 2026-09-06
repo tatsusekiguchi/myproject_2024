@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #00a65a;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 120px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 60px;
+    z-index: 999;
+    background: #00a65a;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 68px;
+    opacity: 1;
+    z-index: 999;
+  }
+  .navBox .navList {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+  }
+  .navBox .itemBox {
+    margin: 30px 0 0;
+  }
+  .navBox .mailBox {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .navBox .mailBox a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #3d7154;
+    text-align: center;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+  .navBox .spBreak {
+    display: block;
+  }
+  .navBox .spHidden {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 68px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 120px;
+  }
+  .pageKvPanel .pageKvTitle {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    padding: 0 0 15px;
+    font-size: 20px;
+    background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center bottom no-repeat;
+    background-size: 50px auto;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 100px 0 20px;
+  }
+  .footer .pagetop {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    width: 60px;
+    cursor: pointer;
+  }
+  .footer .topBox {
+    margin: 0 0 40px;
+  }
+  .footer .topBox .ttl {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  .footer .footBox .leftBox {
+    margin: 0 0 20px;
+  }
+  .footer .footBox .leftBox .logo {
+    margin: 0 0 15px;
+  }
+  .footer .footBox .leftBox .infoBox .dl {
+    display: block;
+  }
+  .footer .footBox .leftBox .infoBox .dl + .dl {
+    margin: 15px 0 0;
+  }
+  .footer .footBox .leftBox .infoBox .dl .dt {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+  }
+  .footer .footBox .leftBox .infoBox .dl .dd {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .footer .footBox .rightBox .linePanel {
+    padding: 15px;
+  }
+  .footer .footBox .rightBox .linePanel .pTtl {
+    font-size: 18px;
+  }
+  .footer .footBox .rightBox .linePanel .lineBox {
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .footer .footBox .rightBox .linePanel .lineBox .txtBox {
+    margin: 0 0 15px;
+  }
+  .footer .footBox .rightBox .linePanel .lineBox .txtBox .ttl {
+    font-size: 16px;
+  }
+  .footer .footBox .rightBox .linePanel .lineBox .qr {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .footer .copy {
+    margin: 50px 0 0;
+    text-align: center;
+  }
+}

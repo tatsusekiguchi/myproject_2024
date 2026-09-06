@@ -1,0 +1,2629 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    .topKvPanel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: calc(100vh - 100px);
+      // background: url(https://shitok.jp/system_panel/uploads/images/top_kv_01.png)
+      //   center no-repeat;
+      // background-attachment: fixed;
+      &:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: url(https://shitok.jp/system_panel/uploads/images/top_kv_01.png)
+          center no-repeat;
+        background-size: cover;
+      }
+    }
+    .kvTtlBox {
+      position: relative;
+      padding: 0 5%;
+      color: #ffffff;
+      .kvTtl {
+        max-width: 900px;
+      }
+      .kvContact {
+        position: absolute;
+        top: -100px;
+        right: 10%;
+        width: 140px;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      margin: 0;
+    }
+    .secBox {
+      position: relative;
+      margin: -60px 0 40px;
+      padding: 140px 0 100px;
+      background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_img.png)
+        right center no-repeat;
+      background-size: 60% auto;
+      .checkTxt {
+        .ul {
+          .li {
+            padding: 0 0 0 30px;
+            background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_check.png)
+              left center no-repeat;
+            background-size: 20px auto;
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .balloon {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+    .txtBox {
+      text-align: center;
+      .txt {
+        p {
+          display: inline;
+        }
+        .em {
+          color: #ff0000;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec02_bg.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec02,
+  .sec06 {
+    .secPanelList {
+      margin: 0 0 60px;
+    }
+    .secPanel {
+      position: relative;
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .txtBox {
+          position: relative;
+          max-width: 720px;
+          width: 100%;
+          padding: 40px;
+          border-radius: 6px;
+          background: #ffffff;
+          .ttlBg {
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            width: 300px;
+          }
+          .inner {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+          .inner02 {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .ttl {
+            position: relative;
+            margin: 0 0 20px;
+            font-size: 0;
+            font-family: "Yomogi";
+            p {
+              display: inline;
+              font-size: 32px;
+              letter-spacing: -0.1em;
+            }
+            .em {
+              color: #ff0000;
+            }
+          }
+          .txt {
+            p {
+              display: inline;
+            }
+            .em {
+              background: linear-gradient(transparent 60%, #fffaae 0%);
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          min-height: 440px;
+        }
+        &:nth-child(odd) {
+          .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+              border-radius: 0 6px 6px 0;
+            }
+          }
+          .secBox {
+            justify-content: flex-end;
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(even) {
+          .photo {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            img {
+              border-radius: 6px 0 0 6px;
+            }
+          }
+        }
+      }
+    }
+    .btnMore {
+      margin: 0 auto;
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    background: rgba(255, 255, 255, 0.6);
+    .secPanel {
+      .photo {
+        img {
+          border-radius: 6px 0 0 6px;
+        }
+      }
+      .txtBox {
+        padding: 20px;
+        .ttlBox {
+          margin: 0 0 20px;
+          .ttl {
+            font-size: 0;
+            font-family: "Yomogi";
+            p {
+              display: inline;
+              font-size: 34px;
+            }
+            .em {
+              color: #ff0000;
+            }
+          }
+        }
+        .txt {
+          margin: 0 0 40px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec04_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .listBox {
+      .ul {
+        .li {
+          border-radius: 6px;
+          background: #ffffff;
+        }
+        .txtBox {
+          padding: 30px 20px;
+          .dl {
+            text-align: center;
+            .dt {
+              margin: 0 0 20px;
+              font-family: "Yomogi";
+              font-size: 30px;
+            }
+            .dd {
+              line-height: 2.5;
+            }
+          }
+          .btnMore {
+            margin: 30px auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 20px);
+          }
+        }
+      }
+    }
+    .iconBox {
+      margin: 60px 0 0;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 5) - 40px);
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec05_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .webgene-blog {
+      max-width: 900px;
+      margin: 0 auto;
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        display: flex;
+        padding: 0 0 15px;
+        border-bottom: 1px solid #dcdbda;
+        .info {
+          width: 270px;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            background: #ffc97d;
+          }
+        }
+        .title {
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+        + .webgene-item {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    .btnMore {
+      margin: 60px auto 0;
+    }
+  }
+  .sec06 {
+    padding: 120px 0 60px;
+    background: rgba(248, 233, 233, 0.6);
+  }
+  .sec07 {
+    padding: 60px 0 120px;
+    background: rgba(248, 233, 233, 0.6);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  .strengthContainer {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/strength_cnt_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secPanel {
+      position: relative;
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .txtBox {
+          position: relative;
+          max-width: 740px;
+          width: 100%;
+          padding: 40px;
+          border-radius: 6px;
+          background: #ffffff;
+          .inner {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .inner02 {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .num {
+            position: absolute;
+            top: -80px;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 6px;
+              background: #2d2d2d;
+              transform: rotate(45deg);
+            }
+            .span {
+              position: relative;
+              font-size: 14px;
+              color: #ffb53a;
+            }
+            .em {
+              position: relative;
+              font-size: 26px;
+              color: #ffffff;
+              line-height: 1.2;
+            }
+          }
+          .ttl {
+            position: relative;
+            margin: 0 0 20px;
+            font-size: 0;
+            font-family: "Yomogi";
+            p {
+              display: inline;
+              font-size: 28px;
+              letter-spacing: -0.1em;
+            }
+            .em {
+              color: #ff0000;
+            }
+          }
+          .txt {
+            p {
+              display: inline;
+            }
+            .em {
+              background: linear-gradient(transparent 60%, #fffaae 0%);
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          min-height: 440px;
+        }
+        &:nth-child(odd) {
+          .photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            img {
+              border-radius: 6px 0 0 6px;
+            }
+          }
+          .secBox {
+            .txtBox {
+              .num {
+                left: 20px;
+              }
+            }
+          }
+        }
+        &:nth-child(even) {
+          .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+              border-radius: 0 6px 6px 0;
+            }
+          }
+          .secBox {
+            justify-content: flex-end;
+            align-items: flex-end;
+            .txtBox {
+              .num {
+                right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain {
+  .businessContainer {
+    padding: 100px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/business_cnt_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secPanel {
+      position: relative;
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .txtBox {
+          position: relative;
+          max-width: 700px;
+          width: 100%;
+          padding: 40px;
+          border-radius: 6px;
+          background: #ffffff;
+          .inner {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+          .inner02 {
+            max-width: 760px;
+            margin: 0 auto;
+          }
+          .ttl {
+            position: relative;
+            margin: 0 0 20px;
+            font-size: 0;
+            font-family: "Yomogi";
+            p {
+              display: inline;
+              font-size: 28px;
+              letter-spacing: -0.1em;
+            }
+            .em {
+              color: #ff0000;
+            }
+          }
+          .txt {
+            + .txt {
+              margin: 20px 0 0;
+            }
+            p {
+              display: inline;
+            }
+            .em {
+              background: linear-gradient(transparent 60%, #fffaae 0%);
+            }
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+        .txtBox02 {
+          max-width: 800px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          min-height: 440px;
+        }
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          img {
+            border-radius: 6px 0 0 6px;
+          }
+        }
+        .secBox {
+          .txtBox {
+            .num {
+              left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	consulting
+///////////////////////////////////////////////////////////*/
+.consultingMain {
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec01_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      margin: 0;
+    }
+    .secBox {
+      position: relative;
+      margin: 0 0 40px;
+      padding: 100px 0 60px;
+      background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec01_img.png)
+        right 25% bottom no-repeat;
+      background-size: 45% auto;
+      .checkTxt {
+        .ul {
+          .li {
+            padding: 0 0 0 30px;
+            background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png)
+              left center no-repeat;
+            background-size: 20px auto;
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .balloon {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+    .txtBox {
+      text-align: center;
+      .txt {
+        p {
+          display: inline;
+        }
+        .em {
+          color: #ff0000;
+        }
+      }
+    }
+    .btnMore {
+      margin: 50px auto 0;
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    text-align: center;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec02_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+    .messageBox {
+      margin: 60px 0 0;
+      line-height: 2;
+      .message {
+        font-size: 0;
+        p {
+          display: inline;
+          font-family: "Yomogi";
+          font-size: 30px;
+          font-weight: 400;
+          text-shadow: 0 0 1px #090909;
+        }
+        .em {
+          color: #ff0000;
+        }
+        .mark {
+          background: linear-gradient(transparent 70%, #fffaae 0%);
+        }
+      }
+    }
+    .listBox {
+      max-width: 1100px;
+      margin: 60px auto 0;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px 0 0 -50px;
+        .li {
+          width: calc((100% / 4) - 50px);
+          margin: 30px 0 0 50px;
+          p {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    text-align: center;
+    .topTxtBox {
+      margin: 0 0 60px;
+      line-height: 2;
+      .topTxt {
+        font-size: 0;
+        p {
+          display: inline;
+          font-family: "Yomogi";
+          font-size: 26px;
+          font-weight: 400;
+          text-shadow: 0 0 1px #090909;
+        }
+        .em {
+          color: #ff0000;
+          background: linear-gradient(transparent 70%, #fffaae 0%);
+        }
+      }
+    }
+    .listBox {
+      .ul {
+        .li {
+          .img {
+            max-width: 320px;
+            margin: 0 auto;
+          }
+          p {
+            margin: 10px 0 0;
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 50px);
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 120px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec04_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .secPanel {
+      position: relative;
+      padding: 40px 20px 60px;
+      border-radius: 6px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 80px 0 0;
+      }
+      .num {
+        position: absolute;
+        top: -40px;
+        left: 40px;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          background: #2d2d2d;
+          transform: rotate(45deg);
+        }
+        .span {
+          position: relative;
+          font-size: 14px;
+          color: #ffb53a;
+        }
+        .em {
+          position: relative;
+          font-size: 26px;
+          color: #ffffff;
+          line-height: 1.2;
+        }
+      }
+      .pTop {
+        max-width: 1060px;
+        margin: 0 auto;
+        .ttl {
+          margin: 0 0 20px;
+          padding: 0 0 0 60px;
+          font-family: "Yomogi";
+          font-size: 30px;
+          font-weight: 400;
+          color: #090909;
+          text-shadow: 0 0 1px #090909;
+        }
+      }
+      .btnList {
+        margin: 20px 0 0;
+        .ul {
+          .li {
+            width: 240px;
+            a {
+              display: block;
+              padding: 5px;
+              text-align: center;
+              border-radius: 6px;
+              border: 2px solid #ffb53a;
+              background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow_black.png)
+                right 15px center no-repeat #fffbb3;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+          }
+        }
+      }
+      .cntBody {
+        max-width: 1060px;
+        margin: 40px auto 0;
+      }
+    }
+    .secPanel01 {
+      .cntBody {
+        .img {
+          max-width: 800px;
+          margin: 0 auto 40px;
+        }
+        .message {
+          font-size: 0;
+          text-align: center;
+          p {
+            display: inline;
+            font-family: "Yomogi";
+            font-size: 26px;
+            font-weight: 400;
+            text-shadow: 0 0 1px #090909;
+            background: linear-gradient(transparent 70%, #fffaae 0%);
+          }
+          .em {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+    .secPanel02 {
+      .cntBody {
+        .secBox {
+          padding: 40px 0;
+          .leftBox {
+            .img {
+              max-width: 350px;
+            }
+          }
+          .rightBox {
+            .ttl {
+              max-width: 340px;
+              margin: 0 auto 20px;
+            }
+            .checkTxt {
+              padding: 40px;
+              border-radius: 6px;
+              background: #fcf1f1;
+              .ul {
+                .li {
+                  padding: 0 0 0 30px;
+                  background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png)
+                    left center no-repeat;
+                  background-size: 20px auto;
+                  + .li {
+                    margin: 20px 0 0;
+                  }
+                }
+              }
+            }
+            .arrowDown {
+              width: 60px;
+              margin: -20px auto;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            .leftBox {
+              width: 40%;
+              background: url(https://shitok.jp/system_panel/uploads/images/consulting_measures02_arrow_01.png)
+                right top 100px no-repeat;
+              background-size: 60px auto;
+            }
+            .rightBox {
+              width: 55%;
+            }
+          }
+        }
+        .btnImg {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .btnMore {
+          width: 100%;
+          max-width: 340px;
+          margin: 40px auto 0;
+        }
+      }
+    }
+    .secPanel03 {
+      .cntBox {
+        position: relative;
+        padding: 40px;
+        border-radius: 6px;
+        background: #fcf1f1;
+        + .cntBox {
+          margin: 60px 0 0;
+        }
+        .icon {
+          position: absolute;
+          top: -40px;
+          right: 10%;
+          width: 15%;
+        }
+        .icon03 {
+          top: -20px;
+          right: 5%;
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 0;
+          text-align: center;
+          p {
+            display: inline;
+            font-family: "Yomogi";
+            font-size: 26px;
+            font-weight: 400;
+            text-shadow: 0 0 1px #090909;
+          }
+          .em {
+            color: #ff0000;
+          }
+        }
+        .topTxt {
+          margin: 0 0 20px;
+          text-align: center;
+        }
+        .listBox {
+          .ol {
+            .li {
+              border-radius: 6px;
+              background: #ffffff;
+              .dl {
+                .dt {
+                  padding: 5px 20px;
+                  font-size: 20px;
+                  border-radius: 6px 6px 0 0;
+                  background: #fffbb3;
+                }
+                .dd {
+                  min-height: 80px;
+                  padding: 10px 20px;
+                  line-height: 2;
+                }
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            .ol {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin: -10px 0 0;
+              .li {
+                width: calc((100% / 2) - 10px);
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+        .optionList {
+          max-width: 460px;
+          margin: 0 auto;
+          padding: 40px 20px;
+          border-radius: 6px;
+          background: #ffffff;
+          .option {
+            max-width: 380px;
+            margin: 0 auto;
+            .txt {
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain {
+  .pagingList {
+    max-width: 1160px;
+    margin: 100px auto 0;
+    .ul {
+      .li {
+        a {
+          display: block;
+          padding: 12px;
+          font-size: 15px;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 6px;
+          background: url(https://shitok.jp/system_panel/uploads/images/flow_link_arrow.png)
+            right 15px center no-repeat #ffb53a;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 4) - 20px);
+        }
+      }
+    }
+  }
+  .section {
+    padding: 100px 0;
+    .topBox {
+      position: relative;
+      margin: 0 0 40px;
+      text-align: center;
+      .iconTtl01 {
+        width: 120px;
+      }
+      .iconTtl02 {
+        width: 120px;
+      }
+      @media (min-width: 1025px) {
+        .iconTtl01 {
+          position: absolute;
+          top: 0;
+          right: 60px;
+        }
+        .iconTtl02 {
+          position: absolute;
+          top: 0;
+          left: 60px;
+        }
+      }
+      .secTtl {
+        position: relative;
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+        font-family: "Yomogi";
+        font-size: 36px;
+        font-weight: 400;
+        text-shadow: 0 0 1px #090909;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 150px;
+          height: 1px;
+          margin: 0 auto;
+          background: #090909;
+        }
+      }
+      .txt {
+        min-height: 80px;
+      }
+    }
+    .secPanel {
+      padding: 30px 20px;
+      border-radius: 6px;
+      background: #ffffff;
+      .inner {
+        position: relative;
+        max-width: 1040px;
+        min-height: 160px;
+        margin: 0 auto;
+      }
+      .icon {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 30px;
+      }
+      @media (min-width: 1025px) {
+        .icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 180px;
+          height: 180px;
+          margin: auto 0;
+        }
+      }
+      .ttlBox {
+        display: flex;
+        align-items: center;
+        margin: 0 0 20px;
+        .num {
+          width: 75px;
+          margin: 0 20px 0 0;
+        }
+        .ttl {
+          font-family: "Yomogi";
+          font-size: 30px;
+          font-weight: 400;
+        }
+      }
+      .txtBox {
+        max-width: 780px;
+        .txt {
+          p {
+            display: inline;
+          }
+          .em {
+            background: linear-gradient(transparent 70%, #fffaae 0%);
+          }
+          .span {
+            font-size: 14px;
+          }
+        }
+        .need {
+          max-width: 700px;
+          margin: 20px 0 0;
+          padding: 15px 30px;
+          line-height: 2;
+          border-radius: 6px;
+          border: 3px solid #ffb53a;
+          .em {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &:nth-child(odd) {
+      background: url(https://shitok.jp/system_panel/uploads/images/flow_secbg_01.png)
+        no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(even) {
+      background: url(https://shitok.jp/system_panel/uploads/images/flow_secbg_02.png)
+        no-repeat;
+      background-size: cover;
+    }
+    .arrow {
+      width: 40px;
+      margin: 20px auto;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  @media (min-width: 1025px) {
+    .pageTopContainer {
+      .secBox .leftBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .introContainer {
+    padding: 100px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/company_intro_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secPanel {
+      position: relative;
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .txtBox {
+          position: relative;
+          max-width: 720px;
+          width: 100%;
+          padding: 40px;
+          border-radius: 6px;
+          background: #ffffff;
+          .ttlBg {
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            width: 300px;
+          }
+          .inner {
+            max-width: 600px;
+            margin: 0 auto;
+          }
+          .inner02 {
+            max-width: 660px;
+            margin: 0 auto;
+          }
+          .ttl {
+            position: relative;
+            margin: 0 0 20px;
+            font-size: 0;
+            font-family: "Yomogi";
+            p {
+              display: inline;
+              font-size: 32px;
+              letter-spacing: -0.1em;
+            }
+            .em {
+              color: #ff0000;
+            }
+          }
+          .txt {
+            p {
+              display: inline;
+            }
+            .em {
+              background: linear-gradient(transparent 60%, #fffaae 0%);
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          min-height: 440px;
+        }
+        &:nth-child(odd) {
+          .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+              border-radius: 0 6px 6px 0;
+            }
+          }
+          .secBox {
+            justify-content: flex-end;
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(even) {
+          .photo {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            img {
+              border-radius: 6px 0 0 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoContainer {
+    padding: 100px 0;
+    .infoBox {
+      margin: 0 0 30px;
+      .dl {
+        display: flex;
+        line-height: 2;
+        .dt {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          border-radius: 6px;
+          border: 2px solid #ffffff;
+          background: #ffb53a;
+        }
+        .dd {
+          width: calc(100% - 155px);
+          padding: 10px 20px;
+          border-top: 1px solid #ffb53a;
+          border-bottom: 1px solid #ffb53a;
+          .logoBox {
+            p {
+              display: inline-block;
+              margin: 0 30px 0 0;
+            }
+            .logo {
+              display: inline-block;
+              width: 120px;
+            }
+          }
+          a {
+            display: inline-block;
+          }
+        }
+        + .dl {
+          .dd {
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .telContainer {
+    padding: 50px 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/company_intro_bg.png)
+      no-repeat;
+    background-size: cover;
+    .telPanel {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 6px;
+      background: #ffffff;
+    }
+    .secTtl {
+      margin: 0 0 20px;
+      font-family: "Yomogi";
+      font-size: 30px;
+      font-weight: 400;
+      color: #090909;
+      text-shadow: 0 0 1px #090909;
+    }
+    .tel {
+      margin: 0 0 15px;
+      a {
+        display: inline-block;
+        padding: 0 0 0 30px;
+        font-family: "Yomogi";
+        font-size: 40px;
+        font-weight: 400;
+        color: #090909;
+        line-height: 1;
+        background: url(https://shitok.jp/system_panel/uploads/images/contact_tel.png)
+          left bottom 2px no-repeat;
+        background-size: 22px auto;
+        text-shadow: 0 0 1px #090909;
+      }
+    }
+    .txt {
+      line-height: 2;
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #dadada;
+    background: #f8f8f8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #dadada;
+    background: #f8f8f8;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 240px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    border: 1px solid #ffb53a;
+    background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow.png)
+      right 15px center no-repeat #ffb53a;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      padding: 10px 0;
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkList02 {
+      padding: 10px 0 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #e9ecef;
+        background: #fafafa;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #171a1c;
+        border-right: 3px solid #171a1c;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      padding: 10px 0 0;
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #e9ecef;
+        background: #fafafa;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #171a1c;
+      }
+    }
+
+    .postalBox {
+      margin: 0 0 8px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        + .dl {
+          .dd {
+            border-top: none;
+          }
+        }
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+          }
+        }
+
+        &.dash {
+          border-bottom: 1px dashed #d8dee6;
+        }
+
+        > .dt {
+          overflow: hidden;
+          width: 280px;
+          padding: 20px;
+          border-radius: 6px;
+          border: 2px solid #ffffff;
+          background: #ffb53a;
+
+          .span {
+            float: left;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+          }
+
+          .em {
+            float: right;
+            padding: 0 8px;
+            font-size: 12px;
+            color: #ffb53a;
+            vertical-align: middle;
+            border-radius: 4px;
+            background: #ffffff;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 285px);
+          padding: 10px 0 10px 20px;
+          border-top: 1px solid #ffb53a;
+          border-bottom: 1px solid #ffb53a;
+          .reserveBox {
+            border: 1px solid #171a1c;
+            .ttl {
+              max-width: 220px;
+              padding: 3px;
+              color: #ffffff;
+              text-align: center;
+              background: #171a1c;
+            }
+            .txt {
+              padding: 10px 20px;
+              line-height: 2;
+            }
+          }
+          .dogBox {
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .otherTtl {
+        padding: 20px 20px 10px;
+        border-bottom: none;
+      }
+      .otherRadio {
+        .dt {
+          display: block;
+          text-align: right;
+          .span {
+            display: block;
+            max-width: 260px;
+            margin: 0;
+          }
+        }
+      }
+      .otherRadio01 {
+        border-bottom: none;
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 30px;
+          .list {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            font-size: 13px;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border-radius: 6px;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadPanel {
+      padding: 20px;
+    }
+    .fileUploadTtl {
+      margin: 0 0 15px;
+    }
+    .fileUploadBox {
+      .fileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 32%;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 65%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      + p {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain {
+  .blogSection {
+    padding: 80px 0 100px;
+    background: url(https://shitok.jp/system_panel/uploads/images/news_cnt_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 200px;
+      }
+      .blogPanel {
+        width: calc(100% - 260px);
+      }
+    }
+  }
+  .catePanel {
+    .webgene-blog {
+      .webgene-header {
+        padding: 0 0 30px;
+        border-bottom: 1px solid #a4a4a4;
+        h2,
+        h3 {
+          position: relative;
+          font-size: 18px;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: calc(100% - 130px);
+            height: 1px;
+            margin: auto 0;
+            background: #a4a4a4;
+          }
+        }
+      }
+      .webgene-item {
+        border-bottom: 1px solid #a4a4a4;
+        a {
+          display: block;
+          padding: 15px 5px;
+          background: url(https://shitok.jp/system_panel/uploads/images/cate_more.png)
+            right 10px center no-repeat;
+          background-size: 5px auto;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          padding: 20px 20px 30px;
+          border-radius: 6px;
+          background: #ffffff;
+          a {
+            display: block;
+            min-height: 300px;
+            padding: 0 0 15px;
+          }
+          .img {
+            margin: 0 0 10px;
+            img {
+              border-radius: 4px;
+            }
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 15px;
+            font-size: 14px;
+            .cate {
+              min-width: 100px;
+              margin: 0 10px 0 0;
+              padding: 0 10px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 6px;
+              background: #ffc97d;
+            }
+          }
+          .title {
+            padding: 0 0 15px;
+            border-bottom: 1px solid #e4e4e4;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -20px 0 0 -20px;
+          .webgene-item {
+            width: calc((100% / 3) - 20px);
+            margin: 20px 0 0 20px;
+            .img {
+              position: relative;
+              height: 220px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              border-radius: 6px;
+              background: #ffffff;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              color: #ffffff;
+              background: #000000;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        padding: 40px;
+        border-radius: 6px;
+        background: #ffffff;
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          font-size: 14px;
+          .time {
+            display: inline-block;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 10px 0 0;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            background: #ffc97d;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          padding: 0 0 10px;
+          font-size: 24px;
+          border-bottom: 1px solid #e4e4e4;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          // max-width: 940px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+              border-radius: 6px;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+    .btnBack {
+      width: 230px;
+      margin: 100px auto 0;
+      a {
+        display: block;
+        padding: 12px;
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 6px;
+        background: url(https://shitok.jp/system_panel/uploads/images/btn_back_arrow.png)
+          left 15px center no-repeat #ffb53a;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	property
+///////////////////////////////////////////////////////////*/
+.propertyMain {
+  .searchSection {
+    padding: 80px 0 100px;
+    background: url(https://shitok.jp/system_panel/uploads/images/news_cnt_bg.png)
+      no-repeat;
+    background-size: cover;
+    .section + .section {
+      margin: 100px 0 0;
+    }
+    .secTtl {
+      position: relative;
+      margin: 0 0 15px;
+      font-size: 20px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: calc((100% - 140px));
+        height: 1px;
+        margin: auto 0;
+        background: #a4a4a4;
+      }
+      + p {
+        margin: 0 0 20px;
+      }
+    }
+    .searchPanel {
+      .webgene-search-form-block {
+        + .webgene-search-form-block {
+          margin: 10px 0 0;
+        }
+        .search-title-wrapper {
+          padding: 30px;
+          border-radius: 6px;
+          background: #ffffff;
+        }
+        .search-area-wrapper {
+          padding: 30px;
+          border-radius: 6px;
+          background: #ffffff;
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-search-form-block {
+          display: flex;
+          .search-title-wrapper {
+            width: 340px;
+            margin: 0 10px 0 0;
+          }
+          .search-area-wrapper {
+            width: calc((100% - 350px));
+          }
+        }
+      }
+      .search-submit {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        max-width: 240px;
+        width: 100%;
+        margin: 30px auto 0;
+        padding: 15px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        border: 1px solid #ffb53a;
+        background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow.png)
+          right 15px center no-repeat #ffb53a;
+        transition: 0.6s;
+      }
+    }
+    .listPanel {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          padding: 20px 20px 30px;
+          border-radius: 6px;
+          background: #ffffff;
+          .img {
+            margin: 0 0 10px;
+            img {
+              border-radius: 4px;
+            }
+          }
+          > p {
+            line-height: 2;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 0 5px;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            background: #ffc97d;
+          }
+          .price {
+            padding: 0 0 5px;
+            color: #ffb53a;
+            border-bottom: 1px solid #e4e4e4;
+            em {
+              font-size: 28px;
+            }
+            span {
+              font-size: 18px;
+            }
+          }
+          .btnMore {
+            margin: 20px auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -20px 0 0 -20px;
+          .webgene-item {
+            width: calc((100% / 3) - 20px);
+            margin: 20px 0 0 20px;
+            .img {
+              position: relative;
+              height: 220px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              border-radius: 6px;
+              background: #ffffff;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              color: #ffffff;
+              background: #000000;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .detailSection {
+    padding: 80px 0 100px;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        img {
+          border-radius: 6px;
+        }
+        .infoBox {
+          .dl {
+            display: flex;
+            line-height: 2;
+            .dt {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 150px;
+              padding: 10px 5px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 6px;
+              border: 2px solid #ffffff;
+              background: #ffb53a;
+            }
+            .dd {
+              width: calc(100% - 155px);
+              padding: 10px 20px;
+              border-top: 1px solid #ffb53a;
+              border-bottom: 1px solid #ffb53a;
+              .logoBox {
+                p {
+                  display: inline-block;
+                  margin: 0 30px 0 0;
+                }
+                .logo {
+                  display: inline-block;
+                  width: 120px;
+                }
+              }
+              a {
+                display: inline-block;
+              }
+            }
+            + .dl {
+              .dd {
+                border-top: none;
+              }
+            }
+          }
+        }
+        .secBox {
+          .leftBox {
+            .info {
+              margin: 0 0 10px;
+              font-size: 14px;
+              .cate01 {
+                display: inline-block;
+                min-width: 100px;
+                margin: 0 10px 0 0;
+                padding: 0 10px;
+                color: #ffffff;
+                text-align: center;
+                border-radius: 6px;
+                background: #ffc97d;
+              }
+              .cate02 {
+                display: inline-block;
+                min-width: 100px;
+                margin: 0 10px 0 0;
+                padding: 0 10px;
+                color: #ffffff;
+                text-align: center;
+                border-radius: 6px;
+                background: #000000;
+              }
+            }
+            .ttlBox {
+              margin: 0 0 20px;
+              font-size: 24px;
+              color: #ffb53a;
+            }
+          }
+        }
+        .listBox {
+          margin: 20px 0;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px 0 0 -10px;
+            li {
+              position: relative;
+              width: calc((100% / 4) - 10px);
+              height: 0;
+              margin: 10px 0 0 10px;
+              padding: 0 0 17%;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .leftBox {
+            width: 63%;
+          }
+          .rightBox {
+            width: 35%;
+            .photo {
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      width: 230px;
+      margin: 100px auto 0;
+      a {
+        display: block;
+        padding: 12px;
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 6px;
+        background: url(https://shitok.jp/system_panel/uploads/images/btn_back_arrow.png)
+          left 15px center no-repeat #ffb53a;
+      }
+    }
+  }
+}

@@ -1,0 +1,1824 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top #news {
+  padding: 60px 0;
+}
+
+#top #news .ttl {
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #409cbf;
+}
+
+#top #news .ttl:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 190px;
+  height: 2px;
+  background: #f3bf2e;
+}
+
+#top #news .ttl h2 {
+  margin-right: 40px;
+  padding-left: 20px;
+  float: left;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 24px;
+}
+
+#top #news .ttl h2 span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#top #news .ttl h2 em {
+  font-weight: bold;
+}
+
+#top #news .ttl > span {
+  float: left;
+  padding-top: 5px;
+}
+
+#top #news .ttl a {
+  float: right;
+  width: 155px;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background: #409cbf;
+}
+
+#top #news ul li {
+  padding: 15px 30px;
+  border-bottom: 2px dotted #000000;
+}
+
+#top #news ul li > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#top #news ul li span {
+  width: 90px;
+  margin: 0 30px 0 20px;
+  padding: 2px 0;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#top #news ul li span.new {
+  background: #106eb2;
+}
+
+#top #news ul li span.other {
+  background: #f3bf2e;
+}
+
+#top #news ul li span.info {
+  background: #ff5b9d;
+}
+
+#top #news ul li span.check {
+  background: #f00;
+}
+
+#top #news ul li span.column {
+  background: #29bcb0;
+}
+
+#top #news ul li a {
+  text-decoration: underline;
+}
+
+#top #aboutBox {
+  overflow: hidden;
+  padding: 0 0 80px;
+}
+
+#top #aboutBox > dl {
+  padding: 40px;
+  border: 2px dotted #000000;
+}
+
+#top #aboutBox > dl dt {
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-size: 30px;
+  background: url("../image/top/about_ttl_icon.png") left center no-repeat;
+}
+
+#top #aboutBox > dl dd {
+  line-height: 2;
+}
+
+#top #aboutBox > ul li {
+  text-align: center;
+}
+
+#top #aboutBox > ul li:first-child {
+  background: url("../image/top/about_list_bg_01.png") no-repeat;
+  background-size: cover;
+}
+
+#top #aboutBox > ul li:nth-child(2) {
+  margin-top: 20px;
+  background: url("../image/top/about_list_bg_02.png") no-repeat;
+  background-size: cover;
+}
+
+#top #aboutBox > ul a {
+  display: block;
+  padding: 40px 0;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  #top #aboutBox > dl {
+    float: left;
+    width: 65%;
+  }
+  #top #aboutBox > ul {
+    float: right;
+    width: 32%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	学会について
+///////////////////////////////////////////////////////////*/
+#about #sec01 .cntBox p {
+  line-height: 2;
+}
+
+#about #sec01 .cntBox p + p {
+  margin-top: 30px;
+}
+
+#about #sec01 .cntBox .name {
+  text-align: right;
+}
+
+@media (min-width: 1025px) {
+  #about #sec02 .cntBox > dl {
+    display: table;
+    width: 100%;
+    min-height: 50px;
+  }
+  #about #sec02 .cntBox > dl > dt {
+    display: table-cell;
+    width: 230px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #22a096;
+  }
+  #about #sec02 .cntBox > dl > dd {
+    display: table-cell;
+    padding: 0 0 0 50px;
+    vertical-align: middle;
+  }
+  #about #sec02 .cntBox > dl + dl {
+    margin-top: 50px;
+  }
+  #about #sec02 .cntBox .history > dt {
+    padding-top: 20px;
+    vertical-align: top;
+  }
+  #about #sec02 .cntBox .history > dd {
+    vertical-align: top;
+  }
+  #about #sec02 .cntBox .historyBox {
+    display: table;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+  }
+  #about #sec02 .cntBox .historyBox > dt {
+    display: table-cell;
+    width: 100px;
+    padding: 0 20px;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #about #sec02 .cntBox .historyBox > dd {
+    display: table-cell;
+  }
+  #about #sec02 .cntBox .historyBox ul li {
+    display: table;
+    width: 100%;
+  }
+  #about #sec02 .cntBox .historyBox ul li div {
+    display: table-cell;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #about #sec02 .cntBox .historyBox ul li div span {
+    display: none;
+  }
+  #about #sec02 .cntBox .historyBox ul li p {
+    display: table-cell;
+    padding: 20px;
+  }
+}
+
+#about #sec03 ul li + li {
+  margin-top: 15px;
+}
+
+#about #sec03 ul li a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#about #sec04 dl dt {
+  font-size: 22px;
+}
+
+#about #sec04 dl dt + dd {
+  padding: 30px 0;
+}
+
+#about #sec04 dl dt + dd img {
+  display: block;
+  max-width: 835px;
+  margin: 0 auto 30px;
+}
+
+#about #sec04 dl dt + dd img + p {
+  text-align: right;
+}
+
+#about #sec04 dl dd + dd {
+  padding: 20px 0 40px;
+  text-align: right;
+  border-top: 1px solid #d3d3d3;
+}
+
+#about #sec05 ul {
+  overflow: hidden;
+  margin: -30px 0 0 -30px;
+}
+
+#about #sec05 ul li {
+  float: left;
+  width: calc((100% / 3) - 30px);
+  margin: 30px 0 0 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+#about #sec05 ul li a {
+  display: block;
+  padding: 30px 0;
+  text-decoration: underline;
+}
+
+#about #sec06 p {
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+#about #sec06 ul {
+  padding: 30px;
+  background: #fafafa;
+}
+
+#about #sec06 ul li {
+  line-height: 2;
+}
+
+#about #sec06 ul li em {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+/*////////////////////////////////////////////////////////////
+	大会
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  #meeting #infoBox {
+    margin-bottom: 80px;
+  }
+  #meeting #infoBox dl {
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #meeting #infoBox dl dt {
+    display: table-cell;
+    width: 270px;
+    border-right: 1px solid #22a096;
+  }
+  #meeting #infoBox dl dt a {
+    display: block;
+    max-width: 225px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: underline;
+    background: #f6f6f6;
+  }
+  #meeting #infoBox dl dd {
+    display: table-cell;
+    padding: 20px 60px;
+  }
+  #meeting #infoBox dl dd ol li + li {
+    margin-top: 20px;
+  }
+  #meeting #infoBox dl dd ol li a {
+    text-decoration: underline;
+  }
+  #meeting #infoBox dl + a {
+    display: block;
+    max-width: 225px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: underline;
+    background: #f6f6f6;
+  }
+}
+
+#meeting section .cntBox p {
+  line-height: 2;
+}
+
+#meeting #secTop dl {
+  margin-bottom: 40px;
+  padding: 40px;
+  background: #f6f6f6;
+}
+
+#meeting #secTop dl dt {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#meeting #secTop dl dd {
+  line-height: 2;
+}
+
+#meeting #secTop dl + p + p {
+  margin-top: 40px;
+  text-align: right;
+}
+
+@media (min-width: 1025px) {
+  #meeting .tblBox {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  #meeting .tblBox dl {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+  #meeting .tblBox dl dt {
+    display: table-cell;
+    width: 220px;
+    padding: 30px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #meeting .tblBox dl dd {
+    display: table-cell;
+    padding: 30px 20px;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+  }
+  #meeting .tblBox dl dd a {
+    color: #054aac;
+    text-decoration: underline;
+  }
+  #meeting .tblBox dl dd div + div {
+    margin: 20px -20px 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid #d6d6d6;
+  }
+  #meeting .tblBox dl dd div p + p {
+    margin-top: 20px;
+  }
+}
+
+#meeting #sec03 .tblBox {
+  margin-bottom: 40px;
+}
+
+#meeting #sec03 .tblBox + p {
+  margin-bottom: 40px;
+}
+
+#meeting #sec03 ul {
+  margin-bottom: 40px;
+}
+
+#meeting #sec03 ul li {
+  display: inline-block;
+  max-width: 370px;
+  margin-right: 20px;
+  background: #f6f6f6;
+}
+
+#meeting #sec03 ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#meeting #sec03 ul + p {
+  margin-bottom: 40px;
+}
+
+#meeting #sec03 ul + p + a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#meeting #sec03 ul + p a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#meeting #sec04 .tblBox,
+#meeting #sec05 .tblBox,
+#meeting #sec06 .tblBox,
+#meeting #sec07 .tblBox,
+#meeting #sec08 .tblBox {
+  margin-bottom: 20px;
+}
+
+#meeting #sec04 .inSec h3,
+#meeting #sec05 .inSec h3,
+#meeting #sec06 .inSec h3,
+#meeting #sec07 .inSec h3,
+#meeting #sec08 .inSec h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  padding: 10px 20px;
+  background: #f6f6f6;
+}
+
+#meeting #sec04 .inSec h4,
+#meeting #sec05 .inSec h4,
+#meeting #sec06 .inSec h4,
+#meeting #sec07 .inSec h4,
+#meeting #sec08 .inSec h4 {
+  padding: 5px 10px;
+  font-size: 22px;
+  border-left: 6px solid #a8a8a8;
+}
+
+#meeting #sec04 .inSec p + p,
+#meeting #sec05 .inSec p + p,
+#meeting #sec06 .inSec p + p,
+#meeting #sec07 .inSec p + p,
+#meeting #sec08 .inSec p + p {
+  margin-top: 40px;
+}
+
+#meeting #sec04 .inSec,
+#meeting #sec05 .inSec,
+#meeting #sec06 .inSec,
+#meeting #sec07 .inSec,
+#meeting #sec08 .inSec,
+#meeting #sec09 .inSec {
+  margin-top: 40px;
+}
+
+#meeting #sec04 .inSec + .inSec,
+#meeting #sec05 .inSec + .inSec,
+#meeting #sec06 .inSec + .inSec,
+#meeting #sec07 .inSec + .inSec,
+#meeting #sec08 .inSec + .inSec,
+#meeting #sec09 .inSec {
+  margin-top: 40px;
+}
+
+#meeting #sec06 .inSec:first-child {
+  margin-top: 0;
+}
+
+#meeting #sec07 p + p {
+  margin-top: 40px;
+}
+
+#meeting #sec07 a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#meeting #sec07 .inSec p {
+  padding: 20px;
+  background: #fafafa;
+}
+
+#meeting #sec08 .box,
+#meeting #sec09 .box {
+  padding: 20px;
+  background: #fafafa;
+}
+
+#meeting #sec08 .box a {
+  color: #054aac;
+  text-decoration: underline;
+}
+a.blue {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) {
+  #meeting #sec09 .tblBox dl dd {
+    width: 250px;
+  }
+}
+
+.column .postBox a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////
+	研修・研究会
+///////////////////////////////////////////////////////////*/
+#training #infoBox {
+  margin-bottom: 40px;
+}
+
+#training #infoBox ul {
+  overflow: hidden;
+}
+
+#training #infoBox ul li {
+  float: left;
+  display: table;
+  height: 84px;
+  width: calc((100% / 3) - 20px);
+}
+
+#training #infoBox ul li + li {
+  margin-left: 20px;
+}
+
+#training #infoBox ul li a {
+  display: table-cell;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: underline;
+  background: #f6f6f6;
+}
+
+#training .cntBox p {
+  line-height: 2;
+}
+
+@media (min-width: 1025px) {
+  #training .tblBox {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  #training .tblBox dl {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+  #training .tblBox dl dt {
+    display: table-cell;
+    width: 220px;
+    padding: 30px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #training .tblBox dl dd {
+    display: table-cell;
+    padding: 30px 20px;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+  }
+  #training .tblBox dl dd a {
+    color: #054aac;
+    text-decoration: underline;
+  }
+  #training .tblBox dl dd div + div {
+    margin: 20px -20px 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid #d6d6d6;
+  }
+  #training .tblBox dl dd div p + p {
+    margin-top: 20px;
+  }
+}
+
+#training #sec02 > a {
+  display: block;
+  margin-bottom: 50px;
+}
+
+#training #sec02 > h3 {
+  padding: 5px 10px;
+  font-size: 22px;
+  border-left: 6px solid #22a096;
+  border-bottom: 1px solid #22a096;
+}
+
+#training #sec02 section {
+  margin-top: 40px;
+}
+
+#training #sec02 section h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  padding: 10px 20px;
+  background: #f6f6f6;
+}
+
+#training #sec02 .tblBox {
+  margin-bottom: 40px;
+}
+
+#training #sec02 .tblBox + p + a {
+  display: block;
+  width: 280px;
+  margin: 40px auto 0;
+  padding: 20px;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  background: #409cbf;
+}
+
+#training #sec02 .contact a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#training #sec02 table {
+  width: 100%;
+  border-top: 1px solid #d6d6d6;
+}
+
+#training #sec02 table thead tr {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+#training #sec02 table thead th {
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #d6d6d6;
+  background: #fcfcfc;
+}
+
+#training #sec02 table tbody tr {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+#training #sec02 table tbody td {
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #d6d6d6;
+}
+
+#training #sec03 .cntBox > p a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#training #sec03 section {
+  margin-top: 40px;
+}
+
+#training #sec03 section h3 {
+  padding: 5px 10px;
+  font-size: 22px;
+  border-left: 6px solid #22a096;
+  border-bottom: 1px solid #22a096;
+}
+
+#training #sec03 section h3 + p {
+  margin: 20px 0;
+}
+
+#training #sec03 section ul li {
+  display: inline-block;
+  width: 360px;
+  margin-right: 20px;
+  background: #f6f6f6;
+}
+
+#training #sec03 section ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#training #sec04 p + p {
+  margin-top: 40px;
+}
+
+#training #sec04 .dlBox {
+  margin-top: 40px;
+}
+
+#training #sec04 .dlBox ul {
+  margin-top: 10px;
+}
+
+#training #sec04 .dlBox ul li {
+  display: inline-block;
+  width: 360px;
+  margin-right: 20px;
+  background: #f6f6f6;
+}
+
+#training #sec04 .dlBox ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#training #sec04 .dlBox ul + ul {
+  margin-top: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	学会誌・投稿
+///////////////////////////////////////////////////////////*/
+#journal .cntBox p {
+  line-height: 2;
+}
+
+#journal #sec02 a {
+  display: block;
+  width: 300px;
+  margin: 40px auto 0;
+}
+
+#journal #sec03 a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#journal #sec03 .contact {
+  margin: 40px 0;
+  padding: 30px;
+  background: #fafafa;
+}
+
+#journal #sec03 .contact + p {
+  margin-bottom: 20px;
+}
+
+#journal #sec03 .contact + p + p {
+  margin-bottom: 40px;
+}
+
+#journal #sec03 h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  padding: 10px 20px;
+  background: #f6f6f6;
+}
+
+#journal #sec03 ol li {
+  position: relative;
+}
+
+#journal #sec03 ol li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#journal #sec03 ol li + li {
+  margin-top: 20px;
+}
+
+#journal #sec04 a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#journal #sec04 p + p {
+  margin-top: 20px;
+}
+
+#journal #sec05 .cntBox div {
+  margin-top: 20px;
+  padding: 30px;
+  background: #fafafa;
+}
+
+#journal #sec05 .cntBox div a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////
+	情報
+///////////////////////////////////////////////////////////*/
+#information #infoBox {
+  margin-bottom: 40px;
+}
+
+#information #infoBox ul {
+  overflow: hidden;
+  margin: -20px 0 0 -20px;
+}
+
+#information #infoBox ul li {
+  float: left;
+  display: table;
+  height: 84px;
+  width: calc((100% / 3) - 20px);
+  margin: 20px 0 0 20px;
+}
+
+#information #infoBox ul li a {
+  display: table-cell;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: underline;
+  background: #f6f6f6;
+}
+
+#information .cntBox p {
+  line-height: 2;
+}
+
+#information #sec01 .cntBox > p {
+  margin-bottom: 20px;
+}
+
+#information #sec01 dl dt {
+  padding: 10px;
+  font-size: 22px;
+  color: #ffffff;
+  background: #409cbf;
+}
+
+#information #sec01 dl dd {
+  padding: 20px 10px;
+  border: 1px solid #409cbf;
+}
+
+#information #sec01 dl dd a {
+  color: #409cbf;
+  text-decoration: underline;
+  line-height: 2;
+}
+
+#information #sec01 dl + dl {
+  margin-top: 20px;
+}
+
+#information #sec02 .cntBox > p {
+  margin-bottom: 20px;
+}
+
+#information #sec02 .cntBox a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) {
+  #information #sec02 #pcHead {
+    display: table;
+    width: 100%;
+    color: #ffffff;
+    background: #409cbf;
+  }
+  #information #sec02 #pcHead li {
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+  }
+  #information #sec02 #pcHead li:nth-child(1),
+  #information #sec02 #pcHead li:nth-child(2) {
+    width: 280px;
+    border-right: 1px solid #d6d6d6;
+  }
+  #information #sec02 .tbl {
+    text-align: center;
+    border: 1px solid #d6d6d6;
+  }
+  #information #sec02 .tbl > p {
+    padding: 10px;
+  }
+  #information #sec02 .tbl dl {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+  }
+  #information #sec02 .tbl dl dt {
+    display: table-cell;
+    width: 280px;
+    padding: 20px 10px;
+    border-right: 1px solid #d6d6d6;
+  }
+  #information #sec02 .tbl dl dd {
+    display: table-cell;
+    padding: 20px 10px;
+  }
+  #information #sec02 .tbl dl dt + dd {
+    width: 280px;
+    border-right: 1px solid #d6d6d6;
+  }
+
+  #information #sec02 .tbl dl dt + dd + dd {
+    width: 400px;
+    display: block;
+    word-wrap: break-word;
+  }
+}
+
+#information #sec03 a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#information #sec04 .box {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#information #sec04 .box > div {
+  float: right;
+  width: 50%;
+}
+
+#information #sec04 .box > div dl dt {
+  margin: 10px 0;
+  padding-left: 15px;
+  font-size: 30px;
+  line-height: 1.3;
+  border-left: 4px solid #22a096;
+}
+
+#information #sec04 .box .book {
+  float: left;
+  width: 45%;
+}
+
+#information #sec05 a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) {
+  #information #sec06 .tblBox {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  #information #sec06 .tblBox dl {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+  #information #sec06 .tblBox dl dt {
+    display: table-cell;
+    width: 220px;
+    padding: 30px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #information #sec06 .tblBox dl dd {
+    display: table-cell;
+    padding: 30px 20px;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+  }
+  #information #sec06 .tblBox dl dd a {
+    color: #054aac;
+    text-decoration: underline;
+  }
+  #information #sec06 .tblBox dl dd div + div {
+    margin: 20px -20px 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid #d6d6d6;
+  }
+  #information #sec06 .tblBox dl dd div p + p {
+    margin-top: 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	会員のひろば
+///////////////////////////////////////////////////////////*/
+#member h3 {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 22px;
+  border-left: 6px solid #22a096;
+  border-bottom: 1px solid #22a096;
+}
+
+#member p {
+  line-height: 2;
+}
+
+#member p + p {
+  margin-top: 40px;
+}
+
+#member #sec01 {
+  margin-bottom: 80px;
+}
+
+#member #sec02 {
+  margin-bottom: 60px;
+}
+
+#member #sec02 p {
+  padding: 20px;
+  background: #fafafa;
+}
+#member #sec04 a {
+  color: #409cbf;
+  text-decoration: underline;
+}
+
+#member #infoBox {
+  margin-bottom: 40px;
+}
+
+#member #infoBox ul {
+  overflow: hidden;
+}
+
+#member #infoBox ul li {
+  float: left;
+  display: table;
+  height: 84px;
+  width: calc((100% / 3) - 20px);
+}
+
+#member #infoBox ul li + li {
+  margin-left: 20px;
+}
+
+#member #infoBox ul li a {
+  display: table-cell;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: underline;
+  background: #f6f6f6;
+}
+#member #boardList .postList {
+  margin: 0 0 50px;
+}
+#member #boardList .postList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px 0 0;
+}
+#member #boardList .postList ul li {
+  width: calc((100% / 2) - 30px);
+  margin: 20px 0 0;
+  border-right: 3px solid #409cbf;
+  background: #f6f6f6;
+}
+#member #boardList .postList ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#member #boardList .postList .photoBox {
+  width: 130px;
+}
+/* #member #boardList .postList .photo {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 100%;
+}
+#member #boardList .postList .photo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+} */
+#member #boardList .postList .txtBox {
+  width: calc(100% - 150px);
+}
+#member #boardList .postList .txtBox span {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #29bcb0;
+}
+#member #boardList .postList .txtBox time {
+  display: block;
+  margin: 5px 0 10px;
+}
+#member #boardList .postList .txtBox p {
+  display: inline-block;
+  text-decoration: underline;
+}
+#member #boardList .moveBtn {
+  width: 140px;
+  margin: 0 auto;
+}
+#member #boardList .moveBtn a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background: #409cbf;
+}
+/*////////////////////////////////////////////////////////////
+	コラム
+///////////////////////////////////////////////////////////*/
+.column #listBox ul:first-child {
+  margin-bottom: 50px;
+}
+
+.column #listBox ul:first-child li {
+  padding: 15px 30px;
+  border-bottom: 2px dotted #000000;
+}
+
+.column #listBox ul:first-child li > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.column #listBox ul:first-child li time {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.column #listBox ul:first-child li span {
+  width: 90px;
+  margin: 0 30px 0 20px;
+  padding: 2px 0;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+.column #listBox ul:first-child li span.new {
+  background: #106eb2;
+}
+
+.column #listBox ul:first-child li span.other {
+  background: #f3bf2e;
+}
+
+.column #listBox ul:first-child li span.info {
+  background: #ff5b9d;
+}
+
+.column #listBox ul:first-child li span.column {
+  background: #29bcb0;
+}
+
+.column #listBox ul:first-child li a {
+  text-decoration: underline;
+  display: block;
+}
+
+.column #detailBox section {
+  margin-bottom: 60px;
+}
+
+.column #detailBox section > p {
+  margin-bottom: 10px;
+}
+
+.column #detailBox section > p time {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.column #detailBox section > p span {
+  display: inline-block;
+  width: 90px;
+  margin: 0 30px 0 20px;
+  padding: 2px 0;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: #29bcb0;
+}
+
+.column #detailBox section > p span.new {
+  background: #106eb2;
+}
+
+.column #detailBox section > p span.other {
+  background: #f3bf2e;
+}
+
+.column #detailBox section > p span.info {
+  background: #ff5b9d;
+}
+
+.column #detailBox section > p span.column {
+  background: #29bcb0;
+}
+
+.column #detailBox section > h3 {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  border-bottom: 2px dotted #000000;
+}
+
+.column #detailBox .postBox .thumbnail {
+  margin: 0 0 40px;
+}
+
+.column #detailBox .postBox p {
+  line-height: 2;
+}
+
+.column #detailBox .postBox p + p {
+  margin-top: 2em;
+}
+
+.column #detailBox .pager {
+  overflow: hidden;
+}
+
+.column #detailBox .pager li {
+  float: left;
+}
+
+.column #detailBox .pager li + li {
+  float: right;
+}
+
+.column #detailBox .pager a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+.column .sidebar dl {
+  font-size: 22px;
+  text-align: center;
+}
+
+.column .sidebar dl + dl {
+  margin-top: 40px;
+}
+
+.column .sidebar dl dt {
+  margin-bottom: 10px;
+  border-bottom: 4px solid #22a096;
+}
+
+.column .sidebar dl dd ul li {
+  background: #f6f6f6;
+}
+
+.column .sidebar dl dd ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.column .sidebar dl dd ul li.current {
+  background: #22a096;
+}
+
+.column .sidebar dl dd ul li.current a {
+  color: #ffffff;
+}
+
+.column .sidebar.pastPost dl dd ul a:after {
+  content: "年";
+}
+
+.column .sidebar.pastPost dl.cateList dd ul a:after {
+  content: "";
+}
+
+@media (min-width: 1025px) {
+  .column .cntBox {
+    overflow: hidden;
+  }
+  .column .leftBox {
+    float: left;
+    width: 73%;
+  }
+  .column .sidebar {
+    float: right;
+    width: 24%;
+  }
+}
+
+.column #boardList .postList {
+  margin: 50px 0;
+}
+.column #boardList .postList ul {
+  margin: -20px 0 0;
+}
+.column #boardList .postList ul li {
+  margin: 20px 0 0;
+  border-right: 3px solid #409cbf;
+  background: #f6f6f6;
+}
+.column #boardList .postList ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.column #boardList .postList .photoBox {
+  width: 200px;
+}
+/* .column #boardList .postList .photo {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 100%;
+}
+.column #boardList .postList .photo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+} */
+.column #boardList .postList .txtBox {
+  width: calc(100% - 240px);
+}
+.column #boardList .postList .txtBox span {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #29bcb0;
+}
+.column #boardList .postList .txtBox time {
+  display: block;
+  margin: 5px 0 10px;
+}
+.column #boardList .postList .txtBox p {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
+	ページネーション
+-------------------------------------------------- */
+.pagination {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 30px 0;
+}
+
+.pagination,
+.pagination li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li + li {
+  margin-left: 5px;
+}
+
+.pagination a {
+  font-weight: 300;
+  padding-top: 1px;
+  text-decoration: none;
+  min-width: 45px;
+  min-height: 45px;
+  color: #231815;
+  background-color: #f6f6f6;
+}
+
+.pagination li:first-of-type a {
+  border-left-width: 1px;
+}
+
+.pagination li.first span,
+.pagination li.last span,
+.pagination li.previous span,
+.pagination li.next span {
+  /* screen readers only */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.pagination li.first a::before,
+.pagination li.last a::after,
+.pagination li.previous a::before,
+.pagination li.next a::after {
+  display: inline-block;
+  font-family: Fontawesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.pagination li.first a::before {
+  content: "\f100";
+}
+
+.pagination li.last a::after {
+  content: "\f101";
+}
+
+.pagination li.previous a::before {
+  content: "\f104";
+}
+
+.pagination li.next a::after {
+  content: "\f105";
+}
+
+.pagination li.current a {
+  cursor: default;
+  pointer-events: none;
+  color: #fff;
+  background-color: #22a096;
+}
+
+.pagination > li:first-child > a {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.pagination > li:last-child > a {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+@media only screen and (max-width: 680px) {
+  .pagination li.first,
+  .pagination li.last {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .pagination li.previous a {
+    border-left-width: 1px;
+  }
+  .pagination a {
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pagination li {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .pagination li.current,
+  .pagination li.first,
+  .pagination li.last,
+  .pagination li.previous,
+  .pagination li.next {
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+  .pagination li.previous a {
+    border-left-width: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pagination li.first,
+  .pagination li.last {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .pagination li.previous a {
+    border-left-width: 1px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  /* For watches? */
+  .pagination li {
+    width: 50%;
+  }
+  .pagination li.current {
+    order: 2;
+    width: 100%;
+    border-left-width: 1px;
+  }
+}
+
+.pagination li.current + .next,
+.pagination li.current + .next + .last {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	入会案内
+///////////////////////////////////////////////////////////*/
+#admission .cntBox p {
+  line-height: 2;
+}
+
+@media (min-width: 1025px) {
+  #admission #sec01 .tblBox {
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  #admission #sec01 .tblBox dl {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+  }
+  #admission #sec01 .tblBox dl dt {
+    display: table-cell;
+    width: 430px;
+    padding: 30px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+    background: #fcfcfc;
+  }
+  #admission #sec01 .tblBox dl dd {
+    display: table-cell;
+    padding: 30px 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #d6d6d6;
+  }
+  #admission #sec01 .tblBox dl dd a {
+    color: #054aac;
+    text-decoration: underline;
+  }
+  #admission #sec01 .tblBox dl dd div + div {
+    margin: 20px -20px 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid #d6d6d6;
+  }
+  #admission #sec01 .tblBox dl dd div p + p {
+    margin-top: 20px;
+  }
+}
+
+#admission #sec02 .box {
+  margin-top: 20px;
+  padding: 30px;
+  background: #fafafa;
+}
+
+/*////////////////////////////////////////////////////////////
+	サイトマップ
+///////////////////////////////////////////////////////////*/
+#sitemap .cntBox .list {
+  padding: 30px 30px 50px;
+}
+
+#sitemap .cntBox .list li {
+  position: relative;
+  padding-left: 10px;
+}
+
+#sitemap .cntBox .list li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 9px;
+  margin: auto 0;
+  background: url("../image/common/footer_link_arrow.png") no-repeat;
+}
+
+#sitemap .cntBox .list li + li {
+  margin-top: 20px;
+}
+
+#sitemap .cntBox .list li a {
+  text-decoration: underline;
+}
+
+#sitemap .cntBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -60px;
+}
+
+#sitemap .cntBox .listBox > li {
+  width: calc((100% / 3) - 60px);
+  margin: 0 0 0 60px;
+}
+
+#sitemap .cntBox .listBox dl dt {
+  padding: 15px 10px;
+  font-size: 20px;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+/*////////////////////////////////////////////////////////////
+	フォーム
+///////////////////////////////////////////////////////////*/
+#formCnt .topTxt {
+  margin-bottom: 30px;
+  padding: 40px;
+  line-height: 2;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+}
+
+#formCnt .topTxt a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#formCnt .topTxt + p {
+  margin-bottom: 60px;
+}
+
+#formCnt .topTxt + p em {
+  color: #f00000;
+}
+
+.formBox {
+  max-width: 970px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #010101;
+}
+
+.formBox input[type="text"],
+.formBox input[type="email"],
+.formBox input[type="tel"] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 14px;
+  border: 1px solid #a1bae2;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.formBox textarea {
+  width: 100%;
+  height: 200px;
+  padding-left: 10px;
+  font-size: 14px;
+  border: 1px solid #a1bae2;
+  background: #ffffff;
+  resize: none;
+}
+
+.formBox .selectBox {
+  position: relative;
+  height: 50px;
+  border: 1px solid #a1bae2;
+  background: #ffffff;
+}
+
+.formBox .selectBox label {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.formBox .selectBox select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.formBox .selectBox .wpcf7-form-control-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wpcf7-submit {
+  display: block;
+  border: 0;
+  outline: 0;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  width: 230px;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #409cbf;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wpcf7-list-item + .wpcf7-list-item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.screen-reader-response ul {
+  display: none;
+}
+
+.wpcf7-validation-errors,
+.wpcf7-mail-sent-ok {
+  text-align: center;
+  padding: 30px 0 0;
+}
+
+@media (min-width: 1025px) {
+  .formBox dl {
+    display: table;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .formBox dl dt {
+    display: table-cell;
+    width: 230px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #22a096;
+  }
+  .formBox dl dt em {
+    color: #d50000;
+  }
+  .formBox dl dd {
+    display: table-cell;
+    padding: 10px 30px;
+    line-height: 2.5;
+  }
+  .formBox .inputContact input {
+    width: 80%;
+  }
+}
+
+.formBox .postal dd .txt {
+  margin-top: 10px;
+}
+
+#journal .cntBox p a {
+  color: #409cbf;
+  text-decoration: underline;
+}

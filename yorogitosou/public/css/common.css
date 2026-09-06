@@ -1,0 +1,615 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Zen Maru Gothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #161616;
+  font-size: 16px;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/body_bg.png);
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #161616;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.mincho {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: normal;
+}
+
+.photo img {
+  border-radius: 6px;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1191px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 40px 20px;
+    z-index: 999;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/body_bg.png);
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+  .header .headTitleBox {
+    position: relative;
+    padding: 30px 0 0;
+  }
+  .header .headTitleBox .headTtl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .header .headTitleBox .logo {
+    width: 180px;
+  }
+  .header .headTitleBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 1190px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    z-index: 999;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/body_bg.png);
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    position: relative;
+    top: 10px;
+    width: 140px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1191px) {
+  .navBox {
+    display: flex;
+    align-items: center;
+  }
+  .navBox .navList {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+  }
+  .navBox .navList .ul {
+    min-width: 500px;
+  }
+  .navBox .navList .ul .li {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 0 0 0 4%;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    padding: 15px 20px 15px 0;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/header_nav_bg.png) right center no-repeat;
+    background-size: 58px auto;
+  }
+  .navBox .navItem {
+    display: flex;
+    align-items: center;
+  }
+  .navBox .navItem .tel {
+    margin: 0 20px 0 0;
+    text-align: center;
+  }
+  .navBox .navItem .tel a {
+    display: inline-block;
+  }
+  .navBox .navItem .tel a p {
+    display: inline-block;
+  }
+  .navBox .navItem .tel a .em {
+    font-size: 26px;
+  }
+  .navBox .navItem .tel > p {
+    font-size: 13px;
+  }
+  .navBox .navItem .contact {
+    width: 180px;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #8fb73a;
+  }
+  .navBox .navItem .contact a p {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/header_contact.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+}
+@media (max-width: 1190px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/body_bg.png);
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 70px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 8px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navItem {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .navBox .navItem .tel {
+    margin: 0 0 20px;
+  }
+  .navBox .navItem .tel a {
+    display: inline-block;
+  }
+  .navBox .navItem .tel a p {
+    display: inline-block;
+  }
+  .navBox .navItem .tel a .em {
+    font-size: 26px;
+  }
+  .navBox .navItem .tel > p {
+    font-size: 13px;
+  }
+  .navBox .navItem .contact {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #8fb73a;
+  }
+  .navBox .navItem .contact a p {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/header_contact.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+  padding: 0 40px;
+}
+
+@media (max-width: 1190px) {
+  .main {
+    margin: 70px 0 0;
+    padding: 0 10px;
+  }
+}
+.pageKvContainer .pageKvTitle {
+  padding: 30px 0;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.pageSecTtlBox .pageSecTtl {
+  display: inline-block;
+  padding: 40px 40px 5px;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/page_sec_ttl_bg.png) right bottom no-repeat;
+  background-size: 100px auto;
+}
+
+.secWrap {
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap01 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 200px;
+  margin: 0 auto;
+}
+.btnMore a {
+  display: block;
+  padding: 5px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #8fb73a;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 0 40px;
+  z-index: 1;
+}
+.footer .footContact {
+  margin: 0 0 60px;
+  padding: 80px 0 60px;
+  border-radius: 10px;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png) no-repeat;
+  background-size: cover;
+}
+.footer .footContact .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.footer .footContact .secBox .leftBox {
+  color: #ffffff;
+}
+.footer .footContact .secBox .leftBox .ttl {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 5px 20px 0 0;
+  font-size: 34px;
+  letter-spacing: 0.1em;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/footer_contact_ttl_bg.png) right bottom no-repeat;
+  background-size: 100px auto;
+}
+.footer .footContact .secBox .rightBox .contactBox {
+  padding: 40px 20px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem {
+  text-align: center;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .tel {
+  margin: 0 0 20px;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .tel a {
+  display: inline-block;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .tel a p {
+  display: inline-block;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .tel a .em {
+  font-size: 34px;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .tel > p {
+  font-size: 13px;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .contact {
+  width: 260px;
+  margin: 0 auto;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .contact a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: #8fb73a;
+}
+.footer .footContact .secBox .rightBox .contactBox .navItem .contact a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/header_contact.png) left center no-repeat;
+  background-size: 20px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .secBox .leftBox {
+    width: 55%;
+  }
+  .footer .footContact .secBox .rightBox {
+    width: 40%;
+  }
+}
+.footer .footPanel {
+  padding: 120px 0 40px;
+  color: #f8faf3;
+  background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/footer_panel_bg.png) center top no-repeat;
+  background-size: cover;
+}
+.footer .footPanel .secBox .leftBox .logo {
+  width: 200px;
+  margin: 0 0 30px;
+}
+.footer .footPanel .secBox .leftBox .txt a {
+  display: inline-block;
+  color: #f8faf3;
+}
+.footer .footPanel .secBox .rightBox .areaBox {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.footer .footPanel .secBox .rightBox .areaBox .inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.footer .footPanel .secBox .rightBox .areaBox .ttl {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+.footer .footPanel .secBox .rightBox .areaBox .ul .li {
+  display: inline-block;
+  min-width: 80px;
+  margin: 5px 5px 0 0;
+  padding: 2px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 6px;
+  background: #0db7b2;
+}
+.footer .footPanel .secBox .rightBox .areaBox .txt {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footPanel .secBox .leftBox {
+    width: 45%;
+  }
+  .footer .footPanel .secBox .rightBox {
+    width: 53%;
+  }
+}
+.footer .footPanel .copy {
+  margin: 20px 0 0;
+  text-align: right;
+}
+
+@media (max-width: 1190px) {
+  .footer {
+    padding: 0 10px;
+  }
+}
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

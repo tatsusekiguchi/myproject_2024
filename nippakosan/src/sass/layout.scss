@@ -1,0 +1,1692 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    position: relative;
+    z-index: 2;
+    .topKvPanel {
+      position: relative;
+      // display: flex;
+      padding: 0 0 160px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 300px;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/top_kv_bg.png)
+          left bottom no-repeat;
+        background-size: cover;
+      }
+      .topKv {
+        position: relative;
+        width: calc(100% - 250px);
+        height: 650px;
+      }
+      .kvTitle {
+        position: absolute;
+        top: 250px;
+        left: 10%;
+        width: 800px;
+        .title {
+          + .title {
+            margin: 3px 0 0;
+          }
+          p {
+            display: inline;
+            padding: 0 20px;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            background: #ffffff;
+          }
+        }
+        h1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #ffffff;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 120px 0 60px;
+    margin: -160px 0 0;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .txt {
+      text-align: center;
+    }
+  }
+  .sec02 {
+    padding: 80px 0;
+    color: #f2f2f2;
+    background: #0c8a89;
+    .secBox {
+      .txtBox {
+        h3 {
+          margin: 0 0 30px;
+          font-size: 40px;
+          font-weight: 400;
+        }
+        .btnMoreWhite {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    background: #f2f2f2;
+    .listBox {
+      margin: 0 0 80px;
+      .ul {
+        text-align: center;
+        .ttl {
+          margin: 10px 0 0;
+          font-size: 20px;
+        }
+        .btnMore {
+          margin: 10px auto 0;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 10px);
+          }
+        }
+      }
+    }
+    .secPanel {
+      padding: 40px 20px;
+      color: #f2f2f2;
+      text-align: center;
+      background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/top_sec03_panel_bg.png)
+        no-repeat;
+      background-size: cover;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 40px;
+        font-weight: 400;
+      }
+      .btnMoreWhite {
+        margin: 20px auto 0;
+      }
+    }
+  }
+  .sec04 {
+    padding: 100px 0;
+    text-align: center;
+    .secTtl {
+      margin: 0 0 30px;
+      font-size: 40px;
+      font-weight: 400;
+      color: #0c8a89;
+    }
+    .txt {
+      margin: 0 0 40px;
+    }
+    .listBox {
+      max-width: 880px;
+      margin: 0 auto;
+      .ul {
+        text-align: center;
+        .ttl {
+          margin: 10px 0 0;
+          font-size: 20px;
+        }
+        .btnMore {
+          margin: 10px auto 0;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 10px);
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    position: relative;
+    color: #f2f2f2;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/top_sec05_bg_pc.png)
+      no-repeat;
+    background-size: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53%;
+      height: 100%;
+      background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/top_sec05_box_bg.png)
+        right center no-repeat;
+      background-size: cover;
+    }
+    .mv {
+      display: none;
+    }
+    .secBox {
+      position: relative;
+      padding: 100px 0;
+    }
+    .ttl {
+      max-width: 350px;
+      margin: 0 0 40px;
+    }
+    .txt {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain {
+  .sec01 {
+    padding: 140px 0 60px;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secWrap01 {
+      position: relative;
+    }
+    .photo {
+      position: absolute;
+      top: 0;
+      right: -200px;
+      max-width: 450px;
+      width: 450px;
+    }
+    .pageSecTtlBox {
+      text-align: left;
+    }
+    .txt {
+      width: 76%;
+      margin: 0 0 30px;
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    .listBox {
+      .ul {
+        .li {
+          padding: 30px;
+          color: #f2f2f2;
+          background: #0c8a89;
+        }
+        .icon {
+          max-width: 200px;
+          margin: 0 auto 20px;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -20px 0 0 -20px;
+          .li {
+            width: calc((100% / 3) - 20px);
+            margin: 20px 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	warehouse
+///////////////////////////////////////////////////////////*/
+.warehouseMain {
+  .topSection {
+    padding: 140px 0 100px;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      text-align: left;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .section02 {
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secPanel {
+    .secBox {
+      margin: 0 0 30px;
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          padding: 10px 20px;
+          font-size: 40px;
+          font-weight: 400;
+          color: #0c8a89;
+          border-bottom: 1px solid #0c8a89;
+        }
+        .detail {
+          padding: 0 20px;
+          .dl {
+            display: flex;
+            line-height: 2;
+            .dt {
+              width: 80px;
+            }
+            .dd {
+              width: calc(100% - 80px);
+            }
+            + .dl {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+    .listBox {
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+  .sec01 {
+    position: relative;
+    padding: 140px 0 100px;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      text-align: left;
+    }
+    @media (min-width: 1025px) {
+      .txt {
+        width: 55%;
+      }
+      .photoBox {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        width: 40%;
+        max-width: 700px;
+        .photo {
+          height: 490px;
+          img {
+            @include cover-image;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    .listBox {
+      .ul {
+        .photo {
+          margin: 0 0 10px;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -60px 0 0;
+          .li {
+            width: calc((100% / 2) - 20px);
+            margin: 60px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    background: #f2f2f2;
+    .listBox {
+      color: #f2f2f2;
+      .ul {
+        .li {
+          padding: 25px 25px 50px;
+          background: #0c8a89;
+        }
+        .photo {
+          margin: 0 0 10px;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 100px 0;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/recruit_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .tabPanel {
+      .tabList {
+        max-width: 480px;
+        margin: 0 auto 60px;
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 20px);
+            padding: 10px;
+            color: #ffffff;
+            background: #000000;
+            text-align: center;
+            cursor: pointer;
+            opacity: 0.6;
+          }
+          .active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .infoBox {
+      color: #f2f2f2;
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2;
+        .dt {
+          width: 260px;
+          padding: 10px 20px;
+          border-bottom: 1px solid #a8c8c8;
+        }
+        .dd {
+          width: calc(100% - 262px);
+          padding: 10px 20px;
+          border-bottom: 1px solid #7c9d9d;
+        }
+      }
+    }
+    .btnEntry {
+      max-width: 320px;
+      margin: 90px auto 0;
+      a {
+        display: block;
+        padding: 15px;
+        font-size: 34px;
+        color: #ffffff;
+        text-align: center;
+        background: #222222;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	history
+///////////////////////////////////////////////////////////*/
+.historyMain {
+  .sec01 {
+    position: relative;
+    padding: 140px 0 100px;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      text-align: left;
+    }
+  }
+  .sec02 {
+    padding: 100px 0 120px;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/history_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secContainer {
+      .historyPanel {
+        .historyList {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 88px;
+            left: 0;
+            width: 1px;
+            height: calc(100% - 88px);
+            background: #6bacab;
+          }
+          .dl {
+            position: relative;
+            padding: 0 0 60px 40px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 88px;
+              left: -6px;
+              width: 12px;
+              height: 12px;
+              z-index: 1;
+              background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/history_sec02_circle.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+            .dt {
+              position: relative;
+              padding: 0 15px 5px;
+              font-size: 40px;
+              font-weight: 400;
+              color: #0c8a89;
+              border-bottom: 1px solid #6bacab;
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: -30px;
+                left: -40px;
+                width: 40px;
+                height: 30px;
+                background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/history_sec02_slash.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            .dd {
+              padding: 10px 15px 0;
+              line-height: 2;
+            }
+          }
+        }
+      }
+      .photoPanel {
+        .ul {
+          .li {
+            + .li {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .historyPanel {
+          width: 53%;
+        }
+        .photoPanel {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .sec01 {
+    position: relative;
+    padding: 140px 0 100px;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+    .txt {
+      margin: 0 0 30px;
+      text-align: center;
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+    .name {
+      text-align: right;
+      p {
+        display: inline-block;
+        margin: 0 20px 0 0;
+        vertical-align: middle;
+      }
+      .nameImg {
+        display: inline-block;
+        width: 150px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0;
+    color: #f2f2f2;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/company_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    h3 {
+      margin: 0 0 40px;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+  .sec03 {
+    padding: 80px 0;
+    .secBox {
+      margin: 0 0 80px;
+      .infoBox {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          line-height: 2;
+          .dt {
+            width: 160px;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a8c8c8;
+          }
+          .dd {
+            width: calc(100% - 162px);
+            padding: 10px 20px;
+            border-bottom: 1px solid #7c9d9d;
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 35%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0;
+    background: #f2f2f2;
+    .pageSecTtlBox {
+      text-align: left;
+    }
+    .infoBox {
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2;
+        .dt {
+          width: 39%;
+          padding: 15px 20px;
+          border-bottom: 1px solid #a8c8c8;
+        }
+        .dd {
+          width: 60%;
+          padding: 15px 20px;
+          border-bottom: 1px solid #7c9d9d;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .sec01 {
+    position: relative;
+    padding: 140px 0 100px;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .sec02 {
+    padding: 80px 0;
+    .telFax {
+      max-width: 700px;
+      margin: 0 auto;
+      .dl {
+        display: flex;
+        align-items: center;
+        .dt {
+          width: 100px;
+          padding: 5px 0 0;
+          p {
+            display: inline-block;
+            width: 80px;
+            color: #ffffff;
+            text-align: center;
+            background: #222222;
+          }
+        }
+        .dd {
+          width: calc(100% - 100px);
+          font-size: 40px;
+          font-weight: 400;
+        }
+      }
+      + p {
+        margin: 20px 0 0;
+        text-align: center;
+      }
+    }
+    @media (min-width: 1025px) {
+      .telFax {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #2a3939;
+    border-radius: 0;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px solid #2a3939;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    margin: 60px auto 0;
+    font-family: "Zen Kaku Gothic New", "游ゴシック Medium", "Yu Gothic Medium",
+      "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+      "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0 10px 50px;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/btn_more_black.png)
+      left center no-repeat;
+    background-size: 40px auto;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  @media (min-width: 1025px) {
+    .contactForm button[type="submit"]:hover {
+      opacity: 0.6;
+    }
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #2a3939;
+        background: #ffffff;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #2a3939;
+        border-right: 3px solid #2a3939;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #2a3939;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #2a3939;
+      }
+    }
+
+    .postalBox {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      input {
+        width: 140px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+
+    .selectBox {
+      display: inline-block;
+      width: 200px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 20px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 0;
+        border: 1px solid #707070;
+        background: #ffffff;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: table;
+        width: 100%;
+        padding: 5px 0;
+        > * {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        &.line {
+          > .dt {
+            vertical-align: top;
+          }
+        }
+
+        > .dt {
+          overflow: hidden;
+          width: 300px;
+          padding: 5px 0 5px 20px;
+          border-bottom: 1px solid #0c8a89;
+
+          .span {
+            float: left;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            float: right;
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #222222;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 302px);
+          padding: 5px 10px;
+          border-bottom: 1px solid #3c3c3c;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          text-align: left;
+          border: 1px solid #2a3939;
+          background: #eeeeee;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    width: 150px;
+    margin: 0 auto;
+    a {
+      color: #282931;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productMain {
+  .blogSection {
+    position: relative;
+    padding: 140px 0 100px;
+    z-index: 1;
+    background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/page_main_bg.png)
+      no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 220px;
+        padding: 120px 0 0;
+      }
+      .blogPanel {
+        width: calc(100% - 260px);
+      }
+    }
+  }
+  .catePanel {
+    .webgene-blog {
+      position: relative;
+      height: 100%;
+      padding: 20px 0;
+      background: #ffffff;
+      .webgene-header {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+        p {
+          color: #0c8a89;
+        }
+        h2,
+        h3 {
+          position: relative;
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+      .webgene-item {
+        position: relative;
+        max-width: 180px;
+        margin: 0 auto;
+        a {
+          display: block;
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      padding: 10px 0 0;
+      .message {
+        margin: 0 0 30px;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          .photoBox {
+            position: relative;
+          }
+          .title {
+            margin: 10px 0 0;
+            font-size: 20px;
+            text-align: center;
+          }
+          .btnMore {
+            margin: 10px auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -50px 0 0 -20px;
+          .webgene-item {
+            width: calc((100% / 3) - 20px);
+            margin: 50px 0 0 20px;
+            .photoBox {
+              .photo {
+                position: relative;
+                height: 280px;
+                img {
+                  @include cover-image;
+                }
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              color: #ffffff;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #222222;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          display: flex;
+          align-items: center;
+          margin: 0 0 15px;
+          font-size: 14px;
+          > * {
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+          }
+          .cate {
+            margin: 0 10px 0 0;
+            background: #126a4b;
+          }
+          .time {
+            color: #126a4b;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+            "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          font-size: 24px;
+        }
+        .slickSlide {
+          max-width: 800px;
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          // max-width: 940px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+  }
+  .detailContainer {
+    .message {
+      margin: 0 0 30px;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .detailPanel {
+      padding: 50px;
+      background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/product_detail_panel_bg.png)
+        no-repeat;
+      background-size: cover;
+    }
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .productTitle {
+        text-align: center;
+        > * {
+          display: inline-block;
+          min-width: 200px;
+          margin: 0 0 30px;
+          padding: 0 0 5px;
+          font-size: 40px;
+          font-weight: 400;
+          color: #0c8a89;
+          border-bottom: 1px solid #6bacab;
+        }
+      }
+      .topBox {
+        margin: 0 0 30px;
+        .txtBox {
+          dl {
+            dt {
+              margin: 0 0 30px;
+              font-size: 34px;
+              font-weight: 400;
+            }
+            dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .topBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 40%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+      .secBox {
+        + .secBox {
+          margin: 60px 0 0;
+        }
+        .title {
+          padding: 10px;
+          font-size: 30px;
+          font-weight: 400;
+          border-bottom: 1px solid #222222;
+        }
+        .txt {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .btnBack {
+    width: 180px;
+    margin: 100px auto 0;
+    a {
+      display: block;
+      padding: 10px 0 10px 50px;
+      background: url(https://nippakosan240620.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+        left center no-repeat;
+      background-size: 40px auto;
+    }
+  }
+}

@@ -1,0 +1,762 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #433f37;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #433f37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.mincho {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.fadeUpRandom {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    width: 15%;
+    max-width: 200px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList {
+    padding: 0 0 0 10px;
+  }
+  .navBox .navList .ul {
+    font-size: calc(10px + 0.2vw);
+  }
+  .navBox .navList .ul .li {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li + .li {
+    margin-left: calc((100vw - 1000px) / 15);
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+  }
+  .navBox .navList .ul .contact a {
+    padding: 5px 20px;
+    padding-left: calc(10px + 0.5vw);
+    padding-right: calc(10px + 0.5vw);
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #75b7d3;
+  }
+}
+@media (min-width: 1640px) {
+  .navBox .navList .ul {
+    font-size: 14px;
+  }
+  .navBox .navList .ul .li + .li {
+    margin-left: 30px;
+  }
+  .navBox .navList .ul .contact a {
+    padding: 5px 20px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 118px 0 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/main_bg_top.png) center top no-repeat;
+  background-size: cover;
+}
+
+.pageKvPanel {
+  padding: 40px 0 0;
+}
+.pageKvPanel .kvTitle {
+  padding: 0 0 20px;
+}
+.pageKvPanel .kvTitle h1 {
+  font-size: 40px;
+  letter-spacing: 0.15em;
+}
+.pageKvPanel .kvTitleMulti {
+  padding: 0 0 20px;
+}
+.pageKvPanel .kvTitleMulti p {
+  font-size: 40px;
+  letter-spacing: 0.15em;
+}
+.pageKvPanel .kvTitleMulti h1 {
+  font-size: 18px;
+}
+.pageKvPanel .kv {
+  position: relative;
+  width: 100vw;
+  height: 280px;
+}
+.pageKvPanel .kv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secTtlBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.secTtlBox p {
+  margin: 0 0 40px;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 80px;
+  color: #ffffff;
+  letter-spacing: 0.25em;
+  text-shadow: 1px 1px 0 #c9d1d3, -1px -1px 0 #c9d1d3, 1px -1px 0 #c9d1d3, -1px 1px 0 #c9d1d3, 2px 2px 0 #c9d1d3, -2px -2px 0 #c9d1d3, 2px -2px 0 #c9d1d3, -2px 2px 0 #c9d1d3;
+}
+.secTtlBox h2,
+.secTtlBox h3 {
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/sec_ttl_bg.png) center bottom no-repeat;
+  background-size: 250px auto;
+}
+
+.secWrap {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore a {
+  position: relative;
+  display: block;
+  padding: 15px 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.btnMore a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    color: #75b7d3;
+    border: 1px solid #75b7d3;
+    background: #ffffff;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageBtnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pageBtnList > * {
+    width: 49%;
+  }
+}
+.pageBtnSec {
+  padding: 60px 0 0;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 150px 0;
+  text-align: center;
+  background: #ffffff;
+}
+.footer .footContact h3 {
+  margin: 0 0 40px;
+  font-size: 26px;
+  letter-spacing: 0.2em;
+}
+.footer .footContact .txt {
+  margin: 0 0 30px;
+}
+.footer .footContact .btnList {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer .footContact .btnList .ul {
+  display: flex;
+}
+.footer .footContact .btnList .ul .li {
+  width: 50%;
+}
+.footer .footContact .btnList .ul .li a {
+  display: block;
+  padding: 15px 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footContact .btnList .ul .li p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+}
+.footer .footContact .btnList .ul .reserve a {
+  background: #529cb6;
+}
+.footer .footContact .btnList .ul .reserve p {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/footer_contact_icon_01.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footContact .btnList .ul .contact a {
+  background: #a3d1e7;
+}
+.footer .footContact .btnList .ul .contact p {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/footer_contact_icon_02.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footPanel {
+  position: relative;
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  top: 60px;
+  right: 5%;
+  width: 60px;
+  cursor: pointer;
+}
+.footer .footPanel .footBox {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #95c8de;
+}
+.footer .footPanel .logo {
+  width: 200px;
+  margin: 0 auto 30px;
+}
+.footer .footPanel .sns {
+  margin: 0 0 30px;
+}
+.footer .footPanel .sns .ul .li {
+  display: inline-block;
+}
+.footer .footPanel .sns .ul .li a {
+  display: block;
+}
+.footer .footPanel .sns .ul .insta {
+  width: 18px;
+}
+.footer .footPanel .sns .ul .fb {
+  width: 9px;
+  margin: 0 0 0 30px;
+}
+.footer .footPanel .blogLink {
+  max-width: 280px;
+  margin: 0 auto 30px;
+}
+.footer .footPanel .blogLink a {
+  display: block;
+  padding: 5px;
+  color: #ffffff;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/footer_btn_arrow.png) right 15px center no-repeat #529cb6;
+}
+.footer .footPanel .footNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 0;
+  text-align: left;
+}
+.footer .footPanel .footNav .ul {
+  width: 25%;
+}
+.footer .footPanel .footNav .ul .li + .li {
+  margin: 20px 0 0;
+}
+.footer .footPanel .footNav .ul .li a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .copy {
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #529cb6;
+}
+
+/*   モーダルウインドウ
+-------------------------------------------------- */
+.modalOverlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modalClose {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 10000;
+  text-indent: 9999px;
+  white-space: nowrap;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/mdl_close.png) no-repeat;
+  background-size: 16px auto;
+}
+
+.modalBoxWrap {
+  padding: 20px 10px;
+}
+
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 1380px;
+  min-width: 250px;
+  max-height: 100%;
+}
+.modalContent > div {
+  overflow: auto;
+  height: 100%;
+}
+.modalContent .mdlBody .mdlTtlBox {
+  margin: 0 0 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.modalContent .mdlBody .mdlTtlBox .mdlTtl {
+  margin: 0 0 30px;
+  font-size: 0;
+}
+.modalContent .mdlBody .mdlTtlBox .mdlTtl p {
+  display: inline;
+  font-size: 24px;
+}
+.modalContent .mdlBody .mdlTtlBox .mdlTtl .em {
+  color: #e69200;
+}
+.modalContent .mdlBody .mdlTtlBox .dl {
+  display: table;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.modalContent .mdlBody .mdlTtlBox .dl > * {
+  display: table-cell;
+  padding: 15px 20px;
+}
+.modalContent .mdlBody .mdlTtlBox .dl .dt {
+  background: #4a4e50;
+}
+.modalContent .mdlBody .mdlTtlBox .dl .dd {
+  text-align: left;
+  background: #6a7072;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox {
+  position: relative;
+  padding: 60px 20px 30px;
+  text-align: center;
+  background: #ffffff;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemTtl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #75b7d3;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody .txt {
+  font-size: 13px;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody .arrow {
+  width: 20px;
+  margin: 0 auto;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .img01 {
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .arrow {
+  margin: 20px auto;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box .screenImg {
+  width: 35%;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box .txt {
+  width: 60%;
+  text-align: left;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody02 .txt p + p {
+  margin: 20px 0 0;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody02 .img02 {
+  max-width: 260px;
+  margin: 20px auto;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .top {
+  margin: 0 0 40px;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .ttl + .txt {
+  text-align: left;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .ttl + .txt p + p {
+  margin: 20px 0 0;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .img03 {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 160px;
+}
+.modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .img06 {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 60%;
+}
+@media (min-width: 1025px) {
+  .modalContent .mdlBody .mdlPanelList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox {
+    width: calc(33.3333333333% - 25px);
+  }
+}
+.modalContent .mdlClose {
+  padding: 0 0 10px;
+  text-align: right;
+}
+.modalContent .mdlClose .mdlCloseBtn {
+  display: inline-block;
+  width: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .modalClose {
+    right: 0;
+    top: 20px;
+  }
+
+  .modalContent .mdlBody .mdlTtlBox {
+    margin: 0 0 40px;
+  }
+  .modalContent .mdlBody .mdlTtlBox .mdlTtl {
+    margin: 0 0 20px;
+  }
+  .modalContent .mdlBody .mdlTtlBox .mdlTtl p {
+    font-size: 18px;
+  }
+  .modalContent .mdlBody .mdlTtlBox .dl {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .modalContent .mdlBody .mdlTtlBox .dl > * {
+    display: block;
+    padding: 10px;
+  }
+  .modalContent .mdlBody .mdlTtlBox .dl .dd {
+    text-align: center;
+  }
+  .modalContent .mdlBody .mdlPanelList {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox {
+    padding: 50px 20px 30px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox + .itemBox {
+    margin: 40px 0 0;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemTtl {
+    top: -20px;
+    font-size: 18px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody .txt {
+    font-size: 13px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody .arrow {
+    width: 18px;
+    margin: 0 auto;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .img01 {
+    max-width: 280px;
+    margin: 0 auto 20px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .arrow {
+    margin: 15px auto;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box .screenImg {
+    width: 35%;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody01 .box .txt {
+    width: 60%;
+    text-align: left;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody02 .txt p + p {
+    margin: 15px 0 0;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody02 .img02 {
+    max-width: 220px;
+    margin: 15px auto;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .top {
+    margin: 0 0 30px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .ttl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .ttl + .txt p + p {
+    margin: 15px 0 0;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .img03 {
+    position: static;
+    width: 160px;
+    margin: 20px auto 0;
+  }
+  .modalContent .mdlBody .mdlPanelList .itemBox .itemBody03 .img06 {
+    position: static;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto 0;
+  }
+}
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

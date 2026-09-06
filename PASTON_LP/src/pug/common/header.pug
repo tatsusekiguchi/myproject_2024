@@ -1,0 +1,60 @@
+// ▽header▽
+header.header
+	.logo
+		a(href="#")
+			img(src=(root_path || '') + "image/common/header_logo.png", alt="PASTONE")
+	nav.navBox
+		.nav__wrap
+			.nav__inner
+				.nav__logo
+					a(href="#")
+						img(src=(root_path || '') + "image/common/header_nav_logo.png", alt="PASTONE")
+				.nav__category
+					p.ttl CATEGORY
+					.nav__category__list
+						ul
+							li
+								a(href="#") ⚪︎ TOP
+							li
+								a(href="#section__about") ⚪︎ ABOUT
+							li
+								a(href="#section__works") ⚪︎ WORKS
+							li
+								a(href="#section__people") ⚪︎ PEOPLE
+							li
+								a(href="#interviewPanel") ⚪︎ INTERVIEW
+						ul
+							li
+								a(href="#section__data") ⚪︎ JOB DATA
+							li
+								a(href="#section__company") ⚪︎ COMPANY
+							li
+								a(href="#section__recruit") ⚪︎ RECRUIT
+							li
+								a(href="#section__contact") ⚪︎ CONTACT
+				.nav__bottom
+					.nav__img
+						img(src=(root_path || '') + "image/top/left_sec_img.png", alt="")
+					.nav__sns
+						dl
+							dt FOLLOW ME
+							dd
+								ul
+									li
+										a(href="#", target="_blank", rel="noopener")
+											img(src=(root_path || '') + "image/common/sns_insta.png", alt="")
+									li
+										a(href="#", target="_blank", rel="noopener")
+											img(src=(root_path || '') + "image/common/sns_youtube.png", alt="")
+									li
+										a(href="#", target="_blank", rel="noopener")
+											img(src=(root_path || '') + "image/common/sns_line.png", alt="")
+					.nav__copy
+						p Copyright &copy; PASTONE, Ltd. All rights reserved.
+			.nav__photo
+				img(src=(root_path || '') + "image/common/header_nav_photo.png", alt="")
+	.hamburger
+		span
+		span
+		span
+// △header△

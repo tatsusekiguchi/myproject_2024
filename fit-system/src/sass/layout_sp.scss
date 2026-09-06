@@ -1,0 +1,1158 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        position: relative;
+        height: 400px;
+      }
+      .kvTtl {
+        left: 20px;
+        bottom: 60px;
+        h1 {
+          margin: 0 0 15px;
+          font-size: 30px;
+          + p {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .topHeadLinePanel {
+      padding: 30px 0;
+      .webgene-blog {
+        .webgene-item {
+          .dl {
+            .dt {
+              display: block;
+              margin: 0 0 10px;
+            }
+            .dd {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      .secBox {
+        padding: 80px 0 0;
+        .leftBox {
+          margin: 0 0 30px;
+        }
+        .rightBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+          .toStr {
+            margin: 30px 0 0;
+          }
+        }
+        .imgBox {
+          position: relative;
+          top: 10px;
+          width: 200px;
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .sec02,
+    .sec04 {
+      padding: 80px 0;
+      .listBox {
+        max-width: 330px;
+        .ul {
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          .title {
+            margin: 15px 0 0;
+          }
+          .iconBox {
+            .icon {
+              max-width: 260px;
+            }
+          }
+        }
+      }
+      .btnMore {
+        margin: 50px auto 0;
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secBox {
+        margin: 40px 0 0;
+        .txtBox {
+          padding: 30px 40px;
+          background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/top_sec03_tri.png)
+            right top no-repeat #ffffff;
+          background-size: 30px auto;
+        }
+      }
+    }
+    .sec05 {
+      .secBox {
+        padding: 80px 0;
+        .leftBox {
+          margin: 0 0 30px;
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+        .rightBox {
+          .webgene-blog {
+            .webgene-item {
+              padding: 20px 40px 20px 10px;
+              background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/btn_more.png)
+                right 10px center no-repeat;
+              background-size: 25px auto;
+              .dl {
+                .dt {
+                  display: block;
+                  margin: 0 0 10px;
+                }
+                .dd {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .imgBox {
+          width: 200px;
+          margin: 40px auto 0;
+        }
+      }
+    }
+    .sec06 {
+      margin: 100px 0;
+      .secPanel {
+        padding: 40px 20px;
+      }
+      .secBox {
+        padding: 30px 20px;
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+          .pageSecTtl {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .sec07 {
+      padding: 0 0 150px;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .pageSecTtlBox {
+            margin: 0 0 30px;
+          }
+          .txt {
+            margin: 0 0 30px;
+          }
+          .btnList {
+            max-width: 330px;
+            .ul {
+              .li {
+                a {
+                  padding: 20px 10px 20px 20px;
+                  background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/btn_more.png)
+                    right 20px center no-repeat;
+                  background-size: 25px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain {
+    .topContainer {
+      .secBox {
+        padding: 80px 0 0;
+        .leftBox {
+          margin: 0 0 30px;
+          .ttl {
+            font-size: 30px;
+            text-align: left;
+          }
+        }
+        .rightBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .imgBox {
+          position: relative;
+          top: 10px;
+          width: 200px;
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      .secWrap01 {
+        padding: 80px 10px 150px;
+      }
+      .secContainer {
+        + .secContainer {
+          margin: 50px 0 0;
+        }
+      }
+      .panelTtlBox {
+        margin: 0 0 20px;
+        .panelTtl {
+          display: inline-block;
+          max-width: none;
+          padding: 0 20px 0 0;
+          .ttl01 {
+            width: 160px;
+            margin: 0 0 10px;
+          }
+        }
+      }
+      .topBox {
+        .txtBox {
+          padding: 20px 10px;
+          .btnMoreBox {
+            margin: 40px 0 0;
+          }
+          .btnMoreList {
+            margin: 40px 0 0;
+            .btnMore + .btnMore {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .consult {
+        padding: 20px;
+        .dl {
+          .dt {
+            font-size: 18px;
+          }
+        }
+      }
+      .worksBox {
+        padding: 40px 10px;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .listBox {
+          max-width: 330px;
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+            }
+            .title {
+              margin: 15px 0 0;
+            }
+            .iconBox {
+              .icon {
+                max-width: 260px;
+              }
+            }
+          }
+        }
+        .btnMore {
+          margin: 30px auto 0;
+        }
+      }
+      .flowBox {
+        padding: 40px 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .flowList {
+          max-width: 400px;
+          .ul {
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              width: 1px;
+              height: 100%;
+              margin: 0 auto;
+              background: #1c4979;
+            }
+            .li {
+              text-align: center;
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btmImg {
+      right: 5%;
+      width: 200px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topContainer {
+      .secBox {
+        padding: 80px 0 0;
+        .leftBox {
+          margin: 0 0 30px;
+          .ttl {
+            font-size: 30px;
+            text-align: left;
+          }
+        }
+        .rightBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .imgBox {
+          position: relative;
+          top: 10px;
+          width: 200px;
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      .secWrap {
+        padding: 80px 0 150px;
+      }
+      .secContainer {
+        + .secContainer {
+          margin: 50px 0 0;
+        }
+      }
+      .topBox {
+        .txtBox {
+          padding: 20px 10px;
+        }
+      }
+      .introBox {
+        padding: 20px;
+        .dl {
+          display: block;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 100%;
+            margin: 0 0 10px;
+            padding: 0 0 0 10px;
+            font-size: 18px;
+          }
+          .dd {
+            width: 100%;
+          }
+        }
+      }
+      .introBox01 {
+        .dl {
+          .dt {
+            width: 100%;
+          }
+          .dd {
+            width: 100%;
+          }
+        }
+      }
+      .introBox02 {
+        .dl {
+          .dt {
+            width: 100%;
+          }
+          .dd {
+            width: 100%;
+          }
+        }
+      }
+      .worksBox {
+        padding: 40px 10px;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .listBox {
+          max-width: 330px;
+          .ul {
+            .li {
+              + .li {
+                margin: 40px 0 0;
+              }
+            }
+            .title {
+              margin: 15px 0 0;
+            }
+            .iconBox {
+              .icon {
+                max-width: 260px;
+              }
+            }
+          }
+        }
+        .btnMore {
+          margin: 30px auto 0;
+        }
+      }
+      .imgBox {
+        position: absolute;
+        right: 30px;
+        bottom: -30px;
+        width: 200px;
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .pageSecTtlBox {
+        margin: 0 0 20px;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .infoBox {
+        .dl {
+          .dt {
+            width: 130px;
+          }
+          .dd {
+            padding: 15px 20px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 80px 0;
+      .pageSecTtlBox {
+        margin: 0 0 40px;
+      }
+      .secBox {
+        .photoBox {
+          .map {
+            max-width: 140px;
+            margin: 0 auto;
+          }
+        }
+        .txtBox {
+          max-width: 600px;
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	cases
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .casesMain {
+    .topContainer {
+      .secBox {
+        padding: 80px 0 0;
+        .leftBox {
+          margin: 0 0 30px;
+          .ttl {
+            font-size: 30px;
+            text-align: left;
+          }
+        }
+        .rightBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .imgBox {
+          position: relative;
+          top: 10px;
+          width: 200px;
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      padding: 80px 0;
+      .secContainer {
+        + .secContainer {
+          margin: 50px 0 0;
+        }
+      }
+      .ttlCase {
+        width: 140px;
+        font-size: 15px;
+      }
+      .secPanel {
+        padding: 20px;
+      }
+      .topBox {
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+      .secBox {
+        margin: 40px 0 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	works
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .worksMain {
+    .topContainer {
+      .secBox {
+        padding: 80px 0 0;
+        .leftBox {
+          margin: 0 0 30px;
+          .ttl {
+            font-size: 30px;
+            text-align: left;
+          }
+        }
+        .rightBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .imgBox {
+          position: relative;
+          top: 10px;
+          width: 200px;
+          margin: 30px auto 0;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      padding: 80px 0;
+      .clientPanel {
+        padding: 30px 20px;
+        .leftBox {
+          margin: 0 0 10px;
+        }
+        .ul {
+          .li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 80px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .secBox {
+        padding: 40px 20px;
+        background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/top_sec03_tri.png)
+          right top no-repeat #f7f2dc;
+        background-size: 30px auto;
+      }
+    }
+    .sec03 {
+      padding: 80px 0 150px;
+      .worksList {
+        max-width: 360px;
+        margin: 0 auto;
+        > .ul {
+          > .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .txtBox {
+            padding: 15px;
+            .ttl {
+              font-size: 18px;
+              &:after {
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & + .footer {
+      &::before {
+        top: -115px;
+        right: 20px;
+        width: 200px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      padding: 80px 0 150px;
+      .secBox {
+        padding: 0 0 40px;
+        &::before {
+          left: 20px;
+        }
+        .numBox {
+          width: 60px;
+          .num {
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            font-size: 18px;
+          }
+        }
+        .txtBox {
+          width: calc(100% - 60px);
+          .ttl {
+            margin: 0 0 10px;
+            padding: 5px 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    & + .footer {
+      &::before {
+        top: -180px;
+        right: 20px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .topContainer {
+      padding: 60px 0;
+      .secBox {
+        padding: 40px 20px;
+        background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/recruit_box_tri.png)
+          right top no-repeat #f7f2dc;
+        background-size: 30px auto;
+        .ttl {
+          p {
+            font-size: 15px;
+          }
+          .em {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      padding: 0 0 80px;
+      .secPanel {
+        .txtBox {
+          .box {
+            padding: 20px;
+          }
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 24px;
+          }
+          .name {
+            margin: 20px 0 0;
+            .em {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secPanel {
+        padding: 40px 20px;
+        background: url(https://fit-system240119.smooooth.jp/system_panel/uploads/images/recruit_box_tri.png)
+          right top no-repeat #ffffff;
+        background-size: 30px auto;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .title {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secContainer {
+        + .secContainer {
+          margin: 50px 0 0;
+        }
+      }
+      .ttlCase {
+        width: 140px;
+        font-size: 14px;
+      }
+      .secPanel {
+        padding: 15px;
+      }
+      .topBox {
+        .txtBox {
+          padding: 15px 0;
+          .txtTtl {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+            .dl {
+              .dt {
+                font-size: 18px;
+              }
+              .dd {
+                padding: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .infoBox {
+        .dl {
+          .dt {
+            width: 130px;
+          }
+          .dd {
+            padding: 15px 20px;
+          }
+        }
+      }
+      .list {
+        margin: 40px 0 0;
+        .ul {
+          max-width: 320px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec06 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 15px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .otherTtl {
+          padding: 20px 10px 5px;
+        }
+
+        .otherRadio {
+          .dt {
+            text-align: left;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadPanel {
+        padding: 20px 0;
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          display: block;
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          width: 100%;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .pageSecTtlBox {
+      margin: 0 0 40px;
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secBox {
+        .photoBox {
+          .name {
+            .em {
+              font-size: 20px;
+            }
+          }
+        }
+        .txtBox {
+          .ttl {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .infoBox {
+        .dl {
+          .dt {
+            width: 130px;
+          }
+          .dd {
+            padding: 15px 20px;
+            .ul {
+              .line {
+                p {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .list {
+        margin: 40px 0 0;
+        .ul {
+          max-width: 320px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 0;
+      .secBox {
+        padding: 0 0 60px;
+        .photoBox {
+          .photo {
+            max-width: 400px;
+          }
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          .dl {
+            + .dl {
+              margin: 30px 0 0;
+            }
+            .dt {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0 0;
+      .topTxt {
+        padding: 0 0 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 60px 0 100px;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btnBack {
+        margin: 60px auto 0;
+      }
+    }
+  }
+}

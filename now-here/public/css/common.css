@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Kosugi Maru", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3d3e3d;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #3d3e3d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #00a65a;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 95px;
+    padding: 10px 20px;
+  }
+  .header .headWrap .leftBox {
+    position: relative;
+    width: 15%;
+  }
+  .header .headWrap .leftBox .logo {
+    max-width: 240px;
+  }
+  .header .headWrap .leftBox .logo a {
+    display: block;
+  }
+  .header .headWrap .rightBox {
+    width: 85%;
+    padding: 0 0 15px;
+  }
+  .header .headWrap .rightBox .itemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin: 0 0 0 4%;
+  }
+  .header .headWrap .rightBox .mailBox {
+    width: 100%;
+  }
+  .header .headWrap .rightBox .mailBox a {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    color: #3d7154;
+    text-align: center;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+  .header .headWrap .rightBox .mailBox a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: #3d7154;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s ease;
+    transition-property: transform;
+  }
+  .header .headWrap .rightBox .mailBox a:hover {
+    opacity: 1;
+    color: #f1f0e5;
+  }
+  .header .headWrap .rightBox .mailBox a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .header .headWrap .rightBox .mailBox a p {
+    position: relative;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navBox .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navBox .navList .ul {
+    display: flex;
+    max-width: 500px;
+    min-width: 580px;
+    width: 100%;
+  }
+  .navBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+  }
+  .navBox .navList .ul > .li > a {
+    display: block;
+    padding: 0 0 0 10px;
+    color: #ffffff;
+    background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/nav_arrow.png) left center no-repeat;
+  }
+  .navBox .navList .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList .ul .linkTxt {
+    position: relative;
+    display: block;
+  }
+  .navBox .navList .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList .ul .pulldown:hover .subList {
+    top: 95px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 104px 0 0;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background: #00a65a;
+}
+.pageKvPanel .pageKvTitle {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+}
+.pageSecTtlBox .pageSecTtl {
+  padding: 0 0 25px;
+  font-size: 36px;
+  color: #00a65a;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center bottom no-repeat;
+  background-size: 80px auto;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  max-width: 300px;
+}
+.btnMore a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #00a65a;
+}
+.btnMore a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #f2f1e6;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.5s ease;
+  transition-property: transform;
+}
+.btnMore a:hover {
+  opacity: 1;
+  color: #3d3e3d;
+}
+.btnMore a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btnMore a p {
+  position: relative;
+  padding: 0 10px;
+  background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+  background-size: 5px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 80px 0 30px;
+  color: #ffffff;
+  background: #00a65a;
+}
+.footer .pagetop {
+  position: absolute;
+  top: -60px;
+  right: 3%;
+  width: 100px;
+  cursor: pointer;
+}
+.footer .topBox {
+  margin: 0 0 40px;
+}
+.footer .topBox .ttl {
+  margin: 0 0 30px;
+  font-size: 40px;
+}
+.footer .topBox .contactItem .ul .li + .li {
+  margin: 15px 0 0;
+}
+.footer .topBox .contactItem .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  color: #ffffff;
+}
+.footer .topBox .contactItem .ul .tel a {
+  background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .topBox .contactItem .ul .mail a {
+  background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footBox .leftBox .logo {
+  width: 100px;
+  margin: 0 0 20px;
+}
+.footer .footBox .leftBox .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footBox .leftBox .infoBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.footer .footBox .leftBox .infoBox .dl .dt {
+  width: 120px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footBox .leftBox .infoBox .dl .dd {
+  width: calc(100% - 125px);
+  padding: 5px 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footBox .leftBox .infoBox .dl .dd a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footBox .rightBox .linePanel {
+  padding: 20px;
+  border-radius: 6px;
+  background: #f1f0e5;
+}
+.footer .footBox .rightBox .linePanel .pTtl {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #00a65a;
+  text-align: center;
+}
+.footer .footBox .rightBox .linePanel .lineBox {
+  padding: 15px 30px;
+  color: #3d3e3d;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.footer .footBox .rightBox .linePanel .lineBox .txtBox {
+  line-height: 2;
+}
+.footer .footBox .rightBox .linePanel .lineBox .txtBox .ttl {
+  font-size: 20px;
+}
+.footer .footBox .rightBox .linePanel .lineBox .txtBox .txt {
+  line-height: 1.7;
+}
+.footer .footBox .rightBox .linePanel .lineBox .qr {
+  width: 80px;
+}
+.footer .footBox .rightBox .linePanel .lineBox .qr a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .footer .footBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footBox .leftBox {
+    width: 40%;
+  }
+  .footer .footBox .rightBox {
+    width: 50%;
+  }
+  .footer .footBox .rightBox .linePanel .lineBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer .copy {
+  margin: 80px 0 0;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

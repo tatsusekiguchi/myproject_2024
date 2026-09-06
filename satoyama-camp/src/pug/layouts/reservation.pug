@@ -1,0 +1,123 @@
+// ▽メイン▽
+main#reservation.main
+    .pageKvContainer
+        .pageKvPanel
+            .pageKvTitle
+                h1 予約について
+    .pageLogoBox
+        .logo
+            img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+    .sec01
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | ご予約の
+                    em 前
+                    | に
+            .secContainer
+                .cntInner
+                    .secBox
+                        .ttl
+                            h3 1サイト大人の利用は5名までとなります
+                        .txt
+                            p 学生・団体やサークル仲間等での６名以上でのご利用は、ご遠慮いただいております。
+                            p ※各施設の定員を超えたご利用はできません。
+                    .secBox
+                        .ttl
+                            h3 グループやご家族でのご利用は2サイトまで
+                        .txt
+                            p テントサイト、バンガローなど全ての施設を合わせて一度にご予約いただける施設数は 2 サイトまでとなります。
+                            p ※他の方のお名前でご予約いただいた場合でも、グループで合計 ２ サイトまでとなります。
+                    .secBox
+                        .ttl
+                            h3 当キャンプ場は里山の方々に迷惑の掛からないよう配慮したルールとなっております
+                        .txt
+                            p キャンプ場内・外においても、近隣の方に迷惑となる騒音や投光、写真、動画撮影などは行わないようにして下さい。<br>特に、夜9時過ぎ～早朝には大声で騒がない、大きな音を出さない等ご配慮をお願い致します。
+                            p ※迷惑行為が認められた場合、サイトの変更もお願いする場合もございます。
+    .sec02
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | 予
+                    em 約
+                    | をする
+            p 金原里山キャンプ場のご予約はオンラインもしくはお電話にて承っております。
+            .itemList
+                .itemBox.itemBox01
+                    dl
+                        dt お電話でのお問い合わせ
+                        dd
+                            a(href="tel:0581785171") 0581-78-5171
+                            p 【受付時間】10：00～17:00
+                .itemBox.itemBox02
+                    dl
+                        dt オンライン予約はこちら
+                        dd
+                            .icon01
+                                img(src=(root_path || '') + "image/reservation/sec02_icon_01.png", alt="")
+                            .icon02
+                                img(src=(root_path || '') + "image/reservation/sec02_icon_02.png", alt="")
+                            a(href="https://www.nap-camp.com/gifu/16548", target="_blank", rel="noopener") ご予約はこちら
+    .sec03
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    em 空
+                    | き状況
+            .schedulePanel
+    .sec04
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    em キャンセル
+                    | について
+            .secContainer
+                .cntInner
+                    .topBox
+                        .ttl
+                            h3 予約の変更、キャンセルは電話またはメールにてご連絡お願いします。<br>ご利用日1週間前のキャンセルから、キャンセル料がかかります。
+                        .txt
+                            p ※キャンセル料が発生する利用日から別日への変更はできません。
+                            p ※天候不良や体調不良などのお客様都合でのキャンセルについても、通常通りキャンセル料は発生します。
+                            p ※台風や災害、警報などでキャンプ場都合で閉鎖する場合は、キャンセル料はかかりません。
+                    .secBoxList
+                        .secBox
+                            .subTtl
+                                p 宿泊（オートキャンプサイト）
+                            .table01
+                                table
+                                    tbody
+                                        tr
+                                            th 3日前〜前日
+                                            td サイト料金の50%
+                                        tr
+                                            th ご利用日当日
+                                            td サイト料金の100%
+                        .secBox
+                            .subTtl
+                                p 宿泊（バンガロー・コテージ）
+                            .table01
+                                table
+                                    tbody
+                                        tr
+                                            th 1週間〜4日前
+                                            td サイト料金の30%
+                                        tr
+                                            th 3日前〜前日
+                                            td サイト料金の50%
+                                        tr
+                                            th ご利用日当日
+                                            td サイト料金の100%
+                        .secBox
+                            .subTtl
+                                p 日帰り
+                            .table01
+                                table
+                                    tbody
+                                        tr
+                                            th 3日前〜前日
+                                            td サイト料金の50%
+                                        tr
+                                            th ご利用日当日
+                                            td サイト料金の100%
+// △メイン△

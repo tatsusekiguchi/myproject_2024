@@ -1,0 +1,14 @@
+body {
+  opacity: 0;
+}
+.topMain .topKvTitleBox .topKvTitle {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.topMain .topKvTitleBox .sub {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.navBox {
+  right: -100%;
+}

@@ -1,0 +1,1167 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .mvPanel h1 {
+  color: #ffffff;
+}
+@media (min-width: 1025px) {
+  #top .mvPanel {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 90px);
+    max-height: 850px;
+  }
+  #top .mvPanel .mvMovie {
+    overflow: hidden;
+    position: absolute;
+    width: 125vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  #top .mvPanel .mvMovie video {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1225px) {
+  #top .mvPanel {
+    max-height: 700px;
+  }
+}
+#top #headLineContainer .secPanel .txtBox {
+  padding: 40px 20px;
+}
+#top #headLineContainer .secPanel .txtBox .inner {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+}
+#top #headLineContainer .secPanel .txtBox .titleBox {
+  margin: 0 0 20px;
+}
+#top #headLineContainer .secPanel .txtBox .titleBox h2 {
+  font-size: 36px;
+}
+#top #headLineContainer .secPanel .txtBox dl dt {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+#top #headLineContainer .secPanel .txtBox dl dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  #top #headLineContainer .secPanel {
+    display: flex;
+    align-items: center;
+  }
+  #top #headLineContainer .secPanel .txtBox {
+    width: 50%;
+  }
+  #top #headLineContainer .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 500px;
+  }
+  #top #headLineContainer .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #top #headLineContainer .secPanel:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+#top #problemSection {
+  padding: 100px 100px 100px 0;
+  background: #dff5ea;
+}
+#top #problemSection .secContainer {
+  padding: 100px 0;
+  background: #ffffff;
+}
+#top #problemSection .secTitle {
+  margin: 0 0 30px;
+  padding: 25px 0 0;
+  text-align: center;
+  background: url("../image/top/problem_top_icon.png") center top no-repeat;
+  background-size: 25px auto;
+}
+#top #problemSection .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#top #problemSection .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+#top #problemSection .secPanel h3 {
+  margin: 0 0 10px;
+  padding: 4px 0 4px 40px;
+  font-size: 18px;
+  color: #1c7bc1;
+  background: url("../image/top/problem_title_icon.png") left center no-repeat;
+  background-size: 32px auto;
+}
+#top #problemSection .secPanel .linkList {
+  padding: 0 25px;
+}
+#top #problemSection .secPanel .linkList ul li a {
+  display: block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+}
+#top #problemSection .secPanel .linkList ul li a span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url("../image/common/btn_arrow_right_white.png") right center no-repeat;
+  background-size: 5px auto;
+}
+#top #problemSection .secPanel .linkList--01 ul li a {
+  background: #00a4aa;
+}
+#top #problemSection .secPanel .linkList--02 ul li a {
+  background: #00aa81;
+}
+#top #problemSection .secPanel .linkList--03 ul li a {
+  background: #2dbce1;
+}
+@media (min-width: 1025px) {
+  #top #problemSection .secPanel .linkList ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 890px;
+    margin: -20px 0 0 -20px;
+  }
+  #top #problemSection .secPanel .linkList ul li {
+    margin: 20px 0 0 20px;
+  }
+}
+#top #problemSection .secPanel .productList {
+  padding: 0 25px;
+}
+#top #problemSection .secPanel .productList ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px 0 0 -20px;
+}
+#top #problemSection .secPanel .productList ul li {
+  width: calc(25% - 20px);
+  margin: 20px 0 0 20px;
+}
+#top #problemSection .secPanel .productList ul li a {
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+#top #problemSection .secPanel .productList ul li figcaption {
+  padding: 5px 0 0;
+}
+#top #trustSection .topContainer {
+  padding: 70px 20px 50px;
+  text-align: center;
+  background: url("../image/top/trust_bg_pc.png") center no-repeat;
+  background-size: cover;
+}
+#top #trustSection .topContainer h2 {
+  margin: 0 0 20px;
+}
+#top #trustSection .topContainer h2 span {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+#top #trustSection .topContainer h2 em {
+  display: inline-block;
+  padding: 0 5px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 0.8;
+  vertical-align: middle;
+  border-bottom: 5px solid #f38d19;
+}
+#top #trustSection .topContainer .txt {
+  margin: 0 0 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#top #trustSection .topContainer .linkList ul {
+  max-width: 188px;
+  margin: 0 auto;
+}
+#top #trustSection .topContainer .linkList ul li + li {
+  margin: 20px 0 0;
+}
+#top #trustSection .topContainer .linkList ul li a {
+  display: block;
+  padding: 8px 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  background: #f38d19;
+}
+#top #trustSection .topContainer .linkList ul li a span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url("../image/common/btn_arrow_right_white.png") right center no-repeat;
+  background-size: 5px auto;
+}
+#top #testContainer {
+  padding: 100px 0;
+}
+#top #testContainer .testButton {
+  max-width: 495px;
+  margin: 0 auto;
+}
+#top #testContainer .testButton a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  background: #1cc1b0;
+}
+#top #testContainer .testButton a span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url("../image/common/btn_arrow_right_white.png") right center no-repeat;
+  background-size: 5px auto;
+}
+#top #multiContainer {
+  margin: 0 0 100px;
+}
+#top #multiContainer .listBox ul dl {
+  padding: 20px 25px 40px;
+}
+#top #multiContainer .listBox ul dl dt {
+  margin: 0 0 20px;
+}
+#top #multiContainer .listBox ul dl dt span {
+  display: inline-block;
+  padding: 4px 0 0 30px;
+  background: url("../image/top/multi_icon_water.png") left bottom no-repeat;
+  background-size: 24px auto;
+}
+#top #multiContainer .listBox ul dl dt em {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+}
+#top #multiContainer .listBox ul dl dd {
+  line-height: 2;
+}
+#top #multiContainer .listBox ul .detailLink {
+  text-align: right;
+}
+#top #multiContainer .listBox ul .detailLink a {
+  display: inline-block;
+  width: 170px;
+  padding: 7px 10px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #1c7bc1;
+}
+#top #multiContainer .listBox ul .detailLink a span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url("../image/common/btn_arrow_right_blue.png") right center no-repeat;
+  background-size: 5px auto;
+}
+@media (min-width: 1025px) {
+  #top #multiContainer .listBox ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top #multiContainer .listBox ul li {
+    width: calc(50% - 25px);
+  }
+}
+#top #bnrContainer {
+  margin: 0 0 100px;
+}
+#top #bnrContainer .bnrList ul li a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  #top #bnrContainer .bnrList ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top #bnrContainer .bnrList ul li {
+    width: calc(50% - 25px);
+  }
+}
+#top #newsSection {
+  padding: 0 0 100px;
+}
+#top #newsSection .secTitle {
+  margin: 0 0 20px;
+  padding: 22px 0 0;
+  text-align: center;
+  background: url("../image/top/news_top_icon.png") center top no-repeat;
+  background-size: 19px auto;
+}
+#top #newsSection .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#top #newsSection .newsList ul {
+  background: url("../image/top/news_dot.png") left bottom repeat-x;
+  background-size: 10px auto;
+}
+#top #newsSection .newsList ul li {
+  display: flex;
+  padding: 15px 55px;
+  background: url("../image/top/news_dot.png") left top repeat-x;
+  background-size: 10px auto;
+}
+#top #newsSection .newsList ul li time {
+  width: 100px;
+}
+#top #newsSection .newsList ul li a {
+  display: block;
+}
+#top #newsSection .detailLink {
+  margin: 40px 0 0;
+  text-align: center;
+}
+#top #newsSection .detailLink a {
+  display: inline-block;
+  width: 170px;
+  padding: 7px 10px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #1c7bc1;
+}
+#top #newsSection .detailLink a span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+  background: url("../image/common/btn_arrow_right_blue.png") right center no-repeat;
+  background-size: 5px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+#productList .productListContainer {
+  padding: 100px 0;
+}
+#productList .productListContainer .secTitle {
+  margin: 0 0 60px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+#productList .productListContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#productList .productSection {
+  padding: 0 0 100px;
+}
+#productList .productSection h3 {
+  margin: 0 0 30px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+#productList .productSection h4 {
+  margin: 0 0 20px;
+  padding: 4px 0 4px 45px;
+  font-size: 18px;
+  color: #1c7bc1;
+  background: url("../image/common/page_title_icon_water.png") left 5px center no-repeat;
+  background-size: 32px auto;
+}
+#productList .productSection__text {
+  padding: 0 45px 45px;
+  line-height: 2;
+}
+#productList .listSection + .listSection {
+  margin: 70px 0 0;
+}
+#productList .listSection .productList {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#productList .listSection .productList ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+#productList .listSection .productList ul li {
+  width: calc(33.3333333333% - 20px);
+  margin: 30px 0 0 20px;
+}
+#productList .listSection .productList ul li a {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+#productList .listSection .productList ul li figure {
+  position: relative;
+  height: 380px;
+}
+#productList .listSection .productList ul li figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#productList .listSection .productList ul li figcaption {
+  padding: 5px 10px 0;
+}
+
+#productDetail .productDetailContainer {
+  padding: 100px 0;
+}
+#productDetail .productDetailContainer .headTxt {
+  margin: 0 0 80px;
+  font-size: 20px;
+  text-align: center;
+}
+#productDetail .productDetailContainer .secTitle {
+  margin: 0 0 30px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+#productDetail .productDetailContainer .secTitle h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+#productDetail .productDetailContainer .secTitle + .topTxt {
+  margin: 0 0 50px;
+  font-size: 20px;
+  text-align: center;
+}
+#productDetail .productDetailContainer .topProductList {
+  margin: 0 0 120px;
+}
+#productDetail .productDetailContainer .topProductList ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -30px;
+}
+#productDetail .productDetailContainer .topProductList ul li {
+  position: relative;
+  width: calc(33.3333333333% - 30px);
+  margin: 30px 0 0 30px;
+}
+#productDetail .productDetailContainer .topProductList ul .photo {
+  position: relative;
+  height: 380px;
+}
+#productDetail .productDetailContainer .topProductList ul .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#productDetail .productDetailContainer .topProductList ul .icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+}
+#productDetail .productDetailContainer .topProductList ul .icon a {
+  display: block;
+}
+#productDetail .productSection {
+  padding: 0 0 100px;
+}
+#productDetail .productSection h3 {
+  margin: 0 0 40px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+#productDetail .productSection h4 {
+  margin: 0 0 10px;
+  padding: 4px 0 4px 45px;
+  font-size: 18px;
+  color: #1c7bc1;
+  background: url("../image/common/page_title_icon_water.png") left 5px center no-repeat;
+  background-size: 32px auto;
+}
+#productDetail .productSection__text {
+  padding: 0 45px;
+  line-height: 2;
+}
+#productDetail .productSection .listSection {
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+#productDetail .productSection .listSection ol {
+  counter-reset: listNum;
+}
+#productDetail .productSection .listSection ol li {
+  padding: 0 0 30px;
+  border-bottom: 1px dotted #111111;
+}
+#productDetail .productSection .listSection ol li + li {
+  margin: 30px 0 0;
+}
+#productDetail .productSection .listSection ol li .ttl {
+  position: relative;
+  min-height: 35px;
+  margin: 0 0 10px;
+}
+#productDetail .productSection .listSection ol li .ttl::before {
+  content: counter(listNum);
+  counter-increment: listNum;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #00a4aa;
+}
+#productDetail .productSection .listSection ol li .ttl p {
+  padding: 4px 0 0 50px;
+  font-size: 18px;
+}
+#productDetail .productSection .photoSingle {
+  max-width: 640px;
+  margin: 40px auto 0;
+}
+#productDetail .productSection .photoMulti {
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+@media (min-width: 1025px) {
+  #productDetail .productSection .photoMulti ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -60px;
+  }
+  #productDetail .productSection .photoMulti ul li {
+    width: calc(50% - 60px);
+    margin: 60px 0 0 60px;
+  }
+}
+#productDetail .productSection .chartPanel {
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+#productDetail .productSection .chartPanel .ttl {
+  margin: 0 0 15px;
+  font-size: 18px;
+  color: #1c7bc1;
+}
+#productDetail .productSection .chartPanel table {
+  width: 100%;
+  border: 1px solid #1c7bc1;
+  border-bottom: none;
+}
+#productDetail .productSection .chartPanel table th,
+#productDetail .productSection .chartPanel table td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+#productDetail .productSection .chartPanel table th + *,
+#productDetail .productSection .chartPanel table td + * {
+  border-left: 1px solid #00a4aa;
+}
+#productDetail .productSection .chartPanel table thead th {
+  border-bottom: 1px solid #00a4aa;
+  background: #fff4a2;
+}
+#productDetail .productSection .chartPanel table tbody th,
+#productDetail .productSection .chartPanel table tbody td {
+  border-bottom: 1px solid #00a4aa;
+}
+#productDetail .productSection .chartPanel table tbody th {
+  width: 30%;
+}
+#productDetail .productSection aside {
+  padding: 10px 10px 0;
+}
+#productDetail .productSection aside p {
+  position: relative;
+  padding: 0 0 0 1em;
+  font-size: 15px;
+  line-height: 1.7;
+}
+#productDetail .productSection aside p::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#productDetail .productSection .listPanel {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#productDetail .productSection .listPanel ul {
+  padding: 10px 0;
+}
+#productDetail .productSection .listPanel ul li {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  font-size: 18px;
+  line-height: 2;
+  color: #1c7bc1;
+}
+#productDetail .productSection .descriptionBox {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 30px 20px;
+  color: #ffffff;
+  background: #2dbce1;
+}
+#productDetail .productSection .descriptionBox dl {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#productDetail .productSection .descriptionBox dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+#productDetail .productSection .descriptionBox dl dd {
+  line-height: 2;
+}
+#productDetail .productSection .itemList {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#productDetail .productSection .itemList ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+#productDetail .productSection .itemList ul li {
+  width: calc(25% - 20px);
+  margin: 30px 0 0 20px;
+}
+#productDetail .productSection .itemList ul li a {
+  display: block;
+}
+#productDetail .productSection .itemList ul li figure {
+  position: relative;
+  height: 165px;
+}
+#productDetail .productSection .itemList ul li figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#productDetail .productSection .itemList ul li figcaption {
+  padding: 5px 0 0;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+/*////////////////////////////////////////////////////////////
+	history
+///////////////////////////////////////////////////////////*/
+.historyMain .historyContainer {
+  padding: 100px 0;
+}
+.historyMain .historyContainer .secTitle {
+  margin: 0 0 60px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+.historyMain .historyContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.historyMain .historySection {
+  padding: 0 0 100px;
+}
+.historyMain .historySection h3 {
+  margin: 0 0 30px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+.historyMain .historyList > ol dl {
+  display: flex;
+  justify-content: space-between;
+}
+.historyMain .historyList > ol dl dt {
+  position: relative;
+  width: 150px;
+  padding: 0 10px;
+  line-height: 2;
+}
+.historyMain .historyList > ol dl dt::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed #000000;
+}
+.historyMain .historyList > ol dl dt::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background: url("../image/history/history_list_flow_icon.png") no-repeat;
+  background-size: 100% auto;
+}
+.historyMain .historyList > ol dl dd {
+  width: calc(100% - 170px);
+  padding: 0 0 45px;
+}
+.historyMain .historyList > ol .photoList {
+  max-width: 800px;
+  margin: 20px 0 0;
+}
+.historyMain .historyList > ol .photoList ul li figcaption {
+  padding: 5px 0 0;
+}
+@media (min-width: 1025px) {
+  .historyMain .historyList > ol .photoList ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px 0 0 -15px;
+  }
+  .historyMain .historyList > ol .photoList ul li {
+    width: calc(33.3333333333% - 15px);
+    margin: 15px 0 0 15px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+.featureMain .featureContainer {
+  padding: 100px 0;
+}
+.featureMain .featureContainer .secTitle {
+  margin: 0 0 60px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+.featureMain .featureContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.featureMain .featureSection {
+  padding: 0 0 100px;
+}
+.featureMain .featureSection h3 {
+  margin: 0 0 30px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+.featureMain .featureSection h4 {
+  margin: 0 0 20px;
+  padding: 4px 0 4px 45px;
+  font-size: 18px;
+  color: #1c7bc1;
+  background: url("../image/common/page_title_icon_water.png") left 5px center no-repeat;
+  background-size: 32px auto;
+}
+.featureMain .featureSection__text {
+  padding: 0 45px;
+  line-height: 2;
+}
+.featureMain .flowList {
+  padding: 30px 45px;
+}
+.featureMain .flowList ol li {
+  position: relative;
+  color: #ffffff;
+  background: #2dbce1;
+}
+.featureMain .flowList ol li + li {
+  margin: 70px 0 0;
+}
+.featureMain .flowList ol li + li::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
+  right: 0;
+  width: 83px;
+  height: 39px;
+  margin: 0 auto;
+  background: url("../image/feature/feature_flow_list_arrow.png") center no-repeat;
+  background-size: 100% auto;
+}
+.featureMain .flowList ol dl {
+  padding: 20px 0;
+}
+.featureMain .flowList ol dl dt {
+  padding: 0 50px;
+  font-size: 20px;
+}
+.featureMain .flowList ol dl dt span {
+  position: relative;
+  display: block;
+  width: 80px;
+  margin: 0 0 15px;
+  text-align: right;
+}
+.featureMain .flowList ol dl dt span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: auto 0;
+  background: #ffffff;
+}
+.featureMain .flowList ol dl dt em {
+  display: block;
+}
+.featureMain .flowList ol dl dd {
+  padding: 15px 50px;
+  line-height: 2;
+}
+.featureMain .flowList ol dl dd .hide {
+  display: none;
+}
+.featureMain .introPanel {
+  max-width: 1000px;
+  margin: 60px auto 0;
+}
+.featureMain .introPanel dl {
+  padding: 40px 0;
+  border-bottom: 1px dashed #000000;
+}
+.featureMain .introPanel dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.featureMain .introPanel dl dd {
+  line-height: 2;
+}
+.featureMain .introPanel dl dd p + p {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	testRequest
+///////////////////////////////////////////////////////////*/
+.testRequestMain .testRequestContainer {
+  padding: 100px 0;
+}
+.testRequestMain .testRequestContainer .secTitle {
+  margin: 0 0 60px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+.testRequestMain .testRequestContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.testRequestMain .testRequestSection {
+  padding: 0 0 100px;
+}
+.testRequestMain .testRequestSection h3 {
+  margin: 0 0 30px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+.testRequestMain .testRequestSection h4 {
+  margin: 0 0 20px;
+  padding: 4px 0 4px 45px;
+  font-size: 18px;
+  color: #1c7bc1;
+  background: url("../image/common/page_title_icon_water.png") left 5px center no-repeat;
+  background-size: 32px auto;
+}
+.testRequestMain .testRequestSection__text {
+  padding: 0 45px;
+  line-height: 2;
+}
+.testRequestMain .introSection {
+  margin: 60px 0 0;
+}
+.testRequestMain .introSection .introPanel {
+  padding: 0 45px;
+}
+.testRequestMain .introSection .introPanel dl {
+  padding: 30px 0;
+  border-bottom: 1px dashed #000000;
+}
+.testRequestMain .introSection .introPanel dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.testRequestMain .introSection .introPanel dl dd {
+  line-height: 2;
+}
+.testRequestMain .introSection .introPanel dl dd p + p {
+  margin: 20px 0 0;
+}
+.testRequestMain .photoSection {
+  margin: 60px 0 0;
+}
+.testRequestMain .photoSection .photoPanel {
+  padding: 0 45px;
+}
+.testRequestMain .photoSection .photoPanel .photoBox {
+  padding: 0 0 30px;
+}
+.testRequestMain .photoSection .photoPanel .photoBox .ttl {
+  padding: 0 10px 5px;
+}
+.testRequestMain .photoSection .photoPanel .photoBox ul {
+  display: flex;
+  justify-content: space-between;
+}
+.testRequestMain .photoSection .photoPanel .photoBox ul li {
+  position: relative;
+  width: calc(50% - 10px);
+  height: 270px;
+}
+.testRequestMain .photoSection .photoPanel .photoBox ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .testRequestMain .photoSection .photoPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testRequestMain .photoSection .photoPanel .photoBox {
+    width: calc(50% - 40px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	example
+///////////////////////////////////////////////////////////*/
+.exampleMain .exampleContainer {
+  padding: 100px 0;
+}
+.exampleMain .exampleContainer .secTitle {
+  margin: 0 0 60px;
+  padding: 35px 0 0;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_icon.png") center top no-repeat;
+  background-size: 30px auto;
+}
+.exampleMain .exampleContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.exampleMain .exampleSection {
+  padding: 0 0 100px;
+}
+.exampleMain .exampleSection h3 {
+  margin: 0 0 30px;
+  padding: 10px 45px;
+  font-size: 24px;
+  background: #dff5ea;
+}
+.exampleMain .innerSection {
+  padding: 0 45px;
+}
+.exampleMain .flowPanel .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.exampleMain .flowPanel dl dt {
+  margin: 0 0 10px;
+}
+.exampleMain .flowPanel dl dd + dd {
+  margin: 10px 0 0;
+  line-height: 2;
+}
+.exampleMain .flowPanel dl .chart01 {
+  max-width: 750px;
+}
+.exampleMain .flowPanel dl .chart02 {
+  max-width: 520px;
+}
+.exampleMain .flowPanel dl .chart03 {
+  max-width: 750px;
+}
+.exampleMain .flowPanel dl .chart04 {
+  max-width: 620px;
+}
+.exampleMain .flowPanel dl .chart05 {
+  max-width: 520px;
+}
+.exampleMain .flowPanel dl .chart06 {
+  max-width: 520px;
+}
+.exampleMain .examplePanel {
+  margin: 60px 0 0;
+}
+.exampleMain .examplePanel dl dt {
+  margin: 0 0 10px;
+}
+.exampleMain .examplePanel dl ul li figcaption {
+  padding: 5px 5px 0;
+}
+.exampleMain .examplePanel .exampleList01 {
+  max-width: 690px;
+}
+@media (min-width: 1025px) {
+  .exampleMain .examplePanel .exampleList01 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .exampleMain .examplePanel .exampleList01 ul li:nth-child(1) {
+    width: 270px;
+  }
+  .exampleMain .examplePanel .exampleList01 ul li:nth-child(2) {
+    width: 380px;
+  }
+}
+.exampleMain .examplePanel .exampleList02 {
+  max-width: 780px;
+}
+@media (min-width: 1025px) {
+  .exampleMain .examplePanel .exampleList02 ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -25px 0 0 -25px;
+  }
+  .exampleMain .examplePanel .exampleList02 ul li {
+    width: calc(50% - 25px);
+    margin: 25px 0 0 25px;
+  }
+  .exampleMain .examplePanel .exampleList02 ul li figure {
+    position: relative;
+    height: 270px;
+  }
+  .exampleMain .examplePanel .exampleList02 ul li figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.exampleMain .relationPanel {
+  margin: 60px 0 0;
+}
+.exampleMain .relationPanel dl dt {
+  margin: 0 0 10px;
+}
+.exampleMain .relationPanel .relationList ul li figcaption {
+  padding: 5px 5px 0;
+}
+@media (min-width: 1025px) {
+  .exampleMain .relationPanel .relationList ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -40px;
+  }
+  .exampleMain .relationPanel .relationList ul li {
+    width: calc(33.3333333333% - 40px);
+    margin: 40px 0 0 40px;
+  }
+  .exampleMain .relationPanel .relationList ul li figure {
+    position: relative;
+    height: 360px;
+  }
+  .exampleMain .relationPanel .relationList ul li figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .exampleMain .relationPanel .relationList ul.col4 {
+    margin: -20px 0 0 -20px;
+  }
+  .exampleMain .relationPanel .relationList ul.col4 li {
+    width: calc(25% - 20px);
+    margin: 20px 0 0 20px;
+  }
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox {
+  max-width: 640px;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul {
+  display: flex;
+  justify-content: space-between;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul li {
+  position: relative;
+  width: calc(50% - 40px);
+  height: 380px;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul li + li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  margin: auto 0;
+  background: url("../image/example/example_list_arrow.png") no-repeat;
+  background-size: 100% auto;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox > p {
+  padding: 5px 5px 0;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox + .beforeAfterBox {
+  margin: 30px 0 0;
+}

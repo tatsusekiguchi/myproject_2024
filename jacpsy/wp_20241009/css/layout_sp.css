@@ -1,0 +1,895 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top #news {
+  padding: 40px 0;
+}
+
+#top #news .ttl {
+  margin-bottom: 30px;
+}
+
+#top #news .ttl:before {
+  width: 115px;
+}
+
+#top #news .ttl h2 {
+  margin-right: 20px;
+  padding-left: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+#top #news .ttl > span {
+  font-size: 12px;
+}
+
+#top #news .ttl a {
+  width: 85px;
+  padding: 5px 0;
+  font-size: 10px;
+}
+
+#top #news ul li {
+  padding: 10px 0;
+  font-size: 11px;
+  border-bottom: 1px dotted #000000;
+}
+
+#top #news ul li span {
+  width: 55px;
+  margin: 0 20px 0 10px;
+  padding: 0;
+  font-size: 11px;
+}
+
+#top #aboutBox {
+  padding: 0 0 40px;
+}
+
+#top #aboutBox > dl {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px dotted #000000;
+}
+
+#top #aboutBox > dl dt {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 18px;
+  background-size: 20px auto;
+}
+
+#top #aboutBox > ul a {
+  padding: 20px 0;
+  font-size: 21px;
+}
+
+/*////////////////////////////////////////////////////////////
+	学会について
+///////////////////////////////////////////////////////////*/
+#about #sec01 .cntBox p + p {
+  margin-top: 20px;
+}
+
+#about #sec02 .cntBox > dl {
+  text-align: center;
+}
+
+#about #sec02 .cntBox > dl > dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#about #sec02 .cntBox > dl > dd {
+  padding: 15px 10px;
+}
+
+#about #sec02 .cntBox .history > dd {
+  padding: 0;
+}
+
+#about #sec02 .cntBox .historyBox > dt {
+  display: none;
+}
+
+#about #sec02 .cntBox .historyBox ul li {
+  border-bottom: 1px solid #22a096;
+}
+
+#about #sec02 .cntBox .historyBox ul li div {
+  padding: 15px 10px;
+  border-bottom: 1px solid #22a096;
+}
+
+#about #sec02 .cntBox .historyBox ul li p {
+  padding: 15px 10px;
+}
+
+#about #sec04 dl dt {
+  font-size: 16px;
+}
+
+#about #sec04 dl dt + dd {
+  padding: 20px 0;
+}
+
+#about #sec05 ul {
+  margin: -20px 0 0 -20px;
+}
+
+#about #sec05 ul li {
+  width: calc((100% / 2) - 20px);
+  margin: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+#about #sec05 ul li a {
+  padding: 20px 0;
+}
+
+#about #sec06 ul {
+  padding: 20px;
+}
+
+#about #sec06 ul li em {
+  min-width: 60px;
+}
+
+/*////////////////////////////////////////////////////////////
+	大会
+///////////////////////////////////////////////////////////*/
+#meeting #infoBox {
+  margin-bottom: 40px;
+}
+
+#meeting #infoBox dl {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#meeting #infoBox dl dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#meeting #infoBox dl dd ol li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #22a096;
+}
+
+#meeting #infoBox dl + a {
+  display: block;
+  max-width: 225px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: underline;
+  background: #f6f6f6;
+}
+
+#meeting #secTop dl {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#meeting #secTop dl dt {
+  font-size: 20px;
+}
+
+#meeting #secTop dl + p + p {
+  margin-top: 20px;
+}
+
+#meeting .tblBox {
+  border-bottom: 1px solid #22a096;
+}
+
+#meeting .tblBox dl {
+  text-align: center;
+}
+
+#meeting .tblBox dl dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#meeting .tblBox dl dd {
+  padding: 15px 10px;
+  line-height: 2;
+}
+
+#meeting .tblBox dl dd div + div {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #d6d6d6;
+}
+
+#meeting #sec03 .tblBox {
+  margin-bottom: 20px;
+}
+
+#meeting #sec03 .tblBox + p {
+  margin-bottom: 20px;
+}
+
+#meeting #sec03 ul {
+  margin-bottom: 20px;
+}
+
+#meeting #sec03 ul li {
+  display: block;
+   max-width: 280px;
+  margin-right: 0;
+}
+
+#meeting #sec03 ul li a {
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+#meeting #sec03 ul li + li {
+  margin-top: 20px;
+}
+
+#meeting #sec03 ul + p {
+  margin-bottom: 40px;
+}
+
+#meeting #sec03 ul + p + a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+#meeting #sec04 .inSec h3,
+#meeting #sec05 .inSec h3,
+#meeting #sec06 .inSec h3,
+#meeting #sec07 .inSec h3,
+#meeting #sec08 .inSec h3 {
+  font-size: 18px;
+}
+
+#meeting #sec04 .inSec h4,
+#meeting #sec05 .inSec h4,
+#meeting #sec06 .inSec h4,
+#meeting #sec07 .inSec h4,
+#meeting #sec08 .inSec h4 {
+  font-size: 18px;
+  border-left: 2px solid #a8a8a8;
+}
+
+#meeting #sec04 .inSec p + p,
+#meeting #sec05 .inSec p + p,
+#meeting #sec06 .inSec p + p,
+#meeting #sec07 .inSec p + p,
+#meeting #sec08 .inSec p + p {
+  margin-top: 20px;
+}
+
+#meeting #sec04 .inSec + .inSec,
+#meeting #sec05 .inSec + .inSec,
+#meeting #sec06 .inSec + .inSec,
+#meeting #sec07 .inSec + .inSec,
+#meeting #sec08 .inSec + .inSec {
+  margin-top: 20px;
+}
+
+#meeting #sec08 .inSec:first-child {
+  margin-top: 0;
+}
+
+#meeting #sec08 .tblBox dd {
+  border-top: 1px solid #22a096;
+}
+
+#meeting #sec01,
+#meeting #sec02,
+#meeting #sec03,
+#meeting #sec04,
+#meeting #sec05,
+#meeting #sec06,
+#meeting #sec07,
+#meeting #sec08,
+#meeting #sec09 {
+  padding: 85px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	研修・研究会
+///////////////////////////////////////////////////////////*/
+#training #sec01,
+#training #sec02,
+#training #sec03 {
+  padding: 85px 0 0;
+}
+
+#information #sec01,
+#information #sec02,
+#information #sec03,
+#information #sec04,
+#information #sec05 {
+  padding: 85px 0 0;
+}
+
+#training #infoBox {
+  margin-bottom: 20px;
+}
+
+#training #infoBox ul li {
+  height: 60px;
+  width: calc((100% / 3) - 10px);
+}
+
+#training #infoBox ul li + li {
+  margin-left: 10px;
+}
+
+#training #infoBox ul li a {
+  padding: 0 5px;
+  font-size: 11px;
+}
+
+#training .tblBox {
+  border-bottom: 1px solid #22a096;
+}
+
+#training .tblBox dl {
+  text-align: center;
+}
+
+#training .tblBox dl dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#training .tblBox dl dd {
+  padding: 15px 10px;
+  line-height: 2;
+}
+
+#training .tblBox dl dd div + div {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #d6d6d6;
+}
+
+#training #sec02 > h3 {
+  font-size: 18px;
+  border-left: 3px solid #22a096;
+}
+
+#training #sec02 section {
+  margin-top: 20px;
+}
+
+#training #sec02 section h3 {
+  font-size: 18px;
+}
+
+#training #sec02 .tblBox {
+  margin-bottom: 20px;
+}
+
+#training #sec02 .tblBox + p + a {
+  width: 240px;
+  margin: 20px auto 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#training #sec02 table thead th {
+  padding: 10px;
+}
+
+#training #sec02 table tbody td {
+  padding: 10px;
+}
+
+#training #sec03 section {
+  margin-top: 20px;
+}
+
+#training #sec03 section h3 {
+  font-size: 18px;
+  border-left: 3px solid #22a096;
+}
+
+#training #sec03 section ul li {
+  display: block;
+  width: 280px;
+  margin-right: 0;
+}
+
+#training #sec03 section ul li a {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#training #sec03 section ul li + li {
+  margin-top: 20px;
+}
+
+#training #sec04 p + p {
+  margin-top: 20px;
+}
+
+#training #sec04 .dlBox {
+  margin-top: 20px;
+}
+
+#training #sec04 .dlBox ul li {
+  display: block;
+  width: 280px;
+  margin-right: 0;
+}
+
+#training #sec04 .dlBox ul li a {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#training #sec04 .dlBox ul li + li {
+  margin-top: 20px;
+}
+
+#training #sec04 .dlBox ul + ul {
+  margin-top: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	学会誌・投稿
+///////////////////////////////////////////////////////////*/
+#journal #sec02 a {
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+#journal #sec03 .contact {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+#journal #sec03 .contact + p + p {
+  margin-bottom: 20px;
+}
+
+#journal #sec03 h3 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#journal #sec05 .cntBox div {
+  padding: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	情報
+///////////////////////////////////////////////////////////*/
+#information #infoBox {
+  margin-bottom: 20px;
+}
+
+#information #infoBox ul {
+  margin: -10px 0 0 -10px;
+}
+
+#information #infoBox ul li {
+  height: 60px;
+  width: calc((100% / 3) - 10px);
+  margin: 10px 0 0 10px;
+}
+
+#information #infoBox ul li a {
+  padding: 5px;
+}
+
+#information #sec01 dl dt {
+  font-size: 14px;
+}
+
+#information #sec01 dl dd {
+  padding: 10px;
+}
+
+#information #sec02 #pcHead {
+  display: none;
+}
+
+#information #sec02 .tbl > p {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background: #f6f6f6;
+}
+
+#information #sec02 .tbl dl {
+  text-align: center;
+  border: 1px solid #22a096;
+}
+
+#information #sec02 .tbl dl dt {
+  padding: 15px 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#information #sec02 .tbl dl dd {
+  padding: 15px 10px;
+}
+
+#information #sec02 .tbl dl dt + dd {
+  border-bottom: 1px solid #22a096;
+}
+
+#information #sec02 .tbl dl + dl {
+  margin-top: 10px;
+}
+
+#information #sec02 .tbl dl + p {
+  margin-top: 20px;
+}
+
+#information #sec04 .box > div {
+  float: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#information #sec04 .box > div dl dt {
+  padding-left: 10px;
+  font-size: 18px;
+  border-left: 2px solid #22a096;
+}
+
+#information #sec04 .box .book {
+  float: none;
+  width: 100%;
+}
+
+#information #sec06 .tblBox {
+  border-bottom: 1px solid #22a096;
+}
+
+#information #sec06 .tblBox dl {
+  text-align: center;
+}
+
+#information #sec06 .tblBox dl dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#information #sec06 .tblBox dl dd {
+  padding: 15px 10px;
+  line-height: 2;
+}
+
+#information #sec06 .tblBox dl dd div + div {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #d6d6d6;
+}
+
+#information #sec06 .tblBox dl dd a {
+  color: #054aac;
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////
+	会員のひろば
+///////////////////////////////////////////////////////////*/
+#member h3 {
+  font-size: 18px;
+  border-left: 3px solid #22a096;
+}
+
+#member p + p {
+  margin-top: 20px;
+}
+
+#member #sec01 {
+  margin-bottom: 40px;
+}
+
+#member #sec02 {
+  margin-bottom: 30px;
+}
+
+#member #sec02 p {
+  padding: 10px;
+}
+
+#member #infoBox {
+  margin-bottom: 20px;
+}
+
+#member #infoBox ul li {
+  height: 60px;
+  width: calc((100% / 3) - 10px);
+}
+
+#member #infoBox ul li + li {
+  margin-left: 10px;
+}
+
+#member #infoBox ul li a {
+  padding: 0 5px;
+  font-size: 11px;
+}
+
+#member #boardList .postList {
+  margin: 0 0 40px;
+}
+#member #boardList .postList ul {
+  display: block;
+}
+#member #boardList .postList ul li {
+  width: 100%;
+}
+#member #boardList .postList ul li a {
+  padding: 10px;
+}
+#member #boardList .postList .photoBox {
+  width: 90px;
+}
+#member #boardList .postList .txtBox {
+  width: calc(100% - 110px);
+}
+#member #boardList .postList .txtBox span {
+  font-size: 12px;
+}
+#member #boardList .postList .txtBox time {
+  margin: 5px 0 8px;
+}
+#member #boardList .moveBtn {
+  width: 130px;
+}
+#member #boardList .moveBtn a {
+  font-size: 13px;
+}
+/*////////////////////////////////////////////////////////////
+	コラム
+///////////////////////////////////////////////////////////*/
+.column .leftBox {
+  margin-bottom: 40px;
+}
+
+.column .sidebar dl {
+  font-size: 16px;
+}
+
+.column .sidebar dl + dl {
+  margin-top: 20px;
+}
+
+.column .sidebar dl dt {
+  border-bottom: 2px solid #22a096;
+}
+
+.column .sidebar dl dd ul a {
+  padding: 10px;
+}
+
+.column #listBox ul:first-child li {
+  padding: 10px 0;
+  font-size: 11px;
+  border-bottom: 1px dotted #000000;
+}
+
+.column #listBox ul:first-child li span {
+  width: 55px;
+  margin: 0 20px 0 10px;
+  padding: 0;
+  font-size: 11px;
+}
+
+.column #detailBox section {
+  margin-bottom: 40px;
+}
+
+.column #detailBox section > p span {
+  width: 110px;
+  margin: 0 20px 0 10px;
+  padding: 0;
+  font-size: 11px;
+}
+
+.column #detailBox section > h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.column #detailBox .pager a {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.column #boardList .postList {
+  margin: 50px 0;
+}
+.column #boardList .postList ul {
+  display: block;
+}
+.column #boardList .postList ul li {
+  width: 100%;
+}
+.column #boardList .postList ul li a {
+  padding: 10px;
+}
+.column #boardList .postList .photoBox {
+  width: 90px;
+}
+.column #boardList .postList .txtBox {
+  width: calc(100% - 110px);
+}
+.column #boardList .postList .txtBox span {
+  font-size: 12px;
+}
+.column #boardList .postList .txtBox time {
+  margin: 5px 0 8px;
+}
+
+/*////////////////////////////////////////////////////////////
+	入会案内
+///////////////////////////////////////////////////////////*/
+#admission #sec01 .tblBox {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #22a096;
+}
+
+#admission #sec01 .tblBox dl {
+  text-align: center;
+}
+
+#admission #sec01 .tblBox dl dt {
+  padding: 15px 10px;
+  border-top: 1px solid #22a096;
+  border-bottom: 1px solid #22a096;
+  background: #f6f6f6;
+}
+
+#admission #sec01 .tblBox dl dd {
+  padding: 15px 10px;
+  line-height: 2;
+}
+
+#admission #sec01 .tblBox dl dd div + div {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #d6d6d6;
+}
+
+#admission #sec01 .tblBox dl dd + dd {
+  border-top: 1px solid #d6d6d6;
+}
+
+#admission #sec02 .box {
+  padding: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	サイトマップ
+///////////////////////////////////////////////////////////*/
+#sitemap .cntBox {
+  padding: 0 0 60px;
+}
+
+#sitemap .cntBox .list {
+  padding: 20px 10px 30px;
+}
+
+#sitemap .cntBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -20px;
+}
+
+#sitemap .cntBox .listBox > li {
+  width: calc((100% / 2) - 20px);
+  margin: 0 0 0 20px;
+}
+
+#sitemap .cntBox .listBox dl dt {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	フォーム
+///////////////////////////////////////////////////////////*/
+#formCnt .topTxt {
+  padding: 20px;
+}
+
+#formCnt .topTxt + p {
+  margin-bottom: 30px;
+}
+
+#formCnt .formBox dl {
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #22a096;
+}
+
+#formCnt .formBox div + dl {
+  border-top: 1px solid #22a096;
+}
+
+#formCnt .formBox dl + dl {
+  margin-top: 10px;
+}
+
+#formCnt .formBox dl dt {
+  padding: 15px 15px 5px;
+  border-bottom: 1px solid #22a096;
+}
+
+#formCnt .formBox dl dt em {
+  color: #d50000;
+}
+
+#formCnt .formBox dl dd {
+  padding: 15px;
+}
+
+#formCnt .formBox dl .selList > div + div {
+  margin-top: 20px;
+}
+
+#formCnt .formBox .selectBox label {
+  top: 10px;
+}
+
+#formCnt .formBox .selectBox + .ttl {
+  margin-top: 20px;
+}
+
+#formCnt .wpcf7-submit {
+  margin: 30px auto 0;
+  padding: 10px;
+  width: 230px;
+  font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	movie
+///////////////////////////////////////////////////////////*/
+#movieList .cateBox {
+  max-width: 500px;
+  margin: 0 0 30px;
+}
+#movieList .cateBox ul {
+  margin: -10px 0 0 -10px;
+}
+#movieList .cateBox ul li {
+  width: calc(50% - 10px);
+  margin: 10px 0 0 10px;
+}
+#movieList .cateBox ul li a {
+  padding: 15px 10px;
+}
+#movieList #sec01 {
+  padding: 0 0 60px;
+}
+#movieList #sec01 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+
+#secMovie .listBox ul li + li {
+  margin: 40px 0 0;
+}

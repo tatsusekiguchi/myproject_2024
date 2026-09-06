@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvPanel .topKv {
+    height: 450px;
+  }
+  .topMain .topKvPanel .kvTitleBox {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 80%;
+    max-width: 400px;
+  }
+  .topMain .topSection {
+    padding: 50px 0;
+  }
+  .topMain .sec01 {
+    padding: 40px 0 80px;
+  }
+  .topMain .sec01 .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec01 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .topMain .sec01 .listBox .ul .dl {
+    padding: 15px 0 0;
+  }
+  .topMain .sec01 .listBox .ul .dl .dt {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .topMain .sec01 .btnMore {
+    margin: 40px auto 0;
+  }
+  .topMain .sec02 {
+    padding: 60px 0;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .topMain .sec02 .secBox .txtBox .btnMore {
+    margin: 40px auto 0;
+  }
+  .topMain .sec03 {
+    padding: 60px 0;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .topMain .sec03 .secBox .txtBox .btnMore {
+    margin: 40px auto 0;
+  }
+  .topMain .sec04 {
+    padding: 60px 0;
+  }
+  .topMain .sec04 .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec04 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .topMain .sec04 .listBox .ul .dl {
+    padding: 15px 0 0;
+  }
+  .topMain .sec04 .listBox .ul .dl .dt {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  .topMain .sec05 {
+    padding: 60px 0;
+  }
+  .topMain .sec05 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .topMain .sec05 .secBox .infoBox .dl {
+    display: block;
+  }
+  .topMain .sec05 .secBox .infoBox .dl + .dl {
+    margin: 10px 0 0;
+  }
+  .topMain .sec05 .secBox .infoBox .dl .dt {
+    width: 100%;
+  }
+  .topMain .sec05 .secBox .infoBox .dl .dd {
+    width: 100%;
+    padding: 0;
+  }
+  .topMain .sec05 .secBox .infoBox .dl .dd::before {
+    display: none;
+  }
+  .topMain .sec05 .secBox .btnMore {
+    margin: 30px auto 0;
+  }
+  .topMain .sec06 {
+    padding: 60px 0;
+  }
+  .topMain .sec06 .webgene-blog {
+    max-width: 800px;
+  }
+  .topMain .sec06 .webgene-blog .webgene-item {
+    display: block;
+  }
+  .topMain .sec06 .webgene-blog .webgene-item + .webgene-item {
+    margin: 20px 0 0;
+  }
+  .topMain .sec06 .webgene-blog .webgene-item .infoBox {
+    width: 100%;
+  }
+  .topMain .sec06 .webgene-blog .webgene-item .infoBox > * {
+    min-width: 100px;
+  }
+  .topMain .sec06 .webgene-blog .webgene-item .title {
+    width: 100%;
+    padding: 5px 0 0;
+  }
+  .topMain .sec06 .btnMore {
+    margin: 60px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain .topSection {
+    padding: 50px 0;
+  }
+  .aboutMain .sec01 {
+    padding: 60px 0;
+  }
+  .aboutMain .sec01 .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .aboutMain .sec01 .secPanel h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .aboutMain .sec01 .secPanel .txt {
+    margin: 0 0 15px;
+  }
+  .aboutMain .sec01 .secPanel .listBox .ul .li {
+    width: calc(50% - 5px);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	history
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .historyMain .topSection {
+    padding: 50px 0;
+  }
+  .historyMain .sec01 {
+    padding: 60px 0;
+  }
+  .historyMain .sec01 .secBox {
+    margin: 0 0 20px;
+  }
+  .historyMain .sec01 .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+}
+/*////////////////////////////////////////////////////////////
+	menu
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .menuMain .topSection {
+    padding: 50px 0;
+  }
+  .menuMain .sec01 {
+    padding: 60px 0;
+  }
+  .menuMain .sec01 .topTxt {
+    margin: 0 0 50px;
+  }
+  .menuMain .sec01 .secPanel {
+    padding: 0 0 20px;
+  }
+  .menuMain .sec01 .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .menuMain .sec01 .secPanel h3 {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  .menuMain .sec01 .secPanel .secBox .photoBox {
+    margin: 0 0 10px;
+  }
+  .menuMain .sec01 .secPanel .secBox .menuBox {
+    font-size: 16px;
+  }
+  .menuMain .sec01 .secPanel .secBox .menuBox .dl {
+    display: block;
+  }
+  .menuMain .sec01 .secPanel .secBox .menuBox .dl .dd {
+    padding: 3px 0 0;
+    text-align: right;
+  }
+  .menuMain .sec01 .secPanel .secBox .menuBox .dl .dd .span {
+    font-size: 12px;
+  }
+  .menuMain .sec01 .secPanel .secBox .menuBox .dl + .span {
+    font-size: 12px;
+  }
+  .menuMain .sec01 .secPanel .secBox .txtBox {
+    padding: 10px 0 0;
+  }
+  .menuMain .sec01 .secPanel .secBox .txtBox .txt {
+    margin: 15px 0 0;
+  }
+  .menuMain .sec01 .secPanel .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .menuMain .sec02 .menuBox,
+.menuMain .sec03 .menuBox,
+.menuMain .sec04 .menuBox {
+    font-size: 16px;
+  }
+  .menuMain .sec02 .menuBox .dl,
+.menuMain .sec03 .menuBox .dl,
+.menuMain .sec04 .menuBox .dl {
+    display: block;
+    padding: 0 0 5px 5px;
+  }
+  .menuMain .sec02 .menuBox .dl .dd,
+.menuMain .sec03 .menuBox .dl .dd,
+.menuMain .sec04 .menuBox .dl .dd {
+    padding: 3px 0 0;
+    text-align: right;
+  }
+  .menuMain .sec02 .menuBox .dl .dd .span,
+.menuMain .sec03 .menuBox .dl .dd .span,
+.menuMain .sec04 .menuBox .dl .dd .span {
+    font-size: 12px;
+  }
+  .menuMain .sec02 .menuBox .dl + .span,
+.menuMain .sec03 .menuBox .dl + .span,
+.menuMain .sec04 .menuBox .dl + .span {
+    font-size: 12px;
+  }
+  .menuMain .sec02 {
+    padding: 60px 0;
+  }
+  .menuMain .sec02 .menuBoxList {
+    margin: 0 0 40px;
+  }
+  .menuMain .sec02 .menuBox + .menuBox {
+    margin: 15px 0 0;
+  }
+  .menuMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+  .menuMain .sec03 {
+    padding: 60px 0;
+  }
+  .menuMain .sec04 {
+    padding: 60px 0;
+  }
+  .menuMain .sec04 .menuPanel + .menuPanel {
+    margin: 30px 0 0;
+  }
+  .menuMain .sec04 .menuBox + .menuBox {
+    margin: 30px 0 0;
+  }
+  .menuMain .sec04 .menuBox .ttl {
+    margin: 0 0 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	seasons
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .seasonsMain .topSection {
+    padding: 50px 0;
+  }
+  .seasonsMain .sec01 {
+    padding: 60px 0;
+  }
+  .seasonsMain .sec01 .secBox + .secBox {
+    margin: 50px 0 0;
+    padding: 50px 0 0;
+  }
+  .seasonsMain .sec01 .secBox .txtBox {
+    padding: 0 0 30px;
+  }
+  .seasonsMain .sec01 .secBox .txtBox .ttlBox {
+    width: 50px;
+  }
+  .seasonsMain .sec01 .secBox .txtBox .ttlBox .dl .dt {
+    margin: 0 0 15px;
+    padding: 0 10px 15px;
+    font-size: 40px;
+  }
+  .seasonsMain .sec01 .secBox .txtBox .ttlBox .dl .dd {
+    font-size: 18px;
+  }
+  .seasonsMain .sec01 .secBox .txtBox .txt {
+    width: calc(100% - 70px);
+  }
+  .seasonsMain .sec01 .secBox .photoBox {
+    max-width: 560px;
+    margin: 0 auto;
+    min-height: 260px;
+  }
+  .seasonsMain .sec01 .secBox .photoBox .photo {
+    width: 60%;
+    max-width: 340px;
+  }
+  .seasonsMain .sec01 .secBox .photoBox .photo01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .seasonsMain .sec01 .secBox .photoBox .photo02 {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+  }
+  .seasonsMain .sec01 .secBox .photoBox .photo03 {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+  .seasonsMain .sec02 {
+    padding: 60px 0;
+  }
+  .seasonsMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 2px);
+  }
+  .seasonsMain .sec02 .listBox .ul p {
+    font-size: 12px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	group
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .groupMain .topSection {
+    padding: 50px 0;
+  }
+  .groupMain .topSection .telItem {
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  .groupMain .topSection .telItem .tel p {
+    font-size: 18px;
+  }
+  .groupMain .topSection .telItem .tel .em {
+    font-size: 28px;
+  }
+  .groupMain .topSection .caution .ttl {
+    font-size: 16px;
+  }
+  .groupMain .topSection .caution .ul {
+    line-height: 2;
+  }
+  .groupMain .sec01 {
+    padding: 30px 0;
+  }
+  .groupMain .sec01 .secBox {
+    padding: 30px 20px;
+  }
+  .groupMain .sec01 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .groupMain .sec01 .secBox .txtBox h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .groupMain .sec02 {
+    padding: 30px 0 60px;
+  }
+  .groupMain .sec02 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .groupMain .sec02 .listBox .ul .dl .dt p {
+    font-size: 16px;
+  }
+  .groupMain .sec02 .listBox .ul .dl .dt .span {
+    font-size: 13px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .shopMain .topSection {
+    padding: 50px 0;
+  }
+  .shopMain .section {
+    padding: 60px 0;
+  }
+  .shopMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .shopMain .sec01 .secBox .txtBox .name {
+    margin: 20px 0 0;
+  }
+  .shopMain .sec01 .secBox .txtBox .name .em {
+    font-size: 24px;
+  }
+  .shopMain .sec02 {
+    padding: 60px 0 0;
+  }
+  .shopMain .sec02 .secBox {
+    margin: 0 0 30px;
+  }
+  .shopMain .sec02 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .shopMain .sec02 .secBox .infoBox .dl {
+    display: block;
+  }
+  .shopMain .sec02 .secBox .infoBox .dl + .dl {
+    margin: 10px 0 0;
+  }
+  .shopMain .sec02 .secBox .infoBox .dl .dt {
+    width: 100%;
+  }
+  .shopMain .sec02 .secBox .infoBox .dl .dd {
+    width: 100%;
+    padding: 0;
+  }
+  .shopMain .sec02 .secBox .infoBox .dl .dd::before {
+    display: none;
+  }
+  .shopMain .sec02 .listBox {
+    margin: 0 0 50px;
+  }
+  .shopMain .sec02 .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+  .shopMain .sec02 .accessList {
+    padding: 0 0 50px;
+  }
+  .shopMain .sec02 .accessBox + .accessBox {
+    margin: 50px 0 0;
+  }
+  .shopMain .sec02 .accessBox h3 {
+    margin: 0 0 20px;
+    padding: 0 50px 10px;
+    font-size: 18px;
+  }
+  .shopMain .sec02 .accessBox01 h3 {
+    background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/shop_sec02_car.png) left 15px top 2px no-repeat;
+    background-size: 25px auto;
+  }
+  .shopMain .sec02 .accessBox02 h3 {
+    background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/shop_sec02_train.png) left 15px top no-repeat;
+    background-size: 20px auto;
+  }
+  .shopMain .sec03 .topTxt {
+    margin: 0 0 30px;
+  }
+  .shopMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+  .shopMain .sec04 .secBox {
+    margin: 0 0 40px;
+  }
+  .shopMain .sec04 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .shopMain .sec04 .secBox .infoBox .dl {
+    display: block;
+  }
+  .shopMain .sec04 .secBox .infoBox .dl + .dl {
+    margin: 10px 0 0;
+  }
+  .shopMain .sec04 .secBox .infoBox .dl .dt {
+    width: 100%;
+  }
+  .shopMain .sec04 .secBox .infoBox .dl .dd {
+    width: 100%;
+    padding: 0;
+  }
+  .shopMain .sec04 .secBox .infoBox .dl .dd::before {
+    display: none;
+  }
+  .shopMain .sec04 .intro .logoBox {
+    max-width: 320px;
+    margin: 0 0 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .topSection {
+    padding: 50px 0;
+  }
+  .contactMain .topSection .groupMenu {
+    margin: 30px 0 15px;
+  }
+  .contactMain .topSection .groupMenu .dl .dt {
+    font-size: 18px;
+  }
+  .contactMain .topSection .telItem {
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  .contactMain .topSection .telItem .tel p {
+    font-size: 18px;
+  }
+  .contactMain .topSection .telItem .tel .em {
+    font-size: 28px;
+  }
+  .contactMain .topSection .caution .ttl {
+    font-size: 16px;
+  }
+  .contactMain .topSection .caution .ul {
+    line-height: 2;
+  }
+  .contactMain .sec01 {
+    padding: 60px 0;
+  }
+  .contactMain .sec01 .secPanel .ttlBox {
+    padding: 10px 20px;
+  }
+  .contactMain .sec01 .secPanel .ttlBox .icon {
+    margin: 0 10px 0 0;
+    font-size: 20px;
+  }
+  .contactMain .sec01 .secPanel .ttlBox .ttl {
+    font-size: 16px;
+  }
+  .contactMain .sec01 .secPanel .txtBox {
+    padding: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogSection {
+    padding: 60px 0 80px;
+  }
+  .newsMain .catePanel {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-header {
+    margin: 0 auto 10px;
+    padding: 0 0 10px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    padding: 10px 10px 30px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog {
+    padding: 15px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info .cate {
+    margin: 0 0 5px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info .time {
+    text-align: right;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .btnBack {
+    margin: 60px auto 0;
+  }
+}

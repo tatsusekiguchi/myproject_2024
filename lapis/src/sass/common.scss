@@ -1,0 +1,649 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  // font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.15em;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/body_bg.png)
+    center repeat-y;
+  background-size: cover;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+.mincho {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.futura {
+  font-family: "Jost", Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+  font-weight: 400;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 20px;
+  z-index: 999;
+  .headWrap {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 250px;
+    a {
+      display: block;
+    }
+  }
+  .hamburgerBox {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    text-align: center;
+    z-index: 999;
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 50px;
+      height: 20px;
+    }
+    .hamburger .span {
+      background: #000000;
+      position: absolute;
+      left: 50%;
+      width: 40px;
+      height: 2px;
+      transform: translateX(-50%);
+      transition: 0.4s;
+    }
+    .hamburger .span:nth-of-type(1) {
+      top: 3px;
+    }
+    .hamburger .span:nth-of-type(2) {
+      bottom: 3px;
+    }
+    .is-open.hamburger .span {
+      background: #ffffff;
+    }
+    .is-open.hamburger .span:nth-of-type(1) {
+      transform: translate(-50%, 6px) rotate(-45deg);
+    }
+    .is-open.hamburger .span:nth-of-type(2) {
+      transform: translate(-50%, -6px) rotate(45deg);
+    }
+    .hamburgerTxt {
+      margin: 5px 0 0;
+      font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+      font-size: 14px;
+    }
+    .is-open.hamburger + .hamburgerTxt {
+      color: #ffffff;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 180px 60px 100px;
+  color: #ffffff;
+  z-index: 999;
+  background: #7a5876;
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    > * {
+      width: 50%;
+    }
+    .leftBox {
+      display: flex;
+      flex-direction: column;
+      .logo {
+        max-width: 250px;
+      }
+      .info {
+        margin: auto 0 0;
+        .logoSmall {
+          width: 80px;
+          margin: 0 0 30px;
+        }
+        .txt {
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .rightBox {
+      .navList {
+        display: flex;
+        margin: 0 0 100px;
+        .ul {
+          width: 50%;
+          .li {
+            padding: 0 0 0 20px;
+            background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_arrow.png)
+              left center no-repeat;
+            background-size: 5px auto;
+            + .li {
+              margin: 30px 0 0;
+            }
+            a {
+              position: relative;
+              display: inline-block;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .btnList {
+        margin: 0 0 40px;
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: 49%;
+          }
+          a {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            background: #ecbcbe;
+          }
+          .dl {
+            .dt {
+              font-size: 13px;
+            }
+          }
+          .tel {
+            .dl {
+              .dd {
+                p {
+                  display: inline-block;
+                }
+                .span {
+                  font-size: 20px;
+                }
+                .em {
+                  font-size: 26px;
+                }
+              }
+            }
+          }
+          .mail {
+            .dl {
+              .dd {
+                p {
+                  display: inline-block;
+                  padding: 0 0 0 30px;
+                  font-size: 24px;
+                  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_mail.png)
+                    left center no-repeat;
+                  background-size: 18px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      .instaBox {
+        display: flex;
+        align-items: center;
+        a {
+          display: block;
+          padding: 0 0 0 40px;
+          width: 160px;
+          color: #ffffff;
+          background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_insta.png)
+            left center no-repeat;
+          background-size: 25px auto;
+        }
+        .txt {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  padding: 125px 0 250px;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/main_bg.png)
+    right top no-repeat;
+  background-size: 75% auto;
+}
+.pageMain {
+  background-position: right top -200px;
+}
+.pageKvContainer {
+  position: relative;
+  padding: 0 20px;
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+  }
+  .pageKvWrap {
+    position: relative;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 0 0;
+  }
+  .pageKvTitle {
+    width: 30%;
+    padding: 120px 0 0;
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .pageKvPhoto {
+    width: 70%;
+    max-width: 950px;
+  }
+}
+.pageSecTtl {
+  margin: 0 0 60px;
+  text-align: center;
+  p {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 13px;
+  }
+}
+.pageIntroSection {
+  margin: 250px 0;
+  .secContainer {
+    position: relative;
+    padding: 80px 0 0;
+    background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      left top no-repeat;
+    background-size: 50% auto;
+  }
+  .secPanel {
+    .leftBox {
+      position: relative;
+      .secTtl {
+        margin: 0 0 40px;
+        padding: 0 30px 0 0;
+        text-align: right;
+        p {
+          font-size: 40px;
+        }
+        h2 {
+          font-size: 13px;
+        }
+      }
+    }
+    .rightBox {
+      .txtBox {
+        h3 {
+          margin: 0 0 40px;
+          font-size: 30px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .name {
+          margin: 15px 0 0;
+          font-size: 18px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .secPanel {
+      display: flex;
+      justify-content: space-between;
+      .leftBox {
+        width: 45%;
+        .photoSub {
+          position: absolute;
+          top: 60%;
+          right: -15%;
+          width: 35%;
+        }
+      }
+      .rightBox {
+        width: 45%;
+      }
+    }
+  }
+}
+.secWrap {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  width: 200px;
+  margin: 0 auto;
+  a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.08em;
+    background: #acafc4;
+    p {
+      background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png)
+        right center no-repeat;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContactContainer {
+    position: relative;
+    padding: 0 20px 60px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: calc(100% - 100px);
+      z-index: -1;
+      background: #ecbcbe;
+    }
+    .footContactPanel {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      color: #ffffff;
+      background: #312c2a;
+    }
+    .contactItemBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      a {
+        color: #ffffff;
+      }
+      .tel {
+        a {
+          display: inline-block;
+          p {
+            display: inline-block;
+          }
+          .span {
+            font-size: 25px;
+          }
+          .em {
+            font-size: 30px;
+          }
+        }
+        .info {
+          display: inline-block;
+          font-size: 14px;
+          text-align: left;
+          line-height: 1.7;
+        }
+      }
+      .insta {
+        a {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 24px;
+          background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/footer_contact_insta.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        > p {
+          margin: 5px 0 0;
+          font-size: 13px;
+        }
+      }
+      .mail {
+        a {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 24px;
+          background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png)
+            left center no-repeat;
+          background-size: 18px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .contactItemBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contactItem {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 90px;
+          &:nth-child(1) {
+            width: 35%;
+          }
+          &:nth-child(2) {
+            width: 30%;
+          }
+          &:nth-child(3) {
+            width: 35%;
+          }
+          + .contactItem {
+            border-left: 1px solid #4d4745;
+          }
+        }
+        .tel {
+          .info {
+            padding: 3px 0 0 70px;
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 120px 0 60px;
+    color: #ffffff;
+    background: #7a5876;
+    .secWrap {
+      position: relative;
+    }
+    .pagetop {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      width: 60px;
+      cursor: pointer;
+    }
+    .footBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .txtBox {
+      .logo {
+        width: 250px;
+        margin: 0 0 60px;
+      }
+      .txt {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

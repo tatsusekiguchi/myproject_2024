@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/*--------------------------------------------------
+  header
+--------------------------------------------------*/
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #faf9f7;
+  }
+  .header .ttl {
+    display: none;
+  }
+  .header .logoBox {
+    position: relative;
+    width: 150px;
+    z-index: 9999;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ff6325;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+  .header .sideContact {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+  }
+  .header .sideContact a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 146px;
+    color: #ffffff;
+    border-radius: 10px 0 0 10px;
+    background: #ff6325;
+  }
+  .header .sideContact a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 0;
+    writing-mode: vertical-lr;
+    background: url(https://kowashokai231214.smooooth.jp/system_panel/uploads/images/side_contact_mail.png) center top no-repeat;
+    background-size: 15px auto;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 60px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #ffa10b;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #ffa10b;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
+  .pageKvPanel {
+    width: calc(100% - 50px);
+    padding: 40px 20px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    max-width: 280px;
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox > p {
+    min-width: 180px;
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    max-width: 500px;
+    margin: -5px auto 0;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0 100px;
+  }
+  .footer .footContact .secTtl {
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .btnMore {
+    max-width: 260px;
+  }
+  .footer .footContact .pagetop {
+    right: 20px;
+    bottom: -80px;
+  }
+  .footer .footPanel {
+    padding: 60px 0 20px;
+  }
+  .footer .footPanel .footBox {
+    display: block;
+    margin: 0 auto 60px;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 100%;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox {
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox .logo {
+    width: 200px;
+    margin: 0 15px 0 0;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox .insta {
+    width: 30px;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    text-align: center;
+  }
+}

@@ -1,0 +1,28 @@
+/* ログイン画面 */
+.login { 
+  background: #F7EEE7;
+  position: relative;
+  }
+.login::after { 
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: calc(100% - 45px);
+  height: calc(100% - 45px);
+  border:solid 5px #000;
+  pointer-events: none;
+ }
+
+
+
+#login h1 a {
+  background: url("./images/logo.jpg") no-repeat center center !important;
+  width: 100% !important;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-size: auto;
+}
+
+/* アップデート通知を非表示 */
+.update-nag { display: none; }

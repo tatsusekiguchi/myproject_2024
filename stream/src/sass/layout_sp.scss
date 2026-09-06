@@ -1,0 +1,937 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      position: relative;
+      padding: 0;
+      .topKvPanel {
+        height: 80vh;
+      }
+      .kvMain {
+        height: 440px;
+        .logo {
+          max-width: 330px;
+          margin: 0 auto 20px;
+        }
+        .txtImg {
+          max-width: 380px;
+        }
+      }
+      .kvNews {
+        .dl {
+          .dt {
+            width: 100px;
+          }
+          .dd {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+    .navContainer {
+      margin: 40px 0 0;
+      padding: 120px 0 60px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 120px;
+        background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_flag_01.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .messagePanel {
+        margin: 0 0 40px;
+        font-size: clamp(20px, 6vw, 30px);
+        line-height: 2;
+      }
+      .navPanelList {
+        .navPanel {
+          a {
+            padding: 20px;
+            width: 100%;
+          }
+          .txtBox {
+            .ttl01 {
+              max-width: 450px;
+              margin: 0 auto 20px;
+            }
+            .ttl02 {
+              max-width: 300px;
+              margin: 0 auto 20px;
+            }
+            .ttl03 {
+              max-width: 550px;
+              margin: 0 auto 20px;
+            }
+            .photoBox {
+              max-width: 450px;
+              margin: 0 auto;
+              .photo {
+              }
+              .iconBox01 {
+                position: absolute;
+                right: -20px;
+                bottom: -80px;
+                max-width: 100px;
+                animation: fuwafuwa 2s infinite;
+              }
+              .iconBox02 {
+                position: absolute;
+                left: -20px;
+                bottom: -80px;
+                max-width: 100px;
+                transform-origin: center bottom;
+                animation: yurayura 2s infinite;
+              }
+              .iconBox03 {
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                max-width: 200px;
+                width: 40%;
+                animation: fuwafuwa 2s infinite;
+                .icon01 {
+                  position: relative;
+                  max-width: 70px;
+                  margin: 0 auto;
+                }
+                .icon02 {
+                  position: absolute;
+                  left: 0;
+                  bottom: -45px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .navPanel01 {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 200px;
+        margin: 0 auto 40px;
+      }
+      .listBox {
+        max-width: 550px;
+        margin: 0 auto;
+        .list {
+          + .list {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 200px;
+        margin: 0 auto 40px;
+      }
+      .infoBox {
+        .dl {
+          display: table;
+          width: 100%;
+          height: auto;
+          font-size: 14px;
+          border-radius: 30px;
+          background: #ffffff;
+          .dt {
+            width: 25%;
+            padding: 10px 5px;
+            border-radius: 30px;
+            background: #368539;
+          }
+          .dd {
+            display: table-cell;
+            padding: 10px 15px;
+          }
+          &.large {
+            height: auto;
+            background: #ffffff;
+            .dt {
+              background: #368539;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 330px;
+        margin: 0 auto 40px;
+      }
+      .topPanel {
+        margin: 0 0 60px;
+        .secBox {
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 15px;
+              font-size: 20px;
+            }
+            .txt {
+              margin: 0 0 30px;
+            }
+            .name {
+              .em {
+                margin: 0 0 0 10px;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+      .slidePanel {
+        .slideTtl {
+          max-width: 400px;
+          margin: 0 auto 30px;
+        }
+        .slideBox {
+          .ul {
+            .li {
+              width: calc(100% / 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topSection {
+      padding: 40px 0 0;
+      .topBox01 {
+        max-width: 500px;
+        .icon {
+          max-width: 200px;
+          margin: 0 auto 20px;
+        }
+        .ttl {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
+      .topBox02 {
+        padding: 30px 20px;
+      }
+    }
+    .activitySection {
+      padding: 80px 0 60px;
+      .secTtl {
+        max-width: 200px;
+        margin: 0 auto 40px;
+      }
+      .listBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            position: relative;
+            width: 49%;
+            &:nth-child(1) {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+              margin: -30px 0 0;
+            }
+            &:nth-child(4) {
+              left: auto;
+              margin: -20px 0 0;
+            }
+            &:nth-child(5) {
+              margin: -10px 0 0;
+            }
+            &:nth-child(6) {
+              margin: -10px 0 0;
+            }
+          }
+        }
+        .ul {
+          .li {
+            &:nth-child(1) {
+              &:before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: -50px;
+                width: 150px;
+                height: 100px;
+                background: url(https://stream-gr.com/system_panel/uploads/images/activity_flag_01.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+            &:nth-child(6) {
+              &:before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                right: -50px;
+                width: 150px;
+                height: 100px;
+                background: url(https://stream-gr.com/system_panel/uploads/images/activity_flag_02.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+      }
+      .iconTop {
+        position: absolute;
+        top: -40px;
+        right: 0;
+      }
+      .iconBtm {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .iconTop01 {
+        right: 20px;
+        width: 130px;
+      }
+      .iconBtm01 {
+        bottom: -50px;
+        width: 130px;
+      }
+      .iconTop02 {
+        right: 20px;
+        width: 100px;
+      }
+      .iconBtm02 {
+        bottom: -30px;
+        width: 100px;
+      }
+      .iconTop03 {
+        right: 20px;
+        width: 100px;
+      }
+      .iconBtm03 {
+        bottom: -50px;
+        width: 100px;
+      }
+    }
+    .scheduleSection {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 330px;
+        margin: 0 auto 40px;
+      }
+      .icon01 {
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
+        width: 70px;
+      }
+      .icon02 {
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
+        width: 70px;
+      }
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////
+	dayservice
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .dayserviceMain {
+    .scheduleSection {
+      .infoListBox {
+        .infoList {
+          + .infoList {
+            margin: 60px 0 0;
+          }
+          .ttlBox {
+            margin: 0 0 30px;
+            .ttl01 {
+              max-width: 120px;
+            }
+            .ttl02 {
+              max-width: 260px;
+            }
+          }
+        }
+        .infoBox {
+          .dl {
+            display: block;
+            width: 100%;
+            min-height: 75px;
+            font-size: 16px;
+            background: none;
+            .dt {
+              display: block;
+              width: 120px;
+            }
+            .dd {
+              display: block;
+              border-radius: 20px;
+              background: #ffffff;
+              .aside {
+                font-size: 12px;
+              }
+            }
+            &.large {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+    .calendarSection {
+      padding: 0 0 60px;
+      .secTtl {
+        max-width: 280px;
+        margin: 0 auto 40px;
+      }
+    }
+    .evalSection {
+      padding: 0 0 60px;
+      .secTtl {
+        max-width: 220px;
+        margin: 0 auto 40px;
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+      .btnItemList {
+        max-width: 500px;
+        margin: 0 auto;
+        .btnItem {
+          + .btnItem {
+            margin: 20px 0 0;
+          }
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .supportMain {
+    .scheduleSection {
+      .infoBox {
+        .dl {
+          display: block;
+          width: 100%;
+          min-height: 75px;
+          font-size: 16px;
+          background: none;
+          .dt {
+            display: block;
+            width: 120px;
+          }
+          .dd {
+            display: block;
+            border-radius: 20px;
+            background: #ffffff;
+            .aside {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .facilitySection {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 180px;
+        margin: 0 auto 40px;
+      }
+      .listBox {
+        max-width: 600px;
+        .ul {
+          .li {
+            width: 48%;
+          }
+        }
+        .icon {
+          position: absolute;
+          left: -10px;
+          bottom: -40px;
+          width: 100px;
+        }
+      }
+    }
+    .accessSection {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 180px;
+        margin: 0 auto 40px;
+      }
+      .infoBox {
+        .dl {
+          display: block;
+          width: 100%;
+          min-height: 75px;
+          font-size: 16px;
+          background: none;
+          .dt {
+            display: block;
+            width: 120px;
+          }
+          .dd {
+            display: block;
+            border-radius: 20px;
+            background: #ffffff;
+            .aside {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////
+	nursing
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .nursingMain {
+    .scheduleSection {
+      .infoBox {
+        .dl {
+          display: block;
+          width: 100%;
+          min-height: 75px;
+          font-size: 16px;
+          background: none;
+          .dt {
+            display: block;
+            width: 120px;
+          }
+          .dd {
+            display: block;
+            border-radius: 20px;
+            background: #ffffff;
+            .aside {
+              font-size: 12px;
+            }
+          }
+          &.large {
+            background: none;
+          }
+          &.middle {
+            background: none;
+          }
+        }
+      }
+    }
+    .featureSection {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 400px;
+        margin: 0 auto 40px;
+      }
+      .secBox {
+        .photoBox {
+          max-width: 500px;
+          margin: 0 auto 20px;
+          .icon {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .secTtl {
+      margin: 0 auto 30px;
+    }
+    .sec01 {
+      margin: 0;
+      padding: 80px 0;
+      .secTtl {
+        max-width: 400px;
+      }
+      .itemList {
+        max-width: 480px;
+        margin: 0 auto;
+        .itemBox {
+          padding: 20px;
+          + .itemBox {
+            margin: 30px 0 0;
+          }
+          .ttl01 {
+            max-width: 300px;
+            margin: 0 auto 10px;
+          }
+          .ttl02 {
+            max-width: 330px;
+            margin: 0 auto 10px;
+          }
+          .tel {
+            a {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secTtl {
+        max-width: 400px;
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+    }
+    .sec03 {
+      .topContainer {
+        padding: 60px 0;
+        .secTtl {
+          max-width: 180px;
+        }
+        .secBox {
+          .photoBox {
+            max-width: 400px;
+            margin: 0 auto;
+            .name {
+              position: absolute;
+              right: 0;
+              bottom: 60px;
+              width: 220px;
+              padding: 7px 10px;
+              font-size: 20px;
+              text-align: center;
+              border-radius: 30px;
+              background: #0f81c0;
+            }
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .txt {
+              font-size: 18px;
+              p + p {
+                margin: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .aboutSec {
+        margin: 0 0 60px;
+        padding: 60px 0 0;
+        &::before {
+          height: calc(100% - 60px);
+        }
+        .subTtl {
+          max-width: 300px;
+          margin: 0 0 30px;
+        }
+        .aboutBox {
+          margin: 0 0 60px;
+          .dl {
+            + .dl {
+              margin: 30px 0 0;
+            }
+            .dt {
+              margin: 0 0 10px;
+              padding: 0 0 10px;
+              font-size: 20px;
+              border-bottom: 2px solid #1a1a1a;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+        .listPanel {
+          .ttl {
+            max-width: 440px;
+          }
+          .listBox {
+            .ul {
+              max-width: 360px;
+              margin: 0 auto;
+              .li {
+                + .li {
+                  margin: 10px 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .recruitSec {
+        padding: 0 0 60px;
+        .subTtl {
+          max-width: 300px;
+          margin: 0 0 30px;
+        }
+        .infoBox {
+          .dl {
+            display: block;
+            width: 100%;
+            min-height: 75px;
+            font-size: 16px;
+            background: none;
+            .dt {
+              display: block;
+              width: 120px;
+            }
+            .dd {
+              display: block;
+              border-radius: 20px;
+              background: #ffffff;
+              .aside {
+                font-size: 12px;
+              }
+            }
+            &.large {
+              background: none;
+            }
+          }
+        }
+        .message {
+          max-width: 400px;
+          margin: 50px auto 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 5px 0;
+
+          &.line {
+            .dt {
+              height: auto;
+              padding: 0 0 5px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 0 0 5px;
+            .inner {
+              display: block;
+              width: 280px;
+              padding: 10px 30px;
+            }
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 15px;
+              vertical-align: middle;
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              position: static;
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            border-top: none;
+            border-radius: 20px;
+            background: #ffffff;
+          }
+        }
+
+        .otherTtl {
+          padding: 20px 10px 5px;
+        }
+
+        .otherRadio {
+          .dt {
+            text-align: left;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadPanel {
+        padding: 20px 0;
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          display: block;
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          width: 100%;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topKv {
+      height: 250px;
+    }
+  }
+}

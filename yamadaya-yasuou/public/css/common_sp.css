@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 0 0 20px;
+  }
+  .header .logoBox {
+    padding: 10px 0;
+  }
+  .header .logoBox > p {
+    display: none;
+  }
+  .header .logoBox .logoItem {
+    display: block;
+  }
+  .header .logoBox .logo {
+    width: 180px;
+    margin: 0;
+  }
+  .header .logoBox .sns {
+    display: none;
+  }
+  .header .headBox {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    top: 0;
+    width: 100%;
+    padding: 80px 20px 60px;
+  }
+  .navBox .navPanel {
+    height: auto;
+    padding: 0;
+  }
+  .navBox .navList {
+    max-width: 240px;
+    width: 80%;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .navBox .navItem {
+    display: block;
+    margin: 30px 0 0;
+  }
+  .navBox .navItem .sns {
+    text-align: center;
+  }
+  .navBox .navItem .sns a {
+    display: inline-block;
+    width: 25px;
+  }
+  .navBox .navItem .sns a + a {
+    margin: 0 0 0 15px;
+  }
+  .navBox .telItem {
+    margin: 30px 0 0;
+  }
+  .navBox .telItem .tel a {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 30px;
+    color: #efebe8;
+    background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .telItem .info {
+    font-size: 14px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 200px;
+  }
+
+  .pageTopTitle {
+    margin: 0 0 20px;
+    padding: 40px 0 20px;
+    background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/top_sec_ttl_bg.png) center top no-repeat;
+    background-size: 120px auto;
+  }
+  .pageTopTitle h1 {
+    font-size: 26px;
+  }
+  .pageTopTitle p {
+    font-size: 16px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox h2 {
+    font-size: 20px;
+  }
+  .pageSecTtlBox p {
+    max-width: 150px;
+    font-size: 12px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .btnMore {
+    margin: 30px auto 0;
+  }
+  .footer .footPanel {
+    padding: 80px 0 20px;
+  }
+  .footer .footPanel .footNav {
+    display: none;
+  }
+  .footer .footPanel .logo {
+    max-width: 250px;
+    margin: 0 auto 100px;
+  }
+  .footer .footPanel .copy {
+    font-size: 13px;
+  }
+}

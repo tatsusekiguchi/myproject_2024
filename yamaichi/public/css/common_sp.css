@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  z-index: 999;
+  background: #ffffff;
+}
+.header .leftBox .logo {
+  width: 80px;
+}
+.header .leftBox .logo a {
+  display: block;
+}
+.header .leftBox .headTtl {
+  display: none;
+}
+.header .hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 40px;
+  z-index: 10000;
+}
+.header .hamburger .span {
+  background: #0d432a;
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger .span:nth-of-type(1) {
+  top: 10px;
+}
+.header .hamburger .span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger .span:nth-of-type(3) {
+  bottom: 10px;
+}
+.header .hamburger.is-open .span:nth-of-type(1) {
+  transform: translate(-50%, 9px) rotate(-45deg);
+}
+.header .hamburger.is-open .span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburger.is-open .span:nth-of-type(3) {
+  transform: translate(-50%, -9px) rotate(45deg);
+}
+
+.headNewsPanel {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(90deg, #0c4229, #196e48);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 60px;
+  z-index: 999;
+  background: #ffffff;
+  opacity: 0;
+  transition: 0.6s;
+}
+.navBox.active {
+  top: 60px;
+  opacity: 1;
+  z-index: 999;
+}
+.navBox .navList {
+  border-top: 1px solid #34363d;
+  border-bottom: 1px solid #34363d;
+}
+.navBox .navList ul li {
+  padding: 10px 20px;
+}
+.navBox .navList ul li + li {
+  border-top: 1px solid #34363d;
+}
+.navBox .navList ul li a {
+  display: block;
+}
+.navBox .navList ul li a .span {
+  margin: 3px 0 0;
+  font-size: 11px;
+}
+.navBox .navItem {
+  margin: 15px 0 0;
+  text-align: center;
+}
+.navBox .navItem .telBox a {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.navBox .navItem .telBox a span {
+  font-size: 13px;
+}
+.navBox .navItem .telBox a em {
+  font-size: 30px;
+}
+.navBox .navItem .telBox > p {
+  font-size: 14px;
+}
+.navBox .navItem .reserveBox {
+  width: 180px;
+  margin: 15px auto 0;
+}
+.navBox .navItem .reserveBox a {
+  display: block;
+  padding: 6px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  background: #0c4229;
+  background: linear-gradient(90deg, #0c4229, #196e48);
+}
+.navBox .navItem .reserveBox a span {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url("../image/common/header_calendar.png") left center no-repeat;
+  background-size: 15px auto;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 60px 0 0;
+}
+
+.pageKvPanel {
+  height: 220px;
+}
+.pageKvPanel .pageKvTitle {
+  max-width: 500px;
+}
+.pageKvPanel .pageKvTitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url("../image/common/page_kv_bg_circle.png") center no-repeat;
+  background-size: 100% auto;
+}
+.pageKvPanel .pageKvTitle:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 25%;
+  width: 80px;
+  height: 50px;
+  background: url("../image/common/page_kv_icon.png") center no-repeat;
+  background-size: 100% auto;
+}
+.pageKvPanel .pageKvTitle p {
+  font-size: 24px;
+}
+.pageKvPanel .pageKvTitle h1 {
+  font-size: 12px;
+}
+
+.pageSecTtlBox {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  padding: 20px 10px;
+}
+.pageSecTtlBox .pageSecTtl p {
+  font-size: 24px;
+}
+.pageSecTtlBox .pageSecTtl h2 {
+  font-size: 12px;
+}
+
+.secTtlBox {
+  margin: 0 0 20px;
+  padding: 20px 40px;
+}
+.secTtlBox .pageSecTtl h2 {
+  font-size: 24px;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.slidePanel .slideBox ul li {
+  width: 50%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 50px 0;
+}
+.footer .footContact .contactTtlBox {
+  margin: 0 0 30px;
+}
+.footer .footContact .contactItemBox {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItemBox .contactItem {
+  padding: 30px 20px;
+}
+.footer .footContact .contactItemBox .contactItem + .contactItem {
+  border-top: 1px solid #46392b;
+}
+.footer .footContact .contactItemBox .contactItem .ttl {
+  margin: 0 0 10px;
+  min-height: 0;
+  font-size: 18px;
+}
+.footer .footContact .contactItemBox .contactItem .btnMail {
+  margin: 20px auto 0;
+}
+.footer .footContact .contactItemBox .contactItem .btnStoria {
+  margin: 20px auto 0;
+}
+.footer .footPanel {
+  padding: 40px 0 20px;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 40px;
+}
+.footer .footPanel .footBox .leftBox .logo {
+  width: 100px;
+}
+.footer .footPanel .footBox .rightBox {
+  display: none;
+}
+.footer .footPanel .copy {
+  text-align: center;
+}

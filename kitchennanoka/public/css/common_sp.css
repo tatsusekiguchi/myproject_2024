@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    color: #6b9b5f;
+    z-index: 999;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .logo {
+    width: 90px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .headInfo {
+    display: none;
+  }
+  .header .hamburger {
+    top: 5px;
+    right: 10px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 60px 0;
+  }
+  .navBox .navContainer {
+    padding: 20px 0;
+  }
+  .navBox .logoBox {
+    padding: 0 20px 30px;
+    width: 240px;
+  }
+  .navBox .logoBox .logo {
+    width: 120px;
+  }
+  .navBox .logoBox .insta {
+    margin: 20px 0 0;
+  }
+  .navBox .logoBox .insta a {
+    padding: 5px 0 5px 35px;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/header_insta.png) left center no-repeat;
+    background-size: 30px auto;
+  }
+  .navBox .navList .ul .li a {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .navBox .infoBox {
+    margin: 30px 0 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .navBox .infoBox .telBox > p {
+    font-size: 12px;
+  }
+  .navBox .infoBox .telBox .tel a {
+    font-size: 25px;
+  }
+  .navBox .infoBox .reserve {
+    width: 240px;
+    margin: 20px auto 0;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main,
+.pageMain {
+    margin: 50px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 250px;
+    padding: 0 0 40px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    min-width: 260px;
+    padding: 5px 15px;
+    font-size: 26px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+  .footer .footBox {
+    margin: 0 0 60px;
+  }
+  .footer .footBox .leftBox {
+    margin: 0 0 30px;
+  }
+  .footer .footBox .leftBox .logoBox {
+    margin: 0 0 20px;
+  }
+  .footer .footBox .leftBox .logoBox .logo {
+    width: 180px;
+    margin: 0 15px 0 0;
+  }
+  .footer .footBox .leftBox .telBox {
+    max-width: 280px;
+    padding: 15px 10px;
+  }
+  .footer .footBox .leftBox .telBox .tel a {
+    padding: 0 0 0 25px;
+    font-size: 22px;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footBox .leftBox .telBox .tel + p {
+    font-size: 12px;
+  }
+  .footer .footBox .rightBox .dl {
+    display: block;
+  }
+  .footer .footBox .rightBox .dl .dt {
+    width: 100%;
+  }
+  .footer .footBox .rightBox .dl .dd {
+    width: 100%;
+  }
+  .footer .footBox .rightBox .dl + .dl {
+    margin: 20px 0 0;
+  }
+  .footer .copy {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="product">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headTtl">
+			<p>群馬県前橋市を拠点に北関東エリアなど各地へ木質素材を配送します</p>
+		</div>
+		<div class="logo"><a href="/">
+				<div><img src="https://nippakosan240620.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+			</a></div>
+		<div class="navBox">
+			<div class="navList">
+				<div class="ul">
+					<div class="li"><a href="business">
+							<div>
+								<p>事業紹介</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt"><a href="productlist">
+								<div>
+									<p>商品情報</p>
+								</div>
+							</a></div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=1">
+										<div>
+											<p>パーティクルボード</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=2">
+										<div>
+											<p>MDF</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=3">
+										<div>
+											<p>合板</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=4">
+										<div>
+											<p>その他</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=5">
+										<div>
+											<p>木材加工</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="productlist">
+							<div>
+								<p>商品情報</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=1">
+							<div>
+								<p>パーティクルボード</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=2">
+							<div>
+								<p>MDF</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=3">
+							<div>
+								<p>合板</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=4">
+							<div>
+								<p>その他</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="productlist?wg%5Bwgc-1722681535999_cate%5D=5">
+							<div>
+								<p>木材加工</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>会社案内</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="company">
+										<div>
+											<p>会社概要</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="history">
+										<div>
+											<p>沿革</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="warehouse">
+										<div>
+											<p>倉庫案内</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="company">
+							<div>
+								<p>会社概要</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="history">
+							<div>
+								<p>沿革</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="warehouse">
+							<div>
+								<p>倉庫案内</p>
+							</div>
+						</a></div>
+					<div class="li pulldown spHidden">
+						<div class="linkTxt">
+							<p>採用情報</p>
+						</div>
+						<div class="subList accordBody">
+							<div class="list">
+								<div class="li"><a href="recruit">
+										<div>
+											<p>採用情報</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="entry">
+										<div>
+											<p>エントリー</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="li spBreak"><a href="recruit">
+							<div>
+								<p>採用情報</p>
+							</div>
+						</a></div>
+					<div class="li spBreak"><a href="entry">
+							<div>
+								<p>エントリー</p>
+							</div>
+						</a></div>
+					<div class="li contact"><a href="contact">
+							<div>
+								<p>お問い合わせ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="productMain main">
+		<div class="pageTitlePanel">
+			<div class="pageTitle">
+				<h1>商品情報</h1>
+			</div>
+		</div>
+		<div class="blogSection">
+			<div class="secWrap01">
+				<div class="detailContainer">
+					<div class="message">
+						<p>一枚から大量注文まで。<br>在庫状況により即日納品いたします。</p>
+					</div>
+					<div class="detailPanel">
+						<section class="webgene-blog">
+							<div class="webgene-header">
+								<h2>商品詳細</h2>
+							</div>
+							<article class="webgene-item">
+								<div class="webgene-item-content postBox">
+									<div class="productTitle">
+										<h3>MDF</h3>
+									</div>
+									<div class="topBox">
+										<div class="photo"><img src="https://nippakosan240620.smooooth.jp/system_panel/uploads/images/product_sample.png" alt=""></div>
+										<div class="txtBox">
+											<dl>
+												<dt>家具や什器、建材に使用される<br>木材繊維から作られる木質ボード</dt>
+												<dd>「Medium Density Fiberboard（ミディアム デンシティ ファイバーボード）」の略。木材の原料チップを粉状に繊維化し、高温高圧で圧縮し成形した板です。<br>均一な質感と加工の容易さから、キャビネットやテーブルなどの家具、建築材、什器、音響製品など様々な用途で使用されます。</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="secBox">
+										<div class="title">
+											<p>MDFの特徴</p>
+										</div>
+										<div class="txt">
+											<p>表面や木口が細かく、柄シートやメラミンを貼り付けるのに優れています。<br>切削・曲面加工が容易なため、複雑な形状の部品にも適してます。<br>また、密度が高いため割れや反りが少なく、長期使用にも適しています。</p>
+										</div>
+									</div>
+									<div class="secBox">
+										<div class="title">
+											<p>MDFの使用用途</p>
+										</div>
+										<div class="txt">
+											<p>【家具】システムキッチンの面材、収納扉、テーブル</p>
+											<p>【建材】耐力壁、窓枠等の内装部材、建具造作材、フローリング基材、廻り縁、巾木、窓やドアの枠材、天井板、カウンター、棚板</p>
+											<p>【その他】什器、スピーカー用キャビネット</p>
+										</div>
+									</div>
+									<div class="secBox">
+										<div class="title">
+											<p>取扱寸法</p>
+										</div>
+										<div class="txt">
+											<p>標準サイズ</p>
+											<p>【厚さ】25㎜～30㎜</p>
+											<p>【尺】3×6、3×7、3×8、4×6、4×7、4×8</p>
+											<p>特寸サイズも見積もり可能ですので、お問い合わせください。</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</section>
+						<div class="btnBack"><a href="productlist">
+								<div>
+									<p>商品情報に戻る</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox white">
+					<p>Contact</p>
+					<div class="pageSecTtl">
+						<h2>お問い合わせ</h2>
+					</div>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<div class="telBox">
+							<div class="dl">
+								<div class="dt">
+									<p>お電話でお問い合わせ</p>
+								</div>
+								<div class="dd">
+									<div class="tel"><a href="tel:0272630666">
+											<div>
+												<p class="span">tel.</p>
+												<p class="em">027-263-0666</p>
+											</div>
+										</a></div>
+									<div class="fax"><a href="#">
+											<div>
+												<p class="span">fax.</p>
+												<p class="em">027-261-5785</p>
+											</div>
+										</a></div>
+									<div class="aside">
+										<p>受付時間：9:00～17:00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mailBox">
+							<div class="dl">
+								<div class="dt">
+									<p>WEB からお問い合わせ</p>
+								</div>
+								<div class="dd"><a href="contact">
+										<div>
+											<p>メールフォーム</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://nippakosan240620.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="leftBox">
+					<div class="logo"><img src="https://nippakosan240620.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="info">
+						<div class="txt">
+							<p>〒379-2154<br>群馬県前橋市天川大島町3丁目26-3</p>
+						</div>
+						<div class="txt">
+							<div class="tel"><a href="tel:027-263-0666">
+									<div>
+										<p>TEL：027-263-0666</p>
+									</div>
+								</a></div>
+							<div class="fax"><a href="#">
+									<div>
+										<p>FAX：027-261-5785</p>
+									</div>
+								</a></div>
+							<p>受付時間：8:00 ～ 17:00　定休日：土日祝</p>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>© 2024 日パ興産株式会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

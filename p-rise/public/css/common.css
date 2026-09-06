@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Sawarabi Gothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #faf9f7;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+.futura {
+  font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .header .logo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 15%;
+    max-width: 280px;
+  }
+  .header .logo a {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 0 80px;
+  }
+  .header .logo {
+    left: 80px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    font-size: 14px;
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navBox .navList > .ul > .li {
+    position: relative;
+    height: 100px;
+    padding: 48px 0 30px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 0.5%;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .navList > .ul > .li > a > div > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    margin: 1px 0 0;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #164e70;
+  }
+  .navBox .navList .subList .li:last-child a {
+    border-radius: 0 0 10px 10px;
+  }
+  .navBox .navList .contact {
+    position: relative;
+    top: -5px;
+    width: 140px;
+  }
+  .navBox .navList .contact a {
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+    color: #ffffff;
+    text-align: center;
+    background: #e73018;
+  }
+  .navBox .navList .contact a div p {
+    display: inline-block;
+    padding: 0 0 0 20px !important;
+    background: url(https://p-rise.co.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList .insta {
+    position: relative;
+    top: -5px;
+    width: 40px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageKvContainer {
+  padding: 0 80px;
+}
+.pageKvContainer .pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  height: 200px;
+  border-radius: 4px;
+  background: url(https://p-rise.co.jp/system_panel/uploads/images/page_kv_bg.png) center no-repeat;
+  background-size: cover;
+}
+.pageKvContainer .pageKvPanel .pageKvTitle {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 50px;
+}
+.pageSecTtlBox .pageSecTtl {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.pageSecTtlBox .sub {
+  font-size: 13px;
+  color: #e84618;
+}
+
+.secWrap {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 180px;
+}
+.btnMore a {
+  display: block;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #e73018;
+}
+.btnMore a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://p-rise.co.jp/system_panel/uploads/images/btn_more_icon.png) left center no-repeat;
+  background-size: 18px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  text-align: center;
+}
+.footer .footContact {
+  position: relative;
+  padding: 60px 0;
+  background: #f1ede6;
+}
+.footer .footContact .secWrap {
+  position: relative;
+}
+.footer .footContact .telBox {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 30px 20px;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+}
+.footer .footContact .telBox .tel {
+  display: inline-block;
+}
+.footer .footContact .telBox .tel a {
+  display: inline-block;
+}
+.footer .footContact .telBox .tel p {
+  display: inline-block;
+}
+.footer .footContact .telBox .tel .em {
+  font-size: 34px;
+  line-height: 1;
+}
+.footer .footContact .telBox > p {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+.footer .footContact .btnList {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.footer .footContact .btnList .btnMore01 a {
+  display: block;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #181818;
+}
+.footer .footContact .btnList .btnMore01 a p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url(https://p-rise.co.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.footer .footContact .btnList .btnMore02 a {
+  display: block;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  background: #e73018;
+}
+.footer .footContact .btnList .btnMore02 a p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  background: url(https://p-rise.co.jp/system_panel/uploads/images/footer_contact_recruit.png) left center no-repeat;
+  background-size: 20px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .btnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .btnList > * {
+    width: 48%;
+  }
+}
+.footer .footContact .pagetop {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 45px;
+  cursor: pointer;
+}
+.footer .footPanel {
+  padding: 40px 0;
+  color: #ffffff;
+  background: #181818;
+}
+.footer .footPanel .footBox {
+  margin: 0 0 60px;
+}
+.footer .footPanel .footBox .logo {
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
+.footer .footPanel .copy {
+  font-size: 13px;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

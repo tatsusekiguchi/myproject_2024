@@ -1,0 +1,254 @@
+<?php
+/*
+Template Name: バーの紹介・特徴
+*/
+?>
+
+<?php get_header(); ?>
+	<!-- ▽メイン▽-->
+	<main class="main" id="features">
+		<div class="pageKvContainer">
+			<div class="pageKvPanel mincho">
+				<div class="pageKvTitle">
+					<h1>アックスバーの特徴</h1>
+				</div>
+				<div class="subTitle">
+					<p>FEATURES</p>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secPanel">
+				<div class="photo videoBox"><img src="<?php bloginfo('template_url'); ?>/image/top/sec01_img.png" alt=""></div>
+				<div class="secBox">
+					<div class="secTtl mincho">
+						<h2>AXE Throwingとはなに？</h2>
+						<p>ABOUT</p>
+					</div>
+					<div class="txt">
+						<p>AXE Throwing（アックススローイング）は、ダーツのように斧を的に投げてスコアを競うスポーツです。<br>単に斧を投げるだけではなく、そのスリリングな体験が魅力です。<br>初心者でも簡単に始められる競技で、ルールはシンプル。<br>プレイヤーは一定の距離から斧を握り、的に向かって投げます。<br>的には中心に近いほど高得点が設定されており、中心の「ブルズアイ」を狙うことで最高得点が得られます。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtlBox white mincho">
+					<div class="pageSecTtl">
+						<h2>BRAVEの特徴</h2>
+					</div>
+					<div class="sub">
+						<p>FEATURES</p>
+					</div>
+				</div>
+				<div class="listBox">
+					<ul>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_01.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>01</em><span>毎日通える定額制</span></div>
+								<div class="txt">
+									<p>２４時間・３６５日利用可能の定額制だからいつでも気軽に通うことが可能！<br>（的のメンテナンス除く）</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_02.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>02</em><span>完全個室の空間</span></div>
+								<div class="txt">
+									<p>貸し切りの完全プライベート空間だから人の目を気にせずプレイが可能。<br>1人でじっくりプレイも仲間とワイワイプレイも楽しめます。</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_03.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>03</em><span>手軽でらくちん</span></div>
+								<div class="txt">
+									<p>Tシャツ、靴の貸し出しがあるので、初めての方でもお手軽に参加OK♪</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_04.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>04</em><span>充実した設備</span></div>
+								<div class="txt">
+									<p>WIFI・コンセント完備でワーキングスペースとしても利用可能。<br>ちょっとした隠れ家的な使い方も可能です。</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_05.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>05</em><span>競技用の斧を使用</span></div>
+								<div class="txt">
+									<p>BRAVEにはアックススローイングの大会で使用されている斧を完備。<br>競技用の練習に最適です。</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_06.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>06</em><span>選べる５つのプラン</span></div>
+								<div class="txt">
+									<p>ライフスタイルに合わせてご利用しやすい5つのプランをご用意！<br>まずは1日体験でアックススロー隠語の魅力に触れてみよう！</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_07.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>07</em><span>スマホでカンタン予約</span></div>
+								<div class="txt">
+									<p>予約から決済まで全てスマホでカンタン・スムーズにご利用いただけます。<br>当日キャンセルなども簡単にWEBからお手続きが可能です。</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo"><img src="<?php bloginfo('template_url'); ?>/image/features/sec02_img_08.png" alt=""></div>
+							<div class="txtBox">
+								<div class="ttl mincho"><em>08</em><span>万全の防犯セキュリティ</span></div>
+								<div class="txt">
+									<p>当店では、ご予約時間のみドアを解錠できるシステムを導入しております。<br>他のお客様が間違って入店してしまうといったこともありません。</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sec03">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox white mincho">
+					<div class="pageSecTtl">
+						<h2>よくあるご質問</h2>
+					</div>
+					<div class="sub">
+						<p>Q&amp;A</p>
+					</div>
+				</div>
+				<div class="faqPanel">
+					<dl class="accord">
+						<dt class="mincho"><em>Q</em><span>素人でもやれますか？</span></dt>
+						<dd>
+							<div class="box">
+								<div class="txt">
+									<p>どんなスポーツでも初めてやるのは緊張しますよね、当店では完全貸し切りでやっていますので、人の目線を気にせず奇声をあげながらプレイしても構いません。</p>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="accord">
+						<dt class="mincho"><em>Q</em><span>手ぶらでも利用ができますか？</span></dt>
+						<dd>
+							<div class="box">
+								<div class="txt">
+									<p>レンタルTシャツ、斧などは貸出しております、ただし、MY斧などの使用は禁止しております。</p>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="accord">
+						<dt class="mincho"><em>Q</em><span>撮影、コスプレなどでプレイしてもかまいませんか？</span></dt>
+						<dd>
+							<div class="box">
+								<div class="txt">
+									<p>はい、可能です、詳細は問い合わせまでご連絡お願いします。</p>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="sec04">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox white mincho">
+					<div class="pageSecTtl">
+						<h2>利用規約</h2>
+					</div>
+					<div class="sub">
+						<p>TERMS OF USE</p>
+					</div>
+				</div>
+				<div class="termsContainer">
+					<div class="c2 doc-content">
+						<p class="c6 c7"><span class="c8"></span></p>
+						<p class="c0"><span class="c3">第１条（目的）</span></p>
+						<p class="c5"><span class="c4">本規約は、株式会社雅（以下「当社」といいます。）が「AXE BAR BRAVE」の名称で運営するプライベート斧投げバー（以下「クラブ」といいます。）の入退会や利用に関するルールを定めることを目的とします。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第２条（会員制）</span></p>
+						<p class="c5"><span class="c4">１ 当施設は会員制とします。クラブに会員登録をし、入会した者を会員とします。<br>２ クラブに入会しようとするときは、本規約その他当社が定める規則を承諾し、当社所定の入会申込手続をしなければなりません。<br>３ 前項の入会申込手続をし、当社が会員として適切と判断した申込者は、本規約その他当社が定める規則に従うことを承諾することにより、クラブへの入会が認められます。<br>４ ２０歳未満の者は、入会することはできません。<br>５ 会員は、本規約その他当社が定める規則、クラブが入居する施設内の諸規則を全て遵守しなければなりません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第３条（入会資格）</span></p>
+						<p class="c5"><span class="c4">次の各号のいずれかに該当する者は、会員になることができません。<br>（１）本規約その他当社が定める規則を遵守できない者<br>（２）入会申込手続にかかる申込者と同一人物であることを確認できない者 &nbsp; &nbsp;<br>（３）過去または現在において、暴力団もしくは反社会的勢力に属し、またはそれらに属する者と密接な関係を有すると当社が判断した者<br>（４）伝染病、その他他人に伝染または感染する恐れのある疾病に罹患している者<br>（５）公序良俗に反する行為をするおそれがあると認められる者 &nbsp; &nbsp;<br>（６）その他、会員としてふさわしくないと当社が判断した者</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第４条（会費と入会金等）</span></p>
+						<p class="c5"><span class="c4">１ 会員は、会費および入会金その他、当社の定める費用（以下「会費等」といいます。）を、当社所定の方法で支払うものとします。<br>２ 会員は、会費の当月分を前月２０日までに支払うものとします。但し、入会時の初回支払時期については別途定めます。<br>３ 会員は、実際の当施設利用の有無にかかわらず、当社が定める会費等を全額支払わなければなりません。<br>４ 当社は、会費等の改定を行うことができます。その場合は、適用日の２週間前までに各会員に告知するものとします。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第５条（入退室管理システム）</span></p>
+						<p class="c5"><span class="c4">１ 当社は、会員に対し、QRコードを発行し、貸与するとともに、入退室管理システムのアプリケーションその他クラブ利用のために必要なシステムの使用を許諾します<br>２ 会員が施設に入退する際には、会員証に記載されているQRコードを使用するものとし、会員本人がQRコードを使用できない場合は、施設に入退することはできません。<br>３ QRコードは、許諾された会員本人または当社が認める使用権限を有する者のみが使用でき、他の者が使用することはできません。<br>４ 会員は、当社が会員証の提示を求めた場合は、これに応じなければなりません。<br>５ 会員は、会員証を第三者に貸与することはできません。 但し、当社が別途許諾した場合には、この限りではありません。<br>６ 携帯電話を忘れた場合は施設に入ることができません。ご了承ください。<br>８ 当社は、会員が会員資格を喪失した場合または第１０条に定める命令を受けた場合、入退館システムを使用できなくする措置を講じることができます。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第６条（クラブの利用方法）</span></p>
+						<p class="c5"><span class="c4">１ クラブ施設は営業日の営業時間内において利用できるものとします。<br>２ クラブ施設においては当社のスタッフは在中せず、会員自身で設備を利用するものとします。<br>３ 利用できる設備は次のとおりとし、これ以外の設備は利用できません。<br>（１）斧投げブース<br>（２）トイレ、化粧室、カウンター<br>４ 会員は、体調が不良の場合はクラブ施設の利用を控えるものとします。<br>５ 会員は、設備の利用方法が不明な場合は、当社から必要な説明を受け、理解した上で利用するものとします。<br>６ 会員は、設備の利用に適した服装で設備を利用するものとします。<br>７ 会員は、設備の利用後は、会員自身で利用前の状態に戻さなければなりません。<br>８ 会員は、当社が防犯目的でクラブ施設内（トイレを除きます。）に複数の防犯カメラを設置し、録画・記録することをあらかじめ承諾します。<br>９ 会員は、設備を損害、汚損等した場合または設備が故障した場合は、あらかじめ当社が指定した連絡先に速やかに連絡しなければなりません。<br>１０ 火災、地震等の自然災害等が発生した場合、会員自身の責任と判断において避難等をするものとします。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第７条（会員以外のクラブの利用）</span></p>
+						<p class="c5"><span class="c4">当社は、当社の定めるスモールプラン会員、ウィークリープラン会員、ミッドナイトプラン会員、レギュラープラン会員、VIPプラン会員には１回につき１名を限度として、会員が同伴した会員以外の者にクラブ利用を認めます。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第８条（会員プランの変更）</span></p>
+						<p class="c5"><span class="c4">会員は、会員プランの変更を希望する場合には、変更希望月の前月の１０日までに、当社所定の手続をするものとし、その場合、翌月１日よりプランが変更となります。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第９条（禁止行為）</span></p>
+						<p class="c5"><span class="c4">会員は、次の各号に定める行為をしてはなりません。 &nbsp;<br>（１）本規約その他当社が定める規則、クラブ施設に掲示されたルール、慣習上のルール、当社の説明および指示に反する行為 &nbsp;<br>（２）クラブ施設又はその敷地内において、物品販売や営業行為、金銭の貸借、勧誘行為、政治活動、無許可のアンケート協力等の依頼行為、署名活動をすること<br>（３）刃物等の危険物や、他者または施設・器具を傷つける可能性のある物品をクラブ施設またはその敷地内へ持ち込むこと<br>（４）正当な理由なく他者の所持品に触れること<br>（５）クラブの利用を認められていない者を同伴させること<br>（６）会員証を第三者に譲渡、貸与、その他当社に無断で会員本人以外の第三者に使用させる行為<br>（７）大声、奇声を発する行為、他のクラブ利用者やスタッフを畏怖させる言動を行うこと<br>（８）他のクラブ利用者やスタッフに対し、待ち伏せし、後をつけ、またはみだりに話しかける等の行為をすること<br>（９）正当な理由なく、面談、電話、その他の方法でスタッフを拘束する等の迷惑行為をすること<br>（１０）動物（あらかじめ許諾された介助犬は除く。）を館内に持ち込むこと<br>（１１）他の会員のクラブ利用を妨げる行為をすること<br>（１２）クラブの秩序を乱し、またはその名誉、信用もしくは品位を傷付ける言動をすること<br>（１３）クラブ敷地内での食事、喫煙、<br>（１４）斧投げブース内において以下の行為をすること<br> &nbsp; ① 危険な投げ方をすること<br> &nbsp; ② プレーヤー以外の方のレーン、レーン通路及びレーン付近への立ち入り<br> &nbsp; ③ クラブ施設備付の斧以外を使用すること<br>（１５）クラブ施設の設備や備付の斧、備品を損壊、汚損等し、又は持ち出す行為</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１０条（立入りの禁止、退去）</span></p>
+						<p class="c5"><span class="c4">１ &nbsp;当社は、次の各号のいずれかに該当する者につき、相当期間のクラブ施設への立入りの禁止またはクラブ施設からの退去を命じることができます。<br>（１）本規約その他当社が定める規則に違反した者<br>（２）第３条に定める入会資格を欠いていたことが判明した者、または入会後に欠くこととなった者<br>（３）体調不良、飲酒、薬物使用等により正常な施設利用ができないと判断された者<br>（４）著しく不潔な身体または服装である者<br>（５）承諾なくQRコードを使用せずに入館した者<br>（６）本規約の手続に従わず会員以外の者を入館させた者および当該入館した者<br>（７）会費等を１か月以上滞納した者<br>（８）上記（１）から（７）のほか、当社においてクラブ施設からの退去又は相当期間のクラブ施設への立入りの禁止を命じることが適切であると判断した者<br>２ 相当期間のクラブ施設への立入りの禁止された場合、当該期間中であっても、会費等は発生します。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１１条（退会）</span></p>
+						<p class="c5"><span class="c4">１ 会員は、当社所定の手続を行った上で、希望する月の月末をもって退会することができます。この手続は、原則として当社の指定する電磁的方法によるものとし、当社所定の退会フォームに入力をおこない、当社の受領確認をもって退会となります。<br>２ 退会手続は、退会を希望する月の１０日までに行うものとし、その場合、当該月の末日をもって退会となります。各月の１１日以降に退会手続がとられた場合は、翌月の末日をもって退会となります。<br>３ 本条の退会手続が完了しない間は、クラブの利用がない場合でも会費等が発生します。<br>４ 会費等の未納分がある場合には、第１項の退会手続と同時に完納しなければなりません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１２条（届出等）</span></p>
+						<p class="c5"><span class="c4">１ 会員は、入会申込書等に記載した内容に変更があったときは、速やかに当社所定の手続をもって変更の届け出をしなければなりません。<br>２ 当社またはクラブから会員への諸通知等は、会員から届け出のあった住所またはメールアドレス等宛に行い、その発送をもって効力を有するものとし、未到達または延着等の場合でも、当社は発送後の責を負いません。 </span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１３条（退会処分）</span></p>
+						<p class="c5"><span class="c4">１ 当社は、会員が次の各号のいずれかに該当するときは、当該会員を強制的に退会させること（以下「退会処分」といいます。）ができます。<br>（１）本規約その他当社が定める規則を遵守しないとき<br>（２）クラブ施設の内外にかかわらず、法令、条例または公序良俗に反する行為を行い、クラブの運営に影響が生じると判断されたとき<br>（３）第３条に定める入会資格を欠いていたことが判明したとき、または入会後に欠くこととなったとき（入会に際し虚偽の申告をし、あるいは入会資格に関わる重要な事実を故意に申告しなかったときを含みます。）<br>（４）会費等を1か月以上滞納したとき<br>（５）その他、会員としてふさわしくない言動があり、改善が見込めないとき<br>２ 退会処分を受けた会員は、当該処分時から、全ての当社サービスを利用することができません。<br>３ 退会処分を受けた会員に対しては、当社は、前納分または既払分の会費等があっても、これらを返還することはいたしません。<br>４ 退会処分を受けた会員は、将来にわたり期間の定めなく、全ての当社サービスを再び利用することはできません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１４条（資格喪失）</span></p>
+						<p class="c5"><span class="c4">１ 会員は、次の各号の場合には、自動的にその会員資格を喪失します。<br>（１）退会した場合または退会処分を受けた場合<br>（２）死亡した場合または法人が解散した場合<br>（３）クラブが閉鎖された場合<br>２ 前項第２号および第３号の場合には、資格喪失日の属する月の会費等につき、日割計算の上、精算するものとします。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１５条（会員資格の譲渡禁止等）</span></p>
+						<p class="c5"><span class="c4">クラブの会員資格は、本人限りとし、第三者への譲渡、売買、贈与、遺贈、貸与、名義変更、質権の設定その他担保に供する等の行為または相続その他の包括継承はできません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１６条（営業日および営業時間）</span></p>
+						<p class="c5"><span class="c4">クラブの営業日、営業時間については、２４時間です。但し、メンテナンスや気象災害等の理由により、事前告知なく変更する場合があります。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１７条（クラブ施設の利用制限）</span></p>
+						<p class="c5"><span class="c4">１ 当社は、次の各号の場合には、クラブ施設の全部または一部の利用を制限することがあります。当該制限がなされた場合でも、別に定める場合を除き、会費等は発生します。<br>（１）気象・災害等の影響が及ぶと判断し、営業が困難と認めたとき<br>（２）施設、設備の点検、補修または改修をするとき （緊急対応時も含む）<br>（３）法令の制定、改廃、行政指導、社会経済情勢の著しい変化、その他やむを得ない事由が発生したとき<br>（４）その他クラブ施設の全部または一部の利用を制限する必要と認めるとき<br>２ 前項の場合、事前にその旨をクラブまたはクラブのホームページ等にて告示します。 但し、緊急を要する場合はこの限りではありません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１８条（クラブ施設の閉鎖・変更）</span></p>
+						<p class="c5"><span class="c4">１ 当社は、次の各号の場合には、クラブ施設の全部または一部を閉鎖、もしくは変更することがあります。<br>（１）気象・災害等により営業不能と認めたとき<br>（２）法令の制定、改廃、行政指導、社会経済情勢の著しい変化、その他クラブの経営上等やむを得ない事由が発生したとき<br>２ クラブ施設の閉鎖・変更の場合でも、その期間が１か月を超える場合のほかは、会費等は発生し、代替利用等の特別の補償は行いません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第１９条（賠償責任）</span></p>
+						<p class="c5"><span class="c4">１ 当社は、会員または同伴者がクラブの利用に関して損害を負った場合または第三者に損害を与えた場合、当社に故意または重過失ある場合に限り、その損害を賠償する責任を負うものとします。ただし、賠償の範囲は、現実に発生した通常損害に限られるものとします。<br>２ 会員または同伴者は、自己の責めに帰すべき事由により、クラブまたは第三者に損害を与えた場合は、速やかに、自己の責任において、その賠償責任を果たさなければなりません。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第２０条（再委託）</span></p>
+						<p class="c5"><span class="c4">当社は、クラブの運営に関する当社の業務の全部または一部を第三者に委託して行わせることができます。また、当該第三者に委託するのに伴い、その業務遂行のため必要な範囲内で、会員の個人情報を提供する場合があり、会員はこれを了承します。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第２１条（通知予告）</span></p>
+						<p class="c5"><span class="c4">クラブに関する通知または予告は、クラブ所定の場所に掲示する方法またはホームページにて行います。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第２２条（本規約その他の規則の改定）</span></p>
+						<p class="c5"><span class="c4">当社は、本規約その他の規則を改定することができます。また、改定後の本規約その他の規則は改訂日以降、全ての会員に適用されます。</span></p>
+						<p class="c1"><span class="c4"></span></p>
+						<p class="c0"><span class="c3">第２３条（管轄裁判所）</span></p>
+						<p class="c5"><span class="c4">クラブ利用に関する会員と当社の間の紛争は、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</span></p>
+						<p class="c1"><span class="c9"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- △メイン△-->
+<?php get_footer(); ?>

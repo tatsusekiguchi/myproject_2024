@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #006ebb;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+/*リンク */
+a {
+  color: #006ebb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 999;
+    transition: 0.6s;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    float: left;
+    width: 200px;
+    padding: 15px 0 0;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .headBox {
+    float: right;
+    width: 77%;
+    max-width: 860px;
+  }
+  .header .humberger {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    font-weight: bold;
+  }
+  .navBox .navList .ul {
+    display: table;
+    width: 100%;
+    font-size: 14px;
+  }
+  .navBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    padding: 15px 0 15px 15px;
+    vertical-align: middle;
+    background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/nav_arrow.png) left center no-repeat;
+  }
+  .navBox .navList .ul .spBreak {
+    display: none;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 10px 0;
+  }
+  .navBox .navList .ul .entry {
+    background: none;
+  }
+  .navBox .navList .ul .entry a {
+    position: relative;
+    top: 0;
+    transition: all .3s;
+    display: block;
+    width: 180px;
+    color: #fedb35;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+    background: #006ebb;
+  }
+  .navBox .navList .ul .entry a:hover {
+    top: -3px;
+    opacity: 1;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 0 0 20px 20px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+  }
+  .navBox .navList .subList a {
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+  }
+  .navBox .navList .subList a p {
+    background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/nav_arrow.png) left 20px center no-repeat;
+  }
+  .navBox .navList .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList .pulldown:hover .subList {
+    top: 40px;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 71px 0 0;
+}
+
+.pageKv {
+  height: 500px;
+  margin: 0 0 60px;
+  padding: 0 0 0 250px;
+}
+
+.pageKv .kvArea {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.pageKv .kvTtl {
+  margin: 0 0 0 -85px;
+  padding: 200px 0 0;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.pageKv .kvTtl p {
+  font-size: 50px;
+}
+
+.pageKv .kvTtl h1 {
+  font-size: 20px;
+}
+
+.secWrap01 {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secWrap02 {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.secTtl {
+  text-align: center;
+}
+
+.secTtl p {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 18px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.more {
+  display: block;
+  max-width: 240px;
+  margin: 0 auto;
+  padding: 7px 10px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border-radius: 30px;
+  background: #fedb35;
+}
+
+@media (min-width: 1025px) {
+  .more {
+    position: relative;
+    top: 0;
+    transition: all .3s;
+  }
+  .more:hover {
+    opacity: 1;
+    top: -3px;
+  }
+  .more01:hover {
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
+  }
+  .more02:hover {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.pagingPanel {
+  padding: 60px 0;
+}
+
+.pagingPanel .ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pagingPanel .ul .li {
+  position: relative;
+  width: 45%;
+  text-align: center;
+}
+
+.pagingPanel .ul .li a {
+  display: block;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid #006ebb;
+}
+
+.pagingPanel .ul .li .em {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 1025px) {
+  .pagingPanel .ul .li a {
+    position: relative;
+    top: 0;
+    transition: all .3s;
+  }
+  .pagingPanel .ul .li a:hover {
+    opacity: 1;
+    top: -3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.pagingPanel .ul .prev {
+  float: left;
+}
+
+.pagingPanel .ul .prev:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/paging_band_01.png) no-repeat;
+  background-size: 40px auto;
+}
+
+.pagingPanel .ul .prev a {
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/paging_back.png) left 25px center no-repeat #fedb35;
+  background-size: 30px auto;
+}
+
+.pagingPanel .ul .next {
+  float: right;
+}
+
+.pagingPanel .ul .next:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/paging_band_02.png) no-repeat;
+  background-size: 40px auto;
+}
+
+.pagingPanel .ul .next a {
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/paging_next.png) right 25px center no-repeat #fedb35;
+  background-size: 30px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footEntry {
+  padding: 80px 0;
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/footer_entry_bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.footer .footEntry .secTtl {
+  margin: 0 0 40px;
+}
+
+.footer .footEntry .ul {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.footer .footEntry .ul .more {
+  max-width: 100%;
+  padding: 15px 10px;
+}
+
+.footer .footEntry .ul .li {
+  float: left;
+  width: 48%;
+}
+
+.footer .footEntry .ul .li + .li {
+  float: right;
+}
+
+.footer .footEntry .ul .more {
+  color: #ffffff;
+  background: #006ebb;
+}
+
+.footer .footEntry .ul .mynavi {
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/footer_entry_mynavi.png) left 25px center no-repeat #006ebb;
+  background-size: 45px auto;
+}
+
+.footer .footBox .footInner {
+  overflow: hidden;
+  padding: 40px 0 0;
+}
+
+.footer .footBox .footInner .left {
+  float: left;
+  width: 40%;
+}
+
+.footer .footBox .footInner .left .logo {
+  max-width: 300px;
+}
+
+.footer .footBox .footInner .left .txt {
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.footer .footBox .footInner .left .ul .li {
+  display: inline-block;
+  width: 40px;
+}
+
+.footer .footBox .footInner .left .ul .li + .li {
+  margin: 0 0 0 15px;
+}
+
+.footer .footBox .footInner .left .ul .li a {
+  display: block;
+}
+
+.footer .footBox .footInner .right {
+  float: right;
+  width: 55%;
+  padding: 10px 0 0;
+}
+
+.footer .footBox .footInner .right .btnLink {
+  margin: 0 0 40px;
+  text-align: right;
+}
+
+.footer .footBox .footInner .right .btnLink .btn {
+  display: inline-block;
+  width: 220px;
+}
+
+.footer .footBox .footInner .right .btnLink a {
+  display: block;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #006ebb;
+}
+
+.footer .footBox .footInner .right .btnLink p {
+  display: inline-block;
+  padding: 0 0 0 35px;
+  letter-spacing: 0.1em;
+  background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_target.png) left center no-repeat;
+  background-size: 20px auto;
+}
+
+.footer .footBox .footInner .right .ul {
+  text-align: right;
+}
+
+.footer .footBox .footInner .right .ul .li {
+  display: inline-block;
+}
+
+.footer .footBox .footInner .right .ul .li + .li {
+  margin: 0 0 0 15px;
+}
+
+.footer .footBox .footInner .right .ul .li a {
+  display: block;
+}
+
+.footer .footBox .copy {
+  padding: 20px 10px 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}

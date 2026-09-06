@@ -1,0 +1,309 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------
+  header
+--------------------------------------------------*/
+@media (max-width: 1180px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    z-index: 999;
+    background: #ffffff;
+    .headTtl {
+      display: none;
+    }
+    .logoBox {
+      position: relative;
+      top: 10px;
+      z-index: 9999;
+      width: 260px;
+      display: flex;
+      align-items: center;
+      a {
+        display: block;
+      }
+      .logo {
+        max-width: 200px;
+        margin: 0 15px 0 0;
+      }
+      .sns {
+        width: 20px;
+      }
+    }
+    .hamburger {
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      top: 17px;
+      right: 20px;
+      width: 50px;
+      height: 40px;
+      z-index: 10000;
+      .span {
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 1px;
+        transform: translateX(-50%);
+        transition: 0.4s;
+        &:nth-of-type(1) {
+          top: 10px;
+        }
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:nth-of-type(3) {
+          bottom: 10px;
+        }
+      }
+      &.is-open {
+        .span:nth-of-type(1) {
+          transform: translate(-50%, 9px) rotate(-45deg);
+        }
+        .span:nth-of-type(2) {
+          opacity: 0;
+        }
+        .span:nth-of-type(3) {
+          transform: translate(-50%, -9px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .header {
+    .sideNav {
+      top: 100px;
+      width: 30px;
+      a {
+        padding: 15px 8px;
+        font-size: 13px;
+        p {
+          padding: 20px 0 0;
+          background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/header_consult.png)
+            center top no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1180px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+    &.active {
+      top: 70px;
+    }
+    .navList {
+      .ul {
+        .li {
+          position: relative;
+          a {
+            font-size: 15px;
+          }
+          p {
+            padding: 5px 0;
+            font-size: 15px;
+          }
+        }
+        a {
+          display: block;
+          padding: 8px 0;
+        }
+      }
+      > .ul {
+        border-top: 1px solid #373737;
+        > .li {
+          border-bottom: 1px solid #373737;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 70px 0 0;
+  }
+  .pageKvPanel {
+    .pageKvTitle {
+      height: 200px;
+      padding: 0 20px;
+      h1 {
+        font-size: 26px;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+    h2 {
+      font-size: 20px;
+      &:after {
+        width: 60px;
+      }
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 30px 0;
+      .secPanel {
+        padding: 30px 20px;
+      }
+      .pageSecTtlBox {
+        margin: 0 0 20px;
+      }
+      .txt {
+        margin: 0 0 30px;
+        text-align: center;
+      }
+      .itemList {
+        max-width: 320px;
+        .itemBox {
+          + .itemBox {
+            margin: 30px 0 0;
+          }
+          a {
+            height: 50px;
+          }
+          .tel {
+            font-size: 24px;
+            p {
+              padding: 0 0 0 25px;
+              background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+          .mail {
+            font-size: 18px;
+            p {
+              padding: 0 0 0 25px;
+              background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+          .info {
+            .ul {
+              .li {
+                font-size: 13px;
+                p {
+                  &:nth-child(1) {
+                    width: 60px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 20px;
+      .footBox {
+        .leftBox {
+          .logoBox {
+            margin: 0 0 20px;
+            .logo {
+              width: 220px;
+              margin: 0 15px 0 0;
+            }
+            .sns {
+              width: 20px;
+            }
+          }
+          .info {
+            .dl {
+              display: flex;
+              font-size: 14px;
+              .dt {
+                width: 60px;
+              }
+            }
+          }
+        }
+        .rightBox {
+          .footNav {
+            display: none;
+          }
+        }
+      }
+      .copy {
+        margin: 30px 0 0;
+      }
+    }
+  }
+}

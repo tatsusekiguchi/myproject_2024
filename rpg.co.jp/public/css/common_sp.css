@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+    transition: 0.6s;
+  }
+  .header .headBox .logo {
+    width: 100px;
+  }
+  .header .headBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+  .header.fixed {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    text-align: center;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 0;
+  }
+  .navBox .navList .ul .li {
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+    color: #efefef;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+    color: #efefef;
+  }
+  .navBox .navList .ul .li .accordBtn {
+    display: none;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navList .subList .li + .li {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin: 20px auto 0;
+  }
+  .navBox .navItem .contact {
+    width: 180px;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    border: 4px solid #ffffff;
+    background: #080403;
+  }
+  .navBox .navItem .contact a p {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/header_tel.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navItem .insta {
+    width: 35px;
+  }
+  .navBox .navItem .insta a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: 66px 0 0;
+  }
+
+  .pageKvPanel {
+    height: 150px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 30px;
+  }
+  .pageKvPanel .pageKvTitle p {
+    font-size: 16px;
+  }
+
+  .pageSecTtlBox .sub {
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 30px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0 100px;
+  }
+  .footer .footContact .secBox {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .btnItemList {
+    max-width: 500px;
+  }
+  .footer .footContact .btnItemList .btnItem + .btnItem {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .btnItemList .btnItem a div {
+    padding: 20px;
+  }
+  .footer .footContact .btnItemList .btnItem a p {
+    font-size: 20px;
+  }
+  .footer .footContact .btnItemList .btnItem a .tel {
+    padding: 0 0 0 30px;
+    font-size: 24px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footContact .pagetop {
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 20px 0 0;
+    text-align: right;
+  }
+}

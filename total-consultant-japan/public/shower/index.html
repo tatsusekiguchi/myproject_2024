@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="shower">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="ttl">
+					<p>トータルコンサルタントジャパン株式会社｜岐阜市で不動産・経営・品質コンサルなど多事業展開</p>
+				</div>
+				<div class="logo"><a href="/">
+						<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headItem">
+				<div class="search"><a href="propertySearch?wgsearch=property">
+						<div>
+							<p>物件検索</p>
+						</div>
+					</a></div>
+				<div class="contact"><a href="contact">
+						<div>
+							<p>お問い合わせ</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navPanel01">
+					<div class="leftBox">
+						<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="txt">
+								<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+							</div>
+							<div class="txt"><a href="tel:0583370600">
+									<div>
+										<p>TEL. 058-337-0600</p>
+									</div>
+								</a>
+								<p>受付時間：10:00～18:00<br>定休日：土・日・祝</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li">
+									<p>事業紹介</p>
+								</div>
+								<div class="subList">
+									<div class="li"><a href="sales?wgsearch=property">
+											<div>
+												<p>不動産売買</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="maintenance?wgsearch=property">
+											<div>
+												<p>土地・建物のメンテナンス</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="diagnosis">
+											<div>
+												<p>家相・間取り診断</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="company">
+											<div>
+												<p>法人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="individual">
+											<div>
+												<p>個人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="stone">
+											<div>
+												<p>天然石卸</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="shower">
+											<div>
+												<p>シャワーヘッド販売</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="propertySearch?wgsearch=property">
+										<div>
+											<p>物件検索</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navPanel02">
+					<div class="contactItem">
+						<div class="telBox"><a href="tel:0583370600">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">電話</p>
+										<p class="span">で相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>058-337-0600</p>
+									</div>
+								</div>
+							</a></div>
+						<div class="mailBox"><a href="contact">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">WEB</p>
+										<p class="span">から相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>無料相談受付中</p>
+									</div>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="showerMain main">
+		<div class="pageKvContainer">
+			<div class="pageKvPanel"></div>
+		</div>
+		<div class="topSection">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">S</p>
+						<p class="span">hower head</p>
+					</div>
+					<div class="pageSecTtl">
+						<h1>シャワーヘッド販売</h1>
+					</div>
+				</div>
+				<div class="balloonTtl">
+					<h2>商品紹介</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_intro.png" alt="">
+				</div>
+			</div>
+			<div class="secContainerList">
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_top_img.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlBox">
+									<div class="sub">
+										<p>GEM MOVE</p>
+									</div>
+									<div class="ttl">
+										<p>マルチイオナイザー<br>シャワーヘッド用（第4世代）</p>
+									</div>
+								</div>
+								<div class="txt">
+									<p>シャワータイムを潤いある時間に。<br>シャンプー不要・髪の潤いUP</p>
+								</div>
+								<div class="aside">
+									<p>※本製品は医療機器ではありません。</p>
+								</div>
+								<div class="list">
+									<div class="ul">
+										<div class="li">
+											<p>ツヤ・潤いUP</p>
+										</div>
+										<div class="li">
+											<p>殺菌・脱臭</p>
+										</div>
+										<div class="li">
+											<p>優れた洗浄力</p>
+										</div>
+									</div>
+								</div>
+								<div class="txt">
+									<p>付属品：シャワー用フィルター１個<br>参考小売価格：45,000円(税込)</p>
+								</div>
+								<div class="arrowTxt">
+									<p>会員特価あり！詳しくはお問い合わせ下さい。</p>
+								</div>
+								<div class="more"><a href="#" target="_blank" rel="noopener">
+										<div>
+											<p>商品情報（PDF）</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="useSection">
+			<div class="secWrap">
+				<div class="topBox">
+					<div class="topTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_use_top_ttl.png" alt=""></div>
+					<div class="ttl">
+						<p>高い技術力でイオン化された水（ジェンマ水）を、<br>あなたの肌で体感してみてください。</p>
+					</div>
+					<div class="txt">
+						<p>シャワータイムを潤いある時間に。<br>マルチイオナイザーは磁力を利用したイオン化装置です。10200ガウスの磁石と貴蛇紋石を通して水を約57時間イオン化します。</p>
+					</div>
+				</div>
+				<div class="balloonTtl">
+					<h2>シャワー以外にも利用可能！</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_use.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>マルチイオナイザーはお風呂のほか、キッチンや洗濯機、トイレ、浄水器などでも活躍いたします。</p>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_use_img_01.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>キッチンでもジェンマ水を利用！</p>
+								</div>
+								<div class="dd">
+									<p>台所の配管に設置することで、キッチンでも利用できます。<br>ジェンマ水は食器や台所などの汚れもきれいに！<br>洗剤要らずで、環境にも経済的にも優しいです。</p>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_use_img_02.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>洗濯機でもジェンマ水を利用！</p>
+								</div>
+								<div class="dd">
+									<p>洗濯機の配管に設置することで、洗濯機でも利用できます。<br>ジェンマ水で洗濯をすることで汚れも臭いもスッキリ！<br>洗剤不要で、環境にも経済的にも優しいです。</p>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_use_img_03.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>トイレでもジェンマ水を利用！</p>
+								</div>
+								<div class="dd">
+									<p>トイレの配管に設置することでトイレでも利用できます。<br>ジェンマ水でトイレの水を流すことで、汚れや臭いがスッキリ！<br>いつでも清潔なトイレで、しつこい汚れもつきづらくなります。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recommendSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>こんな方にお勧めします。</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_recommend.png" alt="">
+				</div>
+				<div class="section">
+					<div class="txtBox">
+						<div class="txt">
+							<p>・肌が敏感で、シャワーやお風呂がつらい方</p>
+							<p>・ハリ・ツヤ・潤いある日々を過ごしたい方</p>
+							<p>・美容トラブルが気になる方</p>
+							<p>・毎日の水が本当に安全か気になる方</p>
+						</div>
+						<div class="txt">
+							<p>・湯シャンでスッキリ頭を洗いたい方</p>
+							<p>・洗い物の汚れをしっかりと取りたい方</p>
+							<p>・家や持ち物の汚れが気になる方</p>
+							<p>・ペットの飲み水やシャワーが気になる方</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pointSection">
+			<div class="secWrap">
+				<div class="balloonTtl">
+					<h2>おすすめのポイント</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_point.png" alt="">
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttl">
+							<p>ツヤや潤いある肌や髪に！</p>
+						</div>
+						<div class="txt">
+							<p>マルチイオナイザー（第4世代）では、イオン化された水を新装置「マグネチックトルネードエンジン」に通して、さらにイオン化する『2次イオン化構造』を取り入れております。<br>そのためイオン化の強度が向上し、これまで以上に肌や髪へのpHのバランスを整えてくれます。マルチイオナイザーでは、あなたの肌や髪の感想を防ぎ、ツヤや潤いをアップさせてくれます。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttl">
+							<p>遠赤外線効果で健康に！</p>
+						</div>
+						<div class="txt">
+							<p>テラヘルツボールが遠赤外線を生み出し、身体を芯から温めてくれます。<br>また遠赤外線は身体の血行やリンパの流れをよくし、疲労回復、老廃物の排泄、代謝の改善などにも期待できると言われています。<br>※テラヘルツボールからは1秒間に1兆回のテラヘルツ波が出ています。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttl">
+							<p>塩素除去した安心の水！</p>
+						</div>
+						<div class="txt">
+							<p>マルチイオナイザーに新たに導入された塩素除去ボールで水道水の塩素を軽減します。<br>またフィルターの前面にある耐久性の強いSUS MESHネットが、プレフィルターの役割を果たし、安心の水で身体を洗うことができます。<br>※塩素除去率は99.9％です。</p>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttl">
+							<p>優れた洗浄力で汚れを除去！</p>
+						</div>
+						<div class="txt">
+							<p>マルチイオナイザーからでるマイクロバブルはきめ細かな泡で汚れを除去してくれます。<br>環境負荷の高いシャンプーも不要で、湯シャンにはマルチイオナイザーがおススメです。<br>またしつこい油汚れやお洋服のシミ、トイレの臭いなども、マルチイオナイザーの水を使えば、<br>落ちやすくなります。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="multiSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>マルチイオナイザー</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_multi.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>マルチイオナイザーの構造</p>
+				</div>
+				<div class="secBox">
+					<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_multi_img.png" alt=""></div>
+					<div class="txtBox">
+						<div class="dl">
+							<div class="dt">
+								<p>①マグネチックトルネードエンジン</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>７個の超強力磁石が内蔵しており、回転しながら2次イオン化を起こす。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>②ミネラルテラヘルツ塩素除去フィルター</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>1秒間に1兆回振動するテラヘルツボールと塩素を除去するフィルター<br>※6か月に1回の交換</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>③マイクロホールプレート</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>シャワーヘッドの超マイクロ孔により水が細かな粒になり、<br>優しく体を洗い流します。<br>細かな水流と水圧で節水・節約にも役立ちます。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>④貴蛇絞石エネルギープレート</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>イオン化の過程で貴蛇絞石を使用したエネルギーノズルを通過。<br>超マイクロバブルの空気層を形成し、水をさらにソフトにします。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>⑤サビ水除去フィルター</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>マルチイオナイザーシャワーヘッド用に取り付けることで、<br>ほこりやさびのような不純物を取り除くことが期待できます。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="ttl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_multi_ttl.png" alt=""></div>
+					<div class="chart"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_multi_chart.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="voiceSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>お客様の声</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_voice.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>マルチイオナイザーの体験談は個人の感想であり、効果・効能を表すものではありません。<br>予めご了承ください。</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="ttl">
+								<p>タイトルが入ります</p>
+							</div>
+						</div>
+						<div class="nameBox">
+							<p>○○県　○代(女性)　○・○さん</p>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+								<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="trySection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>まずはジェンマ水をお試しください！</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_try.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>ジェンマ水を精製するマルチイオナイザーに興味あるお客様への貸出を実施中です。<br>当興味がある方はお問い合わせよりご相談ください。</p>
+				</div>
+				<div class="section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_try_ttl.png" alt=""></div>
+					<div class="caseList">
+						<div class="dl">
+							<div class="dt">
+								<p class="em">01</p>
+								<p class="span">洗髪</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>竹繊維手袋で髪をマッサージしながら洗ってみてください。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">02</p>
+								<p class="span">シャワー</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>竹繊維手袋で肌をこすりながら洗ってみてください。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">03</p>
+								<p class="span">歯磨き</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>歯ぐきを優しく刺激してみてください。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">04</p>
+								<p class="span">散髪</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>竹を素材とする櫛で髪をとかすと髪に艶が出ます。ふんわり感がほしいときは手でくしけずってみてください。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">05</p>
+								<p class="span">野菜の保存</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>しおれた野菜を竹布で包むとよみがえることが多いです。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">06</p>
+								<p class="span">魚</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>10分おきに変わる湿気が魚を活かします。新鮮なものは多くの湿気を必要としなくなります。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">07</p>
+								<p class="span">肉類</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>10分おきに変わる湿気が肉の柔らかさと肉汁の多さを保ちます。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">08</p>
+								<p class="span">洗い物</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>竹繊維タオルを使用すると油が浮きあがり、手肌に優しく使えます。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">09</p>
+								<p class="span">食卓、シンク代、レンジ、冷蔵庫</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>油汚れを吸着して消臭効果も期待できます。衛生的な環境を保ちましょう。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">10</p>
+								<p class="span">風呂、トイレ</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>湿気を感じとり、マイナスイオンを発生。使用後、湿気を除く際のケアも大切です。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">11</p>
+								<p class="span">畳床の掃除、家具</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>フローリングや家具の水分も、柔らかく保ち肌触りよくなる効果があります。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">12</p>
+								<p class="span">メガネと育成</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>メガネのレンズは、簡易な汚れ取りと表面の保護に。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">13</p>
+								<p class="span">ドライクリーニング</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>汗や汚れの吸収と消臭、摩擦を避け、さらにシワが少なくなります。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">14</p>
+								<p class="span">ペットとケア</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>竹繊維で作った毛布などでケア。ペットの体温を維持し、快適に使用できます。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">15</p>
+								<p class="span">再使用</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>ステップを重ねることで、丈夫さが長持ちします。長く使ってみてください。</p>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p class="em">16</p>
+								<p class="span">アトピーと性皮膚炎</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>デリケートなケアに、竹素材が保湿に役立つことが多いです。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside">
+						<p>※お試しの際に綿または付属の竹繊維手袋を使うと、水の粒子が細かくなり接する面が増えます。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="faqSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>よくあるお問い合わせ</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_faq.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>トータルコンサルタントジャパンが取り扱うマルチイオナイザーのご質問をおまとめします。<br>GEM MOVE製品・マルチイオナイザーにご興味ある方はぜひご参考にしてください。</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>マルチイオナイザーの購入後は誰かに紹介しなければいけませんか。</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>特にどなたかへの紹介は必要ありません。<br>マルチイオナイザーを気に入って頂けたのであれば、ご家族やご友人にご紹介いただけると嬉しいです。<br>特に紹介や販売などの義務はございませんので、ご安心ください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>マルチイオナイザーを借りて、実際にシャワーなどで試すことはできますか？</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>当店では期間を設けて、イオナイザーの貸し出しを行っております。<br>実際に商品をご使用いただいて、購入などを決めて頂くことができます。<br>貸し出しには登録が必要となりますので、ご了承ください。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="otherSection">
+			<div class="secWrap">
+				<div class="balloonTtl">
+					<h2>その他商品</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_ttl_other.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>その他商品については下記カタログデータをご覧ください。<br>詳細等につきましては、当社までお問い合わせ下さい。</p>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_other_img_01.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>商品名が入ります。</p>
+								</div>
+								<div class="dd">
+									<div class="more"><a href="#" target="_blank" rel="noopener">
+											<div>
+												<p>商品情報（PDF）</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_other_img_02.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>商品名が入ります。</p>
+								</div>
+								<div class="dd">
+									<div class="more"><a href="#" target="_blank" rel="noopener">
+											<div>
+												<p>商品情報（PDF）</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_other_img_03.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>商品名が入ります。</p>
+								</div>
+								<div class="dd">
+									<div class="more"><a href="#" target="_blank" rel="noopener">
+											<div>
+												<p>商品情報（PDF）</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">C</p>
+						<p class="span">ontact</p>
+					</div>
+					<div class="pageSecTtl">
+						<h2>お問い合わせ</h2>
+					</div>
+				</div>
+				<div class="ttl">
+					<p>お客様の</p>
+					<p class="em">しあわせ</p>
+					<p>について一緒に考えてみませんか？</p>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<div class="telBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">電話</p>
+									<p>で相談してみる</p>
+								</div>
+								<div class="dd"><a href="tel:0583370600">
+										<div>
+											<p>058-337-0600</p>
+										</div>
+									</a>
+									<div class="aside">
+										<p>受付時間：10:00～18:00</p>
+									</div>
+									<p>定休日：土・日・祝</p>
+								</div>
+							</div>
+						</div>
+						<div class="mailBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">WEB</p>
+									<p>から相談してみる</p>
+								</div>
+								<div class="dd"><a href="contact">
+										<div>
+											<p>相談メールフォーム</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+				<div class="txt">
+					<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+				</div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_fb.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy; 2024 トータルコンサルタントジャパン株式会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

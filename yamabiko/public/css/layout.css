@@ -1,0 +1,1668 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  padding: 0 0 0 300px;
+}
+.topMain .topKvContainer h1 {
+  display: none;
+}
+.topMain .topKvContainer .topKvPanel {
+  height: 800px;
+}
+.topMain .topKvContainer .topKvPanel .topKv {
+  position: relative;
+  height: 100%;
+}
+.topMain .topKvContainer .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .topKvPanel .topKv .kvBox .kv01 {
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .topKv .kvBox .kv02 {
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel .topKv .kvBox .kv03 {
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvTitlePanel {
+  position: absolute;
+  top: 40%;
+  left: 80px;
+  width: 100%;
+  max-width: 1000px;
+  color: #88a028;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox {
+  margin: 0 0 30px;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle {
+  margin: 0 0 5px;
+  padding: 5px;
+  background: #ffffff;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle p {
+  display: inline;
+  font-size: 50px;
+  line-height: 1.2;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle .red {
+  color: #f76c22;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle .yellow {
+  color: #f2c920;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle01 {
+  max-width: 700px;
+}
+.topMain .topKvContainer .topKvTitlePanel .subTitleBox .subTitle {
+  margin: 0 0 5px;
+}
+.topMain .topKvContainer .topKvTitlePanel .subTitleBox .subTitle p {
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  background: #ffffff;
+}
+.topMain .topSecTitleBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.topMain .topSecTitleBox .sub {
+  position: relative;
+  margin: 0 0 5px;
+  padding: 20px 0 5px;
+  font-size: 24px;
+  color: #88a03d;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec_ttl_top_icon.png) center top no-repeat;
+  background-size: 30px auto;
+}
+.topMain .topSecTitleBox .sub:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #88a03d;
+}
+.topMain .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  font-size: 0;
+  color: #ffffff;
+}
+.topMain .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.topMain .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.topMain .sec01 {
+  padding: 60px 0 100px;
+}
+.topMain .sec01 .topSecTitleBox .topSecTitle {
+  position: relative;
+}
+.topMain .sec01 .topSecTitleBox .topSecTitle::before {
+  content: "";
+  position: absolute;
+  left: -150px;
+  bottom: -70px;
+  width: 130px;
+  height: 200px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec01_ttl_icon.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec01 .chartPhoto {
+  position: relative;
+  margin: 0 0 30px;
+}
+.topMain .sec02 {
+  padding: 60px 0 100px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .ttlPanel {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.topMain .sec02 .ttlPanel .ttlBox01 {
+  display: inline-block;
+  padding: 0 10px 25px;
+  font-size: 20px;
+  color: #ff7f8a;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png) center bottom no-repeat;
+  background-size: 160px auto;
+}
+.topMain .sec02 .ttlPanel .ttlBox02 {
+  margin: 0 0 10px;
+  font-size: 0;
+  color: #ffffff;
+}
+.topMain .sec02 .ttlPanel .ttlBox02 .ttl p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff7f8a;
+}
+.topMain .sec02 .ttlPanel .ttlBox02 .ttl .em {
+  color: #f7ff23;
+}
+.topMain .sec02 .ttlPanel .ttlBox03 {
+  font-size: 0;
+  color: #ff7f8a;
+}
+.topMain .sec02 .ttlPanel .ttlBox03 p,
+.topMain .sec02 .ttlPanel .ttlBox03 h2 {
+  display: inline;
+}
+.topMain .sec02 .ttlPanel .ttlBox03 .em {
+  font-size: 50px;
+}
+.topMain .sec02 .ttlPanel .ttlBox03 .span {
+  font-size: 40px;
+}
+.topMain .sec02 .secBox .photo img {
+  border-radius: 10px;
+}
+.topMain .sec02 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec02 .secBox .photo {
+    width: 45%;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.topMain .sec03 {
+  padding: 60px 0 100px;
+}
+.topMain .sec03 .listBox {
+  text-align: center;
+}
+.topMain .sec03 .listBox .ul .li {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #88a028;
+}
+.topMain .sec03 .listBox .ul .photo {
+  margin: -40px 0 0;
+}
+.topMain .sec03 .listBox .ul .ttl {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: #88a028;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 3px);
+  }
+}
+.topMain .sec04 {
+  padding: 60px 0 100px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec04_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.topMain .sec04 .listBox {
+  text-align: center;
+}
+.topMain .sec04 .listBox .ul {
+  margin: -60px 0 0;
+}
+.topMain .sec04 .listBox .ul .li {
+  position: relative;
+  margin: 60px 0 0;
+  padding: 40px 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #88a028;
+  background: #ffffff;
+}
+.topMain .sec04 .listBox .ttlTop {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 240px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: #88a028;
+}
+.topMain .sec04 .listBox .photoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.topMain .sec04 .listBox .photoList .photoBox .photo {
+  position: relative;
+}
+.topMain .sec04 .listBox .photoList .photoBox .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.topMain .sec04 .listBox .photoList .photoBox .ttl {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+.topMain .sec04 .listBox .photoList .photoBox .ttl01 {
+  color: #88a03d;
+}
+.topMain .sec04 .listBox .photoList .photoBox .ttl02 {
+  color: #f76c22;
+}
+.topMain .sec04 .listBox .photoList .photoBox01 {
+  width: calc(45% - 10px);
+}
+.topMain .sec04 .listBox .photoList .photoBox01 .photo {
+  height: 0;
+  padding: 0 0 80%;
+}
+.topMain .sec04 .listBox .photoList .photoBox01 .photo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  z-index: 1;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec04_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec04 .listBox .photoList .photoBox02 {
+  width: calc(55% - 10px);
+}
+.topMain .sec04 .listBox .photoList .photoBox02 .photo {
+  height: 0;
+  padding: 0 0 80%;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .listBox .ul .li {
+    width: calc(50% - 10px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain .topSection {
+  padding: 100px 0;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/reason_top_bg.png) no-repeat;
+  background-size: cover;
+}
+.reasonMain .topSection .topKvTitleBox {
+  margin: 0 0 30px;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle {
+  margin: 0 0 5px;
+  padding: 5px;
+  color: #88a028;
+  background: #ffffff;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle p {
+  display: inline;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle .red {
+  color: #f76c22;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle .yellow {
+  color: #f2c920;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle01 {
+  max-width: 300px;
+}
+.reasonMain .topSection .topKvTitleBox .topKvTitle02 {
+  max-width: 400px;
+}
+.reasonMain .topSection .txt p + p {
+  margin: 30px 0 0;
+}
+.reasonMain .slidePanel {
+  margin: 20px 0;
+}
+.reasonMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reasonMain .slidePanel .slideBox .ul .li {
+  width: 16.6666666667%;
+  margin: 0 5px;
+}
+.reasonMain .sec01 {
+  padding: 80px 0 120px;
+}
+.reasonMain .sec01 .topSecTitleBox {
+  position: relative;
+  margin: 0 0 40px;
+  text-align: center;
+}
+.reasonMain .sec01 .topSecTitleBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 70px;
+  height: 170px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_img.png) no-repeat;
+  background-size: 100% auto;
+}
+.reasonMain .sec01 .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 0;
+  color: #ffffff;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png) left center no-repeat, url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png) right center no-repeat;
+  background-size: 25px auto, 25px auto;
+}
+.reasonMain .sec01 .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.reasonMain .sec01 .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.reasonMain .sec01 .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.reasonMain .sec01 .secPanel .num {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 1px solid #88a028;
+}
+.reasonMain .sec01 .secPanel .num > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background: #88a028;
+}
+.reasonMain .sec01 .secPanel .ttlBox {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 10px;
+  font-size: 0;
+  text-align: center;
+}
+.reasonMain .sec01 .secPanel .ttlBox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #88a03d;
+}
+.reasonMain .sec01 .secPanel .ttlBox p,
+.reasonMain .sec01 .secPanel .ttlBox h2 {
+  display: inline;
+  font-size: 40px;
+  color: #88a028;
+}
+.reasonMain .sec01 .secPanel .ttlBox .em,
+.reasonMain .sec01 .secPanel .ttlBox em {
+  color: #f2c920;
+}
+.reasonMain .sec01 .secPanel .secBox .photo img {
+  border-radius: 10px;
+}
+.reasonMain .sec01 .secPanel .secBox .txtBox .box {
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.reasonMain .sec01 .secPanel .secBox .txtBox .inner {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #000000;
+}
+.reasonMain .sec01 .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-size: 24px;
+  color: #88a028;
+}
+@media (min-width: 1025px) {
+  .reasonMain .sec01 .secPanel .secBox {
+    display: flex;
+  }
+  .reasonMain .sec01 .secPanel .secBox .photo {
+    width: 40%;
+  }
+  .reasonMain .sec01 .secPanel .secBox .photo img {
+    width: 500px;
+    border-radius: 10px;
+  }
+  .reasonMain .sec01 .secPanel .secBox .txtBox {
+    position: relative;
+    top: -30px;
+    width: 60%;
+  }
+  .reasonMain .sec01 .secPanel:nth-child(even) .secBox {
+    flex-direction: row-reverse;
+  }
+  .reasonMain .sec01 .secPanel:nth-child(even) .secBox .photo img {
+    position: relative;
+    right: 110px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .sec01 {
+  padding: 80px 0 120px;
+}
+.serviceMain .sec01 .topSecTitleBox {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.serviceMain .sec01 .topSecTitleBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 70px;
+  height: 170px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_img.png) no-repeat;
+  background-size: 100% auto;
+}
+.serviceMain .sec01 .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 0;
+  color: #ffffff;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png) left center no-repeat, url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png) right center no-repeat;
+  background-size: 25px auto, 25px auto;
+}
+.serviceMain .sec01 .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.serviceMain .sec01 .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.serviceMain .sec01 .messagePanel {
+  margin: 0 0 100px;
+  text-align: center;
+}
+.serviceMain .sec01 .messagePanel .messageBox + .messageBox {
+  margin: 5px 0 0;
+}
+.serviceMain .sec01 .messagePanel .messageBox .message {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 0;
+  color: #88a028;
+  background: #f0f5df;
+}
+.serviceMain .sec01 .messagePanel .messageBox .message p {
+  display: inline;
+  font-size: 34px;
+}
+.serviceMain .sec01 .messagePanel .messageBox .message .em {
+  color: #f2c920;
+}
+.serviceMain .sec01 .secContainer + .secContainer {
+  margin: 120px 0 0;
+}
+.serviceMain .sec01 .secContainer .secBox {
+  margin: 0 0 40px;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .box {
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .inner {
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 2px dashed #000000;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl01 {
+  font-size: 20px;
+  color: #88a028;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl02 {
+  font-size: 0;
+  color: #88a028;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl02 p,
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl02 h2 {
+  display: inline;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl02 .em,
+.serviceMain .sec01 .secContainer .secBox .txtBox .ttl02 em {
+  color: #f2c920;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .num {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 1px solid #88a028;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .num > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background: #88a028;
+}
+.serviceMain .sec01 .secContainer .secBox .txtBox .num .span {
+  margin: 0 0 2px;
+  font-size: 10px;
+}
+.serviceMain .sec01 .secContainer .secBox .photo img {
+  border-radius: 10px;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .secContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .sec01 .secContainer .secBox .txtBox {
+    width: 48%;
+  }
+  .serviceMain .sec01 .secContainer .secBox .txtBox .box {
+    position: relative;
+    top: -20px;
+    width: 650px;
+  }
+  .serviceMain .sec01 .secContainer .secBox .photo {
+    width: 50%;
+  }
+}
+.serviceMain .sec01 .secContainer .listBox {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  border-radius: 10px;
+  border: 2px solid #88a028;
+}
+.serviceMain .sec01 .secContainer .listBox .ul {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.serviceMain .sec01 .secContainer .listBox .ul .li {
+  padding: 0 0 0 35px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/service_sec01_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .secContainer .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -20px auto 0;
+  }
+  .serviceMain .sec01 .secContainer .listBox .ul .li {
+    width: 48%;
+    margin: 20px 0 0;
+  }
+}
+.serviceMain .slidePanel {
+  margin: 60px 0 0;
+}
+.serviceMain .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceMain .slidePanel .slideBox .ul .li {
+  width: 16.6666666667%;
+  margin: 0 5px;
+}
+.serviceMain .sec02 {
+  padding: 60px 0 100px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .sec02 .ttlPanel {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox01 {
+  display: inline-block;
+  padding: 0 10px 25px;
+  font-size: 20px;
+  color: #ff7f8a;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png) center bottom no-repeat;
+  background-size: 160px auto;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox02 {
+  margin: 0 0 10px;
+  font-size: 0;
+  color: #ffffff;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox02 .ttl p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff7f8a;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox02 .ttl .em {
+  color: #f7ff23;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox03 {
+  font-size: 0;
+  color: #ff7f8a;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox03 p,
+.serviceMain .sec02 .ttlPanel .ttlBox03 h2 {
+  display: inline;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox03 .em {
+  font-size: 50px;
+}
+.serviceMain .sec02 .ttlPanel .ttlBox03 .span {
+  font-size: 40px;
+}
+.serviceMain .sec02 .secBox .photo img {
+  border-radius: 10px;
+}
+.serviceMain .sec02 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .serviceMain .sec02 .secBox .photo {
+    width: 45%;
+  }
+  .serviceMain .sec02 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.serviceMain .sec03 {
+  padding: 60px 0 120px;
+}
+.serviceMain .sec03 .secBox {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.serviceMain .sec03 .secBox .img {
+  width: 100px;
+}
+.serviceMain .sec03 .secBox .txtBox .topSecTitleBox {
+  position: relative;
+  margin: 0 0 10px;
+}
+.serviceMain .sec03 .secBox .txtBox .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  font-size: 0;
+  color: #ffffff;
+}
+.serviceMain .sec03 .secBox .txtBox .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.serviceMain .sec03 .secBox .txtBox .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.serviceMain .sec03 .secBox .txtBox .box {
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #000000;
+}
+.serviceMain .sec03 .secBox .txtBox .box p {
+  font-size: 20px;
+  color: #88a028;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .sec03 .secBox .txtBox {
+    width: calc(100% - 140px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain .topSection {
+  padding: 30px 0 60px;
+}
+.flowMain .topSection .secBox {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.flowMain .topSection .secBox .img {
+  width: 100px;
+}
+.flowMain .topSection .secBox .txtBox .topSecTitleBox {
+  position: relative;
+  margin: 0 0 10px;
+}
+.flowMain .topSection .secBox .txtBox .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  font-size: 0;
+  color: #ffffff;
+}
+.flowMain .topSection .secBox .txtBox .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.flowMain .topSection .secBox .txtBox .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.flowMain .topSection .secBox .txtBox .box {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #000000;
+}
+.flowMain .topSection .secBox .txtBox .box p {
+  font-size: 20px;
+  color: #88a028;
+}
+@media (min-width: 1025px) {
+  .flowMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flowMain .topSection .secBox .txtBox {
+    width: calc(100% - 140px);
+  }
+}
+.flowMain .stepSection {
+  padding: 0 0 100px;
+}
+.flowMain .stepSection .secPanel {
+  position: relative;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid #88a028;
+}
+.flowMain .stepSection .secPanel:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  width: 60px;
+  height: 50px;
+  margin: 0 auto;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/flow_step_arrow.png) no-repeat;
+  background-size: 100% auto;
+}
+.flowMain .stepSection .secPanel .num {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 1px solid #88a028;
+}
+.flowMain .stepSection .secPanel .num > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background: #88a028;
+}
+.flowMain .stepSection .secPanel .num .span {
+  margin: 0 0 2px;
+  font-size: 10px;
+}
+.flowMain .stepSection .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.flowMain .stepSection .secBox .photo img {
+  border-radius: 10px;
+}
+.flowMain .stepSection .secBox .txtBox .ttl {
+  margin: 0 0 10px;
+  padding: 0 15px 5px;
+  font-size: 34px;
+  color: #88a028;
+  border-bottom: 1px solid #88a028;
+}
+.flowMain .stepSection .secBox .txtBox .inner {
+  padding: 0 15px;
+}
+.flowMain .stepSection .secBox .txtBox .telBox {
+  max-width: 460px;
+  margin: 20px 0 0;
+  padding: 15px 20px;
+  color: #ffffff;
+  background: #3e4e30;
+}
+.flowMain .stepSection .secBox .txtBox .telBox > p {
+  font-size: 18px;
+  color: #f2c920;
+}
+.flowMain .stepSection .secBox .txtBox .telBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 1;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png) left top 6px no-repeat;
+  background-size: 25px auto;
+}
+.flowMain .stepSection .secBox .txtBox .telBox .tel > p {
+  font-size: 13px;
+}
+@media (min-width: 1025px) {
+  .flowMain .stepSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .flowMain .stepSection .secBox .photo {
+    width: 350px;
+  }
+  .flowMain .stepSection .secBox .txtBox {
+    width: calc(100% - 400px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .topSection {
+  padding: 120px 0 0;
+}
+.contactMain .topSection .secContainer {
+  position: relative;
+  padding: 0 0 50px;
+  color: #ffffff;
+  text-align: center;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/contact_top_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .topSection .secContainer .secTtl01 {
+  position: relative;
+  top: -40px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 0;
+  border-radius: 10px;
+  background: #88a028;
+}
+.contactMain .topSection .secContainer .secTtl01 p {
+  display: inline;
+  font-size: 40px;
+}
+.contactMain .topSection .secContainer .secTtl01 .em {
+  color: #f7ff23;
+}
+.contactMain .topSection .secContainer .secTtl02 {
+  display: inline-block;
+  margin: 0 0 40px;
+  padding: 0 40px;
+  font-size: 0;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_01.png) left center no-repeat, url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_02.png) right center no-repeat;
+  background-size: 25px auto, 25px auto;
+}
+.contactMain .topSection .secContainer .secTtl02 p {
+  font-size: 40px;
+}
+.contactMain .topSection .secContainer .listBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contactMain .topSection .secContainer .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactMain .topSection .secContainer .listBox .ul .li {
+  width: calc(25% - 45px);
+}
+.contactMain .topSection .secContainer .listBox .ul p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+.contactMain .telSection {
+  padding: 100px 0 50px;
+}
+.contactMain .telSection .telPanel {
+  position: relative;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #3e4e30;
+}
+.contactMain .telSection .telPanel .img {
+  position: absolute;
+  top: -60px;
+  left: -20px;
+  width: 90px;
+}
+.contactMain .telSection .telPanel .telBox {
+  display: inline-block;
+  text-align: left;
+}
+.contactMain .telSection .telPanel .telBox > p {
+  font-size: 24px;
+  color: #f2c920;
+}
+.contactMain .telSection .telPanel .telBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 1;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png) left top 6px no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .telSection .telPanel .telBox .tel > p {
+  font-size: 13px;
+}
+.contactMain .topSecTitleBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.contactMain .topSecTitleBox .sub {
+  position: relative;
+  margin: 0 0 5px;
+  padding: 20px 0 5px;
+  font-size: 24px;
+  color: #88a03d;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec_ttl_top_icon.png) center top no-repeat;
+  background-size: 30px auto;
+}
+.contactMain .topSecTitleBox .sub:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #88a03d;
+}
+.contactMain .topSecTitleBox .topSecTitle {
+  display: inline-block;
+  font-size: 0;
+  color: #ffffff;
+}
+.contactMain .topSecTitleBox .topSecTitle p {
+  display: inline;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #88a03d;
+}
+.contactMain .topSecTitleBox .topSecTitle .em {
+  color: #f7ff23;
+}
+.contactMain .sec01 {
+  padding: 80px 0 120px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/contact_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 50px;
+  text-align: center;
+}
+.contactMain .sec02 {
+  padding: 80px 0 120px;
+}
+.contactMain .sec02 .infoBox .dl {
+  line-height: 2;
+}
+.contactMain .sec02 .infoBox .dl .dt {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #88a03d;
+}
+.contactMain .sec02 .infoBox .dl .dd {
+  padding: 15px 40px;
+  border-bottom: 1px solid #181818;
+}
+.contactMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .infoBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec02 .infoBox .dl .dt {
+    width: 250px;
+  }
+  .contactMain .sec02 .infoBox .dl .dd {
+    width: calc(100% - 252px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #88a028;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #88a028;
+  background: #ffffff;
+  resize: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: url(http://yamabiko.cc/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #3e4e30;
+  background-size: 16px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 {
+  padding: 10px 0 10px 30px;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList02 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #88a028;
+  background: #ffffff;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #171a1c;
+  border-right: 3px solid #171a1c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 2px solid #88a028;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #3e4e30;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 8px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl + .dl .dd {
+  border-top: none;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 260px;
+}
+.formMain .contactForm .formBox > .dl > .dt .inner {
+  position: relative;
+  top: 10px;
+  width: 270px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  background: #88a028;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  position: absolute;
+  top: 12px;
+  right: -10px;
+  display: inline-block;
+  padding: 0 4px;
+  font-size: 12px;
+  vertical-align: middle;
+  background: #f2c43a;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 260px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox {
+  border: 1px solid #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .ttl {
+  max-width: 220px;
+  padding: 3px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .txt {
+  padding: 10px 20px;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl > .dd .dogBox > p {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid #88a028;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 32%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 65%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox + p {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}

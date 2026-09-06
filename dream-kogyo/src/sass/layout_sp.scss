@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      padding: 0 0 0 80px;
+      .topKvPanel {
+        height: 400px;
+      }
+      .topKvTitlePanel {
+        position: absolute;
+        top: 20%;
+        left: 20px;
+        width: 90%;
+        max-width: 440px;
+        .topKvTitleBox {
+          margin: 0 0 20px;
+          .topKvTitle {
+            p {
+              padding: 5px 20px;
+              font-size: 22px;
+            }
+          }
+        }
+        .subTitleBox {
+          .subTitle {
+            p {
+              padding: 5px 20px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .topSection {
+      margin: 50px 0 0;
+      padding: 20px 0 80px;
+      &::before {
+        height: 100%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        width: 300px;
+        height: 44px;
+        margin: 0 auto;
+        background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_top_logo.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .secTtl {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .message {
+        margin: 0 0 30px;
+        font-size: 18px;
+      }
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+            .ttl {
+              padding: 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secBox {
+        .chartBox {
+          margin: 0 0 20px;
+          .chart {
+            max-width: 350px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secBoxList {
+        .secBox {
+          + .secBox {
+            margin: 30px 0 0;
+          }
+        }
+        .ttl {
+          margin: 0 0 15px;
+          h3 {
+            max-width: 180px;
+            font-size: 20px;
+          }
+        }
+        .txtBox {
+          padding: 20px;
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secBox {
+        max-width: 460px;
+        .ttlBox {
+          .ttlImg {
+            max-width: 260px;
+            margin: 0 auto;
+          }
+        }
+        .txtBox {
+          text-align: center;
+          .ttl {
+            margin: 0 0 10px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topMessage {
+      padding: 40px 0;
+      p {
+        font-size: 20px;
+      }
+    }
+    .section {
+      padding: 60px 0;
+      .topBox {
+        margin: 0 0 40px;
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      .listPanel {
+        .pTtl {
+          margin: 0 auto 30px;
+          p {
+            max-width: 180px;
+            font-size: 18px;
+          }
+        }
+      }
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      .secPanel {
+        .pTtl {
+          max-width: 640px;
+          margin: 0 auto 30px;
+          p {
+            max-width: 360px;
+            font-size: 18px;
+          }
+        }
+        .ttl {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .section {
+      padding: 60px 0;
+    }
+    .sec01 {
+      background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/recruit_sec01_bg.png)
+        right bottom no-repeat;
+      background-size: cover;
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+      .name {
+        margin: 20px 0 0;
+      }
+    }
+    .sec02 {
+      .secContainer {
+        + .secContainer {
+          margin: 50px 0 0;
+        }
+      }
+      .secPanel {
+        .ttlBox {
+          padding: 8px 10px 8px 85px;
+          .num {
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            width: 60px;
+            height: 60px;
+          }
+          .ttl {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        .secBox {
+          .txtBox {
+            padding: 15px 0 0;
+          }
+        }
+      }
+    }
+    .sec04 {
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        width: 300px;
+        height: 44px;
+        margin: 0 auto;
+        background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_top_logo.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .secPanelList {
+        .secPanel {
+          + .secPanel {
+            margin: 30px 0 0;
+          }
+          .pTtl {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .section {
+      padding: 50px 0;
+    }
+    .sec01 {
+      h3 {
+        margin: 0 0 30px;
+        font-size: 18px;
+      }
+      .secBox {
+        margin: 0 0 20px;
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 60px 0;
+      .topPanel {
+        margin: 0 0 40px;
+        .txtBox {
+          padding: 20px 0 0;
+          .checkPanel {
+            padding: 20px;
+            .list {
+              max-width: 480px;
+              .ul {
+                .li {
+                  padding: 10px 0;
+                  p {
+                    padding: 0 0 0 25px;
+                    background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/contact_top_check.png)
+                      left center no-repeat;
+                    background-size: 20px auto;
+                  }
+                }
+              }
+            }
+            > p {
+              margin: 15px 0 0;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .secPanel {
+        max-width: 400px;
+        .pTtl {
+          font-size: 20px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 15px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .otherTtl {
+          padding: 20px 10px 5px;
+        }
+
+        .otherRadio {
+          .dt {
+            text-align: left;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              width: auto;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadPanel {
+        padding: 20px 0;
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          display: block;
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          width: 100%;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

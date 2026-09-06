@@ -1,0 +1,581 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .mvPanel {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  max-height: 280px;
+}
+#top .mvPanel .mvMovie {
+  overflow: hidden;
+  position: absolute;
+  width: 125vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#top .mvPanel .mvMovie video {
+  width: 100%;
+}
+#top #headLineContainer .secPanel .txtBox {
+  padding: 40px 20px;
+}
+#top #headLineContainer .secPanel .txtBox .inner {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+}
+#top #headLineContainer .secPanel .txtBox .titleBox {
+  margin: 0 0 15px;
+}
+#top #headLineContainer .secPanel .txtBox .titleBox h2 {
+  font-size: 28px;
+}
+#top #headLineContainer .secPanel .txtBox dl dt {
+  font-size: 18px;
+}
+#top #problemSection {
+  padding: 20px;
+}
+#top #problemSection .secContainer {
+  padding: 20px 0;
+}
+#top #problemSection .secTitle {
+  margin: 0 0 25px;
+}
+#top #problemSection .secTitle h2 {
+  font-size: 20px;
+}
+#top #problemSection .secPanel + .secPanel {
+  margin: 40px 0 0;
+}
+#top #problemSection .secPanel h3 {
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  background: url("../image/top/problem_title_icon.png") left center no-repeat;
+  background-size: 24px auto;
+}
+#top #problemSection .secPanel .linkList {
+  padding: 0;
+}
+#top #problemSection .secPanel .linkList ul li + li {
+  margin: 10px 0 0;
+}
+#top #problemSection .secPanel .linkList ul li a {
+  display: block;
+  padding: 7px 30px;
+  font-size: 16px;
+}
+#top #problemSection .secPanel .productList {
+  padding: 0;
+}
+#top #problemSection .secPanel .productList ul {
+  margin: -15px 0 0 -15px;
+}
+#top #problemSection .secPanel .productList ul li {
+  width: calc(50% - 15px);
+  margin: 15px 0 0 15px;
+}
+#top #problemSection .secPanel .productList ul li figcaption {
+  padding: 3px 0 0;
+  font-size: 14px;
+}
+#top #trustSection .topContainer {
+  padding: 50px 20px;
+  background: url("../image/top/trust_bg_sp.png") center no-repeat;
+  background-size: cover;
+}
+#top #trustSection .topContainer h2 {
+  margin: 0 0 15px;
+}
+#top #trustSection .topContainer h2 span {
+  margin: 0;
+  font-size: 18px;
+}
+#top #trustSection .topContainer h2 em {
+  font-size: 36px;
+}
+#top #trustSection .topContainer .txt {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#top #testContainer {
+  padding: 40px 0;
+}
+#top #testContainer .testButton {
+  max-width: 335px;
+}
+#top #testContainer .testButton a {
+  padding: 15px 20px;
+  font-size: 18px;
+}
+#top #multiContainer {
+  margin: 0 0 80px;
+}
+#top #multiContainer .secWrap01 {
+  padding: 0;
+}
+#top #multiContainer .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#top #multiContainer .listBox ul dl {
+  padding: 20px 20px 0;
+}
+#top #multiContainer .listBox ul dl dt {
+  margin: 0 0 10px;
+}
+#top #multiContainer .listBox ul dl dt em {
+  font-size: 22px;
+}
+#top #multiContainer .listBox ul .detailLink {
+  margin: 15px 0 0;
+  text-align: center;
+}
+#top #bnrContainer {
+  margin: 0 0 80px;
+}
+#top #bnrContainer .bnrList ul li + li {
+  margin: 10px 0 0;
+}
+#top #bnrContainer .bnrList ul li a {
+  display: block;
+}
+#top #newsSection {
+  padding: 0 0 80px;
+}
+#top #newsSection .secTitle {
+  margin: 0 0 15px;
+}
+#top #newsSection .secTitle h2 {
+  font-size: 20px;
+}
+#top #newsSection .newsList ul li {
+  display: block;
+  padding: 15px 0;
+}
+#top #newsSection .newsList ul li time {
+  width: 100%;
+}
+#top #newsSection .detailLink {
+  margin: 35px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+#productList .productListContainer {
+  padding: 80px 0;
+}
+#productList .productListContainer .secTitle {
+  margin: 0 0 40px;
+}
+#productList .productListContainer .secTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+#productList .productSection {
+  padding: 0 0 80px;
+}
+#productList .productSection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+#productList .productSection h4 {
+  padding: 2px 0 2px 30px;
+  font-size: 18px;
+  background: url("../image/common/page_title_icon_water.png") left center no-repeat;
+  background-size: 22px auto;
+}
+#productList .productSection__text {
+  padding: 0 0 30px;
+}
+#productList .listSection + .listSection {
+  margin: 60px 0 0;
+}
+#productList .listSection .productList {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#productList .listSection .productList ul {
+  margin: -15px 0 0 -15px;
+}
+#productList .listSection .productList ul li {
+  width: calc(50% - 15px);
+  margin: 15px 0 0 15px;
+}
+#productList .listSection .productList ul li figure {
+  height: 0;
+  padding: 0 0 100%;
+}
+
+#productDetail .productDetailContainer {
+  padding: 80px 0;
+}
+#productDetail .productDetailContainer .headTxt {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+#productDetail .productDetailContainer .secTitle {
+  margin: 0 0 20px;
+}
+#productDetail .productDetailContainer .secTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#productDetail .productDetailContainer .secTitle + .topTxt {
+  margin: 0 0 40px;
+  font-size: 18px;
+}
+#productDetail .productDetailContainer .topProductList {
+  margin: 0 0 80px;
+}
+#productDetail .productDetailContainer .topProductList ul {
+  margin: -15px 0 0 -15px;
+}
+#productDetail .productDetailContainer .topProductList ul li {
+  width: calc(50% - 15px);
+  margin: 15px 0 0 15px;
+}
+#productDetail .productDetailContainer .topProductList ul .photo {
+  height: 0;
+  padding: 0 0 100%;
+}
+#productDetail .productDetailContainer .topProductList ul .icon {
+  right: 10px;
+  bottom: 10px;
+  width: 30px;
+}
+#productDetail .productSection {
+  padding: 0 0 80px;
+}
+#productDetail .productSection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+#productDetail .productSection h4 {
+  padding: 2px 0 2px 30px;
+  font-size: 18px;
+  background: url("../image/common/page_title_icon_water.png") left center no-repeat;
+  background-size: 22px auto;
+}
+#productDetail .productSection__text {
+  padding: 0;
+}
+#productDetail .productSection .listSection {
+  margin: 30px auto 0;
+}
+#productDetail .productSection .listSection ol li {
+  padding: 0 0 20px;
+}
+#productDetail .productSection .listSection ol li + li {
+  margin: 20px 0 0;
+}
+#productDetail .productSection .listSection ol li .ttl {
+  position: relative;
+  min-height: 35px;
+  margin: 0 0 10px;
+}
+#productDetail .productSection .listSection ol li .ttl p {
+  padding: 4px 0 0 45px;
+}
+#productDetail .productSection .photoSingle {
+  margin: 30px auto 0;
+}
+#productDetail .productSection .photoMulti {
+  max-width: 640px;
+  margin: 30px auto 0;
+}
+#productDetail .productSection .photoMulti ul li + li {
+  margin: 20px 0 0;
+}
+#productDetail .productSection .chartPanel {
+  margin: 30px auto 0;
+}
+#productDetail .productSection .chartPanel table th,
+#productDetail .productSection .chartPanel table td {
+  font-size: 14px;
+}
+#productDetail .productSection aside {
+  padding: 10px 0 0;
+}
+#productDetail .productSection aside p {
+  font-size: 14px;
+}
+#productDetail .productSection .listPanel ul li {
+  margin: 0 20px 0 0;
+  font-size: 16px;
+}
+#productDetail .productSection .descriptionBox {
+  margin: 30px auto 0;
+}
+#productDetail .productSection .descriptionBox dl dt {
+  margin: 0 0 10px;
+}
+#productDetail .productSection .itemList {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#productDetail .productSection .itemList ul {
+  margin: -15px 0 0 -15px;
+}
+#productDetail .productSection .itemList ul li {
+  width: calc(50% - 15px);
+  margin: 15px 0 0 15px;
+}
+#productDetail .productSection .itemList ul li figure {
+  height: 0;
+  padding: 0 0 64%;
+}
+#productDetail .productSection .itemList ul li figcaption {
+  padding: 3px 0 0;
+  font-size: 14px;
+}
+
+/*////////////////////////////////////////////////////////////
+	history
+///////////////////////////////////////////////////////////*/
+.historyMain .historyContainer {
+  padding: 80px 0;
+}
+.historyMain .historyContainer .secTitle {
+  margin: 0 0 40px;
+}
+.historyMain .historyContainer .secTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.historyMain .historySection {
+  padding: 0 0 80px;
+}
+.historyMain .historySection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.historyMain .historyList > ol dl {
+  font-size: 14px;
+}
+.historyMain .historyList > ol dl dt {
+  width: 90px;
+  padding: 0;
+}
+.historyMain .historyList > ol dl dt::before {
+  top: 8px;
+}
+.historyMain .historyList > ol dl dt::after {
+  top: 8px;
+}
+.historyMain .historyList > ol dl dd {
+  width: calc(100% - 110px);
+}
+.historyMain .historyList > ol .photoList {
+  max-width: 250px;
+}
+.historyMain .historyList > ol .photoList ul li + li {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+.featureMain .featureContainer {
+  padding: 80px 0;
+}
+.featureMain .featureContainer .secTitle {
+  margin: 0 0 40px;
+}
+.featureMain .featureContainer .secTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.featureMain .featureSection {
+  padding: 0 0 80px;
+}
+.featureMain .featureSection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.featureMain .featureSection h4 {
+  padding: 2px 0 2px 30px;
+  font-size: 18px;
+  background: url("../image/common/page_title_icon_water.png") left center no-repeat;
+  background-size: 22px auto;
+}
+.featureMain .featureSection__text {
+  padding: 0;
+}
+.featureMain .flowList {
+  padding: 30px 0;
+}
+.featureMain .flowList ol li + li {
+  margin: 60px 0 0;
+}
+.featureMain .flowList ol li + li::before {
+  top: -45px;
+  width: 55px;
+  height: 25px;
+}
+.featureMain .flowList ol dl {
+  padding: 15px 0;
+}
+.featureMain .flowList ol dl dt {
+  padding: 0 20px;
+  font-size: 16px;
+}
+.featureMain .flowList ol dl dt span {
+  width: 80px;
+  margin: 0 0 10px;
+}
+.featureMain .flowList ol dl dt span::before {
+  left: -20px;
+  width: 60px;
+}
+.featureMain .flowList ol dl dt em {
+  display: block;
+}
+.featureMain .flowList ol dl dd {
+  padding: 15px 20px;
+}
+.featureMain .introPanel {
+  margin: 40px auto 0;
+}
+.featureMain .introPanel dl {
+  padding: 30px 0;
+}
+.featureMain .introPanel dl dt {
+  font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////
+	testRequest
+///////////////////////////////////////////////////////////*/
+.testRequestMain .testRequestContainer {
+  padding: 80px 0;
+}
+.testRequestMain .testRequestContainer .secTitle {
+  margin: 0 0 40px;
+}
+.testRequestMain .testRequestContainer .secTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.testRequestMain .testRequestSection {
+  padding: 0 0 80px;
+}
+.testRequestMain .testRequestSection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.testRequestMain .testRequestSection h4 {
+  padding: 2px 0 2px 30px;
+  font-size: 18px;
+  background: url("../image/common/page_title_icon_water.png") left center no-repeat;
+  background-size: 22px auto;
+}
+.testRequestMain .testRequestSection__text {
+  padding: 0;
+}
+.testRequestMain .introSection {
+  margin: 40px 0 0;
+}
+.testRequestMain .introSection .introPanel {
+  padding: 0;
+}
+.testRequestMain .introSection .introPanel dl {
+  padding: 25px 0;
+}
+.testRequestMain .introSection .introPanel dl dt {
+  font-size: 16px;
+}
+.testRequestMain .photoSection {
+  margin: 40px 0 0;
+}
+.testRequestMain .photoSection .photoPanel {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+.testRequestMain .photoSection .photoPanel .photoBox ul li {
+  width: calc(50% - 5px);
+  height: 0;
+  padding: 0 0 50%;
+}
+
+/*////////////////////////////////////////////////////////////
+	example
+///////////////////////////////////////////////////////////*/
+.exampleMain .exampleContainer {
+  padding: 80px 0;
+}
+.exampleMain .exampleContainer .secTitle {
+  margin: 0 0 40px;
+}
+.exampleMain .exampleContainer .secTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.exampleMain .exampleSection {
+  padding: 0 0 80px;
+}
+.exampleMain .exampleSection h3 {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.exampleMain .innerSection {
+  padding: 0;
+}
+.exampleMain .flowPanel .ttl {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+.exampleMain .examplePanel {
+  margin: 40px 0 0;
+}
+.exampleMain .examplePanel .exampleList01 {
+  max-width: 380px;
+}
+.exampleMain .examplePanel .exampleList01 ul li:nth-child(1) {
+  max-width: 270px;
+  margin: 0 0 30px;
+}
+.exampleMain .examplePanel .exampleList01 ul li:nth-child(2) {
+  max-width: 380px;
+}
+.exampleMain .examplePanel .exampleList02 {
+  max-width: 380px;
+}
+.exampleMain .examplePanel .exampleList02 ul li + li {
+  margin: 30px 0 0;
+}
+.exampleMain .relationPanel {
+  margin: 40px 0 0;
+}
+.exampleMain .relationPanel .relationList {
+  max-width: 340px;
+}
+.exampleMain .relationPanel .relationList ul li + li {
+  margin: 30px 0 0;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul li {
+  width: calc(50% - 15px);
+  height: 0;
+  padding: 0 0 66%;
+}
+.exampleMain .beforeAfterPanel .beforeAfterBox ul li + li::before {
+  left: -25px;
+  width: 20px;
+  height: 20px;
+}

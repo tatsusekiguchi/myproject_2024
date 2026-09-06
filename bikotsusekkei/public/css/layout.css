@@ -1,0 +1,2290 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  padding: 40px 0 0;
+}
+.topMain .topKvContainer .topKvTitleBox {
+  margin: 0 0 15px;
+}
+.topMain .topKvContainer .topKvTitleBox .topKvTitle {
+  margin: 0 0 15px;
+  color: #433f37;
+}
+.topMain .topKvContainer .topKvTitleBox .topKvTitle p {
+  font-size: 20px;
+}
+.topMain .topKvContainer .topKvTitleBox .topKvTitle h1 {
+  font-size: 34px;
+  letter-spacing: 0.2em;
+}
+.topMain .topKvContainer .topKvTitleBox > p {
+  line-height: 2;
+}
+.topMain .topKvContainer .topKvPanel .topKv {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+}
+.topMain .topKvContainer .btnReserve {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  width: 240px;
+  z-index: 999;
+}
+.topMain .topKvContainer .btnReserve a {
+  display: block;
+}
+.topMain .sec01 {
+  position: relative;
+  padding: 200px 0 100px;
+}
+.topMain .sec01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec01_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secWrap {
+  position: relative;
+}
+.topMain .sec01 .ttl01 {
+  margin: 0 0 40px;
+  font-size: 100px;
+  color: #c6d0d2;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+.topMain .sec01 .ttl02 {
+  margin: 0 0 40px;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.topMain .sec01 .txt {
+  margin: 0 0 60px;
+}
+.topMain .sec01 .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec02 {
+  padding: 150px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secBox {
+  position: relative;
+}
+.topMain .sec02 .txtBox {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.topMain .sec02 .txtBox h3 {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+.topMain .sec02 .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec02 .photoList .photoBox {
+  position: relative;
+}
+.topMain .sec02 .photoList .photoBox .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .sec02 .photoList .photoBox .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .sec02 .photoList .photoKv01 .kvBox .kv01 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec02_img_1_1.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .photoList .photoKv01 .kvBox .kv02 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec02_img_1_2.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .photoList .photoKv02 .kvBox .kv01 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec02_img_2_1.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .photoList .photoKv02 .kvBox .kv02 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec02_img_2_2.png) center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .txtBox {
+    width: 60%;
+    min-height: 450px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .topMain .sec02 .photoList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .topMain .sec02 .photoList .photoKv01 {
+    position: relative;
+    top: -80px;
+    width: 20%;
+    height: 500px;
+  }
+  .topMain .sec02 .photoList .photoKv02 {
+    width: 20%;
+    height: 500px;
+  }
+}
+.topMain .sec02 .btnMore {
+  margin: 60px 0 0;
+}
+.topMain .sec03 {
+  padding: 150px 0;
+  background: #ffffff;
+}
+.topMain .sec03 .secWrap01 {
+  position: relative;
+}
+.topMain .sec03 .balloon {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+}
+.topMain .sec03 .balloon p {
+  position: relative;
+  padding: 15px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #529cb6;
+}
+.topMain .sec03 .balloon01 p::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  bottom: -25px;
+  width: 20px;
+  height: 30px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec03_balloon_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec03 .balloon02 p::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  width: 20px;
+  height: 30px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec03_balloon_02.png) no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .balloon01 {
+    left: 30px;
+  }
+  .topMain .sec03 .balloon02 {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+  }
+}
+.topMain .sec03 .randomPanel .ul .img {
+  max-width: 160px;
+  margin: 0 auto 20px;
+}
+.topMain .sec03 .randomPanel .ul .dl {
+  text-align: center;
+}
+.topMain .sec03 .randomPanel .ul .dl .dt {
+  margin: 0 0 10px;
+}
+.topMain .sec03 .randomPanel .ul .dl .dd {
+  font-size: 14px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .randomPanel .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -60px;
+  }
+  .topMain .sec03 .randomPanel .ul .li {
+    width: calc(25% - 60px);
+    margin: 60px 0 0 60px;
+  }
+}
+.topMain .sec03 .btnList {
+  margin: 60px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .btnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .btnList > * {
+    width: 49%;
+  }
+}
+.topMain .sec04 {
+  padding: 0 0 150px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec04_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .secTtlBox {
+  position: relative;
+  top: -60px;
+  margin: 0 0 20px;
+}
+.topMain .sec04 h3 {
+  margin: 0 0 40px;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.topMain .sec04 .sliderPanel {
+  margin: 0 0 60px;
+}
+.topMain .sec04 .sliderPanel .slider {
+  width: 95%;
+  margin: 0 auto;
+}
+.topMain .sec04 .sliderPanel .slider .slick-slide {
+  margin: 0 5px;
+}
+.topMain .sec04 .sliderPanel .ttl {
+  margin: 10px 0 0;
+  text-align: center;
+}
+.topMain .sec04 .message {
+  margin: 0 0 40px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 0.2em;
+}
+.topMain .sec05 {
+  padding: 0 0 80px;
+  background: #ffffff;
+}
+.topMain .sec05 .secTtlBox {
+  position: relative;
+  top: -60px;
+  margin: 0 0 20px;
+}
+.topMain .sec05 .secBox {
+  margin: 0 0 60px;
+}
+.topMain .sec05 .secBox .photo .img {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.topMain .sec05 .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  letter-spacing: 0.2em;
+}
+.topMain .sec05 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec05 .secBox .photo {
+    width: 45%;
+  }
+  .topMain .sec05 .secBox .txtBox {
+    width: 55%;
+  }
+}
+.topMain .sec06 {
+  padding: 80px 0 150px;
+  background: #ffffff;
+}
+.topMain .sec06 .listBox {
+  margin: 0 0 60px;
+}
+.topMain .sec06 .listBox .ul a {
+  display: block;
+}
+.topMain .sec06 .listBox .ul .ttl {
+  margin: 10px 0 0;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .topMain .sec06 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec06 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+.topMain .sec07 {
+  padding: 0 0 150px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/top_sec07_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec07 .secBoxList {
+  position: relative;
+  top: -60px;
+  margin: 0 0 20px;
+}
+.topMain .sec07 .secBoxList .secBox .photo {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec07 .secBoxList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec07 .secBoxList .secBox {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	pain
+///////////////////////////////////////////////////////////*/
+.painMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/pain_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.painMain .sec01 .topPanel {
+  padding: 120px 0 300px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/pain_main_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.painMain .sec01 .topPanel .topTxt {
+  margin: 0 0 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+}
+.painMain .sec01 .topPanel .photoList .ul p {
+  margin: 10px 0 0;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .painMain .sec01 .topPanel .photoList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -40px;
+  }
+  .painMain .sec01 .topPanel .photoList .ul .li {
+    width: calc(50% - 40px);
+    margin: 60px 0 0 40px;
+  }
+}
+.painMain .sec01 .listPanel {
+  padding: 60px 0;
+}
+.painMain .sec01 .listPanel .ttl {
+  margin: 0 0 30px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.painMain .sec01 .listPanel .ttl > * {
+  line-height: 1.7;
+}
+.painMain .sec01 .listPanel .listBox {
+  padding: 50px 20px;
+  background: #f3f4f0;
+}
+.painMain .sec01 .listPanel .listBox .list {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.painMain .sec01 .listPanel .listBox .list .ul .li {
+  padding: 0 0 0 40px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/pain_sec01_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .painMain .sec01 .listPanel .listBox .list .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -30px 0 0;
+  }
+  .painMain .sec01 .listPanel .listBox .list .ul .li {
+    width: 48%;
+    margin: 30px 0 0;
+  }
+}
+.painMain .sec01 .bottomPanel {
+  padding: 60px 0;
+}
+.painMain .sec01 .bottomPanel .ttl {
+  margin: 0 0 30px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.painMain .sec01 .bottomPanel .ttl > * {
+  line-height: 1.7;
+}
+.painMain .sec01 .bottomPanel .txt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.painMain .sec02 .topPanel {
+  padding: 60px 0 120px;
+}
+.painMain .sec02 .topPanel .topTxt {
+  margin: 0 0 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+}
+.painMain .sec02 .topPanel .secBox .txtBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .painMain .sec02 .topPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .painMain .sec02 .topPanel .secBox .photo {
+    width: 40%;
+  }
+  .painMain .sec02 .topPanel .secBox .txtBox {
+    width: 55%;
+  }
+}
+.painMain .sec02 .caseContainer {
+  padding: 120px 0;
+  background: #f3f4f0;
+}
+.painMain .sec02 .caseContainer .cntTtlBox {
+  margin: 0 0 100px;
+  text-align: center;
+}
+.painMain .sec02 .caseContainer .cntTtlBox .cntTtl {
+  margin: 0 0 30px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.painMain .sec02 .caseContainer .secPanelList {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel {
+  position: relative;
+  padding: 60px 50px 30px;
+  text-align: center;
+  background: #ffffff;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel .pTtl {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #ffffff;
+  background: #75b7d3;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel .pTtl .ttl01 {
+  font-size: 20px;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel .pTtl .ttl02 {
+  font-size: 12px;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel .pTtl01 {
+  top: -20px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+.painMain .sec02 .caseContainer .secPanelList .secPanel .pTtl02 {
+  top: -40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen {
+  display: flex;
+  position: relative;
+  /* padding: 15px 10px; */
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  background: #75b7d3;
+  transition: 0.6s;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #ffffff;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen img {
+  width: 40px;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen p {
+  margin: auto 0;
+}
+.painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen p + img {
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .painMain .sec02 .caseContainer .secPanelList .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .painMain .sec02 .caseContainer .secPanelList .secBox .chart {
+    width: 50%;
+  }
+  .painMain .sec02 .caseContainer .secPanelList .secBox .txtBox {
+    width: 45%;
+  }
+  .painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen:hover {
+    color: #75b7d3;
+    border: 1px solid #75b7d3;
+    background: #ffffff;
+  }
+  .painMain .sec02 .caseContainer .secPanelList .secBox .txtBox .modalOpen:hover p + img {
+    transform: scale(0.7, 0.7);
+  }
+}
+.painMain .sec02 .caseContainer .message {
+  margin: 60px 0 0;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+/*////////////////////////////////////////////////////////////
+	intro
+///////////////////////////////////////////////////////////*/
+.introMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/intro_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.introMain .topSection {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/intro_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.introMain .topSection .ttlTop {
+  margin: 0 0 20px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+.introMain .topSection .secBox .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+.introMain .topSection .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .introMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .introMain .topSection .secBox .photo {
+    position: relative;
+    top: -40px;
+    width: 40%;
+  }
+  .introMain .topSection .secBox .txtBox {
+    width: 55%;
+  }
+}
+.introMain .sec01 .secContainer01 {
+  padding: 120px 0;
+}
+.introMain .sec01 .secContainer01 .topBox {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.introMain .sec01 .secContainer01 .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.introMain .sec01 .secContainer01 .listBox .ul .photo {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.introMain .sec01 .secContainer01 .listBox .ul .dl {
+  margin: 20px 0 0;
+}
+.introMain .sec01 .secContainer01 .listBox .ul .dl .dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.introMain .sec01 .secContainer01 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .introMain .sec01 .secContainer01 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .introMain .sec01 .secContainer01 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+  }
+  .introMain .sec01 .secContainer01 .listBox .ul .dl .dt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 72px;
+  }
+}
+.introMain .sec01 .secContainer02 {
+  padding: 120px 0;
+  background: #f3f4f0;
+}
+.introMain .sec01 .secContainer02 .mv {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+.introMain .sec01 .secContainer02 .secBox {
+  margin: 0 0 100px;
+  text-align: center;
+}
+.introMain .sec01 .secContainer02 .secBox .ttl {
+  margin: 0 0 60px;
+  font-size: 24px;
+}
+
+/*////////////////////////////////////////////////////////////
+	lesson
+///////////////////////////////////////////////////////////*/
+.lessonMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/lesson_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.lessonMain .sec01 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/lesson_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.lessonMain .sec01 .topContainer {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/lesson_sec01_top_bg.png) right center no-repeat;
+  background-size: auto 100%;
+}
+.lessonMain .sec01 .topContainer .secTtlBox {
+  text-align: left;
+}
+.lessonMain .sec01 .topContainer .secTtlBox > * {
+  display: inline-block;
+  text-align: center;
+}
+.lessonMain .sec01 .topContainer .txt {
+  padding: 0 0 0 20px;
+}
+.lessonMain .sec02 {
+  margin: 0 0 120px;
+}
+.lessonMain .sec02 .chartContainer {
+  padding: 120px 0;
+}
+.lessonMain .sec02 .chartContainer .balloon {
+  position: relative;
+  max-width: 330px;
+  margin: 0 auto 50px;
+  padding: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #529cb6;
+}
+.lessonMain .sec02 .chartContainer .balloon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -25px;
+  width: 14px;
+  height: 26px;
+  margin: 0 auto;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/lesson_balloon.png) no-repeat;
+  background-size: 100% auto;
+}
+.lessonMain .sec02 .chartContainer .ttl {
+  margin: 0 0 60px;
+  font-size: 24px;
+  text-align: center;
+}
+.lessonMain .sec02 .chartContainer .chart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.lessonMain .sec02 .aboutContainer {
+  padding: 100px 0;
+  background: #f3f4f0;
+}
+.lessonMain .sec02 .aboutContainer .topTtl {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.lessonMain .sec02 .aboutContainer .topTtl .ttl {
+  font-size: 0;
+}
+.lessonMain .sec02 .aboutContainer .topTtl .ttl p {
+  display: inline;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.lessonMain .sec02 .aboutContainer .topTtl .ttl .em {
+  color: #ff0000;
+  letter-spacing: 0.2em;
+}
+.lessonMain .sec02 .aboutContainer .topTxt {
+  margin: 0 0 80px;
+  text-align: center;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel {
+  position: relative;
+  padding: 60px 20px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(3, 0, 11, 0.14);
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel .pTtl {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox .txtBox .ul .li {
+  font-size: 14px;
+  padding: 0 0 0 25px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/lesson_sec02_check.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox .txtBox .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox .img {
+    width: 55%;
+  }
+  .lessonMain .sec02 .aboutContainer .secPanelList .secPanel .secBox .txtBox {
+    width: 40%;
+  }
+}
+.lessonMain .sec02 .aboutContainer .secPanelList + p {
+  margin: 50px 0 0;
+  font-size: 24px;
+  text-align: center;
+}
+.lessonMain .sec02 .message {
+  padding: 30px 0 0;
+}
+.lessonMain .sec02 .message p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.lessonMain .sec03 {
+  padding: 120px 0;
+  background: #f3f4f0;
+}
+.lessonMain .sec03 .secPanel {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(3, 0, 11, 0.14);
+}
+.lessonMain .sec03 .secPanel .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.lessonMain .sec03 .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .lessonMain .sec03 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .lessonMain .sec03 .secPanel .secBox .photo {
+    width: 48%;
+  }
+  .lessonMain .sec03 .secPanel .secBox .txtBox {
+    width: 48%;
+  }
+}
+.lessonMain .sec04 {
+  padding: 120px 0;
+}
+.lessonMain .sec04 .secPanelList {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.lessonMain .sec04 .secPanelList .secPanel {
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(3, 0, 11, 0.14);
+}
+.lessonMain .sec04 .secPanelList .secPanel + .secPanel {
+  margin: 80px 0 0;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox {
+  padding: 40px 0 0;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns {
+  width: 110px;
+  margin: 50px 0 0;
+  padding: 5px 0;
+  background: #75b7d3;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns .ul {
+  display: flex;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns .ul .li {
+  width: 50%;
+  text-align: center;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns .ul .li a {
+  display: block;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns .ul .insta img {
+  width: 18px;
+}
+.lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox .sns .ul .fb img {
+  width: 9px;
+}
+@media (min-width: 1025px) {
+  .lessonMain .sec04 .secPanelList .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .lessonMain .sec04 .secPanelList .secPanel .secBox .photo {
+    width: 45%;
+  }
+  .lessonMain .sec04 .secPanelList .secPanel .secBox .txtBox {
+    width: 50%;
+  }
+}
+.lessonMain .sec04 .secPanelList + p {
+  margin: 100px 0 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	beginner
+///////////////////////////////////////////////////////////*/
+.beginnerMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/beginner_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.beginnerMain .topSection {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/beginner_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.beginnerMain .topSection .secContainer {
+  padding: 50px 20px;
+  color: #ffffff;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/beginner_top_bg.png) center no-repeat;
+  background-size: cover;
+}
+.beginnerMain .topSection .secContainer .titleBox {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.beginnerMain .topSection .secContainer .titleBox .title {
+  margin: 0 0 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.beginnerMain .topSection .secContainer .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.beginnerMain .topSection .secContainer .secBox .dl {
+  padding: 20px 10px;
+  border-bottom: 1px dotted #b8cad3;
+}
+.beginnerMain .topSection .secContainer .secBox .dl .dt p {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #75b7d3;
+}
+.beginnerMain .topSection .secContainer .secBox .dl .dd p {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .beginnerMain .topSection .secContainer .secBox .dl {
+    display: flex;
+    align-items: center;
+  }
+  .beginnerMain .topSection .secContainer .secBox .dl .dt {
+    width: 25%;
+    padding: 0 30px 0 0;
+  }
+  .beginnerMain .topSection .secContainer .secBox .dl .dd {
+    width: 75%;
+  }
+}
+.beginnerMain .secQA {
+  padding: 120px 0 60px;
+}
+.beginnerMain .secQA .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.beginnerMain .secQA .pagingList {
+  margin: 0 0 60px;
+}
+.beginnerMain .secQA .pagingList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.beginnerMain .secQA .pagingList .ul .li {
+  width: calc(20% - 10px);
+  margin: 10px 0 0 10px;
+}
+.beginnerMain .secQA .pagingList .ul .li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.beginnerMain .secQA .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.beginnerMain .secQA .section + .section {
+  margin: 80px 0 0;
+}
+.beginnerMain .secQA .section .secTtl {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+.beginnerMain .secQA .section .faqList .faqBox + .faqBox {
+  margin: 20px 0 0;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dt {
+  display: flex;
+  align-items: center;
+  padding: 10px 60px 10px 30px;
+  cursor: pointer;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/accord_icon_01.png) right 15px center no-repeat #74b6d2;
+  background-size: 35px auto;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dt.active {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/accord_icon_02.png) right 15px center no-repeat #74b6d2;
+  background-size: 35px auto;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dt .icon {
+  width: 40px;
+  font-size: 30px;
+  font-family: "Oswald";
+  font-weight: 700;
+  color: #ffffff;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dt .ttl {
+  width: calc(100% - 40px);
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dd {
+  display: flex;
+  padding: 10px 60px 10px 30px;
+  background: #ffffff;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dd .icon {
+  width: 40px;
+  font-size: 30px;
+  font-family: "Oswald";
+  font-weight: 700;
+  color: #74b6d2;
+}
+.beginnerMain .secQA .section .faqList .faqBox .dl .dd .txt {
+  width: calc(100% - 40px);
+  padding: 10px 0 0;
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/flow_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.flowMain .sec01 {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/flow_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.flowMain .sec01 .flowPanel + .flowPanel {
+  margin: 30px 0 0;
+}
+.flowMain .sec01 .flowPanel .flowBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 50px;
+}
+.flowMain .sec01 .flowPanel .flowBox:after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 1px;
+  height: calc(100% - 80px);
+  background: #e8a4c4;
+}
+.flowMain .sec01 .flowPanel .flowBox .num {
+  width: 60px;
+}
+.flowMain .sec01 .flowPanel .flowBox .num p {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #c9d1d3, -1px -1px 0 #c9d1d3, 1px -1px 0 #c9d1d3, -1px 1px 0 #c9d1d3, 2px 2px 0 #c9d1d3, -2px -2px 0 #c9d1d3, 2px -2px 0 #c9d1d3, -2px 2px 0 #c9d1d3;
+}
+.flowMain .sec01 .flowPanel .flowBox .txtBox {
+  width: calc(100% - 100px);
+  padding: 15px 0 0;
+}
+.flowMain .sec01 .flowPanel .flowBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.flowMain .sec01 .flowPanel:last-child .flowBox::after {
+  display: none;
+}
+.flowMain .bnrSection {
+  padding: 120px 0 40px;
+}
+.flowMain .bnrSection .bnrPanel {
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/flow_bnr_bg.png) center no-repeat;
+  background-size: cover;
+}
+.flowMain .bnrSection .bnrPanel .ttl {
+  margin: 0 0 20px;
+  font-size: 26px;
+}
+.flowMain .bnrSection .bnrPanel .txt {
+  margin: 0 0 40px;
+}
+.flowMain .bnrSection .bnrPanel .btnList {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .flowMain .bnrSection .bnrPanel .btnList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flowMain .bnrSection .bnrPanel .btnList > * {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	profile
+///////////////////////////////////////////////////////////*/
+.profileMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 .topPanel {
+  margin: 0 0 40px;
+}
+.profileMain .sec01 .topPanel .photoList {
+  display: flex;
+  justify-content: space-between;
+}
+.profileMain .sec01 .topPanel .photoList .photoBox {
+  position: relative;
+  width: 48%;
+  height: 400px;
+}
+.profileMain .sec01 .topPanel .photoList .photoBox .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.profileMain .sec01 .topPanel .photoList .photoBox .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.profileMain .sec01 .topPanel .photoList .photoKv01 .kvBox .kv01 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_sec01_img_1_1.png) center no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 .topPanel .photoList .photoKv01 .kvBox .kv02 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_sec01_img_1_2.png) center no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 .topPanel .photoList .photoKv02 {
+  top: 60px;
+}
+.profileMain .sec01 .topPanel .photoList .photoKv02 .kvBox .kv01 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_sec01_img_2_1.png) center no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 .topPanel .photoList .photoKv02 .kvBox .kv02 {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/profile_sec01_img_2_2.png) center no-repeat;
+  background-size: cover;
+}
+.profileMain .sec01 .topPanel .txtBox .ttl {
+  margin: 0 0 40px;
+  font-size: 24px;
+}
+.profileMain .sec01 .topPanel .txtBox .ttl > * {
+  line-height: 2;
+}
+.profileMain .sec01 .topPanel .txtBox .name {
+  margin: 0 0 20px;
+}
+.profileMain .sec01 .topPanel .txtBox .name p {
+  display: inline-block;
+}
+.profileMain .sec01 .topPanel .txtBox .name .em {
+  margin: 0 0 0 15px;
+  font-size: 24px;
+}
+.profileMain .sec01 .topPanel .txtBox .info .dl {
+  display: flex;
+  line-height: 2;
+}
+.profileMain .sec01 .topPanel .txtBox .info .dl + .dl {
+  margin: 5px 0 0;
+}
+.profileMain .sec01 .topPanel .txtBox .info .dl .dt {
+  width: 75px;
+}
+@media (min-width: 1025px) {
+  .profileMain .sec01 .topPanel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .profileMain .sec01 .topPanel .photoList {
+    width: 45%;
+  }
+  .profileMain .sec01 .topPanel .txtBox {
+    width: 50%;
+  }
+}
+.profileMain .sec01 .secPanelList {
+  padding: 0 0 80px;
+}
+.profileMain .sec01 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.profileMain .sec01 .secPanel .pTtl {
+  max-width: 700px;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #433f37;
+}
+.profileMain .sec02 {
+  padding: 120px 0;
+  background: #f3f4f0;
+}
+.profileMain .sec02 .secBox {
+  margin: 0 0 60px;
+}
+.profileMain .sec02 .secBox .txtBox .infoBox .dl {
+  line-height: 2;
+}
+.profileMain .sec02 .secBox .txtBox .infoBox .dl .dt {
+  padding: 20px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.profileMain .sec02 .secBox .txtBox .infoBox .dl .dd {
+  padding: 20px 30px;
+  background: #ffffff;
+}
+.profileMain .sec02 .secBox .txtBox .infoBox .dl + .dl .dt {
+  border-top: 1px solid #b6d6e4;
+}
+.profileMain .sec02 .secBox .txtBox .infoBox .dl + .dl .dd {
+  border-top: 1px solid #75b7d3;
+}
+.profileMain .sec02 .secBox .txtBox .tel {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.profileMain .sec02 .secBox .txtBox .tel p {
+  display: inline-block;
+}
+.profileMain .sec02 .secBox .txtBox .tel a {
+  display: inline-block;
+  color: #d30000;
+}
+.profileMain .sec02 .secBox .txtBox .tel a p {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .profileMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profileMain .sec02 .secBox > * {
+    width: 48%;
+  }
+  .profileMain .sec02 .secBox .txtBox .infoBox .dl {
+    display: table;
+    width: 100%;
+  }
+  .profileMain .sec02 .secBox .txtBox .infoBox .dl > * {
+    display: table-cell;
+  }
+  .profileMain .sec02 .secBox .txtBox .infoBox .dl .dt {
+    width: 150px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/price_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.priceMain .sec01 {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/price_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.priceMain .sec01 .pagingList {
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+.priceMain .sec01 .pagingList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.priceMain .sec01 .pagingList .ul .li {
+  width: calc(33.3333333333% - 10px);
+  margin: 10px 0 0 10px;
+}
+.priceMain .sec01 .pagingList .ul .li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.priceMain .sec01 .secList {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.priceMain .sec01 .section {
+  padding: 60px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(3, 0, 11, 0.14);
+}
+.priceMain .sec01 .section + .section {
+  margin: 60px 0 0;
+}
+.priceMain .sec01 .section .secTtl {
+  margin: 0 0 40px;
+  font-size: 24px;
+  text-align: center;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox {
+  margin: 30px 0 0;
+  border: 1px solid #75b7d3;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dt {
+  padding: 20px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dd {
+  padding: 20px;
+  line-height: 2;
+  background: #ffffff;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dd .price01 {
+  display: inline-block;
+  color: #df0000;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dd .price01 p {
+  display: inline-block;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dd .price01 .em {
+  font-size: 24px;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dd .price02 {
+  display: inline-block;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl + .dl .dt {
+  border-top: 1px solid #b6d6e4;
+}
+.priceMain .sec01 .section .secBox .txtBox .infoBox .dl + .dl .dd {
+  border-top: 1px solid #75b7d3;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec01 .section .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .sec01 .section .secBox .photo {
+    width: 50%;
+  }
+  .priceMain .sec01 .section .secBox .txtBox {
+    width: 45%;
+  }
+  .priceMain .sec01 .section .secBox .txtBox .infoBox {
+    max-width: 500px;
+  }
+  .priceMain .sec01 .section .secBox .txtBox .infoBox .dl {
+    display: table;
+    width: 100%;
+  }
+  .priceMain .sec01 .section .secBox .txtBox .infoBox .dl > * {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .priceMain .sec01 .section .secBox .txtBox .infoBox .dl .dt {
+    width: 200px;
+  }
+}
+.priceMain .sec01 .section .detailBox {
+  margin: 50px 0 0;
+  padding: 40px;
+  border: 2px dotted #0b0b0b;
+}
+.priceMain .sec01 .section .detailBox a {
+  display: inline-block;
+}
+.priceMain .sec01 .section .pricePanel {
+  margin: 80px 0 0;
+}
+.priceMain .sec01 .section .pricePanel .priceList .priceBox {
+  padding: 15px 20px;
+  border-bottom: 1px solid #5d5d5d;
+}
+.priceMain .sec01 .section .pricePanel .priceList .priceBox .dl {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec01 .section .pricePanel .priceList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -30px 0 0;
+  }
+  .priceMain .sec01 .section .pricePanel .priceList .priceBox {
+    width: calc(50% - 20px);
+    margin: 30px 0 0;
+  }
+}
+.priceMain .sec02 {
+  padding: 120px 0;
+}
+.priceMain .sec02 .secBox {
+  max-width: 1300px;
+  margin: 0 auto 60px;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .sec02 .secBox .photo {
+    width: 50%;
+  }
+  .priceMain .sec02 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.priceMain .sec02 .btnList .ul .li a {
+  display: block;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec02 .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .sec02 .btnList .ul .li {
+    width: calc(20% - 5px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageKvPanel {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/contact_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/contact_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 .topBox {
+  margin: 0 0 80px;
+  text-align: center;
+}
+.contactMain .sec01 .topBox .logo {
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+.contactMain .sec01 .secPanelList {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.contactMain .sec01 .secPanelList + .secPanelList {
+  margin: 120px auto 0;
+}
+.contactMain .sec01 .secPanel {
+  position: relative;
+  padding: 60px 20px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(3, 0, 11, 0.14);
+}
+.contactMain .sec01 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.contactMain .sec01 .secPanel .pTtl {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.contactMain .sec01 .secPanel .pTtl01 {
+  max-width: 600px;
+}
+.contactMain .sec01 .secPanel .pTtl02 {
+  max-width: 800px;
+}
+.contactMain .sec01 .secPanel .secBox {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+.contactMain .sec01 .secPanel .secBox + .secBox {
+  border-top: 1px dashed #5d5d5d;
+}
+.contactMain .sec01 .secPanel .secBox .imgBox .img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.contactMain .sec01 .secPanel .secBox .txtBox .num {
+  margin: 0 0 30px;
+}
+.contactMain .sec01 .secPanel .secBox .txtBox .num p {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #c9d1d3, -1px -1px 0 #c9d1d3, 1px -1px 0 #c9d1d3, -1px 1px 0 #c9d1d3, 2px 2px 0 #c9d1d3, -2px -2px 0 #c9d1d3, 2px -2px 0 #c9d1d3, -2px 2px 0 #c9d1d3;
+}
+.contactMain .sec01 .secPanel .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.contactMain .sec01 .secPanel .secBox .txtBox .qr {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .contactMain .sec01 .secPanel .secBox .imgBox {
+    width: 46%;
+  }
+  .contactMain .sec01 .secPanel .secBox .txtBox {
+    width: 52%;
+  }
+  .contactMain .sec01 .secPanel .secBox.top {
+    align-items: flex-start;
+  }
+  .contactMain .sec01 .secPanel .secBox.top .txtBox {
+    padding: 60px 0 0;
+  }
+}
+.contactMain .sec02 {
+  padding: 120px 0;
+}
+.contactMain .sec02 .topBox {
+  margin: 0 0 80px;
+  text-align: center;
+}
+.contactMain .sec02 .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #75b7d3;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit]:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #ffffff;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .formMain .contactForm button[type=submit]:hover {
+    opacity: 0.6;
+  }
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d6d6dd;
+  background: #f7f7f8;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #0f4c6a;
+  border-right: 3px solid #0f4c6a;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d6d6dd;
+  background: #f7f7f8;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #0f4c6a;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 10px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #707070;
+  background: #ffffff;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: table;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 300px;
+  padding: 10px 0 5px 20px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  float: right;
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #75b7d3;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 302px);
+  padding: 5px 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #f3f4f0;
+  background: #f3f4f0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+
+/*////////////////////////////////////////////////////////////
+	voice
+///////////////////////////////////////////////////////////*/
+.voiceMain {
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/voice_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.voiceMain .searchMain {
+  padding: 120px 0;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/voice_main_bg.png) no-repeat;
+  background-size: cover;
+}
+.voiceMain .searchCondition {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.voiceMain .searchCondition .webgene-search-form {
+  font-size: 18px;
+  color: #ffffff;
+}
+.voiceMain .searchCondition .webgene-search-form .webgene-search-form-block {
+  margin: 0 0 30px;
+}
+.voiceMain .searchCondition .webgene-search-form .webgene-search-form-block .search-title-wrapper {
+  padding: 60px;
+  text-align: center;
+  background: #75b7d3;
+}
+.voiceMain .searchCondition .webgene-search-form .webgene-search-form-block .search-area-wrapper {
+  padding: 60px;
+  background: #75b7d3;
+}
+.voiceMain .searchCondition .webgene-search-form .webgene-search-form-block .search-area-wrapper label {
+  display: inline-block;
+  margin: 0 10px 5px 0;
+}
+@media (min-width: 1025px) {
+  .voiceMain .searchCondition .webgene-search-form .webgene-search-form-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .voiceMain .searchCondition .webgene-search-form .webgene-search-form-block .search-title-wrapper {
+    width: 280px;
+  }
+  .voiceMain .searchCondition .webgene-search-form .webgene-search-form-block .search-area-wrapper {
+    width: calc(100% - 285px);
+  }
+}
+.voiceMain .searchCondition .webgene-search-form .btnSubmit {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.voiceMain .searchCondition .webgene-search-form .btnSubmit:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  margin: auto 0;
+  background: #ffffff;
+}
+.voiceMain .searchCondition .webgene-search-form .search-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #529cb6;
+}
+.voiceMain .resultSection {
+  padding: 120px 0 0;
+}
+.voiceMain .resultSection .balloonPanel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.voiceMain .resultSection .balloonPanel .balloon {
+  position: relative;
+  max-width: 360px;
+  padding: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: #529cb6;
+}
+.voiceMain .resultSection .balloonPanel .balloon:after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  bottom: -20px;
+  width: 14px;
+  height: 25px;
+  background: url(https://bikotsu-sekkei.jp/system_panel/uploads/images/voice_ttl_balloon.png) no-repeat;
+  background-size: 100% auto;
+}
+.voiceMain .resultSection .pagingList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.voiceMain .resultSection .pagingList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.voiceMain .resultSection .pagingList .ul .li {
+  width: calc(50% - 10px);
+}
+.voiceMain .resultSection .pagingList .ul .li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #75b7d3;
+}
+.voiceMain .voiceSection {
+  padding: 120px 0;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item {
+  padding: 30px;
+  background: #f3f4f0;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item .title {
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+  font-size: 20px;
+  border-bottom: 1px solid #433f37;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item .content {
+  line-height: 2;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item .category {
+  margin: 20px 0 0;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item .category ul li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 5px 8px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #75b7d3;
+}
+.voiceMain .voiceSection .listContainer .webgene-blog .webgene-item .gender {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .voiceMain .voiceSection .listContainer .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -40px 0 0;
+  }
+  .voiceMain .voiceSection .listContainer .webgene-blog > * {
+    width: calc(50% - 20px);
+    margin: 40px 0 0;
+  }
+}
+.voiceMain .voiceSection .pageBtnList {
+  margin: 80px 0 0;
+}
+.voiceMain #voice02 {
+  background: #f3f4f0;
+}
+.voiceMain #voice02 .listContainer .webgene-blog .webgene-item {
+  background: #ffffff;
+}

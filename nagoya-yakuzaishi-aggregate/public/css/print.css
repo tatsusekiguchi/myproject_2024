@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	印刷用CSS
+===================================================*/
+@media print {
+  body {
+    font-size: 12px;
+    background: #ffffff;
+  }
+
+  header,
+.topicPath,
+.btnListBox,
+footer {
+    display: none;
+  }
+
+  .registRecordMain {
+    padding: 10px;
+  }
+  .registRecordMain h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    border-left: none;
+  }
+  .registRecordMain .txtFieldBox {
+    padding: 2px 5px;
+  }
+  .registRecordMain .wardBox {
+    padding: 20px 0;
+  }
+  .registRecordMain .schoolInfoBox {
+    padding: 0;
+    background: none;
+  }
+  .registRecordMain .formBox {
+    padding: 5px 20px;
+  }
+  .registRecordMain .inputItem {
+    min-height: 25px;
+    margin: 5px 0 0 !important;
+  }
+  .registRecordMain .ui-datepicker-trigger {
+    display: none;
+  }
+  .registRecordMain .attentionBox h3 {
+    font-size: 14px;
+  }
+  .registRecordMain .attentionBox ul li {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .registRecordMain .inputItem dt {
+    font-size: 15px;
+  }
+
+  #registPool .registPoolTable table tbody td,
+#registKitchen .registKitchenTable table tbody td {
+    padding: 2px 10px !important;
+  }
+  #registPool .registPoolTable table tbody td input[type=text],
+#registKitchen .registKitchenTable table tbody td input[type=text] {
+    height: 30px;
+  }
+
+  #registPest .registPestTable table tbody .confirmPointBox ul li {
+    min-height: 51px;
+  }
+
+  #registPest .registPestTable table tbody .confirmPointBox ul .checkCell .checkBox {
+    height: 40px;
+  }
+
+  #registPest .registPestTable table tbody .confirmPointBox .leftBox > dl:nth-child(3) {
+    height: 361px;
+  }
+
+  #registPest .registPestTable table tbody .confirmPointBox ul .unit {
+    height: 30px;
+  }
+
+  #registPool .registPoolTable .tblFieldBox {
+    padding: 0;
+  }
+
+  .registRecordMain .confirmPostBox .sealBox .sealTbl dl dt {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  .registRecordMain .confirmPostBox .sealBox .sealTbl dl + dl dt {
+    border-left: 1px solid #747474;
+  }
+
+  .registRecordMain .inputItem dt {
+    color: #000000;
+    background: none;
+  }
+
+  #registPool .registPoolTable table thead th {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  #registPool .registPoolTable table thead th + th {
+    border-left: 1px solid #747474;
+  }
+
+  #registPool .registPoolTable table tbody th {
+    background: none;
+  }
+
+  #registDispensary .dispensaryBox {
+    padding: 0;
+    background: none;
+  }
+
+  #registNoise .noiseBox {
+    padding: 0;
+    background: none;
+  }
+
+  #registNoise .registNoiseTable table thead th {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  #registNoise .registNoiseTable table thead th + th {
+    border-left: 1px solid #747474;
+  }
+
+  #registNoise .registNoiseTable table tbody th {
+    background: none;
+  }
+
+  #registAir .airBox {
+    padding: 0;
+    background: none;
+  }
+
+  #registBlackboard .registBlackboardTable table thead th {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  #registBlackboard .registBlackboardTable table thead th + th {
+    border-left: 1px solid #747474;
+  }
+
+  #registBlackboard .registBlackboardTable table tbody > tr > th {
+    background: none;
+  }
+
+  #registBlackboard .registBlackboardTable table thead th {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  #registBlackboard .registBlackboardTable table thead th + th {
+    border-left: 1px solid #747474;
+  }
+
+  #registLighting .lightingBox {
+    padding: 0;
+    background: none;
+  }
+
+  #registKitchen .registKitchenTable table thead th {
+    color: #000000;
+    border-bottom: 1px solid #747474;
+    background: none;
+  }
+
+  #registKitchen .registKitchenTable table thead th + th {
+    border-left: 1px solid #747474;
+  }
+
+  #registKitchen .registKitchenTable table tbody th {
+    background: none;
+  }
+
+  #registPest .registPestTable table tbody th {
+    color: #000000;
+    background: none;
+  }
+
+  #registPest .registPestTable table tbody tr + tr th {
+    border-top: 1px solid #747474;
+  }
+
+  #registPest .registPestTable table tbody .confirmPointBox dl dt {
+    background: none;
+  }
+}

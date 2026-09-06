@@ -1,0 +1,1914 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    position: relative;
+    .topKvTitleBox {
+      color: #f0dbcd;
+      .topKvTitle {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .sub {
+        position: absolute;
+        left: 3%;
+        bottom: 0;
+        width: 100%;
+        font-size: clamp(40px, 5vw, 80px);
+        line-height: 1;
+        z-index: 1;
+      }
+    }
+    .topKvPanel {
+      .topKv {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+    .kvSliderPanel {
+      overflow: hidden;
+      width: 100%;
+    }
+    .kvSlider {
+      object-fit: cover;
+    }
+    .add-animation {
+      animation: zoom-fade 10s both;
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secContainer {
+      background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec01_img.png)
+        right 40px bottom no-repeat;
+      background-size: 30%;
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .txt {
+      margin: 0 0 40px;
+      color: #f6f1ed;
+    }
+  }
+  .sec02 {
+    padding: 120px 0 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      text-align: right;
+    }
+    .secContainer {
+      background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec02_img_01.png)
+          right 5% top 100px no-repeat,
+        url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec02_img_02.png)
+          right 5% bottom -50px no-repeat;
+      background-size: 500px auto, 500px auto;
+    }
+    .topBox {
+      margin: 0 0 60px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+    .secBoxList {
+      position: relative;
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        width: 48%;
+        &:nth-child(even) {
+          position: absolute;
+          top: 400px;
+          right: 0;
+        }
+        .photoBox {
+          position: relative;
+          .ttlBox {
+            position: absolute;
+            left: 40px;
+            bottom: -100px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 0 10px;
+            .ttl {
+              padding: 5px;
+              font-size: 24px;
+              font-weight: 700;
+              background: #ffffff;
+              writing-mode: vertical-lr;
+              &:nth-child(1) {
+                position: relative;
+                top: -30px;
+              }
+            }
+          }
+        }
+        .txtBox {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          padding: 20px 20px 160px 160px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .txt {
+      margin: 0 0 40px;
+      color: #f6f1ed;
+    }
+    .secBox {
+      position: relative;
+      .photoBox {
+      }
+      .txtBox {
+        .ul {
+          .li {
+            padding: 20px 40px 20px 0;
+            border-bottom: 1px solid #525252;
+            a {
+              display: block;
+              padding: 12px 55px 12px 0;
+              color: #f6f1ed;
+              background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                right center no-repeat;
+              background-size: 45px auto;
+            }
+            .em {
+              font-size: 30px;
+              font-weight: 700;
+              color: #f7f0eb;
+            }
+            .span {
+              color: #e6b422;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photoBox {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 48%;
+        }
+        .txtBox {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 120px 0;
+    .secWrap {
+      position: relative;
+    }
+    .pageSecTtlBox {
+      text-align: center;
+    }
+    .blogListPanel {
+      max-width: 1200px;
+      margin: 0 auto;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          .photo {
+          }
+          .title {
+            min-height: 70px;
+            padding: 10px;
+          }
+          a {
+            display: block;
+            padding: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #939393;
+            background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/read_more_arrow.png)
+              right 10px center no-repeat;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          margin: 0 0 0 -60px;
+          .webgene-item {
+            width: calc((100% / 3) - 60px);
+            margin: 0 0 0 60px;
+            .photo {
+              position: relative;
+              height: 0;
+              padding: 0 0 120%;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnMore {
+      width: 140px;
+      margin: 40px auto 0;
+      a {
+        color: #252525;
+      }
+    }
+    @media (min-width: 1680px) {
+      .btnMore {
+        position: absolute;
+        top: 50%;
+        left: -80px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+.conceptMain {
+  .pageKvContainer {
+    .subTitle {
+      p {
+        padding-left: 20%;
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secContainer {
+      background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec01_img.png)
+        right 40px center no-repeat;
+      background-size: 30%;
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .ttl {
+      margin: 0 0 15px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #f6f1ed;
+    }
+    .txt {
+      color: #f6f1ed;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .secBox {
+      display: flex;
+      align-items: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid #939393;
+      .num {
+        width: 160px;
+        font-size: 100px;
+        color: #585858;
+        text-align: center;
+        line-height: 1;
+      }
+      .ttl {
+        width: 360px;
+        font-size: 24px;
+        color: #f7f0eb;
+        font-weight: 700;
+      }
+      .txt {
+        color: #f6f1ed;
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 34px;
+          font-weight: 700;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .pageKvContainer {
+    .subTitle {
+      p {
+        padding-left: 20%;
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .txt {
+      margin: 0 0 40px;
+      color: #f6f1ed;
+    }
+    .secBox {
+      position: relative;
+      .photoBox {
+      }
+      .txtBox {
+        .ul {
+          .li {
+            padding: 20px 40px 20px 0;
+            border-bottom: 1px solid #525252;
+            a {
+              display: block;
+              padding: 12px 55px 12px 0;
+              color: #f6f1ed;
+              background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                right center no-repeat;
+              background-size: 45px auto;
+            }
+            .em {
+              font-size: 30px;
+              font-weight: 700;
+              color: #f7f0eb;
+            }
+            .span {
+              color: #e6b422;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photoBox {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 48%;
+        }
+        .txtBox {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/service_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .flowListBox {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 100px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100px;
+        width: 1px;
+        height: 100%;
+        background: #252525;
+      }
+      .leftBox {
+        position: relative;
+        width: 200px;
+        .step {
+          padding: 0 5px;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+          background: #e6b422;
+        }
+      }
+      .rightBox {
+        position: relative;
+        width: calc(100% - 250px);
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 34px;
+          font-weight: 700;
+          h3 {
+            line-height: 1.2;
+          }
+        }
+      }
+      &:last-child {
+        padding: 0;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .itemPanel {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: 48%;
+        }
+      }
+    }
+    .itemPanel {
+      padding: 20px 0 0;
+      text-align: center;
+      .itemBox {
+        padding: 20px;
+        border-top: 1px solid #525252;
+        border-bottom: 1px solid #525252;
+        .ttl {
+          margin: 0 0 10px;
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+      .telBox {
+        line-height: 1.3;
+        a {
+          display: inline-block;
+          padding: 0 0 0 25px;
+          font-size: 40px;
+          line-height: 1;
+          background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/service_sec02_tel.png)
+            left bottom 5px no-repeat;
+          background-size: 20px auto;
+        }
+        .span {
+          padding: 10px 0 0;
+          font-size: 14px;
+        }
+      }
+      .btnMail {
+        a {
+          display: block;
+          max-width: 280px;
+          margin: 0 auto;
+          font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+            "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          padding: 10px;
+          background: #e6b422;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reform
+///////////////////////////////////////////////////////////*/
+.reformMain {
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 52%;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .txt {
+      color: #f6f1ed;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .secBox {
+      display: flex;
+      align-items: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid #939393;
+      .num {
+        width: 160px;
+        font-size: 100px;
+        color: #585858;
+        text-align: center;
+        line-height: 1;
+      }
+      .ttl {
+        width: 360px;
+        font-size: 24px;
+        color: #f7f0eb;
+        font-weight: 700;
+      }
+      .txt {
+        color: #f6f1ed;
+      }
+    }
+    .secContainerList {
+      margin: 120px 0 0;
+    }
+    .secContainer {
+      color: #f6f1ed;
+      + .secContainer {
+        margin: 120px 0 0;
+      }
+    }
+    .secPanel {
+      .leftBox {
+        .ttlBox {
+          position: relative;
+          margin: 0 0 15px;
+          padding: 30px 60px;
+          color: #f7f0eb;
+          background: #252525;
+          .num {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 55px;
+            padding: 5px 3px 0;
+            text-align: center;
+            background: #856300;
+            .span {
+              font-size: 10px;
+              color: #f7f0eb;
+            }
+            .em {
+              font-size: 30px;
+              line-height: 1;
+            }
+          }
+          .ttl {
+            font-weight: 700;
+            .span {
+              font-size: 20px;
+              color: #beb18d;
+            }
+            .em {
+              font-size: 40px;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+      .rightBox {
+        .dl {
+          padding: 30px 20px;
+          border: 1px solid #8f8884;
+          .dt {
+            max-width: 400px;
+            margin: 0 auto 15px;
+            font-size: 30px;
+            font-weight: 700;
+            color: #f7f0eb;
+          }
+          .ul {
+            max-width: 400px;
+            margin: 0 auto;
+            .li {
+              padding: 3px 0 3px 35px;
+              background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/reform_sec02_check.png)
+                left center no-repeat;
+              background-size: 25px auto;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: 60%;
+        }
+        .rightBox {
+          width: 38%;
+        }
+      }
+    }
+    .slidePanel {
+      margin: 40px 0 0;
+      .slideBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc(100% / 4);
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	work
+///////////////////////////////////////////////////////////*/
+.workMain {
+  .sec01 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      .photoCar {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 52%;
+        }
+      }
+      .secBoxCar {
+        align-items: center;
+      }
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .txt {
+      color: #f6f1ed;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/concept_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .secBoxList {
+      margin: 0 0 60px;
+    }
+    .secBox {
+      display: flex;
+      align-items: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid #939393;
+      .num {
+        width: 160px;
+        font-size: 100px;
+        color: #585858;
+        text-align: center;
+        line-height: 1;
+      }
+      .ttl {
+        width: 360px;
+        font-size: 24px;
+        color: #f7f0eb;
+        font-weight: 700;
+      }
+      .txt {
+        color: #f6f1ed;
+      }
+    }
+    .recommendBox {
+      margin: 0 0 60px;
+      .dl {
+        padding: 30px 20px;
+        border: 1px solid #8f8884;
+        .dt {
+          margin: 0 auto 20px;
+          font-size: 30px;
+          font-weight: 700;
+          color: #f7f0eb;
+          text-align: center;
+        }
+        .ul {
+          max-width: 1100px;
+          margin: 0 auto;
+          color: #f6f1ed;
+          .li {
+            padding: 3px 0 3px 35px;
+            background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/reform_sec02_check.png)
+              left center no-repeat;
+            background-size: 25px auto;
+          }
+        }
+        @media (min-width: 1025px) {
+          .list01 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -20px auto 0;
+            .li {
+              width: calc((100% / 3));
+              margin: 20px 0 0;
+            }
+          }
+          .list02 {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: -20px auto 0;
+            .li {
+              width: calc((100% / 2));
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .listBox {
+      .listTtl {
+        margin: 0 auto 30px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #f7f0eb;
+        text-align: center;
+      }
+      .list {
+        max-width: 1200px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            padding: 30px;
+            background: #252525;
+          }
+          .dl {
+            .dt {
+              margin: 0 0 15px;
+              padding: 0 0 15px;
+              font-size: 30px;
+              font-weight: 700;
+              color: #f7f0eb;
+              text-align: center;
+              border-bottom: 1px solid #f7f0eb;
+            }
+            .dd {
+              .ttl {
+                margin: 0 0 10px;
+                font-size: 22px;
+                font-weight: 700;
+                color: #beb18d;
+                text-align: center;
+                line-height: 1.3;
+              }
+              .txt {
+                color: #f6f1ed;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -60px 0 0 -60px;
+            .li {
+              width: calc((100% / 3) - 60px);
+              margin: 60px 0 0 60px;
+            }
+            .dl {
+              .dd {
+                .ttl {
+                  min-height: 56px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 40px 0 0;
+      .slideBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc(100% / 4);
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    .mediaPanel {
+      max-width: 1200px;
+      margin: 80px auto 0;
+      .mediaBox {
+        .list {
+          max-width: 700px;
+          margin: 0 auto;
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            .li {
+              position: relative;
+              width: calc((100% / 2) - 20px);
+            }
+            .num {
+              font-size: 180px;
+              color: #585858;
+              line-height: 1;
+            }
+            .num01 {
+              position: absolute;
+              left: -120px;
+              bottom: -50px;
+            }
+            .num02 {
+              position: absolute;
+              right: -120px;
+              bottom: -50px;
+            }
+            .photo {
+              max-width: 330px;
+              margin: 0 auto;
+              a {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .aside {
+        margin: 20px 0 0;
+        p {
+          color: #999999;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/company_main_bg.png)
+    no-repeat;
+  background-size: cover;
+  .sec01 {
+    padding: 120px 0 60px;
+    .pageSecTtlBox {
+      text-align: center;
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .secBox {
+      .photoBox {
+        p {
+          margin: 15px 0 0;
+          color: #f6f1ed;
+          line-height: 2;
+        }
+      }
+      .pageSecTtlBox {
+        text-align: left;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photoBox {
+          width: 28%;
+        }
+        .txtBox {
+          width: 68%;
+        }
+      }
+    }
+    .txt {
+      color: #f6f1ed;
+      p + p {
+        margin: 20px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 60px 0 120px;
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f7f0eb;
+      }
+    }
+    .infoBox {
+      .dl {
+        padding: 15px 20px;
+        color: #f6f1ed;
+        line-height: 2;
+        border-bottom: 1px solid #525252;
+        .dt {
+          font-size: 18px;
+          font-weight: 700;
+          color: #c7b9b0;
+        }
+        .dd {
+          a {
+            display: inline-block;
+            color: #f6f1ed;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 60px;
+          .dt {
+            width: 260px;
+          }
+          .dd {
+            width: calc(100% - 280px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvContainer {
+    background: #ffffff;
+    .pageKvTitle {
+      color: #252525;
+    }
+    .subTitle {
+      color: #f0f0f0;
+      p {
+        padding-left: 20%;
+      }
+    }
+  }
+  .sec01 {
+    padding: 30px 0 120px;
+    .topPanel {
+      margin: 0 0 100px;
+      text-align: center;
+      .txt {
+        margin: 0 0 30px;
+      }
+      .telBox {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/contact_tel_bg.png)
+          no-repeat;
+        background-size: cover;
+        a {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 40px;
+          color: #f6f1ed;
+          line-height: 1;
+          background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/contact_tel_icon.png)
+            left bottom 5px no-repeat;
+          background-size: 25px auto;
+        }
+        .span {
+          padding: 10px 0 0;
+          font-size: 14px;
+          color: #f7f0eb;
+        }
+      }
+    }
+    .pageSecTtlBox {
+      text-align: center;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #8f8884;
+    background: #f4f4f4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8f8884;
+    background: #f4f4f4;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    border: none;
+    background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/contact_submit_arrow.png)
+      right center no-repeat;
+    background-size: 40px auto;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #8f8884;
+        background: #f4f4f4;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #856300;
+        border-right: 3px solid #856300;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #ffcfdd;
+        background: #fff5f8;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #f97d9b;
+      }
+    }
+
+    .postalBox {
+      margin: 0 0 5px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px solid #939393;
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   left: 0;
+        //   bottom: 0;
+        //   width: 310px;
+        //   height: 1px;
+        //   background: #e4e4e4;
+        // }
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 0 0;
+          }
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          width: 310px;
+          padding: 15px 0 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #856300;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          text-align: left;
+          border: 1px solid #8f8884;
+          background: #dedede;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    text-align: center;
+    margin: 0 auto;
+    a {
+      color: #252525;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain {
+  .pageKvContainer {
+    background: #ffffff;
+    .pageKvTitle {
+      color: #252525;
+    }
+    .subTitle {
+      color: #f0f0f0;
+      p {
+        padding-left: 20%;
+      }
+    }
+  }
+  .blogSection {
+    padding: 30px 0 120px;
+    .pageSecTtlBox {
+      text-align: center;
+    }
+  }
+  .catePanel {
+    margin: 0 0 80px;
+    text-align: center;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        border-bottom: 1px solid #939393;
+        a {
+          display: block;
+          padding: 10px 20px;
+          background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/blog_cate_arrow.png)
+            right 5px center no-repeat;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -30px 0 0 -60px;
+        .webgene-item {
+          width: calc((100% / 3) - 60px);
+          margin: 30px 0 0 60px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          .photo {
+          }
+          .title {
+            min-height: 70px;
+            padding: 10px;
+          }
+          a {
+            display: block;
+            padding: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #939393;
+            background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/read_more_arrow.png)
+              right 10px center no-repeat;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 0 0 -60px;
+          .webgene-item {
+            width: calc((100% / 3) - 60px);
+            margin: 0 0 0 60px;
+            .photo {
+              position: relative;
+              height: 0;
+              padding: 0 0 120%;
+              img {
+                @include cover-image;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              color: #ffffff;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #0f0b09;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      padding: 0 0 30px;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          display: inline-block;
+          margin: 0 20px 0 0;
+          font-size: 14px;
+          > * {
+            display: inline-block;
+            font-size: 14px;
+          }
+          .time {
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            min-width: 100px;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            background: #f97d9b;
+          }
+        }
+        .ttlBox {
+          padding: 10px 0;
+          font-size: 24px;
+          font-weight: 700;
+          vertical-align: middle;
+          border-bottom: 1px solid #525252;
+        }
+        .slickSlide {
+          margin: 30px 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          // max-width: 940px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+  }
+  .btnContact {
+    max-width: 280px;
+    margin: 50px auto 0;
+    a {
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      background: #e6b422;
+    }
+  }
+  .btnBack {
+    max-width: 300px;
+    margin: 50px auto 0;
+    border-bottom: 1px solid #939393;
+    a {
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      background: url(https://s-9534843.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+        left 10px center no-repeat;
+    }
+  }
+}

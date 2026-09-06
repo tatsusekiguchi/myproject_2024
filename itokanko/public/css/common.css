@@ -1,0 +1,439 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #1c1c1c;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header .headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .header .headBox .logo {
+    width: 200px;
+  }
+  .header .headBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+  .header.fixed {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 200px);
+  }
+  .navBox .navList {
+    width: calc(100% - 240px);
+  }
+  .navBox .navList .ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 0 0 0 4%;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+  }
+  .navBox .navList .ul .li .em {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .navBox .navList .ul .li .span {
+    font-size: 11px;
+  }
+  .navBox .navItem {
+    width: 200px;
+    margin: 0 0 0 40px;
+  }
+  .navBox .navItem a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(125deg, #1e5fb5, #277cbd);
+  }
+  .navBox .navItem a div {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+  }
+  .navBox .navItem a p {
+    display: inline-block;
+    padding: 0 25px;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/main_bg.png);
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+  padding: 80px 20px;
+  text-align: center;
+}
+.pageKvPanel .pageKvTtl {
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  text-align: left;
+}
+.pageSecTtlBox .pageSecTtl {
+  display: inline-block;
+  text-align: center;
+}
+.pageSecTtlBox .pageSecTtl p {
+  font-family: "Mrs Saint Delafield";
+  font-size: 70px;
+  line-height: 0.8;
+}
+.pageSecTtlBox .pageSecTtl h2 {
+  font-size: 14px;
+}
+
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 210px;
+}
+.btnMore a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid transparent;
+  background: linear-gradient(125deg, #1e5fb5, #277cbd);
+}
+.btnMore a p {
+  position: relative;
+}
+.btnMore a p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  width: 5px;
+  height: 8px;
+  margin: auto 0;
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) no-repeat;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    opacity: 1;
+    color: #1e5fb5;
+    border: 1px solid #1e5fb5;
+    background: #ffffff;
+  }
+  .btnMore a:hover p:after {
+    right: 0;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow_blue.png) no-repeat;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 120px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png) center no-repeat;
+  background-size: cover;
+}
+.footer .footContact .pageSecTtlBox {
+  text-align: center;
+}
+.footer .footContact .txt {
+  margin: 0 0 60px;
+}
+.footer .footContact .contactBox {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer .footContact .contactBox .contactItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer .footContact .contactBox .contactItem .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 30px;
+  color: #ffffff;
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.footer .footContact .contactBox .contactItem .tel > p {
+  font-size: 12px;
+}
+.footer .footContact .contactBox .contactItem .mail {
+  width: 240px;
+}
+.footer .footContact .contactBox .contactItem .mail a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(125deg, #1e5fb5, #277cbd);
+}
+.footer .footContact .contactBox .contactItem .mail a div {
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+}
+.footer .footContact .contactBox .contactItem .mail a p {
+  display: inline-block;
+  padding: 0 25px;
+  background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactBox .contactItem {
+    width: 48%;
+  }
+}
+.footer .footPanel {
+  padding: 120px 0 40px;
+  color: #ffffff;
+  background: #000000;
+}
+.footer .footPanel .logoBox {
+  margin: 0 0 40px;
+}
+.footer .footPanel .logoBox .logo {
+  display: inline-block;
+  width: 250px;
+  margin: 0 40px 0 0;
+}
+.footer .footPanel .logoBox .sns {
+  display: inline-block;
+}
+.footer .footPanel .logoBox .sns .ul .li {
+  display: inline-block;
+  width: 30px;
+}
+.footer .footPanel .logoBox .sns .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.footer .footPanel .logoBox .sns .ul .li a {
+  display: inline-block;
+}
+.footer .footPanel .txt {
+  font-size: 14px;
+}
+.footer .footPanel .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footPanel .copy {
+  margin: 60px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

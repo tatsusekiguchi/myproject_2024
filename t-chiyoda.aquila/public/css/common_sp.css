@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 62px 0 0;
+}
+
+.pageTitlePanel {
+  padding: 60px 20px 40px;
+}
+.pageTitlePanel .pageTitle h1 {
+  margin: 0 0 3px;
+  font-size: 22px;
+}
+.pageTitlePanel .pageTitle h1 span {
+  font-size: 12px;
+}
+.pageTitlePanel .pageTitle p {
+  font-size: 12px;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.btnMore {
+  width: 160px;
+}
+.btnMore a .icon {
+  width: 40px;
+}
+.btnMore a .more {
+  width: 110px;
+  font-size: 13px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 60px 0;
+}
+.footer .footContact .secTtl {
+  margin: 0 0 30px;
+}
+.footer .footContact .secTtl h2 {
+  font-size: 22px;
+}
+.footer .footContact .secTtl p {
+  font-size: 12px;
+}
+.footer .footContact .secTtl + .txt {
+  margin: 0 0 40px;
+}
+.footer .footContact .contactItem {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox + .itemBox {
+  margin: 20px 0 0;
+}
+.footer .footContact .contactItem .itemBox dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+.footer .footContact .contactItem .itemBox .tel a {
+  font-size: 30px;
+}
+.footer .footContact .contactItem .itemBox .mail {
+  max-width: 260px;
+}
+.footer .footContact .contactItem .itemBox .mail a {
+  font-size: 16px;
+}
+.footer .footContact .contactItem .itemBox .mail a span {
+  padding: 0 0 0 24px;
+  background: url("../image/common/footer_contact_mail.png") left center no-repeat;
+  background-size: 16px auto;
+}
+.footer .footPanel {
+  padding: 60px 0 30px;
+  text-align: center;
+}
+.footer .footPanel .footBox {
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .leftBox .logo {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+.footer .footPanel .footBox .leftBox .txt {
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .leftBox .bnr {
+  width: 150px;
+  margin: 0 auto;
+}
+.footer .footPanel .footBox .rightBox {
+  display: none;
+}
+.footer .footPanel .footBtm .bnrList {
+  max-width: 280px;
+  margin: 0 auto 60px;
+}
+.footer .footPanel .footBtm .bnrList ul li + li {
+  margin: 20px 0 0;
+}

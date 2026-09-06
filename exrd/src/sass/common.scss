@@ -1,0 +1,633 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  //font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  background: $bgBaseColor;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 40px 60px 20px;
+  }
+  .logoBox {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    > p {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      font-size: 14px;
+      white-space: noWrap;
+    }
+    .logo {
+      width: 180px;
+      a {
+        display: block;
+      }
+    }
+    .ttl {
+      margin: 0 0 0 30px;
+      font-size: 14px;
+    }
+  }
+  .headItem {
+    padding: 0 40px 0 0;
+    .contact {
+      width: 200px;
+      a {
+        display: block;
+        padding: 8px;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        background: #333465;
+      }
+    }
+  }
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+    width: 28px;
+    height: 12px;
+    z-index: 10000;
+    .span {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: #0f4c6a;
+      transform: translateX(-50%);
+      transition: 0.4s;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        bottom: 0;
+      }
+    }
+    &.is-open {
+      .span {
+        background: #ffffff;
+        &:nth-of-type(1) {
+          transform: translate(-50%, 5px) rotate(-45deg);
+        }
+        &:nth-of-type(2) {
+          transform: translate(-50%, -5px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 120px 20px;
+  background: rgba(34, 34, 68, 0.9);
+  overscroll-behavior: none;
+  .navContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #edf1f7;
+  }
+  .navPanel01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 80px;
+    .leftBox {
+      width: 50%;
+      .logo {
+        max-width: 280px;
+        margin: 0 0 100px;
+      }
+      .info {
+        font-size: 14px;
+        .txt {
+          + .txt {
+            margin: 30px 0 0;
+          }
+          a {
+            display: inline-block;
+            color: #edf1f7;
+          }
+          .em {
+            font-size: 24px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+    .rightBox {
+      width: 50%;
+      .navList {
+        display: flex;
+        justify-content: space-between;
+        .ul {
+          .li {
+            padding: 0 0 0 15px;
+            background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/header_nav_arrow.png)
+              left center no-repeat;
+            + .li {
+              margin: 30px 0 0;
+            }
+            a {
+              display: inline-block;
+              font-size: 18px;
+              color: #edf1f7;
+            }
+            &.sub {
+              padding: 0 0 0 30px;
+              a {
+                color: #a6b0c0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navPanel02 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border: 1px solid #515b69;
+    background: rgba(81, 91, 105, 0.2);
+    .contactItem {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      > * {
+        width: 50%;
+      }
+      .dl {
+        .dt {
+          position: relative;
+          margin: 0 0 30px;
+          padding: 0 0 15px;
+          font-size: 24px;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 120px;
+            height: 1px;
+            margin: 0 auto;
+            background: #515b69;
+          }
+        }
+      }
+      .telBox {
+        a {
+          display: inline-block;
+          color: #ffffff;
+          .span {
+            display: inline-block;
+            font-size: 30px;
+          }
+          .em {
+            display: inline-block;
+            font-size: 40px;
+            line-height: 1;
+          }
+        }
+        .aside {
+          p {
+            display: inline-block;
+            padding: 2px 15px;
+            color: #b2b5b9;
+            background: #1c2430;
+          }
+        }
+      }
+      .mailBox {
+        a {
+          display: block;
+          max-width: 300px;
+          margin: 0 auto;
+          font-weight: bold;
+          padding: 10px;
+          color: #312b2a;
+          background: #ffffff;
+          p {
+            display: inline-block;
+            padding: 0 0 0 25px;
+            background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/header_nav_mail.png)
+              left center no-repeat;
+            background-size: 18px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  color: #282931;
+  p {
+    font-size: 14px;
+  }
+  .pageSecTtl {
+    font-size: 36px;
+  }
+}
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 195px;
+  padding: 20px;
+  background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/page_kv.png)
+    center top no-repeat;
+  background-size: cover;
+  .pageKvTitle {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+      font-size: 30px;
+      color: #eff1f6;
+    }
+  }
+}
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.videoBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  width: 130px;
+  a {
+    display: block;
+    padding: 10px 0 10px 50px;
+    color: #edf1f7;
+    background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png)
+      left center no-repeat;
+    background-size: 40px auto;
+  }
+  &.grey {
+    a {
+      background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/btn_more_arrow_grey.png)
+        left center no-repeat;
+      background-size: 40px auto;
+    }
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    padding: 60px 0;
+    text-align: center;
+    color: #ffffff;
+    background: #232448;
+    .pageSecTtlBox {
+      color: #ffffff;
+    }
+    .ttl {
+      margin: 0 0 20px;
+      font-size: 26px;
+      color: #bacfd9;
+    }
+    .contactPanel {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      border: 1px solid #446c80;
+      background: rgba(81, 91, 105, 0.2);
+      .contactItem {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        > * {
+          width: 50%;
+        }
+        .dl {
+          .dt {
+            position: relative;
+            margin: 0 0 30px;
+            padding: 0 0 15px;
+            font-size: 24px;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 120px;
+              height: 1px;
+              margin: 0 auto;
+              background: #446c80;
+            }
+          }
+        }
+        .telBox {
+          a {
+            display: inline-block;
+            color: #ffffff;
+            .span {
+              display: inline-block;
+              font-size: 30px;
+            }
+            .em {
+              display: inline-block;
+              font-size: 40px;
+              line-height: 1;
+            }
+          }
+          .aside {
+            p {
+              display: inline-block;
+              padding: 2px 15px;
+              color: #b2b5b9;
+              background: #1c2430;
+            }
+          }
+        }
+        .mailBox {
+          a {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto;
+            font-weight: bold;
+            padding: 10px;
+            color: #312b2a;
+            background: #ffffff;
+            p {
+              display: inline-block;
+              padding: 0 0 0 25px;
+              background: url(https://s-exrd240516.smooooth.jp/system_panel/uploads/images/header_nav_mail.png)
+                left center no-repeat;
+              background-size: 18px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 80px 0 40px;
+    color: #edf1f7;
+    background: #101010;
+    .secWrap01 {
+      position: relative;
+    }
+    .pagetop {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      width: 55px;
+      cursor: pointer;
+    }
+    .leftBox {
+      margin: 0 0 40px;
+      .logo {
+        max-width: 260px;
+        margin: 0 0 40px;
+      }
+      .info {
+        font-size: 14px;
+        .txt {
+          + .txt {
+            margin: 20px 0 0;
+          }
+          a {
+            display: inline-block;
+            color: #edf1f7;
+          }
+        }
+      }
+    }
+    // .snsList {
+    //   display: flex;
+    // }
+    // .snsBox {
+    //   + .snsBox {
+    //     margin: 0 0 0 60px;
+    //   }
+    //   a {
+    //     display: block;
+    //     color: #919299;
+    //     .fb {
+    //       padding: 0 0 0 20px;
+    //       background: url(https://ogatakougyou.co.jp/system_panel/uploads/images/nav_fb.png)
+    //         left center no-repeat;
+    //       background-size: 10px auto;
+    //     }
+    //     .insta {
+    //       padding: 0 0 0 30px;
+    //       background: url(https://ogatakougyou.co.jp/system_panel/uploads/images/nav_insta.png)
+    //         left center no-repeat;
+    //       background-size: 20px auto;
+    //     }
+    //   }
+    // }
+    .copy {
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

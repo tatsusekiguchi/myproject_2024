@@ -1,0 +1,298 @@
+// ▽メイン▽
+main#contact.main
+    .pageKvPanel
+        .pageKvTitle
+            h1 来店予約・お問い合わせ
+    .topSection
+        .secWrap01
+            h2 お電話からご予約・お問い合わせ
+            .secBox
+                a(href="tel:0565450378") 0565-45-0378
+                p 受付時間：10:00 ～19:00　　定休日：火曜<br>※営業のお問い合わせはお断りいたします。
+    .sec01
+        .secWrap01
+            .pageSecTtlBox
+                .pageSecTtl
+                    p MAIL FORM
+                    h2 来店予約・お問い合わせフォーム
+            .topTxt.txt
+                p ※営業のお問い合わせはお断りいたします。
+            .formBox
+                form
+                    dl
+                        dt
+                            span お名前
+                            em 必須
+                        dd
+                            .inputBox
+                                input(type="text" placeholder="例）山田　太郎")
+                    dl
+                        dt
+                            span フリガナ
+                            em 必須
+                        dd
+                            .inputBox
+                                input(type="text" placeholder="例）ヤマダ　タロウ")
+                    dl
+                        dt
+                            span 電話番号
+                            em 必須
+                        dd
+                            .inputBox
+                                input(type="tel" placeholder="例）0561-38-0005")
+                    dl
+                        dt
+                            span メールアドレス
+                            em 必須
+                        dd
+                            .inputBox
+                                input(type="email" placeholder="例）info@example.jp")
+                    dl
+                        dt
+                            span メールアドレス(確認用)
+                            em 必須
+                        dd
+                            .inputBox
+                                input(type="email" placeholder="例）info@example.jp")
+                    dl
+                        dt
+                            span ご検討されている商品
+                            em 必須
+                        dd
+                            .itemCheckPanel
+                                .itemCheck
+                                    <div class="itemCheck">
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="itemCheck[data][]" value="補聴器">
+                                                <span class="mwform-checkbox-field-text">補聴器</span>
+                                            </label>
+                                        </span>
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="itemCheck[data][]" value="眼鏡">
+                                                <span class="mwform-checkbox-field-text">眼鏡</span>
+                                            </label>
+                                        </span>
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="itemCheck[data][]" value="時計">
+                                                <span class="mwform-checkbox-field-text">時計</span>
+                                            </label>
+                                        </span>
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="itemCheck[data][]" value="時計修理">
+                                                <span class="mwform-checkbox-field-text">時計修理</span>
+                                            </label>
+                                        </span>
+                                        <span class="mwform-checkbox-field horizontal-item">
+                                            <label>
+                                                <input type="checkbox" name="itemCheck[data][]" value="その他">
+                                                <span class="mwform-checkbox-field-text">その他</span>
+                                            </label>
+                                        </span>
+                                        <input type="hidden" name="itemCheck[separator]" value=",">
+
+                                        <input type="hidden" name="__children[itemCheck][]" value="{&quot;\u88dc\u8074\u5668&quot;:&quot;\u88dc\u8074\u5668&quot;,&quot;\u773c\u93e1&quot;:&quot;\u773c\u93e1&quot;,&quot;\u6642\u8a08&quot;:&quot;\u6642\u8a08&quot;,&quot;\u6642\u8a08\u4fee\u7406&quot;:&quot;\u6642\u8a08\u4fee\u7406&quot;,&quot;\u305d\u306e\u4ed6&quot;:&quot;\u305d\u306e\u4ed6&quot;}">
+                                    </div>
+                                p ※複数選択可
+                    dl
+                        dt
+                            span 予約希望日時
+                        dd
+                            <div class="dateSelect">
+                                <div class="dateSelectBox">
+                                    <select name="dateMonth">
+                                        <option value="" selected>-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <span>月</span>
+                                </div>
+                                <div class="dateSelectBox">
+                                    <select name="dateDay">
+                                        <option value="" selected>-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <span>日</span>
+                                    <span class="calendar"><input class="datepicker datepickerDisplay" type="text"></span>
+                                </div>
+                            </div>
+                            <div class="dateSelect">
+                                <div class="dateSelectBox">
+                                    <select name="dateTime">
+                                        <option value="" selected>-</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                    </select>
+                                    <span>時</span>
+                                </div>
+                                <div class="dateSelectBox">
+                                    <select name="dateMinute">
+                                        <option value="" selected>-</option>
+                                        <option value="00">00</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                    </select>
+                                    <span>分</span>
+                                </div>
+                            </div>
+                            p ※火曜定休<br>※当日のご予約はお電話にてご連絡ください。<br>※キャンセル・変更は、お電話にてご連絡ください。
+                    dl.msg
+                        dt
+                            span ご要望・ご質問
+                        dd
+                            .inputBox
+                                textarea
+                    .privacy
+                        .agreeBox
+                            .box
+                                p 【株式会社山一】（以下「当社」といいます。）は、当社の提供するサービス（以下「本サービス」といいます。）における、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
+                            .box
+                                p 1.収集する利用者情報及び収集方法<br>本ポリシーにおいて、「利用者情報」とは、ユーザーの識別に係る情報、通信サービス上の行動履歴、その他ユーザーまたはユーザーの端末に関連して生成または蓄積された情報であって、本ポリシーに基づき当社が収集するものを意味するものとします。 本サービスにおいて当社が収集する利用者情報は、その収集方法に応じて、以下のようなものとなります。<br>(1) ユーザーからご提供いただく情報 本サービスを利用するために、または本サービスの利用を通じてユーザーからご提供いただく情報は以下のとおりです。<br>・氏名、生年月日、性別、職業等プロフィールに関する情報<br>・メールアドレス、電話番号、住所等連絡先に関する情報<br>・入力フォームその他当社が定める方法を通じてユーザーが入力または送信する情報<br>(2) ユーザーが本サービスの利用において、他のサービスと連携を許可することにより、当該他のサービスからご提供いただく情報<br>ユーザーが、本サービスを利用するにあたり、ソーシャルネットワーキングサービス等の他のサービスとの連携を許可した場合には、その許可の際にご同意いただいた内容に基づき、以下の情報を当該外部サービスから収集します。<br>・当該外部サービスでユーザーが利用するID<br>・その他当該外部サービスのプライバシー設定によりユーザーが連携先に開示を認めた情報<br>(3) ユーザーが本サービスを利用するにあたって、当社が収集する情報<br>当社は、本サービスへのアクセス状況やそのご利用方法に関する情報を収集することがあります。これには以下の情報が含まれます。<br>・リファラ<br>・IPアドレス<br>・サーバーアクセスログに関する情報<br>・Cookie、ADID、IDFAその他の識別子<br>(4) ユーザーが本サービスを利用するにあたって、当社がユーザーの個別同意に基づいて収集する情報<br>当社は、ユーザーが3-1に定める方法により個別に同意した場合、当社は以下の情報を利用中の端末から収集します。・位置情報
+                            .box
+                                p 2.利用目的<br>本サービスのサービス提供にかかわる利用者情報の具体的な利用目的は以下のとおりです。<br>(1) 本サービスに関する登録の受付、本人確認、ユーザー認証、ユーザー設定の記録、利用料金の決済計算等本サービスの提供、維持、保護及び改善のため<br>(2) ユーザーのトラフィック測定及び行動測定のため<br>(3) 広告の配信、表示及び効果測定のため<br>(4) 本サービスに関するご案内、お問い合わせ等への対応のため<br>(5) 本サービスに関する当社の規約、ポリシー等（以下「規約等」といいます。）に違反する行為に対する対応のため<br>(6) 本サービスに関する規約等の変更などを通知するため
+                            .box
+                                p 3.通知・公表または同意取得の方法、利用中止要請の方法<br>3-1 以下の利用者情報については、その収集が行われる前にユーザーの同意を得るものとします。<br>・位置情報<br>3-2 ユーザーは、本サービスの所定の設定を行うことにより、利用者情報の全部または一部についてその収集又は利用の停止を求めることができ、この場合、当社は速やかに、当社の定めるところに従い、その利用を停止します。なお利用者情報の項目によっては、その収集または利用が本サービスの前提となるため、当社所定の方法により本サービスを退会した場合に限り、当社はその収集又は利用を停止します。
+                            .box
+                                p 4.外部送信、第三者提供、情報収集モジュールの有無<br>4-1 本サービスでは、以下の提携先が、ユーザーの端末にCookieを保存し、これを利用して利用者情報を蓄積及び利用している場合があります。
+                                p (1) 提携先：matomo、googleアナリティクス
+                                p (2) 上記提携先のプライバシーポリシーのURL：
+                                .link
+                                    a(href="https://policies.google.com/privacy?hl=ja", target="_blank", rel="noopener")
+                                        div
+                                            p https://policies.google.com/privacy?hl=ja
+                                p (3) 上記提携先のオプトアウト（無効化）URL：
+                                .link
+                                    a(href="https://support.google.com/analytics/answer/181881?hl=ja", target="_blank", rel="noopener")
+                                        div
+                                            p https://support.google.com/analytics/answer/181881?hl=ja
+                                p (4) 利用目的：本サイトの閲覧状況及び当社サイトを含む広告効果等の情報を解析するため
+                            .box
+                                p 5.第三者提供<br>当社は、利用者情報のうち、個人情報については、あらかじめユーザーの同意を得ないで、第三者に提供しません。但し、次に掲げる必要があり第三者に提供する場合はこの限りではありません。<br>(1) 当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合<br>(2) 合併その他の事由による事業の承継に伴って個人情報が提供される場合<br>(3) 第4項の定めに従って、提携先または情報収集モジュール提供者へ個人情報が提供される場合<br>(4) 国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、ユーザーの同意を得ることによって当該事務の遂行に支障を及ぼすおそれがある場合<br>(5) その他、個人情報の保護に関する法律（以下「個人情報保護法」といいます。）その他の法令で認められる場合
+                            .box
+                                p 6.安全管理措置<br>個人情報への不正アクセス、個人情報の漏えい、滅失、又はき損の予防及び是正のため、当社内において規程を整備し安全対策に努めます。以上の目的を達するため、当社は以下の措置を講じています。<br>①　個人情報・個人データの適正な取扱いのため、法令及びガイドライン所定が定める各対応を実施するに当たっての基本方針の策定<br>②　取得・利用・保存・提供・削除・廃棄等の各対応及び責任者と役割を定めた各種規定の策定<br>③　責任者の設置、個人データを取り扱う従業員及び取扱い個人データの範囲の明確化、法及び規程に違反している事実又は兆候を把握した場合の責任者への報告連絡体制の整備、取扱い状況に関する定期点検等の組織的安全管理措置<br>④　個人データについての秘密保持に関する事項を就業規則に記載し、個人データの取扱いに関する留意事項について定期研修を実施する等の人的安全管理措置<br>⑤　従業員の入退出管理、持ち込み機器の制限、個人データを取り扱う機器及び電子媒体・書類の盗難・紛失等を防止するための持ち出し制限・管理等の物理的安全管理措置<br>⑥　個人データを取り扱う情報システムに対する外部からの不正アクセス又は不正ソフトウェアから保護するシステムの導入等の技術的安全管理措置
+                            .box
+                                p 7.個人情報の開示等<br>当社は、ユーザーご本人または代理人から、個人情報保護法の定めに基づき個人情報の利用目的の通知、開示、内容の訂正、追加又は削除、利用の停止、消去及び第三者への提供停止、第三者提供記録の開示（以下、「開示等」）を求められたときは、ユーザーご本人またはその代理人からのご請求であることを確認の上で、ユーザーまたはその代理人に対し、遅滞なく開示を行います（当該個人情報が存在しないときにはその旨を通知いたします。）。但し、個人情報保護法その他の法令により、当社が開示の義務を負わない場合は、この限りではありません。なお、個人情報の開示につきましては、手数料（1件あたり1,000円）を頂戴しておりますので、あらかじめ御了承ください。
+                            .box
+                                p 8.お問い合わせ窓口<br>ご意見、ご質問、苦情のお申出その他利用者情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。<br>株式会社山一<br>個人情報取扱責任者：山内　公康
+                                .tel
+                                    p 連絡先：
+                                    a(href="tel:0565450378")
+                                        div
+                                            p 0565-45-0378
+                            .box
+                                p 【2024年8月1日制定】<br>代表者名　山内　公康
+                    <div class="agreeCheck">
+                        <div class="checkItem">
+                            <span class="mwform-checkbox-field horizontal-item">
+                                <label>
+                                    <input type="checkbox" name="agreeCheck[data][]" value="個人情報の取り扱いについて同意する">
+                                    <span class="mwform-checkbox-field-text">個人情報の取り扱いについて同意する</span>
+                                </label>
+                            </span>
+
+                        <input type="hidden" name="agreeCheck[separator]" value=",">
+
+                        <input type="hidden" name="__children[agreeCheck][]" value="{&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044\u306b\u3064\u3044\u3066\u540c\u610f\u3059\u308b&quot;:&quot;\u500b\u4eba\u60c5\u5831\u306e\u53d6\u308a\u6271\u3044\u306b\u3064\u3044\u3066\u540c\u610f\u3059\u308b&quot;}">
+                        </div>
+                    </div>
+                    .submitButton
+                        <input type="submit" value="確認画面へ" class="wpcf7-form-control has-spinner wpcf7-submit"/>
+script.
+    $(document).ready(function() {
+        $('.submitButton input').prop('disabled', true);
+        $('.agreeCheck input').change(function() {
+            if ($(this).is(':checked')) {
+                $('.submitButton input').prop('disabled', false);
+            } else {
+                $('.submitButton input').prop('disabled', true);
+            }
+        });
+
+        // カレンダー表示設定
+        $(".datepicker").datepicker({
+            buttonImage: "../image/common/icon_calendar.png",
+            buttonText: "カレンダーから選択",
+            buttonImageOnly: true,
+            showOn: "button",
+            onSelect: function(dateText) {
+                const [year, month, day] = dateText.split('/');
+                $("select[name='dateMonth']").val(Number(month));
+                $("select[name='dateDay']").val(Number(day));
+            }
+        });
+
+        // 日本語化設定
+        $.datepicker.regional['ja'] = {
+            closeText: '閉じる',
+            prevText: '<前',
+            nextText: '次>',
+            currentText: '今日',
+            monthNames: ['1月','2月','3月','4月','5月','6月',
+                        '7月','8月','9月','10月','11月','12月'],
+            monthNamesShort: ['1月','2月','3月','4月','5月','6月',
+                            '7月','8月','9月','10月','11月','12月'],
+            dayNames: ['日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日'],
+            dayNamesShort: ['日','月','火','水','木','金','土'],
+            dayNamesMin: ['日','月','火','水','木','金','土'],
+            weekHeader: '週',
+            dateFormat: 'yy/mm/dd',
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: true,
+            yearSuffix: '年'
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ja']);
+    });
+// △メイン△

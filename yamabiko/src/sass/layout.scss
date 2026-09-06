@@ -1,0 +1,1844 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    position: relative;
+    padding: 0 0 0 300px;
+    h1 {
+      display: none;
+    }
+    .topKvPanel {
+      height: 800px;
+      .topKv {
+        position: relative;
+        height: 100%;
+        .kvBox {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .kv01 {
+            background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_01.png)
+              center no-repeat;
+            background-size: cover;
+          }
+          .kv02 {
+            background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_02.png)
+              center no-repeat;
+            background-size: cover;
+          }
+          .kv03 {
+            background: url(http://yamabiko.cc/system_panel/uploads/images/top_kv_03.png)
+              center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .topKvTitlePanel {
+      position: absolute;
+      top: 40%;
+      left: 80px;
+      width: 100%;
+      max-width: 1000px;
+      color: #88a028;
+      .topKvTitleBox {
+        margin: 0 0 30px;
+        .topKvTitle {
+          margin: 0 0 5px;
+          padding: 5px;
+          background: #ffffff;
+          p {
+            display: inline;
+            font-size: 50px;
+            line-height: 1.2;
+          }
+          .red {
+            color: #f76c22;
+          }
+          .yellow {
+            color: #f2c920;
+          }
+        }
+        .topKvTitle01 {
+          max-width: 700px;
+        }
+      }
+      .subTitleBox {
+        .subTitle {
+          margin: 0 0 5px;
+          p {
+            display: inline-block;
+            padding: 5px;
+            font-size: 20px;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .topSecTitleBox {
+    margin: 0 0 40px;
+    text-align: center;
+    .sub {
+      position: relative;
+      margin: 0 0 5px;
+      padding: 20px 0 5px;
+      font-size: 24px;
+      color: #88a03d;
+      background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec_ttl_top_icon.png)
+        center top no-repeat;
+      background-size: 30px auto;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        height: 1px;
+        margin: 0 auto;
+        background: #88a03d;
+      }
+    }
+    .topSecTitle {
+      display: inline-block;
+      font-size: 0;
+      color: #ffffff;
+      p {
+        display: inline;
+        font-size: 40px;
+        font-weight: 900;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #88a03d;
+      }
+      .em {
+        color: #f7ff23;
+      }
+    }
+  }
+  .sec01 {
+    padding: 60px 0 100px;
+    .topSecTitleBox {
+      .topSecTitle {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -150px;
+          bottom: -70px;
+          width: 130px;
+          height: 200px;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec01_ttl_icon.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+    .chartPhoto {
+      position: relative;
+      margin: 0 0 30px;
+    }
+  }
+  .sec02 {
+    padding: 60px 0 100px;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .ttlPanel {
+      margin: 0 0 30px;
+      text-align: center;
+      .ttlBox01 {
+        display: inline-block;
+        padding: 0 10px 25px;
+        font-size: 20px;
+        color: #ff7f8a;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png)
+          center bottom no-repeat;
+        background-size: 160px auto;
+      }
+      .ttlBox02 {
+        margin: 0 0 10px;
+        font-size: 0;
+        color: #ffffff;
+        .ttl {
+          p {
+            display: inline;
+            font-size: 40px;
+            font-weight: 900;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #ff7f8a;
+          }
+          .em {
+            color: #f7ff23;
+          }
+        }
+      }
+      .ttlBox03 {
+        font-size: 0;
+        color: #ff7f8a;
+        p,
+        h2 {
+          display: inline;
+        }
+        .em {
+          font-size: 50px;
+        }
+        .span {
+          font-size: 40px;
+        }
+      }
+    }
+    .secBox {
+      .photo {
+        img {
+          border-radius: 10px;
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 60px 0 100px;
+    .listBox {
+      text-align: center;
+      .ul {
+        .li {
+          position: relative;
+          padding: 15px;
+          border-radius: 10px;
+          border: 2px solid #88a028;
+        }
+        .photo {
+          margin: -40px 0 0;
+        }
+        .ttl {
+          margin: 10px 0 0;
+          font-size: 20px;
+          color: #88a028;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 3px);
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 60px 0 100px;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .listBox {
+      text-align: center;
+      .ul {
+        margin: -60px 0 0;
+        .li {
+          position: relative;
+          margin: 60px 0 0;
+          padding: 40px 15px 20px;
+          border-radius: 10px;
+          border: 2px solid #88a028;
+          background: #ffffff;
+        }
+      }
+      .ttlTop {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        width: 240px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        color: #ffffff;
+        border-radius: 30px;
+        background: #88a028;
+      }
+      .photoList {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .photoBox {
+          .photo {
+            position: relative;
+            img {
+              @include cover-image;
+              border-radius: 10px;
+            }
+          }
+          .ttl {
+            margin: 5px 0 0;
+            font-size: 18px;
+          }
+          .ttl01 {
+            color: #88a03d;
+          }
+          .ttl02 {
+            color: #f76c22;
+          }
+        }
+        .photoBox01 {
+          width: calc(45% - 10px);
+          .photo {
+            height: 0;
+            padding: 0 0 80%;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: -25px;
+              bottom: 0;
+              width: 30px;
+              height: 30px;
+              margin: auto 0;
+              z-index: 1;
+              background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec04_arrow.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        .photoBox02 {
+          width: calc(55% - 10px);
+          .photo {
+            height: 0;
+            padding: 0 0 80%;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain {
+  .topSection {
+    padding: 100px 0;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/reason_top_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topKvTitleBox {
+      margin: 0 0 30px;
+      .topKvTitle {
+        margin: 0 0 5px;
+        padding: 5px;
+        color: #88a028;
+        background: #ffffff;
+        p {
+          display: inline;
+          font-size: 40px;
+          line-height: 1.2;
+        }
+        .red {
+          color: #f76c22;
+        }
+        .yellow {
+          color: #f2c920;
+        }
+      }
+      .topKvTitle01 {
+        max-width: 300px;
+      }
+      .topKvTitle02 {
+        max-width: 400px;
+      }
+    }
+    .txt {
+      p + p {
+        margin: 30px 0 0;
+      }
+    }
+  }
+  .slidePanel {
+    margin: 20px 0;
+    .slideBox {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc(100% / 6);
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .topSecTitleBox {
+      position: relative;
+      margin: 0 0 40px;
+      text-align: center;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 70px;
+        height: 170px;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .topSecTitle {
+        display: inline-block;
+        padding: 0 40px;
+        font-size: 0;
+        color: #ffffff;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png)
+            left center no-repeat,
+          url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png)
+            right center no-repeat;
+        background-size: 25px auto, 25px auto;
+        p {
+          display: inline;
+          font-size: 40px;
+          font-weight: 900;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: #88a03d;
+        }
+        .em {
+          color: #f7ff23;
+        }
+      }
+    }
+    .secPanel {
+      + .secPanel {
+        margin: 50px 0 0;
+      }
+      .num {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        border: 1px solid #88a028;
+        > * {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          font-size: 24px;
+          color: #ffffff;
+          border-radius: 50%;
+          border: 5px solid #ffffff;
+          background: #88a028;
+        }
+      }
+      .ttlBox {
+        position: relative;
+        margin: 0 0 60px;
+        padding: 0 0 10px;
+        font-size: 0;
+        text-align: center;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 80px;
+          height: 1px;
+          margin: 0 auto;
+          background: #88a03d;
+        }
+        p,
+        h2 {
+          display: inline;
+          font-size: 40px;
+          color: #88a028;
+        }
+        .em,
+        em {
+          color: #f2c920;
+        }
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .txtBox {
+          .box {
+            padding: 10px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+          .inner {
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px dashed #000000;
+          }
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 24px;
+            color: #88a028;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          .photo {
+            width: 40%;
+            img {
+              width: 500px;
+              border-radius: 10px;
+            }
+          }
+          .txtBox {
+            position: relative;
+            top: -30px;
+            width: 60%;
+          }
+        }
+        &:nth-child(even) {
+          .secBox {
+            flex-direction: row-reverse;
+            .photo {
+              img {
+                position: relative;
+                right: 110px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .sec01 {
+    padding: 80px 0 120px;
+    .topSecTitleBox {
+      position: relative;
+      max-width: 620px;
+      margin: 0 auto 40px;
+      text-align: center;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -60px;
+        width: 70px;
+        height: 170px;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_img.png)
+          no-repeat;
+        background-size: 100% auto;
+      }
+      .topSecTitle {
+        display: inline-block;
+        padding: 0 40px;
+        font-size: 0;
+        color: #ffffff;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png)
+            left center no-repeat,
+          url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png)
+            right center no-repeat;
+        background-size: 25px auto, 25px auto;
+        p {
+          display: inline;
+          font-size: 40px;
+          font-weight: 900;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: #88a03d;
+        }
+        .em {
+          color: #f7ff23;
+        }
+      }
+    }
+    .messagePanel {
+      margin: 0 0 100px;
+      text-align: center;
+      .messageBox {
+        + .messageBox {
+          margin: 5px 0 0;
+        }
+        .message {
+          display: inline-block;
+          padding: 5px 20px;
+          font-size: 0;
+          color: #88a028;
+          background: #f0f5df;
+          p {
+            display: inline;
+            font-size: 34px;
+          }
+          .em {
+            color: #f2c920;
+          }
+        }
+      }
+    }
+    .secContainer {
+      + .secContainer {
+        margin: 120px 0 0;
+      }
+      .secBox {
+        margin: 0 0 40px;
+        .txtBox {
+          .box {
+            position: relative;
+            padding: 5px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+          .inner {
+            padding: 20px 30px;
+            border-radius: 10px;
+            border: 2px dashed #000000;
+          }
+          .ttl01 {
+            font-size: 20px;
+            color: #88a028;
+          }
+          .ttl02 {
+            font-size: 0;
+            color: #88a028;
+            p,
+            h2 {
+              display: inline;
+              font-size: 40px;
+              line-height: 1.2;
+            }
+            .em,
+            em {
+              color: #f2c920;
+            }
+          }
+          .num {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            border: 1px solid #88a028;
+            > * {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              font-size: 24px;
+              color: #ffffff;
+              line-height: 1;
+              border-radius: 50%;
+              border: 5px solid #ffffff;
+              background: #88a028;
+            }
+            .span {
+              margin: 0 0 2px;
+              font-size: 10px;
+            }
+          }
+        }
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .txtBox {
+            width: 48%;
+            .box {
+              position: relative;
+              top: -20px;
+              width: 650px;
+            }
+          }
+          .photo {
+            width: 50%;
+          }
+        }
+      }
+      .listBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 60px;
+        border-radius: 10px;
+        border: 2px solid #88a028;
+        .ul {
+          max-width: 850px;
+          margin: 0 auto;
+          font-size: 18px;
+          .li {
+            padding: 0 0 0 35px;
+            background: url(http://yamabiko.cc/system_panel/uploads/images/service_sec01_check.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: -20px auto 0;
+            .li {
+              width: 48%;
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .slidePanel {
+    margin: 60px 0 0;
+    .slideBox {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc(100% / 6);
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 60px 0 100px;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .ttlPanel {
+      margin: 0 0 30px;
+      text-align: center;
+      .ttlBox01 {
+        display: inline-block;
+        padding: 0 10px 25px;
+        font-size: 20px;
+        color: #ff7f8a;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png)
+          center bottom no-repeat;
+        background-size: 160px auto;
+      }
+      .ttlBox02 {
+        margin: 0 0 10px;
+        font-size: 0;
+        color: #ffffff;
+        .ttl {
+          p {
+            display: inline;
+            font-size: 40px;
+            font-weight: 900;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #ff7f8a;
+          }
+          .em {
+            color: #f7ff23;
+          }
+        }
+      }
+      .ttlBox03 {
+        font-size: 0;
+        color: #ff7f8a;
+        p,
+        h2 {
+          display: inline;
+        }
+        .em {
+          font-size: 50px;
+        }
+        .span {
+          font-size: 40px;
+        }
+      }
+    }
+    .secBox {
+      .photo {
+        img {
+          border-radius: 10px;
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 60px 0 120px;
+    .secBox {
+      max-width: 900px;
+      margin: 0 auto;
+      .img {
+        width: 100px;
+      }
+      .txtBox {
+        .topSecTitleBox {
+          position: relative;
+          margin: 0 0 10px;
+          .topSecTitle {
+            display: inline-block;
+            font-size: 0;
+            color: #ffffff;
+            p {
+              display: inline;
+              font-size: 40px;
+              font-weight: 900;
+              -webkit-text-stroke-width: 2px;
+              -webkit-text-stroke-color: #88a03d;
+            }
+            .em {
+              color: #f7ff23;
+            }
+          }
+        }
+        .box {
+          max-width: 700px;
+          padding: 20px;
+          border-radius: 10px;
+          border: 2px dashed #000000;
+          p {
+            font-size: 20px;
+            color: #88a028;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .txtBox {
+          width: calc(100% - 140px);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain {
+  .topSection {
+    padding: 30px 0 60px;
+    .secBox {
+      max-width: 900px;
+      margin: 0 auto;
+      .img {
+        width: 100px;
+      }
+      .txtBox {
+        .topSecTitleBox {
+          position: relative;
+          margin: 0 0 10px;
+          .topSecTitle {
+            display: inline-block;
+            font-size: 0;
+            color: #ffffff;
+            p {
+              display: inline;
+              font-size: 40px;
+              font-weight: 900;
+              -webkit-text-stroke-width: 2px;
+              -webkit-text-stroke-color: #88a03d;
+            }
+            .em {
+              color: #f7ff23;
+            }
+          }
+        }
+        .box {
+          max-width: 500px;
+          padding: 20px;
+          border-radius: 10px;
+          border: 2px dashed #000000;
+          p {
+            font-size: 20px;
+            color: #88a028;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .txtBox {
+          width: calc(100% - 140px);
+        }
+      }
+    }
+  }
+  .stepSection {
+    padding: 0 0 100px;
+    .secPanel {
+      position: relative;
+      padding: 40px;
+      border-radius: 10px;
+      border: 2px solid #88a028;
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -30px;
+          width: 60px;
+          height: 50px;
+          margin: 0 auto;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/flow_step_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .num {
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        border: 1px solid #88a028;
+        > * {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 1;
+          border-radius: 50%;
+          border: 5px solid #ffffff;
+          background: #88a028;
+        }
+        .span {
+          margin: 0 0 2px;
+          font-size: 10px;
+        }
+      }
+      + .secPanel {
+        margin: 60px 0 0;
+      }
+    }
+    .secBox {
+      .photo {
+        img {
+          border-radius: 10px;
+        }
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 10px;
+          padding: 0 15px 5px;
+          font-size: 34px;
+          color: #88a028;
+          border-bottom: 1px solid #88a028;
+        }
+        .inner {
+          padding: 0 15px;
+        }
+        .telBox {
+          max-width: 460px;
+          margin: 20px 0 0;
+          padding: 15px 20px;
+          color: #ffffff;
+          background: #3e4e30;
+          > p {
+            font-size: 18px;
+            color: #f2c920;
+          }
+          .tel {
+            a {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              font-size: 34px;
+              color: #ffffff;
+              line-height: 1;
+              background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png)
+                left top 6px no-repeat;
+              background-size: 25px auto;
+            }
+            > p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          width: 350px;
+        }
+        .txtBox {
+          width: calc(100% - 400px);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .topSection {
+    padding: 120px 0 0;
+    .secContainer {
+      position: relative;
+      padding: 0 0 50px;
+      color: #ffffff;
+      text-align: center;
+      background: url(http://yamabiko.cc/system_panel/uploads/images/contact_top_bg.png)
+        no-repeat;
+      background-size: cover;
+      .secTtl01 {
+        position: relative;
+        top: -40px;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 0;
+        border-radius: 10px;
+        background: #88a028;
+        p {
+          display: inline;
+          font-size: 40px;
+        }
+        .em {
+          color: #f7ff23;
+        }
+      }
+      .secTtl02 {
+        display: inline-block;
+        margin: 0 0 40px;
+        padding: 0 40px;
+        font-size: 0;
+        background: url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_01.png)
+            left center no-repeat,
+          url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_02.png)
+            right center no-repeat;
+        background-size: 25px auto, 25px auto;
+        p {
+          font-size: 40px;
+        }
+      }
+      .listBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 45px);
+          }
+          p {
+            margin: 10px 0 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .telSection {
+    padding: 100px 0 50px;
+    .telPanel {
+      position: relative;
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      color: #ffffff;
+      text-align: center;
+      background: #3e4e30;
+      .img {
+        position: absolute;
+        top: -60px;
+        left: -20px;
+        width: 90px;
+      }
+      .telBox {
+        display: inline-block;
+        text-align: left;
+        > p {
+          font-size: 24px;
+          color: #f2c920;
+        }
+        .tel {
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 34px;
+            color: #ffffff;
+            line-height: 1;
+            background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png)
+              left top 6px no-repeat;
+            background-size: 25px auto;
+          }
+          > p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .topSecTitleBox {
+    margin: 0 0 40px;
+    text-align: center;
+    .sub {
+      position: relative;
+      margin: 0 0 5px;
+      padding: 20px 0 5px;
+      font-size: 24px;
+      color: #88a03d;
+      background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec_ttl_top_icon.png)
+        center top no-repeat;
+      background-size: 30px auto;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        height: 1px;
+        margin: 0 auto;
+        background: #88a03d;
+      }
+    }
+    .topSecTitle {
+      display: inline-block;
+      font-size: 0;
+      color: #ffffff;
+      p {
+        display: inline;
+        font-size: 40px;
+        font-weight: 900;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #88a03d;
+      }
+      .em {
+        color: #f7ff23;
+      }
+    }
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/contact_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 50px;
+      text-align: center;
+    }
+  }
+  .sec02 {
+    padding: 80px 0 120px;
+    .infoBox {
+      .dl {
+        line-height: 2;
+        .dt {
+          padding: 15px;
+          text-align: center;
+          border-bottom: 1px solid #88a03d;
+        }
+        .dd {
+          padding: 15px 40px;
+          border-bottom: 1px solid #181818;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          .dt {
+            width: 250px;
+          }
+          .dd {
+            width: calc(100% - 252px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #88a028;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #88a028;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 240px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 18px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: url(http://yamabiko.cc/system_panel/uploads/images/btn_more_arrow.png)
+      right 15px center no-repeat #3e4e30;
+    background-size: 16px auto;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      padding: 10px 0 10px 30px;
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkList02 {
+      padding: 10px 0 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        border: 2px solid #88a028;
+        background: #ffffff;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #171a1c;
+        border-right: 3px solid #171a1c;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      padding: 10px 0 0;
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 2px solid #88a028;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #3e4e30;
+      }
+    }
+
+    .postalBox {
+      margin: 0 0 8px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        + .dl {
+          .dd {
+            border-top: none;
+          }
+        }
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+          }
+        }
+        > .dt {
+          width: 260px;
+          .inner {
+            position: relative;
+            top: 10px;
+            width: 270px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            background: #88a028;
+          }
+          .span {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+          }
+
+          .em {
+            position: absolute;
+            top: 12px;
+            right: -10px;
+            display: inline-block;
+            padding: 0 4px;
+            font-size: 12px;
+            vertical-align: middle;
+            // border-radius: 6px;
+            background: #f2c43a;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 260px);
+          padding: 5px 0;
+          .reserveBox {
+            border: 1px solid #171a1c;
+            .ttl {
+              max-width: 220px;
+              padding: 3px;
+              color: #ffffff;
+              text-align: center;
+              background: #171a1c;
+            }
+            .txt {
+              padding: 10px 20px;
+              line-height: 2;
+            }
+          }
+          .dogBox {
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .otherTtl {
+        padding: 20px 20px 10px;
+        border-bottom: none;
+      }
+      .otherRadio {
+        .dt {
+          display: block;
+          text-align: right;
+          .span {
+            display: block;
+            max-width: 260px;
+            margin: 0;
+          }
+        }
+      }
+      .otherRadio01 {
+        border-bottom: none;
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 30px;
+          .list {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border-radius: 10px;
+          border: 2px solid #88a028;
+          background: #ffffff;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadPanel {
+      padding: 20px;
+    }
+    .fileUploadTtl {
+      margin: 0 0 15px;
+    }
+    .fileUploadBox {
+      .fileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 32%;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 65%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      + p {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}

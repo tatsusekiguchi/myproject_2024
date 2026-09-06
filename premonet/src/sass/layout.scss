@@ -1,0 +1,3143 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    position: relative;
+    padding: 0 80px;
+    .topKv {
+      position: relative;
+      height: calc(100vh - 100px);
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+        background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_kv_wave.png)
+          center no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+      }
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px 20px 0 0;
+        }
+        .kv01 {
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvTitleTxt {
+      position: relative;
+      color: #f8f2ee;
+      z-index: -1;
+    }
+    .kvTitleBox {
+      position: absolute;
+      left: 80px;
+      bottom: 180px;
+      width: 90%;
+      max-width: 460px;
+      padding: 15px 20px;
+      text-align: center;
+      z-index: 1;
+      border-radius: 10px;
+      background: #ffffff;
+      .kvTitle01 {
+        font-size: 0;
+        p {
+          display: inline;
+          font-size: 34px;
+          letter-spacing: 0.05em;
+        }
+        .em {
+          color: #f0823d;
+        }
+      }
+      .kvTitle02 {
+        padding: 0 20px;
+        font-size: 20px;
+      }
+    }
+    .scrollBox {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      width: 28px;
+      height: 140px;
+      text-align: center;
+      .scroll {
+        display: inline-block;
+      }
+    }
+  }
+  .topSection {
+    position: relative;
+    margin: 100px 0 60px;
+    padding: 0 0 50px;
+    .secBox {
+      .txtBox {
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+        }
+        .ttlBox {
+          max-width: 460px;
+          border-radius: 20px;
+          background: #ffffff;
+          + .ttlBox {
+            max-width: 360px;
+            margin: 5px 0 0;
+          }
+        }
+        .ttl {
+          padding: 5px 20px;
+          font-size: 36px;
+          p {
+            display: inline-block;
+          }
+          .em {
+            color: #f0823d;
+          }
+        }
+        .txt {
+          margin: 20px 0 0;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .btnMore {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 60px 0 120px;
+    .listBox {
+      .ul {
+        a {
+          display: block;
+        }
+        .photoBox {
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 16px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec01_wave.png)
+              center no-repeat;
+            background-size: cover;
+            transform: rotate(180deg);
+          }
+        }
+        .photo {
+          overflow: hidden;
+          position: relative;
+          img {
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .circle {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          width: 120px;
+        }
+        .dl {
+          margin: 20px 0 0;
+          .dt {
+            margin: 0 0 15px;
+            padding: 0 0 0 30px;
+            font-size: 26px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+              left top 12px no-repeat;
+            background-size: 20px auto;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 20px);
+          }
+          .photo {
+            img {
+              transition: 0.6s;
+            }
+          }
+          a {
+            opacity: 1;
+            &:hover {
+              .photo {
+                img {
+                  transform: scale(1.03);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .listBox02 {
+      margin: 60px 0 0;
+      .ul {
+        a {
+          position: relative;
+          display: block;
+          color: #ffffff;
+        }
+        .photo {
+          overflow: hidden;
+          border-radius: 20px;
+          img {
+            border-radius: 20px;
+          }
+        }
+        .ttl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            padding: 0 0 0 30px;
+            font-size: 26px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+              left top 12px no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+          .photo {
+            img {
+              transition: 0.6s;
+            }
+          }
+          a {
+            opacity: 1;
+            &:hover {
+              .photo {
+                img {
+                  transform: scale(1.03);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 120px;
+    .secContainer {
+      padding: 60px 20px;
+      border-radius: 20px;
+      background: #ffffff;
+    }
+    .secPanel {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        margin: 0 15px;
+        a {
+          display: block;
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
+          font-weight: bold;
+        }
+        .photo {
+          position: relative;
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 15px 0;
+        }
+        .infoBox {
+          display: flex;
+          align-items: center;
+          margin: 0 0 10px;
+          .time {
+            margin: 0 10px 0 0;
+            font-size: 14px;
+            color: #f0823d;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 120px;
+            padding: 1px 10px;
+            font-size: 13px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            background: #f0823d;
+          }
+        }
+        .title {
+          text-decoration: underline;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        margin: 0 0 0 -35px;
+        .webgene-item {
+          width: calc((100% / 3) - 35px);
+          margin: 0 0 0 35px;
+          .photo {
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+      .btnMore {
+        position: absolute;
+        top: 30px;
+        right: 0;
+      }
+    }
+  }
+  .sec03 {
+    position: relative;
+    margin: 0 0 120px;
+    .secBox {
+      .txtBox {
+        .btnList {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+          .btnList {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 0 0 120px;
+    .secPanel {
+      position: relative;
+      padding: 40px 20px;
+      border-radius: 10px;
+      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png)
+        center no-repeat;
+      background-size: cover;
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .txtBox {
+        .txt {
+          margin: 0 0 20px;
+        }
+        .qrPanel {
+          + .qrPanel {
+            margin: 30px 0 0;
+          }
+          .ttl {
+            margin: 0 0 15px;
+            padding: 0 0 0 15px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_circle.png)
+              left center no-repeat;
+            background-size: 10px auto;
+          }
+        }
+        .qrBox {
+          .qr {
+            width: 80px;
+          }
+        }
+        .btnMore {
+          p {
+            display: inline-block;
+            padding: 0 0 0 25px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_insta.png)
+              left center no-repeat;
+            background-size: 18px auto;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photo {
+          position: absolute;
+          top: 60px;
+          right: -60px;
+          width: 45%;
+        }
+        .txtBox {
+          .qrBox {
+            display: flex;
+            align-items: center;
+            .qr {
+              margin: 0 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain {
+  .topSection {
+    padding: 80px 0;
+    .ttlBox {
+      max-width: 560px;
+      margin: 0 auto 30px;
+      text-align: center;
+      border-radius: 20px;
+      background: #ffffff;
+      .ttl {
+        padding: 5px 20px;
+        font-size: 36px;
+        + .ttl {
+          margin: 5px 0 0;
+        }
+        p {
+          display: inline-block;
+        }
+        .em {
+          color: #f0823d;
+        }
+      }
+    }
+    .txt {
+      text-align: center;
+    }
+  }
+  .sec01 {
+    padding: 0 0 120px;
+    .listBox {
+      .ul {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .ttl {
+          margin: 15px 0;
+          padding: 0 0 0 25px;
+          font-size: 20px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+            left top 6px no-repeat;
+          background-size: 20px auto;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+          .btnMore {
+            margin: 10px auto 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -50px 0 0 -30px;
+          .li {
+            width: calc((100% / 3) - 30px);
+            margin: 50px 0 0 30px;
+          }
+          .dl {
+            .dt + .dd {
+              min-height: 128px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 120px;
+    .secPanel {
+      + .secPanel {
+        margin: 50px 0 0;
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 10px 0 0;
+          .ttlBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 0 0 30px;
+            .num {
+              width: 50px;
+              padding: 15px 0 0;
+              font-size: 44px;
+              color: #f0823d;
+              line-height: 1;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+                center top no-repeat;
+              background-size: 18px auto;
+            }
+            .ttl {
+              width: calc(100% - 80px);
+              .span {
+                font-size: 18px;
+              }
+              .em {
+                font-size: 40px;
+                line-height: 1.2;
+              }
+            }
+          }
+          .example {
+            margin: 20px 0 0;
+            padding: 20px 30px;
+            border-radius: 15px;
+            background: #ffffff;
+          }
+          .btnMore {
+            width: 220px;
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 42%;
+          }
+          .txtBox {
+            width: 52%;
+          }
+        }
+        &:nth-child(even) {
+          .secBox {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .topSection {
+    padding: 80px 0;
+    .secBox {
+      .txtBox {
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+        }
+        .ttlBox {
+          max-width: 470px;
+          border-radius: 20px;
+          background: #ffffff;
+          + .ttlBox {
+            margin: 5px 0 0;
+          }
+        }
+        .ttl {
+          padding: 5px 20px;
+          font-size: 36px;
+          p {
+            display: inline-block;
+          }
+          .em {
+            color: #f0823d;
+          }
+        }
+        .txt {
+          margin: 20px 0 0;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .btnMore {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 100px;
+    .secContainer {
+      padding: 60px 0 100px;
+      border-radius: 20px;
+      background: #56361c;
+    }
+    .secWrap01 {
+      position: relative;
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f9c867;
+      }
+    }
+    .listBox {
+      color: #f9c867;
+      .ul {
+        p {
+          margin: 5px 0 0;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 20px);
+            &:nth-child(2) {
+              position: relative;
+              top: -40px;
+            }
+            &:nth-child(3) {
+              position: relative;
+              top: 40px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .btnMore {
+        position: absolute;
+        top: 30px;
+        right: 0;
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 100px;
+    .flowList {
+      margin: 0 0 100px;
+      .ul {
+        .li {
+          position: relative;
+        }
+        .photoBox {
+          position: relative;
+          .photo {
+            img {
+              border-radius: 20px;
+            }
+          }
+          .time {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 110px;
+            padding: 5px 10px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 0 0 10px 0;
+            background: #ffffff;
+          }
+        }
+        .dl {
+          margin: 15px 0 0;
+          .dt {
+            margin: 0 0 15px;
+            font-size: 24px;
+            color: #56361c;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px 0 0 -30px;
+        .li {
+          width: calc((100% / 3) - 30px);
+          margin: 50px 0 0 30px;
+          &:not(:last-child) {
+            .photoBox {
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -20px;
+                bottom: 0;
+                width: 31px;
+                height: 52px;
+                margin: auto 0;
+                background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec02_arrow_01.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .secPanelList {
+      .secWrap {
+        max-width: 1300px;
+      }
+      .secPanel {
+        position: relative;
+        padding: 40px 60px;
+        border-radius: 20px;
+        background: #ffffff;
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+      }
+      .pTtl {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 5px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 20px;
+        background: #f9c867;
+        > * {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 24px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_white.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 15px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 40px;
+          }
+          .dl {
+            margin: 60px 0 0;
+            .dt {
+              margin: 0 0 5px;
+              padding: 0 0 0 30px;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_yellow.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 400px;
+          }
+          .txtBox {
+            width: calc(100% - 450px);
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 100px;
+    .infoPanelList {
+      margin: 0 0 100px;
+    }
+    .infoPanel {
+      + .infoPanel {
+        margin: 60px 0 0;
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 10px 0 0;
+          .ttl01 {
+            margin: 0 0 20px;
+            padding: 0 0 0 25px;
+            font-size: 20px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+              left top 6px no-repeat;
+            background-size: 20px auto;
+          }
+          .ttl02 {
+            margin: 0 0 20px;
+            font-size: 40px;
+          }
+          .infoBox {
+            line-height: 2;
+            .dl {
+              + .dl {
+                margin: 20px 0 0;
+              }
+              .dd {
+                a {
+                  display: inline-block;
+                }
+                .btnMap {
+                  width: 200px;
+                  margin: 10px 0 0;
+                  a {
+                    display: block;
+                    padding: 5px;
+                    color: #ffffff;
+                    text-align: center;
+                    border-radius: 25px;
+                    background: #f0823d;
+                    p {
+                      display: inline-block;
+                      padding: 0 0 0 20px;
+                      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec03_pin.png)
+                        left center no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 42%;
+          }
+          .txtBox {
+            width: 52%;
+            .infoBox {
+              .dl {
+                display: flex;
+                .dt {
+                  width: 100px;
+                }
+                .dd {
+                  width: calc(100% - 100px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .areaPanel {
+      position: relative;
+      padding: 40px 60px;
+      border-radius: 20px;
+      background: #ffffff;
+      .pTtl {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 5px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 20px;
+        background: #f9c867;
+        > * {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 24px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_white.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 15px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 40px;
+          }
+          .dl {
+            margin: 60px 0 0;
+            .dt {
+              margin: 0 0 5px;
+              padding: 0 0 0 30px;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_yellow.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 300px;
+          }
+          .txtBox {
+            width: calc(100% - 380px);
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 100px;
+    .secPanel {
+      position: relative;
+      padding: 40px 20px;
+      border-radius: 10px;
+      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec04_bg.png)
+        center no-repeat;
+      background-size: cover;
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .txtBox {
+        .txt {
+          margin: 0 0 20px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photo {
+          position: absolute;
+          top: -20px;
+          right: 20px;
+          width: 45%;
+        }
+        .txtBox {
+        }
+      }
+    }
+  }
+  .sec05 {
+    margin: 0 0 120px;
+    .listBox02 {
+      .ul {
+        a {
+          position: relative;
+          display: block;
+          color: #ffffff;
+        }
+        .photo {
+          overflow: hidden;
+          border-radius: 20px;
+          img {
+            border-radius: 20px;
+          }
+        }
+        .ttl {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            padding: 0 0 0 30px;
+            font-size: 26px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+              left top 12px no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+          .photo {
+            img {
+              transition: 0.6s;
+            }
+          }
+          a {
+            opacity: 1;
+            &:hover {
+              .photo {
+                img {
+                  transform: scale(1.03);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .introSection {
+    padding: 0 0 120px;
+    .listBox {
+      max-width: 900px;
+      margin: 0 auto 100px;
+      .ul {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .ttl {
+          margin: 15px 0;
+          padding: 0 0 0 25px;
+          font-size: 20px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+            left top 6px no-repeat;
+          background-size: 20px auto;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -50px 0 0 -60px;
+          .li {
+            width: calc((100% / 2) - 60px);
+            margin: 50px 0 0 60px;
+          }
+        }
+      }
+      .more {
+        width: 200px;
+        margin: 20px auto 0;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 20px;
+        background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          right 20px center no-repeat #f0823d;
+        transition: 0.6s;
+        p {
+          line-height: 1.5;
+        }
+      }
+      @media (min-width: 1025px) {
+        .more {
+          &:hover {
+            opacity: 0.6;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+              right 15px center no-repeat #f0823d;
+          }
+        }
+      }
+    }
+    .secPanel {
+      position: relative;
+      padding: 40px 60px;
+      border-radius: 20px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 60px 0 0;
+      }
+    }
+    .pTtl {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 5px;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 20px;
+      background: #f9c867;
+      > * {
+        display: inline-block;
+        padding: 0 0 0 30px;
+        font-size: 24px;
+        background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_white.png)
+          left center no-repeat;
+        background-size: 20px auto;
+      }
+    }
+    .secBox {
+      .listPanel {
+        .list {
+          padding: 20px 40px;
+          > p {
+            margin: 15px 0 0;
+            font-size: 24px;
+            color: #56361c;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .listPanel {
+          display: flex;
+          justify-content: space-between;
+          .list {
+            width: 50%;
+            + .list {
+              border-left: 1px dashed #9a8677;
+            }
+          }
+        }
+      }
+    }
+  }
+  .subTitle {
+    margin: 0 0 60px;
+    padding: 0 0 0 25px;
+    font-size: 20px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+      left top 6px no-repeat;
+    background-size: 20px auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	office
+///////////////////////////////////////////////////////////*/
+.officeMain {
+  .topSection {
+    padding: 80px 0;
+    .secBox {
+      .txtBox {
+        .ttlBox {
+          max-width: 460px;
+          border-radius: 20px;
+          background: #ffffff;
+          + .ttlBox {
+            max-width: 400px;
+            margin: 5px 0 0;
+          }
+        }
+        .ttl {
+          padding: 5px 20px;
+          font-size: 36px;
+          p {
+            display: inline-block;
+          }
+          .em {
+            color: #f0823d;
+          }
+        }
+        .txt {
+          margin: 20px 0 0;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 120px;
+    .secPanelList {
+      .secWrap {
+        max-width: 1300px;
+      }
+      .secPanel {
+        position: relative;
+        padding: 40px 60px;
+        border-radius: 20px;
+        background: #ffffff;
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+      }
+      .pTtl {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 5px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 20px;
+        background: #f9c867;
+        > * {
+          display: inline-block;
+          padding: 0 0 0 30px;
+          font-size: 24px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_white.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 15px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 40px;
+          }
+          .dl {
+            margin: 60px 0 0;
+            .dt {
+              margin: 0 0 5px;
+              padding: 0 0 0 30px;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_yellow.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 400px;
+          }
+          .txtBox {
+            width: calc(100% - 450px);
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 120px;
+    .secContainer {
+      padding: 60px 0;
+      border-radius: 20px;
+      background: #56361c;
+    }
+    .secWrap01 {
+      position: relative;
+    }
+    .pageSecTtlBox {
+      .pageSecTtl {
+        color: #f9c867;
+      }
+    }
+    .secBox {
+      color: #ffffff;
+      .photo {
+        img {
+          border-radius: 20px;
+        }
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        .ttl {
+          margin: 0 0 15px;
+          font-size: 40px;
+        }
+        .dl {
+          margin: 60px 0 0;
+          .dt {
+            margin: 0 0 5px;
+            padding: 0 0 0 30px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_icon_paw_yellow.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 120px;
+    .infoPanel {
+      + .infoPanel {
+        margin: 60px 0 0;
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 10px 0 0;
+          .ttl01 {
+            margin: 0 0 20px;
+            padding: 0 0 0 25px;
+            font-size: 20px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+              left top 6px no-repeat;
+            background-size: 20px auto;
+          }
+          .ttl02 {
+            margin: 0 0 20px;
+            font-size: 40px;
+          }
+          .infoBox {
+            line-height: 2;
+            .dl {
+              + .dl {
+                margin: 20px 0 0;
+              }
+              .dd {
+                a {
+                  display: inline-block;
+                }
+                .btnMap {
+                  width: 200px;
+                  margin: 10px 0 0;
+                  a {
+                    display: block;
+                    padding: 5px;
+                    color: #ffffff;
+                    text-align: center;
+                    border-radius: 25px;
+                    background: #f0823d;
+                    p {
+                      display: inline-block;
+                      padding: 0 0 0 20px;
+                      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec03_pin.png)
+                        left center no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 42%;
+          }
+          .txtBox {
+            width: 52%;
+            .infoBox {
+              .dl {
+                display: flex;
+                .dt {
+                  width: 100px;
+                }
+                .dd {
+                  width: calc(100% - 100px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+.guideMain {
+  .topPanel {
+    padding: 80px 0;
+    .pagingList {
+      max-width: 700px;
+      margin: 0 auto;
+      .ul {
+        .li {
+          a {
+            display: block;
+            padding: 12px;
+            font-size: 15px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 25px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+              right 20px center no-repeat #f0823d;
+          }
+          @media (min-width: 1025px) {
+            a {
+              &:hover {
+                background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                  right 15px center no-repeat #f0823d;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 100px;
+    .flowList {
+      .ol {
+        .li {
+          position: relative;
+          padding: 0 0 60px;
+          &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 35px;
+            width: 1px;
+            height: 100%;
+            border-left: 1px dashed #f0823d;
+          }
+        }
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          max-width: 1200px;
+          margin: 0 auto;
+          .leftBox {
+            width: 70px;
+            .num {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 70px;
+              height: 70px;
+              font-size: 34px;
+              color: #f9c867;
+              border-radius: 50%;
+              background: #f0823d;
+            }
+          }
+          .rightBox {
+            width: calc(100% - 100px);
+            .dl {
+              max-width: 1000px;
+              .dt {
+                margin: 0 0 20px;
+                padding: 5px;
+                font-size: 36px;
+                border-bottom: 1px dashed #978170;
+              }
+              .dd {
+                padding: 0 5px;
+              }
+            }
+          }
+          .contactBox {
+            display: flex;
+            margin: 30px 0 0;
+            .tel {
+              margin: 0 30px 0 0;
+              a {
+                display: inline-block;
+                padding: 0 0 0 30px;
+                font-size: 34px;
+                line-height: 1.2;
+                background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png)
+                  left top 10px no-repeat;
+                background-size: 25px auto;
+              }
+            }
+            .btnMore {
+              font-size: 14px;
+            }
+            .btnMore02 {
+              width: 260px;
+              margin: 0 0 0 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 100px;
+    .topTxt {
+      margin: 0 0 20px;
+    }
+    .tabPanel {
+      position: relative;
+      padding: 40px 50px;
+      border-radius: 20px;
+      background: #ffffff;
+      + .tabPanel {
+        margin: 100px 0 0;
+      }
+    }
+    .tabList {
+      width: 420px;
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        .li {
+          width: 200px;
+          padding: 8px 10px;
+          color: #f0823d;
+          text-align: center;
+          border-radius: 20px;
+          border: 1px solid #f0823d;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+            right 15px center no-repeat #ffffff;
+          cursor: pointer;
+        }
+        .active {
+          pointer-events: none;
+          color: #ffffff;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+            right 15px center no-repeat #f0823d;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .tabList {
+        position: absolute;
+        top: 90px;
+        right: 70px;
+      }
+    }
+    .ttlHead {
+      margin: 0 0 30px;
+      padding: 0 0 10px;
+      border-bottom: 1px dashed #9a8677;
+      .ttl01 {
+        font-size: 30px;
+        color: #56361c;
+      }
+      .ttl02 {
+        font-size: 40px;
+      }
+    }
+    .section {
+      .secTtl {
+        margin: 0 0 20px;
+        padding: 0 0 0 30px;
+        font-size: 24px;
+        background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png)
+          left top 10px no-repeat;
+        background-size: 20px auto;
+        + p {
+          margin: 0 0 20px;
+          color: #56361c;
+          + .aside {
+            margin: 0 0 10px;
+          }
+        }
+      }
+      .aside {
+        color: #8e8e8e;
+      }
+    }
+    .priceTable {
+      .table {
+        border: 1px solid #1d1d1d;
+        .tr {
+          display: table;
+          width: 100%;
+          > * {
+            display: table-cell;
+            padding: 10px 2px;
+            width: calc(100% / 3);
+            text-align: center;
+            vertical-align: middle;
+            + * {
+              border-left: 1px solid #1d1d1d;
+            }
+          }
+        }
+        .thead {
+          border-bottom: 1px solid #1d1d1d;
+          background: #f8f2ee;
+        }
+        .tbody {
+          background: #ffffff;
+          .tr {
+            + .tr {
+              border-top: 1px solid #1d1d1d;
+            }
+          }
+        }
+      }
+      + .aside {
+        margin: 10px 0 0;
+      }
+    }
+    .additionalPanel {
+      margin: 50px 0 0;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 1025px) {
+      .priceList {
+        display: flex;
+        justify-content: space-between;
+        .priceBox {
+          width: 48%;
+        }
+      }
+    }
+    .priceBox {
+      .ul {
+        .li {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 30px;
+          border-bottom: 1px solid #1d1d1d;
+        }
+        .noLine {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 120px;
+    .secPanel {
+      padding: 0 0 0 90px;
+      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/guide_faq_q.png)
+        left top no-repeat;
+      background-size: 65px auto;
+      + .secPanel {
+        margin: 50px 0 0;
+      }
+      .dl {
+        .dt {
+          padding: 5px 100px 15px 0;
+          font-size: 30px;
+          border-bottom: 1px dashed #978170;
+          cursor: pointer;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/icon_accord_plus.png)
+            right 40px center no-repeat;
+          background-size: 18px auto;
+          &.active {
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/icon_accord_minus.png)
+              right 40px center no-repeat;
+            background-size: 18px auto;
+          }
+        }
+        .dd {
+          padding: 15px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+.staffMain {
+  padding: 0 0 120px;
+  .topSection {
+    padding: 80px 0;
+    .ttlBox {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      text-align: center;
+      border-radius: 20px;
+      background: #ffffff;
+      .ttl {
+        padding: 5px 20px;
+        font-size: 36px;
+        + .ttl {
+          margin: 5px 0 0;
+        }
+        p {
+          display: inline-block;
+        }
+        .em {
+          color: #f0823d;
+        }
+      }
+    }
+    .txt {
+      text-align: center;
+    }
+    .photoBox {
+      margin: 30px 0 0;
+      padding: 0 20px;
+      .photo {
+        max-width: 1300px;
+        margin: 0 auto;
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .pagingPanel {
+    padding: 40px 0 60px;
+    .pagingList {
+      max-width: 700px;
+      margin: 0 auto;
+      .ul {
+        .li {
+          a {
+            display: block;
+            padding: 12px;
+            font-size: 15px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 25px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+              right 20px center no-repeat #f0823d;
+          }
+          @media (min-width: 1025px) {
+            a {
+              &:hover {
+                background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+                  right 15px center no-repeat #f0823d;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .section {
+    + .section {
+      margin: 60px 0 0;
+    }
+    .listBox {
+      .ul {
+        .li {
+          padding: 15px;
+          border-radius: 15px;
+          background: #ffffff;
+        }
+        .photo {
+          img {
+            border-radius: 10px;
+          }
+        }
+        .txtBox {
+          padding: 0 5px 10px;
+        }
+        .pos {
+          position: relative;
+          top: -15px;
+          left: 10px;
+          p {
+            display: inline-block;
+            min-width: 130px;
+            padding: 2px 30px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 15px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/staff_title_paw.png)
+              left 10px center no-repeat #f9c867;
+            background-size: 12px auto;
+          }
+        }
+        .nameBox {
+          margin: 0 0 20px;
+          line-height: 1.3;
+          .name01 {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            font-size: 34px;
+          }
+          .name02 {
+            display: inline-block;
+            font-size: 14px;
+          }
+        }
+        .detail {
+          .dl {
+            font-size: 14px;
+            + .dl {
+              margin: 5px 0 0;
+            }
+            .dt {
+              display: inline-block;
+              min-width: 50px;
+              margin: 0 0 5px;
+              padding: 0px 10px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 15px;
+              background: #1d1d1d;
+            }
+            .dd {
+              line-height: 2;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -35px 0 0 -35px;
+          .li {
+            width: calc((100% / 3) - 35px);
+            margin: 35px 0 0 35px;
+          }
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .sec01 {
+    padding: 80px 0;
+    .secBox {
+      .nameBox {
+        margin: 10px 0 0;
+        text-align: right;
+        .name01 {
+          font-size: 24px;
+          color: #56361c;
+        }
+        .name02 {
+          font-size: 20px;
+          p {
+            display: inline-block;
+          }
+          .em {
+            margin: 0 0 0 10px;
+            font-size: 40px;
+          }
+        }
+      }
+      .txtBox {
+        .pageSecTtlBox {
+          margin: 0 0 20px;
+        }
+        .ttlBox {
+          max-width: 470px;
+          border-radius: 20px;
+          background: #ffffff;
+          + .ttlBox {
+            margin: 5px 0 0;
+          }
+        }
+        .ttl {
+          padding: 5px 20px;
+          font-size: 36px;
+          p {
+            display: inline-block;
+          }
+          .em {
+            color: #f0823d;
+          }
+        }
+        .txt {
+          margin: 20px 0 0;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .btnMore {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .slidePanel {
+    margin: 50px 0 100px;
+    .slideBox {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .li {
+          width: calc(100% / 6);
+          margin: 0 10px;
+          img {
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 120px;
+    .infoPanel {
+      + .infoPanel {
+        margin: 60px 0 0;
+      }
+      .secBox {
+        .photo {
+          img {
+            border-radius: 20px;
+          }
+        }
+        .txtBox {
+          padding: 10px 0 0;
+          .infoBox {
+            line-height: 2;
+            .dl {
+              padding: 15px;
+              border-bottom: 1px dashed #978170;
+              .dd {
+                a {
+                  display: inline-block;
+                }
+                .btnMap {
+                  width: 200px;
+                  margin: 10px 0 0;
+                  a {
+                    display: block;
+                    padding: 5px;
+                    color: #ffffff;
+                    text-align: center;
+                    border-radius: 25px;
+                    background: #f0823d;
+                    p {
+                      display: inline-block;
+                      padding: 0 0 0 20px;
+                      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec03_pin.png)
+                        left center no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .photo {
+            width: 50%;
+          }
+          .txtBox {
+            width: 42%;
+            .infoBox {
+              .dl {
+                display: flex;
+                .dt {
+                  width: 100px;
+                }
+                .dd {
+                  width: calc(100% - 100px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 0 0 120px;
+    .secPanel {
+      position: relative;
+      padding: 40px 20px;
+      border-radius: 10px;
+      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png)
+        center no-repeat;
+      background-size: cover;
+    }
+    .secBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .txtBox {
+        .txt {
+          margin: 0 0 20px;
+        }
+        .qrPanel {
+          + .qrPanel {
+            margin: 30px 0 0;
+          }
+          .ttl {
+            margin: 0 0 15px;
+            padding: 0 0 0 15px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_circle.png)
+              left center no-repeat;
+            background-size: 10px auto;
+          }
+        }
+        .qrBox {
+          .qr {
+            width: 80px;
+          }
+        }
+        .btnMore {
+          p {
+            display: inline-block;
+            padding: 0 0 0 25px;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/top_sec04_insta.png)
+              left center no-repeat;
+            background-size: 18px auto;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photo {
+          position: absolute;
+          top: 60px;
+          right: -60px;
+          width: 45%;
+        }
+        .txtBox {
+          .qrBox {
+            display: flex;
+            align-items: center;
+            .qr {
+              margin: 0 30px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .topTxt {
+    margin: 0 0 20px;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .telBox {
+      max-width: 380px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 20px;
+      background: #ffffff;
+      .tel {
+        a {
+          display: inline-block;
+          padding: 0 0 0 35px;
+          font-size: 34px;
+          background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png)
+            left top 11px no-repeat;
+          background-size: 28px auto;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 120px;
+    .formContainer {
+      padding: 60px 20px 100px;
+      border-radius: 20px;
+      background: #ffffff;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #bdb6b2;
+    border-radius: 6px;
+    background: #faf6f3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bdb6b2;
+    border-radius: 6px;
+    background: #faf6f3;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    border: 1px solid #f0823d;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+      right 15px center no-repeat #f0823d;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #bdb6b2;
+        background: #faf6f3;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #000000;
+        border-right: 3px solid #000000;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 10px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #bdb6b2;
+        background: #faf6f3;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #000000;
+      }
+    }
+
+    .postalBox {
+      border-bottom: none !important;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px dashed #9a8677;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 0 0;
+          }
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          width: 260px;
+          padding: 15px 0 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #ffffff;
+            vertical-align: middle;
+            border-radius: 20px;
+            background: #f0823d;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 280px);
+          padding: 5px 0;
+        }
+      }
+      .otherTtl {
+        padding: 20px 20px 10px;
+        border-bottom: none;
+      }
+      .otherRadio {
+        .dt {
+          display: block;
+          text-align: right;
+          .span {
+            display: block;
+            max-width: 260px;
+            margin: 0;
+          }
+        }
+      }
+      .otherRadio01 {
+        border-bottom: none;
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          text-align: left;
+          border: 1px solid #bdb6b2;
+          border-radius: 6px;
+          background: #faf6f3;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadPanel {
+      padding: 20px;
+    }
+    .fileUploadTtl {
+      margin: 0 0 15px;
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-bottom: 1px solid #888163;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain {
+  .mainContainer {
+  }
+  .blogSection {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 0 120px;
+  }
+  .catePanel {
+    margin: 0 0 60px;
+    .categoryBox {
+      padding: 15px 0;
+    }
+    .webgene-header {
+      display: none;
+    }
+    .allItem,
+    .webgene-item {
+      a {
+        display: block;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 25px;
+        // background: #d10b14;
+        background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          right 15px center no-repeat #f0823d;
+      }
+    }
+    @media (min-width: 1025px) {
+      .categoryBox,
+      .webgene-blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .allItem,
+        .webgene-item {
+          width: 200px;
+        }
+        .webgene-header {
+          margin: 0;
+        }
+        .webgene-item {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          padding: 0 0 20px;
+          a {
+            display: block;
+            font-size: 15px;
+          }
+          .photo {
+            margin: 0 0 10px;
+            img {
+              border-radius: 15px;
+            }
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 15px;
+            .time {
+              color: #f0823d;
+            }
+            .cate {
+              min-width: 100px;
+              margin: 0 0 0 10px;
+              padding: 0 10px;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 10px;
+              background: #f0823d;
+            }
+          }
+          .title {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -80px;
+          .webgene-item {
+            width: calc((100% / 3) - 80px);
+            margin: 60px 0 0 80px;
+            .photo {
+              position: relative;
+              height: 280px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+            vertical-align: middle;
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              border-radius: 50%;
+              background: #f9c867;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+            a {
+              height: 45px;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/webgene_pagination_prev.png)
+                center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+            a {
+              height: 45px;
+              background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/webgene_pagination_next.png)
+                center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+          .selected {
+            a {
+              background: #56361c;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px 120px;
+      border-radius: 20px;
+      background: #ffffff;
+      .webgene-blog {
+        max-width: 1100px;
+        margin: 0 auto;
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            vertical-align: middle;
+            background: #f0823d;
+          }
+          .time {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            padding: 0 0 0 20px;
+            color: #f0823d;
+            vertical-align: middle;
+            background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+              left center no-repeat;
+            background-size: 14px auto;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 30px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 auto 10px;
+          @media (min-width: 1025px) {
+            img {
+              display: block;
+              width: auto;
+              max-height: 600px;
+              margin: 0 auto;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 80%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+              }
+            }
+          }
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 40px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+              "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+              "メイリオ", "Meiryo", "verdana", sans-serif;
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+          .pdfArea {
+            margin: 40px 0 0;
+            a {
+              color: #2151a3;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btnBackBox {
+    margin: 60px 0 0;
+    text-align: center;
+  }
+  .btnBack {
+    display: inline-block;
+    width: 220px;
+    margin: 0 5px;
+    a {
+      display: block;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 20px;
+      background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+        left 15px center no-repeat #f0823d;
+    }
+  }
+  .webgene-item-aroundPageLink {
+    display: inline-block;
+    a {
+      display: block;
+      width: 40px;
+      color: #ffffff;
+      line-height: 44px;
+      border-radius: 20px;
+      background: #f0823d;
+    }
+  }
+}

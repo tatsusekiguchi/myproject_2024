@@ -1,0 +1,1218 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      padding: 0;
+      .topKv {
+        height: 400px;
+      }
+      .kvTtl {
+        width: 98%;
+        margin: 0 auto;
+        padding: 15px 10px;
+        font-size: 13px;
+      }
+    }
+    .sec01 {
+      margin: -30px 0 0;
+      padding: 60px 0;
+      .newsPanel {
+        margin: 0 0 30px;
+        .ttlBox {
+          padding: 20px 0;
+          background: none;
+          .ttl {
+            width: 120px;
+            margin: 0 auto;
+          }
+        }
+        .newsBox {
+          .webgene-blog {
+            .webgene-item {
+              display: block;
+              padding: 20px 15px;
+              .infoBox {
+                width: 100%;
+                margin: 0 0 10px;
+                > * {
+                  font-size: 12px;
+                }
+              }
+              .title {
+                width: 100%;
+                a {
+                  display: inline-block;
+                  color: #3f1a0a;
+                }
+              }
+            }
+          }
+        }
+      }
+      .alcPanel {
+        .photoBox {
+          max-width: 500px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          position: relative;
+          .iconBox {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 10px;
+            .icon {
+              width: 100px;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 20px;
+            font-size: 24px;
+            p {
+              display: inline;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+          .dl {
+            margin: 0 0 10px;
+
+            .dt {
+              margin: 0 20px 0 0;
+              font-size: 20px;
+            }
+            .dd {
+              p {
+                font-size: 24px;
+              }
+              .span {
+                font-size: 20px;
+              }
+            }
+          }
+          .aside {
+            margin: 10px 0 0;
+            font-size: 13px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .sec02 {
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png)
+        center top no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 60px 0;
+        .txtBox {
+          padding: 0 0 20px;
+          .iconBox {
+            position: static;
+            width: 140px;
+          }
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 24px;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+        .photoBox {
+          max-width: 400px;
+        }
+      }
+    }
+    .sec03 {
+      .secBox {
+        padding: 80px 0 40px;
+        background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec03_img_icon_bg.png)
+            right top no-repeat,
+          url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec03_img_icon_bg.png)
+            left 50px bottom no-repeat;
+        background-size: 150px auto, 150px auto;
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 20px;
+          .em {
+            font-size: 40px;
+          }
+        }
+        .btnMore {
+          margin: 30px auto 0;
+        }
+        .photoList {
+          display: flex;
+          justify-content: space-between;
+          max-width: 600px;
+          margin: 30px auto;
+          .photo {
+            max-width: 48%;
+          }
+        }
+      }
+    }
+    .sec04 {
+      .secBox {
+        padding: 100px 0 60px;
+      }
+      .ttlBox {
+        position: relative;
+        margin: 0 0 20px;
+        padding: 70px 0 0;
+        background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec04_ttl.png)
+          left top no-repeat;
+        background-size: 80px auto;
+        p {
+          font-size: 16px;
+        }
+        .em {
+          font-size: 24px;
+        }
+      }
+      .btnMore {
+        margin: 30px 0;
+      }
+      .photo {
+        position: static;
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            margin: 0 0 20px;
+            font-size: 40px;
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec06 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            margin: 0 0 20px;
+            p {
+              font-size: 20px;
+            }
+            h2 {
+              font-size: 30px;
+            }
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec07 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            margin: 0 0 20px;
+            font-size: 40px;
+          }
+          .infoBox {
+            .dl {
+              display: block;
+              padding: 10px;
+              .dt {
+                width: 100%;
+              }
+              .dd {
+                width: 100%;
+              }
+              .btnMap {
+                width: 120px;
+              }
+            }
+          }
+          .btnMore {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topSection {
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+        center top -40px no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 40px 0 120px;
+        .photo {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 0 0 20px;
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 24px;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          .txtBox {
+            width: 50%;
+          }
+          .photo {
+            position: absolute;
+            top: 60px;
+            right: 5%;
+            width: 40%;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 0 0 80px;
+      &::before {
+        display: none;
+      }
+      .secBox {
+        + .secBox {
+          margin: 50px 0 0;
+        }
+        .photoBox {
+          max-width: 450px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain {
+    .topSection {
+      .secBox {
+        .txtBox {
+          .iconBox {
+            position: static;
+            width: 120px;
+            margin: 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	menu
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .menuMain {
+    .topSection {
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+        center top -40px no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 40px 0 120px;
+        .photo {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 0 0 20px;
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 24px;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          .txtBox {
+            width: 50%;
+          }
+          .photo {
+            position: absolute;
+            top: 60px;
+            right: 5%;
+            width: 40%;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 0 0 60px;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+      .secTtlBox {
+        margin: 0 0 15px;
+        font-size: 24px;
+      }
+      .topTxt {
+        margin: 0 0 20px;
+        font-size: 13px;
+      }
+      .alcPanel {
+        .photoBox {
+          max-width: 500px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          position: relative;
+          .iconBox {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 10px;
+            .icon {
+              width: 100px;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 20px;
+            font-size: 24px;
+            p {
+              display: inline;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+          .dl {
+            margin: 0 0 10px;
+
+            .dt {
+              margin: 0 20px 0 0;
+              font-size: 20px;
+            }
+            .dd {
+              p {
+                font-size: 24px;
+              }
+              .span {
+                font-size: 20px;
+              }
+            }
+          }
+          .aside {
+            margin: 10px 0 0;
+            font-size: 13px;
+            text-align: left;
+          }
+        }
+      }
+      .secPanelList {
+        padding: 60px 0 0;
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 60px 0 0;
+        }
+        .photo {
+          max-width: 640px;
+        }
+        .secBox {
+          .txtBox {
+            position: relative;
+            padding: 60px 20px 30px;
+            .balloon {
+              position: absolute;
+              top: -60px;
+              right: 10px;
+              width: 160px;
+              height: 115px;
+              background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_balloon.png)
+                no-repeat;
+              background-size: 100% auto;
+              p {
+                padding: 0 0 5px 5px;
+                font-size: 18px;
+              }
+            }
+            .ttlBox {
+              display: block;
+              margin: 0 0 15px;
+              .ttl {
+                font-size: 24px;
+              }
+              .price {
+                min-width: 90px;
+                .em {
+                  font-size: 20px;
+                }
+                .span {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 0 40px;
+        font-size: 30px;
+      }
+      .section {
+        + .section {
+          margin: 50px 0 0;
+        }
+        h3 {
+          margin: 0 0 20px;
+          font-size: 24px;
+        }
+      }
+      .photoList {
+        margin: 0 0 40px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            margin: -10px 0 0;
+            padding: 0 15px;
+            text-align: left;
+            .dt {
+              margin: 0 0 5px;
+            }
+            .dd {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .menuList {
+        .dl {
+          + .dl {
+            margin: 30px 0 0;
+          }
+        }
+      }
+      .menuList02 {
+        .dl {
+          + .dl {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	intro
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .introMain {
+    .topSection {
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+        center top -40px no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 40px 0 120px;
+        .photo {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 0 0 20px;
+          .iconBox {
+            position: static;
+            width: 120px;
+            margin: 0 0 10px;
+          }
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 24px;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 0 0 60px;
+      &::before {
+        display: none;
+      }
+      .secTtlBox {
+        margin: 0 0 40px;
+        font-size: 30px;
+      }
+      .listBox {
+        max-width: 1100px;
+        margin: 0 auto 60px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .photoBox {
+            margin: 0 auto 5px;
+          }
+          .txt {
+            padding: 0;
+            font-size: 14px;
+          }
+        }
+      }
+      .mapImg {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 0 40px;
+        font-size: 30px;
+      }
+      .secBox01 {
+        margin: 0 0 50px;
+        .txtBox {
+          position: relative;
+          padding: 10px 0 0;
+          .balloon {
+            position: static;
+            width: 180px;
+            margin: 0 0 10px;
+          }
+        }
+      }
+      .secBox02 {
+        .txtBox {
+          padding: 10px 0 0;
+          .balloon {
+            width: 180px;
+            margin: 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	info
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .infoMain {
+    .topSection {
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/info_top_bg.png)
+        center top no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 40px 0 120px;
+        .photo {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 0 0 20px;
+          .ttlBox {
+            margin: 0 0 20px;
+            p,
+            h2 {
+              font-size: 24px;
+            }
+            .em {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 0 0 60px;
+      &::before {
+        display: none;
+      }
+      .secTtlBox {
+        margin: 0 0 40px;
+        font-size: 30px;
+      }
+      .secBox {
+        margin: 0 0 40px;
+        .leftBox {
+          margin: 0 0 30px;
+          .infoBox {
+            .dl {
+              display: block;
+              padding: 10px;
+              .dt {
+                width: 100%;
+              }
+              .dd {
+                margin: 5px 0 0;
+              }
+            }
+          }
+        }
+        .rightBox {
+          .telBox {
+            max-width: 260px;
+            padding: 15px;
+            .tel {
+              a {
+                font-size: 24px;
+              }
+            }
+          }
+          .photo {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	rental
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .rentalMain {
+    .sec01 {
+      padding: 60px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttlBox {
+            margin: 0 0 20px;
+            p {
+              font-size: 20px;
+            }
+            h2 {
+              font-size: 30px;
+            }
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+      .boxList {
+        max-width: 580px;
+        margin: 30px auto 0;
+        .box {
+          padding: 15px;
+          .dl {
+            .dt {
+              font-size: 24px;
+            }
+          }
+        }
+        .box01 {
+          border: 5px solid #bcbcbc;
+        }
+        .box02 {
+          border: 5px solid #ffa60c;
+        }
+        .arrow01 {
+          display: none;
+        }
+        .arrow02 {
+          display: block;
+          width: 40px;
+          margin: 10px auto;
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 60px;
+      &::before {
+        display: none;
+      }
+      .secBox {
+        + .secBox {
+          margin: 50px 0 0;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            padding: 0 0 5px;
+            border-bottom: 1px solid #000000;
+            .num {
+              margin: 0 20px 0 0;
+              font-size: 40px;
+            }
+            .ttl {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 180px;
+      &::before {
+        display: none;
+      }
+      .secTtlBox {
+        margin: 0 0 40px;
+        font-size: 30px;
+      }
+      .secBox {
+        margin: 0 0 40px;
+        .leftBox {
+          margin: 0 0 30px;
+          .infoBox {
+            .dl {
+              display: block;
+              padding: 10px;
+              .dt {
+                width: 100%;
+              }
+              .dd {
+                margin: 5px 0 0;
+              }
+            }
+          }
+        }
+        .rightBox {
+          .photo {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .photoList {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            margin: -10px 0 0;
+            padding: 0 15px;
+            text-align: left;
+            .dt {
+              margin: 0 0 5px;
+            }
+            .dd {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      margin: -160px 0 0;
+      padding: 80px 0;
+      .ttlBox {
+        margin: 0 0 20px;
+        p,
+        h2 {
+          font-size: 24px;
+        }
+        .em {
+          font-size: 40px;
+        }
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .secTtlBox {
+        margin: 0 0 20px;
+        font-size: 30px;
+      }
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .itemList {
+        max-width: 340px;
+        margin: 0 auto;
+        .telBox {
+          margin: 0 0 20px;
+          padding: 15px;
+        }
+        .mailBox {
+          padding: 15px;
+          > p {
+            margin: 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 60px 0 150px;
+      .secTtlBox {
+        margin: 0 0 20px;
+        font-size: 30px;
+      }
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .itemList {
+        max-width: 800px;
+        text-align: center;
+        .telBox {
+          padding: 30px 15px;
+          > p {
+            font-size: 20px;
+          }
+        }
+        .mailBox {
+          padding: 30px 15px;
+          > p {
+            font-size: 20px;
+          }
+          .box {
+            padding: 10px 0 0;
+          }
+          .btnContact {
+            + .btnContact {
+              margin: 10px auto 0;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 60px;
+      &::before {
+        display: none;
+      }
+      .secTtlBox {
+        margin: 0 0 20px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 60px 0 80px;
+    }
+    .catePanel {
+      margin: 0 0 30px;
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            a {
+              padding: 20px 0;
+            }
+            .infoBox {
+              margin: 0 0 10px;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          padding: 15px;
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}

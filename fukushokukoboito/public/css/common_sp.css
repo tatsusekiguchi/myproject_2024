@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    z-index: 999;
+  }
+  .header .headTop {
+    padding: 15px 20px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .headTop .headBox .headTtl {
+    display: none;
+  }
+  .header .headTop .headBox .logo {
+    width: 180px;
+  }
+  .header .headTop .headBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 120px;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    background: #5daa04;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 62px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 0 30px;
+    color: #ffffff;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #ffffff;
+  }
+  .navBox .navList > .ul > .li .link01 {
+    padding: 3px 0 3px 25px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_01.png) left center no-repeat;
+    background-size: 17px auto;
+  }
+  .navBox .navList > .ul > .li .link02 {
+    padding: 3px 0 3px 25px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_02.png) left center no-repeat;
+    background-size: 13px auto;
+  }
+  .navBox .navList > .ul > .li .link03 {
+    padding: 3px 0 3px 25px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_03.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList > .ul > .li .link04 {
+    padding: 3px 0 3px 25px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_04.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList > .ul > .li .link05 {
+    padding: 3px 0 3px 25px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_05.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList .subList .list {
+    padding: 0 0 0 25px;
+  }
+  .navBox .navList .subList .list .li a {
+    font-size: 13px;
+  }
+  .navBox .navItem {
+    width: 200px;
+    margin: 20px auto 0;
+  }
+  .navBox .navItem .telBox {
+    margin: 0 0 15px;
+  }
+  .navBox .navItem .telBox a {
+    display: block;
+    padding: 8px 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.1;
+    background: #559a06;
+  }
+  .navBox .navItem .telBox a .em {
+    display: inline-block;
+    margin: 0 0 3px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_tel.png) left top no-repeat;
+    background-size: 10px auto;
+  }
+  .navBox .navItem .telBox a .span {
+    font-size: 12px;
+    color: #beccae;
+  }
+  .navBox .navItem .orderBox a {
+    display: block;
+    padding: 14px 10px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    background: #e60213;
+  }
+  .navBox .navItem .orderBox a p {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_cart.png) left center no-repeat;
+    background-size: 22px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 62px 0 0;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl01::before {
+    width: calc(50% - 80px);
+  }
+  .pageSecTtlBox .pageSecTtl01::after {
+    width: calc(50% - 80px);
+  }
+  .pageSecTtlBox .pageSecTtl02 {
+    padding: 0 10px 5px;
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+  .footer .footBox {
+    margin: 0 0 60px;
+  }
+  .footer .footBox .leftBox {
+    margin: 0 0 30px;
+  }
+  .footer .footBox .leftBox .ttl {
+    margin: 0 0 10px;
+    font-size: 13px;
+  }
+  .footer .footBox .leftBox .logo {
+    max-width: 200px;
+    margin: 0 0 40px;
+  }
+  .footer .footBox .rightBox .footNav {
+    display: none;
+  }
+  .footer .footBox .rightBox .navItem {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .footer .footBox .rightBox .navItem .telBox {
+    margin: 0 0 15px;
+  }
+}

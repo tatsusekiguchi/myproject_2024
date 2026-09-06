@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+    .headTtl {
+      display: none;
+    }
+    .headBox {
+      display: block;
+    }
+    .logoBox {
+      .logo {
+        width: 150px;
+        margin: 0 15px 0 0;
+        a {
+          display: block;
+        }
+      }
+      .sns {
+        .ul {
+          .li {
+            width: 20px;
+            + .li {
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+    .headItem {
+      display: none;
+    }
+    .hamburgerBox {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      text-align: center;
+      z-index: 999;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    height: calc(100% - 53px);
+    &.active {
+      top: 53px;
+    }
+    .navContainer {
+      padding: 60px 20px;
+    }
+    .navItem {
+      display: block;
+      margin: 20px 0 0;
+      text-align: center;
+      .tel {
+        margin: 0 0 20px;
+        a {
+          display: inline-block;
+          color: #333333;
+          p {
+            display: inline-block;
+            font-size: 20px;
+          }
+          .em {
+            font-size: 24px;
+          }
+        }
+      }
+      .ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .li {
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            text-align: center;
+          }
+        }
+        .mail {
+          width: 50px;
+          margin: 0 10px 0 0;
+          a {
+            background: #fde5eb;
+            img {
+              width: 20px;
+            }
+          }
+        }
+        .item {
+          width: 150px;
+          a {
+            color: #ffffff;
+            background: #f97d9b;
+            p {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              background: url(https://horie-works.co.jp/system_panel/uploads/images/header_item.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 53px 0 0;
+  }
+  .pageKvPanel {
+    padding: 30px 0;
+    .pageKv {
+      display: block;
+      .kvTitle {
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+      }
+      .kv {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+    }
+  }
+  .pageSecTtlBox {
+    padding: 0 0 20px;
+    &:after {
+      width: 60px;
+    }
+    .pageSecTtl {
+      font-size: 24px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 60px 0;
+      .secBox {
+        .ttlBox {
+          margin: 0 0 20px;
+          text-align: center;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 24px;
+          }
+        }
+        .txtBox {
+          .tel {
+            margin: 0 0 15px;
+            text-align: center;
+          }
+          .mail {
+            width: 240px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 50px 0 20px;
+      .footBox {
+        margin: 0 0 40px;
+        .logo {
+          width: 200px;
+          margin: 0 0 15px;
+        }
+        .txt {
+          margin: 0 0 20px;
+        }
+      }
+      .pagetop {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 40px;
+        cursor: pointer;
+      }
+      .copy {
+        position: static;
+      }
+    }
+  }
+}

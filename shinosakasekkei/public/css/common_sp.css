@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logoBox {
+    padding: 5px 0 0;
+  }
+  .header .logoBox .logo {
+    position: relative;
+    z-index: 9999;
+    width: 140px;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 50px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+    padding: 5px 0;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 14px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  .navBox .navList .ul .li .span {
+    padding: 0;
+    font-size: 11px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 5px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+  .navBox .navList .subList {
+    padding: 5px 0 0;
+  }
+  .navBox .navList .subList .list .li {
+    padding: 0;
+  }
+  .navBox .navItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    margin: 20px auto 0;
+  }
+  .navBox .navItem .contact {
+    width: 150px;
+  }
+  .navBox .navItem .contact a {
+    display: block;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    background: #0565ed;
+  }
+  .navBox .navItem .contact p {
+    background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 5px center no-repeat;
+  }
+  .navBox .navItem .insta {
+    width: 35px;
+  }
+  .navBox .navItem .insta a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 50px 0 0;
+  }
+
+  .mainTitlePanel {
+    padding: 30px 30px 20px;
+  }
+  .mainTitlePanel .mainTitle p {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+
+  .pageTitleBox .sub {
+    padding: 0 0 0 15px;
+    font-size: 13px;
+    background: url(https://shin-osaka-sub.jp/system_panel/uploads/images/page_ttl_icon_circle.png) left center no-repeat;
+    background-size: 10px auto;
+  }
+  .pageTitleBox .pageTitle {
+    font-size: 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .contactPanel {
+    display: block;
+  }
+  .footer .footContact .contactPanel .contactItems .contactBox01 {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactPanel .contactItems .contactBox01 .tel a {
+    font-size: 30px;
+  }
+  .footer .footContact .contactPanel .contactItems .contactBox02 .ttl {
+    font-size: 18px;
+  }
+  .footer .footContact .contactPanel .contactItems .contactBox02 .btnMore {
+    margin: 10px auto 0;
+  }
+  .footer .footContact .pagetop {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .footer .footContact .img {
+    width: 220px;
+    margin: 40px auto 0;
+  }
+  .footer .footPanel {
+    padding: 50px 0 20px;
+  }
+  .footer .footPanel .logo {
+    max-width: 300px;
+    margin: 0 0 15px;
+  }
+}

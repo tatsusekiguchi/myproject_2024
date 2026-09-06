@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  //font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "Kosugi Maru", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $mainColor;
+  font-size: $PCfontSize;
+  letter-spacing: 0.1em;
+  background: $bgBaseColor;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $lhBase;
+}
+
+.txt {
+  line-height: $lhTxt;
+}
+
+/*リンク */
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.fax {
+  a {
+    pointer-events: none;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #00a65a;
+    .headWrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      min-height: 95px;
+      padding: 10px 20px;
+      .leftBox {
+        position: relative;
+        width: 15%;
+        .logo {
+          max-width: 240px;
+          a {
+            display: block;
+          }
+        }
+      }
+      .rightBox {
+        width: 85%;
+        padding: 0 0 15px;
+        .itemBox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 180px;
+          margin: 0 0 0 4%;
+        }
+        .mailBox {
+          width: 100%;
+          a {
+            position: relative;
+            display: block;
+            padding: 5px 10px;
+            color: #3d7154;
+            text-align: center;
+            border-radius: 6px;
+            background: #ffffff;
+            &::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              border-radius: 6px;
+              background: #3d7154;
+              transform: scaleX(0);
+              transform-origin: right;
+              transition: all 0.5s ease;
+              transition-property: transform;
+            }
+            &:hover {
+              opacity: 1;
+              color: #f1f0e5;
+              &::before {
+                transform: scaleX(1);
+                transform-origin: left;
+              }
+            }
+            p {
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .navList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ul {
+        display: flex;
+        max-width: 500px;
+        min-width: 580px;
+        width: 100%;
+        > .li {
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: calc(100% / 4);
+          text-align: center;
+          > a {
+            display: block;
+            padding: 0 0 0 10px;
+            color: #ffffff;
+            background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/nav_arrow.png)
+              left center no-repeat;
+          }
+          &.spBreak {
+            display: none;
+          }
+        }
+        .linkTxt {
+          position: relative;
+          display: block;
+        }
+        .pulldown:hover {
+          overflow: visible;
+          .subList {
+            top: 95px;
+            height: auto;
+            opacity: 1;
+            z-index: 9999;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 104px 0 0;
+}
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background: #00a65a;
+  .pageKvTitle {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+}
+.pageSecTtlBox {
+  margin: 0 0 60px;
+  .pageSecTtl {
+    padding: 0 0 25px;
+    font-size: 36px;
+    color: #00a65a;
+    text-align: center;
+    letter-spacing: 0.1em;
+    background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png)
+      center bottom no-repeat;
+    background-size: 80px auto;
+  }
+}
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.btnMore {
+  max-width: 300px;
+  a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    background: #00a65a;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      background: #f2f1e6;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: all 0.5s ease;
+      transition-property: transform;
+    }
+    &:hover {
+      opacity: 1;
+      color: #3d3e3d;
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+    p {
+      position: relative;
+      padding: 0 10px;
+      background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+        right center no-repeat;
+      background-size: 5px auto;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 80px 0 30px;
+  color: #ffffff;
+  background: #00a65a;
+  .pagetop {
+    position: absolute;
+    top: -60px;
+    right: 3%;
+    width: 100px;
+    cursor: pointer;
+  }
+  .topBox {
+    margin: 0 0 40px;
+    .ttl {
+      margin: 0 0 30px;
+      font-size: 40px;
+    }
+    .contactItem {
+      .ul {
+        .li {
+          + .li {
+            margin: 15px 0 0;
+          }
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            color: #ffffff;
+          }
+        }
+        .tel {
+          a {
+            background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/footer_tel.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+        }
+        .mail {
+          a {
+            background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/footer_mail.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+    }
+  }
+  .footBox {
+    .leftBox {
+      .logo {
+        width: 100px;
+        margin: 0 0 20px;
+      }
+      .infoBox {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          + .dl {
+            margin: 20px 0 0;
+          }
+          .dt {
+            width: 120px;
+            padding: 5px 10px;
+            border-bottom: 1px solid #ffffff;
+          }
+          .dd {
+            width: calc(100% - 125px);
+            padding: 5px 10px;
+            border-bottom: 1px solid #ffffff;
+            a {
+              display: inline-block;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .rightBox {
+      .linePanel {
+        padding: 20px;
+        border-radius: 6px;
+        background: #f1f0e5;
+        .pTtl {
+          margin: 0 0 10px;
+          font-size: 24px;
+          color: #00a65a;
+          text-align: center;
+        }
+        .lineBox {
+          padding: 15px 30px;
+          color: #3d3e3d;
+          border-radius: 6px;
+          background: #ffffff;
+          .txtBox {
+            line-height: 2;
+            .ttl {
+              font-size: 20px;
+            }
+            .txt {
+              line-height: 1.7;
+            }
+          }
+          .qr {
+            width: 80px;
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .footBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .leftBox {
+        width: 40%;
+      }
+      .rightBox {
+        width: 50%;
+        .linePanel {
+          .lineBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .copy {
+    margin: 80px 0 0;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* 背景カラー */
+  z-index: 9999; /* 一番手前に */
+  pointer-events: none; /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0; /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease; /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

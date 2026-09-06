@@ -1,0 +1,444 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.textShadowBrown {
+  text-shadow: 1px 1px 1px rgba(165, 91, 45, 0.3), -1px 1px 1px rgba(165, 91, 45, 0.3);
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 0 0 15%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .header .logo {
+    position: absolute;
+    left: 5%;
+    bottom: 30px;
+    width: 15%;
+    max-width: 250px;
+  }
+  .header .logo a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    padding: 0 80px 0 0;
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navBox .navList > .ul > .li {
+    position: relative;
+    height: 100px;
+    padding: 48px 0 30px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 3%;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .navList > .ul > .li > a > div > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul .pulldown {
+    overflow: hidden;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    width: 180px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    margin: 1px 0 0;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: #232323;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #eda462;
+  }
+  .navBox .navList .contact {
+    position: relative;
+    top: -5px;
+    width: 150px;
+  }
+  .navBox .navList .contact a {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #84c369 0, #75bc58 80%, #499531 100%);
+  }
+  .navBox .navList .contact a div p {
+    padding: 0 !important;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageTitlePanel {
+  padding: 60px 20px;
+  font-weight: bold;
+  text-align: center;
+  background: #eda462;
+}
+.pageTitlePanel p {
+  font-size: 34px;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.pageSecTtlBox p {
+  font-size: 34px;
+}
+
+.secWrap {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 170px;
+}
+.btnMore a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #efa96e 0, #eb9d5b 80%, #de7536 100%);
+  text-shadow: 1px 1px 1px rgba(165, 91, 45, 0.3), -1px 1px 1px rgba(165, 91, 45, 0.3);
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .btnEntry {
+  width: 170px;
+  margin: 20px auto 0;
+}
+.footer .btnEntry a {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #84c369 0, #75bc58 80%, #499531 100%);
+}
+.footer .footEntry {
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://sanwakogyosho240401.smooooth.jp/system_panel/uploads/images/footer_entry_bg.png) center no-repeat;
+  background-size: cover;
+}
+.footer .footEntry h3 {
+  margin: 0 0 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.footer .footPanel {
+  padding: 80px 0 20px;
+  color: #efefef;
+  background: #232323;
+}
+.footer .footPanel .footBox .leftBox .logo {
+  max-width: 280px;
+  margin: 0 0 20px;
+}
+.footer .footPanel .footBox .leftBox .txt {
+  margin: 0 0 20px;
+  line-height: 2;
+}
+.footer .footPanel .footBox .leftBox .telBox {
+  max-width: 280px;
+  padding: 15px 20px;
+  border: 1px solid #5e5e5e;
+}
+.footer .footPanel .footBox .leftBox .telBox a {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url(https://sanwakogyosho240401.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footPanel .footBox .leftBox .telBox > p {
+  padding: 0 0 0 30px;
+  font-size: 14px;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav01 a {
+  display: inline-block;
+  color: #efefef;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 > .li > p {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 a {
+  display: inline-block;
+  color: #efefef;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 .ul {
+  display: inline-block;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 .ul .li {
+  display: inline-block;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 .ul .li + .li {
+  margin: 0 0 0 1em;
+}
+.footer .footPanel .footBox .rightBox .footNav .nav02 .ul .li a {
+  font-size: 14px;
+  color: #ababab;
+}
+.footer .footPanel .footBox .rightBox .btnEntry {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 300px;
+  }
+  .footer .footPanel .footBox .rightBox {
+    width: 45%;
+  }
+}
+.footer .footPanel .copy {
+  margin: 50px 0 0;
+  text-align: center;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

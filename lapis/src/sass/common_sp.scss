@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px;
+    .logo {
+      width: 150px;
+    }
+    .hamburgerBox {
+      top: 0;
+      right: 0;
+      .hamburgerTxt {
+        margin: 3px 0 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    padding: 100px 20px;
+    .navContainer {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      > * {
+        width: 100%;
+      }
+      .leftBox {
+        margin: 0 0 30px;
+        .logo {
+          max-width: 200px;
+        }
+        .info {
+          .logoSmall {
+            width: 60px;
+            margin: 0 0 20px;
+          }
+        }
+      }
+      .rightBox {
+        .navList {
+          // display: block;
+          max-width: 360px;
+          margin: 0 0 50px;
+          .ul {
+            width: 50%;
+            // + .ul {
+            //   margin: 20px 0 0;
+            // }
+            .li {
+              padding: 0 0 0 15px;
+              + .li {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+        .btnList {
+          margin: 0 0 30px;
+          .ul {
+            display: block;
+            max-width: 300px;
+            .li {
+              width: 100%;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+            a {
+              padding: 10px;
+            }
+            .dl {
+              .dt {
+                font-size: 12px;
+              }
+            }
+            .tel {
+              .dl {
+                .dd {
+                  .span {
+                    font-size: 18px;
+                  }
+                  .em {
+                    font-size: 22px;
+                  }
+                }
+              }
+            }
+            .mail {
+              .dl {
+                .dd {
+                  p {
+                    padding: 0 0 0 20px;
+                    font-size: 20px;
+                    background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_mail.png)
+                      left center no-repeat;
+                    background-size: 15px auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .instaBox {
+          display: block;
+          a {
+            margin: 0 0 15px;
+            padding: 0 0 0 30px;
+            width: 140px;
+            color: #ffffff;
+            background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_insta.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    padding: 66px 0 150px;
+  }
+  .pageKvContainer {
+    padding: 0 20px;
+    .bg {
+      width: 55%;
+    }
+    .pageKvWrap {
+      display: block;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 0 0;
+    }
+    .pageKvTitle {
+      width: 100%;
+      padding: 0 0 20px;
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .pageKvPhoto {
+      width: 100%;
+    }
+  }
+  .pageSecTtl {
+    margin: 0 0 40px;
+    p {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+  .pageIntroSection {
+    margin: 150px 0;
+    .secContainer {
+      padding: 40px 0 0;
+    }
+    .secPanel {
+      .leftBox {
+        .secTtl {
+          margin: 0 0 30px;
+          padding: 0 20px 0 0;
+          p {
+            font-size: 24px;
+          }
+          h2 {
+            font-size: 12px;
+          }
+        }
+        .photoSub {
+          max-width: 300px;
+          margin: 20px auto 0;
+        }
+      }
+      .rightBox {
+        .txtBox {
+          padding: 30px 0 0;
+          h3 {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContactContainer {
+      padding: 0 20px 40px;
+      .footContactPanel {
+        max-width: 600px;
+        padding: 40px 20px;
+      }
+      .contactItemBox {
+        .tel {
+          margin: 0 0 30px;
+        }
+        .insta {
+          margin: 0 0 30px;
+        }
+      }
+    }
+    .footPanel {
+      padding: 120px 0 40px;
+      .pagetop {
+        position: absolute;
+        top: -80px;
+        right: 20px;
+        width: 50px;
+      }
+      .footBox {
+        display: block;
+      }
+      .txtBox {
+        .logo {
+          width: 200px;
+          margin: 0 0 40px;
+        }
+      }
+      .copy {
+        margin: 40px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}

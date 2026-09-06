@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 20px;
+  z-index: 999;
+  background: #000000;
+  .ttl {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+    width: 80px;
+    a {
+      display: block;
+    }
+  }
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 40px;
+    z-index: 10000;
+    span {
+      background: #ffffff;
+      position: absolute;
+      left: 50%;
+      width: 25px;
+      height: 2px;
+      transform: translateX(-50%);
+      transition: 0.4s;
+      &:nth-of-type(1) {
+        top: 10px;
+      }
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-of-type(3) {
+        bottom: 10px;
+      }
+    }
+    &.is-open {
+      span:nth-of-type(1) {
+        transform: translate(-50%, 9px) rotate(-45deg);
+      }
+      span:nth-of-type(2) {
+        opacity: 0;
+      }
+      span:nth-of-type(3) {
+        transform: translate(-50%, -9px) rotate(45deg);
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 120px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 999;
+  background: #000000;
+  overflow: auto;
+  .navList {
+    ul {
+      border-top: 1px dashed #ebebeb;
+      li {
+        border-bottom: 1px dashed #ebebeb;
+        a {
+          display: block;
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .btnContact {
+    width: 100%;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      background: #c4241a;
+      span {
+        display: inline-block;
+        padding: 40px 0 0;
+        text-align: center;
+        background: url("../image/common/header_calendar.png") center top 10px
+          no-repeat;
+        background-size: 25px auto;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 64px 0 0;
+}
+.pageKvContainer {
+  .pageKvPanel {
+    padding: 40px 0;
+  }
+  .pageKvTitle {
+    position: absolute;
+    top: 40%;
+    font-size: 26px;
+  }
+  .subTitle {
+    font-size: 60px;
+  }
+}
+.pageSecTtlBox {
+  margin: 0 0 40px;
+  .pageSecTtl {
+    font-size: 30px;
+  }
+  .sub {
+    font-size: 16px;
+  }
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+.videoBox {
+  padding: 0 0 70%;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    padding: 80px 0;
+    .secBox {
+      .leftBox {
+        margin: 0 0 30px;
+        .pageSecTtlBox {
+          text-align: center;
+        }
+        .txt {
+          text-align: center;
+        }
+      }
+      .rightBox {
+        max-width: 500px;
+        margin: 0 auto;
+        .reserveBox {
+          a {
+            padding: 20px 20px;
+            dl {
+              dt {
+                font-size: 20px;
+              }
+              dd {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 50px 0 20px;
+    text-align: center;
+    .logo {
+      max-width: 200px;
+      margin: 0 auto 20px;
+    }
+    .copy {
+      margin: 20px 0 0;
+      text-align: center;
+    }
+    .pagetop {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 45px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" integrity="sha512-sXgF3JImNbesKnmCuR5AE5WPQo6Z8xJMYRvDknGyc0eTWL62pqgEG4Auk9d0VnstzyhRNzPak8AyemFJq7a6/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="itemlist">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="headTtl">
+				<p>ほんのひとつつみ ｜ 中部・東海・北陸エリアのかわいい伝統工芸品が見つかる</p>
+			</div>
+			<div class="headBox">
+				<div class="logoBox">
+					<div class="logo"><a href="/">
+							<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+						</a></div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navList">
+					<div class="ul">
+						<div class="li"><a href="/">
+								<div>
+									<p>TOP</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="crafts">
+								<div>
+									<p>主な取扱商品</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="guide">
+								<div>
+									<p>お客様へのご案内</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="flow">
+								<div>
+									<p>お取引の流れ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>商品検索</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="newslist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="contact">
+								<div>
+									<p>お問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="navItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>MENU</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="itemMain main">
+		<div class="pageKvPanel">
+			<div class="secWrap02">
+				<div class="pageKv">
+					<div class="kvTitle">
+						<h1>商品を探す</h1>
+					</div>
+					<div class="kv"><img src="https://horie-works.co.jp/system_panel/uploads/images/page_kv.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="searchSection">
+			<div class="secWrap01">
+				<div class="searchPanel">
+					<form class="webgene-search-form" method="get" action="">
+						<div rel="地域から探す" title="地域から探す" class="area webgene-search-form-block">
+							<div class="search-title-wrapper">
+								<p class="search-title">地域から探す</p>
+							</div>
+							<div class="search-area-wrapper">
+								<div class="search-subtitle-wrapper"> </div>
+								<div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="3">東北エリア</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="2">関東エリア</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="1">北海道エリア</label>
+								</div>
+							</div>
+						</div>
+						<div rel="商品から探す" title="商品から探す" class=" webgene-search-form-block">
+							<div class="search-title-wrapper">
+								<p class="search-title">商品から探す</p>
+							</div>
+							<div class="search-area-wrapper">
+								<div class="search-subtitle-wrapper"> </div>
+								<div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="2">Velvet Straight ( 髪質改善ストレート )</label> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">Velvet Refined color（ノンジアミンカラー）</label> </div>
+							</div>
+						</div>
+						<div rel="用途から探す" title="用途から探す" class=" webgene-search-form-block">
+							<div class="search-title-wrapper">
+								<p class="search-title">用途から探す</p>
+							</div>
+							<div class="search-area-wrapper">
+								<div class="search-subtitle-wrapper"> </div>
+								<div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd3" name="s3l0[]" value="2">Velvet Fluffy（ベルベット フラフィー　シャンプー　トリートメント） 　</label> <label><input type="checkbox" class="property_facility_cd3" name="s3l0[]" value="1">Velvet Elca ( ベルベット エルカ) </label> </div>
+							</div>
+						</div>
+						<div class="btnItems">
+							<input type="button" class="search-clear" value="条件クリア">
+							<input type="submit" class="search-submit" value="検索する"><input type="hidden" name="wgsearch" value="property">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="blogSection">
+			<div class="secWrap01">
+				<div class="postContainer">
+					<div class="catePanel">
+						<div class="dl">
+							<div class="dt">
+								<p>地域から探す</p>
+							</div>
+							<div class="dd">
+								<div class="ul">
+									<div class="li"><a href="itemlist?s0l0%5B%5D=1&amp;wgsearch=property">
+											<div>
+												<p>愛知</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=2&amp;wgsearch=property">
+											<div>
+												<p>岐阜</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=3&amp;wgsearch=property">
+											<div>
+												<p>静岡</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=4&amp;wgsearch=property">
+											<div>
+												<p>長野</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=5&amp;wgsearch=property">
+											<div>
+												<p>三重</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=6&amp;wgsearch=property">
+											<div>
+												<p>石川</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=7&amp;wgsearch=property">
+											<div>
+												<p>福井</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=8&amp;wgsearch=property">
+											<div>
+												<p>富山</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s0l0%5B%5D=9&amp;wgsearch=property">
+											<div>
+												<p>その他</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>商品から探す</p>
+							</div>
+							<div class="dd">
+								<div class="ul">
+									<div class="li"><a href="itemlist?s1l0%5B%5D=1&amp;wgsearch=property">
+											<div>
+												<p>漆器</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=2&amp;wgsearch=property">
+											<div>
+												<p>木工品</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=3&amp;wgsearch=property">
+											<div>
+												<p>彫刻品・七宝</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=4&amp;wgsearch=property">
+											<div>
+												<p>書物工</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=5&amp;wgsearch=property">
+											<div>
+												<p>箸</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=6&amp;wgsearch=property">
+											<div>
+												<p>鉄砲</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s1l0%5B%5D=7&amp;wgsearch=property">
+											<div>
+												<p>その他</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>用途から探す</p>
+							</div>
+							<div class="dd">
+								<div class="ul">
+									<div class="li"><a href="itemlist?s2l0%5B%5D=1&amp;wgsearch=property">
+											<div>
+												<p>周年記念にお勧めの記念品</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s2l0%5B%5D=2&amp;wgsearch=property">
+											<div>
+												<p>女性が喜ぶお勧め品</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s2l0%5B%5D=3&amp;wgsearch=property">
+											<div>
+												<p>海外の方へのお土産</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s2l0%5B%5D=4&amp;wgsearch=property">
+											<div>
+												<p>お祝いの品</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s2l0%5B%5D=5&amp;wgsearch=property">
+											<div>
+												<p>その他</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>価格から探す</p>
+							</div>
+							<div class="dd">
+								<div class="ul">
+									<div class="li"><a href="itemlist?s3l0%5B%5D=1&amp;wgsearch=property">
+											<div>
+												<p>～1,000円</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s3l0%5B%5D=2&amp;wgsearch=property">
+											<div>
+												<p>1,001円～3,000円</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s3l0%5B%5D=3&amp;wgsearch=property">
+											<div>
+												<p>3,001円～5,000円</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s3l0%5B%5D=4&amp;wgsearch=property">
+											<div>
+												<p>5,001円～10,000円</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="itemlist?s3l0%5B%5D=5&amp;wgsearch=property">
+											<div>
+												<p>10,001円～</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blogPanel blogPanel--list">
+						<div class="section webgene-blog">
+							<div class="webgene-header">
+								<h2>結果一覧</h2>
+							</div>
+							<div class="webgene-item"><a href="">
+									<div class="img"><img src="https://horie-works.co.jp/system_panel/uploads/images/item_sample.png" alt=""></div>
+									<div class="infoBox">
+										<div class="ttl">
+											<p>カテゴリ</p>
+										</div>
+										<div class="cate">
+											<p>テキスト</p>
+										</div>
+									</div>
+									<div class="title">
+										<p>○○○○円</p>
+									</div>
+								</a></div>
+							<div class="webgene-item"><a href="">
+									<div class="img"><img src="https://horie-works.co.jp/system_panel/uploads/images/item_sample.png" alt=""></div>
+									<div class="infoBox">
+										<div class="ttl">
+											<p>カテゴリ</p>
+										</div>
+										<div class="cate">
+											<p>テキスト</p>
+										</div>
+									</div>
+									<div class="title">
+										<p>○○○○円</p>
+									</div>
+								</a></div>
+							<div class="webgene-pagination">
+								<ul>
+									<li class="prev"><a href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2">前へ</a></li>
+									<li class="number"><a href="/bloglist?wg%5Bwgc-1586149173114_page%5D=1">1</a></li>
+									<li class="number"><a href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2">2</a></li>
+									<li class="number selected"><a href="/bloglist?wg%5Bwgc-1586149173114_page%5D=3">3</a></li>
+									<li class="next"><a href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2">次へ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="ttlBox">
+						<div class="ttl">
+							<h2>お問い合わせ</h2>
+						</div>
+						<div class="txt">
+							<p>伝統工芸品のご依頼、ご相談はお問い合わせフォームよりご連絡ください。<br>お急ぎの場合はお電話でも承っております。</p>
+						</div>
+					</div>
+					<div class="txtBox">
+						<div class="tel"><a href="tel:0523257558">
+								<div>
+									<p class="span">Tel：</p>
+									<p class="em">052-325-7558</p>
+								</div>
+							</a>
+							<p>【営業時間】10:00～17:00</p>
+						</div>
+						<div class="mail"><a href="contact">
+								<div>
+									<p>メールでのお問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="footBox">
+					<div class="logo"><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txt">
+						<p>〒461-0001<br>名古屋市東区泉2-15-4 グランセーブル高岳401</p>
+					</div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagetop linkBtn" data-target="main"><img src="https://horie-works.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="copy">
+					<p>&copy; 2024 株式会社コッパ ワークアンドアート.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

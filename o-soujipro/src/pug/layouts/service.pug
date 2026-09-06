@@ -1,0 +1,267 @@
+// ▽メイン▽
+main#service
+	.pageKvContainer
+		.pageKvPanel
+			.pageKvTitle
+				h1 サービスプラン
+	.topSection
+		.secWrap02
+			.topTxt.txt
+				p お掃除プロにてご対応可能なプランをご案内します。<br>不明点はお気軽にご相談ください。
+			.pagingList
+				ul
+					li
+						a(href="#plan01") お掃除・洗濯プラン
+					li
+						a(href="#plan02") お掃除定期利用
+					li
+						a(href="#plan03") お料理代行プラン
+					li
+						a(href="#plan04") お料理代行定期利用
+			.bnrList
+				ul
+					li
+						a(href="")
+							img(src=(root_path || '') + "image/service/service_top_bnr_01.png", alt="")
+					li
+						a(href="")
+							img(src=(root_path || '') + "image/service/service_top_bnr_02.png", alt="")
+	.planSection
+		.secWrap01
+			.pageSecTitleBox
+				.pageSecTitle
+					h2 掃除・洗濯プラン
+				.sub
+					p Cleaning laundry plan
+		.mv
+			img(src=(root_path || '') + "image/service/service_sec_mv_01.png", alt="")
+		.planContainer#plan01
+			.secWrap02
+				.planPanel
+					.multiBox
+						.infoBox
+							.ttl
+								h3 家事代行 お試しプラン
+								p ※初回のお客様限定
+							dl.range
+								dt 対応範囲
+								dd
+									p 水回り 3 〜 4個所
+									p
+										span ※洗濯は含まれません
+							dl
+								dt 時間
+								dd
+									p 2時間
+							dl
+								dt 料金
+								dd
+									p
+										em 5,000円
+										span （税込）
+							dl
+								dt 延長料
+								dd
+									p お試しプランでは延長はできかねます
+							dl.carfare
+								dt 交通費
+								dd
+									p 料金に含みます
+						.infoBox
+							.ttl
+								h3 お掃除ときどきプラン
+							dl.range
+								dt 対応範囲
+								dd
+									p 水回り4個所と、お好きな箇所 1 〜 2個所
+							dl
+								dt 時間
+								dd
+									p 1時間30分 〜 2時間程度
+							dl
+								dt 料金
+								dd
+									p
+										em 6,600円
+										span （税込）
+										span ※1時間 3,300円（税込）
+							dl
+								dt 延長料
+								dd
+									p 30分 1,650円（税込）
+							dl.carfare
+								dt 交通費
+								dd
+									p 駐車場をお持ちでない場合は、有料駐車場代がかかります。
+					aside
+						p 汚れの状態により2時間ではきれいにならない場合がございます。
+						p お掃除開始前にご相談いただくことも可能です。
+						p お客様の優先順位に合わせてお掃除対応いたします。
+		.planContainer#plan02
+			.secWrap02
+				h3.planCntTitle お掃除定期利用
+				.planPanel
+					.infoBox
+						dl
+							dt 対応範囲
+							dd
+								p 水回り4個所とお好きな箇所
+								p
+									span ※洗濯は含まれません
+						dl
+							dt 時間
+							dd
+								p 1時間30分 〜 2時間程度
+						dl
+							dt 料金
+							dd
+								.box
+									p 1週間に1回
+									p
+										em 5,500円（税込）
+										span ※1時間 2,750円
+								.box
+									p 2週間に1回
+									p
+										em 5,720円（税込）
+										span ※1時間 2,860円
+								.box
+									p 4週間に1回
+									p
+										em 5,940円（税込）
+										span ※1時間 2,970円
+		.planContainer
+			.secWrap02
+				.timeContainer.accord
+					.accordHead
+						h3 サービス時間の目安
+					.accordBody
+						.planBox
+							h4 お掃除プラン
+							.timeBox
+								.box
+									dl
+										dt お風呂
+										dd 60分～
+									dl
+										dt キッチン
+										dd 30分～60分
+									dl
+										dt トイレ1箇所
+										dd 15分～
+									dl
+										dt 洗面台、洗面所
+										dd 20分～
+								.box
+									dl
+										dt リビング
+										dd 20分～40分
+									dl
+										dt お部屋（1箇所）
+										dd 20分～
+									dl
+										dt アイロンがけ（ハンカチ10枚）
+										dd 30分～
+									dl
+										dt お庭の草むしり<br>（夏場は作業は出来ません）
+										dd 1時間～
+						.planBox
+							h4 整理収納プラン
+							.timeBox
+								.box
+									dl
+										dt 子供部屋
+										dd 2時間半～
+									dl
+										dt 書類整理
+										dd 2時間半～
+								.box
+									dl
+										dt リビング
+										dd 2時間～
+									dl
+										dt お部屋（1箇所）
+										dd 2時間～
+						aside
+							p お掃除プランのお勧めは2時間半～3時間です。
+							p 整理収納プランは3時間～4時間位がお勧めです。
+	.planSection
+		.secWrap01
+			.pageSecTitleBox
+				.pageSecTitle
+					h2 お料理代行
+				.sub
+					p Cooking agency
+		.mv
+			img(src=(root_path || '') + "image/service/service_sec_mv_02.png", alt="")
+		.planContainer#plan03
+			.secWrap02
+				.planPanel
+					.multiBox
+						.infoBox
+							.ttl
+								h3 作り置き お試しプラン
+								p ※初回のお客様限定
+							dl
+								dt 対応範囲
+								dd
+									p 主菜 1品、副菜 2 〜 3品
+							dl
+								dt 時間
+								dd
+									p 2時間
+							dl
+								dt 料金
+								dd
+									p
+										em 5,000円（税込）
+						.infoBox
+							.ttl
+								h3 お料理ときどきプラン
+							dl
+								dt 対応範囲
+								dd
+									p 例）主菜 2 〜 3品、副菜 3 〜 5品
+							dl
+								dt 時間
+								dd
+									p 2時間30分 〜 3時間程度
+							dl
+								dt 料金
+								dd
+									p
+										em 9,900円（税込）
+					.caution
+						.ttl
+							p 料理代行をご利用のお客様へ
+						.txt
+							p 料理代行のお客様はお買い物も承りますのでご自宅にあるものをお聞きいたします。<br>お買物代金はお支払いの時にご請求させていただきます。<br>アレルギーなどがある方は事前にご連絡ください。
+		.planContainer#plan04
+			.secWrap02
+				h3.planCntTitle お料理代行定期利用
+				.planPanel
+					.infoBox
+						dl
+							dt 対応範囲
+							dd
+								p 例）主菜 2 〜 3品、副菜 3 〜 5品
+						dl
+							dt 時間
+							dd
+								p 2時間30分 〜 3時間程度
+						dl
+							dt 料金
+							dd
+								.box
+									p 1週間に1回
+									p
+										em 8,250円（税込）
+								.box
+									p 2週間に1回
+									p
+										em 8,580円（税込）
+								.box
+									p 4週間に1回
+									p
+										em 8,910円（税込）
+// △メイン△

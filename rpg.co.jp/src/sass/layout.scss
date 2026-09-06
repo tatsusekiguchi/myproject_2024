@@ -1,0 +1,3512 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 800px;
+    padding: 0 20px 100px;
+    color: #ffffff;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+      center no-repeat;
+    background-size: cover;
+    .kvList {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 0 30px;
+      padding: 20px;
+      font-size: 40px;
+      border-radius: 4px;
+      border: 6px solid #ffffff;
+      background: #080403;
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 0 auto;
+        .li {
+          padding: 0 0 0 20px;
+          &:nth-child(1) {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_kv_arrow.png)
+              left center no-repeat;
+            background-size: 13px auto;
+          }
+        }
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+    .kvTitle {
+      font-size: 60px;
+      text-align: center;
+      h1 {
+        line-height: 1.2;
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 80px 0 0;
+    border-bottom: 60px solid #162857;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_bg_icon_01.png)
+        left 100px bottom no-repeat,
+      url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_bg_icon_02.png)
+        right 100px bottom no-repeat;
+    background-size: 180px auto, 500px auto;
+    .secBox {
+      padding: 0 0 60px;
+      .txtBox {
+        position: relative;
+        .sun {
+          position: absolute;
+          top: -30px;
+          right: 5%;
+          width: 80px;
+          z-index: -1;
+        }
+        .title {
+          position: relative;
+          margin: 0 0 20px;
+          padding: 0 0 0 60px;
+          font-size: 50px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_ttl_icon.png)
+            left top 15px no-repeat;
+          background-size: 50px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .pageSecTtlBox {
+          width: 22%;
+          margin: 0;
+        }
+        .txtBox {
+          width: 70%;
+        }
+      }
+    }
+    .move_item {
+      width: 90px;
+      height: 70px;
+      background-image: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_move_item.png);
+      background-size: 100% 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: block;
+      position: relative;
+    }
+    .move_stage {
+      position: relative;
+      width: 100%;
+      height: 65px;
+      top: 0px;
+      display: block;
+    }
+    .move_wrap {
+      display: block;
+      position: absolute;
+      top: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: 1;
+      margin-right: -25px;
+    }
+    .move_wrap[data-order="left"] {
+      animation-name: GoLeft;
+    }
+    .move_wrap[data-order="right"] {
+      animation-name: GoRight;
+    }
+    [data-order="right"] > .move_item {
+      transform: rotateY(180deg);
+    }
+  }
+  .sec02 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .secBoxList {
+      .secBox {
+        position: relative;
+        .photo {
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          img {
+            border-radius: 4px;
+          }
+        }
+        .txtBox {
+          padding: 20px 30px;
+          color: #ffffff;
+          .ttl {
+            margin: 0 0 15px;
+            h3 {
+              line-height: 1.2;
+            }
+            &.ttl01 {
+              padding: 0 0 0 35px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_01.png)
+                left center no-repeat;
+              background-size: 25px auto;
+            }
+            &.ttl02 {
+              padding: 0 0 0 35px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_02.png)
+                left top 5px no-repeat;
+              background-size: 25px auto;
+            }
+            &.ttl03 {
+              padding: 0 0 0 35px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_03.png)
+                left top 5px no-repeat;
+              background-size: 25px auto;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBoxList {
+        display: flex;
+        justify-content: space-between;
+        .secBox {
+          width: calc((100% / 3) - 20px);
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+          .txtBox {
+            position: relative;
+            top: -10px;
+            right: -15px;
+            min-height: 300px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_box_bg.png)
+              no-repeat;
+            background-size: 100% auto;
+            .ttl {
+              font-size: clamp(18px, 2vw, 30px);
+            }
+            .txt {
+              width: calc(100% - 100px);
+              max-width: 280px;
+              padding: 0 5px 0 0;
+              font-size: clamp(10px, 1vw, 18px);
+            }
+          }
+        }
+        .btnMoreSmall {
+          position: absolute;
+          right: -10px;
+          bottom: 26%;
+          width: 30%;
+          a {
+            font-size: clamp(10px, 1vw, 12px);
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 100px 0;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      color: #ffffff;
+      .pageSecTtl {
+        display: inline-block;
+        padding: 0 70px 0 0;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_top_icon.png)
+          right center no-repeat;
+        background-size: 50px auto;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      color: #ffffff;
+    }
+    .listBox {
+      margin: 0 0 40px;
+      .ul {
+        .li {
+          a {
+            display: block;
+            text-align: center;
+            border-radius: 20px;
+            background: #8d8d8d;
+            div {
+              padding: 30px 20px;
+              border-radius: 20px;
+              background: #ffffff;
+              transform: translate(0, -5px);
+              transition: 0.3s;
+            }
+            p {
+              display: inline-block;
+              padding: 6px 0 6px 70px;
+              font-size: 40px;
+              line-height: 1;
+            }
+            .ttl01 {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_01.png)
+                left top 5px no-repeat;
+              background-size: 60px auto;
+            }
+            .ttl02 {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_02.png)
+                left top 10px no-repeat;
+              background-size: 60px auto;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 10px);
+            a {
+              &:hover {
+                opacity: 1;
+                div {
+                  transform: translate(0, 0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .recruitBox {
+      a {
+        display: block;
+        border-radius: 20px;
+        background: #8d8d8d;
+        .secBox {
+          padding: 30px 20px;
+          border-radius: 20px;
+          background: #ffffff;
+          transform: translate(0, -5px);
+          transition: 0.3s;
+          .ttl {
+            text-align: center;
+            p {
+              display: inline-block;
+              padding: 50px 0 0;
+              font-size: 40px;
+              line-height: 1;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_03.png)
+                center top no-repeat;
+              background-size: 50px auto;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .secBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .ttl {
+              width: 40%;
+            }
+            .txt {
+              width: 60%;
+              line-height: 1.7;
+            }
+          }
+          &:hover {
+            opacity: 1;
+            .secBox {
+              transform: translate(0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 100px 0;
+    .secWrap {
+      position: relative;
+    }
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        a {
+          display: block;
+          min-height: 300px;
+          padding: 0 0 15px;
+        }
+        .img {
+          margin: 0 0 20px;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          img {
+            border-radius: 4px;
+          }
+        }
+        .infoBox {
+          display: flex;
+          align-items: center;
+          margin: 0 0 15px;
+          font-size: 14px;
+          .time {
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            min-width: 100px;
+            padding: 0 10px;
+            font-family: "DotGothic16";
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 4px;
+            border: 2px solid #ffffff;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            background: #1a2d68;
+          }
+        }
+        .title {
+          padding: 0 0 0 15px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/blog_list_arrow.png)
+            left center no-repeat;
+          background-size: 10px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -40px 0 0 -20px;
+        .webgene-item {
+          width: calc((100% / 3) - 20px);
+          margin: 40px 0 0 20px;
+          .img {
+            position: relative;
+            height: 300px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .btnMore {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 170px;
+      }
+    }
+  }
+  .sec05 {
+    padding: 100px 0 0;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      padding: 0 0 60px;
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+          .btnMoreList {
+            display: flex;
+            justify-content: space-between;
+            width: 360px;
+            margin: 40px 0 0;
+            .btnMore {
+              width: 170px;
+            }
+          }
+        }
+      }
+    }
+    .item01 {
+      position: absolute;
+      left: 80px;
+      bottom: 0;
+      width: 100px;
+    }
+    .item02 {
+      position: absolute;
+      right: 80px;
+      bottom: 0;
+      width: 120px;
+    }
+    .move_item {
+      width: 80px;
+      height: 60px;
+      background-image: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec05_move_item.png);
+      background-size: 100% 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: block;
+      position: relative;
+    }
+    .move_stage {
+      position: relative;
+      width: 50%;
+      height: 60px;
+      top: 0px;
+      display: block;
+    }
+    .move_wrap {
+      display: block;
+      position: absolute;
+      top: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-duration: 10s;
+      animation-iteration-count: infinite; /* アニメーションを無限に繰り返す */
+      animation-direction: normal; /* 片道のみで繰り返し */
+      margin-right: -5px;
+    }
+    .move_wrap[data-order="left"] {
+      animation-name: GoLeft;
+    }
+    .move_wrap[data-order="right"] {
+      animation-name: GoRight;
+    }
+    [data-order="right"] > .move_item {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	battery
+///////////////////////////////////////////////////////////*/
+.batteryMain {
+  .topTitlePanel {
+    padding: 80px 0 40px;
+    .pageSecTtlBox {
+      margin: 0;
+    }
+  }
+  .sec01 {
+    padding: 60px 0 0;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/battery_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      padding: 0 0 20px;
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .move_item {
+      width: 90px;
+      height: 65px;
+      background-image: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/battery_move_item.png);
+      background-size: 100% 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: block;
+      position: relative;
+    }
+    .move_stage {
+      position: relative;
+      width: 100%;
+      height: 65px;
+      top: 0px;
+      display: block;
+    }
+    .move_wrap {
+      display: block;
+      position: absolute;
+      top: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: 1;
+      margin-right: -25px;
+    }
+    .move_wrap[data-order="left"] {
+      animation-name: GoLeft;
+    }
+    .move_wrap[data-order="right"] {
+      animation-name: GoRight;
+    }
+    [data-order="right"] > .move_item {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	field
+///////////////////////////////////////////////////////////*/
+.fieldMain {
+  .topTitlePanel {
+    padding: 80px 0 40px;
+    .pageSecTtlBox {
+      margin: 0;
+    }
+  }
+  .section {
+    padding: 60px 0;
+    .secBox {
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .casePanel {
+      position: relative;
+      margin: 80px 0 0;
+      padding: 60px 20px;
+      border-radius: 10px;
+      .pTtl {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_ttl_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .caseBox {
+        position: relative;
+        margin: 0 0 30px;
+        padding: 0 0 0 60px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 0;
+          width: 50px;
+          height: 35px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_check.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+        .dl {
+          padding: 0 0 20px;
+          border-bottom: 3px solid #192d61;
+          .dt {
+            margin: 0 0 10px;
+            font-size: 26px;
+          }
+          .dd {
+            line-height: 2;
+          }
+        }
+        &:last-child {
+          margin: 0;
+          .dl {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/battery_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .casePanel {
+      background: #ffffff;
+    }
+  }
+  .sec02 {
+    .casePanel {
+      background: #ecf4fb;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	driver
+///////////////////////////////////////////////////////////*/
+.driverMain {
+  .topContainer {
+    position: relative;
+    padding: 80px 0 120px;
+    color: #ffffff;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_top_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      .txtBox {
+        .secTtl {
+          margin: 0 0 20px;
+          font-size: 44px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_top_ttl_icon.png)
+            left 200px top no-repeat;
+          background-size: 80px auto;
+          h2 {
+            line-height: 1.5;
+          }
+        }
+        .txt {
+          margin: 0 0 20px;
+        }
+        .btnMore {
+          max-width: 200px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img {
+          width: 42%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .scroll {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      p {
+        position: relative;
+        display: inline-block;
+        width: 160px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 15px;
+          height: 10px;
+          margin: auto 0;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_top_scroll_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+          -webkit-animation: blinkingTri 1s;
+          animation: blinkingTri 1s;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 15px;
+          height: 10px;
+          margin: auto 0;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_top_scroll_arrow.png)
+            no-repeat;
+          background-size: 100% auto;
+          -webkit-animation: blinkingTri 1s;
+          animation: blinkingTri 1s;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 80px 0 40px;
+    .secWrap {
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .topTxt {
+      margin: 0 0 80px;
+    }
+    .secBoxList {
+      margin: 0 0 100px;
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .sub {
+          padding: 0 0 0 40px;
+          color: #1a2e6b;
+        }
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .btnMore {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 20px;
+        .photo {
+          position: relative;
+          top: 20px;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    .moreBox {
+      max-width: 800px;
+      margin: 0 auto;
+      a {
+        display: block;
+        padding: 30px 40px;
+        font-size: 36px;
+        color: #ffffff;
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        background: #080403;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        p {
+          display: inline-block;
+          padding: 0 0 0 35px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+            left center no-repeat;
+          background-size: 15px auto;
+        }
+        @media (min-width: 1025px) {
+          div {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec01_more_img.png)
+              right center no-repeat;
+            background-size: 300px auto;
+          }
+          &:hover {
+            opacity: 1;
+            box-shadow: unset;
+            transform: translate(2px, 2px);
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0 0;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .listBox {
+      padding: 0 0 30px;
+      .ul {
+        .li {
+          padding: 30px;
+          color: #ffffff;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          background: #1a2d68;
+        }
+        .dl {
+          .dt {
+            padding: 0 0 10px 60px;
+            font-size: 30px;
+            border-bottom: 3px solid #6d758f;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec02_check.png)
+              left center no-repeat;
+            background-size: 50px auto;
+          }
+          .dd {
+            padding: 15px 0 0;
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -40px 0 0;
+          .li {
+            width: calc((100% / 2) - 20px);
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+    .move_item {
+      width: 300px;
+      height: 50px;
+      background-image: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec02_move_item.png);
+      background-size: 100% 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: block;
+      position: relative;
+    }
+    .move_stage {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      top: 0px;
+      display: block;
+    }
+    .move_wrap {
+      display: block;
+      position: absolute;
+      top: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: 1;
+      margin-right: -25px;
+    }
+    .move_wrap[data-order="left"] {
+      animation-name: GoLeft;
+    }
+    .move_wrap[data-order="right"] {
+      animation-name: GoRight;
+    }
+    [data-order="right"] > .move_item {
+      transform: rotateY(180deg);
+    }
+  }
+  .sec03 {
+    padding: 80px 0 120px;
+    .listBox {
+      .ul {
+        position: relative;
+        .li {
+          position: relative;
+          padding: 40px 30px;
+          border-radius: 20px;
+          background: #ececec;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130px;
+            height: 130px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_tri.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 100%;
+            height: calc(100% - 20px);
+            z-index: -1;
+            border-radius: 20px;
+            background: #8d8d8d;
+          }
+        }
+        .num {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          font-family: "Orbitron";
+          font-weight: 700;
+          font-size: 50px;
+          color: #ffffff;
+        }
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            padding: 150px 0 0;
+            font-size: 34px;
+            text-align: center;
+          }
+          .ttl01 {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_01.png)
+              center top no-repeat;
+            background-size: 110px auto;
+          }
+          .ttl02 {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_02.png)
+              center top no-repeat;
+            background-size: 140px auto;
+          }
+          .ttl03 {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_03.png)
+              center top no-repeat;
+            background-size: 160px auto;
+          }
+          .dd {
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            margin: auto 0;
+            background: #1a2d68;
+          }
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      color: #ffffff;
+    }
+    .secBox {
+      padding: 15px;
+      border-radius: 20px;
+      background: #ececec;
+    }
+    .infoBox {
+      padding: 8px;
+      border-radius: 20px;
+      // border: 2px solid #ffffff;
+      background: #ffffff;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      .dl {
+        display: table;
+        width: 100%;
+        > * {
+          display: table-cell;
+        }
+        .dt {
+          width: 220px;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          border-bottom: 2px solid #ffffff;
+          background: #080403;
+          p {
+            display: inline-block;
+            text-align: left;
+          }
+        }
+        .dd {
+          padding: 10px 40px;
+          border-bottom: 2px solid #080403;
+        }
+        &:last-child {
+          .dt,
+          .dd {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	work
+///////////////////////////////////////////////////////////*/
+.workMain {
+  .sec01 {
+    padding: 80px 0 120px;
+    .secWrap {
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .topTxt {
+      margin: 0 0 50px;
+    }
+    .listBox {
+      .ul {
+        .li {
+          .img {
+            max-width: 220px;
+            margin: 0 auto 30px;
+          }
+        }
+        .dl {
+          .dt {
+            padding: 0 0 5px 25px;
+            font-size: 26px;
+          }
+          .dd {
+            padding: 10px 0 0;
+          }
+        }
+        .list01 {
+          .dl {
+            color: #ca170e;
+            .dt {
+              border-bottom: 2px solid #ca170e;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec01_arrow_01.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+        .list02 {
+          .dl {
+            color: #2dc5f0;
+            .dt {
+              border-bottom: 2px solid #2dc5f0;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec01_arrow_02.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+        .list03 {
+          .dl {
+            color: #0050a3;
+            .dt {
+              border-bottom: 2px solid #0050a3;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec01_arrow_03.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+        .list04 {
+          .dl {
+            color: #bdc337;
+            .dt {
+              border-bottom: 2px solid #bdc337;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec01_arrow_04.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 20px);
+          }
+        }
+      }
+    }
+    .casePanel {
+      position: relative;
+      margin: 80px 0 0;
+      padding: 60px 20px;
+      border-radius: 10px;
+      background: #ecf4fb;
+      .pTtl {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_ttl_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .inner {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topBox {
+      margin: 0 0 40px;
+      color: #ffffff;
+    }
+    @media (min-width: 1025px) {
+      .topBox {
+        display: flex;
+        align-items: center;
+        .pageSecTtlBox {
+          margin: 0 60px 0 0;
+        }
+      }
+    }
+    .secPanel {
+      position: relative;
+      border-radius: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: calc(100% - 20px);
+        border-radius: 20px;
+        background: #8d8d8d;
+      }
+      .secBoxList {
+        position: relative;
+        padding: 40px;
+        z-index: 1;
+        border-radius: 10px;
+        background: #ededed;
+      }
+      .secBox {
+        + .secBox {
+          margin: 40px 0 0;
+        }
+        .ttl {
+          p {
+            padding: 0 0 0 50px;
+            font-size: 34px;
+          }
+        }
+        .ttl01 p {
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec02_icon_01.png)
+            left center no-repeat;
+          background-size: 40px auto;
+        }
+        .ttl02 p {
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec02_icon_02.png)
+            left center no-repeat;
+          background-size: 40px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: table;
+          width: 100%;
+          .ttl {
+            display: table-cell;
+            width: 40%;
+            padding: 10px 20px;
+            vertical-align: middle;
+            border-right: 2px solid #000000;
+          }
+          .txt {
+            display: table-cell;
+            padding: 5px 40px;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 80px 0 120px;
+    .topBox {
+      margin: 0 0 40px;
+    }
+    @media (min-width: 1025px) {
+      .topBox {
+        display: flex;
+        align-items: center;
+        .pageSecTtlBox {
+          margin: 0 60px 0 0;
+        }
+      }
+    }
+    .listBox {
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -60px 0 0 -60px;
+        .li {
+          width: calc((100% / 3) - 60px);
+          margin: 60px 0 0 60px;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0 0;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secWrap {
+      padding: 0 20px 200px;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_icon.png)
+        right 20px bottom no-repeat;
+      background-size: 350px auto;
+    }
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .listBox {
+      margin: 0 0 60px;
+      .ul {
+        .photo {
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          img {
+            border-radius: 4px;
+          }
+        }
+        .dl {
+          padding: 20px 40px;
+          color: #ffffff;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          background: #1a2d68;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+          .dl {
+            position: relative;
+            top: -20px;
+            right: -20px;
+            min-height: 245px;
+          }
+        }
+      }
+    }
+    .btnEntry {
+      max-width: 600px;
+      margin: 0 auto;
+      a {
+        display: block;
+        padding: 15px 10px;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        background: #080403;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        p {
+          display: inline-block;
+          padding: 0 100px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_arrow_01.png)
+              left center no-repeat,
+            url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_arrow_02.png)
+              right center no-repeat;
+          background-size: 80px auto, 80px auto;
+        }
+        @media (min-width: 1025px) {
+          &:hover {
+            opacity: 1;
+            box-shadow: unset;
+            transform: translate(2px, 2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	partner
+///////////////////////////////////////////////////////////*/
+.partnerMain {
+  .sec01 {
+    padding: 80px 0 120px;
+    .secWrap {
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .secBox {
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .btnMore {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .photo {
+          position: relative;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .casePanel {
+      position: relative;
+      margin: 80px 0 0;
+      padding: 60px 20px;
+      border-radius: 10px;
+      background: #ecf4fb;
+      .pTtl {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_ttl_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .ul {
+        margin: -20px 0 0;
+        .li {
+          margin: 20px 0 0;
+          padding: 0 0 0 55px;
+          font-size: 24px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+            left center no-repeat;
+          background-size: 45px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .listBox {
+      .ul {
+        .li {
+          padding: 20px 40px;
+          color: #ffffff;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          background: #1a2d68;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        }
+        .dl {
+          color: #ffffff;
+          .dt {
+            padding: 0 0 5px 55px;
+            font-size: 30px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+              left center no-repeat;
+            background-size: 45px auto;
+            border-bottom: 3px solid #6d758f;
+          }
+          .dd {
+            padding: 10px 0 0;
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 2) - 20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	entry
+///////////////////////////////////////////////////////////*/
+.secEntry {
+  padding: 80px 0 0;
+  .secWrap01 {
+    padding: 0 20px 200px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_icon.png)
+      right 20px bottom no-repeat;
+    background-size: 350px auto;
+  }
+  .lineContainer {
+    position: relative;
+    margin: 0 0 80px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: calc(100% - 20px);
+      border-radius: 20px;
+      background: #8d8d8d;
+    }
+    .linePanel {
+      position: relative;
+      padding: 20px 40px;
+      border-radius: 20px;
+      background: #efefef;
+      .itemBox {
+        max-width: 450px;
+        .ul {
+          display: flex;
+          .li {
+            &.img {
+              width: 100px;
+              margin: 0 20px 0 0;
+            }
+            &.qr {
+              width: 140px;
+              + .qr {
+                margin: 0 0 0 5px;
+              }
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+          font-size: 34px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .txt {
+          line-height: 1.7;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .linePanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .itemBox {
+          width: 40%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .formContainer {
+    .entryFormTtl {
+      margin: 0 0 30px;
+      padding: 0 0 10px 30px;
+      font-size: 34px;
+      border-bottom: 3px solid #192d61;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+        left center no-repeat;
+      background-size: 20px auto;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: #080403;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: #080403;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 10px;
+    font-family: "DotGothic16";
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background: #080403;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+    span {
+      position: relative;
+      display: block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 20px;
+        bottom: 0;
+        width: 8px;
+        height: 12px;
+        margin: auto 0;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          no-repeat;
+        background-size: 100% auto;
+        transition: 0.6s;
+      }
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm {
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 30px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #ffffff;
+        background: #080403;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        background: #080403;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #ffffff;
+      }
+    }
+
+    .postalBox {
+      // margin: 0 0 20px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 0 0;
+          }
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          width: 310px;
+          padding: 10px 0;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            p {
+              display: inline-block;
+              padding: 0 4px;
+              font-size: 14px;
+              color: #ffffff;
+              vertical-align: middle;
+              border-radius: 4px;
+              background: #b4641e;
+            }
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 250px;
+          padding: 20px;
+          font-size: 15px;
+          text-align: left;
+          color: #ffffff;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          background: #1a2d68;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+                color: #ffffff;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	column
+///////////////////////////////////////////////////////////*/
+.columnMain {
+  .blogSection {
+    padding: 80px 0 200px;
+    .secWrap {
+      max-width: 1300px;
+    }
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 200px;
+      }
+      .blogPanel {
+        width: calc(100% - 260px);
+      }
+    }
+  }
+  .catePanel {
+    .webgene-blog {
+      .webgene-header {
+        margin: 0 0 10px;
+        h2 {
+          font-family: "Orbitron";
+        }
+      }
+      .webgene-item {
+        border-bottom: 3px solid #192d61;
+        + .webgene-item {
+          margin: 10px 0 0;
+        }
+        a {
+          display: block;
+          padding: 5px 0 5px 25px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/column_cate_arrow.png)
+            left 5px center no-repeat;
+          background-size: 15px auto;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          border-bottom: 1px solid #a0a0a0;
+          a {
+            display: block;
+            min-height: 300px;
+            padding: 0 0 15px;
+          }
+          .img {
+            margin: 0 0 20px;
+            border-radius: 4px;
+            border: 4px solid #ffffff;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            img {
+              border-radius: 4px;
+            }
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 15px;
+            font-size: 14px;
+            .time {
+              margin: 0 10px 0 0;
+            }
+            .cate {
+              min-width: 100px;
+              padding: 0 10px;
+              font-family: "DotGothic16";
+              font-weight: bold;
+              color: #ffffff;
+              text-align: center;
+              border-radius: 4px;
+              border: 2px solid #ffffff;
+              box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+              background: #1a2d68;
+            }
+          }
+          .title {
+            padding: 0 0 0 15px;
+            font-size: 16px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/blog_list_arrow.png)
+              left center no-repeat;
+            background-size: 10px auto;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -20px;
+          .webgene-item {
+            width: calc((100% / 3) - 20px);
+            margin: 40px 0 0 20px;
+            .img {
+              position: relative;
+              height: 220px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+            vertical-align: middle;
+
+            a {
+              display: block;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              color: #ffffff;
+              border-radius: 4px;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+            a {
+              width: 45px;
+              height: 45px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/pager_prev.png)
+                center no-repeat;
+              background-size: 10px auto;
+            }
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+            a {
+              width: 45px;
+              height: 45px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/pager_next.png)
+                center no-repeat;
+              background-size: 10px auto;
+            }
+          }
+          .selected {
+            a {
+              // color: #ffffff;
+              background: #1a2d68;
+            }
+          }
+          @media (min-width: 1025px) {
+            li {
+              margin: 0 5px;
+            }
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          font-size: 14px;
+          vertical-align: middle;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            font-family: "DotGothic16";
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 4px;
+            border: 2px solid #ffffff;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            background: #1a2d68;
+          }
+        }
+        .ttlBox {
+          display: inline-block;
+          font-size: 26px;
+          vertical-align: middle;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          // max-width: 940px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          padding: 20px 0 0;
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+              border-radius: 4px;
+              border: 4px solid #ffffff;
+              box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+  }
+  .btnBack {
+    width: 170px;
+    margin: 100px auto 0;
+    a {
+      display: block;
+      padding: 10px;
+      font-size: 14px;
+      font-family: "DotGothic16";
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 4px;
+      border: 4px solid #ffffff;
+      background: #080403;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      p {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+          left 10px center no-repeat;
+        background-size: 8px auto;
+      }
+      @media (min-width: 1025px) {
+        &:hover {
+          opacity: 1;
+          box-shadow: unset;
+          transform: translate(2px, 2px);
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	delivery
+///////////////////////////////////////////////////////////*/
+.deliveryMain {
+  .topTitlePanel {
+    padding: 80px 0 40px;
+    .secWrap {
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .pageSecTtlBox {
+      margin: 0 0 20px;
+    }
+  }
+  .section {
+    padding: 60px 0;
+    .secBox {
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .btnMore {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .casePanel {
+      position: relative;
+      margin: 80px 0 0;
+      padding: 60px 20px;
+      border-radius: 10px;
+      background: #ecf4fb;
+      .pTtl {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_ttl_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .ul {
+        margin: -20px 0 0;
+        .li {
+          margin: 20px 0 0;
+          padding: 0 0 0 55px;
+          font-size: 20px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+            left center no-repeat;
+          background-size: 45px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .section:nth-child(odd) {
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/delivery_sec_bg_01.png)
+      no-repeat;
+    background-size: cover;
+    @media (min-width: 1025px) {
+      .secBox {
+        flex-direction: row-reverse;
+      }
+    }
+    .casePanel {
+      background: #ffffff;
+    }
+  }
+  .section:nth-child(even) {
+    .casePanel {
+      background: #ecf4fb;
+    }
+  }
+  .secFee {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/delivery_sec_fee_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      color: #ffffff;
+    }
+    .topTxt {
+      margin: 0 0 20px;
+      color: #ffffff;
+    }
+    .explain {
+      margin: 20px 0 0;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+  }
+  .priceContainer {
+    position: relative;
+    border-radius: 20px;
+    background: #efefef;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: calc(100% - 20px);
+      border-radius: 20px;
+      background: #8d8d8d;
+    }
+    .pricePanel {
+      position: relative;
+      padding: 20px;
+      border-radius: 20px;
+      .priceBox {
+        .dl {
+          display: table;
+          width: 100%;
+          background: #ffffff;
+          > * {
+            display: table-cell;
+          }
+          .dt {
+            width: 50%;
+            padding: 10px 5px;
+            color: #ffffff;
+            text-align: center;
+            border-bottom: 1px solid #4f4f4f;
+            background: #080403;
+          }
+          .dd {
+            padding: 10px 5px;
+            text-align: right;
+            border-bottom: 1px solid #4f4f4f;
+          }
+          &.head {
+            .dt {
+              border-bottom: 3px solid #ffffff;
+            }
+            .dd {
+              text-align: center;
+              border-bottom: 3px solid #000000;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .pricePanel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #ffffff;
+        .priceBox {
+          width: calc((100% / 5) - 10px);
+          border-radius: 4px;
+          border: 2px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          .dl {
+            &.head {
+              .dt {
+                border-radius: 4px 0 0 0;
+              }
+            }
+            &:last-child {
+              .dt,
+              .dd {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+.supportMain {
+  .sec01 {
+    padding: 80px 0 0;
+    .secWrap {
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .topSecBox {
+      padding: 0 0 100px;
+      .txt {
+        margin: 0 0 30px;
+      }
+      .videoBox {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 0 30%;
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .secContainer {
+      padding: 100px 0;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/support_sec01_bg.png)
+        no-repeat;
+      background-size: cover;
+      .secBox {
+        .photoBox {
+          .photo {
+            border-radius: 4px;
+            border: 4px solid #ffffff;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            img {
+              border-radius: 4px;
+            }
+          }
+        }
+        .txtBox {
+          .secTtl {
+            margin: 0 0 20px;
+            padding: 0 0 0 40px;
+            font-size: 40px;
+            color: #1a2e6b;
+            border-bottom: 3px solid #192d61;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          .infoPanel {
+            max-width: 700px;
+            margin: 20px 0 0;
+            .infoBox {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 100%;
+                height: calc(100% - 6px);
+                border-radius: 20px;
+                background: #767a7d;
+              }
+              .inner {
+                position: relative;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+                background: #efefef;
+              }
+              .dl {
+                display: table;
+                width: 100%;
+                background: #ffffff;
+                > * {
+                  display: table-cell;
+                }
+                .dt {
+                  width: 220px;
+                  padding: 10px;
+                  color: #ffffff;
+                  text-align: center;
+                  border-bottom: 2px solid #ffffff;
+                  background: #080403;
+                  p {
+                    display: inline-block;
+                    text-align: left;
+                  }
+                }
+                .dd {
+                  padding: 10px 40px;
+                  border-bottom: 2px solid #080403;
+                  a {
+                    display: inline-block;
+                  }
+                }
+                &:last-child {
+                  .dt,
+                  .dd {
+                    border: none;
+                  }
+                }
+              }
+            }
+            > p {
+              margin: 10px 0 0;
+              text-align: right;
+            }
+          }
+          .btnMoreBox {
+            margin: 20px 0 0;
+            text-align: right;
+            .btnMore {
+              display: inline-block;
+              width: 100%;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          .photoBox {
+            width: 45%;
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+      .slickSlide {
+        .slider {
+          .photo {
+            > div {
+              overflow: hidden;
+              position: relative;
+              padding: 0 0 60%;
+            }
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .thumb-item-nav {
+          margin: 5px 0 0;
+          .photo {
+            margin: 0 2px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0 120px;
+    .secBoxList {
+      padding: 20px 0 0;
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .photo {
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .txtBox {
+        .sub {
+          padding: 0 0 0 40px;
+          color: #1a2e6b;
+        }
+        .secTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .btnMore {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 20px;
+        .photo {
+          position: relative;
+          top: 20px;
+          width: 48%;
+          height: 400px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    .casePanel {
+      position: relative;
+      margin: 80px 0 0;
+      padding: 60px 20px;
+      border-radius: 10px;
+      background: #ecf4fb;
+      .pTtl {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_ttl_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .ul {
+        margin: -20px 0 0;
+        .li {
+          margin: 20px 0 0;
+          padding: 0 0 0 55px;
+          font-size: 22px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+            left center no-repeat;
+          background-size: 45px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/support_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .listBox {
+      .ul {
+        .photo {
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          img {
+            border-radius: 4px;
+          }
+        }
+        .dl {
+          padding: 20px;
+          color: #ffffff;
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          background: #1a2d68;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+          .dl {
+            position: relative;
+            top: -20px;
+            right: -20px;
+            min-height: 245px;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0 120px;
+    .listBox {
+      .ul {
+        position: relative;
+        .li {
+          position: relative;
+          padding: 40px 30px;
+          border-radius: 20px;
+          background: #ececec;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130px;
+            height: 130px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_tri.png)
+              no-repeat;
+            background-size: cover;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 100%;
+            height: calc(100% - 20px);
+            z-index: -1;
+            border-radius: 20px;
+            background: #8d8d8d;
+          }
+        }
+        .num {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          font-family: "Orbitron";
+          font-weight: 700;
+          font-size: 50px;
+          color: #ffffff;
+        }
+        .dl {
+          padding: 40px 0;
+          .dt {
+            margin: 0 0 10px;
+            font-size: 34px;
+            text-align: center;
+          }
+          .dd {
+            line-height: 1.7;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            margin: auto 0;
+            background: #1a2d68;
+          }
+          .li {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 80px 0 120px;
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/contact_form_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 40px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pagingList {
+    padding: 50px 20px 0;
+    .ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 360px;
+      margin: 0 auto;
+      .li {
+        width: 170px;
+      }
+    }
+  }
+  .section {
+    padding: 80px 0 120px;
+  }
+  .sec01 {
+    .secWrap {
+      padding: 40px 20px 0;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+        right 100px top no-repeat;
+      background-size: 80px auto;
+    }
+    .pageSecTtlBox {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+    .secBox {
+      max-width: 1200px;
+      margin: 0 auto;
+      + .secBox {
+        margin: 60px auto 0;
+      }
+      .photoBox {
+        .photo {
+          border-radius: 4px;
+          border: 4px solid #ffffff;
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          img {
+            border-radius: 4px;
+          }
+        }
+        .nameBox {
+          margin: 20px 0 0;
+          p {
+            display: inline;
+          }
+          .em {
+            font-size: 30px;
+            line-height: 1;
+          }
+        }
+      }
+      .txtBox {
+        max-width: 920px;
+        .secTtl {
+          max-width: 800px;
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          font-size: 40px;
+          color: #1a2e6b;
+          border-bottom: 3px solid #192d61;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+      }
+      .nameBox {
+        margin: 20px 0 0;
+        text-align: right;
+        .nameBoxInner {
+          display: inline-block;
+          text-align: left;
+        }
+        p {
+          display: inline;
+        }
+        .em {
+          font-size: 30px;
+          line-height: 1;
+        }
+      }
+    }
+    .videoBox {
+      margin: 0 0 20px;
+    }
+  }
+  .sec02 {
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .pageSecTtlBox {
+      color: #ffffff;
+    }
+    .secBox {
+      padding: 15px;
+      border-radius: 20px;
+      background: #ececec;
+    }
+    .infoBox {
+      padding: 8px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      .dl {
+        display: table;
+        width: 100%;
+        > * {
+          display: table-cell;
+        }
+        .dt {
+          width: 220px;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          border-bottom: 2px solid #ffffff;
+          background: #080403;
+          p {
+            display: inline-block;
+            text-align: left;
+          }
+        }
+        .dd {
+          padding: 10px 40px;
+          border-bottom: 2px solid #080403;
+          a {
+            display: inline-block;
+          }
+        }
+        &:last-child {
+          .dt,
+          .dd {
+            border: none;
+          }
+        }
+      }
+    }
+    .mapBox {
+      margin: 100px 0 0;
+    }
+  }
+  .sec03 {
+    .secContainer {
+      + .secContainer {
+        margin: 60px 0 0;
+      }
+    }
+    .btnItemList {
+      .btnItem {
+        max-width: 400px;
+        a {
+          position: relative;
+          display: block;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 20px;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: calc(100% - 20px);
+            border-radius: 20px;
+            background: #8d8d8d;
+          }
+          div {
+            position: relative;
+            padding: 25px 20px;
+            z-index: 1;
+            border-radius: 20px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/footer_contact_btn_bg.png)
+              center no-repeat;
+            background-size: 100% auto;
+            transform: translate(0, -4px);
+            transition: 0.3s;
+          }
+          p {
+            display: inline-block;
+            font-size: 30px;
+            line-height: 1;
+          }
+          .tel {
+            padding: 0 0 0 40px;
+            font-size: 34px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+        }
+      }
+    }
+    .linePanel {
+      position: relative;
+      padding: 40px 20px;
+      border-radius: 20px;
+      background: #efefef;
+      .itemBox {
+        .ul {
+          display: flex;
+          .li {
+            &.img {
+              width: 100px;
+              margin: 0 20px 0 0;
+            }
+            &.qr {
+              width: 140px;
+              + .qr {
+                margin: 0 0 0 5px;
+              }
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 10px;
+          padding: 0 0 0 30px;
+          font-size: 34px;
+          background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+            left center no-repeat;
+          background-size: 20px auto;
+        }
+        .txt {
+          line-height: 1.7;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .linePanel {
+        .inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        .itemBox {
+          width: 60%;
+          .qr {
+            margin: 0 0 0 auto;
+          }
+        }
+        .txtBox {
+          width: 35%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/contact_form_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 40px;
+    }
+  }
+}

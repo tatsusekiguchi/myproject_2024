@@ -1,0 +1,2878 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 800px;
+}
+.topMain .topKvPanel .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvPanel .kvBox .kv01 {
+  background: url(https://file-g.com/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv02 {
+  background: url(https://file-g.com/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvBox .kv03 {
+  background: url(https://file-g.com/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTtl {
+  position: absolute;
+  left: 5%;
+  bottom: 100px;
+  color: #ffffff;
+  z-index: 1;
+  letter-spacing: 0.15em;
+}
+.topMain .topKvPanel .kvTtl h1 {
+  margin: 0 0 20px;
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.topMain .topKvPanel .kvTtl h1 + p {
+  letter-spacing: 0.2em;
+}
+.topMain .sec01 {
+  max-width: 1580px;
+  padding: 100px 20px 100px 0;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox {
+  margin: 0 0 30px;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .ttl01 {
+  margin: 0 0 10px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #b4bbc3;
+}
+.topMain .sec01 .secBox .txtBox .ttlBox .ttl02 {
+  font-size: 30px;
+}
+.topMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secBox .photo {
+    width: 45%;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.topMain .sec02 {
+  padding: 0 0 100px;
+}
+.topMain .sec02 .pageSecTtl {
+  margin: 0 0 20px;
+}
+.topMain .sec02 .pageSecTtl + p {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.topMain .sec02 .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -30px 0 0;
+}
+.topMain .sec02 .listBox .ul .li {
+  width: calc(50% - 10px);
+  margin: 30px 0 0;
+}
+.topMain .sec02 .listBox .ul .li a {
+  display: block;
+}
+.topMain .sec02 .listBox .ul .li .photo {
+  position: relative;
+  height: 0;
+  padding: 0 0 92%;
+}
+.topMain .sec02 .listBox .ul .li .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.topMain .sec02 .listBox .ul .li .dl {
+  padding: 10px;
+}
+.topMain .sec02 .listBox .ul .li .dl .dt {
+  margin: 0 0 5px;
+  font-family: "Montserrat";
+  font-size: 34px;
+  line-height: 1.2;
+}
+.topMain .sec02 .listBox .ul .li .dl .dd {
+  max-width: 500px;
+  font-size: 13px;
+}
+.topMain .sec03 .secPanel .leftBox .pageSecTtl,
+.topMain .sec04 .secPanel .leftBox .pageSecTtl {
+  width: 150px;
+}
+.topMain .sec03 .secPanel .leftBox .btnMore,
+.topMain .sec04 .secPanel .leftBox .btnMore {
+  margin: 100px 0 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secPanel,
+.topMain .sec04 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .secPanel .leftBox,
+.topMain .sec04 .secPanel .leftBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+  }
+  .topMain .sec03 .secPanel .rightBox,
+.topMain .sec04 .secPanel .rightBox {
+    width: calc(100% - 250px);
+  }
+}
+.topMain .sec03 {
+  padding: 0 0 100px;
+}
+.topMain .sec03 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec03 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec03 .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.topMain .sec03 .webgene-blog .webgene-item .title {
+  min-height: 60px;
+  margin: 0 0 20px;
+  line-height: 2;
+}
+.topMain .sec03 .webgene-blog .webgene-item .more p {
+  display: block;
+  color: #a2a8b5;
+  padding: 10px 0;
+  border-bottom: 1px solid #b4bbc3;
+  background: url(https://file-g.com/system_panel/uploads/images/btn_more_arrow.png) right 5px center no-repeat;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -50px;
+  }
+  .topMain .sec03 .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 50px);
+    margin: 0 0 0 50px;
+  }
+  .topMain .sec03 .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 380px;
+  }
+  .topMain .sec03 .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec04 {
+  padding: 0 0 150px;
+}
+.topMain .sec04 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec04 .webgene-blog .webgene-item + .webgene-item {
+  margin: 30px 0 0;
+}
+.topMain .sec04 .webgene-blog .webgene-item .dl {
+  display: flex;
+}
+.topMain .sec04 .webgene-blog .webgene-item .dl .dt {
+  width: 150px;
+  color: #a2a8b5;
+}
+.topMain .sec04 .webgene-blog .webgene-item .dl .dd a {
+  display: inline-block;
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain .topContainer {
+  margin: 0 0 80px;
+}
+.aboutMain .topContainer .secBox {
+  margin: 0 0 50px;
+}
+.aboutMain .topContainer .secBox .leftBox .secTtl p {
+  margin: 0 0 10px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #b4bbc3;
+}
+.aboutMain .topContainer .secBox .leftBox .secTtl h2 {
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .aboutMain .topContainer .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutMain .topContainer .secBox .leftBox {
+    width: 35%;
+  }
+  .aboutMain .topContainer .secBox .rightBox {
+    width: 62%;
+  }
+}
+.aboutMain .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.aboutMain .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 30px;
+}
+.aboutMain .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.aboutMain .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #ffffff;
+}
+.aboutMain .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .aboutMain .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .aboutMain .secPanel .secBox .photo {
+    width: 45%;
+  }
+  .aboutMain .secPanel .secBox .txtBox {
+    width: 50%;
+    padding: 10px 0 0;
+  }
+}
+.aboutMain .listBox {
+  margin: 40px 0 0;
+}
+.aboutMain .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutMain .listBox .ul .li {
+  width: calc(33.3333333333% - 10px);
+}
+.aboutMain .listPanel01 {
+  border-top: 1px solid #f0f1f3;
+}
+.aboutMain .listPanel01 .ul .li {
+  padding: 15px;
+}
+.aboutMain .listPanel01 .ul .li .num {
+  margin: 0 0 10px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: #b4bbc3;
+  text-align: center;
+}
+.aboutMain .listPanel01 .ul .li .dl .dt {
+  margin: 0 0 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.aboutMain .listPanel01 .ul .li .dl .dd {
+  line-height: 2;
+}
+.aboutMain .listPanel01 .ul .li .ttl {
+  padding: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .aboutMain .listPanel01 .ul {
+    display: flex;
+  }
+  .aboutMain .listPanel01 .ul .li {
+    width: 33.3333333333%;
+    border-left: 1px solid #f0f1f3;
+    border-bottom: 1px solid #f0f1f3;
+  }
+  .aboutMain .listPanel01 .ul .li:last-child {
+    border-right: 1px solid #f0f1f3;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	builtMain
+///////////////////////////////////////////////////////////*/
+.builtMain .topSection {
+  margin: 0 0 100px;
+}
+.builtMain .topSection .topTtl {
+  margin: 0 0 20px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #b4bbc3;
+}
+.builtMain .topSection .ttlTxt {
+  margin: 0 0 30px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.builtMain .topSection .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.builtMain .topSection .secBox .txtBox .btnMore {
+  width: 250px;
+  margin: 40px 0 0;
+}
+.builtMain .topSection .secBox + .txt {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .builtMain .topSection .secBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .builtMain .topSection .secBox .photo {
+    width: 45%;
+  }
+  .builtMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+.builtMain .section + .section {
+  margin: 100px 0 0;
+}
+.builtMain .pTtl {
+  position: relative;
+  margin: 0 0 30px;
+}
+.builtMain .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.builtMain .pTtl .ttl {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #ffffff;
+}
+.builtMain .pTtl .ttl > * {
+  display: inline-block;
+}
+.builtMain .pTtl .ttl .fontEn {
+  font-size: 20px;
+}
+.builtMain .pTtl .ttl p {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+.builtMain .caseSection .pTtl {
+  margin: 0 0 60px;
+}
+.builtMain .caseSection .btnList {
+  max-width: 520px;
+  margin: 40px auto 0;
+}
+.builtMain .caseSection .btnList .btnMore {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .builtMain .caseSection .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .builtMain .caseSection .btnList .ul .li {
+    width: 48%;
+  }
+}
+.builtMain .caseSection .btnMoreBox {
+  width: 250px;
+  margin: 40px auto 0;
+}
+.builtMain .caseSection .btnMoreBox .btnMore {
+  width: 100%;
+}
+.builtMain .worksSection .secPanel01 .ttl01 {
+  margin: 0 0 20px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: #b4bbc3;
+  letter-spacing: 0.2rem;
+}
+.builtMain .worksSection .secPanel01 .secBox .leftBox .ttl02 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.builtMain .worksSection .secPanel01 .secBox .rightBox .cntBox {
+  background: #e5e7ea;
+}
+.builtMain .worksSection .secPanel01 .secBox .rightBox .cntBox .cnt {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  padding: 30px;
+  line-height: 2;
+  border: 1px solid #e5e7ea;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .builtMain .worksSection .secPanel01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .builtMain .worksSection .secPanel01 .secBox .leftBox {
+    width: calc(100% - 260px);
+  }
+  .builtMain .worksSection .secPanel01 .secBox .rightBox {
+    width: 220px;
+  }
+}
+.builtMain .worksSection .secPanel01 .consult {
+  margin: 30px 0 0;
+  padding: 30px;
+  background: #e9ecef;
+}
+.builtMain .worksSection .secPanel01 .consult .consultTtl01 {
+  font-size: 20px;
+  color: #b4bbc3;
+}
+.builtMain .worksSection .secPanel01 .consult .consultTtl02 {
+  margin: 10px 0 0;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.builtMain .worksSection .secPanel01 .consult .txt {
+  margin: 10px 0 0;
+}
+.builtMain .worksSection .secPanel02 {
+  margin: 80px 0 0;
+}
+.builtMain .worksSection .secPanel02 .suggestionBox .suggestionTtl {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b4bbc3;
+}
+.builtMain .worksSection .secPanel02 .suggestionBox .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.builtMain .worksSection .secPanel02 .suggestionBox .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.builtMain .worksSection .secPanel02 .suggestionBox .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.builtMain .worksSection .secPanel02 .suggestionBox .secBox .txtBox .txt {
+  line-height: 2.2;
+}
+@media (min-width: 1025px) {
+  .builtMain .worksSection .secPanel02 .suggestionBox .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .builtMain .worksSection .secPanel02 .suggestionBox .secBox .photo {
+    width: 280px;
+  }
+  .builtMain .worksSection .secPanel02 .suggestionBox .secBox .txtBox {
+    width: calc(100% - 320px);
+  }
+  .builtMain .worksSection .secPanel02 .suggestionBox .secBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+.builtMain .worksSection .secPanel02 .voiceBox {
+  margin: 80px 0 0;
+}
+.builtMain .worksSection .secPanel02 .voiceBox .voiceTtl {
+  margin: 0 0 15px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.builtMain .worksSection .secPanel02 .voiceBox .listBox {
+  margin: 30px 0;
+}
+.builtMain .worksSection .secPanel02 .voiceBox .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px 0 0 -20px;
+}
+.builtMain .worksSection .secPanel02 .voiceBox .listBox .ul .li {
+  position: relative;
+  width: calc(25% - 20px);
+  height: 170px;
+  margin: 20px 0 0 20px;
+}
+.builtMain .worksSection .secPanel02 .voiceBox .listBox .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.builtMain .worksSection .secPanel03 {
+  margin: 80px 0 0;
+}
+.builtMain .worksSection .secPanel03 .otherTtl {
+  margin: 0 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #b4bbc3;
+}
+.builtMain .worksSection .secPanel03 .btnMore {
+  width: 250px;
+  margin: 50px auto 0;
+}
+.builtMain .worksSection .webgene-blog .webgene-header {
+  display: none;
+}
+.builtMain .worksSection .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.builtMain .worksSection .webgene-blog .webgene-item .title {
+  min-height: 35px;
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.builtMain .worksSection .webgene-blog .webgene-item .more a {
+  display: block;
+  color: #a2a8b5;
+  padding: 10px 0;
+  border-bottom: 1px solid #b4bbc3;
+  background: url(https://file-g.com/system_panel/uploads/images/btn_more_arrow.png) right 5px center no-repeat;
+}
+@media (min-width: 1025px) {
+  .builtMain .worksSection .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -30px;
+  }
+  .builtMain .worksSection .webgene-blog .webgene-item .photo {
+    position: relative;
+  }
+  .builtMain .worksSection .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .builtMain .worksSection .webgene-blog {
+    margin: -50px 0 0 -20px;
+  }
+  .builtMain .worksSection .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 50px 0 0 20px;
+  }
+  .builtMain .worksSection .webgene-blog .webgene-item .photo {
+    height: 270px;
+  }
+}
+.builtMain .flowSection .flowContainer {
+  padding: 30px 0 0;
+}
+.builtMain .flowSection .flowPanel {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  border: 8px solid #cbd4da;
+}
+.builtMain .flowSection .flowTitle {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+}
+.builtMain .flowSection .flowTitle .ttl01 {
+  font-family: "Montserrat";
+  font-size: 28px;
+  letter-spacing: 0.2rem;
+}
+.builtMain .flowSection .flowTitle .ttl02 {
+  font-size: 13px;
+}
+.builtMain .flowSection .flowList {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.builtMain .flowSection .flowList .ol .li + .li {
+  margin: 40px 0 0;
+}
+.builtMain .flowSection .flowList .ol .dl .dt {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #92989f;
+}
+.builtMain .flowSection .flowList .ol .dl .dt .num {
+  width: 55px;
+  font-family: "Montserrat";
+  font-size: 32px;
+  color: #cbd4da;
+}
+.builtMain .flowSection .flowList .ol .dl .dt .ttl {
+  font-size: 24px;
+  font-weight: bold;
+}
+.builtMain .flowSection .flowList .ol .dl .dd {
+  line-height: 2;
+}
+.builtMain .photoSection .topTxt {
+  margin: 0 0 30px;
+}
+.builtMain .photoSection .photoList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+.builtMain .photoSection .photoList .ul .li {
+  width: calc(25% - 20px);
+  margin: 30px 0 0 20px;
+}
+.builtMain .photoSection .photoList .ul .li a {
+  display: block;
+}
+.builtMain .photoSection .photoList .ul .li .photo {
+  position: relative;
+  height: 270px;
+}
+.builtMain .photoSection .photoList .ul .li .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.builtMain .photoSection .photoList .ul .li .ttl {
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #b4bbc3;
+}
+.builtMain .photoSection .photoListCol3 .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -20px;
+}
+.builtMain .photoSection .photoListCol3 .ul .li {
+  width: calc(33.3333333333% - 20px);
+  margin: 30px 0 0 20px;
+}
+.builtMain .photoSection .photoListCol3 .ul .li a {
+  display: block;
+}
+.builtMain .photoSection .photoListCol3 .ul .li .photo {
+  position: relative;
+  height: 300px;
+}
+.builtMain .photoSection .photoListCol3 .ul .li .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.builtMain .brandSection .brandList > .ul > .li + .li,
+.builtMain .brandSection .brandList > .ol > .li + .li {
+  margin: 20px 0 0;
+}
+.builtMain .brandSection .brandList > .ul .logoBox,
+.builtMain .brandSection .brandList > .ol .logoBox {
+  margin: 0 0 10px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox a,
+.builtMain .brandSection .brandList > .ol .logoBox a {
+  display: block;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .logo,
+.builtMain .brandSection .brandList > .ol .logoBox .logo {
+  width: 150px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .logo img,
+.builtMain .brandSection .brandList > .ol .logoBox .logo img {
+  width: 130px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo02,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo02 {
+  width: 120px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo02 img,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo02 img {
+  width: 100px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo03,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo03 {
+  width: 140px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo03 img,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo03 img {
+  width: 120px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo06,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo06 {
+  width: 160px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .furnitureLogo06 img,
+.builtMain .brandSection .brandList > .ol .logoBox .furnitureLogo06 img {
+  width: 150px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .fabricLogo2-3,
+.builtMain .brandSection .brandList > .ol .logoBox .fabricLogo2-3 {
+  width: 120px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .fabricLogo2-3 img,
+.builtMain .brandSection .brandList > .ol .logoBox .fabricLogo2-3 img {
+  width: 80px;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .ttl .em,
+.builtMain .brandSection .brandList > .ol .logoBox .ttl .em {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.2;
+}
+.builtMain .brandSection .brandList > .ul .logoBox .ttl .span,
+.builtMain .brandSection .brandList > .ol .logoBox .ttl .span {
+  margin: 5px 0 0;
+  font-size: 13px;
+}
+.builtMain .brandSection .brandList > .ul > .li {
+  padding: 20px;
+  border: 3px solid #e9ecef;
+}
+.builtMain .brandSection .brandList > .ol .inner {
+  padding: 20px;
+  border: 3px solid #e9ecef;
+}
+@media (min-width: 1025px) {
+  .builtMain .brandSection .brandList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .builtMain .brandSection .brandList > .ul {
+    width: calc(50% - 10px);
+  }
+  .builtMain .brandSection .brandList > .ul .logoBox a {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+  .builtMain .brandSection .brandList > .ul .fixTxt {
+    min-height: 315px;
+  }
+  .builtMain .brandSection .brandList > .ul .fixTxtFabric01 {
+    min-height: 350px;
+  }
+  .builtMain .brandSection .brandList > .ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px 0 0;
+  }
+  .builtMain .brandSection .brandList > .ol > .li {
+    width: calc(50% - 10px);
+    margin: 20px 0 0;
+  }
+  .builtMain .brandSection .brandList > .ol > .li .logoBox a {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+  .builtMain .brandSection .brandList > .ol > .li .fixTxt {
+    min-height: 315px;
+  }
+  .builtMain .brandSection .brandList > .ol > .li .fixTxtFabric01 {
+    min-height: 350px;
+  }
+}
+.builtMain .brandSection .photoLightBoxList {
+  margin: 30px 0 0;
+}
+.builtMain .brandSection .photoLightBoxList .photoList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.builtMain .brandSection .photoLightBoxList .photoList .ul .li {
+  width: calc(33.3333333333% - 10px);
+  margin: 10px 0 0 10px;
+}
+.builtMain .brandSection .photoLightBoxList .photoList .ul .li a {
+  display: block;
+}
+.builtMain .brandSection .photoLightBoxList .photoList .ul .li .photo {
+  position: relative;
+  height: 140px;
+}
+.builtMain .brandSection .photoLightBoxList .photoList .ul .li .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.builtMain .featuresSection .pageSecTtl {
+  margin: 0 0 60px;
+}
+.builtMain .featuresSection .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.builtMain .featuresSection .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 20px;
+}
+.builtMain .featuresSection .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.builtMain .featuresSection .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  background: #f9fafb;
+}
+@media (min-width: 1025px) {
+  .builtMain .featuresSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .builtMain .featuresSection .secBox .photo {
+    width: 45%;
+  }
+  .builtMain .featuresSection .secBox .txtBox {
+    width: 50%;
+    padding: 10px 0 0;
+  }
+  .builtMain .featuresSection .secPanel:nth-child(odd) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	fabric
+///////////////////////////////////////////////////////////*/
+.fabricMain .pageSecTtl {
+  margin: 0 0 40px;
+}
+.fabricMain .pageSecTtl .secTtl {
+  font-size: 15px;
+}
+.fabricMain .pageSecTtl p {
+  font-size: 30px;
+}
+
+/*////////////////////////////////////////////////////////////
+	showroom
+///////////////////////////////////////////////////////////*/
+.showroomMain .pagingList {
+  margin: 0 0 60px;
+}
+.showroomMain .pagingList .ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.showroomMain .pagingList .ul .li {
+  width: 46%;
+}
+.showroomMain .pagingList .ul .li a {
+  position: relative;
+  display: block;
+}
+.showroomMain .pagingList .ul .li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .showroomMain .pagingList .ul .li a:hover {
+    opacity: 1;
+  }
+  .showroomMain .pagingList .ul .li a:hover::before {
+    opacity: 1;
+  }
+}
+.showroomMain .shopSection + .shopSection {
+  margin: 100px 0 0;
+}
+.showroomMain .topSection .bnr {
+  max-width: 340px;
+  margin: 30px 0 0;
+}
+.showroomMain .topSection .bnr a {
+  display: block;
+}
+.showroomMain .accessSection {
+  margin: 60px 0 0;
+}
+.showroomMain .accessSection .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  line-height: 2;
+  border-bottom: 1px solid #b4bbc3;
+}
+.showroomMain .accessSection .infoBox .dl .dt {
+  width: 220px;
+  color: #848c9c;
+}
+.showroomMain .accessSection .infoBox .dl .dd {
+  width: calc(100% - 220px);
+}
+.showroomMain .accessSection .infoBox .dl .dd .telFax > p {
+  display: inline-block;
+}
+.showroomMain .accessSection .infoBox .dl .dd .tel,
+.showroomMain .accessSection .infoBox .dl .dd .fax {
+  display: inline-block;
+}
+.showroomMain .accessSection .infoBox .dl .dd a {
+  display: inline-block;
+}
+.showroomMain .accessSection .btnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 40px;
+}
+.showroomMain .accessSection .btnBox .ttl {
+  width: 40%;
+}
+.showroomMain .accessSection .btnBox .btnList {
+  width: 55%;
+}
+.showroomMain .accessSection .btnList {
+  max-width: 520px;
+}
+.showroomMain .accessSection .btnList .btnMore {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .showroomMain .accessSection .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showroomMain .accessSection .btnList .ul .li {
+    width: 48%;
+  }
+}
+.showroomMain .accessSection .mapBox {
+  margin: 0 0 5px;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain .blogSection {
+  padding: 60px 0 100px;
+}
+.blogMain .postContainer {
+  max-width: 900px;
+}
+.blogMain .logoBox {
+  padding: 30px 0 80px;
+}
+.blogMain .logoBox .logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.blogMain .catePanel {
+  margin: 0 0 60px;
+}
+.blogMain .catePanel .webgene-header {
+  display: none;
+}
+.blogMain .catePanel .allItem,
+.blogMain .catePanel .webgene-item {
+  display: inline-block;
+  margin: 15px 10px 0 0;
+}
+.blogMain .catePanel .allItem a,
+.blogMain .catePanel .webgene-item a {
+  display: block;
+  min-width: 120px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #171a1c;
+}
+.blogMain .catePanel .allItem .active,
+.blogMain .catePanel .webgene-item .active {
+  color: #ffffff;
+  background: #171a1c;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+  margin: 0 0 20px;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .title {
+  min-height: 35px;
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.blogMain .blogPanel--list .webgene-blog .webgene-item .more p {
+  display: block;
+  color: #a2a8b5;
+  padding: 10px 0;
+  border-bottom: 1px solid #b4bbc3;
+  background: url(https://file-g.com/system_panel/uploads/images/btn_more_arrow.png) right 5px center no-repeat;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -30px;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo {
+    position: relative;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  font-family: "Montserrat";
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #171a1c;
+  background: #ffffff;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.blogMain .blogPanel--list .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #171a1c;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .blogMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.blogMain .blogPanel--detail {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.blogMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.blogMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blogMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #b4bbc3;
+}
+.blogMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.blogMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 auto 10px;
+}
+@media (min-width: 1025px) {
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item img {
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 40px;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea {
+  margin: 40px 0 0;
+}
+.blogMain .blogPanel--detail .webgene-blog .postBox .pdfArea a {
+  color: #2151a3;
+}
+.blogMain .blogPanel--detail .btnBackBox {
+  margin: 80px 0 0;
+  text-align: center;
+}
+.blogMain .blogPanel--detail .btnContact {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.blogMain .blogPanel--detail .btnContact a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.blogMain .blogPanel--detail .btnContact a p {
+  padding: 0 40px;
+  background: url(https://file-g.com/system_panel/uploads/images/blog_contact_arrrow.png) right center no-repeat;
+  background-size: 35px auto;
+}
+.blogMain .blogPanel--detail .btnBack {
+  width: 250px;
+  margin: 60px auto 0;
+}
+.blogMain .blogPanel--detail .btnBack a {
+  display: block;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #171a1c;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink {
+  display: inline-block;
+}
+.blogMain .blogPanel--detail .webgene-item-aroundPageLink a {
+  display: block;
+  width: 40px;
+  color: #ffffff;
+  line-height: 44px;
+  border-radius: 20px;
+  background: #d10b14;
+}
+@media (min-width: 1025px) {
+  .blogMain .newsSection .blogPanel--list .webgene-blog,
+.blogMain .productSection .blogPanel--list .webgene-blog {
+    margin: -50px 0 0 -30px;
+  }
+  .blogMain .newsSection .blogPanel--list .webgene-blog .webgene-item,
+.blogMain .productSection .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 30px);
+    margin: 50px 0 0 30px;
+  }
+  .blogMain .newsSection .blogPanel--list .webgene-blog .webgene-item .photo,
+.blogMain .productSection .blogPanel--list .webgene-blog .webgene-item .photo {
+    height: 180px;
+  }
+}
+.blogMain .worksSection .catePanel .webgene-blog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -10px 0 0;
+}
+.blogMain .worksSection .catePanel .allItem,
+.blogMain .worksSection .catePanel .webgene-item {
+  width: calc(33.3333333333% - 10px);
+  margin: 10px 10px 0 0;
+}
+.blogMain .worksSection .catePanel .allItem a,
+.blogMain .worksSection .catePanel .webgene-item a {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+.blogMain .worksSection .catePanel .webgene-search-form-block .search-title-wrapper {
+  display: none;
+}
+.blogMain .worksSection .catePanel .webgene-search-form-block .search-contents-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -10px 0 0;
+}
+.blogMain .worksSection .catePanel .webgene-search-form-block .search-contents-wrapper label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.3333333333% - 10px);
+  min-width: 120px;
+  margin: 10px 10px 0 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #171a1c;
+  font-weight: bold;
+  border: 1px solid #171a1c;
+}
+.blogMain .worksSection .catePanel .webgene-search-form-block .search-contents-wrapper label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.blogMain .worksSection .catePanel .webgene-search-form-block .search-contents-wrapper label.checked {
+  color: #ffffff;
+  background: #171a1c;
+}
+.blogMain .worksSection .catePanel .search-submit {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  margin: 30px auto 0;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #171a1c;
+  background: #171a1c;
+  transition: 0.6s;
+}
+@media (min-width: 1025px) {
+  .blogMain .worksSection .blogPanel--list .webgene-blog {
+    margin: -50px 0 0 -20px;
+  }
+  .blogMain .worksSection .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 50px 0 0 20px;
+  }
+  .blogMain .worksSection .blogPanel--list .webgene-blog .webgene-item .photo {
+    height: 270px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	naturalfoodworks
+///////////////////////////////////////////////////////////*/
+.naturalfoodworksMain {
+  overflow: visible;
+}
+.naturalfoodworksMain .sideBnrContact {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  width: 80px;
+  z-index: 99;
+}
+.naturalfoodworksMain .sideBnrContact a {
+  display: block;
+}
+.naturalfoodworksMain .topSection .contactBox {
+  margin: 0 0 60px;
+}
+.naturalfoodworksMain .topSection .contactBox .logo {
+  width: 150px;
+  margin: 0 auto 30px;
+}
+.naturalfoodworksMain .topSection .telBox {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  padding: 30px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.naturalfoodworksMain .topSection .telBox .tel {
+  margin: 0 0 10px;
+}
+.naturalfoodworksMain .topSection .telBox .tel a {
+  display: inline-block;
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+.naturalfoodworksMain .topSection .telBox .tel a .span {
+  display: inline-block;
+  font-size: 15px;
+}
+.naturalfoodworksMain .topSection .telBox .tel a .em {
+  display: inline-block;
+  font-size: 30px;
+}
+.naturalfoodworksMain .topSection .secBox {
+  margin: 0 0 60px;
+}
+.naturalfoodworksMain .topSection .secBox .txtBox .ttl {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .naturalfoodworksMain .topSection .secBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .naturalfoodworksMain .topSection .secBox .photo {
+    width: 45%;
+  }
+  .naturalfoodworksMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+.naturalfoodworksMain .topSection .pagingList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.naturalfoodworksMain .topSection .pagingList .ul .li {
+  width: calc(25% - 10px);
+  margin: 10px 0 0 10px;
+}
+.naturalfoodworksMain .topSection .pagingList .ul .li a {
+  display: block;
+}
+.naturalfoodworksMain .pageSecTtl {
+  margin: 0 0 60px;
+}
+.naturalfoodworksMain .sec01 {
+  position: relative;
+  padding: 80px 0 100px;
+  background: #f9fafb;
+}
+.naturalfoodworksMain .sec01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background: #f9fafb;
+}
+.naturalfoodworksMain .sec01 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.naturalfoodworksMain .sec01 .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 20px;
+}
+.naturalfoodworksMain .sec01 .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.naturalfoodworksMain .sec01 .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #f9fafb;
+}
+@media (min-width: 1025px) {
+  .naturalfoodworksMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .naturalfoodworksMain .sec01 .secBox .photo {
+    width: 45%;
+  }
+  .naturalfoodworksMain .sec01 .secBox .txtBox {
+    width: 50%;
+    padding: 10px 0 0;
+  }
+  .naturalfoodworksMain .sec01 .secPanel:nth-child(odd) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+.naturalfoodworksMain .sec01 .listBox {
+  margin: 40px 0 0;
+}
+.naturalfoodworksMain .sec01 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.naturalfoodworksMain .sec01 .listBox .ul .li {
+  width: calc(50% - 10px);
+}
+.naturalfoodworksMain .sec02 {
+  padding: 80px 0 0;
+}
+.naturalfoodworksMain .sec02 .secBox .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  line-height: 2;
+  border-bottom: 1px solid #b4bbc3;
+}
+.naturalfoodworksMain .sec02 .secBox .infoBox .dl .dt {
+  width: 80px;
+  color: #848c9c;
+}
+.naturalfoodworksMain .sec02 .secBox .infoBox .dl .dd {
+  width: 280px;
+}
+@media (min-width: 1025px) {
+  .naturalfoodworksMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .naturalfoodworksMain .sec02 .secBox .photo {
+    width: 45%;
+  }
+  .naturalfoodworksMain .sec02 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.naturalfoodworksMain .sec02 .listBox {
+  margin: 40px 0;
+}
+.naturalfoodworksMain .sec02 .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.naturalfoodworksMain .sec02 .listBox .ul .li {
+  width: calc(25% - 10px);
+  margin: 10px 0 0 10px;
+}
+.naturalfoodworksMain + .footer .footContact {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	menu
+///////////////////////////////////////////////////////////*/
+.menuMain {
+  overflow: visible;
+}
+.menuMain .sideBnrContact {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  width: 80px;
+  z-index: 99;
+}
+.menuMain .sideBnrContact a {
+  display: block;
+}
+.menuMain .topSection {
+  padding: 0 0 60px;
+}
+.menuMain .topSection .logo {
+  width: 150px;
+  margin: 0 auto 30px;
+}
+.menuMain .topSection .pagingList .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.menuMain .topSection .pagingList .ul .li {
+  width: calc(25% - 10px);
+  margin: 10px 0 0 10px;
+}
+.menuMain .topSection .pagingList .ul .li a {
+  display: block;
+}
+.menuMain .topSection .pagingList + p {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.menuMain .section {
+  position: relative;
+  padding: 80px 0;
+}
+.menuMain .section:nth-child(odd) {
+  background: #f9fafb;
+}
+.menuMain .section:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background: #f9fafb;
+}
+.menuMain .section:nth-child(odd) .pTtl h2 {
+  background: #f9fafb;
+}
+.menuMain .section .pTtl {
+  position: relative;
+  margin: 0 0 40px;
+}
+.menuMain .section .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #92989f;
+}
+.menuMain .section .pTtl h2 {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  background: #ffffff;
+}
+.menuMain .section .secBox .txtBox .ttl01 {
+  line-height: 2;
+}
+.menuMain .section .secBox .txtBox .ttl01 .em {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menuMain .section .secBox .txtBox .ttl01 .span {
+  display: inline-block;
+}
+.menuMain .section .secBox .txtBox .ttl02 {
+  margin: 15px 0 0;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.menuMain .section .secBox .txtBox .txt {
+  margin: 20px 0 0;
+}
+.menuMain .section .secBox .txtBox .telBox {
+  max-width: 450px;
+  margin: 20px 0 0;
+  padding: 25px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.menuMain .section .secBox .txtBox .telBox > p {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+.menuMain .section .secBox .txtBox .telBox .tel {
+  display: inline-block;
+}
+.menuMain .section .secBox .txtBox .telBox .tel a {
+  display: inline-block;
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+.menuMain .section .secBox .txtBox .telBox .tel a .span {
+  display: inline-block;
+  font-size: 15px;
+}
+.menuMain .section .secBox .txtBox .telBox .tel a .em {
+  display: inline-block;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .menuMain .section .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .menuMain .section .secBox .photo {
+    width: 45%;
+  }
+  .menuMain .section .secBox .txtBox {
+    width: 50%;
+  }
+}
+.menuMain .section .listBox {
+  margin: 40px 0 0;
+}
+.menuMain .section .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menuMain .section .listBox .ul .li {
+  width: calc(33.3333333333% - 10px);
+}
+.menuMain .section .listBox .ul .photo {
+  position: relative;
+  height: 230px;
+}
+.menuMain .section .listBox .ul .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menuMain .section .listBox .ul .ttl {
+  margin: 10px 0 0;
+  font-size: 13px;
+  text-align: center;
+}
+.menuMain .section .menuPanel {
+  margin: 60px 0 0;
+}
+.menuMain .section .menuPanel + .menuPanel {
+  margin: 40px 0 0;
+}
+.menuMain .section .menuPanel .menuPanelTtl {
+  margin: 0 0 10px;
+  color: #848c9c;
+}
+.menuMain .section .menuList01 .ul .li + .li {
+  margin: 30px 0 0;
+}
+.menuMain .section .menuList01 .ul .dl {
+  padding: 5px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #b4bbc3;
+}
+.menuMain .section .menuList01 .ul .dl .dd {
+  text-align: right;
+}
+.menuMain .section .menuList01 .ul .dl + p {
+  margin: 5px 0 0;
+  color: #848c9c;
+}
+@media (min-width: 1025px) {
+  .menuMain .section .menuList01 .ul .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menuMain .section .menuList02 .ul .li + .li {
+  margin: 10px 0 0;
+}
+.menuMain .section .menuList02 .ul .dl {
+  padding: 5px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #b4bbc3;
+}
+.menuMain .section .menuList02 .ul .dl .dd {
+  text-align: right;
+}
+.menuMain .section .menuList02 .ul .dl + p {
+  margin: 5px 0 0;
+  color: #848c9c;
+}
+@media (min-width: 1025px) {
+  .menuMain .section .menuList02 .ul .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menuMain .section .setDrinkBox {
+  margin: 40px 0 0;
+  padding: 20px;
+  border: 1px solid #dde1e6;
+  background: #ffffff;
+}
+.menuMain .section .setDrinkBox .ttl {
+  position: relative;
+  margin: 0 0 20px;
+}
+.menuMain .section .setDrinkBox .ttl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 120px);
+  height: 1px;
+  margin: auto 0;
+  background: #dde1e6;
+}
+.menuMain .section .setDrinkBox .ttl p {
+  color: #848c9c;
+}
+.menuMain .section .setDrinkBox .txt {
+  line-height: 2;
+}
+.menuMain .section .setDrinkBox .txt + .txt {
+  margin: 20px 0 0;
+}
+.menuMain + .footer .footContact {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	partner
+///////////////////////////////////////////////////////////*/
+.partnerMain .topSection {
+  padding: 0 0 60px;
+}
+.partnerMain .topSection .logo {
+  width: 150px;
+  margin: 0 auto 30px;
+}
+.partnerMain .topSection .secTtl {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .partnerMain .topSection .secBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .partnerMain .topSection .secBox .photo {
+    width: 45%;
+  }
+  .partnerMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+.partnerMain .topSection .listBox {
+  margin: 60px 0 0;
+}
+.partnerMain .topSection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.partnerMain .topSection .listBox .ul .li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 10px);
+  height: 70px;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #e9f0f2;
+  background: #e9f0f2;
+}
+.partnerMain .topSection .listBox .ul .li:nth-child(-n+4) {
+  border: 1px solid #171a1c;
+  background: #ffffff;
+}
+.partnerMain .topSection .promisePanel {
+  margin: 80px 0 0;
+  padding: 8px;
+  background: #cbd4da;
+}
+.partnerMain .topSection .promisePanel .promiseBox {
+  position: relative;
+  padding: 50px 20px 20px;
+  background: #ffffff;
+}
+.partnerMain .topSection .promisePanel .promiseTtl {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  width: 180px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff;
+}
+.partnerMain .topSection .promisePanel .promiseTtl .em {
+  font-size: 20px;
+}
+.partnerMain .topSection .promisePanel .promiseList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.partnerMain .topSection .promisePanel .promiseList .dl .dt {
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  font-weight: bold;
+  background: url(https://file-g.com/system_panel/uploads/images/partner_top_promise_icon.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.partnerMain .topSection .promisePanel .promiseList .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .partnerMain .topSection .promisePanel .promiseList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .partnerMain .topSection .promisePanel .promiseList .dl {
+    width: 240px;
+  }
+  .partnerMain .topSection .promisePanel .promiseList .dl .dt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 42px;
+  }
+}
+.partnerMain .sec01 {
+  padding: 80px 0 0;
+}
+.partnerMain .sec01 .secTtl {
+  margin: 0 0 40px;
+}
+.partnerMain .sec01 .secTtl p {
+  margin: 0 0 20px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #b4bbc3;
+}
+.partnerMain .sec01 .secTtl h2 {
+  font-size: 24px;
+}
+.partnerMain .sec01 .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.partnerMain .sec01 .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 25px;
+}
+.partnerMain .sec01 .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #92989f;
+}
+.partnerMain .sec01 .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #ffffff;
+}
+.partnerMain .sec01 .secPanel .listBox .ul .li {
+  padding: 25px 20px;
+  border: 3px solid #e9ecef;
+}
+.partnerMain .sec01 .secPanel .listBox .ul .dl {
+  margin: 0 0 20px;
+}
+.partnerMain .sec01 .secPanel .listBox .ul .dl .dt {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.partnerMain .sec01 .secPanel .listBox .ul .dl .dd {
+  line-height: 2;
+}
+.partnerMain .sec01 .secPanel .listBox .ul .photo {
+  max-width: 200px;
+}
+@media (min-width: 1025px) {
+  .partnerMain .sec01 .secPanel .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px 0 0;
+  }
+  .partnerMain .sec01 .secPanel .listBox .ul .li {
+    width: calc(50% - 10px);
+    margin: 20px 0 0;
+  }
+  .partnerMain .sec01 .secPanel .listBox .ul .dl .dd {
+    min-height: 115px;
+  }
+}
+.partnerMain + .footer .footContact {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	furnitureworks
+///////////////////////////////////////////////////////////*/
+.furnitureworksMain .topSection .logo {
+  width: 150px;
+  margin: 0 auto 30px;
+}
+.furnitureworksMain .topSection .secBox {
+  margin: 0 0 20px;
+}
+.furnitureworksMain .topSection .secBox .txtBox .sub {
+  margin: 0 0 10px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #b4bbc3;
+}
+.furnitureworksMain .topSection .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .furnitureworksMain .topSection .secBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .furnitureworksMain .topSection .secBox .photo {
+    width: 45%;
+  }
+  .furnitureworksMain .topSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+.furnitureworksMain .topSection .listBox {
+  margin: 30px 0;
+}
+.furnitureworksMain .topSection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.furnitureworksMain .topSection .listBox .ul .li {
+  width: calc(25% - 10px);
+  margin: 10px 0 0 10px;
+}
+.furnitureworksMain .topSection .btnMore {
+  width: 250px;
+  margin: 0 auto;
+}
+.furnitureworksMain .pageSecTtl {
+  margin: 0 0 60px;
+}
+.furnitureworksMain .sec01 {
+  padding: 80px 0 0;
+}
+.furnitureworksMain .sec01 .secPanel + .secPanel {
+  margin: 60px 0 0;
+}
+.furnitureworksMain .sec01 .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 20px;
+}
+.furnitureworksMain .sec01 .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.furnitureworksMain .sec01 .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #ffffff;
+}
+.furnitureworksMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .furnitureworksMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .furnitureworksMain .sec01 .secBox .photo {
+    width: 45%;
+  }
+  .furnitureworksMain .sec01 .secBox .txtBox {
+    width: 50%;
+    padding: 10px 0 0;
+  }
+  .furnitureworksMain .sec01 .secPanel:nth-child(odd) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+.furnitureworksMain .sec01 .listBox {
+  margin: 20px 0 0;
+}
+.furnitureworksMain .sec01 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.furnitureworksMain .sec01 .listBox .ul .li {
+  width: calc(50% - 10px);
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageSecTtl {
+  margin: 0 0 60px;
+}
+.contactMain .sec01 {
+  padding: 0 0 100px;
+}
+.contactMain .sec01 .pagingList {
+  margin: 0 0 60px;
+}
+.contactMain .sec01 .pagingList .ul {
+  text-align: center;
+}
+.contactMain .sec01 .pagingList .ul .li {
+  display: inline-block;
+  min-width: 140px;
+  margin: 10px 10px 0 0;
+}
+.contactMain .sec01 .pagingList .ul .li a {
+  display: block;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #171a1c;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .pagingList .ul .li a:hover {
+    opacity: 1;
+    color: #ffffff;
+    background: #171a1c;
+  }
+}
+.contactMain .sec01 .secContainer .section + .section {
+  margin: 80px 0 0;
+}
+.contactMain .sec01 .secContainer .secTtl {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.contactMain .sec01 .secContainer .secTtl p {
+  margin: 0 0 5px;
+  font-family: "Montserrat";
+  font-size: 24px;
+}
+.contactMain .sec01 .secContainer .secTtl h3 {
+  font-size: 13px;
+}
+.contactMain .sec01 .secContainer .faqList {
+  margin: -60px 0 0;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox {
+  margin: 60px 0 0;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dt {
+  display: flex;
+  align-items: center;
+  padding: 0 30px 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #92989f;
+  background: url(https://file-g.com/system_panel/uploads/images/nav_arrow.png) right 5px center no-repeat;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dt.active {
+  background: url(https://file-g.com/system_panel/uploads/images/nav_arrow_up.png) right 5px center no-repeat;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dt .icon {
+  width: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #b4bbc3;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dt .ttl {
+  width: calc(100% - 40px);
+  font-size: 15px;
+  font-weight: bold;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dd {
+  display: flex;
+  padding: 8px 0 0;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dd .icon {
+  width: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #171a1c;
+}
+.contactMain .sec01 .secContainer .faqList .faqBox .dl .dd .txt {
+  padding: 10px 0 0;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .secContainer .faqList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contactMain .sec01 .secContainer .faqList .faqBox {
+    width: calc(50% - 25px);
+  }
+}
+.contactMain .sec02 .topTxt {
+  margin: 0 0 60px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #171a1c;
+  background: #ffffff;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList02 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #171a1c;
+  border-right: 3px solid #171a1c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #171a1c;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 8px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #b4bbc3;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 0 0;
+}
+.formMain .contactForm .formBox > .dl.dash {
+  border-bottom: 1px dashed #d8dee6;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  padding: 15px 0 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #848c9c;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 240px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox {
+  border: 1px solid #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .ttl {
+  max-width: 220px;
+  padding: 3px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .txt {
+  padding: 10px 20px;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl > .dd .dogBox > p {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 13px;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #b4bbc3;
+  background: #f8f8f8;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 32%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 65%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox + p {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .sec01 .secTtl {
+  margin: 0 0 40px;
+}
+.companyMain .sec01 .secTtl p {
+  margin: 0 0 10px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: #b4bbc3;
+}
+.companyMain .sec01 .secTtl h2 {
+  font-size: 24px;
+}
+.companyMain .sec01 .infoBox .dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  line-height: 2;
+  border-bottom: 1px solid #b4bbc3;
+}
+.companyMain .sec01 .infoBox .dl .dt {
+  width: 220px;
+  color: #848c9c;
+}
+.companyMain .sec01 .infoBox .dl .dd {
+  width: calc(100% - 220px);
+}
+.companyMain .sec01 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .sec01 .showRooms {
+  margin: 60px 0 0;
+}
+.companyMain .sec01 .showRooms .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.companyMain .sec01 .showRooms .secPanel .pTtl {
+  position: relative;
+  margin: 0 0 20px;
+}
+.companyMain .sec01 .showRooms .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #a0a0a0;
+}
+.companyMain .sec01 .showRooms .secPanel .pTtl h3 {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  padding: 0 25px 0 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  background: #ffffff;
+}

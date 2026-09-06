@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+/*////////////////////////////////////////////////////////////
+	jewelry
+///////////////////////////////////////////////////////////*/
+@media (min-width: 768px) {
+  .jewelry a {
+    transition: 0.6s;
+  }
+  .jewelry a:hover {
+    opacity: 0.6;
+  }
+}
+.jewelry .mainvisual-common {
+  background: url(https://storia1965.co.jp/assets/img/contact/img-main-visual-pc.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.jewelry .secTtlBox {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 15px;
+  font-size: 26px;
+  text-align: center;
+}
+.jewelry .secTtlBox::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #d6c4b0;
+}
+.jewelry .secWrap {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.jewelry .secWrap01 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.jewelry .topBox {
+  padding: 0 0 60px;
+}
+.jewelry .topBox h4 {
+  margin: 0 0 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.jewelry .photoPanel {
+  padding: 60px 40px;
+  color: #ffffff;
+  background: #d6c4b0;
+}
+.jewelry .photoPanel .listBox {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.jewelry .photoPanel .listBox ul p {
+  margin: 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .jewelry .photoPanel .listBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -20px;
+  }
+  .jewelry .photoPanel .listBox ul li {
+    width: calc(25% - 20px);
+    margin: 30px 0 0 20px;
+  }
+  .jewelry .photoPanel .listBox ul p {
+    font-size: 16px;
+  }
+}
+.jewelry .secBoxPanel .secBox {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.jewelry .secBoxPanel .secBox .photo.bg {
+  position: relative;
+}
+.jewelry .secBoxPanel .secBox .photo.bg::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 80%;
+  height: 100%;
+  background: url(https://storia1965.co.jp/assets/img/jewelry/jewelry_photo_bg.png)
+    no-repeat;
+  background-size: 100% auto;
+}
+.jewelry .secBoxPanel .secBox .photo.bg img {
+  position: relative;
+  z-index: 1;
+}
+.jewelry .secBoxPanel .secBox .txtBox h4 {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+.jewelry .secBoxPanel .secBox .txtBox .pageLinkList {
+  margin: 60px 0 0;
+}
+.jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul {
+  max-width: 440px;
+}
+.jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #d6c4b0;
+}
+@media (min-width: 768px) {
+  .jewelry .secBoxPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .jewelry .secBoxPanel .secBox.top {
+    align-items: flex-start;
+  }
+  .jewelry .secBoxPanel .secBox .photo {
+    width: 40%;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox {
+    width: 55%;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul li {
+    width: 48%;
+  }
+}
+.jewelry__main {
+  letter-spacing: 0.1em;
+}
+.jewelry__main__bg {
+  padding: 140px 0;
+  background: url(https://storia1965.co.jp/assets/img/jewelry/jewelry_main_bg.png)
+    center no-repeat;
+  background-size: cover;
+}
+.jewelry__main .txt {
+  line-height: 2.5;
+}
+.jewelry__main .sec01 {
+  padding: 140px 0;
+}
+.jewelry__main .sec01 .secContainer02 {
+  padding: 120px 40px 0;
+}
+.jewelry__main .sec03 {
+  padding: 140px 0 0;
+}
+.jewelry__main .sec04 {
+  padding: 0 0 140px;
+}
+.jewelry__main .sec04 .secBoxPanel {
+  margin: 0 0 100px;
+}
+@media (min-width: 768px) {
+  .jewelry__main .sec04 .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -20px;
+  }
+  .jewelry__main .sec04 .list ul li {
+    width: calc(33.3333333333% - 20px);
+    margin: 30px 0 0 15px;
+  }
+  .jewelry__main .sec04 .list ul p {
+    font-size: 16px;
+  }
+}
+.jewelry .slidePanel {
+  margin: 60px 0 80px;
+}
+.jewelry .slidePanel .slideBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.jewelry .slidePanel .slideBox ul li {
+  width: 20%;
+  margin: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .jewelry .mainvisual-common {
+    background: url(https://storia1965.co.jp/assets/img/contact/img-main-visual-sp.jpg)
+      center no-repeat;
+    background-size: cover;
+  }
+  .jewelry .secTtlBox {
+    margin: 0 0 40px;
+    font-size: 18px;
+  }
+  .jewelry .secTtlBox::after {
+    width: 60px;
+  }
+  .jewelry .topBox {
+    padding: 0 0 40px;
+  }
+  .jewelry .topBox h4 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .jewelry .photoPanel {
+    padding: 40px;
+  }
+  .jewelry .photoPanel .listBox {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .jewelry .photoPanel .listBox ul li + li {
+    margin: 30px 0 0;
+  }
+  .jewelry .secBoxPanel .secBox .photo.bg {
+    position: relative;
+    margin: 0 0 20px;
+  }
+  .jewelry .secBoxPanel .secBox .photo.bg::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80%;
+    height: 100%;
+    background: url(https://storia1965.co.jp/assets/img/jewelry/jewelry_photo_bg.png)
+      no-repeat;
+    background-size: 100% auto;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox h4 {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox .pageLinkList {
+    margin: 30px 0 0;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .jewelry .secBoxPanel .secBox .txtBox .pageLinkList ul li + li {
+    margin: 20px 0 0;
+  }
+  .jewelry__main__bg {
+    padding: 80px 0;
+  }
+  .jewelry__main .sec01 {
+    padding: 80px 0;
+  }
+  .jewelry__main .sec01 .secContainer02 {
+    padding: 80px 40px 0;
+  }
+  .jewelry__main .sec03 {
+    padding: 80px 0 0;
+  }
+  .jewelry__main .sec04 {
+    padding: 0 0 80px;
+  }
+  .jewelry__main .sec04 .secBoxPanel {
+    margin: 0 0 80px;
+  }
+  .jewelry__main .sec04 .list {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .jewelry__main .sec04 .list ul li + li {
+    margin: 10px 0 0;
+  }
+  .jewelry .slidePanel {
+    margin: 60px 0 40px;
+  }
+  .jewelry .slidePanel .slideBox ul li {
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reservation
+///////////////////////////////////////////////////////////*/
+.reservation__main .formBlock {
+  background: #ffffff;
+}
+.reservation__main .formBlock .ttl + .txt {
+  margin: 30px 0 0;
+  text-align: center;
+  line-height: 2;
+}
+
+#contact .reservation__main .formBlock .contactform,
+#contact .reservation__main .formBlock .confirmform {
+  max-width: 1000px;
+}
+@media (min-width: 768px) {
+  #contact .reservation__main .formBlock .tableContact th {
+    width: 300px;
+  }
+  #contact .reservation__main .formBlock .tableContact td {
+    padding-right: 0;
+  }
+}
+#contact .reservation__main .formBlock .tableContact .chkcheckbox label {
+  width: auto;
+  margin: 0 20px 0 0;
+}
+#contact .reservation__main .formBlock .tableContact .selectBox {
+  display: inline-block;
+  margin: 0 0 5px;
+}
+#contact .reservation__main .formBlock .tableContact .selectBox select {
+  display: inline-block;
+  width: 80px;
+  font-size: 0.9em;
+}
+#contact .reservation__main .formBlock .tableContact .selectBox select + span {
+  display: inline-block;
+  margin: 0 5px;
+}
+#contact .reservation__main .formBlock .btb-box .btnCm[disabled] {
+  opacity: 0.6;
+}
+#contact .reservation__main .privacy {
+  margin: 50px auto 30px;
+  border-radius: 6px;
+  border: 1px solid #d6d6d6;
+  background: #ffffff;
+}
+#contact .reservation__main .privacy .agreeBox {
+  overflow: scroll;
+  height: 350px;
+  padding: 20px;
+}
+#contact .reservation__main .privacy .box + .box {
+  margin: 20px 0 0;
+}
+#contact .reservation__main .privacy dl dt {
+  margin: 0 0 3px;
+}
+#contact .reservation__main .privacy a {
+  display: inline-block;
+  color: #000000;
+}
+#contact .reservation__main .privacy .tel p,
+#contact .reservation__main .privacy .tel a {
+  display: inline-block;
+}
+#contact .reservation__main .agreeCheck.chkcheckbox {
+  text-align: center;
+}
+#contact .reservation__main .agreeCheck.chkcheckbox label {
+  width: auto !important;
+}
+
+#contact .dateSelect {
+  display: inline-block;
+}
+#contact .selectBox .calendar {
+  display: inline-block;
+  width: 20px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+#contact .selectBox a {
+  display: block;
+}
+#contact .selectBox .datepickerDisplay {
+  display: none !important;
+}
+
+.ui-widget.ui-widget-content {
+  margin: 30px 0 0;
+}

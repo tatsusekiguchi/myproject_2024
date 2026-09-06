@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="recruit">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap clearfix">
+			<div class="logo"><a href="/"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></a></div>
+			<div class="headBox">
+				<div class="navBox meiryo">
+					<div class="navList">
+						<div class="ul">
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li pulldown"><a class="pcBreak" href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">私たちについて</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="about">
+											<div>
+												<p>私たちについて</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec02">
+											<div>
+												<p>データで見る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec04">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec03">
+											<div>
+												<p>ビジョン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">働く環境</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="working">
+											<div>
+												<p>働く環境</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec01">
+											<div>
+												<p>仕事内容</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec02">
+											<div>
+												<p>一日の流れ</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec04">
+											<div>
+												<p>福利厚生</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">社員を知る</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="staff">
+											<div>
+												<p>社員を知る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec01">
+											<div>
+												<p>先輩の声</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec02">
+											<div>
+												<p>キャリアプラン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">採用情報</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="recruit">
+											<div>
+												<p>採用情報</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec02">
+											<div>
+												<p>求める人材</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec04">
+											<div>
+												<p>募集要項</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li entry"><a href="recruit?sec05">
+									<div>
+										<p>ENTRY</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="humberger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="recruitMain main">
+		<div class="pageKv">
+			<div class="kvArea">
+				<div class="kvTtl">
+					<p>RECRUIT</p>
+					<h1>採用情報</h1>
+				</div>
+			</div>
+		</div>
+		<div class="sec01 fadeUp">
+			<div class="secBox01">
+				<div class="secWrap02">
+					<div class="light"></div>
+					<div class="secTtl">
+						<p>MESSAGE</p>
+						<h2>メッセージ</h2>
+					</div>
+					<div class="subTtl">
+						<h3>仕事を通して、自分のファンを増やす</h3>
+					</div>
+					<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_img.png" alt=""></div>
+				</div>
+			</div>
+			<div class="secBox02">
+				<div class="secWrap02">
+					<div class="txt">
+						<p>見えないものが伝えることができたとき、人は人に魅力を感じます。<br>例えば誠実な態度や感謝の気持ち、驚きや感動であったり。<br>こういった見えない思いを提供できた時に、初めて人はその人のファンになります。<br>自分のファンを増やすと、生活がより充実していきます。<br>では、どうすればファンが増えるのでしょうか。<br>まずは、自分が自分のファンであること。<br>そして、誰よりも「自分」をよく知っているということ。<br>つまり自らを知り、強みや弱みさえ魅力と感じさせることができる人は<br>周りを巻き込みながらファンを増やすことができます。<br>それができる人は仕事も上手く回り、やりがいもでてきます。<br>ファンを作りあえるような温かい職場で一緒に働きませんか？</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>WORKING</p>
+					<h2>WORKING</h2>
+				</div>
+				<div class="ul">
+					<div class="li">
+						<div class="num"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_sec02_num_01.png" alt=""></div>
+						<div class="dl">
+							<div class="dt">
+								<p>常に前を向いて<br>行動できる</p>
+							</div>
+							<div class="dd">
+								<p>失敗しても構いません。「この失敗を自分が成長するきっかけにしよう」と捉え、前を向いて好奇心を持って動ける方は向ています。積極的にチャレンジする気持ちが、自分自身を成長させます。</p>
+							</div>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_sec02_num_02.png" alt=""></div>
+						<div class="dl">
+							<div class="dt">
+								<p>なんでだろう？<br>と探求する心がある</p>
+							</div>
+							<div class="dd">
+								<p>疑問に持ったら自分が納得するまで掘り下げれる方は向いています。自分の分からないことをそのままにせず、理解しようとする姿勢のある方が当てはまります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_sec02_num_03.png" alt=""></div>
+						<div class="dl">
+							<div class="dt">
+								<p>他者を尊重し、<br>信頼を大切にする</p>
+							</div>
+							<div class="dd">
+								<p>良い人間関係は、良い仕事を生みます。チームワークを大切に、相手を理解しようと努めれる方は向いています。信頼力は、気兼ねなく質問やお互いの仕事のフォローができる環境を作ります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>FLOW</p>
+					<h2>採用までの流れ</h2>
+				</div>
+				<div class="ul">
+					<div class="li">
+						<div class="num">
+							<p>01</p>
+						</div>
+						<div class="txt">
+							<p>エントリー</p>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num">
+							<p>02</p>
+						</div>
+						<div class="txt">
+							<p>会社説明会</p>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num">
+							<p>03</p>
+						</div>
+						<div class="txt">
+							<p>書類選考</p>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num">
+							<p>04</p>
+						</div>
+						<div class="txt">
+							<p>面接</p>
+						</div>
+					</div>
+					<div class="li">
+						<div class="num">
+							<p>05</p>
+						</div>
+						<div class="txt">
+							<p>内定</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec04 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>REQUIREMENTS</p>
+					<h2>募集要項</h2>
+				</div>
+				<div class="infoBox">
+					<div class="dl">
+						<div class="dt">
+							<p>募集職種</p>
+						</div>
+						<div class="dd">
+							<p>総合技術職</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>雇用形態</p>
+						</div>
+						<div class="dd">
+							<p>正社員　※試用期間：３か月</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>勤務時間</p>
+						</div>
+						<div class="dd">
+							<p>9:00～17:30　※1年単位の変形労働採用</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>条件</p>
+						</div>
+						<div class="dd">
+							<p>未経験者歓迎<br>普通自動車免許（MT）　※入社後の取得OK<br>学歴・年齢不問</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>仕事内容</p>
+						</div>
+						<div class="dd">
+							<p>非常用電源の点検整備、試験調整</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>勤務地</p>
+						</div>
+						<div class="dd">
+							<p>千葉県</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>給与</p>
+						</div>
+						<div class="dd">
+							<p>大卒　222,120円（固定残業代40時間、52,120円を含む）<br>短大卒、高専卒、専門学校卒212,120円（ 固定残業代40時間、52,120円を含む）<br>院了・既卒　232,120円(固定残業代40時間、52,120円を含む）<br>※超過分は別途支給<br>昇給：年１回　賞与：年3回（※前年度　計５か月分）</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>休日</p>
+						</div>
+						<div class="dd">
+							<p>年間休日数108日<br>隔週休2日制（日、隔土）<br>祝日 夏季 年末年始</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>待　遇<br>福利厚生</p>
+						</div>
+						<div class="dd">
+							<p>リフレッシュ休暇制度<br>職場積立NISA（奨励金あり）<br>保養施設利用可<br>社員旅行<br>退職金制度</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>諸手当</p>
+						</div>
+						<div class="dd">
+							<p>交通費<br>夜勤手当（6,000円「夜勤を1回行った場合」）<br>休日（6,000円/1日）<br>家族手当（配偶者20,000円、子10,000円）<br>独立生計手当（20,000円）<br>資格手当</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>研修制度</p>
+						</div>
+						<div class="dd">
+							<p>資格取得支援制度<br>メーカー技術研修制度<br>新人研修（外部講師委託）<br>フォローアップ研修<br>OJT研修</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec05 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>ENTRY</p>
+					<h2>応募フォーム</h2>
+				</div>
+				<p>下記の応募フォームより、ご応募ください。<br>必要事項を記入の上【応募する】ボタンをクリック下さい。</p>
+				<div class="contactForm">
+					<form class="form" data-formtype="1" method="post">
+						<div class="formBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="span">お名前</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="name" type="text" name="name" placeholder="例） サンデン　太郎" data-displaynameattr="お名前" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">ふりがな</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="kana" type="text" name="kana" placeholder="例） さんでん　たろう" data-displaynameattr="ふりがな" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">生年月日</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<div class="selectBox">
+										<select name="year" data-displaynameattr="生年月日(年)">
+											<option value="">年</option>
+											<option value="1960">1960</option>
+											<option value="1961">1961</option>
+											<option value="1962">1962</option>
+											<option value="1963">1963</option>
+											<option value="1964">1964</option>
+											<option value="1965">1965</option>
+											<option value="1966">1966</option>
+											<option value="1967">1967</option>
+											<option value="1968">1968</option>
+											<option value="1969">1969</option>
+											<option value="1970">1970</option>
+											<option value="1971">1971</option>
+											<option value="1972">1972</option>
+											<option value="1973">1973</option>
+											<option value="1974">1974</option>
+											<option value="1975">1975</option>
+											<option value="1976">1976</option>
+											<option value="1977">1977</option>
+											<option value="1978">1978</option>
+											<option value="1979">1979</option>
+											<option value="1980">1980</option>
+											<option value="1981">1981</option>
+											<option value="1982">1982</option>
+											<option value="1983">1983</option>
+											<option value="1984">1984</option>
+											<option value="1985">1985</option>
+											<option value="1986">1986</option>
+											<option value="1987">1987</option>
+											<option value="1988">1988</option>
+											<option value="1989">1989</option>
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995">1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+											<option value="2005">2005</option>
+											<option value="2006">2006</option>
+											<option value="2007">2007</option>
+											<option value="2008">2008</option>
+											<option value="2009">2009</option>
+											<option value="2010">2010</option>
+											<option value="2011">2011</option>
+											<option value="2012">2012</option>
+											<option value="2013">2013</option>
+											<option value="2014">2014</option>
+											<option value="2015">2015</option>
+											<option value="2016">2016</option>
+											<option value="2017">2017</option>
+											<option value="2018">2018</option>
+											<option value="2019">2019</option>
+											<option value="2020">2020</option>
+										</select>
+									</div>
+									<div class="selectBox">
+										<select name="month" data-displaynameattr="生年月日(月)">
+											<option value="">月</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+									<div class="selectBox">
+										<select name="day" data-displaynameattr="生年月日(日)">
+											<option value="">日</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="dl postal">
+								<div class="dt">
+									<p class="span">郵便番号</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<p class="postalTxt">〒</p>
+									<input class="postal_01 zip1" type="text" name="postal_01" placeholder="284" data-displaynameattr="郵便番号上3桁" required>
+									<p class="span">-</p>
+									<input class="postal_02 zip2" type="text" name="postal_02" placeholder="0015" data-displaynameattr="郵便番号下4桁" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">住所</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="address01" type="text" name="address01" placeholder="千葉県四街道市千代田4-45-14" data-displaynameattr="住所" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">電話番号</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="tel" type="tel" name="tel" placeholder="例） 043-423-5901" data-displaynameattr="電話番号" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">メールアドレス</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="mail" type="email" name="mail" placeholder="例）sanden＠com" data-displaynameattr="メールアドレス" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">確認用メールアドレス</p>
+									<p class="em">必須</p>
+								</div>
+								<div class="dd">
+									<input class="mailConfirm" type="email" name="mailConfirm" placeholder="確認のため再度お願いいたします。" data-displaynameattr="確認用メールアドレス" required>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">経験の有無</p>
+								</div>
+								<div class="dd radioList">
+									<div class="list">
+										<div class="radioBox">
+											<div class="radio">
+												<input class="checkExp" type="radio" name="checkExp" value="未経験" data-displaynameattr="経験の有無">
+												<label>未経験</label>
+											</div>
+										</div>
+									</div>
+									<div class="list">
+										<div class="radioBox">
+											<div class="radio">
+												<input class="checkExp" type="radio" name="checkExp" value="1～5年" data-displaynameattr="経験の有無">
+												<label>1～5年</label>
+											</div>
+										</div>
+									</div>
+									<div class="list">
+										<div class="radioBox">
+											<div class="radio">
+												<input class="checkExp" type="radio" name="checkExp" value="6年以上" data-displaynameattr="経験の有無">
+												<label>6年以上</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p class="span">ご質問</p>
+								</div>
+								<div class="dd">
+									<textarea class="msg" name="ご質問" placeholder="お気軽にご質問ください。" data-displaynameattr="ご質問"></textarea>
+									<div class="telBox">
+										<p>※3 営業日以内に返信がない場合は</p><a href="tel:0648077170">
+											<div>
+												<p>お電話</p>
+											</div>
+										</a>
+										<p>下さい。</p>
+									</div>
+								</div>
+							</div>
+							<div class="privacy">
+								<div class="agreeBox">
+									<p>個人情報の取り扱いについて</p>
+									<p>株式会社サンデンサービスでは個人情報を適切に管理運用するための基本的事項を定めています。<br>・個人情報の利用目的<br>個人情報は当社からご連絡する目的のためのみに取得し、取得した個人情報については不正利用・紛失・破壊・改ざん、<br>および漏えいに対し適切な予防ならびに是正に関する措置を適切に講じます。<br>・個人情報の第三者への開示・提供の禁止<br>お客様の個人情報について、お客様の承諾が無い限り第三者に開示、提供を一切いたしません。 ご提供いただいた個人情報を取り扱うにあたり管理責任者を置き、適切な管理を行っております。<br>・ご本人の照会<br>個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上対応させていただきます。<br>・法令、規範の遵守と見直し<br>保有する個人情報について日本の法令その他規範を遵守するとともに、本規約の内容を適宜見直しその改善に努めます。</p>
+									<p>本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。</p>
+									<p>株式会社サンデンサービス</p>
+									<p>住所：千葉県四街道市物井1530-5</p>
+									<div class="tel">
+										<p>電話番号：</p><a href="tel:0434235901">
+											<div>
+												<p>043-423-5901</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox agreeCheck">
+								<label>
+									<input type="checkbox"><span>個人情報の取り扱いについて同意する</span>
+								</label>
+							</div>
+							<button type="submit">
+								<p>応募する</p>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="pagingPanel fadeUp">
+			<div class="secWrap02">
+				<div class="ul clearfix">
+					<div class="li prev"><a href="/">
+							<div>
+								<p class="em">HOME</p>
+								<p class="span">ホーム</p>
+							</div>
+						</a></div>
+					<div class="li next"><a href="working">
+							<div>
+								<p class="em">WORKING</p>
+								<p class="span">働く環境</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<script src="../js/jquery.jpostal.js"></script>
+	<script src="../js/formRecruit.js"></script>
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footEntry">
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>ENTRY</p>
+					<h2>採用情報</h2>
+				</div>
+				<div class="ul clearfix">
+					<div class="li"><a class="more more01 mynavi" href="http://" target="_blank" rel="noopener">
+							<div>
+								<p>マイナビからのエントリー</p>
+							</div>
+						</a></div>
+					<div class="li"><a class="more more01" href="recruit?sec05">
+							<div>
+								<p>エントリーフォーム</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footBox">
+			<div class="secWrap01">
+				<div class="footInner">
+					<div class="left">
+						<div class="logo"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						<div class="txt">
+							<p>〒284-0012<br>千葉県四街道市 物井1530-5</p>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="https://goo.gl/maps/vpGTW19GUvzQPEaV8" target="_blank" rel="noopener">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_map.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="tel:0434235901">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_tel.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="btnLink">
+							<div class="btn"><a href="" target="_blank" rel="noopener">
+									<div>
+										<p>corporate site</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="/">
+									<div>
+										<p>ホーム</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="copy">&copy; 2021 SANDEN SERVICE</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

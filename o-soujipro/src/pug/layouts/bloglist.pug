@@ -1,0 +1,52 @@
+// ▽メイン▽
+main#blog.postMain
+    .pageTitlePanel
+        .pageTitle
+            h1 ブログ
+            p Blog
+    .postPanel
+        .secWrap01
+            .categoryList
+                ul
+                    li
+                        a(href="") ALL
+                    li
+                        a(href="") 新着情報
+                    li
+                        a(href="") コラム
+            .list__news
+                .list__news__section
+                    a(href="")
+                        .photo
+                            img(src=(root_path || '') + "image/top/top_kv.png", alt="")
+                        .txtBox
+                            .infoBox
+                                p.time 2022.12.01
+                                p.cate お知らせ
+                            .title
+                                h3 タイトルが入ります。
+                            .postTxt
+                                | 平素よりお掃除プロをご愛顧いただき、誠にありがとうございます。<br>誠に勝手ながら、以下の期間を年末年始休業とさせていただきます。
+                .list__news__section
+                    a(href="")
+                        .photo
+                            img(src=(root_path || '') + "image/top/top_kv.png", alt="")
+                        .txtBox
+                            .infoBox
+                                p.time 2022.12.01
+                                p.cate お知らせ
+                            .title
+                                h3 タイトルが入ります。
+                            .postTxt
+                                | 平素よりお掃除プロをご愛顧いただき、誠にありがとうございます。<br>誠に勝手ながら、以下の期間を年末年始休業とさせていただきます。
+            .list__pagination
+                ul.pagination
+                    li.previous
+                        a(href='')
+                    li
+                        a 1
+                    li.current
+                        a(href='') 2
+                    li.next
+                        a(href='')
+// △メイン△

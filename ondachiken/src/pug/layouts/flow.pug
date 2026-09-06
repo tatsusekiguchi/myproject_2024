@@ -1,0 +1,162 @@
+// ▽メイン▽
+.flowMain.main
+    .pageTopPanel
+    .mainContainer
+        .mainContainer__wrap
+            .mainContainer__left
+                include /common/sideNav.pug
+            .mainContainer__right
+                .sec01.section
+                    .secTtlBox
+                        .secTtl.gothic
+                            h2 ご契約の流れ
+                        p 株式会社恩田地建でのご契約の流れをご案内いたします。<br>相続登記手続き、不動産の売買、空き家対策などの流れをご確認ください。
+                    .pagingList.gothic
+                        .ul
+                            .li
+                                a(href="#flow01")
+                                    div
+                                        p 不動産売買の流れ
+                            .li
+                                a(href="#flow02")
+                                    div
+                                        p 相続登記手続きの流れ
+                            .li
+                                a(href="#flow03")
+                                    div
+                                        p 空き家対策の流れ
+                    .flowContainer01#flow01
+                        .secTtlBox
+                            .secTtl.gothic
+                                h3 不動産売買の場合
+                            p 不動産を売却したい、物件や土地を購入したい。<br>売買の流れは以下の通りです。
+                        .flowPanelList
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 01
+                                    .ttl
+                                        p お問い合わせ
+                                .txt
+                                    p まずは、物件の査定額を把握しましょう。<br>査定を希望する場合はメールフォームからご連絡ください。<br>査定はメールで行えますが、事前に以下の情報を準備しておくとスムーズに進みます。
+                                .aside
+                                    p 【必要な情報】<br>物件の住所、土地の広さ、建物がある場合はその築年数と広さ、固定資産税の請求書
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 02
+                                    .ttl
+                                        p 不動産確認
+                                .txt
+                                    p Googleストリートや謄本から情報を確認します。<br>境界線がどこか、登記にある建物で合っているかをきちんと調査いたします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 03
+                                    .ttl
+                                        p 価格査定
+                                .txt
+                                    p お問い合わせ内容と現地調査での状況を考慮の上、売却金額のご提示をさせて頂きます。<br>条件と同エリアの成約事例やエリアの特性を基に、適切な価格を算出いたします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 04
+                                    .ttl
+                                        p 売買契約
+                                .txt
+                                    p 査定金額や条件にご納得いただけましたら契約となります。<br>当社よりお振込を行い、お客様より売却物件のお引渡しを頂きます。<br>これで売却手続きは完了となります。
+                                .aside
+                                    p ※引っ越しが必要な場合は、引渡の前には引っ越しを完了させてください。
+                .sec02.section#flow02
+                    .secTtlBox
+                        .secTtl.gothic
+                            h2 相続登記手続きの流れ
+                        p 不動産を相続したので登記を行いたい、義務化に伴い登録をしたい。<br>恩田地建ではお客様に変わって手続きのサポートを行っております。
+                    .docPanel
+                        .docTtl.gothic
+                            p 相続登記に必要な8つの書類
+                        .txt
+                            p ・登記申請書 ・不動産の登記事項証明書（登記簿謄本） ・遺言または遺産分割協議書<br>・被相続人の死亡時から出生時までの戸籍謄本 ・被相続人の住民票の除票<br>・相続人全員の戸籍謄本、住民票 ・法定相続人の印鑑証明書 ・固定資産評価証明書
+                    .flowContainer02
+                        .flowPanelList
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 01
+                                    .ttl
+                                        p 相続する不動産を確認
+                                .txt
+                                    p 亡くなられた方が不動産を所有していたら、その不動産の状態、権利関係などを確認します。<br>登記事項証明書(登記簿謄本)のご準備をいただきますが、ない場合は管轄の法務局で入手しお調べします。また、所有していた土地・家屋が、配偶者や他の親族との共有名義になっていた場合、全ての方の確認が必要となります。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 02
+                                    .ttl
+                                        p 遺言または遺産分割協議で引き継ぐ人を決める
+                                .txt
+                                    p 遺産相続については、遺言書があればそれが優先されるため、その遺言で不動産を引き継ぐ人を確認します。<br>遺言書がない場合は、相続人による遺産分割協議で遺産の分け方を話し合い、不動産についてもだれが引き継ぐかを決めることになります。<br>決めた内容に全員が合意したら、それを遺産分割協議書にまとめ、相続人全員の署名・捺印をします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 03
+                                    .ttl
+                                        p 相続登記に必要な書類を収集、作成する
+                                .txt
+                                    p 相続登記に必要な書類は、亡くなった人の戸籍関係の書類や、相続人に関する書類、<br>対象となる不動産の固定資産評価証明書などがございます。<br>他、申請書の作成など担当できる書類収集と作成を担当いたします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 04
+                                    .ttl
+                                        p 管轄の法務局へ申請する
+                                .txt
+                                    p 対象の不動産の住所地を管轄する法務局へ登記申請書と添付書類一式を提出して申請します。<br>法務局での書類の審査と登記には1週間～10日くらいかかります。<br>登記が済んだら、登記識別情報の通知や登記完了証が発行されますので、お客様にお渡しします。
+                                .aside
+                                    p ※登記方法も一人で相続する単独登記、二人以降で相続する共有登記がございます。<br>詳しい登記情報はお問い合わせください。
+                    .flowContainer01#flow03
+                        .secTtlBox
+                            .secTtl.gothic
+                                h3 空家相談の流れ
+                            p 空き家は放置しておくと、様々な問題を引き起こします。<br>売却するのか、住むのか、まだ空き家をどうするか悩んでいる方もまずはお問い合わせください。
+                        .flowPanelList
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 01
+                                    .ttl
+                                        p ご相談
+                                .txt
+                                    p 実家が空き家状態になってしまっている方、泥棒が入ったりしていて心配という方。<br>空き家は犯罪と火災の危険があります。<br>住む予定がない空き家は早めの対策をおすすめいたします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 02
+                                    .ttl
+                                        p ご提案
+                                .txt
+                                    p 空き家対策は様々な方法がございます。<br>家を売却する、リフォームして住む、解体して更地にするなど。<br>空き家の活用、対策についてどのようなご相談にも対応いたします。
+                            .arrow
+                                img(src="https://onda-net.co.jp/system_panel/uploads/images/flow_step_arrow.png", alt="")
+                            .flowPanel
+                                .ttlBox.gothic
+                                    .num
+                                        p 03
+                                    .ttl
+                                        p ご契約 - 完了
+                                .txt
+                                    p ご提案にご納得いただけましたらご契約、工事や手続きがスタートします。<br>リフォームする場合も解体し更地にして販売する時も私たちがサポートしますのでご安心ください。売却後は現金にしてお渡しいたします。
+// △メイン△

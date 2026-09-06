@@ -1,0 +1,585 @@
+// ▽メイン▽
+.guideMain.main
+    .pageKvContainer
+        .pageKvPanel
+            .pageKvTitle
+                p SERVICE
+                h1 ご利用案内
+    .topPanel
+        .secWrap01
+            .pagingList
+                .ul
+                    .li
+                        a(href="#guide01")
+                            div
+                                p ご利用の流れ
+                    .li
+                        a(href="#guide02")
+                            div
+                                p 利用料金
+                    .li
+                        a(href="#guide03")
+                            div
+                                p よくある質問
+    #guide01.sec01
+        .secWrap01
+            .pageSecTtlBox
+                .sub
+                    p SERVICE
+                .pageSecTtl
+                    h2 ご利用の流れ
+            .flowList
+                .ol
+                    .li
+                        .secBox
+                            .leftBox
+                                .num
+                                    p 01
+                            .rightBox
+                                .dl
+                                    .dt
+                                        h3 ご相談
+                                    .dd
+                                        .txt
+                                            p まずはお電話またはメールからご相談ください。<br>地域包括センター又は居宅介護支援事業所にご相談いただいても結構です。
+                                .contactBox
+                                    .tel
+                                        a(href="tel:0829092260")
+                                            div
+                                                p 082-909-2260
+                                    .btnMore
+                                        a(href="contact")
+                                            div
+                                                p お問い合わせ
+                                    .btnMore.btnMore02
+                                        a(href="office")
+                                            div
+                                                p 居宅介護支援事業所について
+                    .li
+                        .secBox
+                            .leftBox
+                                .num
+                                    p 02
+                            .rightBox
+                                .dl
+                                    .dt
+                                        h3 要介護認定を受ける
+                                    .dd
+                                        .txt
+                                            p 要介護認定がまだの方は、手続きが必要です。<br>役所に介護保険の申請を行い、後日、認定員がご自宅に伺って、介護認定調査が行なわれます。<br>その後、認定結果が郵便にて送られてきます。
+                    .li
+                        .secBox
+                            .leftBox
+                                .num
+                                    p 03
+                            .rightBox
+                                .dl
+                                    .dt
+                                        h3 お打ち合わせ
+                                    .dd
+                                        .txt
+                                            p 担当ケアマネジャーさんがご自宅へ伺いし、介護を受ける方の状況やご家族の方の考え、どんな生活を送りたいか、お困りごとやお悩みなどを丁寧にヒアリングします。<br>また、介護保険やケアプランについてご案内します。<br>ご利用が決まりましたら、地域包括支援センター又は居宅介護支援事業所との契約を行ないます。
+                    .li
+                        .secBox
+                            .leftBox
+                                .num
+                                    p 04
+                            .rightBox
+                                .dl
+                                    .dt
+                                        h3 ケアプランの作成
+                                    .dd
+                                        .txt
+                                            p お打ち合わせでお聞きした内容を元に、ケアプランを作成します。<br>利用するサービス、利用日などのスケジュール、目指す生活などをプランにします。<br>ご確認いただきましたら、各介護サービスのご利用の手続きに入ります。
+                    .li
+                        .secBox
+                            .leftBox
+                                .num
+                                    p 05
+                            .rightBox
+                                .dl
+                                    .dt
+                                        h3 無料体験
+                                    .dd
+                                        .txt
+                                            p 施設の雰囲気や活動内容、ごはんは美味しいか、ぜひまずは体験してみてください。<br>ご利用者さま同士の仲が良く、いろいろ教えてくれますよ。<br>あたたかい雰囲気でお迎えするので、リラックスしていらしてください。<br>気に入っていただきましたら、施設との契約をし、ご利用が始まります。
+    #guide02.sec02
+        .secWrap01
+            .pageSecTtlBox
+                .sub
+                    p FEES
+                .pageSecTtl
+                    h2 料金案内
+            .topTxt.txt
+                p 介護保険の負担割合によりお支払いいただくご利用料金が変わりますので、介護保険負担割合証で負担割合をご確認ください。<br>被爆者手帳をお持ちの場合は負担割合は０になります。
+            .tabPanel
+                .tabList
+                    .ul
+                        .li.tabBtn.active
+                            p 要介護の場合
+                        .li.tabBtn
+                            p 要支援の場合
+                .tabBox
+                    .ttlHead
+                        .ttl01
+                            p 地域密着型デイサービスセンター
+                        .ttl02
+                            p 可部きらり
+                    .section.tabItem
+                        .secTtl
+                            p 要介護の場合
+                        p.gothic 一日当たりの利用料金
+                        .aside.gothic
+                            p ※一日あたり7~8時間の利用想定
+                        .priceTable.gothic
+                            .table
+                                .thead
+                                    .tr
+                                        .th
+                                            p 介護度
+                                        .th
+                                            p 1割負担
+                                        .th
+                                            p 全額負担
+                                .tbody
+                                    .tr
+                                        .td
+                                            p 要介護1
+                                        .td
+                                            p 786円
+                                        .td
+                                            p 7,860円
+                                    .tr
+                                        .td
+                                            p 要介護2
+                                        .td
+                                            p 930円
+                                        .td
+                                            p 9,300円
+                                    .tr
+                                        .td
+                                            p 要介護3
+                                        .td
+                                            p 1,078円
+                                        .td
+                                            p 10,780円
+                                    .tr
+                                        .td
+                                            p 要介護4
+                                        .td
+                                            p 1,224円
+                                        .td
+                                            p 12,240円
+                                    .tr
+                                        .td
+                                            p 要介護5
+                                        .td
+                                            p 1,371円
+                                        .td
+                                            p 13,710円
+                        .aside.gothic
+                            p ※令和3年4月法改正後　地域密着型通所介護の料金になります。
+                        .additionalPanel
+                            .ttl
+                                p 各種追加料金
+                            .priceList.gothic
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p おやつ代、食事代
+                                            .right
+                                                p 660円/回
+                                        .li
+                                            .left
+                                                p 入浴介助
+                                            .right
+                                                p 57円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練（Ⅰ）※1
+                                            .right
+                                                p 58円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練（Ⅱ）※1
+                                            .right
+                                                p 20円/回
+                                        .li
+                                            .left
+                                                p 若年性認知症利用者受入
+                                            .right
+                                                p 受入可能
+                                        .li
+                                            .left
+                                                p 栄養改善サービス
+                                        .li
+                                            .left
+                                                p 口腔機能向上
+                                            .right
+                                                p 67円/回
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p 入浴介助加算Ⅱ
+                                            .right
+                                                p 57円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練加算
+                                            .right
+                                                p 58円/回
+                                        .li
+                                            .left
+                                                p サービス提供体制強化加算Ⅰ（イ）
+                                            .right
+                                                p 22円/回
+                                        .li
+                                            .left
+                                                p 口腔・栄養スクリーニング加算
+                                            .right
+                                                p 5円/回
+                                        .li
+                                            .left
+                                                p 科学的介護推進体制加算
+                                            .right
+                                                p 41円/月
+                                        .li.noLine
+                                            .left
+                                                p 介護職員処遇改善加算/
+                                            .right
+                                                p 90円/月
+                                        .li
+                                            .left
+                                                p 介護職員等特定処遇改善加算
+                                        .li
+                                            .left
+                                                p 介護職員等ベースアップ加算
+                                            .right
+                                                p 25円/月
+                    .section.tabItem
+                        .secTtl
+                            p 要支援の場合
+                        p.gothic 一カ月あたりの利用料金
+                        .aside.gothic
+                            p ※一日あたり7~8時間の利用想定
+                        .priceTable.gothic
+                            .table
+                                .thead
+                                    .tr
+                                        .th
+                                            p 介護度
+                                        .th
+                                            p 1割負担
+                                        .th
+                                            p 全額負担
+                                .tbody
+                                    .tr
+                                        .td
+                                            p 要介護1
+                                        .td
+                                            p 1,878円
+                                        .td
+                                            p 18,780円
+                                    .tr
+                                        .td
+                                            p 要介護2
+                                        .td
+                                            p 3,783円
+                                        .td
+                                            p 37,830円
+                        .additionalPanel
+                            .ttl
+                                p 各種追加料金
+                            .priceList.gothic
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p おやつ代、食事代、工作材料費
+                                            .right
+                                                p 660円/回
+                                        .li
+                                            .left
+                                                p 複数サービス実施加算
+                                            .right
+                                                p 501円/月
+                                        .li
+                                            .left
+                                                p サービス提供体制加算
+                                            .right
+                                                p 92円/月
+                                        .li
+                                            .left
+                                                p 科学的介護推進体制加算
+                                            .right
+                                                p 41円/月
+                                        .li.noLine
+                                            .left
+                                                p 介護職員処遇改善加算/
+                                            .right
+                                                p 180円〜/月
+                                        .li
+                                            .left
+                                                p 介護職員等特定処遇改善加算
+                                        .li
+                                            .left
+                                                p 介護職員等ベースアップ加算
+                                            .right
+                                                p 25円〜/月
+            .tabPanel
+                .tabList
+                    .ul
+                        .li.tabBtn.active
+                            p 要介護の場合
+                        .li.tabBtn
+                            p 要支援の場合
+                .tabBox
+                    .ttlHead
+                        .ttl01
+                            p 認知症対応型デイサービスセンター
+                        .ttl02
+                            p ゆめきらり
+                    .section.tabItem
+                        .secTtl
+                            p 要介護の場合
+                        p.gothic 一日当たりの利用料金
+                        .aside.gothic
+                            p ※一日あたり7~8時間の利用想定
+                        .priceTable.gothic
+                            .table
+                                .thead
+                                    .tr
+                                        .th
+                                            p 介護度
+                                        .th
+                                            p 1割負担
+                                        .th
+                                            p 全額負担
+                                .tbody
+                                    .tr
+                                        .td
+                                            p 要介護1
+                                        .td
+                                            p 786円
+                                        .td
+                                            p 7,860円
+                                    .tr
+                                        .td
+                                            p 要介護2
+                                        .td
+                                            p 930円
+                                        .td
+                                            p 9,300円
+                                    .tr
+                                        .td
+                                            p 要介護3
+                                        .td
+                                            p 1,078円
+                                        .td
+                                            p 10,780円
+                                    .tr
+                                        .td
+                                            p 要介護4
+                                        .td
+                                            p 1,224円
+                                        .td
+                                            p 12,240円
+                                    .tr
+                                        .td
+                                            p 要介護5
+                                        .td
+                                            p 1,371円
+                                        .td
+                                            p 13,710円
+                        .aside.gothic
+                            p ※令和3年4月法改正後　地域密着型通所介護の料金になります。
+                        .additionalPanel
+                            .ttl
+                                p 各種追加料金
+                            .priceList.gothic
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p おやつ代、食事代
+                                            .right
+                                                p 660円/回
+                                        .li
+                                            .left
+                                                p 入浴介助
+                                            .right
+                                                p 57円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練（Ⅰ）※1
+                                            .right
+                                                p 58円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練（Ⅱ）※1
+                                            .right
+                                                p 20円/回
+                                        .li
+                                            .left
+                                                p 若年性認知症利用者受入
+                                            .right
+                                                p 受入可能
+                                        .li
+                                            .left
+                                                p 栄養改善サービス
+                                        .li
+                                            .left
+                                                p 口腔機能向上
+                                            .right
+                                                p 67円/回
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p 入浴介助加算Ⅱ
+                                            .right
+                                                p 57円/回
+                                        .li
+                                            .left
+                                                p 個別機能訓練加算
+                                            .right
+                                                p 58円/回
+                                        .li
+                                            .left
+                                                p サービス提供体制強化加算Ⅰ（イ）
+                                            .right
+                                                p 22円/回
+                                        .li
+                                            .left
+                                                p 口腔・栄養スクリーニング加算
+                                            .right
+                                                p 5円/回
+                                        .li
+                                            .left
+                                                p 科学的介護推進体制加算
+                                            .right
+                                                p 41円/月
+                                        .li.noLine
+                                            .left
+                                                p 介護職員処遇改善加算/
+                                            .right
+                                                p 90円/月
+                                        .li
+                                            .left
+                                                p 介護職員等特定処遇改善加算
+                                        .li
+                                            .left
+                                                p 介護職員等ベースアップ加算
+                                            .right
+                                                p 25円/月
+                    .section.tabItem
+                        .secTtl
+                            p 要支援の場合
+                        p.gothic 一カ月あたりの利用料金
+                        .aside.gothic
+                            p ※一日あたり7~8時間の利用想定
+                        .priceTable.gothic
+                            .table
+                                .thead
+                                    .tr
+                                        .th
+                                            p 介護度
+                                        .th
+                                            p 1割負担
+                                        .th
+                                            p 全額負担
+                                .tbody
+                                    .tr
+                                        .td
+                                            p 要介護1
+                                        .td
+                                            p 1,878円
+                                        .td
+                                            p 18,780円
+                                    .tr
+                                        .td
+                                            p 要介護2
+                                        .td
+                                            p 3,783円
+                                        .td
+                                            p 37,830円
+                        .additionalPanel
+                            .ttl
+                                p 各種追加料金
+                            .priceList.gothic
+                                .priceBox
+                                    .ul
+                                        .li
+                                            .left
+                                                p おやつ代、食事代、工作材料費
+                                            .right
+                                                p 660円/回
+                                        .li
+                                            .left
+                                                p 複数サービス実施加算
+                                            .right
+                                                p 501円/月
+                                        .li
+                                            .left
+                                                p サービス提供体制加算
+                                            .right
+                                                p 92円/月
+                                        .li
+                                            .left
+                                                p 科学的介護推進体制加算
+                                            .right
+                                                p 41円/月
+                                        .li.noLine
+                                            .left
+                                                p 介護職員処遇改善加算/
+                                            .right
+                                                p 180円〜/月
+                                        .li
+                                            .left
+                                                p 介護職員等特定処遇改善加算
+                                        .li
+                                            .left
+                                                p 介護職員等ベースアップ加算
+                                            .right
+                                                p 25円〜/月
+    #guide03.sec03
+        .secWrap01
+            .pageSecTtlBox
+                .sub
+                    p FAQ
+                .pageSecTtl
+                    h2 よくある質問
+            .secPanelList
+                .secPanel
+                    .dl.accord
+                        .dt
+                            p 利用時間は何時から何時までですか？
+                        .dd.txt
+                            p 可部きらりの利用時間は9:00～16:00で、日曜日やお盆、年末年始はお休みです。<br>ゆめきらりの利用時間は10:00~17:00で、土日やお盆、年末年始はお休みです。
+                .secPanel
+                    .dl.accord
+                        .dt
+                            p 送迎サービスはありますか？
+                        .dd.txt
+                            p はい、ございます。<br>送迎エリアや時間についての詳細は、当社までお問い合わせください。
+                .secPanel
+                    .dl.accord
+                        .dt
+                            p 食事の提供はありますか？
+                        .dd.txt
+                            p お昼ごはんとおやつをご用意しています。<br>お昼ごはんは自家製野菜を取り入れ、施設で職員が調理しています。<br>おやつは毎日利用者さまと手作りしています。
+                .secPanel
+                    .dl.accord
+                        .dt
+                            p 介護保険は適用されますか？
+                        .dd.txt
+                            p はい、当社のデイサービスは介護保険適用の施設です。<br>詳しい適用条件やお手続きについては、地域包括センター又は居宅介護支援事業所にお問い合わせください。
+                .secPanel
+                    .dl.accord
+                        .dt
+                            p 施設の見学はできますか？
+                        .dd.txt
+                            p はい、無料体験を受け付けております。<br>事前にご予約いただく必要がありますので、お問い合わせください。
+// △メイン△

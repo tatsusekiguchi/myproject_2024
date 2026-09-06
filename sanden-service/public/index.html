@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/attach.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/layout_sp.css">
+	<!-- js-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/scrollAnimation.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body id="top">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap clearfix">
+			<div class="logo"><a href="/"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></a></div>
+			<div class="headBox">
+				<div class="navBox meiryo">
+					<div class="navList">
+						<div class="ul">
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li pulldown"><a class="pcBreak" href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">私たちについて</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="about">
+											<div>
+												<p>私たちについて</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec02">
+											<div>
+												<p>データで見る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec04">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec03">
+											<div>
+												<p>ビジョン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">働く環境</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="working">
+											<div>
+												<p>働く環境</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec01">
+											<div>
+												<p>仕事内容</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec02">
+											<div>
+												<p>一日の流れ</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec04">
+											<div>
+												<p>福利厚生</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">社員を知る</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="staff">
+											<div>
+												<p>社員を知る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec01">
+											<div>
+												<p>先輩の声</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec02">
+											<div>
+												<p>キャリアプラン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">採用情報</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="recruit">
+											<div>
+												<p>採用情報</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec02">
+											<div>
+												<p>求める人材</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec04">
+											<div>
+												<p>募集要項</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li entry"><a href="recruit?sec05">
+									<div>
+										<p>ENTRY</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="humberger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="topMain main">
+		<!--.splash
+      .splashLogo
+          img(src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/loading.svg", alt="")
+      -->
+		<div class="topKv">
+			<div class="kvArea">
+				<div class="kvTtl">
+					<h1>もしものときの、<br>頼れるあなたに。</h1>
+					<p>電気と安心をつなぐ仕事</p>
+				</div>
+			</div>
+		</div>
+		<div class="sec01 fadeUp">
+			<div class="secBox01">
+				<div class="secWrap02">
+					<div class="light"></div>
+					<div class="secTtl">
+						<p>MESSAGE</p>
+						<h2>メッセージ</h2>
+					</div>
+					<div class="subTtl">
+						<h3>電気を守り、<br>安心をつなぐ</h3>
+					</div>
+					<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_img.png" alt=""></div>
+				</div>
+			</div>
+			<div class="secBox02">
+				<div class="secWrap02">
+					<div class="txt">
+						<p>私たちの仕事は、みなさまのいつもの「変わらない日常」を守ることです。<br>地震や台風などが多い災害大国の日本は、いつ何が起こってもおかしくありません。<br>だからこそ、何かが起きる前の準備がとても大切です。<br>私たちは万が一に備え、日々徹底した管理と丁寧な作業で<br>ライフラインである電気をどんなときでも安定して供給できるよう心がけています。</p>
+						<p>なくてはならない「社会に必要な仕事」に誇りをもって<br>これからも時代を超えて愛される会社であるために取り組んでまいります。</p>
+					</div><a class="more more01" href="about?sec01">
+						<div>
+							<p>READMORE</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="sec02 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>WORKING</p>
+					<h2>働く環境</h2>
+				</div>
+				<div class="workingList">
+					<div class="ul fadeLeft">
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<h3>仕事内容</h3>
+								</div>
+								<div class="dd">
+									<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_img_01.png" alt=""></div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>ビルや商業施設、学校などの非常用発電設備や蓄電設備、変電設備などのメンテナンスをメインに行っています。</p>
+									</div><a class="more more02" href="working?sec01">
+										<div>
+											<p>READMORE</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<h3>福利厚生</h3>
+								</div>
+								<div class="dd">
+									<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_img_02.png" alt=""></div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>リフレッシュ休暇制度や積み立てNISA補助、資格取得支援、保養地施設の利用など充実の制度で体と心の健康をサポートします。</p>
+									</div><a class="more more02" href="working?sec04">
+										<div>
+											<p>READMORE</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ul fadeLeft">
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<h3>研修制度</h3>
+								</div>
+								<div class="dd">
+									<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_img_03.png" alt=""></div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>未経験の方も安心な新人研修や、スキルを上げるメーカー技術研修など、ステップアップに応じたものに参加できます。</p>
+									</div><a class="more more02" href="working?sec03">
+										<div>
+											<p>READMORE</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="dl">
+								<div class="dt">
+									<h3>一日の流れ</h3>
+								</div>
+								<div class="dd">
+									<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_img_04.png" alt=""></div>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>サンデンで働く一日を紹介します。日々、暮らしの安全を守るため、丁寧で確実な仕事を心がけています。</p>
+									</div><a class="more more02" href="working?sec02">
+										<div>
+											<p>READMORE</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>ABOUT</p>
+					<h2>わたしたちについて</h2>
+				</div>
+				<div class="secListBox">
+					<div class="secBox">
+						<div class="headBox clearfix">
+							<div class="left">
+								<h3>会社概要</h3>
+							</div>
+							<div class="right"><a class="more more01" href="about?sec04">
+									<div>
+										<p>READMORE</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="bodyBox">
+							<div class="txt">
+								<p>㈱サンデンサービスは、千葉県にある電気設備メンテナンスの会社です。<br>「いざ」という非常時に備えて、日々設備の保守・点検を行い、<br>みなさまの安全を支える仕事をしています。</p>
+							</div><a class="more more02" href="about?sec04">
+								<div>
+									<p>READMORE</p>
+								</div>
+							</a>
+							<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_img_01.png" alt=""></div>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="headBox clearfix">
+							<div class="left">
+								<h3>データで見る</h3>
+							</div>
+							<div class="right"><a class="more more01" href="about?sec02">
+									<div>
+										<p>READMORE</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="bodyBox">
+							<div class="txt">
+								<p>サンデンサービスとは一体どんな企業?<br>誠実な姿勢と確かな技術の、サンデンサービスの特徴を様々なデータでご紹介します。</p>
+							</div><a class="more more02" href="about?sec02">
+								<div>
+									<p>READMORE</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="headBox clearfix">
+							<div class="left">
+								<h3>ビジョン</h3>
+							</div>
+							<div class="right"><a class="more more01" href="about?sec03">
+									<div>
+										<p>READMORE</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="bodyBox">
+							<div class="txt">
+								<p>社名に掲げるサンデンのように、「陸、海、空」の３つの電気を扱い、<br>くらしを守る会社を目指してまいります。</p>
+							</div><a class="more more02" href="about?sec03">
+								<div>
+									<p>READMORE</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec04 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>STAFF</p>
+					<h2>社員を知る</h2>
+				</div>
+				<div class="ul">
+					<div class="li list01">
+						<div class="dl">
+							<div class="dt">
+								<p>INTERVIEW</p>
+							</div>
+							<div class="dd">
+								<p>会社で働く先輩社員の声を聞いてみよう！</p><a class="more more01" href="staff?sec01">
+									<div>
+										<p>READMORE</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="li list02">
+						<div class="dl">
+							<div class="dt">
+								<p>CAREER PLAN</p>
+							</div>
+							<div class="dd">
+								<p>入社後のステップアップを見てみよう！</p><a class="more more01" href="staff?sec02">
+									<div>
+										<p>READMORE</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec05 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>RECRUIT</p>
+					<h2>採用情報</h2>
+				</div>
+				<div class="ttlBox">
+					<div class="ttl">
+						<div class="box">
+							<p class="em">日本</p>
+							<p>を支える、</p>
+						</div>
+						<div class="box">
+							<p class="em">未来</p>
+							<p>につなぐ</p>
+						</div>
+					</div>
+				</div>
+				<div class="txt">
+					<p>どんなときも一緒に乗り越え成長していける、個性豊かな仲間を待っています。<br>私たちと一緒に働きませんか？</p>
+				</div>
+				<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec05_img.png" alt=""></div>
+				<div class="ul clearfix">
+					<div class="li"><a class="more more01" href="recruit?sec02">
+							<div>
+								<p>求める人物像</p>
+							</div>
+						</a></div>
+					<div class="li"><a class="more more01" href="recruit?sec04">
+							<div>
+								<p>採用の流れ</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footEntry">
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>ENTRY</p>
+					<h2>採用情報</h2>
+				</div>
+				<div class="ul clearfix">
+					<div class="li"><a class="more more01 mynavi" href="http://" target="_blank" rel="noopener">
+							<div>
+								<p>マイナビからのエントリー</p>
+							</div>
+						</a></div>
+					<div class="li"><a class="more more01" href="recruit?sec05">
+							<div>
+								<p>エントリーフォーム</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footBox">
+			<div class="secWrap01">
+				<div class="footInner">
+					<div class="left">
+						<div class="logo"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						<div class="txt">
+							<p>〒284-0012<br>千葉県四街道市 物井1530-5</p>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="https://goo.gl/maps/vpGTW19GUvzQPEaV8" target="_blank" rel="noopener">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_map.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="tel:0434235901">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_tel.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="btnLink">
+							<div class="btn"><a href="" target="_blank" rel="noopener">
+									<div>
+										<p>corporate site</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="/">
+									<div>
+										<p>ホーム</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="copy">&copy; 2021 SANDEN SERVICE</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

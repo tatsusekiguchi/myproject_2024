@@ -1,0 +1,1988 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  padding: 0 60px;
+  z-index: 2;
+}
+.topMain .topKvContainer .topKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  border-radius: 0 0 10px 10px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: 660px;
+  margin: 0 auto;
+}
+.topMain .topKvContainer .kvMain .hat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.topMain .topKvContainer .kvMain .logo {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  z-index: 1;
+}
+.topMain .topKvContainer .kvMain .txtImg {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.topMain .topKvContainer .kvMain h1 {
+  display: none;
+}
+.topMain .topKvContainer .kvNews {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.topMain .topKvContainer .kvNews .dl {
+  display: table;
+  width: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.topMain .topKvContainer .kvNews .dl .dt {
+  display: table-cell;
+  width: 150px;
+  padding: 10px 5px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  background: #599f5b;
+}
+.topMain .topKvContainer .kvNews .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+}
+.topMain .circleContainer {
+  position: relative;
+  z-index: 1;
+}
+.topMain .circleContainer .circlePanel.circlePanel03 .circle-1:after {
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_main_circle_bg_03.png) no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 1025px) {
+  .topMain .circleContainer .circlePanel.circlePanel02 {
+    position: absolute;
+    top: 25%;
+    right: -180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+.topMain .circleContainer .circleTitle01 {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  max-width: 500px;
+  width: 50%;
+}
+.topMain .circleContainer .circleTitle02 {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  max-width: 400px;
+  width: 40%;
+}
+.topMain .circleContainer .circleTitle03 {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  max-width: 340px;
+  width: 30%;
+}
+@media (max-width: 1024px) {
+  .topMain .circleContainer .circleTitle03 {
+    left: 35%;
+  }
+}
+.topMain .circle-1 {
+  position: relative;
+  top: -80px;
+  left: -100px;
+  width: 60%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.topMain .circle-1:after {
+  content: "";
+  display: block;
+  width: 85%;
+  padding-top: 85%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_main_circle_bg_01.png) no-repeat;
+  background-size: 100%;
+}
+.topMain .circle-1 .rotate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.topMain .circle-1 .rotate .rotate-ctn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: 40s linear reverse-big-circle infinite;
+}
+.topMain .circle-1 .rotate .box {
+  position: absolute;
+  width: 100px;
+  height: 50%;
+  transform-origin: 50% 100%;
+}
+.topMain .circle-1 .rotate .box.box-1 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(0deg);
+}
+.topMain .circle-1 .rotate .box.box-2 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-30deg);
+}
+.topMain .circle-1 .rotate .box.box-3 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-60deg);
+}
+.topMain .circle-1 .rotate .box.box-4 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-90deg);
+}
+.topMain .circle-1 .rotate .box.box-5 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-120deg);
+}
+.topMain .circle-1 .rotate .box.box-6 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-150deg);
+}
+.topMain .circle-1 .rotate .box.box-7 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-180deg);
+}
+.topMain .circle-1 .rotate .box.box-8 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-210deg);
+}
+.topMain .circle-1 .rotate .box .parts {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.topMain .circle-2 {
+  position: relative;
+  top: -80px;
+  left: -10px;
+  width: 60%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.topMain .circle-2:after {
+  content: "";
+  display: block;
+  width: 85%;
+  padding-top: 85%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_main_circle_bg_02.png) no-repeat;
+  background-size: 100%;
+}
+.topMain .circle-2 .rotate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.topMain .circle-2 .rotate .rotate-ctn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: 40s linear big-circle infinite;
+}
+.topMain .circle-2 .rotate .box {
+  position: absolute;
+  width: 100px;
+  height: 50%;
+  transform-origin: 50% 100%;
+}
+.topMain .circle-2 .rotate .box.box-1 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(0deg);
+}
+.topMain .circle-2 .rotate .box.box-2 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(30deg);
+}
+.topMain .circle-2 .rotate .box.box-3 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(60deg);
+}
+.topMain .circle-2 .rotate .box.box-4 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(90deg);
+}
+.topMain .circle-2 .rotate .box.box-5 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(120deg);
+}
+.topMain .circle-2 .rotate .box.box-6 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(150deg);
+}
+.topMain .circle-2 .rotate .box.box-7 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(180deg);
+}
+.topMain .circle-2 .rotate .box.box-8 {
+  left: 50%;
+  transform: translate(-50%, 0) rotate(210deg);
+}
+.topMain .circle-2 .rotate .box .parts {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .topMain .circlePanel02 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .topMain .circle-1,
+.topMain .circle-2 {
+    width: 80%;
+    padding-top: 80%;
+  }
+  .topMain .circle-1 .rotate .box .parts,
+.topMain .circle-2 .rotate .box .parts {
+    width: 55%;
+    padding: 10px 0;
+  }
+  .topMain .circle-1 {
+    top: 0;
+    left: -50px;
+  }
+  .topMain .circle-2 {
+    top: 0;
+    left: auto;
+    right: -50px;
+  }
+}
+.topMain .circleContainer {
+  /* アニメーションの適用 */
+  /* 逆回転アニメーションの適用 */
+}
+.topMain .circleContainer .box-1 .parts {
+  animation: circle1 10s linear infinite;
+  /* 10秒で無限にアニメーションが繰り返される */
+}
+.topMain .circleContainer .box-2 .parts {
+  animation: circle2 10s linear infinite;
+}
+.topMain .circleContainer .box-3 .parts {
+  animation: circle3 10s linear infinite;
+}
+.topMain .circleContainer .box-4 .parts {
+  animation: circle4 10s linear infinite;
+}
+.topMain .circleContainer .box-5 .parts {
+  animation: circle5 10s linear infinite;
+}
+.topMain .circleContainer .box-6 .parts {
+  animation: circle6 10s linear infinite;
+}
+.topMain .circleContainer .box-7 .parts {
+  animation: circle7 10s linear infinite;
+}
+.topMain .circleContainer .box-8 .parts {
+  animation: circle8 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-1 .parts {
+  animation: reverse-circle1 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-2 .parts {
+  animation: reverse-circle2 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-3 .parts {
+  animation: reverse-circle3 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-4 .parts {
+  animation: reverse-circle4 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-5 .parts {
+  animation: reverse-circle5 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-6 .parts {
+  animation: reverse-circle6 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-7 .parts {
+  animation: reverse-circle7 10s linear infinite;
+}
+.topMain .circleContainer .reverse .box-8 .parts {
+  animation: reverse-circle8 10s linear infinite;
+}
+.topMain .navContainer {
+  position: relative;
+  margin: -240px 0 0;
+  padding: 200px 0 100px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .navContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 200px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_flag_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .navContainer .messagePanel {
+  margin: 0 0 60px;
+  font-size: clamp(40px, 5vw, 80px);
+  color: #ffffff;
+}
+.topMain .navContainer .navPanelList .navPanel {
+  position: relative;
+  z-index: 3;
+}
+.topMain .navContainer .navPanelList .navPanel + .navPanel {
+  margin: 40px 0 0;
+  z-index: 2;
+}
+.topMain .navContainer .navPanelList .navPanel + .navPanel + .navPanel {
+  z-index: 1;
+}
+.topMain .navContainer .navPanelList .navPanel a {
+  display: block;
+  padding: 30px;
+  width: calc(100% - 300px);
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox {
+  position: relative;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .ttl01 {
+  max-width: 550px;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .ttl02 {
+  max-width: 400px;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .ttl03 {
+  max-width: 650px;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox {
+  position: relative;
+  max-width: 550px;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox .iconBox01 {
+  position: absolute;
+  right: -50px;
+  bottom: -80px;
+  max-width: 200px;
+  animation: fuwafuwa 2s infinite;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox .iconBox02 {
+  position: absolute;
+  left: -50px;
+  bottom: -80px;
+  max-width: 200px;
+  transform-origin: center bottom;
+  animation: yurayura 2s infinite;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox .iconBox03 {
+  position: absolute;
+  right: -120px;
+  bottom: 30px;
+  max-width: 350px;
+  width: 40%;
+  animation: fuwafuwa 2s infinite;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox .iconBox03 .icon01 {
+  position: relative;
+  max-width: 140px;
+  margin: 0 auto;
+}
+.topMain .navContainer .navPanelList .navPanel .txtBox .photoBox .iconBox03 .icon02 {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+}
+.topMain .navContainer .navPanelList .navPanel01::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 320px;
+  height: 180px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_flag_02.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .navContainer .navPanelList .navPanel01 a {
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_box_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.topMain .navContainer .navPanelList .navPanel02 a {
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_box_bg_02.png) no-repeat;
+  background-size: cover;
+}
+.topMain .navContainer .navPanelList .navPanel03 a {
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_nav_box_bg_03.png) no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .topMain .navContainer .navPanelList .navPanel .txtBox .ttl01 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    width: 40%;
+    z-index: 1;
+  }
+  .topMain .navContainer .navPanelList .navPanel .txtBox .ttl02 {
+    position: absolute;
+    top: 60px;
+    right: 500px;
+    width: 40%;
+    z-index: 1;
+  }
+  .topMain .navContainer .navPanelList .navPanel .txtBox .ttl03 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    width: 45%;
+    z-index: 1;
+  }
+  .topMain .navContainer .navPanelList .navPanel01,
+.topMain .navContainer .navPanelList .navPanel03 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .topMain .navContainer .navPanelList .navPanel02 .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+.topMain .secTtl h2 {
+  display: none;
+}
+.topMain .sec01 {
+  padding: 120px 0;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secTtl {
+  max-width: 280px;
+  margin: 0 auto 60px;
+}
+.topMain .sec01 .listBox {
+  text-align: center;
+}
+.topMain .sec01 .listBox .photo {
+  margin: 0 0 -20px;
+}
+.topMain .sec01 .listBox .ttl01 {
+  max-width: 360px;
+  margin: 0 auto 10px;
+}
+.topMain .sec01 .listBox .ttl02 {
+  max-width: 400px;
+  margin: 0 auto 10px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listBox .list {
+    width: 46%;
+    padding: 0 10px;
+  }
+}
+.topMain .sec02 {
+  padding: 120px 0;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secTtl {
+  max-width: 280px;
+  margin: 0 auto 60px;
+}
+.topMain .sec02 .infoBox .dl {
+  display: table;
+  width: 100%;
+  height: 75px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec02_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec02 .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.topMain .sec02 .infoBox .dl .dt {
+  display: table-cell;
+  width: 25%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec02_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec02 .infoBox .dl .dd {
+  display: table-cell;
+  padding: 0 40px;
+  vertical-align: middle;
+}
+.topMain .sec02 .infoBox .dl .dd a {
+  display: inline-block;
+}
+.topMain .sec02 .infoBox .dl.large {
+  height: 110px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec02_info_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec02 .infoBox .dl.large .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec02_info_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec03 {
+  padding: 120px 0;
+  background: url(https://stream-gr.com/system_panel/uploads/images/top_sec03_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .secTtl {
+  max-width: 460px;
+  margin: 0 auto 60px;
+}
+.topMain .sec03 .topPanel {
+  margin: 0 0 100px;
+}
+.topMain .sec03 .topPanel .secBox .photo img {
+  border-radius: 10px;
+}
+.topMain .sec03 .topPanel .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.topMain .sec03 .topPanel .secBox .txtBox .txt {
+  margin: 0 0 40px;
+}
+.topMain .sec03 .topPanel .secBox .txtBox .name p {
+  display: inline-block;
+}
+.topMain .sec03 .topPanel .secBox .txtBox .name .em {
+  margin: 0 0 0 10px;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .topPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec03 .topPanel .secBox .photo {
+    width: 46%;
+  }
+  .topMain .sec03 .topPanel .secBox .txtBox {
+    width: 50%;
+  }
+}
+.topMain .sec03 .slidePanel .slideTtl {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.topMain .sec03 .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topMain .sec03 .slidePanel .slideBox .ul .li {
+  width: 20%;
+  margin: 0 5px;
+}
+.topMain .sec03 .slidePanel .slideBox .ul .li img {
+  border-radius: 10px;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .topSection {
+  padding: 60px 0 0;
+}
+.serviceMain .topSection .topBox01 {
+  max-width: 740px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .serviceMain .topSection .topBox01 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .topSection .topBox01 .icon {
+    width: 25%;
+  }
+  .serviceMain .topSection .topBox01 .ttl {
+    width: 70%;
+  }
+}
+.serviceMain .topSection .topBox02 {
+  max-width: 1300px;
+  margin: -10px auto 0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.serviceMain .topSection .topBox02 .txt {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.serviceMain .secTtl h2 {
+  display: none;
+}
+.serviceMain .activitySection {
+  padding: 140px 0 120px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/activity_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .activitySection .secWrap01 {
+  position: relative;
+}
+.serviceMain .activitySection .secTtl {
+  position: relative;
+  max-width: 330px;
+  margin: 0 auto 60px;
+  z-index: 1;
+}
+.serviceMain .activitySection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceMain .activitySection .listBox .ul .li {
+  position: relative;
+  width: 49%;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(3) {
+  margin: -80px 0 0;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(4) {
+  left: -80px;
+  margin: -60px 0 0;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(5) {
+  margin: -40px 0 0;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(6) {
+  margin: -20px 0 0;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -150px;
+  width: 350px;
+  height: 200px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/activity_flag_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.serviceMain .activitySection .listBox .ul .li:nth-child(6):before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -150px;
+  width: 350px;
+  height: 200px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/activity_flag_02.png) no-repeat;
+  background-size: 100% auto;
+}
+.serviceMain .activitySection .iconTop {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+.serviceMain .activitySection .iconTop img {
+  animation: yurayura 2s infinite;
+}
+.serviceMain .activitySection .iconBtm {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.serviceMain .activitySection .iconBtm img {
+  animation: yurayura 2s infinite;
+}
+.serviceMain .activitySection .iconTop01 {
+  right: 300px;
+  width: 300px;
+}
+.serviceMain .activitySection .iconBtm01 {
+  bottom: -100px;
+  width: 300px;
+}
+.serviceMain .activitySection .iconTop02 {
+  right: 280px;
+  width: 200px;
+}
+.serviceMain .activitySection .iconBtm02 {
+  bottom: -60px;
+  width: 200px;
+}
+.serviceMain .activitySection .iconTop03 {
+  right: 280px;
+  width: 200px;
+}
+.serviceMain .activitySection .iconBtm03 {
+  bottom: -60px;
+  width: 200px;
+}
+.serviceMain .scheduleSection {
+  padding: 120px 0;
+}
+.serviceMain .scheduleSection .secWrap01 {
+  position: relative;
+}
+.serviceMain .scheduleSection .secTtl {
+  max-width: 550px;
+  margin: 0 auto 60px;
+}
+.serviceMain .scheduleSection .icon01 {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 140px;
+}
+.serviceMain .scheduleSection .icon02 {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 140px;
+}
+
+/*////////////////////////////////////////////////////////////
+	dayservice
+///////////////////////////////////////////////////////////*/
+.dayserviceMain .scheduleSection .infoListBox .infoList .ttlBox {
+  margin: 0 0 30px;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoList .ttlBox .ttl01 {
+  max-width: 160px;
+  margin: 0 auto;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoList .ttlBox .ttl02 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl {
+  display: table;
+  width: 100%;
+  min-height: 75px;
+  font-size: 17px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_schedule_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl .dt {
+  display: table-cell;
+  width: 120px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_schedule_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl .dd .aside {
+  font-size: 14px;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl.large {
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_schedule_info_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.dayserviceMain .scheduleSection .infoListBox .infoBox .dl.large .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_schedule_info_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+@media (min-width: 1025px) {
+  .dayserviceMain .scheduleSection .infoListBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dayserviceMain .scheduleSection .infoListBox .infoList {
+    width: 48%;
+  }
+}
+.dayserviceMain .calendarSection {
+  padding: 0 0 120px;
+}
+.dayserviceMain .calendarSection .secTtl {
+  max-width: 550px;
+  margin: 0 auto 60px;
+}
+.dayserviceMain .evalSection {
+  padding: 0 0 120px;
+}
+.dayserviceMain .evalSection .secTtl {
+  max-width: 330px;
+  margin: 0 auto 60px;
+}
+.dayserviceMain .evalSection .txt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.dayserviceMain .evalSection .btnItemList .btnItem a {
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+}
+.dayserviceMain .evalSection .btnItemList .btnItem a p {
+  padding: 10px 30px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_eval_btn_arrow.png) right 15px center no-repeat;
+  background-size: 12px auto;
+}
+.dayserviceMain .evalSection .btnItemList .btn01 a {
+  background: #ea6a26;
+}
+.dayserviceMain .evalSection .btnItemList .btn02 a {
+  background: #0f81c0;
+}
+@media (min-width: 1025px) {
+  .dayserviceMain .evalSection .btnItemList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dayserviceMain .evalSection .btnItemList .btnItem {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+.supportMain .scheduleSection .infoBox .dl {
+  display: table;
+  width: 100%;
+  min-height: 60px;
+  font-size: 17px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_schedule_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .scheduleSection .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.supportMain .scheduleSection .infoBox .dl .dt {
+  display: table-cell;
+  width: 180px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_schedule_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .scheduleSection .infoBox .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.supportMain .scheduleSection .infoBox .dl .dd a {
+  display: inline-block;
+}
+.supportMain .scheduleSection .infoBox .dl .dd .aside {
+  font-size: 14px;
+}
+.supportMain .facilitySection {
+  padding: 120px 0;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_facility_bg.png) no-repeat;
+  background-size: cover;
+}
+.supportMain .facilitySection .secTtl {
+  max-width: 280px;
+  margin: 0 auto 60px;
+}
+.supportMain .facilitySection .listBox {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.supportMain .facilitySection .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.supportMain .facilitySection .listBox .ul .li {
+  width: 46%;
+}
+.supportMain .facilitySection .listBox .icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+}
+.supportMain .accessSection {
+  padding: 120px 0;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_access_bg.png) center top no-repeat;
+  background-size: cover;
+}
+.supportMain .accessSection .secTtl {
+  max-width: 260px;
+  margin: 0 auto 60px;
+}
+.supportMain .accessSection .infoBox .dl {
+  display: table;
+  width: 100%;
+  min-height: 60px;
+  font-size: 17px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_access_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .accessSection .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.supportMain .accessSection .infoBox .dl .dt {
+  display: table-cell;
+  width: 280px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_access_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .accessSection .infoBox .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.supportMain .accessSection .infoBox .dl .dd a {
+  display: inline-block;
+}
+.supportMain .accessSection .infoBox .dl .dd .aside {
+  font-size: 14px;
+}
+.supportMain .accessSection .infoBox .dl.large {
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_access_info_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .accessSection .infoBox .dl.large .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/support_access_info_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.supportMain .accessSection .mapPanel {
+  margin: 50px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	nursing
+///////////////////////////////////////////////////////////*/
+.nursingMain .pageTopTitle h1 {
+  background: #368539;
+}
+@media (min-width: 1025px) {
+  .nursingMain .topSection .topBox01 .icon {
+    width: 32%;
+  }
+  .nursingMain .topSection .topBox01 .ttl {
+    width: 62%;
+  }
+}
+.nursingMain .scheduleSection .infoBox .dl {
+  display: table;
+  width: 100%;
+  min-height: 60px;
+  font-size: 17px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .scheduleSection .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.nursingMain .scheduleSection .infoBox .dl .dt {
+  display: table-cell;
+  width: 180px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .scheduleSection .infoBox .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.nursingMain .scheduleSection .infoBox .dl .dd a {
+  display: inline-block;
+}
+.nursingMain .scheduleSection .infoBox .dl .dd .aside {
+  font-size: 14px;
+}
+.nursingMain .scheduleSection .infoBox .dl.large {
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .scheduleSection .infoBox .dl.large .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .scheduleSection .infoBox .dl.middle {
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_bg_03.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .scheduleSection .infoBox .dl.middle .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_schedule_info_ttl_bg_03.png) center no-repeat;
+  background-size: 100% auto;
+}
+.nursingMain .featureSection {
+  padding: 120px 0;
+  color: #ffffff;
+  background: url(https://stream-gr.com/system_panel/uploads/images/nursing_feature_bg.png) no-repeat;
+  background-size: cover;
+}
+.nursingMain .featureSection .secTtl {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+.nursingMain .featureSection .secBox .photoBox {
+  position: relative;
+}
+.nursingMain .featureSection .secBox .photoBox .icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+}
+@media (min-width: 1025px) {
+  .nursingMain .featureSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nursingMain .featureSection .secBox .photoBox {
+    width: 45%;
+  }
+  .nursingMain .featureSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageTopTitle h1 {
+  background: #0f81c0;
+}
+.contactMain .mvPanel {
+  margin: -25px 0 0;
+}
+.contactMain .mvPanel .mv {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.contactMain .mvPanel .mv img {
+  border-radius: 0 0 10px 10px;
+}
+.contactMain .secTtl {
+  margin: 0 auto 60px;
+}
+.contactMain .secTtl h2 {
+  display: none;
+}
+.contactMain .sec01 {
+  margin: -100px 0 0;
+  padding: 200px 0 100px;
+  background: #dbeacd;
+}
+.contactMain .sec01 .secTtl {
+  max-width: 700px;
+}
+.contactMain .sec01 .itemList {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.contactMain .sec01 .itemList .itemBox {
+  overflow: visible;
+  padding: 0 0 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #edf8e3;
+}
+.contactMain .sec01 .itemList .itemBox .tel a {
+  display: inline-block;
+  font-size: 60px;
+  line-height: 1;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec01 .itemList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec01 .itemList .itemBox {
+    width: 48%;
+  }
+  .contactMain .sec01 .itemList .itemBox .ttl01 {
+    position: relative;
+    top: -20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .contactMain .sec01 .itemList .itemBox .ttl02 {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    width: 500px;
+    margin: -5px auto;
+  }
+}
+.contactMain .sec02 {
+  padding: 120px 0;
+}
+.contactMain .sec02 .secTtl {
+  max-width: 700px;
+}
+.contactMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.contactMain .sec03 .topContainer {
+  padding: 120px 0;
+  color: #ffffff;
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_sec03_top_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec03 .topContainer .secTtl {
+  max-width: 280px;
+}
+.contactMain .sec03 .topContainer .secBox {
+  position: relative;
+}
+.contactMain .sec03 .topContainer .secBox .photoBox {
+  position: relative;
+  max-width: 500px;
+}
+.contactMain .sec03 .topContainer .secBox .photoBox .name {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 260px;
+  padding: 7px 10px;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 30px;
+  background: #0f81c0;
+}
+.contactMain .sec03 .topContainer .secBox .txtBox {
+  position: relative;
+}
+.contactMain .sec03 .topContainer .secBox .txtBox .txt {
+  font-size: 26px;
+}
+.contactMain .sec03 .topContainer .secBox .txtBox .txt p + p {
+  margin: 40px 0 0;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec03 .topContainer .secBox .photoBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+  }
+}
+.contactMain .sec03 .aboutSec {
+  position: relative;
+  margin: 0 0 100px;
+  padding: 100px 0 0;
+}
+.contactMain .sec03 .aboutSec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_sec03_about_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec03 .aboutSec .secWrap01 {
+  position: relative;
+}
+.contactMain .sec03 .aboutSec .subTtl {
+  max-width: 500px;
+  margin: 0 0 40px;
+}
+.contactMain .sec03 .aboutSec .aboutBox {
+  margin: 0 0 100px;
+}
+.contactMain .sec03 .aboutSec .aboutBox .dl + .dl {
+  margin: 40px 0 0;
+}
+.contactMain .sec03 .aboutSec .aboutBox .dl .dt {
+  font-size: 26px;
+}
+.contactMain .sec03 .aboutSec .aboutBox .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec03 .aboutSec .aboutBox .dl {
+    display: flex;
+    align-items: center;
+  }
+  .contactMain .sec03 .aboutSec .aboutBox .dl .dt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    min-height: 200px;
+    border-right: 2px solid #1a1a1a;
+  }
+  .contactMain .sec03 .aboutSec .aboutBox .dl .dd {
+    padding: 0 0 0 40px;
+    width: calc(100% - 360px);
+  }
+}
+.contactMain .sec03 .aboutSec .listPanel {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contactMain .sec03 .aboutSec .listPanel .ttl {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+.contactMain .sec03 .aboutSec .listPanel .listBox .ul .li img {
+  border-radius: 10px;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec03 .aboutSec .listPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec03 .aboutSec .listPanel .listBox .ul .li {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+.contactMain .sec03 .recruitSec {
+  padding: 0 0 100px;
+}
+.contactMain .sec03 .recruitSec .subTtl {
+  max-width: 500px;
+  margin: 0 0 40px;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl {
+  display: table;
+  width: 100%;
+  min-height: 75px;
+  font-size: 17px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_recruit_info_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl .dt {
+  display: table-cell;
+  width: 180px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_recruit_info_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl .dd {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl .dd a {
+  display: inline-block;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl .dd .aside {
+  font-size: 14px;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl.large {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_recruit_info_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.contactMain .sec03 .recruitSec .infoBox .dl.large .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_recruit_info_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.contactMain .sec03 .recruitSec .message {
+  max-width: 800px;
+  margin: 80px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+  resize: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/dayservice_eval_btn_arrow.png) right 15px center no-repeat #ea6a26;
+  background-size: 12px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 {
+  max-width: 500px;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList02 {
+  max-width: 500px;
+}
+.formMain .contactForm .form .checkList02 .ul .li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .form .checkList02 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList02 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList02 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .addTxt {
+  margin: 30px 0 10px;
+}
+.formMain .contactForm .form .addList {
+  display: flex;
+  align-items: center;
+}
+.formMain .contactForm .form .addList > p {
+  margin: 0 30px 0 0;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #1a1a1a;
+  background: #fbf7e9;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #171a1c;
+  border-right: 3px solid #171a1c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 2px solid #88a028;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #3e4e30;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 8px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_form_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm .formBox > .dl + .dl {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox > .dl + .dl .dd {
+  border-top: none;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  width: 300px;
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_form_ttl_bg_01.png) center no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm .formBox > .dl > .dt .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 40px;
+  height: 100%;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  display: inline-block;
+  padding: 0 4px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: #ff9861;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .ttlLabel .em {
+  position: static;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 300px);
+  padding: 15px 20px;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox {
+  border: 1px solid #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .ttl {
+  max-width: 220px;
+  padding: 3px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .txt {
+  padding: 10px 20px;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl > .dd .dogBox > p {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl.large {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_form_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm .formBox > .dl.large > .dt {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_form_ttl_bg_02.png) center no-repeat;
+  background-size: 100% auto;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  font-size: 16px;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 32%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 65%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox + p {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.complete .btnMore a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: #ea6a26;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .pageTopTitle h1 {
+  z-index: 1;
+}
+.contactMain .topKv {
+  position: relative;
+  height: 600px;
+}
+.contactMain .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contactMain .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactMain .topKv .kvBox .kv01 {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_mv_01.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .topKv .kvBox .kv02 {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_mv_02.png) center no-repeat;
+  background-size: cover;
+}
+.contactMain .topKv .kvBox .kv03 {
+  background: url(https://stream-gr.com/system_panel/uploads/images/contact_mv_03.png) center no-repeat;
+  background-size: cover;
+}

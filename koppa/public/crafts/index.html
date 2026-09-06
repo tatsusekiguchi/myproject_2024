@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" integrity="sha512-sXgF3JImNbesKnmCuR5AE5WPQo6Z8xJMYRvDknGyc0eTWL62pqgEG4Auk9d0VnstzyhRNzPak8AyemFJq7a6/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/infiniteslide.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="crafts">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="headTtl">
+				<p>ほんのひとつつみ ｜ 中部・東海・北陸エリアのかわいい伝統工芸品が見つかる</p>
+			</div>
+			<div class="headBox">
+				<div class="logoBox">
+					<div class="logo"><a href="/">
+							<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+						</a></div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navList">
+					<div class="ul">
+						<div class="li"><a href="/">
+								<div>
+									<p>TOP</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="crafts">
+								<div>
+									<p>主な取扱商品</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="guide">
+								<div>
+									<p>お客様へのご案内</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="flow">
+								<div>
+									<p>お取引の流れ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>商品検索</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="newslist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="contact">
+								<div>
+									<p>お問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="navItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>MENU</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="craftsMain main">
+		<div class="pageKvPanel">
+			<div class="secWrap02">
+				<div class="pageKv">
+					<div class="kvTitle">
+						<h1>かわいい工芸品！ご紹介</h1>
+					</div>
+					<div class="kv"><img src="https://horie-works.co.jp/system_panel/uploads/images/page_kv.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="pageSecTtl">
+						<h2>カタログのご案内</h2>
+					</div>
+					<div class="sub">
+						<p>Catalog</p>
+					</div>
+				</div>
+				<div class="topTxt txt">
+					<p>当店取り扱いの商品カタログをご紹介いたします。<br>ご興味のある方は下記よりダウンロードし、ご覧ください。<br>下記商品以外にも多くの取扱商品がございますので、詳しくはお問い合わせ下さい。</p>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="secBox">
+								<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec01_img_01.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>＜海外向けギフト多数掲載＞<br>MIYABIカタログ vol.45（2024年-2025年）</p>
+									</div>
+									<div class="txt">
+										<p>A4サイズ/72ページ</p>
+									</div>
+									<div class="btnMoreDl"><a href="#" download>
+											<div>
+												<p>ダウンロード</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="secBox">
+								<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec01_img_02.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>＜海外向けギフト多数掲載＞<br>MIYABIカタログ vol.45（2024年-2025年）</p>
+									</div>
+									<div class="txt">
+										<p>A4サイズ/72ページ</p>
+									</div>
+									<div class="btnMoreDl"><a href="#" download>
+											<div>
+												<p>ダウンロード</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="secBox">
+								<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec01_img_03.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>＜海外向けギフト多数掲載＞<br>MIYABIカタログ vol.45（2024年-2025年）</p>
+									</div>
+									<div class="txt">
+										<p>A4サイズ/72ページ</p>
+									</div>
+									<div class="btnMoreDl"><a href="#" download>
+											<div>
+												<p>ダウンロード</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="secBox">
+								<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec01_img_04.png" alt=""></div>
+								<div class="txtBox">
+									<div class="txt">
+										<p>＜海外向けギフト多数掲載＞<br>MIYABIカタログ vol.45（2024年-2025年）</p>
+									</div>
+									<div class="txt">
+										<p>A4サイズ/72ページ</p>
+									</div>
+									<div class="btnMoreDl"><a href="#" download>
+											<div>
+												<p>ダウンロード</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtlBox">
+					<div class="pageSecTtl">
+						<h2>商品紹介</h2>
+					</div>
+					<div class="sub">
+						<p>Product</p>
+					</div>
+				</div>
+			</div>
+			<div class="secContainerList">
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_01.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>lacquerware</p>
+										</div>
+										<div class="ttl02">
+											<h3>漆器</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>漆を何層にも重ねた工芸品です。<br>上品であでやかなだけでなく、耐久性も高いのが特徴です。<br>また漆に金をまぶした沈金や蒔絵などもございます。<br>主な漆器としては、輪島塗・山中漆器・越前漆器・高岡漆器・木曽漆器・飛騨春慶などを取り扱っております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>漆器について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_1_1.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_1_2.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_1_3.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_02.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>wooden products</p>
+										</div>
+										<div class="ttl02">
+											<h3>木製品</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>木材を使用した工芸品で、家具や食器、建具など実用的なものが多いです。<br>温かみある質感や手触り、経年変化も楽しめるのが特徴です。<br>加工技術が高く、天然木が使われております。<br>当店では農耕美術や中津川木工、駿河鎌倉彫、大垣木枡などを取り扱っております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>木製品について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_03.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>pottery</p>
+										</div>
+										<div class="ttl02">
+											<h3>陶磁器・七宝</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>陶器は、粘土を素材とした焼き物のことです。<br>白色粘土にガラス質の石を混ぜて焼くと磁器になります。</p>
+										<p>伝統美術品だけでなく日常使いとしても重宝されています。<br>陶器・磁器は主に瀬戸焼や尾張七宝などを取り扱っております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>陶磁器・七宝について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_04.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>bamboo craft</p>
+										</div>
+										<div class="ttl02">
+											<h3>竹細工</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>竹を用いた編み物や道具で、籠や茶道具など日用品が作られています。<br>しなやかで通気性や抗菌性が高い竹は、日々の暮らしの道具としてぴったり。</p>
+										<p>駿河竹細工や長野をはじめ各地域の竹細工等を取り扱っております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>竹細工について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_05.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>chopsticks</p>
+										</div>
+										<div class="ttl02">
+											<h3>箸</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>当店では漆を何層にも塗り重ねた美しい質感の若狭塗箸を取り扱いしております。<br>貝殻や卵の殻を色とりどりの色漆で塗り重ね、海をイメージしたものも多くあります。<br>また若狭塗箸の先端は細くとがっており、「鶴のくちばし」とも呼ばれております。</p>
+										<p>縁起が良いと贈答品などにも喜ばれております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>箸について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_06.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>casting</p>
+										</div>
+										<div class="ttl02">
+											<h3>鋳物</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>金属を溶かして型に流し込み、できた工芸品です。<br>素材は鋳鉄や鋳鋼、銅が主に使用され、仏具や花器、鍋などが作られています。<br>鋳物は富山の高岡銅器を取り扱っております。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>鋳物について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel01">
+							<div class="secBox">
+								<div class="photoBox">
+									<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_mv_07.png" alt=""></div>
+									<p>伝統工芸品</p>
+								</div>
+								<div class="txtBox">
+									<div class="ttlBox">
+										<div class="ttl01">
+											<p>others</p>
+										</div>
+										<div class="ttl02">
+											<h3>その他伝統工芸品</h3>
+										</div>
+									</div>
+									<div class="txt">
+										<p>その他、金箔や扇子、紙や絹製品など多種多様な伝統工芸品がございます。<br>お探しの伝統工芸品がございましたら、一度ご相談ください。</p>
+									</div>
+									<div class="btnMore"><a href="itemlist">
+											<div>
+												<p>その他伝統工芸品について</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="secPanel02">
+							<div class="ttlBox">
+								<div class="ttl">
+									<h3>商品のご紹介</h3>
+								</div>
+							</div>
+							<div class="listBox">
+								<div class="ul">
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+									<div class="li">
+										<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/crafts_sec02_list_dummy.png" alt=""></div>
+										<p>伝統工芸品名</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="ttlBox">
+						<div class="ttl">
+							<h2>お問い合わせ</h2>
+						</div>
+						<div class="txt">
+							<p>伝統工芸品のご依頼、ご相談はお問い合わせフォームよりご連絡ください。<br>お急ぎの場合はお電話でも承っております。</p>
+						</div>
+					</div>
+					<div class="txtBox">
+						<div class="tel"><a href="tel:0523257558">
+								<div>
+									<p class="span">Tel：</p>
+									<p class="em">052-325-7558</p>
+								</div>
+							</a>
+							<p>【営業時間】10:00～17:00</p>
+						</div>
+						<div class="mail"><a href="contact">
+								<div>
+									<p>メールでのお問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="footBox">
+					<div class="logo"><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txt">
+						<p>〒461-0001<br>名古屋市東区泉2-15-4 グランセーブル高岳401</p>
+					</div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagetop linkBtn" data-target="main"><img src="https://horie-works.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="copy">
+					<p>&copy; 2024 株式会社コッパ ワークアンドアート.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

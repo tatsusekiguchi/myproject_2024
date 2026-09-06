@@ -1,0 +1,1131 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvPanel::before {
+    width: 200px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_kv_bg.png) right no-repeat;
+    background-size: cover;
+  }
+  .topMain .topKvPanel .topKv {
+    height: 480px;
+    padding: 0 20px;
+  }
+  .topMain .topKvPanel .kvContents {
+    padding: 80px 0;
+  }
+  .topMain .topKvPanel .kvContents h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+  }
+  .topMain .topKvPanel .kvContents h1 + p {
+    margin: 0 0 30px;
+    font-size: 14px;
+  }
+  .topMain .topKvPanel .kvContents .txtList {
+    padding: 0 15px;
+  }
+  .topMain .topKvPanel .kvContents .txtList .box {
+    max-width: 400px;
+    padding: 15px;
+    font-size: 14px;
+  }
+  .topMain .topKvPanel .kvContents .txtList .box + .box {
+    margin: 15px 0 0;
+  }
+  .topMain .topSection {
+    padding: 50px 0;
+  }
+  .topMain .topSection .title {
+    margin: 0 0 30px;
+  }
+  .topMain .topSection .title p {
+    font-size: 24px;
+  }
+  .topMain .topSection .title .span {
+    display: block;
+    margin: 0 auto;
+  }
+  .topMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .topMain .secTtl p {
+    font-size: 24px;
+  }
+  .topMain .listContainer {
+    margin: 0 0 100px;
+    padding: 100px 0;
+  }
+  .topMain .listContainer .listPanel {
+    padding: 0 20px;
+  }
+  .topMain .listContainer .listPanel + .listPanel {
+    margin: 60px 0 0;
+  }
+  .topMain .listContainer .listPanel .photo {
+    max-width: 600px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox::before {
+    top: 10px;
+    left: 10px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .inner {
+    padding: 20px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .ttlBox .num {
+    margin: 0 5px 0 0;
+    font-size: 30px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .ttlBox .ttl {
+    font-size: 24px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .txt {
+    padding: 0 0 20px;
+  }
+  .topMain .listContainer .listPanel .secBox .txtBox .btnMore {
+    margin: 0 auto;
+  }
+  .topMain .sec01 {
+    padding: 60px 0;
+  }
+  .topMain .sec01 .listBox .ul {
+    flex-wrap: wrap;
+  }
+  .topMain .sec01 .listBox .ul .li {
+    width: calc(50% - 5px);
+    margin: 10px 0 0;
+  }
+  .topMain .sec01 .listBox .ul .li .photo {
+    height: 0;
+    padding: 0 0 90%;
+  }
+  .topMain .sec01 .listBox .ul .li .ttl {
+    bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .topMain .sec02 {
+    padding: 60px 0;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item {
+    display: block;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item .info {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item .info .cate {
+    font-size: 12px;
+  }
+  .topMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .topMain .sec03 .secPanel {
+    padding: 50px 20px;
+  }
+  .topMain .sec03 .secPanel .titleBox {
+    display: block;
+    max-width: 660px;
+    margin: 0 auto 10px;
+  }
+  .topMain .sec03 .secPanel .titleBox .ttl01 {
+    width: 200px;
+    margin: 0 auto 10px;
+  }
+  .topMain .sec03 .secPanel .titleBox .ttl02 {
+    font-size: 24px;
+  }
+  .topMain .sec03 .secPanel .btnMore {
+    margin: 20px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .reasonMain .topSection {
+    padding: 60px 20px;
+  }
+  .reasonMain .topSection .secPanel .photo {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .reasonMain .topSection .secPanel .secBox {
+    padding: 0 10px;
+  }
+  .reasonMain .topSection .secPanel .secBox .txtBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .reasonMain .topSection .secPanel .secBox .txtBox::before {
+    top: 5px;
+    left: 5px;
+  }
+  .reasonMain .topSection .secPanel .secBox .txtBox .inner {
+    padding: 30px 20px;
+  }
+  .reasonMain .topSection .secPanel .secBox .txtBox .titleBox .title p {
+    font-size: 18px;
+  }
+  .reasonMain .topSection .txt {
+    max-width: 600px;
+    margin: 30px auto 0;
+  }
+  .reasonMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .reasonMain .secTtl p {
+    font-size: 24px;
+  }
+  .reasonMain .sec01 {
+    padding: 80px 0 100px;
+  }
+  .reasonMain .sec01 .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .reasonMain .sec01 .secPanel .mvBox .secWrap01 {
+    height: 200px;
+  }
+  .reasonMain .sec01 .secPanel .mvBox .inner {
+    max-width: 270px;
+  }
+  .reasonMain .sec01 .secPanel .mvBox .title {
+    top: 10px;
+    min-height: 55px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .reasonMain .sec01 .secPanel .txtBox {
+    margin: 30px 0 0;
+  }
+  .reasonMain .sec01 .secPanel .txtBox .txt p + p {
+    margin: 20px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	carCoating
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .carCoatingMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .carCoatingMain .secTtl p {
+    font-size: 24px;
+  }
+  .carCoatingMain .sec01 {
+    padding: 60px 0 100px;
+  }
+  .carCoatingMain .sec01 .topContainer {
+    margin: 0 0 60px;
+  }
+  .carCoatingMain .sec01 .topContainer .secPanel .ttlBox {
+    margin: 0 0 20px;
+  }
+  .carCoatingMain .sec01 .topContainer .secPanel .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .carCoatingMain .sec01 .beforeAfterContainer {
+    margin: 0 0 60px;
+    padding: 40px 0 0;
+  }
+  .carCoatingMain .sec01 .beforeAfterContainer .title {
+    margin: 0 0 30px;
+  }
+  .carCoatingMain .sec01 .beforeAfterContainer .title p {
+    font-size: 20px;
+  }
+  .carCoatingMain .sec01 .mvContainer {
+    margin: 0 0 60px;
+  }
+  .carCoatingMain .sec01 .mvContainer .title {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 0 50px;
+    font-size: 18px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png) left center no-repeat, url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png) right center no-repeat;
+    background-size: 40px auto, 40px auto;
+  }
+  .carCoatingMain .sec01 .mvContainer .mv {
+    margin: 0 0 30px;
+  }
+  .carCoatingMain .sec01 .mvContainer .dl .dt {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .carCoatingMain .sec01 .performanceContainer .title {
+    max-width: 360px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+  }
+  .carCoatingMain .sec01 .performanceContainer .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .carCoatingMain .sec01 .performanceContainer .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .carCoatingMain .sec01 .performanceContainer .listBox .ul .photo {
+    max-width: 250px;
+  }
+  .carCoatingMain .sec01 .performanceContainer .listBox .ul .txtBox {
+    padding: 15px 0 0;
+  }
+  .carCoatingMain .sec01 .performanceContainer .listBox .ul .txtBox .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .carCoatingMain .sec01 .performanceContainer .chart {
+    max-width: 600px;
+    margin: 50px auto 0;
+  }
+  .carCoatingMain .sec02 {
+    padding: 60px 0;
+  }
+  .carCoatingMain .sec02 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .carCoatingMain .sec02 .listBox .ul .li {
+    padding: 20px 10px;
+  }
+  .carCoatingMain .sec02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .carCoatingMain .sec02 .listBox .ul .photoBox01 {
+    width: 45%;
+  }
+  .carCoatingMain .sec02 .listBox .ul .photoBox01 .photo {
+    height: 0;
+    padding: 0 0 90%;
+  }
+  .carCoatingMain .sec02 .listBox .ul .photoBox02 {
+    width: 53%;
+  }
+  .carCoatingMain .sec02 .listBox .ul .photoBox02 .photo {
+    height: 0;
+    padding: 0 0 100%;
+  }
+  .carCoatingMain .sec03 {
+    padding: 60px 0;
+  }
+  .carCoatingMain .sec03 .secTtl {
+    margin: 0 0 20px;
+  }
+  .carCoatingMain .sec03 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .carCoatingMain .sec04 {
+    margin: 0 0 80px;
+    padding: 60px 0;
+  }
+  .carCoatingMain .sec04 .secTtl {
+    margin: 0 0 20px;
+  }
+  .carCoatingMain .sec04 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .carCoatingMain .sec04 .listBox {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .carCoatingMain .sec04 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	ceiling
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .ceilingMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .ceilingMain .secTtl p {
+    font-size: 24px;
+  }
+  .ceilingMain .sec01 {
+    padding: 60px 0 100px;
+  }
+  .ceilingMain .sec01 .topContainer {
+    margin: 0 0 60px;
+  }
+  .ceilingMain .sec01 .topContainer .secPanel .ttlBox {
+    margin: 0 0 20px;
+  }
+  .ceilingMain .sec01 .topContainer .secPanel .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .ceilingMain .sec01 .section + .section {
+    margin: 80px 0 0;
+  }
+  .ceilingMain .sec01 .secContainer {
+    margin: -18px auto 0;
+  }
+  .ceilingMain .sec01 .pointPanel .point {
+    width: 130px;
+    margin: 0 0 30px;
+  }
+  .ceilingMain .sec01 .pointPanel .point p {
+    font-size: 15px;
+  }
+  .ceilingMain .sec01 .pointPanel .point .em {
+    font-size: 20px;
+  }
+  .ceilingMain .sec01 .pointPanel .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .ceilingMain .sec01 .pointPanel .txt p + p {
+    margin: 20px 0 0;
+  }
+  .ceilingMain .sec01 .checkPanel {
+    margin: 40px 0 0;
+    padding: 15px;
+  }
+  .ceilingMain .sec01 .checkPanel .secBox .title {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    padding: 0 35px;
+    font-size: 18px;
+    text-align: center;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_slash_01.png) left center no-repeat, url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_slash_02.png) right center no-repeat;
+    background-size: 30px auto, 30px auto;
+  }
+  .ceilingMain .sec01 .checkPanel .secBox .listBox {
+    max-width: 600px;
+  }
+  .ceilingMain .sec01 .checkPanel .secBox .listBox .ul .li {
+    padding: 0 10px 10px;
+    font-size: 16px;
+  }
+  .ceilingMain .sec01 .checkPanel .secBox .listBox .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .ceilingMain .sec01 .checkPanel .secBox .listBox .ul .li p {
+    padding: 3px 0 3px 35px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_icon.png) left center no-repeat;
+    background-size: 25px auto;
+  }
+  .ceilingMain .sec01 .pricePanel {
+    margin: 40px 0 0;
+  }
+  .ceilingMain .sec01 .pricePanel .ttl {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	sdc
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .sdcMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .sdcMain .secTtl p {
+    font-size: 24px;
+  }
+  .sdcMain .sec01 {
+    padding: 60px 0 0;
+  }
+  .sdcMain .sec01 .topContainer {
+    margin: 0 0 60px;
+  }
+  .sdcMain .sec01 .topContainer .secPanel .ttlBox {
+    margin: 0 0 20px;
+  }
+  .sdcMain .sec01 .topContainer .secPanel .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .sdcMain .sec01 .mvContainer {
+    margin: 0 0 60px;
+  }
+  .sdcMain .sec01 .mvContainer .title {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 0 50px;
+    font-size: 18px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png) left center no-repeat, url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png) right center no-repeat;
+    background-size: 40px auto, 40px auto;
+  }
+  .sdcMain .sec01 .mvContainer .mv {
+    margin: 0 0 30px;
+  }
+  .sdcMain .sec01 .mvContainer .dl .dt {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .sdcMain .sec01 .performanceContainer .title {
+    max-width: 360px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+  }
+  .sdcMain .sec01 .performanceContainer .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sdcMain .sec01 .performanceContainer .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .sdcMain .sec01 .performanceContainer .listBox .ul .photo {
+    max-width: 250px;
+  }
+  .sdcMain .sec01 .performanceContainer .listBox .ul .txtBox {
+    padding: 15px 0 0;
+  }
+  .sdcMain .sec01 .performanceContainer .listBox .ul .txtBox .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .sdcMain .sec01 .performanceContainer .chart {
+    max-width: 600px;
+    margin: 50px auto 0;
+  }
+  .sdcMain .sec01 .effectContainer {
+    margin: 60px auto 0;
+  }
+  .sdcMain .sec01 .effectContainer .title {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    padding: 0 40px;
+    font-size: 16px;
+    text-align: center;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png) left bottom no-repeat, url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png) right bottom no-repeat;
+    background-size: 30px auto, 30px auto;
+  }
+  .sdcMain .sec01 .effectContainer .listBox {
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  .sdcMain .sec01 .effectContainer .listBox .ul {
+    margin: -10px 0 0 -10px;
+  }
+  .sdcMain .sec01 .effectContainer .listBox .ul .li {
+    width: calc(50% - 10px);
+    height: 90px;
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+  }
+  .sdcMain .sec01 .targetContainer {
+    margin: 60px 0 0;
+    padding: 50px 0;
+  }
+  .sdcMain .sec01 .targetContainer .ttl {
+    max-width: 140px;
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  .sdcMain .sec01 .targetContainer .listBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .sdcMain .sec01 .targetContainer .listBox .ul {
+    margin: -30px 0 0 -10px;
+  }
+  .sdcMain .sec01 .targetContainer .listBox .ul .li {
+    width: calc(50% - 10px);
+    margin: 30px 0 0 10px;
+  }
+  .sdcMain .sec02 {
+    padding: 60px 0;
+  }
+  .sdcMain .sec02 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .sdcMain .sec03 {
+    margin: 0 0 80px;
+    padding: 60px 0;
+  }
+  .sdcMain .sec03 .secTtl {
+    margin: 0 0 20px;
+  }
+  .sdcMain .sec03 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .sdcMain .sec03 .listBox {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .sdcMain .sec03 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	repair
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .repairMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .repairMain .secTtl p {
+    font-size: 24px;
+  }
+  .repairMain .sec01 {
+    padding: 60px 0 100px;
+  }
+  .repairMain .sec01 .topContainer {
+    margin: 0 0 60px;
+  }
+  .repairMain .sec01 .topContainer .secPanel .ttlBox {
+    margin: 0 0 20px;
+  }
+  .repairMain .sec01 .topContainer .secPanel .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .repairMain .sec01 .troubleContainer {
+    margin: 0 auto 60px;
+  }
+  .repairMain .sec01 .troubleContainer .ttl {
+    max-width: 450px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+  }
+  .repairMain .sec01 .troubleContainer .listBox {
+    max-width: 600px;
+  }
+  .repairMain .sec01 .troubleContainer .listBox .ul {
+    margin: -30px 0 0 -10px;
+  }
+  .repairMain .sec01 .troubleContainer .listBox .ul .li {
+    width: calc(50% - 10px);
+    margin: 43px 0 0 10px;
+  }
+  .repairMain .sec01 .mvContainer .title {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 0 50px;
+    font-size: 18px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png) left center no-repeat, url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png) right center no-repeat;
+    background-size: 40px auto, 40px auto;
+  }
+  .repairMain .sec01 .mvContainer .mv {
+    margin: 0 0 30px;
+  }
+  .repairMain .sec01 .mvContainer .dl .dt {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .repairMain .sec02 {
+    padding: 60px 0;
+  }
+  .repairMain .sec02 .secTtl {
+    margin: 0 0 20px;
+  }
+  .repairMain .sec02 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .repairMain .sec02 .listBox .ul .li {
+    padding: 20px 10px;
+  }
+  .repairMain .sec02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .repairMain .sec02 .listBox .ul .photoBox01 {
+    width: 45%;
+  }
+  .repairMain .sec02 .listBox .ul .photoBox01 .photo {
+    height: 0;
+    padding: 0 0 90%;
+  }
+  .repairMain .sec02 .listBox .ul .photoBox02 {
+    width: 53%;
+  }
+  .repairMain .sec02 .listBox .ul .photoBox02 .photo {
+    height: 0;
+    padding: 0 0 100%;
+  }
+  .repairMain .sec02 .listBox .ul .txt {
+    padding: 15px;
+  }
+  .repairMain .sec03 {
+    padding: 60px 0;
+  }
+  .repairMain .sec03 .secTtl {
+    margin: 0 0 20px;
+  }
+  .repairMain .sec03 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .repairMain .sec04 {
+    margin: 0 0 80px;
+    padding: 60px 0;
+  }
+  .repairMain .sec04 .secTtl {
+    margin: 0 0 20px;
+  }
+  .repairMain .sec04 .secTtl + .txt {
+    margin: 0 0 40px;
+  }
+  .repairMain .sec04 .listBox {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .repairMain .sec04 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .recruitMain .secTtl p {
+    font-size: 24px;
+  }
+  .recruitMain .sec01 {
+    padding: 50px 0 80px;
+  }
+  .recruitMain .sec01 .secTtl {
+    margin: 0 0 20px;
+  }
+  .recruitMain .sec01 h3 {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .recruitMain .sec01 .name {
+    margin: 15px 0 0;
+  }
+  .recruitMain .sec01 .name .em {
+    font-size: 20px;
+  }
+  .recruitMain .sec02 {
+    padding: 80px 0;
+  }
+  .recruitMain .sec02 .listBox {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .recruitMain .sec02 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .recruitMain .sec02 .listBox .ul .txtBox {
+    padding: 10px;
+  }
+  .recruitMain .sec02 .listBox .ul .ttlBox {
+    margin: 0 0 10px;
+  }
+  .recruitMain .sec02 .listBox .ul .ttlBox .ttl p {
+    font-size: 18px;
+  }
+  .recruitMain .sec02 .listBox .ul .txt {
+    padding: 0 6px;
+  }
+  .recruitMain .sec03 {
+    padding: 80px 0;
+  }
+  .recruitMain .sec03 .topTitle {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+  }
+  .recruitMain .sec03 .secBox + .secBox {
+    margin: 50px 0 0;
+  }
+  .recruitMain .sec03 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .recruitMain .sec03 .secBox .txtBox .ttl {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .recruitMain .sec04 {
+    padding: 80px 0;
+  }
+  .recruitMain .sec04 .topTitle {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    padding: 20px 10px;
+  }
+  .recruitMain .sec04 .infoBox .dl > * {
+    height: 30px;
+    padding: 15px 10px;
+  }
+  .recruitMain .sec04 .infoBox .dl .dt {
+    width: 100px;
+  }
+  .recruitMain .sec04 .infoBox .dl .dd .box {
+    display: block;
+    margin: 0;
+  }
+  .recruitMain .sec05 {
+    margin: 0 0 80px;
+    padding: 80px 0;
+  }
+  .recruitMain .sec05 .entryTtl {
+    max-width: 280px;
+    padding: 15px 10px 0;
+    font-size: 20px;
+  }
+  .recruitMain .sec05 .topPanel {
+    margin: 0 0 30px;
+  }
+  .recruitMain .sec05 .topPanel .secBox {
+    padding: 30px 10px;
+  }
+  .recruitMain .sec05 .topPanel .secBox + .secBox {
+    margin: 30px 0 0;
+  }
+  .recruitMain .sec05 .topPanel .secBox .telBox {
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+  .recruitMain .sec05 .topPanel .secBox .lineBox {
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+  .recruitMain .sec05 .topPanel .secBox .lineBox a > div {
+    max-width: 240px;
+  }
+  .recruitMain .sec05 .topPanel .secBox .lineBox a .qr {
+    width: 60px;
+  }
+  .recruitMain .sec05 .topPanel .secBox .lineBox a p {
+    width: calc(100% - 70px);
+    font-size: 16px;
+  }
+  .recruitMain .sec05 .formContainer {
+    padding: 40px 20px 80px;
+    background: #ffffff;
+  }
+  .recruitMain .sec05 .formContainer .topBox {
+    margin: 0 auto 40px;
+  }
+  .recruitMain .sec05 .formContainer .topBox .entryTtlBox .entryTtl {
+    margin: 0 auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .companyMain .secTtl p {
+    font-size: 24px;
+  }
+  .companyMain .sec01 {
+    padding: 60px 0 80px;
+  }
+  .companyMain .sec01 .mvContainer .title {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  .companyMain .sec01 .mvContainer .mv {
+    margin: 0 0 20px;
+  }
+  .companyMain .sec01 .mvContainer .secBox {
+    margin: 20px 0 0;
+  }
+  .companyMain .sec01 .mvContainer .secBox .photoBox {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  .companyMain .sec01 .mvContainer .secBox .photoBox .name {
+    margin: 15px 0 0;
+    text-align: right;
+  }
+  .companyMain .sec01 .mvContainer .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec02 {
+    padding: 60px 0 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_sec_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .companyMain .sec02 .infoBox .dl > * {
+    height: 30px;
+    padding: 15px 10px;
+  }
+  .companyMain .sec02 .infoBox .dl .dt {
+    width: 100px;
+  }
+  .companyMain .sec02 .mapBox {
+    margin: 60px 0 0;
+  }
+  .companyMain .sec03 {
+    padding: 80px 0 100px;
+  }
+  .companyMain .sec03 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec03 .secBox .txtBox .title {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .secTtl {
+    margin: 0 0 30px;
+  }
+  .contactMain .secTtl p {
+    font-size: 24px;
+  }
+  .contactMain .topSection {
+    padding: 60px 0 100px;
+  }
+  .contactMain .topSection .secPanel {
+    padding: 0 0 100px;
+  }
+  .contactMain .topSection .secPanel .photo {
+    max-width: 600px;
+  }
+  .contactMain .topSection .secPanel .secBox .txtBox {
+    padding: 15px;
+  }
+  .contactMain .topSection .secPanel .secBox .txtBox .inner {
+    padding: 20px;
+  }
+  .contactMain .topSection .secPanel .secBox .listBox .ul .li {
+    padding: 0 5px 10px;
+    font-size: 14px;
+  }
+  .contactMain .topSection .secPanel .secBox .listBox .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .contactMain .topSection .secPanel .secBox .listBox .ul .li p {
+    padding: 3px 0 3px 30px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_icon.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .contactMain .topSection .secPanel .telBox {
+    margin: 20px 0 0;
+  }
+  .contactMain .topSection .secPanel .telBox .dl .dt {
+    font-size: 20px;
+  }
+  .contactMain .topSection .secPanel .telBox .dl .dd .em {
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_top_tel.png) left center no-repeat;
+    background-size: 25px auto;
+  }
+  .contactMain .topSection .secPanel .telBox .dl .dd .span {
+    font-size: 13px;
+  }
+  .contactMain .topSection .linePanel {
+    max-width: 1000px;
+    padding: 30px 20px;
+  }
+  .contactMain .topSection .linePanel .ttl {
+    font-size: 20px;
+  }
+  .contactMain .topSection .linePanel .ttl + p {
+    margin: 0 0 20px;
+  }
+  .contactMain .topSection .linePanel .qrBox {
+    max-width: 550px;
+  }
+  .contactMain .topSection .linePanel .qrBox .qr {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+  .contactMain .sec01 {
+    margin: 0 0 60px;
+    padding: 60px 0;
+  }
+  .contactMain .sec01 .topTxt {
+    margin: 0 0 50px;
+  }
+  .contactMain .sec01 .formContainer {
+    padding: 40px 20px 80px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .otherTtl {
+    padding: 20px 10px 5px;
+  }
+  .formMain .contactForm .formBox .otherRadio .dt {
+    text-align: left;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadPanel {
+    padding: 20px 0;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .blogMain .blogSection {
+    padding: 80px 0;
+  }
+  .blogMain .catePanel {
+    max-width: 320px;
+    margin: 0 auto 40px;
+  }
+  .blogMain .catePanel .webgene-item {
+    margin: 10px 0 0;
+  }
+  .blogMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 60px 0 0;
+  }
+  .blogMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item.slider .li > div {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 100%;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .thumb-item.slider .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slick-prev {
+    left: -20px;
+  }
+  .blogMain .blogPanel--detail .webgene-blog .slick-next {
+    right: -20px;
+  }
+  .blogMain .blogPanel--detail .btnBackBox {
+    margin: 50px 0 0;
+  }
+  .blogMain .blogPanel--detail .btnBack {
+    width: 180px;
+  }
+}

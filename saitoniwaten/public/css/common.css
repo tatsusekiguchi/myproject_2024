@@ -1,0 +1,678 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Zen Maru Gothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.5;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1091px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    min-height: 95px;
+    padding: 0 0 0 5%;
+  }
+  .header .headWrap .leftBox {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    padding: 5px 0;
+  }
+  .header .headWrap .leftBox .headTtl {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: 0.6s;
+  }
+  .header .headWrap .leftBox .logo {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    max-width: 180px;
+    width: 100%;
+    margin: 40px 0 0;
+    transition: 0.6s;
+  }
+  .header .headWrap .leftBox .logo a {
+    display: block;
+  }
+  .header .headWrap .rightBox {
+    width: 85%;
+  }
+  .header .headWrap .rightBox .itemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 440px;
+  }
+  .header .headWrap .rightBox .telBox {
+    width: 65%;
+    min-height: 102px;
+    padding: 20px 10px 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .header .headWrap .rightBox .telBox a {
+    display: block;
+  }
+  .header .headWrap .rightBox .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 30px;
+    line-height: 1.2;
+    background: url("https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/header_tel.png") left bottom 4px no-repeat;
+    background-size: 20px auto;
+  }
+  .header .headWrap .rightBox .telBox .span {
+    padding: 0 0 0 20px;
+  }
+  .header .headWrap .rightBox .mailBox {
+    width: 35%;
+    height: 100%;
+  }
+  .header .headWrap .rightBox .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 102px;
+    color: #ffffff;
+    text-align: center;
+    background: #63843e;
+  }
+  .header .headWrap .rightBox .mailBox p {
+    display: inline-block;
+    padding: 40px 0 0;
+    font-size: 14px;
+    background: url("https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/header_mail.png") center top 5px no-repeat;
+    background-size: 30px auto;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .header.fixed .headWrap .leftBox .headTtl,
+.pageHeader .headWrap .leftBox .headTtl {
+    left: 140px;
+  }
+  .header.fixed .headWrap .leftBox .logo,
+.pageHeader .headWrap .leftBox .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 120px;
+    margin: 10px 0 0;
+  }
+}
+@media (max-width: 1090px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 40px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1091px) {
+  .navBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navBox .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: calc(100% - 400px);
+  }
+  .navBox .navList .ul {
+    display: flex;
+    max-width: 600px;
+    min-width: 600px;
+    width: 100%;
+  }
+  .navBox .navList .ul > .li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    height: 95px;
+    padding: 0 2px 20px;
+    text-align: center;
+  }
+  .navBox .navList .ul > .li > a {
+    display: block;
+  }
+  .navBox .navList .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList .ul .linkTxt {
+    position: relative;
+    display: block;
+  }
+  .navBox .navList .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList .ul .pulldown:hover .subList {
+    top: 95px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -90px;
+    width: 300px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #000000;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + li {
+    border-top: 1px solid #000000;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #fe0000;
+  }
+}
+@media (max-width: 1090px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 60px;
+    z-index: 999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 70px;
+    opacity: 1;
+    z-index: 999;
+  }
+  .navBox .navList {
+    border-top: 1px solid #34363d;
+    border-bottom: 1px solid #34363d;
+  }
+  .navBox .navList .ul .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+  }
+  .navBox .navList .ul .li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+  }
+  .navBox .itemBox {
+    margin: 10px 0 0;
+  }
+  .navBox .telBox {
+    margin: 0 0 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .navBox .telBox a {
+    display: block;
+  }
+  .navBox .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 26px;
+    line-height: 1.2;
+    background: url("https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/header_tel.png") left bottom 4px no-repeat;
+    background-size: 18px auto;
+  }
+  .navBox .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95px;
+    color: #ffffff;
+    text-align: center;
+    background: #63843e;
+  }
+  .navBox .mailBox p {
+    display: inline-block;
+    padding: 30px 0 0;
+    font-size: 14px;
+    background: url("https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/header_mail.png") center top 5px no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .spBreak {
+    display: block;
+  }
+  .navBox .spHidden {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 102px 0 0;
+}
+
+@media (max-width: 1090px) {
+  .main {
+    margin: 70px 0 0;
+  }
+}
+.pageKvPanel {
+  padding: 0 0 0 60px;
+}
+.pageKvPanel .pageKv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 240px;
+}
+.pageKvPanel .kvTitle {
+  padding: 0 40px;
+}
+.pageKvPanel .kvTitle h1 {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 44px;
+  color: #0f2350;
+  background: #ffffff;
+}
+
+.secTitleBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.secTitleBox .sub {
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 36px;
+  font-weight: 500;
+  color: #0f2350;
+  letter-spacing: 0.2em;
+}
+.secTitleBox .secTitle {
+  margin: 20px 0 0;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+.secWrap {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  text-align: center;
+}
+.btnMore a {
+  display: inline-block;
+  min-width: 150px;
+  padding: 0 20px 15px;
+  background: url(https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) center bottom no-repeat;
+}
+
+.btnMoreWhite {
+  text-align: center;
+}
+.btnMoreWhite a,
+.btnMoreWhite > p {
+  display: inline-block;
+  min-width: 150px;
+  padding: 0 20px 15px;
+  color: #ffffff;
+  background: url(https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) center bottom no-repeat;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 80px 0 60px;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png) no-repeat;
+  background-size: cover;
+}
+.footer .footContact .secTitleBox .sub {
+  color: #ffffff;
+}
+.footer .footContact .secTitleBox .secTitle {
+  color: #ffffff;
+}
+.footer .footContact .secTitleBox > p {
+  margin: 10px 0 0;
+}
+.footer .footContact .contactItem {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox {
+  padding: 20px;
+  border-top: 1px solid #797d7f;
+  border-bottom: 1px solid #797d7f;
+}
+.footer .footContact .contactItem .itemBox .dl .dt {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #c7cad3;
+}
+.footer .footContact .contactItem .itemBox .tel a {
+  display: inline-block;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 1;
+}
+.footer .footContact .contactItem .itemBox .tel > p {
+  margin: 5px 0 0;
+}
+.footer .footContact .contactItem .itemBox .mail {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox .mail a {
+  display: block;
+  padding: 10px;
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7cad3;
+  letter-spacing: 0.2em;
+  background: #0f2350;
+}
+.footer .footContact .contactItem .itemBox .mail a p {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url("https://saitoniwaten240821.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png") left center no-repeat;
+  background-size: 18px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactItem .itemBox {
+    width: 350px;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  padding: 60px 0 30px;
+  color: #ffffff;
+  background: #0f2350;
+}
+.footer .footPanel .secBox {
+  display: flex;
+}
+.footer .footPanel .logo {
+  max-width: 120px;
+  margin: 0 40px 0 0;
+  padding: 10px 0 0;
+}
+.footer .footPanel .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footPanel .txt .telFax > * {
+  display: inline-block;
+}
+.footer .footPanel .txt .telFax .tel {
+  margin: 0 1em 0 0;
+}
+.footer .footPanel .copy {
+  margin: 30px 0 0;
+  text-align: right;
+}
+.footer .pagetop {
+  position: absolute;
+  top: 40px;
+  right: 5%;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

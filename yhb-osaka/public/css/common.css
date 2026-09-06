@@ -1,0 +1,421 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background: #ffffff;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header.fixed {
+    background: rgba(34, 32, 32, 0.8);
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .header .logo {
+    width: 100px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox .navList .ul .li {
+    display: inline-block;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 0 0 0 40px;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .btnMore a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+  padding: 40px 20px 60px;
+  background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/page_kv.png) center no-repeat;
+  background-size: cover;
+}
+.pageKvPanel .pageKvTitle {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pageSecTitleBox {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.pageSecTitleBox .pageSecTitle01 {
+  position: relative;
+  padding: 40px 0 0;
+  font-size: 12px;
+}
+.pageSecTitleBox .pageSecTitle01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  margin: 0 auto;
+  background: #000000;
+}
+.pageSecTitleBox .pageSecTitle02 {
+  margin: 30px 0 0;
+  font-size: 40px;
+}
+.pageSecTitleBox > p {
+  margin: 10px 0 0;
+  line-height: 2;
+}
+
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.videoBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 55%;
+}
+.videoBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 180px;
+}
+.btnMore a {
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #1668af;
+}
+@media (min-width: 1025px) {
+  .btnMore a {
+    opacity: 1;
+  }
+  .btnMore a:hover {
+    background-color: #323333;
+  }
+}
+
+.btnMoreBlack {
+  width: 180px;
+}
+.btnMoreBlack a {
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #323333;
+}
+@media (min-width: 1025px) {
+  .btnMoreBlack a {
+    opacity: 1;
+  }
+  .btnMoreBlack a:hover {
+    background-color: #1668af;
+  }
+}
+
+.btnMoreWhite {
+  width: 180px;
+}
+.btnMoreWhite a {
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 30px;
+  background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/btn_more_arrow_black.png) right 15px center no-repeat #ffffff;
+}
+@media (min-width: 1025px) {
+  .btnMoreWhite a {
+    opacity: 1;
+  }
+  .btnMoreWhite a:hover {
+    color: #ffffff;
+    background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) right 15px center no-repeat #323333;
+  }
+}
+
+.btnMoreDl {
+  width: 100%;
+  max-width: 240px;
+}
+.btnMoreDl a {
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  background: url(https://yhb-osaka240815.smooooth.jp/system_panel/uploads/images/btn_icon_dl.png) right 12px center no-repeat #1668af;
+}
+@media (min-width: 1025px) {
+  .btnMoreDl a {
+    opacity: 1;
+  }
+  .btnMoreDl a:hover {
+    background-color: #323333;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 100px 0;
+  color: #ffffff;
+  background: #161616;
+}
+.footer .footContact .secBox .ttl {
+  font-size: 40px;
+}
+.footer .footContact .secBox .txtBox .txt {
+  margin: 0 0 20px;
+}
+.footer .footContact .secBox .txtBox .btnMore {
+  width: 100%;
+  max-width: 280px;
+}
+.footer .footContact .secBox .txtBox .btnMore a {
+  padding: 20px 10px;
+  font-size: 18px;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footContact .secBox .ttl {
+    width: 25%;
+  }
+  .footer .footContact .secBox .txtBox {
+    width: 60%;
+  }
+}
+.footer .footPanel {
+  position: relative;
+  padding: 60px 0 20px;
+}
+.footer .footPanel .pagetop {
+  position: absolute;
+  top: -25px;
+  right: 5%;
+  width: 50px;
+  cursor: pointer;
+}
+.footer .footPanel .logo {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+.footer .footPanel .copy {
+  margin: 60px 0 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

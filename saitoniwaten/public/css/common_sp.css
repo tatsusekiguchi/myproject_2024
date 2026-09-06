@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    padding: 0 0 0 30px;
+  }
+  .pageKvPanel .pageKv {
+    height: 200px;
+  }
+  .pageKvPanel .kvTitle {
+    padding: 0 20px;
+  }
+  .pageKvPanel .kvTitle h1 {
+    padding: 10px 30px;
+    font-size: 26px;
+  }
+
+  .secTitleBox {
+    margin: 0 0 30px;
+  }
+  .secTitleBox .sub {
+    font-size: 26px;
+  }
+  .secTitleBox .secTitle {
+    margin: 15px 0 0;
+    font-size: 18px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .contactItem .itemBox + .itemBox {
+    margin: 30px 0 0;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .secBox {
+    display: block;
+  }
+  .footer .footPanel .logo {
+    max-width: 80px;
+    margin: 0 0 10px;
+  }
+}

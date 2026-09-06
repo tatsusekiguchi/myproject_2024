@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 999;
+  }
+  .header .logo {
+    width: 120px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburgerBox {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    padding: 10px 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .header .hamburgerBox .hamburger {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 20px;
+  }
+  .header .hamburgerBox .hamburger .span {
+    background: #101010;
+    position: absolute;
+    left: 50%;
+    width: 35px;
+    height: 2px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburgerBox .hamburger .span:nth-of-type(1) {
+    top: 0;
+  }
+  .header .hamburgerBox .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburgerBox .hamburger .span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .header .hamburgerBox .is-open.hamburger .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburgerBox .is-open.hamburger .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburgerBox .is-open.hamburger .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 60px 20px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.9s;
+  }
+  .navBox.active {
+    right: 0;
+    opacity: 1;
+  }
+  .navBox .title {
+    width: 70px;
+    margin: 0 auto 20px;
+  }
+  .navBox .navList {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  .navBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .navBox .navList .ul .li a {
+    display: inline-block;
+    color: #466278;
+    text-align: center;
+  }
+  .navBox .navList .ul .li .span {
+    font-size: 13px;
+  }
+  .navBox .navList .ul .li .em {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .navBox .navItem .ul {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0 auto;
+  }
+  .navBox .navItem .ul .li {
+    width: 30px;
+  }
+  .navBox .navItem .ul .li a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 28px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 30px;
+  }
+  .footer .footContact .contactItem {
+    max-width: 480px;
+  }
+  .footer .footContact .contactItem .itemBox + .itemBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactItem .itemBox .ttl {
+    font-size: 24px;
+  }
+  .footer .footContact .contactItem .itemBox .btnContact {
+    max-width: 260px;
+  }
+  .footer .footPanel {
+    padding: 50px 20px;
+  }
+  .footer .footPanel .footNav {
+    display: none;
+  }
+  .footer .footPanel .footBox {
+    padding: 0 0 20px;
+  }
+  .footer .footPanel .footBox .logoBox {
+    display: block;
+    max-width: 440px;
+    text-align: center;
+  }
+  .footer .footPanel .footBox .logoBox .logo {
+    width: 120px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .footBox .logoBox .txtBox {
+    width: 100%;
+  }
+  .footer .footPanel .footBox .logoBox .txtBox .ttl {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,7 @@
+body {
+  opacity: 0;
+}
+.header .navBox {
+  top: -100%;
+  opacity: 0;
+}

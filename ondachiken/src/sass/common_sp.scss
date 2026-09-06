@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 50px 10px 30px;
+    background: #f6bf40;
+    .headWrap {
+      .leftPhoto {
+        width: 30%;
+      }
+      .centerBox {
+        width: 40%;
+        padding: 0 5px;
+        .logo {
+          max-width: 260px;
+          margin: 0 auto 10px;
+          a {
+            display: block;
+          }
+        }
+        .btnLine {
+          max-width: 240px;
+        }
+      }
+      .rightPhoto {
+        width: 30%;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    .navList {
+    }
+    .btnLine {
+      max-width: 220px;
+      margin: 20px auto 0;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageTopPanel {
+    height: 60px;
+  }
+  .mainContainer {
+    padding: 30px 10px;
+    &__left {
+      width: 60px;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+          a {
+            height: 35px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__right {
+      width: calc(100% - 65px);
+    }
+    .propertyListPanel {
+      .webgene-blog {
+        .webgene-item {
+          padding: 5px;
+          .img {
+            margin: 0 0 2px;
+          }
+          > p {
+            font-size: 10px;
+            line-height: 1.5;
+          }
+          .cate {
+            min-width: 40px;
+            margin: 0 0 5px;
+            padding: 0 5px;
+            font-size: 10px;
+          }
+
+          .priceBox {
+            padding: 5px;
+          }
+
+          .price {
+            padding: 0 0 2px;
+            em {
+              margin: 0 2px 0 0;
+              font-size: 14px;
+            }
+            span {
+              font-size: 10px;
+            }
+          }
+
+          .btnMore {
+            margin: 5px auto 0;
+            a {
+              padding: 5px;
+              font-size: 10px;
+              background: url(https://onda-net.co.jp/system_panel/uploads/images/btn_more_arrow.png)
+                right 5px center no-repeat #daa779;
+            }
+          }
+        }
+      }
+
+      .webgene-blog {
+        .webgene-item {
+          .img {
+            height: 0;
+            padding: 0 0 60%;
+          }
+        }
+      }
+    }
+    .webgene-pagination {
+      margin: 30px auto 0;
+      font-size: 10px;
+      ul {
+        li {
+          margin: 0 1px;
+          a {
+            width: 25px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+  .videoBox {
+    padding: 0 0 70%;
+  }
+  .pageLinePanel {
+    padding: 20px 10px;
+    .pTtl {
+      margin: 0 0 20px;
+      font-size: 20px;
+    }
+    .secBox {
+      padding: 10px;
+      .qr {
+        margin: 0 0 15px;
+        a {
+          width: 130px;
+        }
+      }
+      .txtBox {
+        max-width: 320px;
+        margin: 0 auto;
+        .txt {
+          + .txt {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .qr {
+          width: 30%;
+        }
+        .txtBox {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 50px 0 30px;
+      .contactPanel {
+        display: block;
+        padding: 10px 5px;
+        .ttl {
+          margin: 0 0 10px;
+          font-size: 14px;
+        }
+        .contactItems {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          > * {
+            width: 50%;
+            padding: 10px 5px;
+          }
+          .btnBox {
+            max-width: 140px;
+          }
+        }
+        .lineItem {
+          width: 100%;
+          margin: 10px 0 0;
+          .qr {
+            width: 70px;
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 30px 0 10px;
+      .footBox {
+        display: block;
+        .leftBox {
+          width: 100%;
+          margin: 0 0 20px;
+          .logo {
+            max-width: 200px;
+            margin: 0 0 10px;
+          }
+          .txt {
+            font-size: 12px;
+          }
+        }
+        .rightBox {
+          width: 100%;
+        }
+      }
+      .copy {
+        margin: 30px 0 0;
+      }
+    }
+  }
+}

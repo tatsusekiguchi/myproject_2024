@@ -1,0 +1,993 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvPanel {
+    padding: 0 30px;
+  }
+  .topMain .topKvPanel .topKv {
+    position: relative;
+    height: calc(100svh - 60px);
+  }
+  .topMain .topKvPanel .kvTitleBox {
+    left: 20px;
+    bottom: 80px;
+    width: 90%;
+    max-width: 500px;
+  }
+  .topMain .topKvPanel .kvTitleBox .kvTitle01 p {
+    font-size: 20px;
+  }
+  .topMain .topKvPanel .scrollBox {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 15px;
+    height: 100px;
+  }
+  .topMain .topSection {
+    margin: 60px 0 30px;
+    padding: 0 0 40px;
+  }
+  .topMain .topSection .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .topSection .secBox .txtBox .pageSecTtlBox {
+    margin: 0 0 15px;
+  }
+  .topMain .topSection .secBox .txtBox .ttlBox {
+    max-width: 260px;
+  }
+  .topMain .topSection .secBox .txtBox .ttlBox + .ttlBox {
+    max-width: 220px;
+  }
+  .topMain .topSection .secBox .txtBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .topMain .topSection .secBox .txtBox .txt {
+    margin: 15px 0 0;
+  }
+  .topMain .topSection .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .topMain .topSection .secBox .txtBox .btnMore {
+    margin: 20px 0 0;
+  }
+  .topMain .sec01 {
+    padding: 20px 0 60px;
+  }
+  .topMain .sec01 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .topMain .sec01 .listBox .ul .circle {
+    top: 10px;
+    right: 10px;
+    width: 100px;
+  }
+  .topMain .sec01 .listBox .ul .dl {
+    margin: 15px 0 0;
+  }
+  .topMain .sec01 .listBox .ul .dl .dt {
+    margin: 0 0 15px;
+    padding: 0 0 0 25px;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 8px no-repeat;
+    background-size: 15px auto;
+  }
+  .topMain .sec01 .listBox02 {
+    margin: 40px 0 0;
+  }
+  .topMain .sec01 .listBox02 .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .topMain .sec02 {
+    margin: 0 0 60px;
+  }
+  .topMain .sec02 .secContainer {
+    padding: 30px 20px;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item {
+    margin: 0;
+  }
+  .topMain .sec02 .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .topMain .sec02 .btnMore {
+    margin: 30px auto 0;
+  }
+  .topMain .sec03 {
+    margin: 0 0 60px;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .topMain .sec03 .secBox .txtBox .btnList {
+    margin: 30px 0 0;
+  }
+  .topMain .sec03 .secBox .txtBox .btnList .btnMore {
+    margin: 0 auto;
+  }
+  .topMain .sec03 .secBox .txtBox .btnList .btnMore + .btnMore {
+    margin: 20px auto 0;
+  }
+  .topMain .sec04 {
+    padding: 0 0 60px;
+  }
+  .topMain .sec04 .secPanel {
+    padding: 30px 20px;
+  }
+  .topMain .sec04 .secBox .txtBox {
+    padding: 0 0 20px;
+  }
+  .topMain .sec04 .secBox .txtBox .qrBox .qr {
+    width: 80px;
+    margin: 0 0 20px;
+  }
+  .topMain .sec04 .secBox .txtBox .btnMore {
+    margin: 20px 0 0;
+  }
+  .topMain .sec04 .secBox .photo {
+    max-width: 500px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain .topSection {
+    padding: 50px 0;
+  }
+  .aboutMain .topSection .ttlBox {
+    max-width: 330px;
+    margin: 0 auto 20px;
+  }
+  .aboutMain .topSection .ttlBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .aboutMain .sec01 {
+    padding: 0 0 60px;
+  }
+  .aboutMain .sec01 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .aboutMain .sec01 .listBox .ul .ttl {
+    margin: 15px 0;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 5px no-repeat;
+    background-size: 18px auto;
+  }
+  .aboutMain .sec01 .listBox .ul .dl .dt {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .ttlBox {
+    margin: 0 0 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .ttlBox .num {
+    width: 30px;
+    padding: 15px 0 0;
+    font-size: 30px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .ttlBox .ttl {
+    width: calc(100% - 50px);
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .ttlBox .ttl .span {
+    font-size: 13px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .ttlBox .ttl .em {
+    font-size: 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .example {
+    margin: 15px 0 0;
+    padding: 20px;
+  }
+  .aboutMain .sec02 .secPanel .secBox .txtBox .btnMore {
+    margin: 15px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain .topSection {
+    padding: 50px 0;
+  }
+  .serviceMain .topSection .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .serviceMain .topSection .secBox .txtBox .ttlBox {
+    max-width: 260px;
+  }
+  .serviceMain .topSection .secBox .txtBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .serviceMain .topSection .secBox .txtBox .txt {
+    margin: 15px 0 0;
+  }
+  .serviceMain .topSection .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .serviceMain .sec01 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec01 .secContainer {
+    padding: 50px 0;
+  }
+  .serviceMain .sec01 .listBox {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .serviceMain .sec01 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .serviceMain .sec01 .listBox .ul p {
+    font-size: 18px;
+  }
+  .serviceMain .sec01 .btnMore {
+    margin: 40px auto 0;
+  }
+  .serviceMain .sec02 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec02 .flowList {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec02 .flowList .ul .li {
+    padding: 0 0 30px;
+  }
+  .serviceMain .sec02 .flowList .ul .li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 42px;
+    height: 25px;
+    margin: 0 auto;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/service_sec02_arrow_02.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .serviceMain .sec02 .flowList .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .serviceMain .sec02 .flowList .ul .photoBox {
+    position: relative;
+  }
+  .serviceMain .sec02 .flowList .ul .photoBox .time {
+    font-size: 16px;
+  }
+  .serviceMain .sec02 .flowList .ul .dl {
+    margin: 10px 0 0;
+  }
+  .serviceMain .sec02 .flowList .ul .dl .dt {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  .serviceMain .sec02 .secPanelList .secPanel {
+    padding: 50px 20px;
+  }
+  .serviceMain .sec02 .secPanelList .secPanel + .secPanel {
+    margin: 50px 0 0;
+  }
+  .serviceMain .sec02 .secPanelList .pTtl {
+    position: absolute;
+    top: -20px;
+    max-width: 260px;
+  }
+  .serviceMain .sec02 .secPanelList .pTtl > * {
+    padding: 0 0 0 25px;
+    font-size: 18px;
+  }
+  .serviceMain .sec02 .secPanelList .secBox .txtBox .ttl {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .serviceMain .sec02 .secPanelList .secBox .txtBox .dl {
+    margin: 30px 0 0;
+  }
+  .serviceMain .sec03 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec03 .infoPanelList {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec03 .infoPanel + .infoPanel {
+    margin: 50px 0 0;
+  }
+  .serviceMain .sec03 .infoPanel .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .serviceMain .sec03 .infoPanel .secBox .txtBox .ttl01 {
+    margin: 0 0 15px;
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 5px no-repeat;
+    background-size: 18px auto;
+  }
+  .serviceMain .sec03 .infoPanel .secBox .txtBox .ttl02 {
+    margin: 0 0 15px;
+    font-size: 22px;
+  }
+  .serviceMain .sec03 .areaPanel {
+    padding: 50px 20px;
+  }
+  .serviceMain .sec03 .areaPanel .pTtl {
+    position: absolute;
+    top: -20px;
+    max-width: 260px;
+  }
+  .serviceMain .sec03 .areaPanel .pTtl > * {
+    padding: 0 0 0 25px;
+    font-size: 18px;
+  }
+  .serviceMain .sec03 .areaPanel .secBox .photo {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .serviceMain .sec03 .areaPanel .secBox .txtBox {
+    padding: 10px 0 0;
+  }
+  .serviceMain .sec03 .areaPanel .secBox .txtBox .ttl {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .serviceMain .sec04 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec04 .secPanel {
+    padding: 30px 20px;
+  }
+  .serviceMain .sec04 .secBox .txtBox {
+    padding: 0 0 20px;
+  }
+  .serviceMain .sec04 .secBox .txtBox .btnMore {
+    margin: 20px 0 0;
+  }
+  .serviceMain .sec04 .secBox .photo {
+    max-width: 500px;
+  }
+  .serviceMain .sec05 {
+    margin: 0 0 60px;
+  }
+  .serviceMain .sec05 .listBox02 .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .serviceMain .introSection {
+    padding: 0 0 60px;
+  }
+  .serviceMain .introSection .listBox {
+    margin: 0 auto 60px;
+  }
+  .serviceMain .introSection .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+  .serviceMain .introSection .listBox .ul .ttl {
+    margin: 15px 0;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 5px no-repeat;
+    background-size: 18px auto;
+  }
+  .serviceMain .introSection .listBox .ul .dl .dt {
+    font-size: 20px;
+  }
+  .serviceMain .introSection .secPanel {
+    padding: 50px 20px;
+  }
+  .serviceMain .introSection .pTtl {
+    position: absolute;
+    top: -20px;
+    max-width: 260px;
+  }
+  .serviceMain .introSection .pTtl > * {
+    padding: 0 0 0 25px;
+    font-size: 18px;
+  }
+  .serviceMain .introSection .secBox .listPanel .list {
+    padding: 20px 0;
+  }
+  .serviceMain .introSection .secBox .listPanel .list + .list {
+    border-top: 1px dashed #9a8677;
+  }
+  .serviceMain .introSection .secBox .listPanel .list > p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .serviceMain .introSection .secBox .listPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .serviceMain .introSection .secBox .listPanel .list {
+    width: 50%;
+  }
+  .serviceMain .introSection .secBox .listPanel .list + .list {
+    border-left: 1px dashed #9a8677;
+  }
+}
+@media (max-width: 1024px) {
+  .serviceMain .subTitle {
+    margin: 0 0 40px;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 5px no-repeat;
+    background-size: 18px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	office
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .officeMain .topSection {
+    padding: 50px 0;
+  }
+  .officeMain .topSection .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .officeMain .topSection .secBox .txtBox .ttlBox {
+    max-width: 260px;
+  }
+  .officeMain .topSection .secBox .txtBox .ttlBox + .ttlBox {
+    max-width: 260px;
+  }
+  .officeMain .topSection .secBox .txtBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .officeMain .topSection .secBox .txtBox .txt {
+    margin: 15px 0 0;
+  }
+  .officeMain .topSection .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .officeMain .topSection .secBox .txtBox .btnMore {
+    margin: 20px 0 0;
+  }
+  .officeMain .sec01 {
+    margin: 0 0 60px;
+  }
+  .officeMain .sec01 .secPanelList .secPanel {
+    padding: 50px 20px;
+  }
+  .officeMain .sec01 .secPanelList .secPanel + .secPanel {
+    margin: 50px 0 0;
+  }
+  .officeMain .sec01 .secPanelList .pTtl {
+    position: absolute;
+    top: -20px;
+    max-width: 260px;
+  }
+  .officeMain .sec01 .secPanelList .pTtl > * {
+    padding: 0 0 0 25px;
+    font-size: 18px;
+  }
+  .officeMain .sec01 .secPanelList .secBox .txtBox .ttl {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .officeMain .sec01 .secPanelList .secBox .txtBox .dl {
+    margin: 30px 0 0;
+  }
+  .officeMain .sec02 {
+    margin: 0 0 60px;
+  }
+  .officeMain .sec02 .secContainer {
+    padding: 50px 0;
+  }
+  .officeMain .sec02 .secBox .txtBox .ttl {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .officeMain .sec02 .secBox .txtBox .dl {
+    margin: 30px 0 0;
+  }
+  .officeMain .sec03 {
+    margin: 0 0 60px;
+  }
+  .officeMain .sec03 .infoPanel + .infoPanel {
+    margin: 50px 0 0;
+  }
+  .officeMain .sec03 .infoPanel .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .officeMain .sec03 .infoPanel .secBox .txtBox .ttl01 {
+    margin: 0 0 15px;
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 5px no-repeat;
+    background-size: 18px auto;
+  }
+  .officeMain .sec03 .infoPanel .secBox .txtBox .ttl02 {
+    margin: 0 0 15px;
+    font-size: 22px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .guideMain .topPanel {
+    padding: 50px 0;
+  }
+  .guideMain .topPanel .pagingList {
+    max-width: 220px;
+  }
+  .guideMain .topPanel .pagingList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .guideMain .sec01 {
+    margin: 0 0 60px;
+  }
+  .guideMain .sec01 .flowList .ol .li {
+    padding: 0 0 60px;
+  }
+  .guideMain .sec01 .flowList .ol .li:not(:last-child)::before {
+    left: 20px;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .leftBox {
+    width: 50px;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .leftBox .num {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .rightBox {
+    width: calc(100% - 60px);
+  }
+  .guideMain .sec01 .flowList .ol .secBox .rightBox .dl .dt {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .contactBox {
+    display: block;
+    margin: 20px 0 0;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .contactBox .tel {
+    margin: 0 0 10px;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .contactBox .tel a {
+    font-size: 30px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png) left top 8px no-repeat;
+    background-size: 25px auto;
+  }
+  .guideMain .sec01 .flowList .ol .secBox .contactBox .btnMore02 {
+    width: 260px;
+    margin: 10px 0 0;
+  }
+  .guideMain .sec02 {
+    margin: 0 0 60px;
+  }
+  .guideMain .sec02 .tabPanel {
+    padding: 30px 20px;
+  }
+  .guideMain .sec02 .tabPanel + .tabPanel {
+    margin: 60px 0 0;
+  }
+  .guideMain .sec02 .tabList {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+  .guideMain .sec02 .tabList .ul {
+    display: block;
+  }
+  .guideMain .sec02 .tabList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .guideMain .sec02 .ttlHead {
+    margin: 0 0 20px;
+  }
+  .guideMain .sec02 .ttlHead .ttl01 {
+    font-size: 16px;
+  }
+  .guideMain .sec02 .ttlHead .ttl02 {
+    font-size: 26px;
+  }
+  .guideMain .sec02 .section + .section {
+    margin: 50px 0 0;
+  }
+  .guideMain .sec02 .section .secTtl {
+    margin: 0 0 20px;
+    padding: 0 0 0 25px;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/ttl_icon_circle.png) left top 6px no-repeat;
+    background-size: 18px auto;
+  }
+  .guideMain .sec02 .priceTable {
+    font-size: 13px;
+  }
+  .guideMain .sec02 .additionalPanel {
+    margin: 40px 0 0;
+  }
+  .guideMain .sec02 .additionalPanel .ttl {
+    font-size: 18px;
+  }
+  .guideMain .sec02 .priceBox .ul .li {
+    display: block;
+    padding: 15px 10px;
+  }
+  .guideMain .sec02 .priceBox .ul .li .right {
+    padding: 5px 0 0;
+    text-align: right;
+  }
+  .guideMain .sec03 {
+    margin: 0 0 60px;
+  }
+  .guideMain .sec03 .secPanel {
+    padding: 0 0 0 60px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/guide_faq_q.png) left top no-repeat;
+    background-size: 45px auto;
+  }
+  .guideMain .sec03 .secPanel + .secPanel {
+    margin: 40px 0 0;
+  }
+  .guideMain .sec03 .secPanel .dl .dt {
+    padding: 5px 30px 15px 0;
+    font-size: 18px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/icon_accord_plus.png) right 10px center no-repeat;
+    background-size: 15px auto;
+  }
+  .guideMain .sec03 .secPanel .dl .dt.active {
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/icon_accord_minus.png) right 10px center no-repeat;
+    background-size: 15px auto;
+  }
+  .guideMain .sec03 .secPanel .dl .dd {
+    padding: 10px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .staffMain .topSection {
+    padding: 50px 0;
+  }
+  .staffMain .topSection .ttlBox {
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  .staffMain .topSection .ttlBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .staffMain .pagingPanel {
+    padding: 30px 0 50px;
+  }
+  .staffMain .pagingPanel .pagingList {
+    max-width: 220px;
+  }
+  .staffMain .pagingPanel .pagingList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .staffMain .section + .section {
+    margin: 50px 0 0;
+  }
+  .staffMain .section .listBox {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .staffMain .section .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .staffMain .section .listBox .ul .pos {
+    top: -10px;
+    left: 5px;
+  }
+  .staffMain .section .listBox .ul .pos p {
+    min-width: 120px;
+  }
+  .staffMain .section .listBox .ul .nameBox {
+    margin: 0 0 20px;
+  }
+  .staffMain .section .listBox .ul .nameBox .name01 {
+    font-size: 24px;
+  }
+  .staffMain .section .listBox .ul .nameBox .name02 {
+    font-size: 12px;
+  }
+  .staffMain .section .listBox .ul .detail .dl {
+    font-size: 13px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .sec01 {
+    padding: 50px 0;
+  }
+  .companyMain .sec01 .secBox .nameBox .name01 {
+    font-size: 18px;
+  }
+  .companyMain .sec01 .secBox .nameBox .name02 {
+    font-size: 16px;
+  }
+  .companyMain .sec01 .secBox .nameBox .name02 .em {
+    font-size: 26px;
+  }
+  .companyMain .sec01 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec01 .secBox .txtBox .ttlBox {
+    max-width: 260px;
+  }
+  .companyMain .sec01 .secBox .txtBox .ttl {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .companyMain .sec01 .secBox .txtBox .txt {
+    margin: 15px 0 0;
+  }
+  .companyMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .companyMain .slidePanel {
+    margin: 40px 0 60px;
+  }
+  .companyMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .companyMain .sec02 {
+    margin: 0 0 60px;
+  }
+  .companyMain .sec02 .infoPanel + .infoPanel {
+    margin: 50px 0 0;
+  }
+  .companyMain .sec02 .infoPanel .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .companyMain .sec02 .infoPanel .secBox .txtBox .infoBox .dl {
+    padding: 15px 0 5px;
+  }
+  .companyMain .sec03 {
+    padding: 0 0 60px;
+  }
+  .companyMain .sec03 .secPanel {
+    padding: 30px 20px;
+  }
+  .companyMain .sec03 .secBox .txtBox {
+    padding: 0 0 20px;
+  }
+  .companyMain .sec03 .secBox .txtBox .qrBox .qr {
+    width: 80px;
+    margin: 0 0 20px;
+  }
+  .companyMain .sec03 .secBox .txtBox .btnMore {
+    margin: 20px 0 0;
+  }
+  .companyMain .sec03 .secBox .photo {
+    max-width: 500px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .topTxt {
+    margin: 0 0 15px;
+  }
+  .contactMain .sec01 {
+    padding: 50px 0 60px;
+  }
+  .contactMain .sec01 .telBox {
+    max-width: 300px;
+    padding: 15px;
+  }
+  .contactMain .sec01 .telBox .tel a {
+    padding: 0 0 0 25px;
+    font-size: 26px;
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png) left top 8px no-repeat;
+    background-size: 20px auto;
+  }
+  .contactMain .sec02 {
+    padding: 0 0 60px;
+  }
+  .contactMain .sec02 .formContainer {
+    padding: 40px 20px 80px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .otherTtl {
+    padding: 20px 10px 5px;
+  }
+  .formMain .contactForm .formBox .otherRadio .dt {
+    text-align: left;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadPanel {
+    padding: 20px 0;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogSection {
+    padding: 20px 0 60px;
+  }
+  .newsMain .catePanel {
+    max-width: 260px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-item {
+    margin: 10px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 60px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail {
+    padding: 30px 20px 60px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .thumb-item.slider .li > div {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 100%;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .thumb-item.slider .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slick-prev {
+    left: -25px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slick-next {
+    right: -25px;
+  }
+  .newsMain .blogPanel--detail .btnBackBox {
+    margin: 50px 0 0;
+  }
+  .newsMain .blogPanel--detail .btnBack {
+    width: 180px;
+  }
+}

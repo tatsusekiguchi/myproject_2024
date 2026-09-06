@@ -1,0 +1,24 @@
+body {
+  opacity: 0;
+}
+
+.topMain .topKvTitleBox {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.topMain .topKv {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.randomScroll .li {
+  opacity: 0;
+}
+.modalBoxWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}

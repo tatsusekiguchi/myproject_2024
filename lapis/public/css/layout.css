@@ -1,0 +1,1910 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  padding: 0 20px;
+}
+.topMain .topKvContainer .topKvWrap {
+  position: relative;
+  max-width: 1640px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.topMain .topKvContainer .bg01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+.topMain .topKvContainer .bg02 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45%;
+}
+.topMain .topKvContainer .kvTitleBox {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15% 0 0 0;
+  letter-spacing: 0.1em;
+  z-index: 2;
+}
+.topMain .topKvContainer .kvTitleBox h1 {
+  margin: 0 0 30px;
+  font-size: 36px;
+}
+.topMain .topKvContainer .kvTitleBox p {
+  line-height: 2;
+}
+.topMain .topKvContainer .topKv {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 60%;
+  max-width: 960px;
+  height: 0;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0 0 33%;
+  z-index: 1;
+}
+.topMain .topKvContainer .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvContainer .topKv .kvBox .kv01 {
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKv .kvBox .kv02 {
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKv .kvBox .kv03 {
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvItem {
+  position: absolute;
+  right: 40px;
+  bottom: 125px;
+  width: 30px;
+}
+.topMain .topKvContainer .kvItem .insta {
+  margin: 0 0 40px;
+}
+.topMain .topKvContainer .kvItem .insta a {
+  display: block;
+}
+.topMain .topKvContainer .kvItem .scroll {
+  width: 10px;
+  margin: 0 auto;
+}
+.topMain .sec01 {
+  margin: 300px 0;
+}
+.topMain .sec01 .secContainer {
+  position: relative;
+  padding: 80px 0 0;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) left top no-repeat;
+  background-size: 50% auto;
+}
+.topMain .sec01 .secPanel .leftBox .secTtl {
+  margin: 0 0 40px;
+  padding: 0 30px 0 0;
+  text-align: right;
+}
+.topMain .sec01 .secPanel .leftBox .secTtl p {
+  font-size: 40px;
+}
+.topMain .sec01 .secPanel .leftBox .secTtl h2 {
+  font-size: 13px;
+}
+.topMain .sec01 .secPanel .rightBox .txtBox h3 {
+  margin: 0 0 40px;
+  font-size: 34px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .secPanel .leftBox {
+    width: 45%;
+  }
+  .topMain .sec01 .secPanel .rightBox {
+    width: 45%;
+  }
+}
+.topMain .sec02 {
+  margin: 0 0 300px;
+}
+.topMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.topMain .sec02 .listContainer .listPanel {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.topMain .sec02 .listContainer .listPanel .ul .li:nth-child(1) a {
+  background: #acafc4;
+}
+.topMain .sec02 .listContainer .listPanel .ul .li:nth-child(2) a {
+  background: #7a5876;
+}
+.topMain .sec02 .listContainer .listPanel .ul .li:nth-child(3) a {
+  background: #7080a6;
+}
+.topMain .sec02 .listContainer .listPanel .ul .li:nth-child(4) a {
+  background: #455578;
+}
+.topMain .sec02 .listContainer .listPanel .ul a {
+  display: block;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .sec02 .listContainer .listPanel .ul .txtBox {
+  padding: 40px 0 20px;
+}
+.topMain .sec02 .listContainer .listPanel .ul .txtBox .ttl01 {
+  margin: 0 0 5px;
+}
+.topMain .sec02 .listContainer .listPanel .ul .txtBox .ttl02 {
+  margin: 0 0 30px;
+  font-size: 30px;
+}
+.topMain .sec02 .listContainer .listPanel .ul .txtBox .more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  letter-spacing: 0;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .listContainer .listPanel .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -30px 0 0;
+  }
+  .topMain .sec02 .listContainer .listPanel .ul .li {
+    width: calc(50% - 15px);
+    margin: 30px 0 0;
+  }
+}
+.topMain .sec03 .listBox .ul a {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+.topMain .sec03 .listBox .ul .photoBox {
+  position: relative;
+}
+.topMain .sec03 .listBox .ul .photoBox .ttl {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+}
+.topMain .sec03 .listBox .ul .photoBox .ttl::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/top_sec03_list_bg.png) center no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec03 .listBox .ul .photoBox .ttl p {
+  position: relative;
+}
+.topMain .sec03 .listBox .ul .photoBox .ttl .futura {
+  font-size: 22px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 5px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	concept
+///////////////////////////////////////////////////////////*/
+.conceptMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.conceptMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 350px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.conceptMain .sec01 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.conceptMain .sec01 .secPanelList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.conceptMain .sec01 .secPanel {
+  padding: 100px 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.conceptMain .sec01 .secPanel + .secPanel {
+  margin: 30px 0 0;
+}
+.conceptMain .sec01 .secPanel .secBox .leftBox .num {
+  width: 85px;
+  margin: 0 0 40px;
+  font-size: 44px;
+  text-align: center;
+  border-bottom: 1px solid #acafc4;
+}
+.conceptMain .sec01 .secPanel .secBox .leftBox .ttl {
+  font-size: 30px;
+}
+.conceptMain .sec01 .secPanel .secBox .leftBox .ttl h3 {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .conceptMain .sec01 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .conceptMain .sec01 .secPanel .secBox .leftBox {
+    width: 45%;
+  }
+  .conceptMain .sec01 .secPanel .secBox .rightBox {
+    width: 55%;
+  }
+}
+.conceptMain .sec01 .secPanel .chart {
+  max-width: 450px;
+  margin: 60px auto 0;
+}
+.conceptMain .sec01 .secPanel .listBox {
+  margin: 60px auto 0;
+}
+@media (min-width: 1025px) {
+  .conceptMain .sec01 .secPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .conceptMain .sec01 .secPanel .listBox .ul .li {
+    position: relative;
+    width: 48.5%;
+    height: 340px;
+  }
+  .conceptMain .sec01 .secPanel .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	facial
+///////////////////////////////////////////////////////////*/
+.facialMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.facialMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 250px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.facialMain .sec01 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.facialMain .sec01 .secContainer .section + .section {
+  margin: 150px 0 0;
+}
+.facialMain .sec01 .secContainer .secTtl {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+}
+.facialMain .sec01 .secContainer .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background: #acafc4;
+}
+.facialMain .sec01 .secContainer .secTtl p {
+  font-size: 34px;
+}
+.facialMain .sec01 .secContainer .secTtl h3 {
+  font-size: 13px;
+}
+.facialMain .sec01 .secContainer .sectionTitle {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 0 15px;
+  font-size: 30px;
+  color: #7080a6;
+  text-align: center;
+}
+.facialMain .sec01 .secContainer .sectionTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #acafc4;
+}
+.facialMain .sec01 .secContainer .section01 .secBox {
+  margin: 0 0 60px;
+}
+.facialMain .sec01 .secContainer .section01 .secBox h4 {
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .facialMain .sec01 .secContainer .section01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .facialMain .sec01 .secContainer .section01 .secBox h4 {
+    width: 45%;
+    line-height: 2;
+  }
+  .facialMain .sec01 .secContainer .section01 .secBox .txt {
+    width: 52%;
+  }
+}
+.facialMain .sec01 .secContainer .section01 .troubleBox {
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #7a5876;
+}
+.facialMain .sec01 .secContainer .section01 .troubleBox .ttl {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+.facialMain .sec01 .secContainer .section01 .troubleBox .ul {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (min-width: 1025px) {
+  .facialMain .sec01 .secContainer .section01 .troubleBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px auto 0;
+  }
+  .facialMain .sec01 .secContainer .section01 .troubleBox .ul .li {
+    width: 45%;
+    margin: 15px 0 0;
+  }
+}
+.facialMain .sec01 .secContainer .section02 .ttl {
+  margin: 0 0 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+}
+.facialMain .sec01 .secContainer .section02 .secBox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.facialMain .sec01 .secContainer .section02 .secBox .chart {
+  width: 380px;
+}
+.facialMain .sec01 .secContainer .section02 .secBox .txt {
+  width: calc(100% - 450px);
+}
+.facialMain .sec01 .secContainer .section03 .sectionTitle {
+  color: #455578;
+}
+.facialMain .sec01 .secContainer .section03 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.facialMain .sec01 .secContainer .section03 .secBox .dl .dt {
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .facialMain .sec01 .secContainer .section03 .secBox .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .facialMain .sec01 .secContainer .section03 .secBox .dl .dt {
+    width: 220px;
+    padding: 20px 0;
+    border-right: 1px solid #455578;
+  }
+  .facialMain .sec01 .secContainer .section03 .secBox .dl .dd {
+    width: calc(100% - 260px);
+  }
+}
+.facialMain .sec01 .secContainer .section03 .listBox {
+  margin: 80px auto 0;
+}
+@media (min-width: 1025px) {
+  .facialMain .sec01 .secContainer .section03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .facialMain .sec01 .secContainer .section03 .listBox .ul .li {
+    position: relative;
+    width: 48.5%;
+    height: 340px;
+  }
+  .facialMain .sec01 .secContainer .section03 .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.facialMain .sec01 .secContainer .section04 .sectionTitle {
+  color: #acafc4;
+}
+.facialMain .sec01 .secContainer .section04 .ttl {
+  margin: 0 0 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+}
+.facialMain .sec01 .secContainer .section04 .secBox {
+  margin: 0 0 80px;
+}
+@media (min-width: 1025px) {
+  .facialMain .sec01 .secContainer .section04 .secBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .facialMain .sec01 .secContainer .section04 .secBox .photo {
+    width: 40%;
+  }
+  .facialMain .sec01 .secContainer .section04 .secBox .txtBox {
+    width: 55%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	slimming
+///////////////////////////////////////////////////////////*/
+.slimmingMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.slimmingMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 250px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.slimmingMain .sec01 .secPanelList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.slimmingMain .sec01 .secPanel {
+  padding: 100px 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.slimmingMain .sec01 .secPanel + .secPanel {
+  margin: 30px 0 0;
+}
+.slimmingMain .sec01 .secPanel .secBox .leftBox .num {
+  width: 85px;
+  margin: 0 0 40px;
+  font-size: 44px;
+  text-align: center;
+  border-bottom: 1px solid #acafc4;
+}
+.slimmingMain .sec01 .secPanel .secBox .leftBox .ttl {
+  font-size: 30px;
+}
+.slimmingMain .sec01 .secPanel .secBox .leftBox .ttl h3 {
+  line-height: 2;
+}
+.slimmingMain .sec01 .secPanel .secBox .leftBox .chart {
+  max-width: 300px;
+  margin: 30px auto 0;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable {
+  margin: 60px 0;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table {
+  border: 1px solid #acafc4;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .tr {
+  display: table;
+  width: 100%;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .tr > * {
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .thead .th {
+  color: #ffffff;
+  background: #acafc4;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .thead .th + .th {
+  border-left: 1px solid #e6e7f1;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .tbody .tr + .tr {
+  border-top: 1px solid #acafc4;
+}
+.slimmingMain .sec01 .secPanel .secBox .rightBox .rangeTable .table .tbody .td + .td {
+  border-left: 1px solid #acafc4;
+}
+@media (min-width: 1025px) {
+  .slimmingMain .sec01 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slimmingMain .sec01 .secPanel .secBox .leftBox {
+    width: 48%;
+  }
+  .slimmingMain .sec01 .secPanel .secBox .rightBox {
+    width: 52%;
+  }
+  .slimmingMain .sec01 .secPanel .secBox .rightBox01 {
+    max-width: 500px;
+  }
+}
+.slimmingMain .sec01 .secPanel .listBox {
+  margin: 60px auto 0;
+}
+@media (min-width: 1025px) {
+  .slimmingMain .sec01 .secPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slimmingMain .sec01 .secPanel .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 10px);
+    height: 280px;
+  }
+  .slimmingMain .sec01 .secPanel .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.slimmingMain .sec01 .secPanel .beforeAfter {
+  margin: 100px 0 0;
+}
+.slimmingMain .sec01 .secPanel .beforeAfter .ttl {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.slimmingMain .sec01 .secPanel .beforeAfter .ttl > * {
+  display: inline-block;
+  padding: 0 50px;
+  font-size: 30px;
+  color: #7080a6;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_slash_01.png) left center no-repeat, url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_slash_02.png) right center no-repeat;
+  background-size: 30px auto, 30px auto;
+}
+.slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul .li {
+  position: relative;
+}
+.slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul .li {
+    width: 48.5%;
+  }
+  .slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    width: 16px;
+    height: 18px;
+    background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_arrow_01.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul .photo {
+    position: relative;
+    height: 340px;
+  }
+  .slimmingMain .sec01 .secPanel .beforeAfter .beforeAfterList .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	eyelash
+///////////////////////////////////////////////////////////*/
+.eyelashMain .sec01 {
+  margin: 0 0 200px;
+}
+.eyelashMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.eyelashMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 250px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.eyelashMain .sec01 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.eyelashMain .sec01 .secContainer .section + .section {
+  margin: 150px 0 0;
+}
+.eyelashMain .sec01 .secContainer .secTtl {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+}
+.eyelashMain .sec01 .secContainer .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background: #acafc4;
+}
+.eyelashMain .sec01 .secContainer .secTtl p {
+  font-size: 34px;
+}
+.eyelashMain .sec01 .secContainer .secTtl h3 {
+  font-size: 13px;
+}
+.eyelashMain .sec01 .secContainer .sectionTitle {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 0 15px;
+  font-size: 30px;
+  color: #7080a6;
+  text-align: center;
+}
+.eyelashMain .sec01 .secContainer .sectionTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #acafc4;
+}
+.eyelashMain .sec01 .secContainer .section01 .secBox {
+  margin: 0 0 60px;
+}
+.eyelashMain .sec01 .secContainer .section01 .secBox h4 {
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .eyelashMain .sec01 .secContainer .section01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eyelashMain .sec01 .secContainer .section01 .secBox h4 {
+    width: 45%;
+    padding: 40px 0 0;
+    line-height: 2;
+  }
+  .eyelashMain .sec01 .secContainer .section01 .secBox .txt {
+    width: 52%;
+  }
+}
+.eyelashMain .sec01 .secContainer .section01 .troubleBox {
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #7a5876;
+}
+.eyelashMain .sec01 .secContainer .section01 .troubleBox .ttl {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+.eyelashMain .sec01 .secContainer .section01 .troubleBox .ul {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (min-width: 1025px) {
+  .eyelashMain .sec01 .secContainer .section01 .troubleBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px auto 0;
+  }
+  .eyelashMain .sec01 .secContainer .section01 .troubleBox .ul .li {
+    margin: 15px 0 0;
+  }
+  .eyelashMain .sec01 .secContainer .section01 .troubleBox .ul .li:nth-child(odd) {
+    width: 280px;
+  }
+  .eyelashMain .sec01 .secContainer .section01 .troubleBox .ul .li:nth-child(even) {
+    width: 570px;
+  }
+}
+.eyelashMain .sec01 .secContainer .beforeAfter {
+  margin: 100px 0 80px;
+}
+.eyelashMain .sec01 .secContainer .beforeAfter .ttl {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.eyelashMain .sec01 .secContainer .beforeAfter .ttl > * {
+  display: inline-block;
+  padding: 0 50px;
+  font-size: 30px;
+  color: #7080a6;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_slash_01.png) left center no-repeat, url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_slash_02.png) right center no-repeat;
+  background-size: 30px auto, 30px auto;
+}
+.eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul .li {
+  position: relative;
+}
+.eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul .li {
+    width: 48.5%;
+  }
+  .eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    width: 16px;
+    height: 18px;
+    background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/slimming_sec01_arrow_01.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul .photo {
+    position: relative;
+    height: 340px;
+  }
+  .eyelashMain .sec01 .secContainer .beforeAfter .beforeAfterList .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.eyelashMain .sec02 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.eyelashMain .sec02 .secWrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 350px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.eyelashMain .sec02 .secPanelList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.eyelashMain .sec02 .secPanel {
+  padding: 100px 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.eyelashMain .sec02 .secPanel + .secPanel {
+  margin: 30px 0 0;
+}
+.eyelashMain .sec02 .secPanel .secBox .leftBox .num {
+  width: 85px;
+  margin: 0 0 40px;
+  font-size: 44px;
+  text-align: center;
+  border-bottom: 1px solid #acafc4;
+}
+.eyelashMain .sec02 .secPanel .secBox .leftBox .ttl {
+  font-size: 30px;
+}
+.eyelashMain .sec02 .secPanel .secBox .leftBox .ttl h3 {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .eyelashMain .sec02 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eyelashMain .sec02 .secPanel .secBox .leftBox {
+    width: 48%;
+  }
+  .eyelashMain .sec02 .secPanel .secBox .rightBox {
+    width: 52%;
+  }
+  .eyelashMain .sec02 .secPanel .secBox .rightBox01 {
+    max-width: 480px;
+  }
+}
+.eyelashMain .sec02 .secPanel .listBox {
+  margin: 60px auto 0;
+}
+@media (min-width: 1025px) {
+  .eyelashMain .sec02 .secPanel .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .eyelashMain .sec02 .secPanel .listBox .ul .li {
+    position: relative;
+    width: 48.5%;
+    height: 340px;
+  }
+  .eyelashMain .sec02 .secPanel .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.eyelashMain .sec02 .btnMore {
+  margin: 80px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	removal
+///////////////////////////////////////////////////////////*/
+.removalMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.removalMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 250px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.removalMain .sec01 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.removalMain .sec01 .secContainer + .secContainer {
+  margin: 60px auto 0;
+}
+.removalMain .sec01 .secContainer .section + .section {
+  margin: 150px 0 0;
+}
+.removalMain .sec01 .secContainer .secTtl {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+}
+.removalMain .sec01 .secContainer .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background: #acafc4;
+}
+.removalMain .sec01 .secContainer .secTtl p {
+  font-size: 34px;
+}
+.removalMain .sec01 .secContainer .secTtl h3 {
+  font-size: 13px;
+}
+.removalMain .sec01 .secContainer .sectionTitle {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 0 15px;
+  font-size: 30px;
+  color: #455578;
+  text-align: center;
+}
+.removalMain .sec01 .secContainer .sectionTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #455578;
+}
+.removalMain .sec01 .secContainer .section01 .secBox {
+  margin: 0 0 60px;
+}
+.removalMain .sec01 .secContainer .section01 .secBox h4 {
+  font-size: 30px;
+}
+.removalMain .sec01 .secContainer .section01 .secBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .removalMain .sec01 .secContainer .section01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .removalMain .sec01 .secContainer .section01 .secBox .ttlBox {
+    width: 45%;
+  }
+  .removalMain .sec01 .secContainer .section01 .secBox .ttlBox h2 {
+    line-height: 2;
+  }
+  .removalMain .sec01 .secContainer .section01 .secBox .txt {
+    width: 52%;
+  }
+}
+.removalMain .sec01 .secContainer .section02 .partsBox .chartBox .chart01 {
+  max-width: 160px;
+  margin: 0 auto;
+}
+.removalMain .sec01 .secContainer .section02 .partsBox .chartBox .chart02 {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.removalMain .sec01 .secContainer .section02 .partsBox .txtBox .labelBox {
+  margin: 0 0 30px;
+  padding: 20px 30px;
+  color: #ffffff;
+  line-height: 2.5;
+  background: #7a5876;
+}
+.removalMain .sec01 .secContainer .section02 .partsBox .txtBox .labelBox01 {
+  max-width: 360px;
+}
+.removalMain .sec01 .secContainer .section02 .partsBox .txtBox .labelBox02 {
+  max-width: 450px;
+}
+@media (min-width: 1025px) {
+  .removalMain .sec01 .secContainer .section02 .partsBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .removalMain .sec01 .secContainer .section02 .partsBox .chartBox {
+    width: 35%;
+  }
+  .removalMain .sec01 .secContainer .section02 .partsBox .txtBox {
+    width: 62%;
+  }
+}
+.removalMain .sec01 .secContainer .section03 .secBox .txtBox .labelBox {
+  max-width: 360px;
+  margin: 30px 0 0;
+  padding: 20px 30px;
+  color: #ffffff;
+  line-height: 2.5;
+  background: #7a5876;
+}
+@media (min-width: 1025px) {
+  .removalMain .sec01 .secContainer .section03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .removalMain .sec01 .secContainer .section03 .secBox .photo {
+    width: 32%;
+  }
+  .removalMain .sec01 .secContainer .section03 .secBox .txtBox {
+    width: 62%;
+  }
+}
+.removalMain .sec01 .secContainer .section03 .listBox {
+  margin: 60px auto 0;
+}
+@media (min-width: 1025px) {
+  .removalMain .sec01 .secContainer .section03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .removalMain .sec01 .secContainer .section03 .listBox .ul .li {
+    position: relative;
+    width: calc(33.3333333333% - 10px);
+    height: 280px;
+  }
+  .removalMain .sec01 .secContainer .section03 .listBox .ul .li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.removalMain .sec01 .secContainer .btnMore {
+  margin: 80px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain .priceSection {
+  padding: 200px 0 0;
+}
+.priceMain .pagerList {
+  margin: 0 0 150px;
+}
+.priceMain .pagerList .ul .li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #7a5876;
+}
+.priceMain .pagerList .ul .li .em {
+  font-size: 20px;
+}
+.priceMain .pagerList .ul .li .span {
+  font-size: 13px;
+}
+@media (min-width: 1025px) {
+  .priceMain .pagerList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .pagerList .ul .li {
+    width: calc(25% - 25px);
+  }
+}
+.priceMain .priceContainer + .priceContainer {
+  margin: 200px 0 0;
+}
+.priceMain .priceContainer .sectionTitle {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 0 0 15px;
+  text-align: center;
+}
+.priceMain .priceContainer .sectionTitle p {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+.priceMain .priceContainer .sectionTitle h3 {
+  color: #7080a6;
+}
+.priceMain .priceContainer .sectionTitle:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #455578;
+}
+.priceMain .priceContainer .pricePanel + .pricePanel {
+  margin: 100px 0 0;
+}
+.priceMain .priceContainer .pricePanel .ttl {
+  position: relative;
+  margin: 0 0 60px;
+  padding: 0 0 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #7080a6;
+}
+.priceMain .priceContainer .pricePanel .ttl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+  background: #acafc4;
+}
+.priceMain .priceContainer .priceList .ul .dl {
+  padding: 35px 15px 5px;
+  border-bottom: 1px solid #acafc4;
+}
+.priceMain .priceContainer .priceList .ul .dl .dd {
+  text-align: right;
+}
+.priceMain .priceContainer .priceList .ul .aside {
+  padding: 5px 15px 0;
+  font-size: 14px;
+}
+@media (min-width: 1025px) {
+  .priceMain .priceContainer .priceList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .priceMain .priceContainer .priceList .ul .li {
+    width: calc(50% - 20px);
+  }
+  .priceMain .priceContainer .priceList .ul .dl {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+  }
+}
+.priceMain .priceContainer .btnMore {
+  margin: 60px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	voice
+///////////////////////////////////////////////////////////*/
+.voiceMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.voiceMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 120px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.voiceMain .sec01 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.voiceMain .sec01 .voicePanel {
+  position: relative;
+  padding: 60px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.voiceMain .sec01 .voicePanel + .voicePanel {
+  margin: 80px 0 0;
+}
+.voiceMain .sec01 .voicePanel .voiceTtl {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  min-width: 180px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #7a5876;
+}
+.voiceMain .sec01 .voicePanel .voiceBox .ttlHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 10px 10px;
+  border-bottom: 1px solid #acafc4;
+}
+.voiceMain .sec01 .voicePanel .voiceBox .ttlHead h3 {
+  font-size: 30px;
+}
+.voiceMain .sec01 .voicePanel .voiceBox .ttlHead p {
+  font-size: 13px;
+}
+.voiceMain .sec01 .voicePanel .voiceBox .cntBody {
+  padding: 20px 10px 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	info
+///////////////////////////////////////////////////////////*/
+.infoMain .sec01 .infoBox {
+  margin: 0 0 80px;
+}
+.infoMain .sec01 .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.infoMain .sec01 .infoBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.infoMain .sec01 .infoBox .dl .dt {
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #acafc4;
+}
+.infoMain .sec01 .infoBox .dl .dd {
+  width: calc(100% - 180px);
+  padding: 10px 30px;
+  border-bottom: 1px solid #000000;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .sec01 {
+  padding: 250px 0 150px;
+}
+.contactMain .sec01 .secWrap {
+  position: relative;
+  padding: 0 20px 100px;
+}
+.contactMain .sec01 .secWrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100% - 350px);
+  z-index: -1;
+  background: #f4eaec;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.contactMain .sec01 .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  border: 1px solid #acafc4;
+  background: #ffffff;
+}
+.contactMain .sec02 .itemList {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contactMain .sec02 .itemList .itemBox {
+  padding: 60px 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.contactMain .sec02 .itemList .itemBox .ttlBox {
+  margin: 0 0 30px;
+}
+.contactMain .sec02 .itemList .itemBox .ttlBox .ttl {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+.contactMain .sec02 .itemList .itemBox .aside {
+  margin: 30px 0 0;
+}
+.contactMain .sec02 .itemList .itemBox .aside p {
+  position: relative;
+  padding: 0 0 0 1em;
+  font-size: 12px;
+  text-align: left;
+}
+.contactMain .sec02 .itemList .itemBox .aside p::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contactMain .sec02 .itemList .itemBox .subTxt {
+  margin: 30px 0 0;
+  font-size: 12px;
+  text-align: left;
+}
+.contactMain .sec02 .itemList .itemBox01 {
+  background: #7080a6;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox {
+  padding: 15px 0;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox a {
+  display: inline-block;
+  color: #ffffff;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox a p {
+  display: inline-block;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox a .span {
+  font-size: 25px;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox a .em {
+  font-size: 30px;
+}
+.contactMain .sec02 .itemList .itemBox01 .telBox .info {
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.7;
+}
+.contactMain .sec02 .itemList .itemBox02 {
+  background: #455578;
+}
+.contactMain .sec02 .itemList .itemBox02 .instaBox a {
+  display: block;
+  max-width: 340px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.contactMain .sec02 .itemList .itemBox02 .instaBox .logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactMain .sec02 .itemList .itemBox02 .instaBox .logoBox .logo {
+  width: 100px;
+}
+.contactMain .sec02 .itemList .itemBox02 .instaBox .logoBox .logoTtl {
+  width: calc(100% - 110px);
+  font-size: 32px;
+}
+@media (min-width: 1025px) {
+  .contactMain .sec02 .itemList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .sec02 .itemList > * {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #acafc4;
+  background: #f9f6f8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #acafc4;
+  background: #f9f6f8;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 260px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: #acafc4;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit] span {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm button[type=submit] span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 8px;
+  margin: auto 0;
+  background: url(https://lapis231213.smooooth.jp/system_panel/uploads/images/btn_more_arrow_white.png) no-repeat;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f9f6f8;
+  background: #ededed;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #acafc4;
+  border-right: 3px solid #acafc4;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #1c1c1c;
+  background: #ededed;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #1e5fb5;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 5px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 0 0;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding: 15px 0 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #7a5876;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 300px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  padding: 30px 0 0;
+  text-align: center;
+  border-top: 1px solid #acafc4;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #acafc4;
+  background: #f7f7f7;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}

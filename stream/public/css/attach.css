@@ -1,0 +1,9 @@
+body {
+  opacity: 0;
+}
+.navBox {
+  display: none;
+}
+.navBox.active {
+  display: block;
+}

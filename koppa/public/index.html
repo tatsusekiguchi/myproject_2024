@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/validationEngine.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="css/layout_sp.css">
+	<link rel="stylesheet" href="css/attach.css">
+	<!-- js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" integrity="sha512-sXgF3JImNbesKnmCuR5AE5WPQo6Z8xJMYRvDknGyc0eTWL62pqgEG4Auk9d0VnstzyhRNzPak8AyemFJq7a6/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/infiniteslide.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/scrollAnimation.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/validateJa.js"></script>
+	<script src="js/jpostal.js"></script>
+	<script src="js/autokana.js"></script>
+	<script src="js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body id="top">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="headTtl">
+				<p>ほんのひとつつみ ｜ 中部・東海・北陸エリアのかわいい伝統工芸品が見つかる</p>
+			</div>
+			<div class="headBox">
+				<div class="logoBox">
+					<div class="logo"><a href="/">
+							<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+						</a></div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="headItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navList">
+					<div class="ul">
+						<div class="li"><a href="/">
+								<div>
+									<p>TOP</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="crafts">
+								<div>
+									<p>主な取扱商品</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="guide">
+								<div>
+									<p>お客様へのご案内</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="flow">
+								<div>
+									<p>お取引の流れ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>商品検索</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="newslist">
+								<div>
+									<p>お知らせ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="contact">
+								<div>
+									<p>お問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="navItem">
+					<div class="tel"><a href="tel:0523257558">
+							<div>
+								<p class="span">Tel：</p>
+								<p class="em">052-325-7558</p>
+							</div>
+						</a></div>
+					<div class="ul">
+						<div class="li mail"><a href="contact">
+								<div><img src="https://horie-works.co.jp/system_panel/uploads/images/header_mail.png" alt=""></div>
+							</a></div>
+						<div class="li item"><a href="itemlist">
+								<div>
+									<p>商品一覧</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburgerBox">
+			<div class="hamburger">
+				<div class="span"></div>
+				<div class="span"></div>
+				<div class="span"></div>
+			</div>
+			<div class="hamburgerTxt">
+				<p>MENU</p>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="topMain main">
+		<div class="topTitlePanel">
+			<div class="secWrap01">
+				<div class="topTitle">
+					<h1>“ほんのひとつつみ”</h1>
+				</div>
+				<div class="dl">
+					<div class="dt">
+						<p>こころ動かされる、かわいい工芸品みつけた！</p>
+					</div>
+					<div class="dd">
+						<p>～NAGOYA発！中部地方の工芸品の名入れ・包装・オリジナル企画は“ほんのひとつつみ”にお任せください～</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topKvPanel">
+			<div class="topKv"></div>
+		</div>
+		<div class="bnrPanel">
+			<div class="secWrap02">
+				<div class="slickSlide">
+					<div class="slideItem"><a href="newslist">
+							<div class="img"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_bnr_01.png" alt=""></div>
+						</a></div>
+					<div class="slideItem"><a href="newslist">
+							<div class="img"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_bnr_02.png" alt=""></div>
+						</a></div>
+					<div class="slideItem"><a href="newslist">
+							<div class="img"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_bnr_03.png" alt=""></div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="secBox fadeUp">
+					<div class="photoBox">
+						<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec01_img.png" alt=""></div>
+					</div>
+					<div class="txtBox">
+						<div class="ttl">
+							<h2>“ほんのひとつつみ”の伝統工芸品</h2>
+						</div>
+						<div class="txt">
+							<p>“ほんのひとつつみ”では主に中部エリアの伝統工芸品を取り扱っております。</p>
+							<p>お皿やマグカップなどの普段使いのテーブルウェアからボールペンや名刺入れ、ネクタイなどのビジネスアイテム、和紙や扇子、織物など多種多様な伝統工芸品を取り扱っております。<br>中部エリアの記念品・ノベルティには“ほんのひとつつみ”にご相談ください。</p>
+						</div>
+						<div class="btnMore"><a href="crafts">
+								<div>
+									<p>主な取扱商品</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slidePanel">
+			<div class="slideBox">
+				<div class="ul">
+					<div class="li"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_slide_01.png" alt=""></div>
+					<div class="li"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_slide_02.png" alt=""></div>
+					<div class="li"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_slide_03.png" alt=""></div>
+					<div class="li"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_slide_04.png" alt=""></div>
+					<div class="li"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_slide_05.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="secBox fadeUp">
+					<div class="photoBox">
+						<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec02_img.png" alt=""></div>
+					</div>
+					<div class="txtBox">
+						<div class="ttl">
+							<h2>お客様に合わせたご提案</h2>
+						</div>
+						<div class="txt">
+							<p>“ほんのひとつつみ”では法人のお客様だけでなく個人のお客様にもご利用いただけます。</p>
+							<p>当店ではお客様のご要望に合わせて、周年の記念品や海外へのお土産などで喜ばれる名入れや包装やオリジナル企画などにも対応しております。<br>1個からでもご利用いただけますので、お気軽にご相談ください。</p>
+						</div>
+						<div class="btnMoreList">
+							<div class="btnMore"><a href="guide">
+									<div>
+										<p>お客様へのご案内</p>
+									</div>
+								</a></div>
+							<div class="btnMore"><a href="flow">
+									<div>
+										<p>お取引の流れ</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03">
+			<div class="secWrap03">
+				<div class="secTtlBox fadeUp">
+					<div class="secTtl">
+						<h2>地域で伝統工芸品を探す</h2>
+					</div>
+				</div>
+				<div class="searchMapPanel"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_search_map.png" usemap="#ImageMap" alt="" />
+					<map name="ImageMap">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=9&amp;wgsearch=property" coords="463,784,361,843" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=8&amp;wgsearch=property" coords="366,610,465,666" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=7&amp;wgsearch=property" coords="679,856,585,801" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=6&amp;wgsearch=property" coords="649,568,556,520" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=5&amp;wgsearch=property" coords="166,870,259,926" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=4&amp;wgsearch=property" coords="236,404,332,459" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=3&amp;wgsearch=property" coords="147,565,242,620" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=2&amp;wgsearch=property" coords="417,383,512,440" shape="rect">
+						<area target="" alt="" title="" href="https://horie-works.co.jp/itemlist?s0l0%5B%5D=1&amp;wgsearch=property" coords="747,632,886,686" shape="rect">
+					</map>
+					<div class="btnMore"><a href="itemlist">
+							<div>
+								<p>一覧を見る</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="sec04">
+			<div class="secWrap01">
+				<div class="secTtlBox fadeUp">
+					<div class="secTtl">
+						<h2>商品別で伝統工芸品を探す</h2>
+					</div>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_01.png" alt=""></div>
+							<div class="ttl">
+								<p>漆器</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_02.png" alt=""></div>
+							<div class="ttl">
+								<p>陶磁器</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_03.png" alt=""></div>
+							<div class="ttl">
+								<p>木工品</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_04.png" alt=""></div>
+							<div class="ttl">
+								<p>竹細工</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_05.png" alt=""></div>
+							<div class="ttl">
+								<p>鋳物</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="li">
+							<div class="photo"><img src="https://horie-works.co.jp/system_panel/uploads/images/top_sec04_img_06.png" alt=""></div>
+							<div class="ttl">
+								<p>その他</p>
+							</div>
+							<div class="btnMoreArrow"><a href="itemlist">
+									<div>
+										<p>詳しく見る</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="btnMore"><a href="itemlist">
+						<div>
+							<p>一覧を見る</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="sec05">
+			<div class="secWrap01">
+				<div class="secTtlBox fadeUp">
+					<div class="secTtl">
+						<h2>価格帯別で伝統工芸品を探す</h2>
+					</div>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>～1,000円</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>1,001円～3,000円</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>3,001円～5,000円</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>5,001円～10,000円</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>10,001円～30,000円</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="itemlist">
+								<div>
+									<p>30,001円～</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="btnMore"><a href="itemlist">
+						<div>
+							<p>一覧を見る</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="sec06">
+			<div class="secWrap02">
+				<div class="secBox">
+					<div class="ttlBox fadeUp">
+						<div class="secTtlBox">
+							<div class="secTtl">
+								<h2>会社概要</h2>
+							</div>
+						</div>
+						<div class="btnMore"><a href="company">
+								<div>
+									<p>会社概要</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="txtBox fadeUp">
+						<div class="ttl">
+							<h3>日本の伝統工芸品をもっと身近に</h3>
+						</div>
+						<div class="txt">
+							<p>“ほんのひとつつみ”では名古屋を拠点に中部・北陸エリアの伝統工芸品を取り扱っております。<br>「高くて古いイメージ」ではなく、「かわいくておしゃれ」な伝統工芸品。<br>　当店ではそんな伝統工芸品と出会えます。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec07">
+			<div class="secWrap01">
+				<div class="secTtlBox fadeUp">
+					<div class="secTtl">
+						<h2>お知らせ</h2>
+					</div>
+				</div>
+				<div class="newsListBox">
+					<section class="webgene-blog">
+						<div class="webgene-header">
+							<h3>お知らせ一覧</h3>
+						</div>
+						<div class="webgene-item">
+							<div class="dl">
+								<div class="dt">
+									<div class="time">
+										<p>2024.09.20</p>
+									</div>
+									<div class="cate">
+										<p>お知らせ</p>
+									</div>
+								</div>
+								<div class="dd"><a href="">
+										<p>ホームページ公開いたしました。</p>
+									</a></div>
+							</div>
+						</div>
+						<div class="webgene-item">
+							<div class="dl">
+								<div class="dt">
+									<div class="time">
+										<p>2024.09.20</p>
+									</div>
+									<div class="cate">
+										<p>お知らせ</p>
+									</div>
+								</div>
+								<div class="dd"><a href="">
+										<p>ホームページ公開いたしました。</p>
+									</a></div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="btnMore"><a href="newslist">
+						<div>
+							<p>一覧を見る</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="secBox">
+					<div class="ttlBox">
+						<div class="ttl">
+							<h2>お問い合わせ</h2>
+						</div>
+						<div class="txt">
+							<p>伝統工芸品のご依頼、ご相談はお問い合わせフォームよりご連絡ください。<br>お急ぎの場合はお電話でも承っております。</p>
+						</div>
+					</div>
+					<div class="txtBox">
+						<div class="tel"><a href="tel:0523257558">
+								<div>
+									<p class="span">Tel：</p>
+									<p class="em">052-325-7558</p>
+								</div>
+							</a>
+							<p>【営業時間】10:00～17:00</p>
+						</div>
+						<div class="mail"><a href="contact">
+								<div>
+									<p>メールでのお問い合わせ</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="footBox">
+					<div class="logo"><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+					<div class="txt">
+						<p>〒461-0001<br>名古屋市東区泉2-15-4 グランセーブル高岳401</p>
+					</div>
+					<div class="sns">
+						<div class="ul">
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="#" target="_blank" rel="noopener">
+									<div><img src="https://horie-works.co.jp/system_panel/uploads/images/footer_youtube.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="pagetop linkBtn" data-target="main"><img src="https://horie-works.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="copy">
+					<p>&copy; 2024 株式会社コッパ ワークアンドアート.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

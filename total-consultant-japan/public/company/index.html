@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="company">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="ttl">
+					<p>トータルコンサルタントジャパン株式会社｜岐阜市で不動産・経営・品質コンサルなど多事業展開</p>
+				</div>
+				<div class="logo"><a href="/">
+						<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headItem">
+				<div class="search"><a href="propertySearch?wgsearch=property">
+						<div>
+							<p>物件検索</p>
+						</div>
+					</a></div>
+				<div class="contact"><a href="contact">
+						<div>
+							<p>お問い合わせ</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navPanel01">
+					<div class="leftBox">
+						<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="txt">
+								<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+							</div>
+							<div class="txt"><a href="tel:0583370600">
+									<div>
+										<p>TEL. 058-337-0600</p>
+									</div>
+								</a>
+								<p>受付時間：10:00～18:00<br>定休日：土・日・祝</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li">
+									<p>事業紹介</p>
+								</div>
+								<div class="subList">
+									<div class="li"><a href="sales?wgsearch=property">
+											<div>
+												<p>不動産売買</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="maintenance?wgsearch=property">
+											<div>
+												<p>土地・建物のメンテナンス</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="diagnosis">
+											<div>
+												<p>家相・間取り診断</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="company">
+											<div>
+												<p>法人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="individual">
+											<div>
+												<p>個人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="stone">
+											<div>
+												<p>天然石卸</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="shower">
+											<div>
+												<p>シャワーヘッド販売</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="propertySearch?wgsearch=property">
+										<div>
+											<p>物件検索</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navPanel02">
+					<div class="contactItem">
+						<div class="telBox"><a href="tel:0583370600">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">電話</p>
+										<p class="span">で相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>058-337-0600</p>
+									</div>
+								</div>
+							</a></div>
+						<div class="mailBox"><a href="contact">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">WEB</p>
+										<p class="span">から相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>無料相談受付中</p>
+									</div>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="consultMain companyMain main">
+		<div class="pageKvContainer">
+			<div class="pageKvPanel"></div>
+		</div>
+		<div class="topSection">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">C</p>
+						<p class="span">onsultant for company</p>
+					</div>
+					<div class="pageSecTtl">
+						<h1>中小企業向けコンサルタント</h1>
+					</div>
+				</div>
+				<div class="ttl">
+					<p>会社を</p>
+					<p class="em">経営する社長</p>
+					<p>のみなさま<br></p>
+					<p>こんなお悩みはありませんか？</p>
+				</div>
+				<div class="secBox">
+					<div class="txtBox">
+						<div class="ttl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_top_ttl_01.png" alt=""></div>
+						<div class="ul">
+							<div class="li">
+								<p>売上・利益率に悩んでいる</p>
+							</div>
+							<div class="li">
+								<p>資金繰りや今後の見通しがつかない</p>
+							</div>
+							<div class="li">
+								<p>社員のモチベーションが低く悩んでいる</p>
+							</div>
+							<div class="li">
+								<p>経営について相談できる人がいない</p>
+							</div>
+						</div>
+					</div>
+					<div class="txtBox">
+						<div class="ttl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_top_ttl_02.png" alt=""></div>
+						<div class="ul">
+							<div class="li">
+								<p>クレーム対応で悩んでいる</p>
+							</div>
+							<div class="li">
+								<p>生産性・品質不具合をどう改善したらいいか分からない</p>
+							</div>
+							<div class="li">
+								<p>不具合発生時の対応と改善マニュアルで悩んでいる</p>
+							</div>
+							<div class="li">
+								<p>クレーム報告書などの作成を教えてほしい</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="messageSection">
+			<div class="secWrap01">
+				<div class="ttlBox">
+					<div class="ttl">
+						<p class="em">1人で悩んでいませんか？</p>
+					</div>
+					<div class="ttl">
+						<p>そのお悩み、</p>
+						<p class="marker">当社にお任せ</p>
+						<p>ください！</p>
+					</div>
+				</div>
+				<div class="txt">
+					<p>トータルコンサルタントジャパン代表は前職で大手企業の経営改善や品質管理を行ってきました。<br>「現状を変えたい」というあなたの想いに寄り添い、「新たな一歩」を踏み出せるように伴走いたします。</p>
+					<p>経営・品質管理・品質保証で悩まれている企業様は、まずは当社にご相談ください。<br>お客様の課題の原因と解決方法を一緒に考えて参ります。</p>
+				</div>
+			</div>
+		</div>
+		<div class="businessSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>事業内容</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_business.png" alt="">
+				</div>
+			</div>
+			<div class="secContainerList">
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_business_img_01.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlBox">
+									<div class="ttl">
+										<p>経営コンサルタント</p>
+									</div>
+								</div>
+								<div class="txt">
+									<p>経営コンサルタントでは、お客様の経営課題を一緒に解決いたします。<br>資金繰りに業績低迷、社員のモチベーション低下など、日々いろいろな経営課題がございます。<br>なかなか相談できない経営者の悩みは、ぜひ当社にご相談ください。<br>長年様々な企業の経営課題にも取り組んだ代表が、経営者様のお悩みにしっかりと寄り添い、解決策を一緒に考えてまいります。</p>
+								</div>
+								<div class="more pagingBtn"><a href="#price">
+										<div>
+											<p>料金はこちら</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_business_img_02.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlBox">
+									<div class="ttl">
+										<p>品質管理・保証コンサルタント</p>
+									</div>
+								</div>
+								<div class="txt">
+									<p>品質管理・保証コンサルタントでは、社内の品質管理及びクレーム対応などのお悩みを一緒に解決いたします。<br>品質管理やクレーム対応は製造業の企業様には根幹となる部分です。<br>長年様々な企業で品質管理や品質保証、クレーム対応等に取り組んだ代表が、経営者様のお悩みにしっかりと寄り添い、解決策を一緒に考えてまいります。</p>
+								</div>
+								<div class="more pagingBtn"><a href="#price">
+										<div>
+											<p>料金はこちら</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reasonSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>選ばれる理由</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_reason.png" alt="">
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="num">
+								<p>01</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>徹底したヒアリング</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>徹底的なヒアリングを基に課題を分析し、<br>根本原因と強みを洗い出します。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="num">
+								<p>02</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>分かりやすい説明</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>会社や部署の目標を設定し、<br>達成するまでのロードマップを一緒に作成します。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="num">
+								<p>03</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>様々な課題に対応</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>当社は経営だけでなく、<br>品質管理やクレーム対応など<br>様々な課題にも対応可能。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="num">
+								<p>04</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>明確な目標設定</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>課題の分析を通して、<br>お客様の明確な目標を一緒に設定いたします。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="num">
+								<p>05</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>徹底した伴走サポート</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>お客様の課題解決まで、<br>しっかりと伴走サポートいたします。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="num">
+								<p>06</p>
+							</div>
+							<div class="dl">
+								<div class="dt">
+									<p>課題解決の豊富な実績</p>
+								</div>
+								<div class="dd">
+									<div class="txt">
+										<p>会社や部署の目標を設定し、<br>達成するまでのロードマップを一緒に作成します。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>ご相談内容</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_content.png" alt="">
+				</div>
+				<div class="section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_content_ttl_01.png" alt=""></div>
+					<div class="txt">
+						<p>経営の悩み・採算性向上・生産性向上・業績不振・社員のモチベーション低下・資金繰り・コスト削減・<br>業務効率化・新規事業など</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/company_content_ttl_02.png" alt=""></div>
+					<div class="txt">
+						<p>品質管理・品質保証・不具合発生防止・クレーム処置・クレーム対応・クレーム報告書作成理・マニュアル作成など</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="caseSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>コンサルタント事例</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_case.png" alt="">
+				</div>
+				<div class="secPanelList">
+					<div class="secPanel">
+						<div class="ttlBox">
+							<div class="ttl">
+								<p>タイトルが入ります。</p>
+							</div>
+						</div>
+						<div class="cate">
+							<p>地名や業種</p>
+						</div>
+						<div class="txt">
+							<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+						</div>
+						<div class="dl">
+							<div class="dt">
+								<p>【改善内容】</p>
+							</div>
+							<div class="dd">
+								<div class="txt">
+									<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+								</div>
+							</div>
+						</div>
+						<div class="arrow"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_case_arrow.png" alt=""></div>
+						<div class="txt">
+							<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="priceSection" id="price">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>料金</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_price.png" alt="">
+				</div>
+				<div class="section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_price_ttl_01.png" alt=""></div>
+					<div class="txt">
+						<p>ご相談内容に応じて、コンサルタント料が異なります。<br>初回のご相談にて、お客様ご相談内容や状況を確認し、お見積りを作成いたします。<br>交通費やその他必要経費に関しては別途ご請求もしくはご負担ください。<br>ご契約後にお客様都合による解約となった場合は、原則としてコンサルタント料の○○％をご請求致します。<br>その他の事項については、ご相談の段階でご提示させていただきます。</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_price_ttl_02.png" alt=""></div>
+					<div class="priceList">
+						<div class="ul">
+							<div class="li">
+								<p>初回相談（○分）</p>
+								<p>【1回】○○○○○円（税込）</p>
+							</div>
+							<div class="li">
+								<p>2回目以降のご相談（○分）</p>
+								<p>【1回】○○○○○円（税込）</p>
+							</div>
+							<div class="li">
+								<p>年間契約（月1回）</p>
+								<p>○○○○○円（税込）</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="faqSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>よくあるお問い合わせ</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_ttl_faq.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>トータルコンサルタントジャパンでいただくご相談をまとめております。<br>会社経営や品質管理などでお悩みの方はご参考ください。</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>会社の業績が落ちており、一緒に対策を考えていただけますか？</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>はい、トータルコンサルタントジャパンでは会社に業績回復のコンサルタントも行っております。<br>お客様に徹底したヒアリングを行い、課題やお客様の強みを洗い出します。<br>そちらを基に、競合他社や市場動向と照らし合わせ、施策をご提案いたします。まずはお問い合わせより当社にご相談ください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>当社の品質管理を改善したいのですが、ご相談できますか？</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>はい、是非ご相談ください。<br>当社では品質管理や品質保証、クレーム対応にも対応しております。<br>クレーム報告書や、業務改善マニュアルの作成も承っております。<br>まずはお問い合わせより当社にご相談ください。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">C</p>
+						<p class="span">ontact</p>
+					</div>
+					<div class="pageSecTtl">
+						<h2>お問い合わせ</h2>
+					</div>
+				</div>
+				<div class="ttl">
+					<p>お客様の</p>
+					<p class="em">しあわせ</p>
+					<p>について一緒に考えてみませんか？</p>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<div class="telBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">電話</p>
+									<p>で相談してみる</p>
+								</div>
+								<div class="dd"><a href="tel:0583370600">
+										<div>
+											<p>058-337-0600</p>
+										</div>
+									</a>
+									<div class="aside">
+										<p>受付時間：10:00～18:00</p>
+									</div>
+									<p>定休日：土・日・祝</p>
+								</div>
+							</div>
+						</div>
+						<div class="mailBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">WEB</p>
+									<p>から相談してみる</p>
+								</div>
+								<div class="dd"><a href="contact">
+										<div>
+											<p>相談メールフォーム</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+				<div class="txt">
+					<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+				</div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_fb.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy; 2024 トータルコンサルタントジャパン株式会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

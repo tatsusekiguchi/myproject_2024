@@ -1,0 +1,1466 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      height: 400px;
+      padding: 0 20px 60px;
+      .kvList {
+        max-width: 300px;
+        margin: 0 0 25px;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: 4px solid #ffffff;
+        .ul {
+          max-width: 200px;
+          .li {
+            padding: 0 0 0 15px;
+            &:nth-child(1) {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_kv_arrow.png)
+                left center no-repeat;
+              background-size: 10px auto;
+            }
+          }
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+      .kvTitle {
+        font-size: 26px;
+      }
+    }
+    .sec01 {
+      padding: 60px 0 0;
+      border-bottom: 40px solid #162857;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_bg_icon_01.png)
+          left 20px bottom no-repeat,
+        url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_bg_icon_02.png)
+          right 20px bottom no-repeat;
+      background-size: 80px auto, 60% auto;
+      .secBox {
+        padding: 0 0 60px;
+        .txtBox {
+          .sun {
+            top: -30px;
+            right: 20px;
+            width: 30px;
+          }
+          .title {
+            margin: 0 0 20px;
+            padding: 8px 0 8px 35px;
+            font-size: 22px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_ttl_icon.png)
+              left top 10px no-repeat;
+            background-size: 30px auto;
+          }
+        }
+      }
+      .move_item {
+        width: 60px;
+        height: 40px;
+      }
+      .move_stage {
+        height: 40px;
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secBoxList {
+        .secBox {
+          + .secBox {
+            margin: 40px 0 0;
+          }
+          .photo {
+            border-radius: 4px;
+            border: 4px solid #ffffff;
+            img {
+              border-radius: 4px;
+            }
+          }
+          .txtBox {
+            margin: 0 0 10px;
+            padding: 20px;
+            border-radius: 4px;
+            border: 4px solid #ffffff;
+            background: #1a2d68;
+            .ttl {
+              font-size: 20px;
+              h3 {
+                line-height: 1.2;
+              }
+              &.ttl01 {
+                padding: 0 0 0 35px;
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_01.png)
+                  left center no-repeat;
+                background-size: 25px auto;
+              }
+              &.ttl02 {
+                padding: 0 0 0 35px;
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_02.png)
+                  left top no-repeat;
+                background-size: 25px auto;
+              }
+              &.ttl03 {
+                padding: 0 0 0 35px;
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec02_ttl_icon_03.png)
+                  left top no-repeat;
+                background-size: 25px auto;
+              }
+            }
+          }
+        }
+        .btnMoreSmall {
+          margin: 0 auto;
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .pageSecTtlBox {
+        padding: 25px 0 0;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_top_icon.png)
+          right top no-repeat;
+        background-size: 40px auto;
+        .pageSecTtl {
+          padding: 0;
+          background: none;
+        }
+      }
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+            a {
+              div {
+                padding: 20px;
+              }
+              p {
+                padding: 6px 0 6px 50px;
+                font-size: 30px;
+              }
+              .ttl01 {
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_01.png)
+                  left top 5px no-repeat;
+                background-size: 45px auto;
+              }
+              .ttl02 {
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_02.png)
+                  left top 10px no-repeat;
+                background-size: 45px auto;
+              }
+            }
+          }
+        }
+      }
+      .recruitBox {
+        max-width: 600px;
+        margin: 0 auto;
+        a {
+          .secBox {
+            .ttl {
+              margin: 0 0 20px;
+              p {
+                padding: 45px 0 0;
+                font-size: 30px;
+                background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec03_ttl_icon_03.png)
+                  center top no-repeat;
+                background-size: 40px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .btnMore {
+        margin: 40px auto 0;
+      }
+    }
+    .sec05 {
+      padding: 60px 0 0;
+      .secBox {
+        padding: 0 0 60px;
+        .txtBox {
+          padding: 20px 0 0;
+          .btnMoreList {
+            margin: 20px 0 0;
+            .btnMore {
+              margin: 0 auto;
+              + .btnMore {
+                margin: 20px auto 0;
+              }
+            }
+          }
+        }
+      }
+      .item01 {
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        width: 70px;
+      }
+      .item02 {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 80px;
+      }
+      .move_item {
+        width: 60px;
+        height: 40px;
+      }
+      .move_stage {
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	battery
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .batteryMain {
+    .topTitlePanel {
+      padding: 40px 0 20px;
+    }
+    .sec01 {
+      padding: 50px 0 0;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/battery_sec_bg.png)
+        no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 0 0 60px;
+        .txtBox {
+          padding: 20px 0 0;
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .move_item {
+        width: 60px;
+        height: 40px;
+      }
+      .move_stage {
+        height: 40px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	field
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .fieldMain {
+    .topTitlePanel {
+      padding: 40px 0 20px;
+    }
+    .section {
+      padding: 50px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .casePanel {
+        margin: 60px 0 0;
+        padding: 50px 20px;
+        .pTtl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 10px;
+          font-size: 20px;
+        }
+        .inner {
+          max-width: 1300px;
+          margin: 0 auto;
+        }
+        .caseBox {
+          margin: 0 0 20px;
+          padding: 0 0 0 40px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 30px;
+            height: 25px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/field_case_check.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+          .dl {
+            padding: 0 0 15px;
+            border-bottom: 2px solid #192d61;
+            .dt {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	driver
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .driverMain {
+    .topContainer {
+      padding: 60px 0 80px;
+      .secBox {
+        max-width: 400px;
+        margin: 0 auto;
+        .img {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 30px 0 0;
+          .secTtl {
+            margin: 0 0 15px;
+            font-size: 24px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_top_ttl_icon.png)
+              left 100px top no-repeat;
+            background-size: 50px auto;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 40px 0 20px;
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+      .topTxt {
+        margin: 0 0 50px;
+      }
+      .secBoxList {
+        margin: 0 0 60px;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .sub {
+            padding: 0 0 0 25px;
+          }
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .moreBox {
+        max-width: 400px;
+        margin: 0 auto;
+        a {
+          padding: 20px;
+          font-size: 24px;
+          text-align: center;
+          p {
+            padding: 0 0 0 25px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+              left center no-repeat;
+            background-size: 10px auto;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 0;
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .listBox {
+        padding: 0 0 20px;
+        .ul {
+          .li {
+            padding: 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              padding: 0 0 10px 50px;
+              font-size: 24px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec02_check.png)
+                left center no-repeat;
+              background-size: 40px auto;
+            }
+            .dd {
+              padding: 10px 0 0;
+            }
+          }
+        }
+      }
+      .move_item {
+        width: 180px;
+        height: 30px;
+      }
+      .move_stage {
+        height: 30px;
+      }
+    }
+    .sec03 {
+      padding: 50px 0 80px;
+      .listBox {
+        .ul {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            margin: 0 auto;
+            z-index: -1;
+            background: #1a2d68;
+          }
+          .li {
+            padding: 30px 20px;
+            &::before {
+              width: 90px;
+              height: 90px;
+            }
+            &:after {
+              bottom: -6px;
+            }
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .num {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+          }
+          .dl {
+            .dt {
+              padding: 120px 0 0;
+              font-size: 24px;
+            }
+            .ttl01 {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_01.png)
+                center top no-repeat;
+              background-size: 90px auto;
+            }
+            .ttl02 {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_02.png)
+                center top no-repeat;
+              background-size: 110px auto;
+            }
+            .ttl03 {
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/driver_sec03_icon_03.png)
+                center top no-repeat;
+              background-size: 130px auto;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 50px 0 80px;
+      .secBox {
+        padding: 10px;
+      }
+      .infoBox {
+        padding: 5px;
+        .dl {
+          display: block;
+          > * {
+            display: block;
+          }
+          .dt {
+            width: 100%;
+          }
+          .dd {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	work
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .workMain {
+    .sec01 {
+      padding: 50px 0 80px;
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+            .img {
+              max-width: 200px;
+              margin: 0 auto 20px;
+            }
+          }
+          .dl {
+            .dt {
+              padding: 5px 0 5px 20px;
+              font-size: 18px;
+            }
+            .dd {
+              padding: 5px 0 0;
+            }
+          }
+        }
+      }
+      .casePanel {
+        margin: 60px 0 0;
+        padding: 50px 20px;
+        .pTtl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .secPanel {
+        .secBoxList {
+          padding: 20px;
+        }
+        .secBox {
+          + .secBox {
+            margin: 30px 0 0;
+          }
+          .ttl {
+            margin: 0 0 10px;
+            border-bottom: 2px solid #000000;
+            p {
+              padding: 0 0 5px 40px;
+              font-size: 24px;
+            }
+          }
+          .ttl01 p {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec02_icon_01.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+          .ttl02 p {
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec02_icon_02.png)
+              left center no-repeat;
+            background-size: 30px auto;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 50px 0 80px;
+      .listBox {
+        .ul {
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 2) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 50px 0 0;
+      .secWrap {
+        padding: 0 20px 100px;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_icon.png)
+          right 20px bottom no-repeat;
+        background-size: 180px auto;
+      }
+      .listBox {
+        margin: 0 0 50px;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            margin: 5px 0 0;
+            padding: 20px;
+            .dt {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .btnEntry {
+        max-width: 400px;
+        a {
+          padding: 15px 10px;
+          font-size: 30px;
+          p {
+            padding: 0 80px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_arrow_01.png)
+                left center no-repeat,
+              url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_arrow_02.png)
+                right center no-repeat;
+            background-size: 50px auto, 50px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	partner
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .partnerMain {
+    .sec01 {
+      padding: 50px 0 80px;
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .casePanel {
+        margin: 60px 0 0;
+        padding: 50px 20px;
+        .pTtl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 10px;
+          font-size: 20px;
+        }
+        .ul {
+          max-width: 500px;
+          margin: -20px auto 0;
+          .li {
+            padding: 0 0 0 40px;
+            font-size: 18px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+              left center no-repeat;
+            background-size: 35px auto;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_sec02_bg.png)
+        no-repeat;
+      background-size: cover;
+      .listBox {
+        .ul {
+          .li {
+            padding: 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              padding: 0 0 5px 40px;
+              font-size: 22px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+                left center no-repeat;
+              background-size: 35px auto;
+              border-bottom: 3px solid #6d758f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	entry
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .secEntry {
+    padding: 50px 0 0;
+    .secWrap01 {
+      padding: 0 20px 100px;
+      background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/work_sec04_icon.png)
+        right 20px bottom no-repeat;
+      background-size: 180px auto;
+    }
+    .lineContainer {
+      margin: 0 0 50px;
+      .linePanel {
+        padding: 20px;
+        .itemBox {
+          max-width: 400px;
+          margin: 0 auto 20px;
+          .ul {
+            display: block;
+            text-align: center;
+            .li {
+              &.img {
+                width: 100px;
+                margin: 0 auto 20px;
+              }
+              &.qr {
+                display: inline-block;
+                width: 120px;
+                + .qr {
+                  margin: 0 0 0 5px;
+                }
+              }
+            }
+          }
+        }
+        .txtBox {
+          .ttl {
+            padding: 0 0 0 20px;
+            font-size: 24px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+    }
+    .formContainer {
+      .entryFormTtl {
+        margin: 0 0 20px;
+        padding: 0 0 10px 20px;
+        font-size: 24px;
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+          left center no-repeat;
+        background-size: 15px auto;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 220px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	column
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .columnMain {
+    .blogSection {
+      padding: 60px 0 100px;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            display: block;
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	delivery
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .deliveryMain {
+    .topTitlePanel {
+      padding: 40px 0 20px;
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+    }
+    .section {
+      padding: 50px 0;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .casePanel {
+        margin: 60px 0 0;
+        padding: 50px 20px;
+        .pTtl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 10px;
+          font-size: 20px;
+        }
+        .ul {
+          max-width: 500px;
+          margin: -20px auto 0;
+          .li {
+            padding: 0 0 0 40px;
+            font-size: 16px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+              left center no-repeat;
+            background-size: 35px auto;
+          }
+        }
+      }
+    }
+    .secFee {
+      padding: 50px 0 80px;
+    }
+    .priceContainer {
+      .pricePanel {
+        padding: 10px;
+        background: #ffffff;
+        .priceBox {
+          + .priceBox {
+            .dl {
+              &.head {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	support
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .supportMain {
+    .sec01 {
+      padding: 50px 0 0;
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+      .topSecBox {
+        padding: 0 0 60px;
+        .txt {
+          margin: 0 0 20px;
+        }
+        .videoBox {
+          padding: 0 0 70%;
+        }
+      }
+      .secContainer {
+        padding: 60px 0;
+        .secBox {
+          .txtBox {
+            padding: 20px 0 0;
+            .secTtl {
+              margin: 0 0 15px;
+              padding: 0 0 0 25px;
+              font-size: 26px;
+              color: #1a2e6b;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+            .infoPanel {
+              .infoBox {
+                .dl {
+                  display: block;
+                  > * {
+                    display: block;
+                  }
+                  .dt {
+                    width: 100%;
+                  }
+                  .dd {
+                    padding: 10px 20px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            .btnMoreBox {
+              text-align: center;
+            }
+          }
+        }
+        .slickSlide {
+          .slider {
+            .photo {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 60%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .thumb-item-nav {
+            margin: 5px 0 0;
+            .photo {
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .sub {
+            padding: 0 0 0 25px;
+          }
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+      .casePanel {
+        margin: 60px 0 0;
+        padding: 50px 20px;
+        .pTtl {
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          width: calc(100% - 20px);
+          padding: 10px;
+          font-size: 20px;
+        }
+        .ul {
+          max-width: 500px;
+          margin: -20px auto 0;
+          .li {
+            padding: 0 0 0 40px;
+            font-size: 16px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/partner_list_check.png)
+              left center no-repeat;
+            background-size: 35px auto;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 50px 0 80px;
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            margin: 5px 0 0;
+            padding: 20px;
+            .dt {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 50px 0 80px;
+      .listBox {
+        .ul {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            margin: 0 auto;
+            z-index: -1;
+            background: #1a2d68;
+          }
+          .li {
+            padding: 30px 20px;
+            &::before {
+              width: 90px;
+              height: 90px;
+            }
+            &:after {
+              bottom: -6px;
+            }
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .num {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+          }
+          .dl {
+            padding: 30px 0;
+            .dt {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 50px 0 80px;
+      .topTxt {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .pagingList {
+      padding: 40px 20px 0;
+      .ul {
+        display: block;
+        max-width: 170px;
+        margin: 0 auto;
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .section {
+      padding: 50px 0 80px;
+    }
+    .sec01 {
+      .secWrap {
+        background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/top_sec01_icon_sun.png)
+          right 20px top no-repeat;
+        background-size: 40px auto;
+      }
+      .pageSecTtlBox {
+        margin: 0 auto 30px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 40px auto 0;
+        }
+        .txtBox {
+          .secTtl {
+            margin: 0 0 15px;
+            padding: 0 0 0 25px;
+            font-size: 26px;
+            color: #1a2e6b;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/page_top_title_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+        .nameBox {
+          .em {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .secBox {
+        padding: 10px;
+      }
+      .infoBox {
+        padding: 5px;
+        .dl {
+          display: block;
+          > * {
+            display: block;
+          }
+          .dt {
+            width: 100%;
+          }
+          .dd {
+            padding: 10px 20px;
+          }
+        }
+      }
+      .mapBox {
+        margin: 60px 0 0;
+      }
+    }
+    .sec03 {
+      .btnItemList {
+        max-width: 330px;
+        .btnItem {
+          a {
+            div {
+              padding: 20px;
+            }
+            p {
+              font-size: 20px;
+            }
+            .tel {
+              padding: 0 0 0 30px;
+              font-size: 24px;
+              background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+      .linePanel {
+        padding: 20px;
+        .itemBox {
+          max-width: 400px;
+          margin: 0 auto 20px;
+          .ul {
+            display: block;
+            text-align: center;
+            .li {
+              &.img {
+                width: 100px;
+                margin: 0 auto 20px;
+              }
+              &.qr {
+                display: inline-block;
+                width: 120px;
+                + .qr {
+                  margin: 0 0 0 5px;
+                }
+              }
+            }
+          }
+        }
+        .txtBox {
+          .ttl {
+            padding: 0 0 0 20px;
+            font-size: 24px;
+            background: url(https://s-9811148.smooooth.jp/system_panel/uploads/images/entry_ttl_arrow.png)
+              left center no-repeat;
+            background-size: 15px auto;
+          }
+        }
+      }
+    }
+    .sec04 {
+      .topTxt {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'voicelist'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#voicelist.page
+    include /common/pageHeader.pug
+    include ../../layouts/voicelist.pug
+    include /common/footer.pug

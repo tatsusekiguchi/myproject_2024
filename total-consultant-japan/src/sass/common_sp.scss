@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    background: #ffffff;
+    .headWrap {
+      padding: 10px 20px;
+    }
+    .logoBox {
+      padding: 0;
+      .ttl {
+        display: none;
+      }
+      .logo {
+        width: 200px;
+      }
+    }
+    .headItem {
+      display: none;
+    }
+    .hamburger {
+      top: 5px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 50px 20px 60px;
+    .navContainer {
+      height: auto;
+    }
+    .navPanel01 {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      height: auto;
+      .leftBox {
+        width: 100%;
+        margin: 0 0 20px;
+        .logo {
+          max-width: 240px;
+          margin: 0 0 20px;
+        }
+        .info {
+          .txt {
+            + .txt {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .rightBox {
+        width: 100%;
+        .navList {
+          display: block;
+          .ul {
+            width: 100%;
+            + .ul {
+              margin: 15px 0 0;
+            }
+            .li {
+              + .li {
+                margin: 15px 0 0;
+              }
+            }
+            .subList {
+              padding: 15px 0 0 15px;
+            }
+          }
+        }
+      }
+    }
+    .navPanel02 {
+      position: static;
+      width: 100%;
+      max-width: 260px;
+      margin: 30px auto 0;
+      .contactItem {
+        .telBox {
+          .dd {
+            p {
+              font-size: 26px;
+            }
+          }
+        }
+        .mailBox {
+          .dd {
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageKvContainer {
+    height: 250px;
+    .topKvPanel {
+      padding: 20px;
+      height: calc(100% - 10px);
+    }
+  }
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+    .sub {
+      p {
+        font-size: 16px;
+      }
+    }
+    .pageSecTtl {
+      font-size: 24px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 40px 0 0;
+      .ttl {
+        margin: 0 0 20px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .contactPanel {
+        top: 15px;
+        .contactItem {
+          display: block;
+          max-width: 600px;
+          > * {
+            width: 100%;
+          }
+          .dl {
+            .dt {
+              font-size: 18px;
+            }
+          }
+          .telBox {
+            margin: 0 0 20px;
+            a {
+              font-size: 30px;
+            }
+          }
+          .mailBox {
+            .dl {
+              .dt {
+                margin: 0 0 20px;
+              }
+            }
+            a {
+              max-width: 280px;
+            }
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 150px 0 20px;
+      .pagetop {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        width: 60px;
+        cursor: pointer;
+      }
+      .logo {
+        max-width: 280px;
+        margin: 0 auto 15px;
+      }
+      .txt {
+        margin: 0 0 15px;
+      }
+      .sns {
+        .ul {
+          .li {
+            width: 25px;
+            + .li {
+              margin: 0 0 0 15px;
+            }
+          }
+        }
+      }
+      .copy {
+        margin: 30px 0 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// ▽メイン▽
+.propertyMain.main
+    .pageKvPanel
+        .kvContact
+            a(href="contact")
+                div
+                    img(src="https://shitok.jp/system_panel/uploads/images/top_kv_contact.png", alt="")
+    .pageTopContainer
+        .secWrap01
+            .secBox
+                .leftBox
+                    .pageSecTtlBox
+                        .pageSecTtl
+                            h2 空き家・戸建て・土地・<br>事業用地を探す
+                        .sub
+                            p SEARCH
+                .rightBox
+                    .txt
+                        p 静岡県菊川市周辺の土地、物件の購入はOffice TMKにご相談ください。<br>エリアや価格帯からご希望の条件で不動産をお探し致します。<br>また事業用地に関しては全国に対応しております。
+    .searchSection
+        .secWrap01
+            .section
+                .secTtl
+                    h3 □ 条件検索
+                p ご希望の条件をご指定ください。表示する物件を絞り込めます。
+                .searchPanel
+                    <form class="webgene-search-form" method="get" action="./">
+                        <div rel="物件種類" title="物件種類" class="webgene-search-form-block">
+                            <div class="search-title-wrapper">
+                                <p class="search-title">物件種類</p>
+                            </div>
+                            <div class="search-area-wrapper">
+                                <div class="search-subtitle-wrapper"></div>
+                                <div class="search-contents-wrapper">
+                                    <label><input type="checkbox" class="property_type_cd" name="s0l0[]" value="1">★物件種類管理 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div rel="エリア" title="エリア" class="webgene-search-form-block">
+                            <div class="search-title-wrapper">
+                                <p class="search-title">エリア</p>
+                            </div>
+                            <div class="search-area-wrapper">
+                                <div class="search-subtitle-wrapper"> </div>
+                                <div class="search-contents-wrapper">
+                                    <label><input type="checkbox" class="area_small_cd" name="s1l0[]" value="1">★エリア管理</label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="search-submit" value="検索する"><input type="hidden" name="wgsearch" value="property"><input type="hidden" name="sg[]" value="s2|s4|s6,s3|s5|s7">
+                    </form>
+            .section
+                .secTtl
+                    h3 □ 条件検索
+                .listPanel
+                    section.webgene-blog
+                        .webgene-header
+                            h4 条件結果一覧
+                        .webgene-item
+                            .img
+                                img(src="https://shitok.jp/system_panel/uploads/images/news_sample.png", alt="")
+                            .cate
+                                p 土地（売）
+                            p 静岡県菊川市
+                            p 土地面積：土地面積が入ります。
+                            .price
+                                p
+                                    em 650
+                                    span 万円
+                            p 補足文が入ります。
+                            .btnMore
+                                a(href="") 詳細はこちら
+                        .webgene-item
+                            .img
+                                img(src="https://shitok.jp/system_panel/uploads/images/news_sample.png", alt="")
+                            .cate
+                                p 土地（売）
+                            p 静岡県菊川市
+                            p 土地面積：土地面積が入ります。
+                            .price
+                                p
+                                    em 650
+                                    span 万円
+                            p 補足文が入ります。
+                            .btnMore
+                                a(href="") 詳細はこちら
+                        .webgene-pagination
+                            ul
+                                li.prev
+                                    a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 前へ
+                                li.number
+                                    a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=1") 1
+                                li.number
+                                    a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 2
+                                li.number.selected
+                                    a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=3") 3
+                                li.next
+                                    a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 次へ
+// △メイン△

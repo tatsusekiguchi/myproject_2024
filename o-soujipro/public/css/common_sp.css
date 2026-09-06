@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 20px;
+  z-index: 999;
+  background: #faf5ed;
+}
+.header .logo {
+  width: 145px;
+}
+.header .logo a {
+  display: block;
+}
+.header .hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 40px;
+  z-index: 10000;
+}
+.header .hamburger span {
+  background: #707070;
+  position: absolute;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger span:nth-of-type(1) {
+  top: 10px;
+}
+.header .hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger span:nth-of-type(3) {
+  bottom: 10px;
+}
+.header .hamburger.is-open span:nth-of-type(1) {
+  transform: translate(-50%, 9px) rotate(-45deg);
+}
+.header .hamburger.is-open span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .hamburger.is-open span:nth-of-type(3) {
+  transform: translate(-50%, -9px) rotate(45deg);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 120px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 999;
+  background: #faf5ed;
+  overflow: auto;
+}
+.navBox .navList ul {
+  border-top: 2px dashed #ebebeb;
+}
+.navBox .navList ul li {
+  border-bottom: 2px dashed #ebebeb;
+}
+.navBox .navList ul li a {
+  display: block;
+  padding: 15px;
+}
+.navBox .btnContact {
+  width: 180px;
+  margin: 20px auto 0;
+}
+.navBox .btnContact a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  background: url("../image/common/btn_more_arrow.png") right 15px center no-repeat #f4ead1;
+  background-size: 5px auto;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 64px 0 0;
+}
+
+.pageKvContainer {
+  padding: 0 20px;
+}
+.pageKvContainer .pageKvPanel {
+  height: 140px;
+}
+.pageKvContainer .pageKvTitle {
+  max-width: 340px;
+  font-size: 20px;
+}
+
+.pageTitlePanel {
+  padding: 60px 20px 40px;
+}
+.pageTitlePanel .pageTitle h1 {
+  margin: 0 0 3px;
+  font-size: 22px;
+}
+.pageTitlePanel .pageTitle h1 span {
+  font-size: 12px;
+}
+.pageTitlePanel .pageTitle p {
+  font-size: 12px;
+}
+
+.pageSecTitleBox .pageSecTitle {
+  font-size: 20px;
+}
+.pageSecTitleBox .sub {
+  margin: 3px 0 0;
+  font-size: 12px;
+}
+
+.mapBox {
+  padding: 0 0 70%;
+}
+
+.btnMore {
+  max-width: 300px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 40px 0 15px;
+}
+.footer .footBox {
+  margin: 0 0 60px;
+}
+.footer .footBox .leftBox {
+  margin: 0 0 60px;
+}
+.footer .copy {
+  text-align: center;
+}

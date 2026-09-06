@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+body {
+  min-width: 0;
+  min-height: 0;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*改行*/
+.pcBreak {
+  display: none;
+}
+
+.spBreak {
+  display: block;
+}
+
+/*spのみ表示*/
+.pcHidden {
+  display: block;
+}
+
+.spHidden {
+  display: none;
+}
+
+#sideBtn {
+  display: none;
+}
+
+.topicPath {
+  display: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  z-index: 999;
+  background: #ffffff;
+}
+
+header .headTop {
+  overflow: hidden;
+}
+
+header .headTop .logo {
+  float: left;
+  margin: 25px 0 0 10px;
+  max-width: 260px;
+  width: calc(80% - 75px);
+}
+
+header .headTop .btnBox {
+  float: right;
+  width: 75px;
+  height: 75px;
+  background: #106eb2;
+}
+
+header .headTop .btnBox > div {
+  padding-top: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+header .headTop #slideBtn img {
+  width: 37px;
+}
+
+header .headTop #closeBtn {
+  display: none;
+}
+
+header .headTop #closeBtn img {
+  width: 26px;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+nav {
+  display: none;
+  position: fixed;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 100px;
+  background: #106eb2;
+}
+
+nav #pcNav {
+  display: none;
+}
+
+nav #spNav {
+  overflow: auto;
+  height: 100%;
+}
+
+nav #spNav ul {
+height: 100%;
+ overflow: auto;
+ -webkit-overflow-scrolling: touch;
+}
+
+nav #spNav li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #8abadd;
+}
+
+nav #spNav li:nth-child(3),
+nav #spNav li:nth-child(4),
+nav #spNav li:nth-child(12) {
+  width: 50%;
+}
+
+nav #spNav li:nth-child(4),
+nav #spNav li:nth-child(12) {
+  border-left: 1px solid #8abadd;
+}
+
+nav #spNav a {
+  display: block;
+  padding: 15px;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: url("../image/common/nav_arrow.png") right 10px center no-repeat;
+  background-size: 8px auto;
+}
+
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+.kv {
+  margin: 75px 0 0;
+}
+
+.kv h1 {
+  font-size: 35px;
+}
+
+.kv h1 span {
+  font-size: 10px;
+}
+
+#top .kv {
+  padding: 201px 0;
+}
+
+.page .kv {
+  margin: 75px 0 40px;
+}
+
+#top .kv > div{
+	width:60%;
+	float:right;}
+
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.page .main > section > h2 {
+  font-size: 20px;
+  border-top: 3px solid #22a096;
+}
+
+.page .main .cntBox {
+  padding: 20px 0 60px;
+}
+
+#sideNav {
+  display: none;
+}
+
+#pagetop {
+  width: 45px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+footer .footBox {
+  padding: 25px 10px;
+  background: #f6f6f6;
+}
+
+footer .footBox .logoBox {
+  width: 150px;
+  margin: 0 auto;
+}
+
+footer .footBox ul {
+  display: none;
+}
+
+footer .copy {
+  padding: 10px;
+  font-size: 10px;
+}
+
+/* --------------------------------------------------
+  en
+-------------------------------------------------- */
+.enLink {
+  top: 4px;
+}

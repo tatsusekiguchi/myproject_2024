@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    background: #ffffff;
+  }
+  .header .headWrap {
+    padding: 10px 20px;
+  }
+  .header .logoBox {
+    padding: 0;
+  }
+  .header .logoBox .ttl {
+    display: none;
+  }
+  .header .logoBox .logo {
+    width: 200px;
+  }
+  .header .headItem {
+    display: none;
+  }
+  .header .hamburger {
+    top: 5px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    overflow: auto;
+    padding: 50px 20px 60px;
+  }
+  .navBox .navContainer {
+    height: auto;
+  }
+  .navBox .navPanel01 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .navBox .navPanel01 .leftBox {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .navBox .navPanel01 .leftBox .logo {
+    max-width: 240px;
+    margin: 0 0 20px;
+  }
+  .navBox .navPanel01 .leftBox .info .txt + .txt {
+    margin: 20px 0 0;
+  }
+  .navBox .navPanel01 .rightBox {
+    width: 100%;
+  }
+  .navBox .navPanel01 .rightBox .navList {
+    display: block;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul {
+    width: 100%;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul + .ul {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .navBox .navPanel01 .rightBox .navList .ul .subList {
+    padding: 15px 0 0 15px;
+  }
+  .navBox .navPanel02 {
+    position: static;
+    width: 100%;
+    max-width: 260px;
+    margin: 30px auto 0;
+  }
+  .navBox .navPanel02 .contactItem .telBox .dd p {
+    font-size: 26px;
+  }
+  .navBox .navPanel02 .contactItem .mailBox .dd p {
+    font-size: 24px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvContainer {
+    height: 250px;
+  }
+  .pageKvContainer .topKvPanel {
+    padding: 20px;
+    height: calc(100% - 10px);
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 30px;
+  }
+  .pageSecTtlBox .sub p {
+    font-size: 16px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 40px 0 0;
+  }
+  .footer .footContact .ttl {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .ttl p {
+    font-size: 18px;
+  }
+  .footer .footContact .contactPanel {
+    top: 15px;
+  }
+  .footer .footContact .contactPanel .contactItem {
+    display: block;
+    max-width: 600px;
+  }
+  .footer .footContact .contactPanel .contactItem > * {
+    width: 100%;
+  }
+  .footer .footContact .contactPanel .contactItem .dl .dt {
+    font-size: 18px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactPanel .contactItem .telBox a {
+    font-size: 30px;
+  }
+  .footer .footContact .contactPanel .contactItem .mailBox .dl .dt {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .contactPanel .contactItem .mailBox a {
+    max-width: 280px;
+  }
+  .footer .footPanel {
+    padding: 150px 0 20px;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    width: 60px;
+    cursor: pointer;
+  }
+  .footer .footPanel .logo {
+    max-width: 280px;
+    margin: 0 auto 15px;
+  }
+  .footer .footPanel .txt {
+    margin: 0 0 15px;
+  }
+  .footer .footPanel .sns .ul .li {
+    width: 25px;
+  }
+  .footer .footPanel .sns .ul .li + .li {
+    margin: 0 0 0 15px;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+    font-size: 12px;
+  }
+}

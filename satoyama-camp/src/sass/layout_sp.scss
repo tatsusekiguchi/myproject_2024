@@ -1,0 +1,1360 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    position: relative;
+    padding: 0 0 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 100px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      bottom: 0;
+      width: 150px;
+      height: 100px;
+    }
+    .topKv {
+      height: calc(100vh - 200px);
+    }
+    .kvTitlePanel {
+      .kvTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        h1 {
+          font-size: 26px;
+          line-height: 2;
+          writing-mode: vertical-rl;
+        }
+      }
+    }
+    // .kvBnr {
+    //   // top: 150px;
+    //   // width: 120px;
+    //   top: auto;
+    //   left: 0;
+    //   bottom: 0;
+    //   max-width: 400px;
+    //   width: 100%;
+    //   margin: 0 auto;
+    // }
+  }
+  .topLogoBox {
+    display: block;
+    padding: 20px;
+    .logo {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+  .sec01 {
+    padding: 20px 0 60px;
+    .secPanel {
+      .secBox {
+        position: relative;
+        .txtBox {
+          margin: 0 0 20px;
+          .ttl {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .txt {
+            margin: 0 0 20px;
+          }
+          .btnReserve {
+            max-width: 400px;
+            margin: 0 auto;
+          }
+        }
+        .accessMapBox {
+          display: block;
+          .accessBtn {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            width: 180px;
+          }
+          .map {
+            position: relative;
+            left: 120px;
+            width: calc(100% - 120px);
+            max-width: 500px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          .txtBox {
+            .ttl {
+              width: 62%;
+              max-width: 1100px;
+              padding: 0 0 0 60px;
+            }
+            .txt {
+              width: 47%;
+              max-width: 660px;
+              padding: 0 0 0 60px;
+            }
+            .btnReserve {
+              width: 40%;
+            }
+          }
+          .accessMapBox {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            .accessBtn {
+              position: absolute;
+              left: 60px;
+              bottom: 60px;
+              width: 150px;
+            }
+            .map {
+              width: 350px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        .secBox {
+          .accessMapBox {
+            width: 700px;
+            .accessBtn {
+              position: absolute;
+              left: 20px;
+              bottom: 60px;
+              width: 250px;
+            }
+            .map {
+              width: 550px;
+            }
+          }
+        }
+      }
+    }
+    .weatherPanel {
+      margin: 40px auto 0;
+    }
+  }
+  .sec02 {
+    padding: 40px 0;
+    .pageSecTtlBox {
+      h2 {
+        padding-left: 70px;
+        padding-right: 70px;
+        background: url("../image/top/blog_ttl_bg_01.png") left center no-repeat,
+          url("../image/top/blog_ttl_bg_02.png") right center no-repeat;
+        background-size: 70px auto, 70px auto;
+      }
+    }
+    .postListPanel {
+      max-width: 600px;
+      margin: -30px auto 40px;
+      ul {
+        margin: -10px 0 0 -10px;
+        li {
+          width: calc((100% / 2) - 10px);
+          margin: 10px 0 0 10px;
+          a {
+            min-height: 220px;
+            padding: 20px 10px 15px;
+            border-radius: 10px;
+            background: #764223;
+          }
+          .photo {
+            padding: 0 0 60%;
+          }
+          .infoBox {
+            font-size: 10px;
+          }
+          .info {
+            margin: 0 0 5px;
+            .time {
+              margin: 0 5px 0 0;
+            }
+          }
+          .ttl {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .bnrList {
+      max-width: 600px;
+      margin: 60px auto 0;
+      ul {
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 40px 0;
+    .pageSecTtlBox {
+      h2 {
+        left: 15px;
+        padding-left: 60px;
+        padding-right: 90px;
+        background: url("../image/top/facility_ttl_bg_01.png") left bottom
+            no-repeat,
+          url("../image/top/facility_ttl_bg_02.png") right center no-repeat;
+        background-size: 50px auto, 80px auto;
+      }
+    }
+    .listContainer {
+      margin: -15px 0 0;
+      padding: 40px 0 0;
+      background: url("../image/top/facility_bg_01.png") center bottom no-repeat
+        #ffffff;
+      background-size: 100% auto;
+      .listWrap {
+        padding: 0 0 30px;
+        background: url("../image/top/facility_bg_02.png") right 20px bottom
+          30px no-repeat;
+        background-size: 55% auto;
+      }
+      .listBox {
+        ul {
+          margin: -40px 0 0 -10px;
+          .ttl {
+            top: -15px;
+          }
+          li {
+            position: relative;
+            width: calc((100% / 2) - 10px);
+            margin: 40px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 40px 0 0;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 20px;
+        padding-left: 100px;
+        padding-right: 130px;
+        background: url("../image/top/schedule_ttl_bg_01.png") left bottom
+            no-repeat,
+          url("../image/top/schedule_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 120px auto;
+      }
+    }
+    .calendarContainer {
+      padding: 0 0 60px;
+    }
+    .mapPanel {
+      .accessBox {
+        position: static;
+        max-width: 330px;
+        margin: 0 auto 20px;
+        dl {
+          border-radius: 10px;
+          dt {
+            font-size: 20px;
+          }
+          dd {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about {
+  .topSection {
+    padding: 50px 0 60px;
+    .secPanel {
+      padding: 0 0 80px;
+      background: url("../image/about/main_bg_02.png") right top 80px no-repeat;
+      background-size: 220px auto;
+      .ttlBox {
+        font-size: 26px;
+      }
+    }
+    .secBox {
+      margin: 20px 0 0;
+      .txtBox {
+        padding: 20px 0 0;
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 0 0 60px;
+    .pageSecTtlBox {
+      h2 {
+        left: 5px;
+        padding-left: 80px;
+        padding-right: 60px;
+        background: url("../image/about/sec01_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/about/sec01_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 50px auto;
+      }
+    }
+    .listContainer {
+      margin: -15px 0 0;
+      padding: 40px 0 0;
+      background: url("../image/about/main_bg_01.png") center bottom no-repeat
+        #ffffff;
+      background-size: 100% auto;
+      .listWrap {
+        padding: 0 0 150px;
+        background: url("../image/about/main_bg_02.png") right 20px bottom 30px
+          no-repeat;
+        background-size: 55% auto;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .txtBox {
+        padding: 20px 0 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 26px;
+        }
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+      &:nth-child(odd) {
+        padding: 0 30px 0 0;
+        .txtBox {
+          padding-left: 20px;
+        }
+      }
+      &:nth-child(even) {
+        padding: 0 0 0 30px;
+        .txtBox {
+          padding-right: 20px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 42%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price {
+  padding: 0 0 60px;
+  .topContainer {
+    padding: 60px 0;
+    .pagingList {
+      ul {
+        display: flex;
+        li {
+          width: 25%;
+          padding: 0 0 5px;
+          background: url("../image/price/price_paging_arrow.png") center bottom
+            no-repeat;
+          background-size: 8px auto;
+          a {
+            padding: 60px 5px 10px;
+            font-size: 12px;
+          }
+          &:nth-child(1) {
+            a {
+              background: url("../image/price/price_paging_img_01.png") center
+                top no-repeat;
+              background-size: 60px auto;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background: url("../image/price/price_paging_img_02.png") center
+                top no-repeat;
+              background-size: 60px auto;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background: url("../image/price/price_paging_img_03.png") center
+                top no-repeat;
+              background-size: 60px auto;
+            }
+          }
+          &:nth-child(4) {
+            a {
+              background: url("../image/price/price_paging_img_04.png") center
+                top no-repeat;
+              background-size: 60px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    + .section {
+      margin: 60px 0 0;
+    }
+    .secContainer {
+      padding: 60px 20px;
+    }
+    .secPanel {
+      + .secPanel {
+        margin: 80px 0 0;
+      }
+      .pTtl {
+        margin: 0 0 30px;
+        &::before {
+          border-top: 1px dashed #6c4123;
+        }
+        h3 {
+          padding: 0 10px 0 0;
+          font-size: 20px;
+        }
+      }
+      .subTtl {
+        font-size: 16px;
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+  .sec01 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 15px;
+        padding-left: 90px;
+        padding-right: 100px;
+        background: url("../image/price/sec01_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/price/sec01_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 90px auto;
+      }
+    }
+    .topPriceBox {
+      max-width: 700px;
+      table {
+        tr {
+          th {
+            width: 160px;
+            padding: 20px 10px;
+            text-align: center;
+          }
+          td {
+            padding: 20px 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .topBox {
+      .txtBox {
+        padding: 20px 0 0;
+        .detailBox {
+          margin: 0 0 20px;
+          table {
+            tr {
+              th {
+                &:nth-child(1) {
+                  width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .listBox {
+      font-size: 13px;
+      &.col3 {
+        margin: -10px 0 0;
+        li {
+          width: calc(100% / 2);
+          margin: 10px 0 0;
+          &:nth-child(even) {
+            dl {
+              border-left: none;
+            }
+          }
+        }
+        dl {
+          border: 1px solid #797470;
+          dt {
+            border-bottom: 1px solid #797470;
+          }
+        }
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        + .multiBox {
+          margin: 40px 0 0;
+        }
+        .multiTtl {
+          font-size: 18px;
+        }
+      }
+    }
+    .table01 {
+      table {
+        tr {
+          th {
+            width: 160px;
+            padding: 20px 10px;
+            text-align: center;
+          }
+          td {
+            padding: 20px 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .itemList {
+      max-width: 200px;
+      ul {
+        li {
+          width: calc((100% / 2) - 10px);
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 0;
+        padding-left: 90px;
+        padding-right: 50px;
+        background: url("../image/price/sec02_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/price/sec02_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 40px auto;
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        + .multiBox {
+          margin: 40px 0 0;
+        }
+        .multiTtl {
+          font-size: 18px;
+        }
+      }
+    }
+    .listBox01 {
+      margin: 0 0 60px;
+      ul {
+        margin: -20px 0 0 -10px;
+        li {
+          width: calc((100% / 2) - 10px);
+          margin: 20px 0 0 10px;
+        }
+        dl {
+          margin: 5px 0 0;
+          dt {
+            margin: 0 0 5px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .listBox02 {
+      ul {
+        margin: -10px 0 0 -10px;
+        li {
+          width: calc((100% / 2) - 10px);
+          margin: 10px 0 0 10px;
+        }
+      }
+    }
+    .innerBoxList {
+      .innerBox {
+        ul {
+          margin: -10px 0 0 -10px;
+          li {
+            width: calc((100% / 2) - 10px);
+            margin: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .sec03,
+  .sec04,
+  .sec05,
+  .sec06,
+  .sec07,
+  .sec08 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 20px;
+        padding-left: 60px;
+        padding-right: 90px;
+        background: url("../image/price/sec03_ttl_bg_01.png") left top no-repeat,
+          url("../image/price/sec03_ttl_bg_02.png") right center no-repeat;
+        background-size: 50px auto, 80px auto;
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        + .multiBox {
+          margin: 40px 0 0;
+        }
+        .multiTtl {
+          font-size: 18px;
+        }
+      }
+    }
+    .innerBoxList {
+      .innerBox {
+        ul {
+          margin: -10px 0 0 -10px;
+          li {
+            width: calc((100% / 2) - 10px);
+            margin: 10px 0 0 10px;
+          }
+        }
+        .price {
+          margin: 10px 0 0;
+          table {
+            tr {
+              th {
+                width: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	terms
+///////////////////////////////////////////////////////////*/
+#terms {
+  .sec01 {
+    padding: 40px 0 80px;
+    .pageSecTtlBox {
+      h2 {
+        left: 15px;
+        padding-left: 60px;
+        padding-right: 90px;
+        background: url("../image/terms/page_ttl_bg_01.png") left bottom
+            no-repeat,
+          url("../image/terms/page_ttl_bg_02.png") right center no-repeat;
+        background-size: 50px auto, 80px auto;
+      }
+    }
+    .secContainer {
+      padding: 60px 20px;
+    }
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .secTtl {
+      margin: 0 0 30px;
+      &::before {
+        border-top: 1px dashed #6c4123;
+      }
+      h3 {
+        padding: 0 10px 0 0;
+        font-size: 20px;
+      }
+    }
+  }
+  .secPanelList {
+    .secPanel {
+      padding: 20px;
+      .pTtl {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+      .subTtl {
+        font-size: 16px;
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+  .multiBoxList {
+    .multiBox {
+      + .multiBox {
+        margin: 40px 0 0;
+      }
+    }
+  }
+  .cancelTtlBox {
+    margin: 0 0 30px;
+    .cancelTtl {
+      margin: 0 0 15px;
+      font-size: 18px;
+    }
+  }
+  .guideTtl {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .table01 {
+    table {
+      tr {
+        th {
+          width: 120px;
+          padding: 20px 10px;
+          text-align: center;
+        }
+        td {
+          padding: 20px 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .table02 {
+    table {
+      tr {
+        font-size: 13px;
+        th {
+          width: 120px;
+          padding: 20px 5px;
+          text-align: center;
+        }
+        td {
+          padding: 20px 5px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .listBox {
+    font-size: 13px;
+    &.col3 {
+      margin: -10px 0 0;
+      li {
+        width: calc(100% / 2);
+        margin: 10px 0 0;
+        &:nth-child(even) {
+          dl {
+            border-left: none;
+          }
+        }
+      }
+      dl {
+        border: 1px solid #797470;
+        dt {
+          border-bottom: 1px solid #797470;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+#guide {
+  .sec01 {
+    padding: 40px 0 80px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 5px;
+        padding-left: 70px;
+        padding-right: 70px;
+        background: url("../image/guide/page_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/guide/page_ttl_bg_02.png") right center no-repeat;
+        background-size: 60px auto, 60px auto;
+      }
+    }
+    .section {
+      + .section {
+        margin: 60px 0 0;
+      }
+      .secTtl {
+        font-size: 20px;
+      }
+    }
+    .section01 {
+      .cntBody {
+        padding: 0 15px;
+      }
+    }
+    .section02 {
+      .cntBody {
+        padding: 20px;
+      }
+    }
+    .accessList01 {
+      ul {
+        padding: 15px 0;
+        font-size: 14px;
+        li {
+          &:nth-child(1) {
+            width: 100%;
+            margin: 0 0 5px;
+            font-size: 16px;
+          }
+          &:nth-child(2) {
+            width: 160px;
+          }
+          &:nth-child(3) {
+            width: 50px;
+          }
+          &:nth-child(4) {
+            width: 100px;
+          }
+        }
+      }
+    }
+    .accessList02 {
+      ul {
+        li {
+          + li {
+            margin: 40px 0 0;
+          }
+        }
+        .ttl {
+          font-size: 18px;
+          text-align: left;
+        }
+        .mapLinkBtn {
+          margin: 0 0 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+#access {
+  .sec01 {
+    padding: 40px 0 60px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 25px;
+        padding-left: 50px;
+        padding-right: 110px;
+        background: url("../image/access/page_ttl_bg_01.png") left top no-repeat,
+          url("../image/access/page_ttl_bg_02.png") right center no-repeat;
+        background-size: 40px auto, 100px auto;
+      }
+    }
+    .secContainer {
+      padding: 60px 20px;
+    }
+    .message {
+      margin: 0 0 80px;
+      font-size: 18px;
+    }
+    .signboardBox {
+      margin: 0 auto 40px;
+      padding: 20px;
+      .signboard {
+        position: absolute;
+        top: -60px;
+        left: -20px;
+        width: 100px;
+      }
+      .txt {
+        font-size: 18px;
+      }
+    }
+  }
+  .mapPanel {
+    .accessBox {
+      position: static;
+      max-width: 330px;
+      margin: 0 auto 20px;
+      dl {
+        border-radius: 10px;
+        dt {
+          font-size: 20px;
+        }
+        dd {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reservation
+///////////////////////////////////////////////////////////*/
+#reservation {
+  .sec01 {
+    padding: 40px 0 80px;
+    .pageSecTtlBox {
+      h2 {
+        left: 15px;
+        padding-left: 60px;
+        padding-right: 90px;
+        background: url("../image/reservation/sec01_ttl_bg_01.png") left bottom
+            no-repeat,
+          url("../image/reservation/sec01_ttl_bg_02.png") right center no-repeat;
+        background-size: 50px auto, 80px auto;
+      }
+    }
+    .secContainer {
+      padding: 60px 20px;
+    }
+    .secBox {
+      padding: 0 0 20px;
+      + .secBox {
+        padding: 20px 0;
+      }
+      .ttl {
+        font-size: 20px;
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 80px;
+    .pageSecTtlBox {
+      h2 {
+        left: 15px;
+        padding-left: 60px;
+        padding-right: 90px;
+        background: url("../image/reservation/sec02_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/reservation/sec02_ttl_bg_02.png") right center no-repeat;
+        background-size: 50px auto, 80px auto;
+      }
+    }
+    .itemList {
+      max-width: 1200px;
+      margin: 0 auto;
+      .itemBox {
+        dl {
+          dt {
+            font-size: 20px;
+          }
+          dd {
+            min-height: 80px;
+          }
+        }
+      }
+      .itemBox01 {
+        margin: 0 0 20px;
+        dl {
+          dd {
+            a {
+              font-size: 30px;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+      .itemBox02 {
+        dl {
+          dd {
+            a {
+              font-size: 20px;
+            }
+            .icon01 {
+              position: absolute;
+              left: -40px;
+              bottom: 5px;
+              width: 140px;
+            }
+            .icon02 {
+              position: absolute;
+              right: -5px;
+              bottom: 0;
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 0 0 80px;
+  }
+  .sec04 {
+    padding: 0 0 80px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background: url("../image/reservation/sec04_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/reservation/sec04_ttl_bg_02.png") right center no-repeat;
+        background-size: 40px auto, 40px auto;
+      }
+    }
+    .secContainer {
+      padding: 60px 20px;
+    }
+    .topBox {
+      margin: 0 0 40px;
+      .ttl {
+        font-size: 20px;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 40px 0 0;
+      }
+      .subTtl {
+        font-size: 15px;
+      }
+    }
+    .table01 {
+      table {
+        tr {
+          th {
+            width: 120px;
+            padding: 20px 10px;
+            text-align: center;
+          }
+          td {
+            padding: 20px 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+#faq {
+  .sec01 {
+    padding: 40px 0 80px;
+    .section {
+      + .section {
+        margin: 60px 0 0;
+      }
+    }
+    .secTtl {
+      margin: 0 0 30px;
+      &::before {
+        border-top: 1px dashed #6c4123;
+      }
+      h3 {
+        padding: 0 10px 0 0;
+        font-size: 20px;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 30px 0 0;
+      }
+      dl {
+        dt {
+          padding: 0 40px 5px 0;
+          cursor: pointer;
+          background: url("../image/common/accord_down.png") right 20px center
+            no-repeat;
+          background-size: 8px auto;
+          &.active {
+            background: url("../image/common/accord_up.png") right 20px center
+              no-repeat;
+            background-size: 8px auto;
+          }
+          .num span {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px 0 0;
+            font-size: 18px;
+          }
+          .ttl {
+            font-size: 16px;
+          }
+        }
+        dd {
+          .txt {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#news {
+  .newsSection {
+    padding: 40px 0 100px;
+  }
+  .cateList {
+    margin: 0 0 30px;
+    ul {
+      display: flex;
+      li {
+        width: 280px;
+        + li {
+          margin: 0 0 0 5px;
+        }
+        a {
+          width: 100%;
+          height: 50px;
+          font-size: 12px;
+          background: url("../image/common/btn_more_bg.png") center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+  .blogContainer {
+    padding: 30px 20px;
+  }
+  .postListPanel {
+    max-width: 400px;
+    ul {
+      display: block;
+      margin: 0;
+      li {
+        width: 100%;
+        margin: 0;
+        + li {
+          margin: 30px 0 0;
+        }
+        a {
+          display: block;
+          min-height: 0;
+          padding: 20px;
+          color: #f3e7e0;
+          border-radius: 10px;
+          background: #784425;
+        }
+      }
+    }
+  }
+  .pagination {
+    li {
+      margin: 0 5px;
+      a {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .detail {
+    &__news {
+      .titleHeader {
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+    &__back {
+      margin: 50px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact {
+  .sec01 {
+    padding: 40px 0 80px;
+    .telBox {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      dl {
+        dt {
+          padding: 5px;
+          font-size: 20px;
+        }
+        dd {
+          padding: 15px;
+          a {
+            font-size: 30px;
+            line-height: 1.3;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        dl {
+          display: table;
+          width: 100%;
+          dt {
+            display: table-cell;
+            width: 400px;
+            vertical-align: middle;
+          }
+          dd {
+            display: table-cell;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .radioForm {
+    display: flex;
+    dt {
+      width: 85px;
+    }
+    dd {
+      width: calc(100% - 85px);
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .dateSelectBox {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 0 0 40px;
+    span {
+      padding-left: 30px;
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    margin: 35px auto 20px;
+    .agreeBox {
+      height: 250px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__contact {
+    padding: 90px 0 0;
+    .contactContainer {
+      padding: 40px 0 60px;
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .secTitleBox {
+      margin: 0 0 20px;
+      p {
+        margin: 0 0 5px;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      .txt {
+        letter-spacing: 0;
+      }
+    }
+  }
+  .btnToTop {
+    font-size: 14px;
+  }
+}

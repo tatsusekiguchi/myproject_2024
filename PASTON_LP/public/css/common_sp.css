@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  z-index: 999;
+}
+.header .logo {
+  max-width: 215px;
+}
+.header .logo a {
+  display: block;
+}
+.header .hamburger {
+  position: absolute;
+  top: 35px;
+  right: 28px;
+  cursor: pointer;
+  width: 22px;
+  height: 15px;
+  z-index: 9999;
+}
+.header .hamburger span {
+  background: #707070;
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+.header .hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.header .hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.header .is-open.hamburger span:nth-of-type(1) {
+  transform: translate(-50%, 7px) rotate(-45deg);
+}
+.header .is-open.hamburger span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .is-open.hamburger span:nth-of-type(3) {
+  transform: translate(-50%, -7px) rotate(45deg);
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  overscroll-behavior: none;
+  z-index: 999;
+  background: #f7e6e7;
+}
+.navBox .nav__wrap {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+}
+.navBox .nav__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px 20px;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+.navBox .nav__logo {
+  width: 178px;
+  margin: 0 0 30px;
+}
+.navBox .nav__logo a {
+  display: block;
+}
+.navBox .nav__category .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.navBox .nav__category__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
+}
+.navBox .nav__category__list ul li + li {
+  margin: 15px 0 0;
+}
+.navBox .nav__category__list ul li a {
+  display: inline-block;
+  font-size: 18px;
+}
+.navBox .nav__bottom {
+  margin: auto 0 0;
+  padding: 20px 0 0;
+}
+.navBox .nav__img {
+  position: absolute;
+  right: 50px;
+  bottom: 65px;
+  width: 86px;
+}
+.navBox .nav__sns {
+  margin: 0 0 30px;
+}
+.navBox .nav__sns dl dt {
+  margin: 0 0 15px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+.navBox .nav__sns dl ul li {
+  display: inline-block;
+  width: 22px;
+}
+.navBox .nav__sns dl ul li + li {
+  margin: 0 0 0 20px;
+}
+.navBox .nav__sns dl ul li a {
+  display: inline-block;
+}
+.navBox .nav__copy {
+  padding: 0 20px 0 0;
+  font-size: 16px;
+  font-size: clamp(0.625rem, -0.0417rem + 1.0417vw, 1rem);
+  font-weight: 400;
+}
+.navBox .nav__photo {
+  margin: auto 0 0;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.overlay,
+.itemModal {
+  max-width: 430px;
+}
+
+.modalBox {
+  padding: 50px 25px;
+}
+
+.modalBoxInner {
+  max-width: 320px;
+}
+.modalBoxInner .titleBox p {
+  min-width: 96px;
+}
+.modalBoxInner .titleBox dl dt {
+  font-size: 20px;
+}
+.modalBoxInner .titleBox dl dd {
+  font-size: 11px;
+}
+.modalBoxInner .infoBox {
+  font-size: 11px;
+}
+.modalBoxInner .infoBox ul li {
+  padding: 20px 0;
+}
+.modalBoxInner .infoBox ul li > dl > dt {
+  width: 85px;
+}
+.modalBoxInner .infoBox ul li > dl > dd {
+  width: calc(100% - 85px);
+}
+.modalBoxInner .planBox dl dt {
+  width: 35px;
+}
+.modalBoxInner .planBox dl dt + dd {
+  width: 100px;
+}
+.modalBoxInner .planBox aside {
+  font-size: 10px;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 430px;
+  }
+  .footer__items {
+    max-width: 430px;
+  }
+  .footer__container {
+    padding: 100px 40px 120px;
+  }
+  .footer__panel {
+    max-width: 290px;
+  }
+  .footer__category .ttl {
+    margin: 0 0 35px;
+    font-size: 17px;
+  }
+  .footer__category .listBox {
+    margin: 0 0 50px;
+  }
+  .footer__category .listBox ul + ul {
+    padding: 80px 0 0;
+    background: url("../image/common/footer_umbrella.png") center top no-repeat;
+    background-size: 45px auto;
+  }
+  .footer__category .listBox ul li + li {
+    margin: 15px 0 0;
+  }
+  .footer__category .listBox ul li a {
+    font-size: 17px;
+  }
+  .footer__sns {
+    max-width: 280px;
+    margin: 0 0 55px;
+  }
+  .footer__sns dl dt {
+    font-size: 17px;
+  }
+  .footer__sns dl ul li {
+    width: 22px;
+  }
+  .footer__logo {
+    max-width: 237px;
+    margin: 0 0 30px;
+  }
+  .footer__copy {
+    font-size: 11px;
+  }
+  .footer__pagetop {
+    position: absolute;
+    right: 20px;
+    bottom: 120px;
+    width: 20px;
+    max-width: 20px;
+  }
+}

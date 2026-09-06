@@ -1,0 +1,407 @@
+// ▽メイン▽
+.topicPath
+    .inner
+        ol
+            li
+                a(href="") トップページ
+            li
+                a(href="") 検査表の記入 一覧
+            li 教室の騒音定期検査表(冬季)
+        .userBox
+            p ようこそ 会員さん
+main#registNoise.registRecordMain
+    h2 教室の騒音定期検査表(冬季)
+    #noiseFormBoxWinter.formBox
+        .wardBox
+            dl.inputItem
+                dt 区選択
+                dd
+                    .selectBox
+                        select#noise_summer_ward.select_ward
+                            option(value="") 選択してください
+                            option(value="千種") 千種
+                            option(value="東") 東
+                            option(value="北") 北
+                            option(value="西") 西
+                            option(value="中村") 中村
+                            option(value="中") 中
+                            option(value="昭和") 昭和
+                            option(value="瑞穂") 瑞穂
+                            option(value="熱田") 熱田
+                            option(value="中川") 中川
+                            option(value="港") 港
+                            option(value="南") 南
+                            option(value="守山") 守山
+                            option(value="緑") 緑
+                            option(value="名東") 名東
+                            option(value="天白") 天白
+                    span.inputSubTxt 区
+        .schoolInfoBox
+            .inputItemList
+                dl.inputItem
+                    dt 学校名
+                    dd
+                        .selectBox
+                            select#noise_summer_school_name.select_school
+                                option(value="") 選択してください
+                dl.inputItem
+                    dt 校長名
+                    dd
+                        input(type="text")#noise_summer_school_headmaster
+                dl.inputItem
+                    dt 学校薬剤師名
+                    dd
+                        input(type="text" placeholder="※必須項目")#noise_summer_pharmacist
+                dl.inputItem.examDate
+                    dt 検査日時
+                    dd.selectDate
+                        .selectBox.year
+                            select#noise_summer_date_year
+                                option(value="") 選択
+                                option(value="2021") 2021
+                                option(value="2022") 2022
+                                option(value="2023") 2023
+                                option(value="2024") 2024
+                                option(value="2025") 2025
+                                option(value="2026") 2026
+                                option(value="2027") 2027
+                                option(value="2028") 2028
+                                option(value="2029") 2029
+                                option(value="2030") 2030
+                                option(value="2031") 2031
+                                option(value="2032") 2032
+                                option(value="2033") 2033
+                                option(value="2034") 2034
+                                option(value="2035") 2035
+                                option(value="2036") 2036
+                                option(value="2037") 2037
+                                option(value="2038") 2038
+                                option(value="2039") 2039
+                                option(value="2040") 2040
+                        span.inputSubTxt 年
+                        .selectBox.month
+                            select#noise_summer_date_month
+                                option(value="") 選択
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="3") 3
+                                option(value="4") 4
+                                option(value="5") 5
+                                option(value="6") 6
+                                option(value="7") 7
+                                option(value="8") 8
+                                option(value="9") 9
+                                option(value="10") 10
+                                option(value="11") 11
+                                option(value="12") 12
+                        span.inputSubTxt 月
+                        .selectBox.day
+                            select#noise_summer_date_day
+                                option(value="") 選択
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="3") 3
+                                option(value="4") 4
+                                option(value="5") 5
+                                option(value="6") 6
+                                option(value="7") 7
+                                option(value="8") 8
+                                option(value="9") 9
+                                option(value="10") 10
+                                option(value="11") 11
+                                option(value="12") 12
+                                option(value="13") 13
+                                option(value="14") 14
+                                option(value="15") 15
+                                option(value="16") 16
+                                option(value="17") 17
+                                option(value="18") 18
+                                option(value="19") 19
+                                option(value="20") 20
+                                option(value="21") 21
+                                option(value="22") 22
+                                option(value="23") 23
+                                option(value="24") 24
+                                option(value="25") 25
+                                option(value="26") 26
+                                option(value="27") 27
+                                option(value="28") 28
+                                option(value="29") 29
+                                option(value="30") 30
+                                option(value="31") 31
+                        span.inputSubTxt 日
+                        .selectBox.yobi
+                            select#noise_summer_date_yobi
+                                option(value="") 選択
+                                option(value="月") 月
+                                option(value="火") 火
+                                option(value="水") 水
+                                option(value="木") 木
+                                option(value="金") 金
+                                option(value="土") 土
+                                option(value="日") 日
+                        span.inputSubTxt 曜日
+                dl.inputItem
+                    dt 天候
+                    dd
+                        .selectBox
+                            select#noise_summer_weather
+                                option 選択してください
+                                option 晴れ
+                                option 曇り
+                                option 雨
+                dl.inputItem
+                    dt 気温
+                    dd
+                        input(type="text")#noise_summer_temperature.unit
+                        span.inputSubTxt ℃
+                dl.inputItem
+                    dt 風向
+                    dd
+                        .selectBox
+                            select#noise_summer_wind_direction
+                                option(value="") 選択してください
+                                option(value="北") 北
+                                option(value="北東") 北東
+                                option(value="東") 東
+                                option(value="南東") 南東
+                                option(value="南") 南
+                                option(value="南西") 南西
+                                option(value="西") 西
+                                option(value="北西") 北西
+        .noiseBox
+            .inputItemBox01
+                .inputItemList01
+                    dl.inputItem
+                        dt 教室名
+                        dd
+                            input(type="text")#noise_summer_grade.unit
+                            span.inputSubTxt 年
+                            input(type="text")#noise_summer_class.unit
+                            span.inputSubTxt 組
+                    dl.inputItem
+                        dt 測定位置
+                        dd
+                            input(type="text")#noise_summer_position_floor.unit
+                            span.inputSubTxt 階
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_position_select_rd" value="窓側")#noise_summer_position_select_01
+                                    label(for="noise_summer_position_select_01") 窓側
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_position_select_rd" value="廊下側")#noise_summer_position_select_02
+                                    label(for="noise_summer_position_select_02") 廊下側
+                    dl.inputItem
+                        dt 測定器
+                        dd
+                            input(type="text")#noise_summer_instrument
+                    dl.inputItem
+                        dt 窓の材質
+                        dd
+                            input(type="text")#noise_summer_window_material
+            .inputItemBox02
+                .inputItemList02
+                    dl.inputItem
+                        dt 二重窓などの防音設備
+                        dd
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_soundproof_rd" value="有")#noise_summer_soundproof_01
+                                    label(for="noise_summer_soundproof_01") 有
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_soundproof_rd" value="無")#noise_summer_soundproof_02
+                                    label(for="noise_summer_soundproof_02") 無
+                    dl.inputItem
+                        dt 強制換気設備の有無
+                        dd
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_ventilation_rd" value="有")#noise_summer_ventilation_01
+                                    label(for="noise_summer_ventilation_01") 有
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_ventilation_rd" value="無")#noise_summer_ventilation_02
+                                    label(for="noise_summer_ventilation_02") 無
+            .inputItemBox03
+                .inputItemList03
+                    dl.inputItem
+                        dt 学校周辺に特殊な騒音源が
+                        dd
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_source_rd" value="ある")#noise_summer_source_01
+                                    label(for="noise_summer_source_01") ある
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_source_rd" value="ない")#noise_summer_source_02
+                                    label(for="noise_summer_source_02") ない
+                            span.inputSubTxt.particular ある場合には具体的に
+                            input(type="text")#noise_summer_source_particular.unit
+                    dl.inputItem
+                        dt 航空機の騒音で授業が中断することが
+                        dd
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_airplane_rd" value="良くある")#noise_summer_airplane_01
+                                    label(for="noise_summer_airplane_01") 良くある
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_airplane_rd" value="たまにある")#noise_summer_airplane_02
+                                    label(for="noise_summer_airplane_02") たまにある
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_airplane_rd" value="ない")#noise_summer_airplane_03
+                                    label(for="noise_summer_airplane_03") ない
+                    dl.inputItem
+                        dt 測定時の最大音は何の音であったか
+                        dd
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_maximum_rd" value="自動車")#noise_summer_maximum_01
+                                    label(for="noise_summer_maximum_01") 自動車
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_maximum_rd" value="列車")#noise_summer_maximum_02
+                                    label(for="noise_summer_maximum_02") 列車
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_maximum_rd" value="航空機")#noise_summer_maximum_03
+                                    label(for="noise_summer_maximum_03") 航空機
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_maximum_rd" value="工事")#noise_summer_maximum_04
+                                    label(for="noise_summer_maximum_04") 工事
+                                li.redioBtn
+                                    input(type="radio" name="noise_summer_maximum_rd" value="その他")#noise_summer_maximum_05
+                                    label(for="noise_summer_maximum_05") その他
+        .registNoiseTable
+            table
+                thead
+                    tr
+                        th(colspan="2") 測定場所
+                        th 測定時間
+                        th 等価騒音レベル
+                tbody
+                    tr
+                        th(rowspan="2").classroom 教室内
+                        th 窓閉鎖
+                        td
+                            .inputWindowCnt
+                                .inputWindowBox
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_close_measuring_hour
+                                    span :
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_close_measuring_minutes
+                                input(type="hidden")#noise_summer_close_measuring_time
+                                p ~
+                                .inputWindowBox
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_close_measuring_hour_to
+                                    span :
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_close_measuring_minutes_to
+                                input(type="hidden")#noise_summer_close_measuring_time_to
+                        td
+                            span.inputSubTxt LAeq
+                            input(type="text")#noise_summer_close_measuring_level.unit
+                            span.inputSubTxt dB
+                    tr
+                        th 窓開放
+                        td
+                            .inputWindowCnt
+                                .inputWindowBox
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_open_measuring_hour
+                                    span :
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_open_measuring_minutes
+                                input(type="hidden")#noise_summer_open_measuring_time
+                                p ~
+                                .inputWindowBox
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_open_measuring_hour_to
+                                    span :
+                                    input(type="text" class="inputWindow" maxlength="2")#noise_summer_open_measuring_minutes_to
+                                input(type="hidden")#noise_summer_open_measuring_time_to
+                        td
+                            span.inputSubTxt LAeq
+                            input(type="text")#noise_summer_open_measuring_level.unit
+                            span.inputSubTxt dB
+        .attentionBox
+            h3 基準及び事後措置
+            ul
+                li 教室内の等価騒音レベルは、窓を開じているときは LAeq  50dB 以下、窓を開けているときは LAeq  50dB 以下であることが望ましい。 ( 騒 -10 ℓ-19)
+                li 教師の声 ( 全国平均 65dB) が、外部騒音によってマスキングされないように注意すること。
+                li 判定基準を超える場合は適当な方法によって、音をさえぎる措置をとるように指導すること。
+        .attentionBox
+            h3 測定場所及び記入上の注意
+            ul
+                li 学校で校外騒音の影響を最も強く受ける普通教室を選び、教室の中程で騒音の入る側の窓面より 1m 以内の机上で窓閉鎖、窓解放の順で 2 回測定を行い記入すること。
+                li A特性5分間等価騒音レベル (LAeq) を測定する。( 騒 -3 ℓ-11)
+                li 特定の校外騒音があり授業に影響 r/D ぁる教室がある場合は、騒音源の種類、内容、距離、時間など出来るだけ具体的に記入すること。<br>指導・助言したことを下記に記入すること。 1 部は本人の控、 1 部は学校の控、 1 部は集計用に支部長まで提出すること。
+        textarea(placeholder="指導・助言")#noise_summer_coaching
+    .btnListBox
+        button.btnSubmit 登録する
+        button.btnPrint 印刷する
+// △メイン△
+script.
+    $(document).ready(function() {
+
+        setSchoolSelect('noise_summer_ward');
+
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+        let title = '教室の騒音定期検査表(冬季)';
+        let ward,
+            school;
+
+        $('#category').val('10');
+
+        $('.btnSubmit').on('click', function() {
+            ward = $('#noise_summer_ward').val();
+            school = $('#noise_summer_school_name').val();
+            title += '[' + ward + '区]';
+            title += '[' + school + ']';
+            title += '[' + year + '年' + month + '月' + day + '日' + ']';
+
+            $('#post_title_11').val(title);
+
+            $('.formBox input[type="text"], .formBox select, textarea').each(function(index, element) {
+                let id = $(element).attr('id');
+                $('#' + id + '_401').val($(element).val());
+            });
+
+            $('.formBox input[type="radio"]:checked').each(function(index, element) {
+                let name = $(element).attr('name').slice(0, -3);
+                $("input[name='" + name + "'][value='" + $(element).val() + "']").prop('checked', true);
+            });
+            $('.wpuf-submit-button').click();
+        });
+
+        $('.registNoiseTable .unit').on('input', function() {
+            var validValue = this.value.match(/^\d*\.?\d{0,1}/);
+            this.value = validValue ? validValue[0] : '';
+        });
+
+        // 窓閉鎖の開始時間入力に対する処理
+        $('#noise_summer_close_measuring_hour, #noise_summer_close_measuring_minutes').on('input', function() {
+            var hour = $('#noise_summer_close_measuring_hour').val();
+            var minute = $('#noise_summer_close_measuring_minutes').val();
+            var formattedTime = (hour ? hour : "00") + ":" + (minute ? minute : "00");
+            $('#noise_summer_close_measuring_time').val(formattedTime);
+        });
+
+        // 窓閉鎖の終了時間入力に対する処理
+        $('#noise_summer_close_measuring_hour_to, #noise_summer_close_measuring_minutes_to').on('input', function() {
+            var hour = $('#noise_summer_close_measuring_hour_to').val();
+            var minute = $('#noise_summer_close_measuring_minutes_to').val();
+            var formattedTime = (hour ? hour : "00") + ":" + (minute ? minute : "00");
+            $('#noise_summer_close_measuring_time_to').val(formattedTime);
+        });
+
+        // 窓開放の開始時間入力に対する処理
+        $('#noise_summer_open_measuring_hour, #noise_summer_open_measuring_minutes').on('input', function() {
+            var hour = $('#noise_summer_open_measuring_hour').val();
+            var minute = $('#noise_summer_open_measuring_minutes').val();
+            var formattedTime = (hour ? hour : "00") + ":" + (minute ? minute : "00");
+            $('#noise_summer_open_measuring_time').val(formattedTime);
+        });
+
+        // 窓開放の終了時間入力に対する処理
+        $('#noise_summer_open_measuring_hour_to, #noise_summer_open_measuring_minutes_to').on('input', function() {
+            var hour = $('#noise_summer_open_measuring_hour_to').val();
+            var minute = $('#noise_summer_open_measuring_minutes_to').val();
+            var formattedTime = (hour ? hour : "00") + ":" + (minute ? minute : "00");
+            $('#noise_summer_open_measuring_time_to').val(formattedTime);
+        });
+    });
+// △メイン△

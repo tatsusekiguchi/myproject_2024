@@ -1,0 +1,127 @@
+// ▽メイン▽
+.propertySearchMain.main
+    .pageKvContainer
+        .pageKvPanel
+    .topSection
+        .secWrap01
+            .pageSecTtlBox
+                .sub
+                    p.em S
+                    p.span earch
+                .pageSecTtl
+                    h1 空き家・戸建て・土地などを探す
+    .searchSection
+        .secWrap01
+            .balloonTtl
+                h2 条件検索
+                img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/property_ttl_search.png", alt="")
+            .topTxt.txt
+                p ご希望の条件をご指定ください。表示する物件を絞り込めます。
+            .searchPanel
+                <form class="webgene-search-form" method="get" action="">
+                    <div rel="物件種類" title="物件種類" class="area webgene-search-form-block">
+                        <div class="search-title-wrapper">
+                            <p class="search-title">物件種類</p>
+                        </div>
+                        <div class="search-area-wrapper">
+                            <div class="search-subtitle-wrapper"> </div>
+                            <div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="3">土地（売)</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="2">建物（売)</label> <label><input type="checkbox" class="property_facility_cd" name="s0l0[]" value="1">店舗（売)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div rel="エリア" title="エリア" class=" webgene-search-form-block">
+                        <div class="search-title-wrapper">
+                            <p class="search-title">エリア</p>
+                        </div>
+                        <div class="search-area-wrapper">
+                            <div class="search-subtitle-wrapper"> </div>
+                            <div class="search-contents-wrapper"> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="2">岐阜市川北</label> <label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label><label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label><label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label><label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label><label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label><label><input type="checkbox" class="property_facility_cd2" name="s2l0[]" value="1">岐阜市川南</label> </div>
+                        </div>
+                    </div>
+                    <div class="btnItems">
+                        //- <input type="button" class="search-clear" value="条件クリア">
+                        <input type="submit" class="search-submit" value="検索する"><input type="hidden" name="wgsearch" value="property">
+                    </div>
+                </form>
+    .infoSection
+        .secWrap01
+            .balloonTtl
+                h2 不動産情報
+                img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/property_ttl_info.png", alt="")
+            .searchListPanel
+                section.webgene-blog
+                    .webgene-header
+                        h3 不動産一覧
+                    .webgene-item
+                        .photo
+                            img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_search_img_01.png", alt="")
+                        .cate
+                            p 建物（売）
+                        .txt01
+                            p 岐阜市川北
+                            p 物件名物件名物件名物件名物件名
+                        .priceBox
+                            p
+                                em 0000
+                                span 万円
+                        //- .txt02
+                        //-     p 補足文が入ります。
+                        a(href="") 詳細はこちら
+                    .webgene-item
+                        .photo
+                            img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_search_img_01.png", alt="")
+                        .cate
+                            p 建物（売）
+                        .txt01
+                            p 岐阜市川北
+                            p 物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名
+                        .priceBox
+                            p
+                                em 0000
+                                span 万円
+                        //- .txt02
+                        //-     p 補足文が入ります。
+                        a(href="") 詳細はこちら
+                    .webgene-item
+                        .photo
+                            img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_search_img_01.png", alt="")
+                        .cate
+                            p 建物（売）
+                        .txt01
+                            p 岐阜市川北
+                            p 物件名
+                        .priceBox
+                            p
+                                em 0000
+                                span 万円
+                        //- .txt02
+                        //-     p 補足文が入ります。
+                        a(href="") 詳細はこちら
+                    .webgene-item
+                        .photo
+                            img(src="https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_search_img_01.png", alt="")
+                        .cate
+                            p 建物（売）
+                        .txt01
+                            p 岐阜市川北
+                            p 物件名
+                        .priceBox
+                            p
+                                em 0000
+                                span 万円
+                        //- .txt02
+                        //-     p 補足文が入ります。
+                        a(href="") 詳細はこちら
+                    .webgene-pagination
+                        ul
+                            li.prev
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 前へ
+                            li.number
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=1") 1
+                            li.number
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 2
+                            li.number.selected
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=3") 3
+                            li.next
+                                a(href="/bloglist?wg%5Bwgc-1586149173114_page%5D=2") 次へ
+// △メイン△

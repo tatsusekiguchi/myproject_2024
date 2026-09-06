@@ -1,0 +1,559 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #1d1d1d;
+  font-size: 16px;
+  background: #f8f2ee;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2.3;
+}
+
+/*リンク */
+a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.gothic {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+}
+
+.txt {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    background: #f8f2ee;
+  }
+  .header .hamburger {
+    display: none;
+  }
+
+  .header .logoBox {
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    width: 270px;
+  }
+  .header .logoBox .logo {
+    width: 90px;
+    margin: 0 10px 0 0;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox p {
+    padding: 0 0 10px;
+  }
+}
+@media (min-width: 1431px) {
+  .header {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1430px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header .logoBox {
+    display: block;
+    left: 20px;
+    width: 140px;
+  }
+  .header .logoBox .logo {
+    width: 60px;
+  }
+  .header .logoBox p {
+    margin: 2px 0 0;
+    font-size: 10px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    font-size: 14px;
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navBox .navList > .ul > .li {
+    position: relative;
+    padding: 48px 0 30px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 1%;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt > p {
+    padding: 0 10px 10px;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: inline-block;
+  }
+  .navBox .navList > .ul > .li > a > div > p {
+    padding: 15px 10px 10px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul > .li:not(.contact, .insta) > a:hover {
+    opacity: 1;
+  }
+  .navBox .navList > .ul > .li:not(.contact, .insta) > a > div > p:hover {
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/header_nav_icon.png) center top no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList > .ul > .li:not(.contact, .insta) > a > div > p.current {
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/header_nav_icon.png) center top no-repeat;
+    background-size: 15px auto;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + .li {
+    margin: 1px 0 0;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #ffffff;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #164e70;
+  }
+  .navBox .navList .subList .li:last-child a {
+    border-radius: 0 0 10px 10px;
+  }
+  .navBox .navList .contact {
+    position: relative;
+    top: -5px;
+    width: 140px;
+  }
+  .navBox .navList .contact a {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background: #f0823d;
+  }
+  .navBox .navList .contact a div p {
+    padding: 0 !important;
+  }
+  .navBox .navList .insta {
+    position: relative;
+    top: -5px;
+    width: 40px;
+  }
+}
+@media (max-width: 1430px) {
+  .navBox {
+    font-size: 12px;
+  }
+  .navBox .navList > .ul > .li + .li {
+    margin: 0 0 0 10px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageKvContainer {
+  padding: 0 80px;
+}
+.pageKvContainer .pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px 80px;
+  height: 220px;
+  border-radius: 10px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/page_kv_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.pageKvContainer .pageKvTitle {
+  color: #ffffff;
+  text-align: center;
+}
+.pageKvContainer .pageKvTitle p {
+  color: #f0823d;
+}
+.pageKvContainer .pageKvTitle h1 {
+  font-size: 44px;
+  color: #f9c867;
+  letter-spacing: 0.05em;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 40px;
+}
+.pageSecTtlBox .sub {
+  padding: 0 0 0 20px;
+  color: #f0823d;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) left center no-repeat;
+  background-size: 14px auto;
+}
+.pageSecTtlBox .pageSecTtl {
+  margin: 5px 0 0;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.pageSecTtlBox.yellow .sub {
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon_yellow.png) left center no-repeat;
+  background-size: 14px auto;
+}
+
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 200px;
+}
+.btnMore a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 20px center no-repeat #f0823d;
+}
+@media (min-width: 1025px) {
+  .btnMore a:hover {
+    background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #f0823d;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 0 80px;
+}
+.footer .footContact {
+  position: relative;
+  padding: 80px 0 60px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_bg.png) center top no-repeat;
+  background-size: cover;
+}
+.footer .footContact .pageSecTtlBox {
+  color: #f9c867;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactPanel > * {
+    width: 48%;
+  }
+}
+.footer .footContact .contactBox {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.footer .footContact .contactBox .ttl {
+  display: inline-block;
+  font-size: 26px;
+}
+.footer .footContact .contactBox .ttl01 {
+  padding: 0 0 0 40px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.footer .footContact .contactBox .ttl02 {
+  padding: 0 0 0 40px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 34px auto;
+}
+.footer .footContact .contactBox01 {
+  background: #f8f2ee;
+}
+.footer .footContact .contactBox01 .tel {
+  margin: 5px 0 0;
+}
+.footer .footContact .contactBox01 .tel a {
+  display: inline-block;
+  font-size: 36px;
+}
+.footer .footContact .contactBox02 {
+  background: #f8f2ee;
+}
+.footer .footContact .contactBox02 .btnMore {
+  width: 260px;
+  margin: 30px auto 0;
+}
+.footer .footContact .pagetop {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.footer .footPanel .secWrap01 {
+  position: relative;
+  padding: 140px 20px 20px;
+}
+.footer .footPanel .logo {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 150px;
+}
+.footer .footPanel .footBox {
+  margin: 0 0 40px;
+}
+.footer .footPanel .footBox .leftBox .footNav .ul .li {
+  display: inline-block;
+  margin: 0 30px 30px 0;
+  padding: 0 0 0 15px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_nav_arrow.png) left center no-repeat;
+}
+.footer .footPanel .footBox .leftBox .footNav .ul .li a {
+  display: inline-block;
+}
+.footer .footPanel .footBox .leftBox .itemBox {
+  margin: 20px 0 0;
+}
+.footer .footPanel .footBox .leftBox .btnMore {
+  display: inline-block;
+}
+.footer .footPanel .footBox .leftBox .btnMore a {
+  padding: 8px 10px;
+  color: #ffffff;
+  background-image: none;
+}
+.footer .footPanel .footBox .leftBox .insta {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+.footer .footPanel .footBox .leftBox .insta a {
+  display: inline-block;
+}
+.footer .footPanel .footBox .leftBox .insta a img {
+  width: 35px;
+}
+.footer .footPanel .footBox .leftBox .insta p {
+  display: inline-block;
+}
+.footer .footPanel .footBox .rightBox {
+  text-align: center;
+}
+.footer .footPanel .footBox .rightBox .tel {
+  margin: 0 0 5px;
+}
+.footer .footPanel .footBox .rightBox .tel a {
+  display: inline-block;
+  padding: 0 0 0 35px;
+  font-size: 40px;
+  background: url(https://puremo-netto240427.smooooth.jp/system_panel/uploads/images/footer_tel.png) left top 18px no-repeat;
+  background-size: 28px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 55%;
+  }
+  .footer .footPanel .footBox .rightBox {
+    width: 35%;
+  }
+}
+.footer .footPanel .copy {
+  text-align: center;
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

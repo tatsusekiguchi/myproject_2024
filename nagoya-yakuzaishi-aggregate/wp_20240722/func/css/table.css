@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+/*---------- base ----------*/
+#recordListMain {
+	margin: 0 auto;
+    padding: 80px 10px;
+}
+#recordListMain .recordListBox {
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+ 	border-spacing: 0;
+ 	border: 2px solid #000;
+    table-layout: fixed;
+    width: 100%;
+    background: #fff;
+}
+table td {
+border: 1px solid;
+    text-align: center;
+    padding: 5px;
+	vertical-align: middle;
+}
+table tr.head td {
+	vertical-align: middle;
+}
+table .tate {
+	writing-mode: vertical-lr;
+}
+table .empty-l {
+    background-image: linear-gradient(58deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table .empty-r {
+    background-image: linear-gradient(-58deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table .area {
+	width: 80px;
+}
+table tr.content-head td,
+table tr.total td {
+	border-top: 3px double #000;
+}
+
+/***** 保健室定期検査表 *****/
+table.dispensary tr.head td,
+table.dispensary tr.head2 td  {
+	font-size: 85%;
+	padding-left: 2px
+}
+table.dispensary td.sch-head {
+	width: 120px;
+}
+table.dispensary td.sch {
+	padding: 2px;
+}
+
+/***** 黒板 *****/
+table.blackboard .empty-l {
+    background-image: linear-gradient(47deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table.blackboard .empty-r {
+    background-image: linear-gradient(-47deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+
+/***** 照度及び照明環境定期検査表(10月) *****/
+table.lighting_summer tr.head td,
+table.lighting_summer tr.head2 td {
+	font-size: 90%;
+}
+
+table.lighting_summer td.sch-head {
+	width: 150px;
+}
+table.lighting_summer td.weather-head {
+	width: 100px;
+}
+table.lighting_summer td.lx-head {
+	width: 65px;
+}
+table.lighting_summer td .small {
+	font-size: 10px;
+}
+table.lighting_summer .empty-l {
+    background-image: linear-gradient(45deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table.lighting_summer .empty-r {
+    background-image: linear-gradient(-45deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+
+/***** 教室の騒音定期検査表 *****/
+table.noise .tate.vlh {
+    line-height: 1.2;
+}
+table.noise .empty-l {
+    background-image: linear-gradient(53deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table.noise .empty-r {
+    background-image: linear-gradient(-53deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+
+
+/***** 教室の空気検査表 *****/
+table.air .empty-l {
+    background-image: linear-gradient(42deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+table.air .empty-r {
+    background-image: linear-gradient(-42deg,
+                     transparent 49%,
+                     black 49%,
+                     black 51%,
+                     transparent 51%,
+                     transparent);
+}
+
+
+/***** 共通 *****/
+table td.school-type a {
+    text-decoration: underline;
+}
+table td.school-type a:hover {
+    text-decoration: none;
+}
+
+/*---------- PDF-BOX ----------*/
+
+.pdf-box {
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+.pdf-box a {
+	display: block;
+    height: 41px;
+    line-height: 2;
+    width: 164px;
+    margin: 20px auto;
+    color: #fff;
+}

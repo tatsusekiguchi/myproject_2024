@@ -1,0 +1,2131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	login
+///////////////////////////////////////////////////////////*/
+#loginMain {
+  padding: 100px 10px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .loginBox {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 30px 20px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 1px solid #dadae9;
+    background: #ffffff;
+
+    #wpmem_login,
+    #wpmem_reg {
+      font-size: 12px !important;
+    }
+
+    #wpmem_login fieldset,
+    #wpmem_reg fieldset {
+      margin: 0 !important;
+    }
+
+    legend {
+      display: none;
+    }
+
+    .div_text {
+      width: 100% !important;
+      margin: 5px 0 10px;
+    }
+
+    .button_div {
+      width: 100% !important;
+      position: relative;
+      padding: 5px 0 0 !important;
+      text-align: left !important;
+
+      input[type="checkbox"] {
+        display: inline-block;
+        margin: 0 !important;
+        vertical-align: middle;
+      }
+
+      label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      border: 1px solid #e2e2e2;
+      background: #fbfbfb;
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      width: 140px;
+      padding: 5px 10px;
+      font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid #167397;
+      background: #2ea1ce;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  .subLink {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	topmenu
+///////////////////////////////////////////////////////////*/
+#topMenuMain {
+  padding: 80px 10px;
+
+  .menuListBox {
+    max-width: 800px;
+    margin: 0 auto 80px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -20px 0 0;
+
+      &:after {
+        display: block;
+        content: "";
+        width: calc((100% / 3) - 20px);
+      }
+
+      li {
+        width: calc((100% / 3) - 20px);
+        margin: 20px 0 0;
+      }
+    }
+  }
+
+  .infoListBox {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .titleBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      padding: 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      border-left: 4px solid #1f1f1f;
+    }
+
+    .more {
+      a {
+        display: block;
+        width: 100px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 25px;
+        background: #353290;
+      }
+    }
+
+    ul {
+      padding: 30px;
+      border-radius: 6px;
+      border: 1px solid #bae0fb;
+      background: #ffffff;
+
+      li {
+        display: table;
+        width: 100%;
+
+        + li {
+          margin-top: 10px;
+        }
+
+        > * {
+          display: table-cell;
+        }
+
+        .time {
+          width: 150px;
+
+          p {
+            display: inline-block;
+            padding: 0 10px;
+            color: #ffffff;
+            background: #20409a;
+          }
+        }
+
+        .txt {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recordlist
+///////////////////////////////////////////////////////////*/
+#recordListMain {
+  padding: 80px 10px;
+
+  .recordListBox {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 30px;
+      padding: 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      border-left: 4px solid #1f1f1f;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -20px 0 0;
+
+      &:before,
+      &:after {
+        display: block;
+        content: "";
+        width: calc((100% / 4) - 5px);
+        order: 1;
+      }
+
+      li {
+        width: calc((100% / 4) - 5px);
+        margin: 20px 0 0;
+      }
+    }
+
+    .ttlBox {
+      position: relative;
+
+      h2 {
+        max-width: 800px;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 190px;
+      }
+    }
+
+    .wpuf-dashboard-container {
+      padding: 30px;
+      background: #ffffff;
+
+      h2,
+      .post_count {
+        display: none;
+      }
+
+      .items-table {
+        width: 100%;
+
+        thead {
+          display: none;
+        }
+
+        tbody {
+          td {
+            padding: 10px;
+          }
+
+          td:nth-child(1) {
+            a {
+              color: #353290;
+              text-decoration: underline;
+            }
+          }
+
+          td:nth-child(2) {
+            display: none;
+          }
+
+          td:nth-child(3) {
+            text-align: right;
+
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .search-container {
+        display: flex;
+        align-items: center;
+        padding: 0 0 15px;
+      }
+      .search-container dl {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 0;
+      }
+      .search-container dl dt {
+        width: 40px;
+      }
+      .search-container dl dd {
+        width: 150px;
+      }
+    }
+
+    .wpuf-author {
+      display: none;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recordpdf
+///////////////////////////////////////////////////////////*/
+#recordPdfMain {
+  padding: 80px 10px;
+
+  .recordPdfBox {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 30px;
+      padding: 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      border-left: 4px solid #1f1f1f;
+    }
+
+    ul {
+      padding: 30px 40px;
+      border-radius: 6px;
+      border: 1px solid #bae0fb;
+      background: #ffffff;
+
+      li {
+        display: table;
+        width: 100%;
+
+        + li {
+          margin-top: 20px;
+        }
+
+        > * {
+          display: table-cell;
+        }
+
+        .time {
+          width: 190px;
+
+          p {
+            display: inline-block;
+            width: 170px;
+            padding: 6px 0;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            background: url(../image/common/time_bg.png) no-repeat;
+            background-size: 100% auto;
+          }
+        }
+
+        .txt {
+          width: 580px;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        .dl {
+          a {
+            display: inline-block;
+            width: 170px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            background: url(../image/common/dl_bg.png) no-repeat;
+            background-size: 100% auto;
+
+            span {
+              display: inline-block;
+              padding: 5px 0 5px 30px;
+              background: url(../image/common/icon_pdf.png) left top 3px
+                no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	total_*
+///////////////////////////////////////////////////////////*/
+#totalMain {
+  padding: 80px 10px;
+
+  .totalBox {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 30px;
+      padding: 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      border-left: 4px solid #1f1f1f;
+    }
+
+    .resultBox {
+      padding: 20px;
+      background: #ffffff;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	record_*
+///////////////////////////////////////////////////////////*/
+.registRecordMain {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 10px;
+
+  h2 {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    border-left: 4px solid #1f1f1f;
+  }
+
+  .formBox {
+    padding: 20px;
+    background: #ffffff;
+  }
+
+  .inputItem {
+    display: table;
+    width: 100%;
+    max-width: 480px;
+    min-height: 40px;
+
+    dt {
+      display: table-cell;
+      width: 140px;
+      padding: 0 5px;
+      color: #ffffff;
+      text-align: right;
+      vertical-align: middle;
+      background: #747474;
+    }
+
+    dd {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .unit {
+      width: 275px;
+    }
+  }
+
+  .radioList {
+    li {
+      display: inline-block;
+    }
+  }
+
+  .selectDate {
+    position: relative;
+    .selectBox {
+      max-width: 40px;
+    }
+
+    .year {
+      max-width: 55px;
+    }
+
+    .inputSubTxt {
+      font-size: 12px;
+    }
+  }
+
+  .datepickerDisplay {
+    display: none;
+  }
+
+  .ui-datepicker-trigger {
+    position: absolute;
+    top: 8px;
+    right: -2px;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .datepickerCal {
+    + .ui-datepicker-trigger {
+      position: static;
+      display: inline-block;
+    }
+  }
+
+  .wardBox {
+    padding: 20px;
+  }
+
+  .schoolInfoBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ececec;
+
+    .inputItemList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -15px 0 0;
+    }
+
+    .inputItem {
+      width: calc((100% / 2) - 15px);
+      margin: 15px 0 0;
+    }
+  }
+
+  .attentionBox {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .left {
+      float: left;
+      width: 49%;
+    }
+
+    .right {
+      float: right;
+      width: 49%;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    ul {
+      li {
+        position: relative;
+        padding-left: 1em;
+        font-size: 13px;
+        line-height: 2;
+
+        &:before {
+          content: "・";
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    dl {
+      display: table;
+      width: 100%;
+      font-size: 13px;
+      line-height: 2;
+
+      dt {
+        display: table-cell;
+        width: 80px;
+      }
+
+      dd {
+        position: relative;
+        display: table-cell;
+        padding-left: 1em;
+
+        &:before {
+          content: "：";
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .ttlCoaching {
+    font-weight: bold;
+  }
+
+  .btnListBox {
+    position: relative;
+    margin: 20px 0 0;
+  }
+
+  .btnSubmit {
+    display: block;
+    width: 165px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background: url(../image/common/submit_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+
+  .btnPrint {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 165px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background: url(../image/common/print_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+
+  button {
+    transition: 0.6s;
+  }
+
+  button:hover {
+    opacity: 0.6;
+  }
+
+  .txtFieldBox {
+    padding: 9px 5px;
+    font-size: 0;
+    border: 1px solid #747474;
+    background: #ffffff;
+
+    .txtField {
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .inputSubTxt {
+      margin: 0;
+      font-size: 13px;
+    }
+  }
+
+  .wpuf-form-add {
+    display: none;
+  }
+}
+
+.registRecordMain .confirmPostBox {
+  .sealBox {
+    overflow: hidden;
+    padding: 0 20px;
+
+    > p {
+      margin: 0 0 5px;
+      text-align: right;
+    }
+
+    .sealTbl {
+      float: right;
+      display: table;
+      width: calc(100% - 650px);
+      border: 1px solid #747474;
+
+      dl {
+        display: table-cell;
+        text-align: center;
+
+        dt {
+          padding: 3px 0;
+          color: #ffffff;
+          background: #747474;
+        }
+
+        dd {
+          padding: 15px 10px;
+        }
+
+        + dl {
+          width: 60px;
+
+          dt {
+            border-left: 1px solid #ffffff;
+          }
+
+          dd {
+            border-left: 1px solid #747474;
+          }
+        }
+      }
+    }
+  }
+
+  .wardBox {
+    .inputItem {
+      max-width: 435px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	学校水泳プール水質定期検査表
+///////////////////////////////////////////////////////////*/
+#registPool {
+  /* 実質使用日数 */
+  .useDays {
+    input[type="text"] {
+      width: 220px;
+    }
+  }
+
+  .registPoolTable {
+    margin-bottom: 20px;
+
+    table {
+      width: 100%;
+      border: 1px solid #747474;
+
+      thead {
+        th {
+          padding: 5px;
+          color: #ffffff;
+          text-align: center;
+          background: #747474;
+
+          + th {
+            border-left: 1px solid #ffffff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          + tr {
+            border-top: 1px solid #747474;
+          }
+        }
+
+        th {
+          min-width: 65px;
+          text-align: center;
+          vertical-align: middle;
+          background: #ececec;
+
+          &.row {
+            border-right: 1px solid #747474;
+          }
+
+          + th {
+            width: 65px;
+          }
+        }
+
+        td {
+          width: 180px;
+          padding: 5px 10px;
+          border-left: 1px solid #747474;
+
+          + th {
+            border-left: 1px solid #747474;
+          }
+        }
+      }
+    }
+
+    .temperature {
+      input {
+        width: 110px;
+      }
+    }
+
+    .amount {
+      input {
+        width: 80px;
+      }
+    }
+
+    .deposition {
+      .radioList {
+        li + li {
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .water_change.radioList,
+    .shower.radioList {
+      li + li {
+        margin-left: 40px;
+      }
+    }
+
+    .tblFieldBox {
+      padding: 9px 0;
+      font-size: 0;
+      text-align: center;
+
+      .txtField {
+        display: inline-block;
+        font-size: 14px;
+      }
+
+      .inputSubTxt {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	保健室定期検査表
+///////////////////////////////////////////////////////////*/
+#registDispensary {
+  .dispensaryBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ececec;
+
+    .inputItemBox01 {
+      margin-bottom: 30px;
+    }
+
+    .inputItemList01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin: -15px 0 0;
+
+      .inputItem {
+        max-width: 100%;
+        margin: 15px 0 0;
+      }
+
+      .inputItem:nth-child(odd) {
+        width: calc(100% - 420px);
+
+        .inputSubTxt {
+          padding: 0 0 0 5px;
+        }
+
+        .radioList {
+          display: inline-block;
+        }
+
+        .unit {
+          width: 100px;
+        }
+      }
+
+      .inputItem:nth-child(even) {
+        width: 400px;
+
+        .unit {
+          width: 240px;
+        }
+      }
+    }
+
+    .inputItemBox02 {
+      margin-bottom: 30px;
+    }
+
+    .inputItemList02,
+    .inputItemList03 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -15px 0 0;
+
+      .inputItem {
+        width: calc((100% / 2) - 15px);
+        margin: 15px 0 0;
+      }
+
+      .inputSubTxt {
+        padding: 0 0 0 5px;
+      }
+    }
+
+    .inputItemList02 {
+      .inputItem {
+        dt {
+          width: 220px;
+        }
+      }
+
+      .unit {
+        width: 100px;
+      }
+    }
+
+    .inputItemList03 {
+      .unit {
+        width: 200px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	教室の騒音定期検査表
+///////////////////////////////////////////////////////////*/
+#registNoise {
+  .noiseBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ececec;
+
+    .inputItemBox01 {
+      margin-bottom: 15px;
+    }
+
+    .inputItemBox02 {
+      margin-bottom: 30px;
+    }
+
+    .inputItemList01,
+    .inputItemList02 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -15px 0 0;
+
+      .inputItem {
+        width: calc((100% / 2) - 15px);
+        margin: 15px 0 0;
+      }
+
+      .inputSubTxt {
+        padding: 0 0 0 5px;
+      }
+
+      .unit {
+        width: 100px;
+      }
+
+      .radioList {
+        display: inline-block;
+      }
+
+      .txtFieldBox {
+        .inputSubTxt {
+          padding: 0;
+        }
+      }
+    }
+
+    .inputItemList02 {
+      .inputItem {
+        dt {
+          width: 270px;
+        }
+      }
+    }
+
+    .inputItemList03 {
+      margin: -15px 0 0;
+
+      .inputItem {
+        max-width: 100%;
+        margin: 15px 0 0;
+
+        dt {
+          width: 270px;
+        }
+      }
+
+      .radioList {
+        display: inline-block;
+      }
+
+      .particular {
+        margin: 0 0 0 50px;
+      }
+
+      .unit {
+        width: 334px;
+      }
+
+      .txtField + .txtField {
+        margin: 0 0 0 30px;
+      }
+    }
+  }
+
+  .registNoiseTable {
+    margin-bottom: 20px;
+
+    table {
+      width: 100%;
+      border: 1px solid #747474;
+
+      thead {
+        th {
+          width: 33%;
+          padding: 5px;
+          color: #ffffff;
+          text-align: center;
+          background: #747474;
+
+          + th {
+            border-left: 1px solid #ffffff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          + tr {
+            border-top: 1px solid #747474;
+          }
+        }
+
+        th {
+          min-width: 65px;
+          text-align: center;
+          vertical-align: middle;
+          background: #ececec;
+        }
+
+        td {
+          padding: 5px 10px;
+          vertical-align: middle;
+          border-left: 1px solid #747474;
+
+          + th {
+            border-left: 1px solid #747474;
+          }
+
+          .unit {
+            width: 220px;
+          }
+        }
+      }
+    }
+
+    .tblFieldBox {
+      padding: 9px 0;
+      font-size: 0;
+      text-align: center;
+
+      .txtField {
+        display: inline-block;
+        font-size: 14px;
+      }
+
+      .inputSubTxt {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+
+    .inputWindowCnt {
+      display: flex;
+      align-items: center;
+      > p {
+        width: 10px;
+        text-align: center;
+      }
+    }
+
+    .inputWindowBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inputWindow {
+        width: 70px;
+        + span {
+          width: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #noiseFormBoxWinter {
+    .schoolInfoBox {
+      margin-bottom: 0;
+      padding: 20px 20px 15px;
+    }
+
+    .noiseBox {
+      padding: 0 20px 20px;
+    }
+
+    .examDate {
+      display: none;
+    }
+
+    .registNoiseTable .classroom {
+      width: calc(100% - 65px);
+      border-right: 1px solid #747474;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	教室の夏季空気検査表
+///////////////////////////////////////////////////////////*/
+#registAir {
+  .schoolInfoBox {
+    .heating {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .inputItem {
+      dt {
+        width: 150px;
+      }
+    }
+
+    .radioList {
+      display: inline-block;
+    }
+
+    .unit {
+      width: 250px;
+    }
+
+    .unitTime {
+      width: 175px;
+    }
+
+    .unitRoom {
+      width: 100px;
+    }
+  }
+
+  .airBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ececec;
+
+    .inputItemList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -15px 0 0;
+
+      .inputSubTxt {
+        padding: 0 0 0 5px;
+      }
+
+      .radioList {
+        display: inline-block;
+      }
+
+      .txtFieldBox {
+        .inputSubTxt {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .airBox01 {
+    .inputItem {
+      width: calc((100% / 2) - 15px);
+      margin: 15px 0 0;
+
+      dt {
+        width: 150px;
+      }
+    }
+
+    .unit {
+      width: 260px;
+    }
+  }
+
+  .airBox02 {
+    .inputItemList {
+      + .inputItemList {
+        margin: 0;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: calc((100% / 3) - 10px);
+      }
+
+      &.inputDustYear {
+        margin: 15px 0 0;
+        &:after {
+          display: none;
+        }
+        .inputItem {
+          width: 100%;
+          max-width: 100%;
+          .unit {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    .inputItem {
+      width: calc((100% / 3) - 10px);
+      margin: 15px 0 0;
+
+      dt {
+        width: 150px;
+      }
+
+      > p {
+        position: relative;
+        bottom: 15px;
+        padding: 10px 30px;
+        font-size: 12px;
+        background: #cccccc;
+      }
+    }
+
+    .unit {
+      width: 80px;
+    }
+
+    aside {
+      padding: 10px 10px 0;
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+}
+
+#registAir .airBox02 aside.winter {
+  padding: 10px 10px 0;
+  font-size: 12px;
+  text-align: left;
+}
+#registAir .airBox02 aside.winter p:before {
+  content: "　　　　";
+}
+
+/*////////////////////////////////////////////////////////////
+	照度及び照明環境定期検査表
+///////////////////////////////////////////////////////////*/
+#registLighting {
+  .schoolInfoBox {
+    .heating {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .inputItem {
+      dt {
+        width: 150px;
+      }
+    }
+
+    .radioList {
+      display: inline-block;
+    }
+
+    .unit {
+      width: 250px;
+    }
+
+    .unitTime {
+      width: 175px;
+    }
+  }
+
+  .lightingBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ececec;
+
+    .inputItemBox {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      > * {
+        width: calc((100% / 2) - 15px);
+      }
+    }
+
+    .redioBtn label {
+      padding: 8px 0 8px 25px;
+    }
+
+    .leftBox {
+      .unit {
+        width: 115px;
+      }
+
+      .blackboardLight {
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    .rightBox {
+      .lightList {
+        li {
+          + li {
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .unit {
+        width: 170px;
+      }
+
+      .inputSubTxt {
+        width: 80px;
+        padding: 0 0 0 5px;
+      }
+
+      .unit + .inputSubTxt {
+        width: 20px;
+      }
+    }
+
+    .inputItem {
+      + .inputItem {
+        margin-top: 15px;
+      }
+
+      dt {
+        width: 150px;
+      }
+    }
+
+    .radioList {
+      display: inline-block;
+
+      li {
+        margin: 0 5px 0 0;
+      }
+    }
+
+    .radioLight {
+      li {
+        // min-width: 90px;
+      }
+    }
+
+    .lightItemBox {
+      padding: 0 0 0 5px;
+      + .lightItemBox {
+        margin: 5px 0 0;
+      }
+      .inputSubTxt {
+        min-width: 15px;
+      }
+    }
+
+    aside {
+      line-height: 2;
+
+      .reasonBox {
+        p {
+          display: inline-block;
+        }
+
+        input {
+          width: 715px;
+        }
+      }
+    }
+  }
+
+  .figureBox {
+    margin-bottom: 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	給食調理場衛生検査表
+///////////////////////////////////////////////////////////*/
+#registKitchen {
+  .schoolInfoBox {
+    .unitFan {
+      width: 120px;
+    }
+  }
+
+  .registKitchenTable {
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #747474;
+
+      thead {
+        th {
+          padding: 5px;
+          color: #ffffff;
+          text-align: center;
+          background: #747474;
+
+          + th {
+            border-left: 1px solid #ffffff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          + tr {
+            border-top: 1px solid #747474;
+          }
+        }
+
+        th {
+          width: 85px;
+          text-align: center;
+          vertical-align: middle;
+          background: #ececec;
+        }
+
+        td {
+          padding: 5px 10px;
+          border-left: 1px solid #747474;
+
+          + th {
+            border-left: 1px solid #747474;
+          }
+
+          .unit {
+            width: 220px;
+          }
+        }
+      }
+    }
+
+    .tableware {
+      .unitResidue {
+        width: 170px;
+      }
+    }
+
+    .board {
+    }
+
+    .lighting {
+      .light .unit {
+        width: 110px;
+      }
+
+      .lightItem {
+        + .lightItem {
+          margin: 5px 0 0;
+        }
+        .inputSubTxt {
+          min-width: 15px;
+        }
+      }
+
+      .luminosity .unit {
+        width: 200px;
+      }
+    }
+
+    .tblFieldBox {
+      padding: 9px 0;
+      font-size: 0;
+      text-align: center;
+
+      .txtField {
+        display: inline-block;
+        font-size: 14px;
+      }
+
+      .inputSubTxt {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	学校環境衛生検査票「黒板面の色彩」
+///////////////////////////////////////////////////////////*/
+#registBlackboard {
+  .inputItem {
+    dt {
+      width: 160px;
+    }
+  }
+
+  .schoolInfoBox {
+    .dateTime,
+    .appearance,
+    .status,
+    .wipe,
+    .cleaner,
+    .color {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .radioList {
+      display: inline-block;
+    }
+
+    .unitType01 {
+      width: 255px;
+    }
+
+    .unitType02 {
+      width: 100px;
+    }
+
+    .unitType03 {
+      width: 100px;
+    }
+
+    .unitType04 {
+      width: 40px;
+    }
+
+    .unitType05 {
+      width: 90px;
+    }
+
+    .unitType06 {
+      width: 100px;
+    }
+
+    .unitType07 {
+      width: 100px;
+    }
+
+    .unitType08 {
+      width: 200px;
+    }
+
+    .unitType09 {
+      width: 60px;
+    }
+
+    .unitType10 {
+      width: 180px;
+    }
+
+    .checkList {
+      display: inline-block;
+      padding: 5px;
+      vertical-align: middle;
+
+      + .checkList {
+        margin: 10px 5px 0 0;
+
+        + input {
+          margin: 10px 0 0;
+          vertical-align: middle;
+        }
+      }
+
+      li {
+        + li {
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+
+    .positionTxt {
+      display: inline-block;
+      padding: 0 0 0 5px;
+      font-size: 10px;
+      width: 120px;
+      vertical-align: middle;
+    }
+
+    .appearance {
+      .checkList:nth-child(1) {
+        width: 100%;
+      }
+    }
+
+    .statusBox {
+      display: inline-block;
+      padding: 0 0 0 10px;
+
+      > p {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .checkList {
+        width: 400px;
+      }
+    }
+
+    .color {
+      .inputSubTxt {
+        margin: 0 0 0 10px;
+      }
+
+      small {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .registBlackboardTable {
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #747474;
+
+      thead {
+        th {
+          width: 33%;
+          padding: 5px;
+          color: #ffffff;
+          text-align: center;
+          background: #747474;
+
+          + th {
+            border-left: 1px solid #ffffff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          + tr {
+            border-top: 1px solid #747474;
+          }
+        }
+
+        > tr > th {
+          text-align: center;
+          vertical-align: middle;
+          background: #ececec;
+        }
+
+        td {
+          padding: 5px 10px;
+          text-align: center;
+          vertical-align: middle;
+          border-left: 1px solid #747474;
+
+          + th {
+            border-left: 1px solid #747474;
+          }
+
+          > p {
+            text-align: left;
+            line-height: 2;
+
+            + p {
+              margin-top: 15px;
+            }
+          }
+          .colorTxtBox {
+            margin-bottom: 5px;
+            text-align: right;
+          }
+
+          .unitType01 {
+            width: 305px;
+          }
+        }
+      }
+    }
+
+    .tableware {
+      .unitResidue {
+        width: 170px;
+      }
+    }
+
+    .innerTbl {
+      .unitType02 {
+        width: 70px;
+      }
+    }
+
+    .tblFieldBox {
+      padding: 9px 0;
+      font-size: 0;
+      text-align: center;
+
+      .txtField {
+        display: inline-block;
+        font-size: 14px;
+      }
+
+      .inputSubTxt {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	ネズミ、衛生害虫等検査表
+///////////////////////////////////////////////////////////*/
+#registPest {
+  .schoolInfoBox {
+    .recordStatus {
+      dt {
+        width: 280px;
+      }
+    }
+  }
+
+  .registPestTable {
+    margin-bottom: 20px;
+
+    table {
+      width: 100%;
+      border: 1px solid #747474;
+
+      tbody {
+        tr {
+          + tr {
+            th {
+              border-top: 1px solid #ffffff;
+            }
+
+            td {
+              border-top: 1px solid #747474;
+            }
+          }
+        }
+
+        th {
+          width: 160px;
+          text-align: center;
+          color: #ffffff;
+          vertical-align: middle;
+          background: #747474;
+        }
+
+        td {
+          padding: 5px 10px;
+          vertical-align: middle;
+          border-left: 1px solid #747474;
+
+          > p {
+            padding: 10px 0;
+          }
+        }
+
+        .confirmPointBlock {
+          padding: 0;
+        }
+
+        .confirmPointBox {
+          display: table;
+          width: 100%;
+
+          > * {
+            width: 50%;
+            display: table-cell;
+            vertical-align: top;
+          }
+
+          .leftBox {
+            > dl:nth-child(3) {
+              height: 427px;
+            }
+          }
+
+          .rightBox {
+            border-left: 1px solid #747474;
+          }
+
+          dl {
+            display: table;
+            width: 100%;
+
+            + dl {
+              border-top: 1px solid #747474;
+            }
+
+            dt {
+              display: table-cell;
+              width: 150px;
+              padding: 10px;
+              text-align: center;
+              vertical-align: middle;
+              border-right: 1px solid #747474;
+              background: #ececec;
+
+              span {
+                display: inline-block;
+                text-align: left;
+              }
+            }
+
+            dd {
+              display: table-cell;
+              vertical-align: middle;
+            }
+          }
+
+          ul {
+            li {
+              display: table;
+              width: 100%;
+              min-height: 60px;
+
+              + li {
+                border-top: 1px solid #747474;
+              }
+            }
+
+            .checkCell {
+              display: table-cell;
+              width: 40px;
+              text-align: center;
+              vertical-align: middle;
+              border-right: 1px solid #747474;
+
+              .checkBox {
+                display: block;
+                height: 60px;
+
+                input[type="checkbox"] {
+                  z-index: 1;
+                }
+
+                label {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0;
+                  background-position: center;
+                }
+              }
+
+              .checkBoxDisp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+
+            .txtCell {
+              display: table-cell;
+              padding: 10px;
+              vertical-align: middle;
+            }
+
+            .unit {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+
+    .tblFieldBox {
+      padding: 9px 0;
+      font-size: 0;
+      text-align: center;
+
+      .txtField {
+        display: inline-block;
+        font-size: 14px;
+      }
+
+      .inputSubTxt {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .registPestTableConfirm {
+    table tbody .confirmPointBox .leftBox > dl:nth-child(3) {
+      height: auto;
+    }
+
+    table tbody .confirmPointBox ul li.adjustment {
+      height: 61px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	新着情報
+///////////////////////////////////////////////////////////*/
+#newsMain {
+  padding: 80px 10px;
+  .newsContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    h2 {
+      margin-bottom: 30px;
+      padding: 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      border-left: 4px solid #1f1f1f;
+    }
+    .newsPanel {
+      padding: 30px 50px 60px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #bae0fb;
+      background: #ffffff;
+    }
+    .newsBox {
+      display: flex;
+      justify-content: space-between;
+      .leftBox {
+        width: calc(100% - 250px);
+      }
+      .rightBox {
+        width: 220px;
+      }
+    }
+    .cateLust {
+      text-align: center;
+      dl {
+        dt {
+          margin: 0 0 5px;
+          padding: 5px;
+          color: #ffffff;
+          background: #141414;
+        }
+        dd {
+          ul {
+            li {
+              + li {
+                margin: 5px 0 0;
+              }
+              a {
+                display: block;
+                padding: 10px;
+                color: #ffffff;
+                background: url(../image/common/category_btn_bg.png) no-repeat;
+                background-size: cover;
+                &.active,
+                &:hover {
+                  opacity: 1;
+                  background: url(../image/common/category_btn_bg_active.png)
+                    no-repeat;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .newsList {
+      ul {
+        li {
+          display: flex;
+          padding: 10px 0;
+          border-bottom: 1px dashed #c9c9c9;
+        }
+        .time {
+          width: 120px;
+          margin: 0 10px 0 0;
+          p {
+            padding: 4px;
+            color: #ffffff;
+            text-align: center;
+            background: #20409a;
+          }
+        }
+        .cate {
+          width: 120px;
+          margin: 0 20px 0 0;
+          p {
+            padding: 4px;
+            color: #ffffff;
+            text-align: center;
+            background: #ff6d1e;
+          }
+        }
+        .title {
+          width: calc(100% - 280px);
+          padding: 5px 0 0;
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .list__pagination {
+      margin: 100px 0 0;
+      .pagination {
+        display: flex;
+        justify-content: center;
+        li {
+          margin: 0 10px;
+          a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            color: #ffffff;
+            background: #cdcdcd;
+          }
+          &.current {
+            a {
+              background: #0f0b09;
+            }
+          }
+          &.previous {
+            a {
+              &:before {
+                content: "<";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 14px;
+                height: 22px;
+                margin: auto;
+              }
+            }
+          }
+          &.next {
+            a {
+              &:before {
+                content: ">";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 14px;
+                height: 22px;
+                margin: auto;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .newsDetail {
+      .infoTop {
+        display: flex;
+        margin: 0 0 20px;
+        .time {
+          width: 120px;
+          margin: 0 10px 0 0;
+          p {
+            padding: 4px;
+            color: #ffffff;
+            text-align: center;
+            background: #20409a;
+          }
+        }
+        .cate {
+          width: 120px;
+          p {
+            padding: 4px;
+            color: #ffffff;
+            text-align: center;
+            background: #ff6d1e;
+          }
+        }
+      }
+      .title {
+        margin: 0 0 30px;
+        padding: 0 0 15px;
+        font-size: 26px;
+        border-bottom: 1px dashed #c9c9c9;
+      }
+      .postContents {
+        padding: 0 0 100px;
+        font-size: 16px;
+        line-height: 2;
+        border-bottom: 1px dashed #c9c9c9;
+      }
+    }
+    .btnBack {
+      width: 190px;
+      margin: 40px auto 0;
+      a {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        background: #0f0b09;
+      }
+    }
+  }
+}

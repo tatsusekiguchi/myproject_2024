@@ -1,0 +1,511 @@
+// ▽メイン▽
+.topicPath
+    .inner
+        ol
+            li
+                a(href="") トップページ
+            li
+                a(href="") 検査表の記入 一覧
+            li 給食調理場衛生検査表
+        .userBox
+            p ようこそ 会員さん
+main#registKitchen.registRecordMain
+    h2 給食調理場衛生検査表
+    .formBox
+        .wardBox
+            dl.inputItem
+                dt 区選択
+                dd
+                    .selectBox
+                        select#kitchen_ward.select_ward
+                            option(value="") 選択してください
+                            option(value="千種") 千種
+                            option(value="東") 東
+                            option(value="北") 北
+                            option(value="西") 西
+                            option(value="中村") 中村
+                            option(value="中") 中
+                            option(value="昭和") 昭和
+                            option(value="瑞穂") 瑞穂
+                            option(value="熱田") 熱田
+                            option(value="中川") 中川
+                            option(value="港") 港
+                            option(value="南") 南
+                            option(value="守山") 守山
+                            option(value="緑") 緑
+                            option(value="名東") 名東
+                            option(value="天白") 天白
+                    span.inputSubTxt 区
+        .schoolInfoBox
+            .inputItemList
+                dl.inputItem
+                    dt 学校名
+                    dd
+                        .selectBox
+                            select#kitchen_school_name.select_school
+                                option(value="") 選択してください
+                dl.inputItem
+                    dt 校長名
+                    dd
+                        input(type="text")#kitchen_school_headmaster
+                dl.inputItem
+                    dt 学校薬剤師名
+                    dd
+                        input(type="text" placeholder="※必須項目")#kitchen_pharmacist
+                dl.inputItem
+                    dt 検査日時
+                    dd.selectDate
+                        .selectBox.year
+                            select#kitchen_date_year
+                                option(value="") 選択
+                                option(value="2021") 2021
+                                option(value="2022") 2022
+                                option(value="2023") 2023
+                                option(value="2024") 2024
+                                option(value="2025") 2025
+                                option(value="2026") 2026
+                                option(value="2027") 2027
+                                option(value="2028") 2028
+                                option(value="2029") 2029
+                                option(value="2030") 2030
+                                option(value="2031") 2031
+                                option(value="2032") 2032
+                                option(value="2033") 2033
+                                option(value="2034") 2034
+                                option(value="2035") 2035
+                                option(value="2036") 2036
+                                option(value="2037") 2037
+                                option(value="2038") 2038
+                                option(value="2039") 2039
+                                option(value="2040") 2040
+                        span.inputSubTxt 年
+                        .selectBox.month
+                            select#kitchen_date_month
+                                option(value="") 選択
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="3") 3
+                                option(value="4") 4
+                                option(value="5") 5
+                                option(value="6") 6
+                                option(value="7") 7
+                                option(value="8") 8
+                                option(value="9") 9
+                                option(value="10") 10
+                                option(value="11") 11
+                                option(value="12") 12
+                        span.inputSubTxt 月
+                        .selectBox.day
+                            select#kitchen_date_day
+                                option(value="") 選択
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="3") 3
+                                option(value="4") 4
+                                option(value="5") 5
+                                option(value="6") 6
+                                option(value="7") 7
+                                option(value="8") 8
+                                option(value="9") 9
+                                option(value="10") 10
+                                option(value="11") 11
+                                option(value="12") 12
+                                option(value="13") 13
+                                option(value="14") 14
+                                option(value="15") 15
+                                option(value="16") 16
+                                option(value="17") 17
+                                option(value="18") 18
+                                option(value="19") 19
+                                option(value="20") 20
+                                option(value="21") 21
+                                option(value="22") 22
+                                option(value="23") 23
+                                option(value="24") 24
+                                option(value="25") 25
+                                option(value="26") 26
+                                option(value="27") 27
+                                option(value="28") 28
+                                option(value="29") 29
+                                option(value="30") 30
+                                option(value="31") 31
+                        span.inputSubTxt 日
+                        .selectBox.yobi
+                            select#kitchen_date_yobi
+                                option(value="") 選択
+                                option(value="月") 月
+                                option(value="火") 火
+                                option(value="水") 水
+                                option(value="木") 木
+                                option(value="金") 金
+                                option(value="土") 土
+                                option(value="日") 日
+                        span.inputSubTxt 曜日
+                dl.inputItem
+                    dt 日常点検の記録
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_record_rd" value="有")#kitchen_is_record_01
+                                label(for="kitchen_is_record_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_record_rd" value="無")#kitchen_is_record_02
+                                label(for="kitchen_is_record_02") 無
+                dl.inputItem
+                    dt 乾湿計
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_sychrometer_rd" value="有")#kitchen_is_sychrometer_01
+                                label(for="kitchen_is_sychrometer_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_sychrometer_rd" value="無")#kitchen_is_sychrometer_02
+                                label(for="kitchen_is_sychrometer_02") 無
+                dl.inputItem
+                    dt 専用便所
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_toilet_rd" value="有")#kitchen_is_toilet_01
+                                label(for="kitchen_is_toilet_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_toilet_rd" value="無")#kitchen_is_toilet_02
+                                label(for="kitchen_is_toilet_02") 無
+                dl.inputItem
+                    dt 専用休憩室
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_restroom_rd" value="有")#kitchen_is_restroom_01
+                                label(for="kitchen_is_restroom_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_restroom_rd" value="無")#kitchen_is_restroom_02
+                                label(for="kitchen_is_restroom_02") 無
+                dl.inputItem
+                    dt 専用シャワー
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_shower_rd" value="有")#kitchen_is_shower_01
+                                label(for="kitchen_is_shower_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_shower_rd" value="無")#kitchen_is_shower_02
+                                label(for="kitchen_is_shower_02") 無
+                dl.inputItem
+                    dt 手洗消毒器
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_sterilizer_rd" value="有")#kitchen_is_sterilizer_01
+                                label(for="kitchen_is_sterilizer_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_sterilizer_rd" value="無")#kitchen_is_sterilizer_02
+                                label(for="kitchen_is_sterilizer_02") 無
+                dl.inputItem
+                    dt 消毒薬品
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_disinfectant_rd" value="有")#kitchen_is_disinfectant_01
+                                label(for="kitchen_is_disinfectant_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_disinfectant_rd" value="無")#kitchen_is_disinfectant_02
+                                label(for="kitchen_is_disinfectant_02") 無
+                dl.inputItem
+                    dt ツメブラシ
+                    dd
+                        ul.radioList
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_brush_rd" value="有")#kitchen_is_brush_01
+                                label(for="kitchen_is_brush_01") 有
+                            li.redioBtn
+                                input(type="radio" name="kitchen_is_brush_rd" value="無")#kitchen_is_brush_02
+                                label(for="kitchen_is_brush_02") 無
+                dl.inputItem
+                    dt 換気扇
+                    dd
+                        input(type="text")#kitchen_fan_size.unitFan
+                        span.inputSubTxt ㎝
+                        input(type="text")#kitchen_fan_num.unitFan
+                        span.inputSubTxt 台
+                dl.inputItem
+                    dt 温度
+                    dd
+                        input(type="text")#kitchen_temperature.unit
+                        span.inputSubTxt ℃
+                dl.inputItem
+                    dt 湿度
+                    dd
+                        input(type="text")#kitchen_humidity.unit
+                        span.inputSubTxt %
+        .registKitchenTable
+            h3 食器について
+            table.tableware
+                thead
+                    tr
+                        th &nbsp;
+                        th パン皿
+                        th 中食器
+                        th 小食器・その他
+                tbody
+                    tr
+                        th 材質
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_pan_rd" value="樹脂")#kitchen_material_pan_01
+                                    label(for="kitchen_material_pan_01") 樹脂
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_pan_rd" value="金属")#kitchen_material_pan_02
+                                    label(for="kitchen_material_pan_02") 金属
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_pan_rd" value="磁器")#kitchen_material_pan_03
+                                    label(for="kitchen_material_pan_03") 磁器
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_pan_rd" value="その他")#kitchen_material_pan_04
+                                    label(for="kitchen_material_pan_04") その他
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_mid_rd" value="樹脂")#kitchen_material_mid_01
+                                    label(for="kitchen_material_mid_01") 樹脂
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_mid_rd" value="金属")#kitchen_material_mid_02
+                                    label(for="kitchen_material_mid_02") 金属
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_mid_rd" value="磁器")#kitchen_material_mid_03
+                                    label(for="kitchen_material_mid_03") 磁器
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_mid_rd" value="その他")#kitchen_material_mid_04
+                                    label(for="kitchen_material_mid_04") その他
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_small_rd" value="樹脂")#kitchen_material_small_01
+                                    label(for="kitchen_material_small_01") 樹脂
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_small_rd" value="金属")#kitchen_material_small_02
+                                    label(for="kitchen_material_small_02") 金属
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_small_rd" value="磁器")#kitchen_material_small_03
+                                    label(for="kitchen_material_small_03") 磁器
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_material_small_rd" value="その他")#kitchen_material_small_04
+                                    label(for="kitchen_material_small_04") その他
+                    tr
+                        th 傷み方
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_pan_rd" value="a")#kitchen_damage_pan_01
+                                    label(for="kitchen_damage_pan_01") A
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_pan_rd" value="b")#kitchen_damage_pan_02
+                                    label(for="kitchen_damage_pan_02") B
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_pan_rd" value="c")#kitchen_damage_pan_03
+                                    label(for="kitchen_damage_pan_03") C
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_mid_rd" value="a")#kitchen_damage_mid_01
+                                    label(for="kitchen_damage_mid_01") A
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_mid_rd" value="b")#kitchen_damage_mid_02
+                                    label(for="kitchen_damage_mid_02") B
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_mid_rd" value="c")#kitchen_damage_mid_03
+                                    label(for="kitchen_damage_mid_03") C
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_small_rd" value="a")#kitchen_damage_small_01
+                                    label(for="kitchen_damage_small_01") A
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_small_rd" value="b")#kitchen_damage_small_02
+                                    label(for="kitchen_damage_small_02") B
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_damage_small_rd" value="c")#kitchen_damage_small_03
+                                    label(for="kitchen_damage_small_03") C
+                    tr
+                        th 使用年数
+                        td
+                            span.inputSubTxt 約
+                            input(type="text")#kitchen_use_year_pan.unit
+                            span.inputSubTxt 年
+                        td
+                            span.inputSubTxt 約
+                            input(type="text")#kitchen_use_year_mid.unit
+                            span.inputSubTxt 年
+                        td
+                            span.inputSubTxt 約
+                            input(type="text")#kitchen_use_year_small.unit
+                            span.inputSubTxt 年
+                    tr
+                        th(rowspan="2") 残留物検査
+                        td
+                            span.inputSubTxt 澱粉5枚中
+                            input(type="text")#kitchen_starch_pan.unitResidue
+                            span.inputSubTxt 枚
+                        td
+                            span.inputSubTxt 澱粉5枚中
+                            input(type="text")#kitchen_starch_mid.unitResidue
+                            span.inputSubTxt 枚
+                        td
+                            span.inputSubTxt 澱粉5枚中
+                            input(type="text")#kitchen_starch_small.unitResidue
+                            span.inputSubTxt 枚
+                    tr
+                        td
+                            span.inputSubTxt 脂肪5枚中
+                            input(type="text")#kitchen_fat_pan.unitResidue
+                            span.inputSubTxt 枚
+                        td
+                            span.inputSubTxt 脂肪5枚中
+                            input(type="text")#kitchen_fat_mid.unitResidue
+                            span.inputSubTxt 枚
+                        td
+                            span.inputSubTxt 脂肪5枚中
+                            input(type="text")#kitchen_fat_small.unitResidue
+                            span.inputSubTxt 枚
+        .registKitchenTable
+            h3 マナ板について
+            table.board
+                tbody
+                    tr
+                        th 大腸菌検査
+                        td
+                            ul.radioList
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_coli_rd" value="検出なし")#kitchen_coli_01
+                                    label(for="kitchen_coli_01") 検出なし
+                                li.redioBtn
+                                    input(type="radio" name="kitchen_coli_rd" value="あり")#kitchen_coli_02
+                                    label(for="kitchen_coli_02") あり
+        .registKitchenTable
+            h3 照明について
+            table.lighting
+                thead
+                    tr
+                        th &nbsp;
+                        th 調理室
+                        th 配膳室
+                        th 食庫
+                tbody
+                    tr.light
+                        th 照明具
+                        td
+                            .lightItem
+                                input(type="text")#kitchen_light_kitchen_w.unit.decimalUnit
+                                span.inputSubTxt W
+                                input(type="text")#kitchen_light_kitchen_num.unit
+                                span.inputSubTxt 本
+                            .lightItem
+                                input(type="text")#kitchen_light_kitchen_lm.unit.decimalUnit
+                                span.inputSubTxt lm
+                                input(type="text")#kitchen_light_kitchen_lm_num.unit
+                                span.inputSubTxt 本
+                        td
+                            .lightItem
+                                input(type="text")#kitchen_light_serving_w.unit.decimalUnit
+                                span.inputSubTxt W
+                                input(type="text")#kitchen_light_serving_num.unit
+                                span.inputSubTxt 本
+                            .lightItem
+                                input(type="text")#kitchen_light_serving_lm.unit.decimalUnit
+                                span.inputSubTxt lm
+                                input(type="text")#kitchen_light_serving_lm_num.unit
+                                span.inputSubTxt 本
+                        td
+                            .lightItem
+                                input(type="text")#kitchen_light_pantry_w.unit.decimalUnit
+                                span.inputSubTxt W
+                                input(type="text")#kitchen_light_pantry_num.unit
+                                span.inputSubTxt 本
+                            .lightItem
+                                input(type="text")#kitchen_light_pantry_lm.unit.decimalUnit
+                                span.inputSubTxt lm
+                                input(type="text")#kitchen_light_pantry_lm_num.unit
+                                span.inputSubTxt 本
+                    tr.luminosity
+                        th(rowspan="2") 照度
+                        td
+                            span.inputSubTxt 最大
+                            input(type="text")#kitchen_luminosity_kitchen_max.unit
+                            span.inputSubTxt lx
+                        td
+                            span.inputSubTxt 最大
+                            input(type="text")#kitchen_luminosity_serving_max.unit
+                            span.inputSubTxt lx
+                        td
+                            span.inputSubTxt 最大
+                            input(type="text")#kitchen_luminosity_pantry_max.unit
+                            span.inputSubTxt lx
+                    tr.luminosity
+                        td
+                            span.inputSubTxt 最小
+                            input(type="text")#kitchen_luminosity_kitchen_min.unit
+                            span.inputSubTxt lx
+                        td
+                            span.inputSubTxt 最小
+                            input(type="text")#kitchen_luminosity_serving_min.unit
+                            span.inputSubTxt lx
+                        td
+                            span.inputSubTxt 最小
+                            input(type="text")#kitchen_luminosity_pantry_min.unit
+                            span.inputSubTxt lx
+        .attentionBox
+            h3 基準及び記入上の注意
+            ul
+                li 学校給食施設設備は、衛生的かつ能率的でなければならない。建物の構造・採光・通風・換気・防そ・防虫、建物の周囲、給排本設備、ちゅうかい容器、清婦用具、便所などに欠陥故障があってはならない。あればすみやかに改善すること。
+                li 基準とは学校環境衛生管理マニュアル104ページ参照のこと。
+                li 残留物検査は材質別に、各皿とも5枚ずつ検査し明らかに陽性なものの枚数を記入すること。
+                li 照度は照明器具を全部点灯して行うこと。調理室は200LX以上、倉庫は75LX以上が望ましい。調理室の温度は25℃以下、湿度は80%以下が望ましい。必ず、清潔な身なりで自衣を着用して調理室に入ること。
+                li 指導・助言したことを下記へ記入すること。1部は本人の控、1部は学校の控、1部は集計用に支部長まで提出すること。
+        textarea(placeholder="指導・助言")#kitchen_coaching
+    .btnListBox
+        button.btnSubmit 登録する
+        button.btnPrint 印刷する
+// △メイン△
+script.
+    $(document).ready(function() {
+
+        setSchoolSelect('kitchen_ward');
+
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+        let title = '給食調理場衛生検査表(夏季)';
+        let ward,
+            school;
+
+        $('#category').val('8');
+
+        $('.btnSubmit').on('click', function() {
+            ward = $('#kitchen_ward').val();
+            school = $('#kitchen_school_name').val();
+            title += '[' + ward + '区]';
+            title += '[' + school + ']';
+            title += '[' + year + '年' + month + '月' + day + '日' + ']';
+
+            $('#post_title_998').val(title);
+
+            $('.formBox input[type="text"], .formBox select, textarea').each(function(index, element) {
+                let id = $(element).attr('id');
+                $('#' + id + '_998').val($(element).val());
+            });
+
+            $('.formBox input[type="radio"]:checked').each(function(index, element) {
+                let name = $(element).attr('name').slice(0, -3);
+                $("input[name='" + name + "'][value='" + $(element).val() + "']").prop('checked', true);
+            });
+            $('.wpuf-submit-button').click();
+        });
+
+        // 小数点第一位まで入力を許可する設定
+        $('.decimalUnit').on('input', function() {
+            var validValue = this.value.match(/^\d*\.?\d{0,1}/);
+            this.value = validValue ? validValue[0] : '';
+        });
+    });

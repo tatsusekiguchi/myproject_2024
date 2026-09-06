@@ -1,0 +1,2452 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+
+	.splash {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99999;
+		background:#eee;
+		text-align:center;
+
+		.splashLogo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 300px;
+			height: 216px;
+			margin: auto;
+		}
+
+	}
+
+	.topKv {
+		height: 800px;
+		margin: 0 0 60px;
+		padding: 0 0 0 250px;
+
+		.kvArea {
+			position: relative;
+			height: 100%;
+			border-radius: 20px;
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+			background-size: cover;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: -140px;
+				bottom: 0;
+				width: 30px;
+				height: 145px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_kv_scroll.png) no-repeat;
+				background-size: 30px auto;
+			}
+
+		}
+
+		.kvTtl {
+			margin: 0 0 0 -200px;
+			padding: 300px 0 0;
+			font-weight: bold;
+			letter-spacing: 0.05em;
+
+			h1 {
+				margin: 0 0 10px;
+				font-size: 50px;
+			}
+
+			p {
+				font-size: 20px;
+			}
+
+		}
+
+	}
+
+	.sec01 {
+		text-align: center;
+
+		.secBox01 {
+			background: #fedb35;
+
+			.secWrap02 {
+				position: relative;
+				padding: 110px 10px 30px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_01.png) right 180px top 100px no-repeat, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_02.png) left bottom no-repeat;
+				background-size: 60px auto, 50px auto;
+			}
+
+			.light {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_01.png) no-repeat;
+				background-size: 18px auto;
+			}
+
+			.subTtl {
+				font-size: 50px;
+				font-weight: bold;
+
+				h3 {
+					display: inline-block;
+					padding: 20px 5px 0;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_ttl_bg.png) left top 5px no-repeat;
+					background-size: 60px auto;
+
+					br {
+						display: none;
+					}
+
+				}
+
+			}
+
+			.img {
+				position: absolute;
+				bottom: -40px;
+				right: 0;
+				width: 130px;
+				z-index: 1;
+			}
+
+		}
+
+		.secBox02 {
+			position: relative;
+			background: #006ebb;
+
+			.secWrap02 {
+				padding: 40px 10px 60px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_03.png) left 170px bottom no-repeat, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_04.png) right 170px bottom no-repeat;
+				background-size: 90px auto, 100px auto;
+			}
+
+			.txt {
+				margin: 0 0 30px;
+				color: #ffffff;
+				letter-spacing: 0.1em;
+				line-height: 2.5;
+
+				p + p {
+					margin: 30px 0 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec02 {
+		position: relative;
+		padding: 110px 0 80px;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+		
+		.workingList {
+			padding: 30px 0 0;
+	
+			.ul {
+
+				.li {
+					position: relative;
+					border-radius: 8px;
+					border: 2px solid #006ebb;
+					background: #ffffff;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: -20px;
+						left: -20px;
+						width: 40px;
+						height: 40px;
+						background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_band.png) no-repeat;
+						background-size: 40px auto;
+					}
+
+				}
+
+				.dl {
+
+					.dt {
+						padding: 20px 10px;
+						font-size: 26px;
+						font-weight: bold;
+						text-align: center;
+						letter-spacing: 0.05em;
+						border-radius: 8px 8px 0 0;
+						background: #fedb35;
+					}
+
+					.dd + .dd {
+						padding: 10px 15px 15px;
+						border-radius: 0 0 8px 8px;
+					}
+
+					.txt {
+						margin: 0 0 10px;
+						line-height: 2;
+						letter-spacing: 0.05em;
+					}
+
+					.more {
+						max-width: 200px;
+					}
+
+				}
+
+			}
+
+			@media (min-width: 1025px) {
+
+				.ul {
+					display: flex;
+					justify-content: space-between;
+					max-width: 620px;
+
+					+ .ul {
+						position: relative;
+						margin: 25px 0 0 150px;
+
+						&:before {
+							content: '';
+							position: absolute;
+							top: -190px;
+							right: -480px;
+							width: 700px;
+							height: 250px;
+							z-index: -1;
+							background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_logo.png) no-repeat;
+							background-size: 700px auto;
+						}
+
+					}
+
+					.li {
+						width: calc(50% - 20px);
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec03 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secListBox {
+			padding: 40px 0 0;
+
+			.secBox {
+				position: relative;
+				max-width: 750px;
+
+				+ .secBox {
+					margin: 40px 0 0;
+				}
+
+				.headBox {
+					padding: 0 20px;
+					border-radius: 10px 10px 0 0;
+					background: #1a6fb1;
+
+					h3 {
+						padding: 10px 0 10px 60px;
+						font-size: 26px;
+						font-weight: bold;
+						color: #ffffff;
+						letter-spacing: 0.05em;
+					}
+
+				}
+
+				&:nth-child(1) .headBox h3 {
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_icon_01.png) left 5px center no-repeat;
+					background-size: 40px auto;
+				}
+
+				&:nth-child(2) .headBox h3 {
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_icon_02.png) left 10px center no-repeat;
+					background-size: 30px auto;
+				}
+
+				&:nth-child(3) .headBox h3 {
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_icon_03.png) left 10px center no-repeat;
+					background-size: 25px auto;
+				}
+
+				.bodyBox {
+					position: relative;
+					padding: 20px;
+					border-radius: 0 0 10px 10px;
+					background: #ffffff;
+
+					.txt {
+						line-height: 2;
+					}
+
+				}
+
+				&:nth-child(1) .bodyBox .img {
+					position: absolute;
+					right: 30px;
+					bottom: -5px;
+					width: 120px;
+				}
+
+			}
+
+			@media (min-width: 1025px) {
+
+				.secBox {
+
+					&:nth-child(2) {
+						left: 100px;
+					}
+
+					&:nth-child(3) {
+						left: 200px;
+					}
+
+					.headBox {
+
+						.left {
+							float: left;
+						}
+
+						.right {
+							float: right;
+							width: 220px;
+							padding: 10px 0 0;
+						}
+
+					}
+
+					.bodyBox {
+
+						.more {
+							display: none;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec04 {
+		position: relative;
+		padding: 110px 0 80px;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.ul {
+			display: flex;
+			justify-content: space-between;
+			padding: 60px 0 0;
+			text-align: center;
+
+
+			.li {
+				width: calc((100% / 2) - 20px);
+				padding: 10px;
+				border-radius: 10px;
+			}
+
+			.list01 {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec04_img_01.png) center no-repeat;
+				background-size: cover;
+			}
+
+			.list02 {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec04_img_02.png) center no-repeat;
+				background-size: cover;
+			}
+
+			.dl {
+				padding: 60px 10px;
+				border-radius: 10px;
+				border: 1px solid #ffffff;
+
+				.dt {
+					margin: 0 0 30px;
+					font-size: 40px;
+					font-weight: bold;
+					color: #ffffff;
+					letter-spacing: 0.05em;
+				}
+
+				.dd {
+
+					> p {
+						margin: 0 0 80px;
+						color: #ffffff;
+						font-weight: bold;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec05 {
+		position: relative;
+		padding: 110px 0 80px;
+		text-align: center;
+		background: #006ebb;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_03.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secWrap02 {
+			position: relative;
+		}
+
+		.secTtl {
+			color: #ffffff;
+		}
+
+		.ttlBox {
+			font-size: 0;
+
+			.ttl {
+				display: inline-block;
+				padding: 30px 20px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec05_ttl_bg.png) left top 15px no-repeat;
+				background-size: 50px auto;
+			}
+
+			.box {
+				display: inline-block;
+			}
+
+			p {
+				display: inline-block;
+				font-size: 50px;
+				font-weight: bold;
+				color: #ffffff;
+				letter-spacing: 0.05em;
+			}
+
+			.em {
+				color: #fedb35;
+			}
+
+		}
+
+		.txt {
+			margin: 0 0 40px;
+			color: #ffffff;
+			line-height: 2.5;
+		}
+
+		.img {
+			position: absolute;
+			right: -100px;
+			bottom: 50px;
+			width: 220px;
+		}
+
+		.ul {
+			max-width: 760px;
+			margin: 0 auto;
+
+			.more {
+				max-width: 100%;
+				padding: 15px 10px;
+			}
+
+			.li {
+				float: left;
+				width: 48%;
+			}
+
+			.li + .li {
+				float: right;
+
+				.more {
+					background: #ffffff;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain {
+
+	.pageKv {
+
+		.kvArea {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_kv.png) center no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+	.sec01 {
+		text-align: center;
+
+		.secBox01 {
+			background: #fedb35;
+
+			.secWrap02 {
+				position: relative;
+				padding: 110px 10px 30px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_01.png) right 180px top 100px no-repeat, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_02.png) left bottom no-repeat;
+				background-size: 60px auto, 50px auto;
+			}
+
+			.light {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_01.png) no-repeat;
+				background-size: 18px auto;
+			}
+
+			.subTtl {
+				font-size: 50px;
+				font-weight: bold;
+
+				h3 {
+					display: inline-block;
+					padding: 20px 5px 0;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_ttl_bg.png) left top 5px no-repeat;
+					background-size: 60px auto;
+
+					br {
+						display: none;
+					}
+
+				}
+
+			}
+
+			.img {
+				position: absolute;
+				bottom: -40px;
+				right: 0;
+				width: 130px;
+				z-index: 1;
+			}
+
+		}
+
+		.secBox02 {
+			position: relative;
+			background: #006ebb;
+
+			.secWrap02 {
+				padding: 50px 10px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec01_icon_01.png) left 170px bottom -2px no-repeat, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_04.png) right 170px bottom -2px no-repeat;
+				background-size: 100px auto, 100px auto;
+			}
+
+			.txt {
+				color: #ffffff;
+				line-height: 2.5;
+				letter-spacing: 0.1em;
+
+				p + p {
+					margin: 30px 0 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec02 {
+		position: relative;
+		padding: 110px 0 0;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.dataListPanel {
+			position: relative;
+			margin: 30px 0 0;
+
+			.img {
+				position: absolute;
+				top: -135px;
+				right: 40px;
+				width: 260px;
+				z-index: -1;
+			}
+			
+			.dataListBox {
+				padding: 60px 40px;
+				border-radius: 10px;
+				background: #fedb35;
+
+				.ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: -60px 0 0;
+
+					.li {
+						width: calc((100% / 3) - 20px);
+						margin: 60px 0 0;
+					}
+
+					.dl {
+						position: relative;
+						padding: 10px;
+						text-align: center;
+						border-radius: 10px;
+						border: 2px solid #006ebb;
+						background: #ffffff;
+
+						.dt {
+							position: absolute;
+							top: -40px;
+							left: -18px;
+							width: 185px;
+							height: 100px;
+							padding: 28px 5px 0;
+							font-size: 25px;
+							font-weight: bold;
+							color: #ffffff;
+							text-indent: -1em;
+							background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec02_band.png) no-repeat;
+							background-size: 100% auto;
+
+							p {
+								transform: rotate(-10deg);
+							    -moz-transform: rotate(-10deg);
+							    -webkit-transform: rotate(-10deg);
+							}
+
+						}
+
+						.dd {
+							padding: 40px 0 30px;
+
+							p {
+								display: inline-block;
+							}
+
+							.em {
+								min-width: 140px;
+								font-size: 50px;
+								font-weight: bold;
+							}
+
+							.span {
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec03 {
+		position: relative;
+		padding: 110px 0 80px;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secBox {
+			display: table;
+			width: 100%;
+			margin: -20px 0 0;
+
+			.imgBox {
+				display: table-cell;
+				width: 50%;
+				vertical-align: middle;
+			}
+
+			.txtBox {
+				display: table-cell;
+				padding: 0 30px;
+				vertical-align: middle;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec03_icon.png) right 80px top 80px no-repeat;
+				background-size: 60px auto;
+			}
+
+			.ttlBox {
+				margin: 0 0 20px;
+				font-size: 0;
+
+				.ttl {
+					display: inline-block;
+				}
+
+				.box {
+					display: inline-block;
+				}
+
+				.box01 {
+
+					p {
+						padding: 15px 0 0;
+					}
+
+				}
+
+				p {
+					display: inline-block;
+					font-size: 48px;
+					font-weight: bold;
+					letter-spacing: 0.05em;
+				}
+
+				.em {
+					padding: 15px 3px 0;
+					color: #cca903;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec03_ttl.png) left -5px top no-repeat;
+					background-size: 55px auto;
+				}
+
+			}
+
+			.txt {
+				max-width: 400px;
+				line-height: 2.5;
+				letter-spacing: 0.1em;
+			}
+
+		}
+
+	}
+
+	.sec04 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.infoBox {
+			margin: 30px 0 0;
+
+			.dl {
+				display: table;
+				width: 100%;
+				line-height: 2;
+
+				+ .dl {
+					margin: 5px 0 0;
+				}
+
+				.dt {
+					display: table-cell;
+					width: 250px;
+					padding: 15px 10px;
+					font-size: 18px;
+					font-weight: bold;
+					color: #ffffff;
+					text-align: center;
+					vertical-align: top;
+					letter-spacing: 0.05em;
+					border-radius: 8px 0 0 8px;
+					background: #1a6fb1;
+				}
+
+				.dd {
+					display: table-cell;
+					padding: 15px 40px;
+					letter-spacing: 0.1em;
+					border-radius: 0 8px 8px 0;
+					background: #ffffff;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	working
+///////////////////////////////////////////////////////////*/
+.workingMain {
+
+	.pageKv {
+
+		.kvArea {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_kv.png) center no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+	.sec01 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secWrap01 {
+			position: relative;
+		}
+
+		.subTtl {
+			margin: 30px 0 60px;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.person {
+			position: absolute;
+			top: 40px;
+			right: 0;
+			width: 130px;
+			z-index: 1;
+		}
+
+		.secBoxList {
+
+			.secBox {
+
+				+ .secBox {
+					margin: 80px 0 0;
+				}
+
+				.ttl {
+					margin: 0 0 40px;
+					font-size: 26px;
+					font-weight: bold;
+					color: #ffffff;
+					letter-spacing: 0.05em;
+					border-radius: 30px;
+					background: #1a6fb1;
+
+					h4 {
+						padding: 10px 80px;
+						background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec01_ttl.png) left 5px center no-repeat;
+						background-size: 50px auto;
+					}
+
+				}
+
+				.workingList {
+					padding: 30px 0 0;
+			
+					.ul {
+
+						.li {
+							position: relative;
+							border-radius: 8px;
+							border: 2px solid #006ebb;
+							background: #ffffff;
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: -20px;
+								left: -20px;
+								width: 40px;
+								height: 40px;
+								background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_band.png) no-repeat;
+								background-size: 40px auto;
+							}
+
+						}
+
+						.dl {
+
+							.dt {
+								padding: 20px 10px;
+								font-size: 26px;
+								font-weight: bold;
+								text-align: center;
+								letter-spacing: 0.05em;
+								border-radius: 8px 8px 0 0;
+								background: #fedb35;
+							}
+
+							.dd + .dd {
+								padding: 10px 15px 15px;
+								border-radius: 0 0 8px 8px;
+							}
+
+							.txt {
+								line-height: 2;
+								letter-spacing: 0.05em;
+							}
+
+						}
+
+					}
+
+					@media (min-width: 1025px) {
+
+						.ul {
+							display: flex;
+							justify-content: space-between;
+	
+							.li {
+								width: calc((100% / 3) - 20px);
+							}
+
+						}
+
+					}
+
+				}
+
+				.cntBox {
+					position: relative;
+					display: table;
+					width: 100%;
+					border-radius: 8px;
+					border: 2px solid #006ebb;
+					background: #ffffff;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: -20px;
+						left: -20px;
+						width: 40px;
+						height: 40px;
+						background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec02_band.png) no-repeat;
+						background-size: 40px auto;
+					}
+					
+					.photoBox {
+						display: table-cell;
+						width: 440px;
+						vertical-align: top;
+					}
+
+					.txtBox {
+						display: table-cell;
+						padding: 20px;
+						line-height: 2;
+						vertical-align: top;
+						letter-spacing: 0.1em;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.messageSec {
+		padding: 150px 0 30px;
+
+		.secWrap01 {
+			position: relative;
+		}
+
+		.dl {
+	 		text-align: center;
+
+	 		.dt {
+	 			margin: 0 0 10px;
+	 			font-size: 50px;
+	 			font-weight: bold;
+	 			letter-spacing: 0.05em;
+	 		}
+
+	 		.dd {
+	 			line-height: 2.5;
+	 			letter-spacing: 0.1em;
+	 		}
+
+	 	}
+
+		.img {
+			position: absolute;
+			left: 20px;
+			bottom: -80px;
+			width: 200px;
+			z-index: 1;
+		}
+
+	}
+
+	.sec02 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec02_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secWrap02 {
+			max-width: 820px;
+		}
+
+		.flowListPanel {
+			padding: 40px 0 0;
+
+			.flowListTtl {
+				text-align: center;
+
+				h3 {
+					display: inline-block;
+					width: 240px;
+					padding: 5px;
+					color: #ffffff;
+					letter-spacing: 0.1em;
+					border-radius: 20px;
+					background: #006ebb;
+				}
+
+			}
+
+			.flowListBox {
+				position: relative;
+			}
+
+			.time {
+				letter-spacing: 0.05em;
+			}
+
+			.dl {
+
+				.dt {
+					font-size: 24px;
+					font-weight: bold;
+					letter-spacing: 0.05em;
+				}
+
+				.dd {
+					line-height: 2;
+					letter-spacing: 0.05em;
+				}
+
+				.img {
+					margin: 10px 0 0;
+					border-radius: 10px;
+				}
+
+			}
+
+			@media (min-width: 1025px) {
+
+				.flowListBox {
+					padding: 25px 0 0;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						width: 1px;
+						height: 95%;
+						margin: 0 auto;
+						background: #006ebb;
+					}
+
+				}
+
+				.flowList {
+					
+				}
+
+				.itemBox {
+					position: relative;
+					width: 50%;
+					font-size: 16px;
+					vertical-align: top;
+				}
+
+				.time {
+					position: relative;
+				}
+
+				.timeL:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: -8px;
+					bottom: 0;
+					width: 16px;
+					height: 16px;
+					margin: auto 0;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec02_circle.png) no-repeat;
+					background-size: 16px auto;
+				}
+
+				.timeR:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -8px;
+					bottom: 0;
+					width: 16px;
+					height: 16px;
+					margin: auto 0;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec02_circle.png) no-repeat;
+					background-size: 16px auto;
+				}
+
+				.left {
+					float: left;
+					
+					.time {
+
+						&:after {
+							content: '';
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							width: calc(100% - 50px);
+							height: 1px;
+							margin: auto 0;
+							background: #006ebb;
+						}
+
+					}
+					
+					.dl {
+						padding: 20px 30px 40px 0;
+					}
+
+				}
+
+				.right {
+					float: right;
+					
+					.time {
+						text-align: right;
+
+						&:after {
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							width: calc(100% - 50px);
+							height: 1px;
+							margin: auto 0;
+							background: #006ebb;
+						}
+
+					}
+					
+					.dl {
+						padding: 20px 0 40px 30px;
+					}
+
+				}
+
+				.flow02 {
+					top: 80px;
+				}
+
+				.flow03 {
+					top: -80px;
+				}
+
+				.flow04 {
+					top: 80px;
+				}
+
+				.flow05 {
+					top: -80px;
+				}
+
+				.flow06 {
+					top: 80px;
+				}
+
+				.flow07 {
+					top: -100px;
+				}
+
+				.flow08 {
+					top: 80px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec03 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: #006ebb;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_03.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secTtl {
+			color: #ffffff;
+		}
+
+		.secBox {
+			margin: 30px 0 0;
+			padding: 60px;
+			border-radius: 10px;
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec03_bg.png) left top repeat-x, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/working_sec03_bg.png) left bottom repeat-x #ffffff;
+			background-size: auto 10px;
+
+			.dl {
+
+				+ .dl {
+					margin: 30px 0 0;
+				}
+			
+				.dt {
+					padding: 5px 20px;
+					font-size: 24px;
+					font-weight: bold;
+					letter-spacing: 0.05em;
+					border-bottom: 1px dashed #006ebb;
+				}
+
+				.dd {
+					padding: 10px 20px;
+					letter-spacing: 0.1em;
+					line-height: 2;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec04 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.listBox {
+			margin: 30px 0 0;
+
+			.ul {
+
+				.dl {
+
+					.dt {
+						padding: 10px 20px;
+						font-size: 24px;
+						font-weight: bold;
+						color: #ffffff;
+						letter-spacing: 0.05em;
+						border-radius: 10px 10px 0 0;
+						background: #1a6fb1;
+					}
+
+					.dd {
+						padding: 10px 20px;
+						line-height: 2;
+						letter-spacing: 0.05em;
+						border-radius: 0 0 10px 10px;
+						background: #ffffff;
+					}
+
+				}
+
+			}
+
+			@media (min-width: 1025px) {
+
+				.ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: -20px 0 0;
+
+					.li {
+						width: calc((100% / 2) - 40px);
+						margin: 20px 0 0;
+					}
+
+					.dl {
+						position: relative;
+						top: -40px;
+						right: -40px;
+
+						.dd {
+							min-height: 116px;
+						}
+	
+					}
+
+					.img {
+						max-width: 350px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+/*////////////////////////////////////////////////////////////
+	staff
+///////////////////////////////////////////////////////////*/
+.staffMain {
+
+	.pageKv {
+
+		.kvArea {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/staff_kv.png) center no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+	.sec01 {
+		position: relative;
+		padding: 110px 0 0;
+		
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.interviewPanel {
+			margin: -60px 0 0;
+		}
+
+		.interviewItem {
+			padding: 60px 0;
+		
+			&:nth-child(even) {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+				background-size: cover;
+			}
+
+		}
+
+		.interviewSec {
+
+			+ .interviewSec {
+				margin: 30px 0 0;
+			}
+
+			.ttl {
+				margin: 0 0 10px;
+				padding: 5px;
+				font-size: 24px;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				border-radius: 30px;
+				background: #1a6fb1;
+
+				p {
+					display: inline-block;
+					width: 50px;
+					margin: 0 10px 0 0;
+					text-align: center;
+					line-height: 50px;
+					vertical-align: middle;
+					border-radius: 50%;
+					background: #fedb35;
+				}
+
+				h4 {
+					display: inline-block;
+					color: #ffffff;
+					vertical-align: middle;
+					line-height: 1.2;
+				}
+
+			}
+
+			.txt {
+				padding: 15px;
+				line-height: 2;
+				border-radius: 8px;
+				border: 2px solid #1a6fb1;
+				background: #ffffff;
+			}
+
+		}
+
+		.interviewSecTop {
+
+			.nameBox {
+					
+				.name {
+					width: 40%;
+					padding: 10px 0 0 65px;
+					text-align: left;
+					letter-spacing: 0.05em;
+					background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/staff_sec01_icon.png) left 20px center no-repeat;
+					background-size: 30px auto;
+				}
+
+				h3 {
+					font-size: 40px;
+					font-weight: bold;
+					line-height: 1;
+				}
+
+			}
+
+			.box + .box {
+				margin: 30px 0 0;
+			}
+
+			&.type01 {
+
+				.introBox {
+
+					.photo {
+						float: left;
+						width: 40%;
+						border-radius: 8px;
+					}
+
+					.txtBox {
+						float: right;
+						width: 58%;
+					}
+
+				}
+
+			}
+
+			&.type02 {
+
+				.introBox {
+
+					.photo {
+						float: right;
+						width: 40%;
+						border-radius: 8px;
+					}
+
+					.txtBox {
+						float: left;
+						width: 58%;
+					}
+
+				}
+
+				.nameBox {
+					
+					.name {
+						float: right;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec02 {
+		position: relative;
+		padding: 110px 0 80px;
+		
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.flowListPanel {
+			position: relative;
+			margin: 40px 0 0;
+			padding: 140px 0 80px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 200px;
+				height: 100%;
+				margin: 0 auto;
+				z-index: -1;
+				border-radius: 8px;
+				background: #e4f0f8;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 20px;
+				height: 100%;
+				margin: 0 auto;
+				z-index: -1;
+				background: #cee3f1;
+			}
+
+			.itemBox {
+					
+				.ttl {
+					margin: 0 0 10px;
+					font-size: 24px;
+					font-weight: bold;
+					letter-spacing: 0.05em;
+				}
+
+			}
+
+			.cnt {
+
+				.box01 {
+
+					.dl {
+						letter-spacing: 0.05em;
+
+						.dt {
+							font-size: 24px;
+							font-weight: bold;
+						}
+
+						.dd {
+							line-height: 2;
+						}
+
+					}
+
+				}
+
+				.box02 {
+					margin: 20px 0 0;
+
+					.dl {
+						letter-spacing: 0.05em;
+						border-radius: 8px;
+						border: 2px solid #1a6fb1;
+
+						.dt {
+							padding: 5px 10px;
+							font-size: 24px;
+							font-weight: bold;
+							text-align: center;
+							border-radius: 8px 8px 0 0;
+							background: #fedb35;
+						}
+
+						.dd {
+							min-height: 84px;
+							padding: 10px 20px;
+							line-height: 2;
+							border-radius: 0 0 8px 8px;
+							background: #ffffff;
+						}
+
+					}
+
+				}
+
+				.photo {
+					border-radius: 8px;
+				}
+
+			}
+
+			@media (min-width: 1025px) {
+
+				.message {
+					position: absolute;
+					top: -25px;
+					left: 40px;
+					width: 400px;
+				}
+
+				.itemBox {
+					text-align: center;
+
+					+ .itemBox {
+						margin: 60px 0 0;
+					}
+
+				}
+
+				.cnt {
+					position: relative;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 15px;
+						right: 0;
+						left: 0;
+						width: 30px;
+						height: 30px;
+						margin: 0 auto;
+						background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/staff_sec02_circle.png) no-repeat;
+						background-size: 30px auto;
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: 30px;
+						right: 0;
+						left: 0;
+						width: 370px;
+						height: 2px;
+						margin: 0 auto;
+						z-index: -1;
+						background: #006ebb;
+					}
+
+					.txtBox {
+						float: right;
+						width: 320px;
+						padding: 13px 0 0;
+						text-align: left;
+					}
+
+					.photo {
+						float: left;
+						width: 370px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+
+	.pageKv {
+
+		.kvArea {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_kv.png) center no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+	.sec01 {
+		text-align: center;
+
+		.secBox01 {
+			background: #fedb35;
+
+			.secWrap02 {
+				position: relative;
+				padding: 110px 10px 30px;
+			}
+
+			.light {
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_01.png) no-repeat;
+				background-size: 18px auto;
+			}
+
+			.subTtl {
+				font-size: 42px;
+				font-weight: bold;
+
+				h3 {
+					display: inline-block;
+					padding: 20px 5px 0;
+		
+					br {
+						display: none;
+					}
+
+				}
+
+			}
+
+			.img {
+				position: absolute;
+				bottom: -40px;
+				right: 0;
+				width: 130px;
+				z-index: 1;
+			}
+
+		}
+
+		.secBox02 {
+			position: relative;
+			background: #006ebb;
+
+			.secWrap02 {
+				padding: 50px 10px;
+				background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_sec01_icon_01.png) left 100px bottom -2px no-repeat, url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_icon_04.png) right 100px bottom -2px no-repeat;
+				background-size: 70px auto, 100px auto;
+			}
+
+			.txt {
+				color: #ffffff;
+				line-height: 2.5;
+				letter-spacing: 0.1em;
+
+				p + p {
+					margin: 30px 0 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec02 {
+		position: relative;
+		padding: 110px 0 80px;
+		
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.ul {
+			margin: 40px 0 0;
+
+			.li {
+				position: relative;
+				border-radius: 8px;
+				border: 2px solid #006ebb;
+				background: #ffffff;
+			}
+
+			.num {
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				width: 70px;
+			}
+
+			.dl {
+
+				.dt {
+					padding: 20px 10px;
+					font-size: 26px;
+					font-weight: bold;
+					text-align: center;
+					letter-spacing: 0.05em;
+					border-radius: 8px 8px 0 0;
+					background: #fedb35;
+				}
+
+				.dd {
+					padding: 10px 15px 15px;
+					line-height: 2;
+					border-radius: 0 0 8px 8px;
+				}
+
+			}
+
+		}
+
+		@media (min-width: 1025px) {
+
+			.ul {
+				display: flex;
+				justify-content: space-between;
+
+				.li {
+					width: calc((100% / 3) - 20px);
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec03 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.ul {
+			margin: 60px 0 0;
+			text-align: center;
+
+			.li {
+				position: relative;
+				font-weight: bold;
+				color: #ffffff;
+				border-radius: 10px;
+				background: #026fbc;
+
+				&:last-child {
+
+					.txt {
+						color: #fedb35;
+					}
+
+				}
+
+			}
+
+			.num {
+				color: #fedb35;
+
+				p {
+					text-shadow:
+				    1px 0 0 #026fbc,
+				    0 1px 0 #026fbc,
+				    -1px 0 0 #026fbc,
+				    0 -1px 0 #026fbc;
+				}
+
+			}
+
+			.txt {
+				letter-spacing: 0.05em;
+			}
+
+		}
+
+		@media (min-width: 1025px) {
+
+			.ul {
+				display: flex;
+				justify-content: space-between;
+
+				.li {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: calc((100% / 5) - 80px);
+					height: 250px;
+
+					+ .li:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: -60px;
+						width: 30px;
+						height: 30px;
+						margin: auto 0;
+						background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/recruit_sec03_arrow_01.png) no-repeat;
+						background-size: 30px auto;
+					}
+
+				}
+
+				.num {
+					position: absolute;
+					top: -15px;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					font-size: 36px;
+					line-height: 1;
+				}
+
+				.txt {
+					font-size: 30px;
+					writing-mode: vertical-rl;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec04 {
+		position: relative;
+		padding: 110px 0 80px;
+		
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+		
+		.infoBox {
+			margin: 30px 0 0;
+
+			.dl {
+				display: table;
+				width: 100%;
+				line-height: 2;
+
+				+ .dl {
+					margin: 5px 0 0;
+				}
+
+				.dt {
+					display: table-cell;
+					width: 250px;
+					padding: 15px 10px;
+					font-size: 18px;
+					font-weight: bold;
+					color: #ffffff;
+					text-align: center;
+					vertical-align: top;
+					letter-spacing: 0.05em;
+					border-radius: 8px 0 0 8px;
+					background: #1a6fb1;
+				}
+
+				.dd {
+					display: table-cell;
+					padding: 15px 40px;
+					letter-spacing: 0.1em;
+					border-radius: 0 8px 8px 0;
+					background: #f2f2f2;
+				}
+
+			}
+
+		}
+
+	}
+
+	.sec05 {
+		position: relative;
+		padding: 110px 0 80px;
+		background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+		background-size: cover;
+
+		.light {
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_light_02.png) no-repeat;
+			background-size: 18px auto;
+		}
+
+		.secTtl + p {
+			margin: 30px 0;
+			text-align: center;
+			line-height: 2;
+		}
+		
+	}
+
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+
+/* 入力項目
+--------------------------------------*/
+/*テキストボックス・メール・電話*/
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid #006ebb;
+    background: #ffffff;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*テキストエリア*/
+.contactForm textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 15px;
+  	border-radius: 8px;
+    border: 2px solid #006ebb;
+    background: #ffffff;
+    resize: none;
+}
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm input[type="tel"]:focus,
+.contactForm textarea:focus {
+    outline: 0;
+    border :2px solid #90CEFD;
+}
+
+.contactForm button[type="submit"] {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	width: 280px;
+	margin: 40px auto 0;
+	padding: 15px 10px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	z-index: 1;
+	cursor: pointer;
+	border: none;
+	border-radius: 25px;
+	background: #006ebb;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	@media (min-width: 1025px) {
+
+		& {
+			position: relative;
+			top: 0;
+			transition: all .3s;
+		}
+
+		&:hover {
+			top: -3px;
+			opacity: 1;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+		}
+
+	}
+
+}
+
+.contactForm button[type="submit"][disabled] {
+	opacity: 0.6;
+	cursor: default;
+	pointer-events: none;
+}
+
+.contactForm .form {
+	letter-spacing: 0.05em;
+
+	.checkList {
+
+		.ul {
+			display: inline-block;
+
+			+ .ul {
+				margin: 0 0 0 40px;
+			}
+
+			.li + .li {
+				margin-top: 10px;
+			}
+
+		}
+
+	}
+
+	.checkbox {
+
+		+ .checkbox {
+			margin-top: 10px;
+		}
+
+		input {
+		  display: none;
+		}
+		span {
+		  padding-left: 20px;
+		  position:relative;
+		  margin-right: 20px;
+			background: #ffffff;
+		}
+		span::before {
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 15px;
+		  height: 15px;
+		  border: 1px solid #999;
+		  border-radius: 4px;
+		}
+		input:checked + span {
+		  color: #35417d;
+		}
+		input:checked + span::after {
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  top: -5px;
+		  left: 5px;
+		  width: 7px;
+		  height: 14px;
+		  transform: rotate(40deg);
+		  border-bottom: 3px solid #35417d;
+		  border-right: 3px solid #35417d;
+		}
+
+	}
+
+	.radioBox {
+		margin: 0 0 15px;
+
+		.radio {
+			position: relative;
+			display: inline-block;
+		}
+
+		input[type="radio"] {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: 1;
+		}
+
+		label {
+			position: relative;
+			padding: 5px 0 5px 35px;
+		}
+
+		label:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 25px;
+			height: 25px;
+			margin: auto 0;
+			border-radius: 50%;
+			border: 1px solid #006ebb;
+			background: #ffffff;
+			box-sizing: border-box;
+		}
+
+		input[type="radio"]:checked + label:before {
+			border: 8px solid #006ebb;
+		}
+
+	}
+
+	.postal {
+
+		input {
+			width: 90px;
+		}
+
+		input + .span {
+			display: inline-block;
+			margin: 0 5px;
+		}
+
+		.postalTxt {
+			display: inline-block;
+			margin: 0 5px;
+		}
+
+	}
+
+	.selectBox {
+		display: inline-block;
+		width: 120px;
+
+		select {
+			display: block;
+			width: 100%;
+			padding: 11px 15px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #006ebb;
+			line-height: 1.5em;
+			border-radius: 8px;
+			border: 2px solid #006ebb;
+			background: url(https://sanden-service210719.smooooth.jp/system_panel/uploads/images/select_arrow_down.png) right 5px center no-repeat #ffffff;
+			background-size: 10px auto ;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}					
+
+	}
+
+}
+
+.contactForm {
+	text-align: left;
+
+	.formBox {
+
+		+ .formBox {
+			margin-top: 60px;
+		}
+
+		h3 {
+			margin-bottom: 40px;
+			font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+			font-size: 24px;
+		}
+
+		> .dl {
+			display: table;
+			width: 100%;
+			padding: 20px 40px;
+			
+			&.line {
+				padding: 10px 40px 40px;
+				
+				+ .dl {
+					padding: 40px 40px 10px;
+				}
+
+			}
+		
+			> .dt {
+				display: table-cell;
+				width: 30%;
+				padding: 10px 0 0;
+				font-weight: bold;
+				vertical-align: top;
+
+				.span {
+					display: inline-block;
+					margin-right: 10px;
+					font-size: 18px;
+					vertical-align: middle;
+				}
+
+				.em {
+					display: inline-block;
+					padding: 2px 10px;
+					vertical-align: middle;
+					border-radius: 8px;
+					background: #fedb35;
+				}
+
+				.aside {
+					margin-top: 10px;
+
+					p {
+						font-size: 14px;
+						padding-left: 1em;
+						text-indent: -1em;
+					}
+
+				}
+
+			}
+
+			> .dd {
+				display: table-cell;
+				font-weight: bold;
+			}
+
+		}
+
+		.addressBox,
+		.dateBox {
+
+			.dl {
+				display: table;
+				width: 100%;
+
+				+ .dl {
+					margin-top: 10px;
+				}
+
+				.dt {
+					display: table-cell;
+					width: 60px;
+					vertical-align: middle;
+				}
+
+				.dd {
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+			}
+
+		}
+
+		.dateBox {
+
+			input[type="text"] {
+				width: 90px;
+			}
+
+			.span {
+				display: inline-block;
+				margin: 0 5px;
+				vertical-align: middle;
+			}
+
+		}
+
+		.caution {
+			margin-top: 10px;
+			color: #d20000;
+			line-height: 2;
+		}
+
+		.telBox {
+			margin: 10px 0 0;
+			font-size: 0;
+			text-align: left;
+			line-height: 2;
+
+			> * {
+				display: inline-block;
+				font-size: 14px;
+			}
+
+		}
+
+		.privacy {
+			max-width: 1000px;
+			margin: 30px auto 0;
+			text-align: center;
+
+			.agreeBox {
+				overflow: scroll;
+				height: 300px;
+				padding: 20px;
+				text-align: left;
+				border-radius: 8px;
+				border: 2px solid #006ebb;
+				background: #ffffff;
+
+				p {
+					line-height: 2;
+				}
+
+				.em {
+					font-weight: bold;
+				}
+
+				.tel {
+					
+					p,
+					a {
+						display: inline-block;
+					}
+
+				}
+
+			}
+
+		}
+
+		.privacy + .checkbox {
+			margin: 40px 0;
+			text-align: center;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

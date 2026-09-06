@@ -1,0 +1,1793 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvContainer {
+    position: relative;
+    padding: 0 0 0 400px;
+    .topKvPanel {
+      .topKv {
+        position: relative;
+        height: 800px;
+      }
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url(https://kenbyu.info/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://kenbyu.info/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://kenbyu.info/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .topKvTitlePanel {
+      position: absolute;
+      top: 300px;
+      left: 80px;
+      h1 {
+        font-size: 34px;
+        color: #231815;
+        line-height: 2;
+      }
+    }
+  }
+  .sec01 {
+    padding: 60px 0 120px;
+    background: url(https://kenbyu.info/system_panel/uploads/images/top_sec01_bg.png)
+      no-repeat;
+    background-size: cover;
+    h3 {
+      margin: 0 0 20px;
+      font-size: 30px;
+    }
+    .secPanel {
+      position: relative;
+      .secBox {
+        padding: 30px 0 0;
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 40%;
+          max-width: 760px;
+        }
+        .secBox {
+          max-width: 700px;
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 60px;
+    background: url(https://kenbyu.info/system_panel/uploads/images/top_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      .photo {
+        max-width: 250px;
+      }
+      .txtBox {
+        padding: 60px 0 0;
+      }
+      .ttl01 {
+        max-width: 600px;
+        margin: 0 auto 50px;
+      }
+      .ttl02 {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .more {
+        max-width: 250px;
+        margin: 60px auto 0;
+        a {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #c0b8bf;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        flex-direction: row-reverse;
+        .photo {
+          width: 20%;
+        }
+        .txtBox {
+          width: 75%;
+        }
+      }
+    }
+    .bottomTxt {
+      margin: 40px 0 0;
+      text-align: right;
+    }
+  }
+  .sec03 {
+    .secPanel {
+      padding: 60px 50px;
+    }
+    .secPanel01 {
+      background: #ffffff;
+      .ttl {
+        max-width: 400px;
+        margin: 0 auto 30px;
+      }
+      .imgBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img {
+          width: 150px;
+          margin: 0 10px;
+        }
+        .imgTxt01 {
+          font-size: 40px;
+          color: #c0b8bf;
+        }
+        .imgTxt02 {
+          font-size: 60px;
+          color: #c0b8bf;
+        }
+      }
+    }
+    .secPanel02 {
+      text-align: center;
+      background: url(https://kenbyu.info/system_panel/uploads/images/top_sec03_panel_bg.png)
+        no-repeat;
+      background-size: cover;
+      .ttlBox01 {
+        margin: 0 0 30px;
+        .ttl01 {
+          font-size: 20px;
+          color: #585858;
+        }
+        .ttl02 {
+          font-size: 44px;
+          color: #d1c283;
+        }
+      }
+      .ttlBox02 {
+        max-width: 440px;
+        margin: 0 auto 30px;
+        padding: 10px;
+        font-size: 20px;
+        color: #d1c283;
+        border-top: 1px solid #d1c283;
+        border-bottom: 1px solid #d1c283;
+      }
+      .circle {
+        max-width: 340px;
+        margin: 0 auto 40px;
+      }
+      .more {
+        max-width: 250px;
+        margin: 0 auto;
+        a {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #d1c283;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secContainer {
+        display: table;
+        width: 100%;
+        .secPanel {
+          display: table-cell;
+          width: 50%;
+          height: 700px;
+          vertical-align: middle;
+          .wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+          }
+          .inner {
+            max-width: 600px;
+            width: 100%;
+          }
+        }
+        .secPanel01 {
+          .wrap {
+            align-items: flex-end;
+          }
+          .topTxt {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 60px 0 120px;
+    background: url(https://kenbyu.info/system_panel/uploads/images/top_sec04_bg.png)
+      no-repeat;
+    background-size: cover;
+    .productList {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .webgene-header {
+          display: none !important;
+        }
+        .webgene-item {
+          width: calc(100% / 6);
+          margin: 0 50px;
+          a {
+            display: block;
+            text-align: center;
+          }
+          .photo {
+            overflow: hidden;
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            img {
+              @include cover-image;
+              border-radius: 50%;
+            }
+          }
+          .title {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+    .more {
+      max-width: 250px;
+      margin: 60px auto 0;
+      a {
+        display: block;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        background: #d1c283;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  background: url(https://kenbyu.info/system_panel/uploads/images/company_main_bg.png)
+    no-repeat;
+  background-size: cover;
+  .sec01 {
+    margin: 0 0 160px;
+    .secPanel {
+      position: relative;
+      .photoBox {
+        max-width: 550px;
+        .name {
+          padding: 15px 50px;
+          text-align: right;
+          p {
+            display: inline-block;
+          }
+          .em {
+            margin: 0 0 0 10px;
+            font-size: 30px;
+          }
+        }
+      }
+      .secBox {
+        h3 {
+          margin: 0 0 40px;
+          font-size: 30px;
+        }
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photoBox {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 35%;
+        }
+        .secBox {
+          width: 65%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 120px;
+    .infoBox {
+      .dl {
+        display: flex;
+        justify-content: space-between;
+        + .dl {
+          margin: 20px 0 0;
+        }
+        .dt {
+          width: 208px;
+          padding: 10px;
+          text-align: center;
+          border-bottom: 1px solid #191919;
+        }
+        .dd {
+          width: calc(100% - 210px);
+          padding: 10px 30px;
+          border-bottom: 1px solid #d1c283;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .aside {
+      margin: 10px 0 100px;
+      text-align: right;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  background: url(https://kenbyu.info/system_panel/uploads/images/contact_main_bg.png)
+    no-repeat;
+  background-size: cover;
+  .pagingList {
+    margin: 0 0 120px;
+    padding: 0 20px;
+    .ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 620px;
+      margin: 0 auto;
+      .li {
+        width: 250px;
+        a {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #c0b8bf;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 0 0 120px;
+    .secPanel {
+      padding: 30px 50px;
+      background: #ffffff;
+      + .secPanel {
+        margin: 20px 0 0;
+      }
+      .pTtl {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        .step {
+          width: 98px;
+          padding: 10px;
+          text-align: center;
+          border-bottom: 1px solid #191919;
+        }
+        .ttl {
+          width: calc(100% - 100px);
+          padding: 3px 10px;
+          font-size: 24px;
+          border-bottom: 1px solid #d1c283;
+        }
+      }
+      .secBox {
+        .left {
+          padding: 20px 0 0;
+          .txt {
+            p + p {
+              margin: 30px 0 0;
+            }
+            .span {
+              font-size: 13px;
+            }
+          }
+        }
+        .more {
+          max-width: 280px;
+          margin: 0 auto;
+          padding: 30px 0 0;
+          a {
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            background: #d1c283;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          .left {
+            width: 55%;
+          }
+          .right {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 120px;
+    .secTtl {
+      max-width: 480px;
+      margin: 0 auto 20px;
+      padding: 0 20px 5px;
+      font-size: 24px;
+      text-align: center;
+      border-bottom: 1px solid #d1c283;
+    }
+    .secPanel {
+      padding: 30px 20px;
+      text-align: center;
+      background: #ffffff;
+      + .secPanel {
+        margin: 20px 0 0;
+      }
+      .telBox {
+        a {
+          display: inline-block;
+          margin: 0 15px 0 0;
+          font-size: 40px;
+          letter-spacing: 0.1em;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .lineBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: left;
+        .line {
+          display: flex;
+          align-items: center;
+          margin: 10px 0 0;
+          a {
+            display: block;
+            width: 100px;
+            margin: 0 20px 0 0;
+          }
+          > p {
+            line-height: 2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .lineBox {
+          display: flex;
+          justify-content: space-between;
+          > * {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .formSection {
+      padding: 80px 0 0;
+      .topTxt {
+        max-width: 1000px;
+        margin: 0 auto 60px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 10px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+      "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #d1c283;
+    background: #d1c283;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      padding: 10px 0;
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkList02 {
+      padding: 10px 0 0;
+      .ul {
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ffffff;
+        background: #fafafa;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #222221;
+        border-right: 3px solid #222221;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      padding: 10px 0 0;
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #222221;
+      }
+    }
+
+    .postalBox {
+      margin: 0 0 8px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        + .dl {
+          .dd {
+            border-top: none;
+          }
+        }
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 180px;
+          }
+        }
+
+        &.dash {
+          border-bottom: 1px dashed #d8dee6;
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 230px;
+          padding: 15px 0 15px 15px;
+          border-bottom: 1px solid #191919;
+
+          .span {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 14px;
+            vertical-align: middle;
+          }
+
+          .day {
+            min-width: 95px;
+          }
+
+          .em {
+            display: inline-block;
+            height: 20px;
+            padding: 0 8px;
+            font-size: 12px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #d1c283;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 235px);
+          padding: 10px 0 10px 20px;
+          border-bottom: 1px solid #d1c283;
+          .reserveBox {
+            border: 1px solid #171a1c;
+            .ttl {
+              max-width: 220px;
+              padding: 3px;
+              color: #ffffff;
+              text-align: center;
+              background: #171a1c;
+            }
+            .txt {
+              padding: 10px 20px;
+              line-height: 2;
+            }
+          }
+          .dogBox {
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+
+        &.itemForm {
+          > .dt {
+            width: 330px;
+          }
+          > .dd {
+            width: calc(100% - 335px);
+          }
+        }
+      }
+      .otherTtl {
+        padding: 20px 20px 10px;
+        border-bottom: none;
+      }
+      .otherRadio {
+        .dt {
+          display: block;
+          text-align: right;
+          .span {
+            display: block;
+            max-width: 260px;
+            margin: 0;
+          }
+        }
+      }
+      .otherRadio01 {
+        border-bottom: none;
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 30px;
+          .list {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .selectBox {
+        display: inline-block;
+        width: 150px;
+        select {
+          display: block;
+          width: 100%;
+          padding: 11px 15px;
+          font-size: 13px;
+          color: #000000;
+          line-height: 1.5em;
+          border-radius: 0;
+          border: 1px solid #e9ecef;
+          background: #fafafa;
+          background-size: 10px auto;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        + .span {
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+      .count {
+        p {
+          display: inline-block;
+          margin: 0 0 0 5px;
+        }
+        input {
+          display: inline-block;
+          width: 80px;
+        }
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #f8f8f8;
+          background: #f8f8f8;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadPanel {
+      padding: 20px;
+    }
+    .fileUploadTtl {
+      margin: 0 0 15px;
+    }
+    .fileUploadBox {
+      .fileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 32%;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 65%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      + p {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+  .btnMore {
+    width: 220px;
+    margin: 0 auto;
+    a {
+      display: block;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      background: #d1c283;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	productList
+///////////////////////////////////////////////////////////*/
+.productListMain {
+  padding: 0 20px 120px;
+  background: url(https://kenbyu.info/system_panel/uploads/images/product_main_bg.png)
+    center top no-repeat;
+  background-size: cover;
+  .catePanel {
+    max-width: 620px;
+    margin: 0 auto;
+    margin: 0 auto 60px;
+    .webgene-blog {
+      display: flex;
+      justify-content: space-between;
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        width: 250px;
+        a {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #c0b8bf;
+        }
+      }
+    }
+  }
+  .blogSection {
+    max-width: 1640px;
+    margin: 0 auto;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        a {
+          display: block;
+          text-align: center;
+        }
+        .title {
+          margin: 15px 0 0;
+          line-height: 2;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .webgene-blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -70px 0 0 -70px;
+        .webgene-item {
+          width: calc((100% / 3) - 70px);
+          margin: 70px 0 0 70px;
+          a {
+            display: block;
+            text-align: center;
+          }
+          .photo {
+            overflow: hidden;
+            position: relative;
+            height: 350px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	product
+///////////////////////////////////////////////////////////*/
+.productDetailMain {
+  background: url(https://kenbyu.info/system_panel/uploads/images/product_main_bg.png)
+    center top no-repeat;
+  background-size: cover;
+  .webgene-blog {
+    .webgene-header {
+      display: none;
+      max-width: 1440px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+      font-size: 40px;
+      color: #d1c283;
+    }
+  }
+  .topMvContainer {
+    padding: 80px 0 0;
+    .pageTitle {
+      margin: 0 0 20px;
+      font-size: 40px;
+      color: #d1c283;
+      > * {
+        display: inline-block;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+    .secPanel {
+      .leftBox {
+        .topTxt {
+          font-size: 20px;
+        }
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          max-width: 680px;
+          margin: 30px 0 15px;
+          .li {
+            width: calc((100% / 3) - 2px);
+            padding: 3px 5px;
+            font-size: 13px;
+            color: #efefef;
+            text-align: center;
+            background: #191919;
+          }
+        }
+      }
+      .rightBox {
+        .slickSlide {
+          .li {
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+          img {
+            position: relative;
+            z-index: 1;
+          }
+          @media (min-width: 1025px) {
+            img {
+              display: block;
+              width: auto;
+              max-height: 400px;
+              margin: 0 auto;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-slide {
+          margin: 0 2px;
+        }
+        .slideNav {
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 60%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .selected {
+            // border: 1px solid #f3ab01;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: calc(100% - 650px);
+        }
+        .rightBox {
+          width: 600px;
+        }
+      }
+    }
+  }
+  .topSection {
+    + .topSection {
+      margin: 120px 0 0;
+    }
+    + .howToSection {
+      margin: 120px 0 0;
+    }
+    .secBoxTop {
+      margin: 0 0 60px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 30px;
+        h2,
+        h3 {
+          line-height: 1.7;
+          letter-spacing: 0.1em;
+        }
+      }
+      .dl {
+        line-height: 2;
+        .dt {
+          font-size: 20px;
+        }
+        .dd {
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          align-items: center;
+          .dt {
+            margin: 0 100px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .recommendContainer {
+    margin: 0 0 40px;
+    .recommendTtl {
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+    .recommendPanel {
+      padding: 30px 20px;
+      border: 1px solid #d4d4d4;
+      background: #ffffff;
+    }
+    .recommendList {
+      max-width: 880px;
+      margin: 0 auto;
+      .ul {
+        line-height: 2;
+      }
+    }
+    @media (min-width: 1025px) {
+      .recommendList {
+        display: flex;
+        justify-content: space-between;
+        .ul {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .contentPanelList {
+    .contentPanel {
+      position: relative;
+      padding: 0 0 0 100px;
+      + .contentPanel {
+        margin: 15px 0 0;
+      }
+      .ttl {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 390px;
+        height: 50px;
+        margin: auto 0;
+        p {
+          display: inline-block;
+          min-width: 320px;
+          padding: 5px 30px;
+          font-size: 22px;
+          color: #ffffff;
+          background: linear-gradient(to right, #d2c181, #dfd5ae);
+        }
+        &.multi {
+          height: 72px;
+          line-height: 1.3;
+        }
+      }
+    }
+    .contentBox {
+      max-width: 1100px;
+      padding: 20px 20px 20px 290px;
+      background: #ffffff;
+    }
+  }
+  .photoList {
+    margin: 60px 0 0;
+    .ul {
+      display: flex;
+      justify-content: space-between;
+      .li {
+        width: calc((100% / 2) - 5px);
+      }
+    }
+  }
+  .subSection {
+    margin: 60px 0 0;
+    .ttl {
+      margin: 0 0 20px;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    .subPanel {
+      padding: 20px;
+      border: 1px solid #d4d4d4;
+      background: #ffffff;
+      .txtBox {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .voiceSection {
+    padding: 120px 0;
+    .voiceTopTitle {
+      position: relative;
+      margin: 0 0 30px;
+      padding: 0 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -40px;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -40px;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      p {
+        font-size: 22px;
+        color: #d1c283;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+    }
+    .voicePanel {
+      padding: 30px 60px;
+      border: 1px solid #d4d4d4;
+      background: #ffffff;
+      + .voicePanel {
+        margin: 20px 0 0;
+      }
+      .ttlBox {
+        margin: 0 0 20px;
+        .ttl01 {
+          padding: 0 5px 10px;
+          font-size: 22px;
+          border-bottom: 1px solid #d4d4d4;
+          .time {
+            font-size: 14px;
+          }
+        }
+        .ttl02 {
+          padding: 10px 5px;
+        }
+      }
+      .txt {
+        padding: 0 5px;
+      }
+    }
+  }
+  .howToSection {
+    padding: 0 0 120px;
+    .topTitle {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      text-align: center;
+      &.large {
+        max-width: 800px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      p {
+        display: inline-block;
+        font-size: 22px;
+        color: #d1c283;
+        letter-spacing: 0.1em;
+      }
+    }
+    .howToPanel {
+      padding: 30px 60px;
+      border: 1px solid #d4d4d4;
+      background: #ffffff;
+      .txtBox {
+        padding: 0 15px 20px;
+        border-bottom: 1px solid #d4d4d4;
+      }
+      .recommend {
+        padding: 20px 15px 0;
+        .ttl {
+          margin: 0 0 10px;
+          font-size: 22px;
+          letter-spacing: 0.1em;
+        }
+        .txtList {
+          .txt {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .howToPhoto {
+      margin: 60px 0 0;
+      .ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px 0 0 -10px;
+        .li {
+          width: calc((100% / 3) - 10px);
+          margin: 10px 0 0 10px;
+        }
+      }
+    }
+    .stepList {
+      .ol {
+        max-width: 1080px;
+        margin: 0 auto;
+        .li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          + .li {
+            border-top: 1px solid #d4d4d4;
+          }
+          .step {
+            width: 100px;
+            font-size: 22px;
+            letter-spacing: 0.1em;
+          }
+          .txt {
+            width: calc(100% - 150px);
+          }
+          .box {
+            display: inline-block;
+            max-width: 440px;
+            width: 100%;
+          }
+          .img {
+            display: inline-block;
+            width: 120px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .stepTtlTxt {
+          .li {
+            justify-content: flex-start;
+            .stepTtl {
+              width: auto;
+              min-width: 200px;
+              margin: 0 30px 0 0;
+            }
+            .stepTxt {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .faqSection {
+    padding: 0 0 120px;
+    .faqList {
+      margin: -60px 0 0;
+      .faqBox {
+        margin: 60px 0 0;
+        .dl {
+          .dt {
+            display: flex;
+            align-items: center;
+            padding: 0 30px 10px 0;
+            cursor: pointer;
+            border-bottom: 1px solid #d4d4d4;
+            background: url(https://kenbyu.info/system_panel/uploads/images/product_faq_accord_01.png)
+              right 5px center no-repeat;
+            &.active {
+              background: url(https://kenbyu.info/system_panel/uploads/images/product_faq_accord_02.png)
+                right 5px center no-repeat;
+            }
+            .icon {
+              width: 40px;
+              font-size: 30px;
+              color: #c0b8bf;
+            }
+            .ttl {
+              width: calc(100% - 40px);
+              font-size: 20px;
+            }
+          }
+          .dd {
+            display: flex;
+            padding: 8px 0 0;
+            .icon {
+              width: 40px;
+              font-size: 30px;
+              color: #d4c58a;
+            }
+            .txt {
+              width: calc(100% - 40px);
+              padding: 10px 0 0;
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .faqList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .faqBox {
+          width: calc((100% / 2) - 25px);
+        }
+      }
+    }
+  }
+  .movieSection {
+    padding: 0 0 120px;
+    .topTitle {
+      position: relative;
+      margin: 0 auto 30px;
+      text-align: center;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        margin: auto 0;
+        background: #d1c283;
+      }
+      p {
+        display: inline-block;
+        font-size: 22px;
+        color: #d1c283;
+        letter-spacing: 0.1em;
+      }
+      &.bubbling,
+      &.mouthaid {
+        max-width: 1080px;
+      }
+    }
+    .videoPanel {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+}

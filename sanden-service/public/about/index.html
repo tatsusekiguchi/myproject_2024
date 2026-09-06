@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="about">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap clearfix">
+			<div class="logo"><a href="/"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></a></div>
+			<div class="headBox">
+				<div class="navBox meiryo">
+					<div class="navList">
+						<div class="ul">
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li pulldown"><a class="pcBreak" href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">私たちについて</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="about">
+											<div>
+												<p>私たちについて</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec02">
+											<div>
+												<p>データで見る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec04">
+											<div>
+												<p>会社概要</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="about?sec03">
+											<div>
+												<p>ビジョン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">働く環境</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="working">
+											<div>
+												<p>働く環境</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec01">
+											<div>
+												<p>仕事内容</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec02">
+											<div>
+												<p>一日の流れ</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="working?sec04">
+											<div>
+												<p>福利厚生</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">社員を知る</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="staff">
+											<div>
+												<p>社員を知る</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec01">
+											<div>
+												<p>先輩の声</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="staff?sec02">
+											<div>
+												<p>キャリアプラン</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li pulldown"><a class="pcBreak" href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a>
+								<p class="accordBtn spBreak">採用情報</p>
+								<div class="subList accordBody">
+									<div class="li spBreak"><a href="recruit">
+											<div>
+												<p>採用情報</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec02">
+											<div>
+												<p>求める人材</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="recruit?sec04">
+											<div>
+												<p>募集要項</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="li entry"><a href="recruit?sec05">
+									<div>
+										<p>ENTRY</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="humberger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="aboutMain main">
+		<div class="pageKv">
+			<div class="kvArea">
+				<div class="kvTtl">
+					<p>ABOUT</p>
+					<h1>私たちについて</h1>
+				</div>
+			</div>
+		</div>
+		<div class="sec01 fadeUp">
+			<div class="secBox01">
+				<div class="secWrap02">
+					<div class="light"></div>
+					<div class="secTtl">
+						<p>MESSAGE</p>
+						<h2>メッセージ</h2>
+					</div>
+					<div class="subTtl">
+						<h3>電気を守り、<br>安心をつなぐ</h3>
+					</div>
+					<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/top_sec01_img.png" alt=""></div>
+				</div>
+			</div>
+			<div class="secBox02">
+				<div class="secWrap02">
+					<div class="txt">
+						<p>私たちの仕事は、非常用の発電・蓄電・変電設備のメンテナンスをメインで行う仕事です。<br>サンデンサービスは、真心を信条、行動指針として発展してまいりました。</p>
+						<p>社会へ向けて、より良いサービスを提供し、<br>お客様、お取引先様にとって価値ある企業であり続けます。<br>社員は、苦楽を共に分かち合い、豊かな人間性を育みながら成長し、<br>社会に貢献していきます。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>DATA</p>
+					<h2>データで見る</h2>
+				</div>
+				<div class="dataListPanel">
+					<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec02_img.png" alt=""></div>
+					<div class="dataListBox">
+						<div class="ul">
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>創業年</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">1989</p>
+											<p class="span">年</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>年間施工数</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">0</p>
+											<p class="span">件</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>売上高</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">27000</p>
+											<p class="span">万円</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>社員数</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">14</p>
+											<p class="span">名</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>平均年齢</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">0</p>
+											<p class="span">歳</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>平均勤続年数</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">6.6</p>
+											<p class="span">年</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>有休消化率</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">0</p>
+											<p class="span">%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>賞与数</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">3</p>
+											<p class="span">回</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="li">
+								<div class="dl">
+									<div class="dt">
+										<p>年間休日</p>
+									</div>
+									<div class="dd">
+										<div class="txt">
+											<p class="em count">108</p>
+											<p class="span">日</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec03 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>VISION</p>
+					<h2>私たちの未来</h2>
+				</div>
+				<div class="secBox clearfix">
+					<div class="imgBox">
+						<div class="img"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/about_sec03_img.png" alt=""></div>
+					</div>
+					<div class="txtBox">
+						<div class="ttlBox">
+							<div class="ttl">
+								<div class="box box01">
+									<p class="span">３つの</p>
+									<p class="em">電気</p>
+									<p class="span">を守る</p>
+								</div>
+								<div class="box">
+									<p class="span">サンデンを目指す</p>
+								</div>
+							</div>
+						</div>
+						<div class="txt">
+							<p>今は陸の電気設備のみを扱っていますが、ゆくゆくは海や空の３つの電気設備管理を網羅する会社を目指します。日本の安全を守ります。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec04 fadeUp">
+			<div class="light"></div>
+			<div class="secWrap01">
+				<div class="secTtl">
+					<p>COMPANY</p>
+					<h2>会社概要</h2>
+				</div>
+				<div class="infoBox">
+					<div class="dl">
+						<div class="dt">
+							<p>会社名</p>
+						</div>
+						<div class="dd">
+							<p>株式会社サンデンサービス</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>代表者</p>
+						</div>
+						<div class="dd">
+							<p>荒木　崇</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>所在地</p>
+						</div>
+						<div class="dd">
+							<p>〒284-0012　千葉県四街道市物井1530-5</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>電話番号</p>
+						</div>
+						<div class="dd"><a href="tel:0434235901">
+								<div>
+									<p>043-423-5901</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>FAX</p>
+						</div>
+						<div class="dd"><a href="javascript:void(0)">
+								<div>
+									<p>043-421-5446</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>創業</p>
+						</div>
+						<div class="dd">
+							<p>1989年9月1日</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>設立</p>
+						</div>
+						<div class="dd">
+							<p>1991年3月28日</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>資本金</p>
+						</div>
+						<div class="dd">
+							<p>300万円</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>売上高</p>
+						</div>
+						<div class="dd">
+							<p>2億7,000万円　※2019年度実績</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>事業内容</p>
+						</div>
+						<div class="dd">
+							<p>発電設備・蓄電池設備の設計施工、保守メンテナンス、修理</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>業務許可番号</p>
+						</div>
+						<div class="dd">
+							<p>電気工事業　千葉県知事許可（般-29）第52134号</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>取引銀行</p>
+						</div>
+						<div class="dd">
+							<p>千葉信用金庫　四街道支店<br>千葉銀行　四街道支店<br>京葉銀行　四街道支店<br>りそな銀行　千葉支店</p>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">
+							<p>主な取引先</p>
+						</div>
+						<div class="dd">
+							<p>因幡電機産業(株)<br>エナジーシステムサービスジャパン(株)<br>東伸電機(株)<br>東テク(株)<br>東邦ヤンマーテック(株)<br>三津浜工業(株)<br>三菱ケミカルエンジニアリング(株)<br>三菱重工エンジンシステム(株)<br>やまびこジャパン(株)<br>ヤンマーエネルギーシステム(株)<br>(株)IHI原動機<br>(株)サイボウ<br>(株)新和防災<br>(株)ニシテック<br>(株)ハタノシステム<br>(株)福田機械店<br>(株)三井E&Sパワーシステムズ<br>他、約40社<br>※順不同・敬称略</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pagingPanel fadeUp">
+			<div class="secWrap02">
+				<div class="ul clearfix">
+					<div class="li prev"><a href="/">
+							<div>
+								<p class="em">HOME</p>
+								<p class="span">ホーム</p>
+							</div>
+						</a></div>
+					<div class="li next"><a href="working">
+							<div>
+								<p class="em">WORKING</p>
+								<p class="span">働く環境</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<script src="../js/countup.js"></script>
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footEntry">
+			<div class="secWrap02">
+				<div class="secTtl">
+					<p>ENTRY</p>
+					<h2>採用情報</h2>
+				</div>
+				<div class="ul clearfix">
+					<div class="li"><a class="more more01 mynavi" href="http://" target="_blank" rel="noopener">
+							<div>
+								<p>マイナビからのエントリー</p>
+							</div>
+						</a></div>
+					<div class="li"><a class="more more01" href="recruit?sec05">
+							<div>
+								<p>エントリーフォーム</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footBox">
+			<div class="secWrap01">
+				<div class="footInner">
+					<div class="left">
+						<div class="logo"><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+						<div class="txt">
+							<p>〒284-0012<br>千葉県四街道市 物井1530-5</p>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="https://goo.gl/maps/vpGTW19GUvzQPEaV8" target="_blank" rel="noopener">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_map.png" alt=""></div>
+								</a></div>
+							<div class="li"><a href="tel:0434235901">
+									<div><img src="https://sanden-service210719.smooooth.jp/system_panel/uploads/images/icon_tel.png" alt=""></div>
+								</a></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="btnLink">
+							<div class="btn"><a href="" target="_blank" rel="noopener">
+									<div>
+										<p>corporate site</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="ul">
+							<div class="li"><a href="/">
+									<div>
+										<p>ホーム</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about?sec01">
+									<div>
+										<p>メッセージ</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="about">
+									<div>
+										<p>私たちについて</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="working">
+									<div>
+										<p>働く環境</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="staff">
+									<div>
+										<p>社員を知る</p>
+									</div>
+								</a></div>
+							<div class="li"><a href="recruit">
+									<div>
+										<p>採用情報</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="copy">&copy; 2021 SANDEN SERVICE</p>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

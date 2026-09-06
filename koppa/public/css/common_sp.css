@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .headBox {
+    display: block;
+  }
+  .header .logoBox .logo {
+    width: 150px;
+    margin: 0 15px 0 0;
+  }
+  .header .logoBox .logo a {
+    display: block;
+  }
+  .header .logoBox .sns .ul .li {
+    width: 20px;
+  }
+  .header .logoBox .sns .ul .li + .li {
+    margin: 0 0 0 10px;
+  }
+  .header .headItem {
+    display: none;
+  }
+  .header .hamburgerBox {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    text-align: center;
+    z-index: 999;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    height: calc(100% - 53px);
+  }
+  .navBox.active {
+    top: 53px;
+  }
+  .navBox .navContainer {
+    padding: 60px 20px;
+  }
+  .navBox .navItem {
+    display: block;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  .navBox .navItem .tel {
+    margin: 0 0 20px;
+  }
+  .navBox .navItem .tel a {
+    display: inline-block;
+    color: #333333;
+  }
+  .navBox .navItem .tel a p {
+    display: inline-block;
+    font-size: 20px;
+  }
+  .navBox .navItem .tel a .em {
+    font-size: 24px;
+  }
+  .navBox .navItem .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBox .navItem .ul .li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+  }
+  .navBox .navItem .ul .mail {
+    width: 50px;
+    margin: 0 10px 0 0;
+  }
+  .navBox .navItem .ul .mail a {
+    background: #fde5eb;
+  }
+  .navBox .navItem .ul .mail a img {
+    width: 20px;
+  }
+  .navBox .navItem .ul .item {
+    width: 150px;
+  }
+  .navBox .navItem .ul .item a {
+    color: #ffffff;
+    background: #f97d9b;
+  }
+  .navBox .navItem .ul .item a p {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/header_item.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 53px 0 0;
+  }
+
+  .pageKvPanel {
+    padding: 30px 0;
+  }
+  .pageKvPanel .pageKv {
+    display: block;
+  }
+  .pageKvPanel .pageKv .kvTitle {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+  }
+  .pageKvPanel .pageKv .kv {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .pageSecTtlBox {
+    padding: 0 0 20px;
+  }
+  .pageSecTtlBox:after {
+    width: 60px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .secBox .ttlBox {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .footer .footContact .secBox .ttlBox .ttl {
+    margin: 0 0 15px;
+    font-size: 24px;
+  }
+  .footer .footContact .secBox .txtBox .tel {
+    margin: 0 0 15px;
+    text-align: center;
+  }
+  .footer .footContact .secBox .txtBox .mail {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .footer .footPanel {
+    padding: 50px 0 20px;
+  }
+  .footer .footPanel .footBox {
+    margin: 0 0 40px;
+  }
+  .footer .footPanel .footBox .logo {
+    width: 200px;
+    margin: 0 0 15px;
+  }
+  .footer .footPanel .footBox .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .pagetop {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .footer .footPanel .copy {
+    position: static;
+  }
+}

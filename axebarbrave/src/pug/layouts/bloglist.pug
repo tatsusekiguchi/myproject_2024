@@ -1,0 +1,54 @@
+// ▽メイン▽
+main#blog.main
+    .pageKvContainer
+        .pageKvPanel.mincho
+            .pageKvTitle
+                h1 BLOG
+            .subTitle
+                p BLOG
+    .sec01
+        .secWrap
+            .pageSecTtlBox.mincho
+                .pageSecTtl
+                    h2 BRAVE BLOG
+                .sub
+                    p BLOG
+            .cateList.mincho
+                ul
+                    li
+                        a(href="") お知らせ
+                    li
+                        a(href="") スタッフブログ
+                    li
+                        a(href="") その他
+            .listBox
+                ul
+                    li
+                        .photo
+                            img(src=(root_path || '') + "image/top/sec02_img.png", alt="")
+                        .title
+                            p タイトルが入ります。<br>タイトルが入ります。
+                        a(href="") read more
+                    li
+                        .photo
+                            img(src=(root_path || '') + "image/top/sec02_img.png", alt="")
+                        .title
+                            p タイトルが入ります。<br>タイトルが入ります。
+                        a(href="") read more
+                    li
+                        .photo
+                            img(src=(root_path || '') + "image/top/sec02_img.png", alt="")
+                        .title
+                            p タイトルが入ります。<br>タイトルが入ります。
+                        a(href="") read more
+            .list__pagination
+                ul.pagination
+                    li.previous
+                        a(href='')
+                    li
+                        a 1
+                    li.current
+                        a(href='') 2
+                    li.next
+                        a(href='')
+// △メイン△

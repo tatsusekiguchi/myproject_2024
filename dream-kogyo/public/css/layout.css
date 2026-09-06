@@ -1,0 +1,1134 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  padding: 0 0 0 400px;
+}
+.topMain .topKvContainer h1 {
+  display: none;
+}
+.topMain .topKvContainer .topKvPanel {
+  height: 800px;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_kv_01.png) right center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvTitlePanel {
+  position: absolute;
+  top: 40%;
+  left: 150px;
+  width: 100%;
+  max-width: 780px;
+  color: #283460;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox {
+  margin: 0 0 30px;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle {
+  margin: 0 0 5px;
+}
+.topMain .topKvContainer .topKvTitlePanel .topKvTitleBox .topKvTitle p {
+  padding: 5px 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  background: #ffffff;
+}
+.topMain .topKvContainer .topKvTitlePanel .subTitleBox .subTitle {
+  margin: 0 0 5px;
+}
+.topMain .topKvContainer .topKvTitlePanel .subTitleBox .subTitle p {
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 20px;
+  background: #ffffff;
+}
+.topMain .topSection {
+  overflow: hidden;
+  position: relative;
+  margin: 80px 0 0;
+  padding: 0 0 100px;
+  text-align: center;
+}
+.topMain .topSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  z-index: -2;
+  background: #eef0f3;
+}
+.topMain .topSection:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 900px;
+  height: 74px;
+  margin: 0 auto;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_top_logo.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .topSection .secTtl {
+  margin: 0 0 40px;
+  font-size: 40px;
+  color: #283460;
+}
+.topMain .topSection .message {
+  margin: 0 0 40px;
+  font-size: 26px;
+}
+.topMain .topSection .listBox .ul .li {
+  border-top: 5px solid #283460;
+  border-bottom: 5px solid #283460;
+  background: #ffffff;
+}
+.topMain .topSection .listBox .ul .li a {
+  display: block;
+}
+.topMain .topSection .listBox .ul .li .ttl {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .topMain .topSection .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .topSection .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+.topMain .sec01 {
+  padding: 120px 0;
+}
+.topMain .sec01 .secBox .chartBox .chart {
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec01 .secBox .chartBox {
+    width: 40%;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    width: 55%;
+  }
+}
+.topMain .sec02 {
+  padding: 120px 0;
+  background: #eef0f3;
+}
+.topMain .sec02 .secBoxList .ttl {
+  position: relative;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.topMain .sec02 .secBoxList .ttl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+.topMain .sec02 .secBoxList .ttl h3 {
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 26px;
+  background: #eef0f3;
+}
+.topMain .sec02 .secBoxList .txtBox {
+  padding: 30px 40px;
+  background: #ffffff;
+}
+.topMain .sec02 .secBoxList .txtBox a {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.topMain .sec02 .secBoxList .txtBox a + p {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBoxList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .secBoxList .secBox {
+    width: calc(50% - 30px);
+  }
+}
+.topMain .sec03 {
+  padding: 120px 0;
+  color: #ffffff;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .secBox {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.topMain .sec03 .secBox .ttlBox .ttlImg {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.topMain .sec03 .secBox .txtBox .ttl {
+  margin: 0 0 10px;
+  font-size: 50px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topMain .sec03 .secBox > * {
+    width: 50%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .topMessage {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+.serviceMain .topMessage p {
+  font-size: 34px;
+  color: #283460;
+}
+.serviceMain .section {
+  padding: 100px 0;
+}
+.serviceMain .section .topBox {
+  margin: 0 0 60px;
+}
+.serviceMain .section .topBox .txtBox {
+  padding: 20px 0 0;
+}
+.serviceMain .section .topBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .serviceMain .section .topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .serviceMain .section .topBox .photo {
+    width: 45%;
+  }
+  .serviceMain .section .topBox .txtBox {
+    width: 50%;
+  }
+}
+.serviceMain .sec01 .listPanel .pTtl {
+  position: relative;
+  max-width: 580px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.serviceMain .sec01 .listPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+.serviceMain .sec01 .listPanel .pTtl p {
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 24px;
+  background: #ffffff;
+}
+.serviceMain .sec01 .listBox .ul .ttl {
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .serviceMain .sec01 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -30px;
+  }
+  .serviceMain .sec01 .listBox .ul .li {
+    width: calc(33.3333333333% - 30px);
+    margin: 30px 0 0 30px;
+  }
+  .serviceMain .sec01 .listBox .ul .photo {
+    position: relative;
+    height: 280px;
+  }
+  .serviceMain .sec01 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.serviceMain .sec02 {
+  background: #eef0f3;
+}
+.serviceMain .sec02 .secPanel .pTtl {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.serviceMain .sec02 .secPanel .pTtl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto 0;
+  background: #000000;
+}
+.serviceMain .sec02 .secPanel .pTtl p {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 24px;
+  background: #eef0f3;
+}
+.serviceMain .sec02 .secPanel .ttl {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #283460;
+}
+.serviceMain .sec02 .secPanel .chart {
+  margin: 0 0 20px;
+}
+.serviceMain .sec03 .topTxt {
+  margin: 0 0 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain .section {
+  padding: 100px 0;
+}
+.recruitMain .sec01 {
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/recruit_sec01_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.recruitMain .sec01 .txt p + p {
+  margin: 30px 0 0;
+}
+.recruitMain .sec01 .name {
+  max-width: 600px;
+  margin: 30px 0 0;
+  font-size: 20px;
+  text-align: right;
+}
+.recruitMain .sec02 .secContainer + .secContainer {
+  margin: 60px 0 0;
+}
+.recruitMain .sec02 .secContainer02 .secPanel {
+  margin: 0 auto;
+}
+.recruitMain .sec02 .secContainer03 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.recruitMain .sec02 .secPanel {
+  max-width: 1000px;
+}
+.recruitMain .sec02 .secPanel .ttlBox {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 2px 20px 2px 100px;
+  background: #283460;
+}
+.recruitMain .sec02 .secPanel .ttlBox .num {
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-radius: 50%;
+  background: #29639f;
+}
+.recruitMain .sec02 .secPanel .ttlBox .num .span {
+  font-size: 11px;
+  color: #8c9fb8;
+}
+.recruitMain .sec02 .secPanel .ttlBox .num .em {
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 1;
+}
+.recruitMain .sec02 .secPanel .ttlBox .ttl {
+  font-size: 0;
+}
+.recruitMain .sec02 .secPanel .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+  color: #c7d4e2;
+}
+.recruitMain .sec02 .secPanel .ttlBox .ttl .em {
+  color: #f5ff88;
+}
+.recruitMain .sec02 .secPanel .secBox .txtBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec02 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec02 .secPanel .secBox .photo {
+    width: 35%;
+  }
+  .recruitMain .sec02 .secPanel .secBox .txtBox {
+    width: 60%;
+  }
+}
+.recruitMain .sec04 {
+  overflow: hidden;
+  position: relative;
+  background: #eef0f3;
+}
+.recruitMain .sec04:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 900px;
+  height: 74px;
+  margin: 0 auto;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/top_top_logo.png) no-repeat;
+  background-size: 100% auto;
+}
+.recruitMain .sec04 .secPanelList .secPanel .pTtl {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.recruitMain .sec04 .secPanelList .secBox {
+  padding: 20px 15px;
+  text-align: center;
+  border-top: 5px solid #283460;
+  border-bottom: 5px solid #283460;
+  background: #ffffff;
+}
+.recruitMain .sec04 .secPanelList .secBox .txt {
+  line-height: 1.5;
+}
+.recruitMain .sec04 .secPanelList .secBox .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/recruit_sec04_tel.png) left top 15px no-repeat;
+  background-size: 25px auto;
+}
+.recruitMain .sec04 .secPanelList .secBox .telBox > p {
+  font-size: 14px;
+}
+.recruitMain .sec04 .secPanelList .secBox .lineBox {
+  margin: 10px 0 0;
+}
+.recruitMain .sec04 .secPanelList .secBox .lineBox .line {
+  display: inline-block;
+  width: 50px;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+}
+.recruitMain .sec04 .secPanelList .secBox .lineBox .line a {
+  display: block;
+}
+.recruitMain .sec04 .secPanelList .secBox .lineBox .ttl {
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: middle;
+}
+@media (min-width: 1025px) {
+  .recruitMain .sec04 .secPanelList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruitMain .sec04 .secPanelList > * {
+    width: calc(50% - 20px);
+  }
+  .recruitMain .sec04 .secPanelList .secBox {
+    min-height: 182px;
+  }
+}
+.recruitMain .sec05 .topTxt {
+  margin: 0 0 40px;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain .section {
+  padding: 60px 0;
+}
+.companyMain .sec01 h3 {
+  margin: 0 0 40px;
+  font-size: 24px;
+  text-align: center;
+}
+.companyMain .sec01 .secBox {
+  margin: 0 0 40px;
+}
+.companyMain .sec01 .secBox .photoBox .name {
+  margin: 15px 0 0;
+  font-size: 20px;
+  text-align: right;
+}
+@media (min-width: 1025px) {
+  .companyMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .companyMain .sec01 .secBox .photoBox {
+    width: 30%;
+  }
+  .companyMain .sec01 .secBox .txtBox {
+    width: 65%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .topSection {
+  padding: 80px 0;
+}
+.contactMain .topSection .topPanel {
+  margin: 0 0 60px;
+}
+.contactMain .topSection .topPanel .txtBox {
+  padding: 50px 0 0;
+}
+.contactMain .topSection .topPanel .txtBox .checkPanel {
+  padding: 30px;
+  background: #eef0f3;
+}
+.contactMain .topSection .topPanel .txtBox .checkPanel .list {
+  max-width: 480px;
+}
+.contactMain .topSection .topPanel .txtBox .checkPanel .list .ul .li {
+  padding: 15px;
+  border-bottom: 1px solid #000000;
+}
+.contactMain .topSection .topPanel .txtBox .checkPanel .list .ul .li p {
+  padding: 0 0 0 35px;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/contact_top_check.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .topSection .topPanel .txtBox .checkPanel > p {
+  margin: 20px 0 0;
+  font-size: 20px;
+  color: #283460;
+}
+@media (min-width: 1025px) {
+  .contactMain .topSection .topPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .topSection .topPanel .photo {
+    width: 48%;
+  }
+  .contactMain .topSection .topPanel .photo img {
+    width: 600px;
+  }
+  .contactMain .topSection .topPanel .txtBox {
+    width: 52%;
+  }
+}
+.contactMain .topSection .secPanel {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contactMain .topSection .secPanel .pTtl {
+  margin: 0 0 10px;
+  font-size: 24px;
+  text-align: center;
+}
+.contactMain .topSection .secBox {
+  padding: 10px 15px 20px;
+  text-align: center;
+  border-top: 5px solid #283460;
+  border-bottom: 5px solid #283460;
+  background: #ffffff;
+}
+.contactMain .topSection .secBox .txt {
+  line-height: 1.5;
+}
+.contactMain .topSection .secBox .telBox a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/recruit_sec04_tel.png) left top 15px no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .topSection .secBox .telBox > p {
+  font-size: 14px;
+}
+.contactMain .sec01 {
+  padding: 80px 0;
+  background: #eef0f3;
+}
+.contactMain .sec01 .topTxt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #eef0f3;
+  background: #eef0f3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm02 input[type=text],
+.formMain .contactForm02 input[type=email],
+.formMain .contactForm02 input[type=tel] {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #eef0f3;
+  background: #eef0f3;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm02 textarea {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 230px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #283460;
+  background: #283460;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit] span {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url(https://dream-kogyo240510.smooooth.jp/system_panel/uploads/images/contact_form_mail.png) left center no-repeat;
+  background-size: 13px auto;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 {
+  max-width: 600px;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+  width: 280px;
+  margin: 20px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eef0f3;
+  background: #eef0f3;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #eef0f3;
+  background: #eef0f3;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #000000;
+}
+.formMain .contactForm .form .postalBox {
+  border-bottom: none !important;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 0 0;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  padding: 15px 0 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #29639f;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 280px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ededed;
+  background: #ededed;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-bottom: 1px solid #888163;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+.formMain .contactForm02 .formBox .privacy .agreeBox {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+.formMain .contactForm02 .form .checkItem span::before {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  width: 220px;
+  margin: 0 auto;
+}
+.complete .btnMore a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #283460;
+}

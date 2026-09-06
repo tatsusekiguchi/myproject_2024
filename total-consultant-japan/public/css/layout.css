@@ -1,0 +1,3190 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  position: relative;
+  height: 850px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_kv_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .topKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: calc(100% - 20px);
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_kv_01.png) no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvTitle h1 {
+  font-size: 34px;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .messageSec01 {
+  margin: -100px 0 0;
+  padding: 120px 0 80px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_bg.png) center top no-repeat;
+  background-size: 100% auto;
+}
+.topMain .messageSec01 .ttlBox {
+  margin: 0 0 30px;
+  text-align: center;
+  line-height: 1.7;
+}
+.topMain .messageSec01 .ttlBox .ttl {
+  font-size: 0;
+}
+.topMain .messageSec01 .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.topMain .messageSec01 .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.topMain .messageSec01 .secBox .dl .dt {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+.topMain .messageSec01 .secBox .dl .dd .ul .li {
+  padding: 10px 20px;
+  border-bottom: 1px dashed #0e0e0e;
+}
+.topMain .messageSec01 .secBox .dl .dd .ul .li p {
+  padding: 0 0 0 40px;
+  font-size: 18px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .topMain .messageSec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .messageSec01 .secBox .dl {
+    width: 46%;
+  }
+}
+.topMain .messageSec02 {
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_blue.png) no-repeat;
+  background-size: cover;
+}
+.topMain .messageSec02 .ttlBox {
+  margin: 0 0 40px;
+  line-height: 1.7;
+}
+.topMain .messageSec02 .ttlBox .ttl {
+  font-size: 34px;
+  font-weight: bold;
+}
+.topMain .messageSec02 .ttlBox .em {
+  font-size: 30px;
+  color: #d4af37;
+}
+.topMain .messageSec02 .txt p + p {
+  margin: 20px 0 0;
+}
+.topMain .messageSec02 .btnReadMore {
+  width: 170px;
+  margin: 40px auto 0;
+}
+.topMain .messageSec02 .btnReadMore a {
+  display: block;
+  padding: 10px 0 10px 60px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/btn_read_more.png) left center no-repeat;
+  background-size: 50px auto;
+}
+.topMain .sec01 {
+  padding: 100px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_sec01_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .section + .section {
+  margin: 80px 0 0;
+}
+.topMain .sec01 .section .secTtl {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+.topMain .sec01 .listBox .ul .li a {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .sec01 .listBox .ul .li .photo {
+  overflow: hidden;
+  position: relative;
+}
+.topMain .sec01 .listBox .ul .li .photo img {
+  transition: 0.6s;
+}
+.topMain .sec01 .listBox .ul .li .dl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 35, 77, 0.9);
+  transition: 0.6s;
+}
+.topMain .sec01 .listBox .ul .li .dl .dt .em {
+  font-size: 24px;
+}
+.topMain .sec01 .listBox .ul .li .dl .dd .more {
+  width: 50px;
+  margin: 30px auto 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listBox .ul .li a {
+    opacity: 1;
+  }
+  .topMain .sec01 .listBox .ul .li a:hover .photo img {
+    transform: scale(1.1);
+  }
+  .topMain .sec01 .listBox .ul .li a:hover .dl {
+    background: rgba(28, 35, 77, 0.4);
+  }
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listBox01 .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listBox01 .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+  .topMain .sec01 .listBox02 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .topMain .sec01 .listBox02 .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listBox02 .ul .li {
+    width: calc(50% - 20px);
+  }
+}
+.topMain .sec02 {
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_blue.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .pageSecTtlBox .sub .span {
+  color: #ffffff;
+}
+.topMain .sec02 .pageSecTtlBox .pageSecTtl {
+  color: #ffffff;
+}
+.topMain .sec02 .ttlBox {
+  margin: 0 0 40px;
+  line-height: 1.7;
+}
+.topMain .sec02 .ttlBox .ttl {
+  font-size: 0;
+  font-weight: bold;
+}
+.topMain .sec02 .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+}
+.topMain .sec02 .ttlBox .em {
+  color: #d4af37;
+}
+.topMain .sec02 .txt p + p {
+  margin: 20px 0 0;
+}
+.topMain .sec03 {
+  padding: 80px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_sec03_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .newsListBox .webgene-header {
+  display: none;
+}
+.topMain .sec03 .newsListBox .webgene-item {
+  padding: 20px;
+  border-bottom: 1px dotted #0e0e0e;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl > * {
+  display: table-cell;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dt {
+  width: 400px;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dt .time {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  color: #b99624;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dt .cate {
+  display: inline-block;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dd {
+  padding: 0 0 0 40px;
+  line-height: 2;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dd p + p {
+  margin: 20px 0 0;
+}
+.topMain .sec03 .newsListBox .webgene-item .dl .dd a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.topMain .sec04 {
+  padding: 80px 0;
+}
+.topMain .sec04 .secPanel {
+  margin: 0 0 80px;
+}
+.topMain .sec04 .secPanel .photo {
+  position: relative;
+}
+.topMain .sec04 .secPanel .txtBox .infoBox {
+  max-width: 550px;
+}
+.topMain .sec04 .secPanel .txtBox .infoBox .dl {
+  display: flex;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-bottom: 1px dotted #0e0e0e;
+}
+.topMain .sec04 .secPanel .txtBox .infoBox .dl .dt {
+  width: 120px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .secPanel {
+    display: flex;
+    align-items: center;
+  }
+  .topMain .sec04 .secPanel .photo {
+    width: 50%;
+  }
+  .topMain .sec04 .secPanel .txtBox {
+    width: 50%;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl {
+    position: relative;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(2) {
+    left: 15px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(3) {
+    left: 30px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(4) {
+    left: 45px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(5) {
+    left: 60px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(6) {
+    left: 75px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(7) {
+    left: 90px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(8) {
+    left: 105px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(9) {
+    left: 120px;
+  }
+  .topMain .sec04 .secPanel .txtBox .infoBox .dl:nth-child(10) {
+    left: 135px;
+  }
+}
+.topMain .sec04 .messagePanel .secBox {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px solid #aec5c9;
+}
+.topMain .sec04 .messagePanel .secBox .ttl {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.topMain .sec04 .messagePanel .secBox .txt p + p {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	sales,maintenance
+///////////////////////////////////////////////////////////*/
+.salesMain .topSection,
+.maintenanceMain .topSection {
+  padding: 80px 0;
+}
+.salesMain .topSection .topTxt,
+.maintenanceMain .topSection .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.salesMain .topSection .ttl,
+.maintenanceMain .topSection .ttl {
+  margin: 0 0 20px;
+  font-size: 0;
+  text-align: center;
+}
+.salesMain .topSection .ttl p,
+.maintenanceMain .topSection .ttl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.salesMain .topSection .ttl .em,
+.maintenanceMain .topSection .ttl .em {
+  color: #bf0000;
+}
+.salesMain .topSection .secBox .txtBox .ul .li,
+.maintenanceMain .topSection .secBox .txtBox .ul .li {
+  padding: 10px 20px;
+  border-bottom: 1px dashed #0e0e0e;
+}
+.salesMain .topSection .secBox .txtBox .ul .li p,
+.maintenanceMain .topSection .secBox .txtBox .ul .li p {
+  padding: 0 0 0 40px;
+  font-size: 18px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_top_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+@media (min-width: 1025px) {
+  .salesMain .topSection .secBox,
+.maintenanceMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .salesMain .topSection .secBox .photo,
+.maintenanceMain .topSection .secBox .photo {
+    width: 45%;
+  }
+  .salesMain .topSection .secBox .txtBox,
+.maintenanceMain .topSection .secBox .txtBox {
+    width: 55%;
+  }
+}
+.salesMain .btnContact,
+.maintenanceMain .btnContact {
+  max-width: 280px;
+  margin: 60px auto 0;
+}
+.salesMain .btnContact a,
+.maintenanceMain .btnContact a {
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background: #d4af37;
+}
+.salesMain .btnContact a p,
+.maintenanceMain .btnContact a p {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  letter-spacing: 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+.salesMain .balloonTtl,
+.maintenanceMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.salesMain .messageSection,
+.maintenanceMain .messageSection {
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_blue.png) no-repeat;
+  background-size: cover;
+}
+.salesMain .messageSection .ttlBox,
+.maintenanceMain .messageSection .ttlBox {
+  margin: 0 0 40px;
+  line-height: 1.7;
+}
+.salesMain .messageSection .ttlBox .ttl,
+.maintenanceMain .messageSection .ttlBox .ttl {
+  font-size: 34px;
+  font-weight: bold;
+}
+.salesMain .messageSection .ttlBox .em,
+.maintenanceMain .messageSection .ttlBox .em {
+  font-size: 30px;
+  color: #d4af37;
+}
+.salesMain .messageSection .txt p + p,
+.maintenanceMain .messageSection .txt p + p {
+  margin: 30px 0 0;
+}
+.salesMain .problemSection,
+.maintenanceMain .problemSection {
+  padding: 120px 0;
+  text-align: center;
+  letter-spacing: 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_problem_bg.png) no-repeat;
+  background-size: cover;
+}
+.salesMain .problemSection .txt + .txt,
+.maintenanceMain .problemSection .txt + .txt {
+  margin: 30px 0 0;
+}
+.salesMain .problemSection .txt .em,
+.maintenanceMain .problemSection .txt .em {
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d10000;
+  background: linear-gradient(transparent 60%, #fbff89 60%);
+}
+.salesMain .problemSection .listBox,
+.maintenanceMain .problemSection .listBox {
+  margin: 30px 0 0;
+}
+.salesMain .problemSection .listBox .ul,
+.maintenanceMain .problemSection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.salesMain .problemSection .listBox .ul .li,
+.maintenanceMain .problemSection .listBox .ul .li {
+  width: calc(25% - 25px);
+}
+.salesMain .problemSection .listBox .ul .li p,
+.maintenanceMain .problemSection .listBox .ul .li p {
+  margin: 5px 0 0;
+}
+.salesMain .consultSection,
+.maintenanceMain .consultSection {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+.salesMain .consultSection .ttlBox,
+.maintenanceMain .consultSection .ttlBox {
+  margin: 0 0 40px;
+}
+.salesMain .consultSection .ttlBox .ttl,
+.maintenanceMain .consultSection .ttlBox .ttl {
+  font-size: 0;
+}
+.salesMain .consultSection .ttlBox .ttl p,
+.maintenanceMain .consultSection .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.salesMain .consultSection .ttlBox .ttl .em,
+.maintenanceMain .consultSection .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.salesMain .consultSection .listBox,
+.maintenanceMain .consultSection .listBox {
+  letter-spacing: 0;
+}
+.salesMain .consultSection .listBox .ul .li,
+.maintenanceMain .consultSection .listBox .ul .li {
+  position: relative;
+}
+.salesMain .consultSection .listBox .ul .img,
+.maintenanceMain .consultSection .listBox .ul .img {
+  max-width: 260px;
+  margin: 0 auto 5px;
+}
+@media (min-width: 1025px) {
+  .salesMain .consultSection .listBox .ul,
+.maintenanceMain .consultSection .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .salesMain .consultSection .listBox .ul .li,
+.maintenanceMain .consultSection .listBox .ul .li {
+    width: calc(33.3333333333% - 40px);
+  }
+  .salesMain .consultSection .listBox .ul .li + .li::before,
+.maintenanceMain .consultSection .listBox .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    width: 20px;
+    height: 35px;
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_consult_arrow.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+.salesMain .reasonSection,
+.maintenanceMain .reasonSection {
+  padding: 120px 0;
+}
+.salesMain .reasonSection .secContainer,
+.maintenanceMain .reasonSection .secContainer {
+  position: relative;
+}
+.salesMain .reasonSection .secContainer + .secContainer,
+.maintenanceMain .reasonSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.salesMain .reasonSection .secContainer .secPanel,
+.maintenanceMain .reasonSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.salesMain .reasonSection .secContainer .secPanel .photoBox .photo,
+.maintenanceMain .reasonSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .num,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl p,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl .em,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .txt,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .txt {
+  letter-spacing: 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .txt p + p,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .more,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.salesMain .reasonSection .secContainer .secPanel .txtBox .more a,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 140px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .salesMain .reasonSection .secContainer .secPanel,
+.maintenanceMain .reasonSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .salesMain .reasonSection .secContainer .secPanel .photoBox,
+.maintenanceMain .reasonSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .salesMain .reasonSection .secContainer .secPanel .txtBox,
+.maintenanceMain .reasonSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .salesMain .reasonSection .secContainer:nth-child(odd),
+.maintenanceMain .reasonSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_reason_bg_01.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .salesMain .reasonSection .secContainer:nth-child(odd) .secPanel .photoBox,
+.maintenanceMain .reasonSection .secContainer:nth-child(odd) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .salesMain .reasonSection .secContainer:nth-child(even),
+.maintenanceMain .reasonSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_reason_bg_02.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .salesMain .reasonSection .secContainer:nth-child(even) .secPanel,
+.maintenanceMain .reasonSection .secContainer:nth-child(even) .secPanel {
+    flex-direction: row-reverse;
+  }
+}
+.salesMain .faqSection,
+.maintenanceMain .faqSection {
+  padding: 60px 0 120px;
+}
+.salesMain .faqSection .topTxt,
+.maintenanceMain .faqSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.salesMain .faqSection .secBox,
+.maintenanceMain .faqSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.salesMain .faqSection .secBox + .secBox,
+.maintenanceMain .faqSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.salesMain .faqSection .secBox .ttlBox,
+.maintenanceMain .faqSection .secBox .ttlBox {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.salesMain .faqSection .secBox .ttlBox .icon,
+.maintenanceMain .faqSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.salesMain .faqSection .secBox .txtBox,
+.maintenanceMain .faqSection .secBox .txtBox {
+  padding: 10px 50px;
+  letter-spacing: 0;
+}
+.salesMain .faqSection .secBox .txtBox p + p,
+.maintenanceMain .faqSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+.salesMain .searchSection,
+.maintenanceMain .searchSection {
+  padding: 100px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_search_bg.png) no-repeat;
+  background-size: cover;
+}
+.salesMain .searchSection .topTxt,
+.maintenanceMain .searchSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-header,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item {
+  padding: 20px;
+  letter-spacing: 0;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo {
+  position: relative;
+  margin: 0 0 20px;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .cate p,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .cate p {
+  display: inline-block;
+  min-width: 90px;
+  padding: 1px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt01,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt01 {
+  margin: 10px 0 0;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt01 p + p,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt01 p + p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox {
+  margin: 10px 0 0;
+  padding: 0 0 3px;
+  border-bottom: 1px solid #aec5c9;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox em,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox em {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  color: #d37f13;
+  line-height: 1;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox span,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .priceBox span {
+  display: inline-block;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt02,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .txt02 {
+  margin: 10px 0 0;
+}
+.salesMain .searchSection .searchListPanel .webgene-blog .webgene-item a,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item a {
+  display: block;
+  width: 140px;
+  margin: 20px auto 0;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .salesMain .searchSection .searchListPanel .webgene-blog,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog {
+    display: flex;
+    margin: 0 0 0 -20px;
+  }
+  .salesMain .searchSection .searchListPanel .webgene-blog .webgene-item,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 0 0 0 20px;
+  }
+  .salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo {
+    height: 160px;
+  }
+  .salesMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo img,
+.maintenanceMain .searchSection .searchListPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.salesMain .searchSection .more,
+.maintenanceMain .searchSection .more {
+  width: 180px;
+  margin: 50px auto 0;
+}
+.salesMain .searchSection .more a,
+.maintenanceMain .searchSection .more a {
+  display: block;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  background: #1c234d;
+}
+.salesMain .sightseeingSection,
+.maintenanceMain .sightseeingSection {
+  padding: 120px 0;
+}
+.salesMain .sightseeingSection .listBox,
+.maintenanceMain .sightseeingSection .listBox {
+  text-align: center;
+}
+.salesMain .sightseeingSection .listBox .ul,
+.maintenanceMain .sightseeingSection .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.salesMain .sightseeingSection .listBox .ul .li,
+.maintenanceMain .sightseeingSection .listBox .ul .li {
+  width: calc(33.3333333333% - 25px);
+}
+.salesMain .sightseeingSection .listBox .ul .li p,
+.maintenanceMain .sightseeingSection .listBox .ul .li p {
+  margin: 10px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	diagnosis
+///////////////////////////////////////////////////////////*/
+.diagnosisMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.diagnosisMain .topSection {
+  padding: 60px 0 100px;
+}
+.diagnosisMain .topSection .ttl {
+  margin: 0 0 60px;
+  font-size: 0;
+  text-align: center;
+}
+.diagnosisMain .topSection .ttl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.diagnosisMain .topSection .ttl .em {
+  color: #bf0000;
+}
+.diagnosisMain .topSection .txtBox {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.diagnosisMain .topSection .txtBox .ul .li {
+  padding: 10px 20px;
+  border-bottom: 1px dashed #0e0e0e;
+}
+.diagnosisMain .topSection .txtBox .ul .li p {
+  padding: 0 0 0 40px;
+  font-size: 18px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_top_check.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.diagnosisMain .aboutSection {
+  padding: 100px 0;
+  color: #ffffff;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_about_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.diagnosisMain .aboutSection .topTtl {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 34px;
+}
+.diagnosisMain .aboutSection .topTtl .em {
+  font-size: 30px;
+  color: #d4af37;
+}
+.diagnosisMain .aboutSection .secContainer {
+  position: relative;
+}
+.diagnosisMain .aboutSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox {
+  padding: 20px 0 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .txt {
+  letter-spacing: 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.diagnosisMain .aboutSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 140px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .diagnosisMain .aboutSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .diagnosisMain .aboutSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .diagnosisMain .aboutSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .diagnosisMain .aboutSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_about_bg_01.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .diagnosisMain .aboutSection .secContainer:nth-child(odd) .secPanel {
+    flex-direction: row-reverse;
+  }
+  .diagnosisMain .aboutSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_about_bg_02.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .diagnosisMain .aboutSection .secContainer:nth-child(even) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.diagnosisMain .meritSection {
+  padding: 120px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_merit_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.diagnosisMain .meritSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .meritSection .listBox {
+  text-align: center;
+}
+.diagnosisMain .meritSection .listBox .ul .li .dl {
+  margin: 20px 0 0;
+}
+.diagnosisMain .meritSection .listBox .ul .li .dl .dt {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.diagnosisMain .meritSection .listBox .ul .li .dl .dd {
+  line-height: 2;
+  letter-spacing: 0;
+}
+@media (min-width: 1025px) {
+  .diagnosisMain .meritSection .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .diagnosisMain .meritSection .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+.diagnosisMain .floorSection {
+  padding: 120px 0;
+}
+.diagnosisMain .floorSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .floorSection .section + .section {
+  margin: 60px 0 0;
+}
+.diagnosisMain .floorSection .section .secTtl {
+  max-width: 320px;
+  margin: 0 auto 30px;
+}
+.diagnosisMain .floorSection .section01 > .txt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table {
+  border: 1px solid #aec5c9;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .thead .th + .th {
+  border-left: 1px solid #4e557c;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .tbody .th {
+  border-top: 1px solid #4e557c;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .tr {
+  display: table;
+  width: 100%;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .tr > * {
+  display: table-cell;
+  width: 12.5%;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .th {
+  color: #ffffff;
+  background: #30375f;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .td {
+  font-size: 50px;
+  border-top: 1px solid #aec5c9;
+  border-left: 1px solid #aec5c9;
+}
+.diagnosisMain .floorSection .section01 .tableBox .table .last {
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_floor_table_red.png) no-repeat;
+  background-size: cover;
+}
+.diagnosisMain .floorSection .section02 {
+  position: relative;
+  padding: 60px 20px;
+  border: 1px solid #aec5c9;
+}
+.diagnosisMain .floorSection .section02 .secTtl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+.diagnosisMain .floorSection .section02 .txt {
+  text-align: center;
+}
+.diagnosisMain .floorSection .section03 {
+  text-align: center;
+}
+.diagnosisMain .floorSection .section03 .txtBox {
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+.diagnosisMain .floorSection .section03 .txtBox .priceBox {
+  margin: 0 0 15px;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #363c64;
+}
+.diagnosisMain .floorSection .section03 .txtBox .priceBox p {
+  display: inline-block;
+}
+.diagnosisMain .floorSection .section03 .txtBox .priceBox .em {
+  font-size: 40px;
+  color: #d37f13;
+}
+.diagnosisMain .floorSection .section03 > .txt {
+  margin: 0 0 30px;
+}
+.diagnosisMain .floorSection .section03 a {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+.diagnosisMain .flowSection {
+  padding: 120px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.diagnosisMain .flowSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .flowSection .arrow {
+  width: 30px;
+  margin: 10px auto;
+}
+.diagnosisMain .flowSection .secBox {
+  padding: 30px 50px;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+}
+.diagnosisMain .flowSection .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.diagnosisMain .flowSection .secBox .txtBox .ttlBox {
+  margin: 0 0 20px;
+}
+.diagnosisMain .flowSection .secBox .txtBox .ttlBox > * {
+  display: inline-block;
+  font-size: 30px;
+}
+.diagnosisMain .flowSection .secBox .txtBox .ttlBox .num {
+  margin: 0 10px 0 0;
+}
+.diagnosisMain .flowSection .secBox .txtBox .btnContact {
+  max-width: 280px;
+  margin: 40px 0 0;
+}
+.diagnosisMain .flowSection .secBox .txtBox .btnContact a {
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background: #d4af37;
+}
+.diagnosisMain .flowSection .secBox .txtBox .btnContact a p {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  letter-spacing: 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+@media (min-width: 1025px) {
+  .diagnosisMain .flowSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .diagnosisMain .flowSection .secBox .photo {
+    width: 40%;
+  }
+  .diagnosisMain .flowSection .secBox .txtBox {
+    width: 50%;
+  }
+}
+.diagnosisMain .voiceSection {
+  padding: 120px 0 60px;
+}
+.diagnosisMain .voiceSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .voiceSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.diagnosisMain .voiceSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.diagnosisMain .voiceSection .secBox .ttlBox {
+  display: flex;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.diagnosisMain .voiceSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.diagnosisMain .voiceSection .secBox .nameBox {
+  padding: 5px 20px;
+  background: #deecee;
+}
+.diagnosisMain .voiceSection .secBox .txtBox {
+  padding: 15px 20px;
+  letter-spacing: 0;
+}
+.diagnosisMain .voiceSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+.diagnosisMain .faqSection {
+  padding: 60px 0 120px;
+}
+.diagnosisMain .faqSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.diagnosisMain .faqSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.diagnosisMain .faqSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.diagnosisMain .faqSection .secBox .ttlBox {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.diagnosisMain .faqSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.diagnosisMain .faqSection .secBox .txtBox {
+  padding: 10px 50px;
+  letter-spacing: 0;
+}
+.diagnosisMain .faqSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	consult
+///////////////////////////////////////////////////////////*/
+.consultMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.consultMain .topSection {
+  padding: 60px 0 100px;
+}
+.consultMain .topSection .ttl {
+  margin: 0 0 40px;
+  font-size: 0;
+  text-align: center;
+}
+.consultMain .topSection .ttl p {
+  display: inline;
+  font-size: 34px;
+  font-weight: bold;
+}
+.consultMain .topSection .ttl .em {
+  color: #bf0000;
+}
+.consultMain .topSection .txtBox {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.consultMain .topSection .txtBox .ttl {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+.consultMain .topSection .txtBox .ul .li {
+  padding: 10px 15px;
+  border-bottom: 1px dashed #0e0e0e;
+}
+.consultMain .topSection .txtBox .ul .li p {
+  padding: 0 0 0 40px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_top_check.png) left center no-repeat;
+  background-size: 26px auto;
+}
+@media (min-width: 1025px) {
+  .consultMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .consultMain .topSection .secBox .txtBox {
+    width: 46%;
+  }
+}
+.consultMain .messageSection {
+  padding: 60px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_blue.png) no-repeat;
+  background-size: cover;
+}
+.consultMain .messageSection .ttlBox {
+  margin: 0 0 40px;
+  line-height: 1.7;
+}
+.consultMain .messageSection .ttlBox .ttl {
+  font-size: 34px;
+  font-weight: bold;
+}
+.consultMain .messageSection .ttlBox .ttl p {
+  display: inline;
+}
+.consultMain .messageSection .ttlBox .ttl .marker {
+  background: linear-gradient(transparent 60%, #373f6c 60%);
+}
+.consultMain .messageSection .ttlBox .em {
+  font-size: 30px;
+  color: #d4af37;
+}
+.consultMain .messageSection .txt p + p {
+  margin: 30px 0 0;
+}
+.consultMain .businessSection {
+  padding: 100px 0;
+}
+.consultMain .businessSection .secContainer {
+  position: relative;
+}
+.consultMain .businessSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.consultMain .businessSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.consultMain .businessSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox {
+  padding: 20px 0 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .txt {
+  letter-spacing: 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.consultMain .businessSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .consultMain .businessSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .consultMain .businessSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .consultMain .businessSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .consultMain .businessSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_01.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .consultMain .businessSection .secContainer:nth-child(odd) .secPanel {
+    flex-direction: row-reverse;
+  }
+  .consultMain .businessSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_02.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .consultMain .businessSection .secContainer:nth-child(even) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.consultMain .reasonSection {
+  padding: 100px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_reason_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.consultMain .reasonSection .listBox .ul .li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid #b7cbcf;
+  background: #ffffff;
+}
+.consultMain .reasonSection .listBox .ul .num {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+  border-radius: 50%;
+  background: #1a214c;
+}
+.consultMain .reasonSection .listBox .ul .dl .dt {
+  margin: 0 0 30px;
+  font-size: 22px;
+}
+@media (min-width: 1025px) {
+  .consultMain .reasonSection .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -70px;
+  }
+  .consultMain .reasonSection .listBox .ul .li {
+    width: calc(33.3333333333% - 70px);
+    min-height: 340px;
+    margin: 50px 0 0 70px;
+  }
+}
+.consultMain .contentSection {
+  padding: 100px 0;
+}
+.consultMain .contentSection .section {
+  position: relative;
+  padding: 60px 20px;
+  border: 1px solid #aec5c9;
+}
+.consultMain .contentSection .section .secTtl {
+  max-width: 320px;
+  margin: 0 auto 30px;
+}
+.consultMain .contentSection .section .secTtl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+.consultMain .contentSection .section .txt {
+  text-align: center;
+}
+.consultMain .contentSection .section + .section {
+  margin: 60px 0 0;
+}
+.consultMain .caseSection {
+  padding: 100px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_case_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.consultMain .caseSection .secPanelList + .secPanelList {
+  margin: 30px 0 0;
+}
+.consultMain .caseSection .secPanel {
+  padding: 30px 40px;
+  background: #ffffff;
+}
+.consultMain .caseSection .secPanel .ttlBox {
+  margin: 0 0 25px;
+  padding: 0 20px;
+  border: 1px solid #aec5c9;
+  background: #dfe9eb;
+}
+.consultMain .caseSection .secPanel .ttlBox .ttl {
+  padding: 10px 0 10px 40px;
+  font-size: 24px;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_case_tti_iocn.png) left center no-repeat;
+  background-size: 30px auto;
+}
+.consultMain .caseSection .secPanel .cate {
+  margin: 0 0 20px;
+}
+.consultMain .caseSection .secPanel .cate p {
+  display: inline-block;
+  min-width: 200px;
+  padding: 2px 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #313860;
+}
+.consultMain .caseSection .secPanel .dl {
+  margin: 20px 0;
+  padding: 20px 40px;
+  border: 1px solid #aec5c9;
+  background: #f4f7f8;
+}
+.consultMain .caseSection .secPanel .dl .dt {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.consultMain .caseSection .secPanel .arrow {
+  width: 80px;
+  margin: 0 auto 20px;
+}
+.consultMain .caseSection .secPanel + .secPanel {
+  margin: 30px 0 0;
+}
+.consultMain .priceSection {
+  padding: 100px 0;
+}
+.consultMain .priceSection .section + .section {
+  margin: 60px 0 0;
+}
+.consultMain .priceSection .section .secTtl {
+  max-width: 320px;
+  margin: 0 auto 30px;
+}
+.consultMain .priceSection .section .txt {
+  text-align: center;
+}
+.consultMain .priceSection .priceList {
+  max-width: 1000px;
+  margin: 0 auto;
+  letter-spacing: 0;
+}
+.consultMain .priceSection .priceList .ul .li {
+  padding: 15px 20px 15px 60px;
+  border-bottom: 1px dashed #0e0e0e;
+}
+@media (min-width: 1025px) {
+  .consultMain .priceSection .priceList .ul .li {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.consultMain .faqSection {
+  padding: 60px 0 120px;
+}
+.consultMain .faqSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.consultMain .faqSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.consultMain .faqSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.consultMain .faqSection .secBox .ttlBox {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.consultMain .faqSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.consultMain .faqSection .secBox .txtBox {
+  padding: 10px 50px;
+  letter-spacing: 0;
+}
+.consultMain .faqSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	stone
+///////////////////////////////////////////////////////////*/
+.stoneMain .pageKvContainer .pageKvPanel {
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/stone_kv.png) no-repeat;
+  background-size: cover;
+}
+.stoneMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.stoneMain .topSection {
+  padding: 60px 0 100px;
+}
+.stoneMain .topSection .secContainer {
+  position: relative;
+}
+.stoneMain .topSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.stoneMain .topSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.stoneMain .topSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox {
+  padding: 20px 0 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .txt {
+  letter-spacing: 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.stoneMain .topSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .stoneMain .topSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stoneMain .topSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .stoneMain .topSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .stoneMain .topSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_01.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .stoneMain .topSection .secContainer:nth-child(odd) .secPanel {
+    flex-direction: row-reverse;
+  }
+  .stoneMain .topSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_02.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .stoneMain .topSection .secContainer:nth-child(even) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.stoneMain .commitmentSection {
+  padding: 100px 0;
+  color: #ffffff;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/top_message_blue.png) no-repeat;
+  background-size: cover;
+}
+.stoneMain .commitmentSection .listBox {
+  text-align: center;
+}
+.stoneMain .commitmentSection .listBox .ul .li .dl {
+  margin: 20px 0 0;
+}
+.stoneMain .commitmentSection .listBox .ul .li .dl .dt {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.stoneMain .commitmentSection .listBox .ul .li .dl .dd {
+  line-height: 2;
+  letter-spacing: 0;
+}
+@media (min-width: 1025px) {
+  .stoneMain .commitmentSection .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stoneMain .commitmentSection .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+.stoneMain .commitmentSection .btnContact {
+  max-width: 280px;
+  margin: 60px auto 0;
+}
+.stoneMain .commitmentSection .btnContact a {
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background: #d4af37;
+}
+.stoneMain .commitmentSection .btnContact a p {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  letter-spacing: 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+.stoneMain .mainSection {
+  padding: 100px 0;
+}
+.stoneMain .mainSection .secContainer {
+  position: relative;
+}
+.stoneMain .mainSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.stoneMain .mainSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.stoneMain .mainSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 30px;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .txt {
+  letter-spacing: 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.stoneMain .mainSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 140px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .stoneMain .mainSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stoneMain .mainSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .stoneMain .mainSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .stoneMain .mainSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_reason_bg_01.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .stoneMain .mainSection .secContainer:nth-child(odd) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .stoneMain .mainSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/sales_reason_bg_02.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .stoneMain .mainSection .secContainer:nth-child(even) .secPanel {
+    flex-direction: row-reverse;
+  }
+}
+.stoneMain .dealSection {
+  padding: 100px 0;
+}
+.stoneMain .dealSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.stoneMain .dealSection .listBox .ul .li .txt {
+  padding: 15px 20px 0;
+}
+@media (min-width: 1025px) {
+  .stoneMain .dealSection .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -25px;
+  }
+  .stoneMain .dealSection .listBox .ul .li {
+    width: calc(33.3333333333% - 25px);
+    margin: 50px 0 0 25px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shower
+///////////////////////////////////////////////////////////*/
+.showerMain .pageKvContainer .pageKvPanel {
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_kv.png) no-repeat;
+  background-size: cover;
+}
+.showerMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.showerMain .topSection {
+  padding: 60px 0;
+}
+.showerMain .topSection .secContainer {
+  position: relative;
+}
+.showerMain .topSection .secContainer + .secContainer {
+  margin: 40px 0 0;
+}
+.showerMain .topSection .secContainer .secPanel {
+  padding: 30px 0 60px;
+}
+.showerMain .topSection .secContainer .secPanel .photoBox .photo {
+  width: 100%;
+  max-width: 500px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox {
+  padding: 20px 0 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox {
+  margin: 0 0 20px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox {
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason {
+  font-size: 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason p {
+  display: inline;
+  font-size: 12px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .reason .em {
+  color: #b78c00;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .numBox .num {
+  font-size: 30px;
+  line-height: 1;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl p {
+  font-size: 30px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .ttl .em {
+  color: #bf0000;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .ttlBox .sub {
+  font-size: 20px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .txt {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .more {
+  margin: 30px 0 0;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .more a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .list {
+  margin: 20px 0 10px;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .list .ul .li {
+  display: inline-block;
+  min-width: 90px;
+  margin: 0 2px 5px 0;
+  padding: 2px 15px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+  border-radius: 4px;
+  background: #1c234d;
+}
+.showerMain .topSection .secContainer .secPanel .txtBox .arrowTxt p {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  color: #d00000;
+  letter-spacing: 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_top_arrow.png) left center no-repeat;
+}
+@media (min-width: 1025px) {
+  .showerMain .topSection .secContainer .secPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showerMain .topSection .secContainer .secPanel .photoBox {
+    width: 50%;
+  }
+  .showerMain .topSection .secContainer .secPanel .txtBox {
+    width: 45%;
+  }
+  .showerMain .topSection .secContainer:nth-child(odd) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_01.png) right center no-repeat;
+    background-size: auto 430px;
+  }
+  .showerMain .topSection .secContainer:nth-child(odd) .secPanel {
+    flex-direction: row-reverse;
+  }
+  .showerMain .topSection .secContainer:nth-child(even) {
+    background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/consult_business_bg_02.png) left center no-repeat;
+    background-size: auto 430px;
+  }
+  .showerMain .topSection .secContainer:nth-child(even) .secPanel .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.showerMain .useSection {
+  padding: 100px 0;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.showerMain .useSection .topBox {
+  margin: 0 0 80px;
+}
+.showerMain .useSection .topBox .topTtl {
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+.showerMain .useSection .topBox .ttl {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.showerMain .useSection .topTxt {
+  margin: 0 0 40px;
+}
+.showerMain .useSection .listBox {
+  text-align: center;
+}
+.showerMain .useSection .listBox .ul .li .dl {
+  margin: 20px 0 0;
+}
+.showerMain .useSection .listBox .ul .li .dl .dt {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.showerMain .useSection .listBox .ul .li .dl .dd {
+  line-height: 2;
+  letter-spacing: 0;
+}
+@media (min-width: 1025px) {
+  .showerMain .useSection .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showerMain .useSection .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+.showerMain .recommendSection {
+  padding: 100px 0;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.showerMain .recommendSection .section {
+  position: relative;
+  padding: 40px 20px;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+}
+.showerMain .recommendSection .txtBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .showerMain .recommendSection .txtBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showerMain .recommendSection .txtBox .txt {
+    width: 48%;
+  }
+}
+.showerMain .pointSection {
+  padding: 100px 0;
+}
+.showerMain .pointSection .secBoxList {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.showerMain .pointSection .secBox {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #aec5c9;
+}
+.showerMain .pointSection .secBox + .secBox {
+  margin: 20px 0 0;
+}
+.showerMain .pointSection .secBox .ttl {
+  max-width: 330px;
+  letter-spacing: 0;
+}
+.showerMain .pointSection .secBox .ttl p {
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #363c64;
+}
+@media (min-width: 1025px) {
+  .showerMain .pointSection {
+    padding-left: 10%;
+  }
+  .showerMain .pointSection .secBox .ttl {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    bottom: 0;
+    width: 28%;
+    height: 44px;
+    margin: auto 0;
+  }
+  .showerMain .pointSection .secBox .txt {
+    padding: 0 0 0 250px;
+  }
+}
+.showerMain .multiSection {
+  padding: 100px 0;
+}
+.showerMain .multiSection .topTxt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.showerMain .multiSection .secBox .txtBox .dl {
+  padding: 20px;
+  border: 1px solid #aec5c9;
+}
+.showerMain .multiSection .secBox .txtBox .dl + .dl {
+  margin: 10px 0 0;
+}
+.showerMain .multiSection .secBox .txtBox .dl .dt {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+@media (min-width: 1025px) {
+  .showerMain .multiSection .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .showerMain .multiSection .secBox .photo {
+    width: 48%;
+  }
+  .showerMain .multiSection .secBox .txtBox {
+    width: 48%;
+  }
+}
+.showerMain .multiSection .section {
+  max-width: 500px;
+  margin: 60px auto 0;
+}
+.showerMain .multiSection .section .ttl {
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+.showerMain .voiceSection {
+  padding: 100px 0;
+}
+.showerMain .voiceSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.showerMain .voiceSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.showerMain .voiceSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.showerMain .voiceSection .secBox .ttlBox {
+  display: flex;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.showerMain .voiceSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.showerMain .voiceSection .secBox .nameBox {
+  padding: 5px 20px;
+  background: #deecee;
+}
+.showerMain .voiceSection .secBox .txtBox {
+  padding: 15px 20px;
+  letter-spacing: 0;
+}
+.showerMain .voiceSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+.showerMain .faqSection {
+  padding: 100px 0;
+}
+.showerMain .faqSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.showerMain .faqSection .secBox {
+  border: 1px solid #aec5c9;
+}
+.showerMain .faqSection .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.showerMain .faqSection .secBox .ttlBox {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.showerMain .faqSection .secBox .ttlBox .icon {
+  margin: 0 10px 0 0;
+  color: #d4af37;
+}
+.showerMain .faqSection .secBox .txtBox {
+  padding: 10px 50px;
+  letter-spacing: 0;
+}
+.showerMain .faqSection .secBox .txtBox p + p {
+  margin: 20px 0 0;
+}
+.showerMain .trySection {
+  padding: 100px 0;
+}
+.showerMain .trySection .topTxt {
+  margin: 0 0 50px;
+  text-align: center;
+}
+.showerMain .trySection .section {
+  position: relative;
+  padding: 60px 40px;
+  border: 1px solid #aec5c9;
+}
+.showerMain .trySection .section .secTtl {
+  max-width: 320px;
+  margin: 0 auto 30px;
+}
+.showerMain .trySection .section .secTtl {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+}
+.showerMain .trySection .caseList .dl {
+  padding: 15px 0;
+  border-bottom: 1px dashed #0e0e0e;
+}
+.showerMain .trySection .caseList .dl .dt {
+  font-size: 24px;
+}
+.showerMain .trySection .caseList .dl .dt .em {
+  display: inline-block;
+  color: #bf0000;
+}
+.showerMain .trySection .caseList .dl .dt .span {
+  display: inline-block;
+}
+.showerMain .trySection .caseList .dl .dd {
+  padding: 5px 0 0;
+}
+.showerMain .trySection .aside {
+  margin: 10px 0 0;
+  color: #bf0000;
+  letter-spacing: 0;
+}
+.showerMain .otherSection {
+  padding: 100px 0;
+  text-align: center;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/shower_sec_bg_01.png) no-repeat;
+  background-size: cover;
+}
+.showerMain .otherSection .listBox {
+  text-align: center;
+}
+.showerMain .otherSection .listBox .ul .li .dl {
+  margin: 20px 0 0;
+}
+.showerMain .otherSection .listBox .ul .li .dl .dt {
+  margin: 0 0 10px;
+}
+.showerMain .otherSection .listBox .ul .li .dl .dd .more {
+  max-width: 260px;
+  margin: 30px auto 0;
+}
+.showerMain .otherSection .listBox .ul .li .dl .dd .more a {
+  display: block;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .showerMain .otherSection .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showerMain .otherSection .listBox .ul .li {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	propertySearch
+///////////////////////////////////////////////////////////*/
+.propertySearchMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.propertySearchMain .topSection {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+.propertySearchMain .searchSection {
+  padding: 0 0 120px;
+}
+.propertySearchMain .searchSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.propertySearchMain .searchSection .searchPanel .search-title-wrapper {
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #1c234d;
+}
+.propertySearchMain .searchSection .searchPanel .search-area-wrapper {
+  padding: 20px;
+  background: #edeef1;
+}
+.propertySearchMain .searchSection .searchPanel .search-contents-wrapper {
+  margin: -10px 0 0;
+}
+.propertySearchMain .searchSection .searchPanel .search-contents-wrapper > label {
+  display: inline-block;
+  margin: 10px 20px 0 0;
+}
+.propertySearchMain .searchSection .searchPanel .btnItems {
+  max-width: 180px;
+  margin: 40px auto 0;
+}
+.propertySearchMain .searchSection .searchPanel .search-clear {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #c0c0c0;
+  background: #c0c0c0;
+}
+.propertySearchMain .searchSection .searchPanel .search-submit {
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #1c234d;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/property_search_iocn.png) left 30px center no-repeat #1c234d;
+}
+@media (min-width: 1025px) {
+  .propertySearchMain .searchSection .searchPanel .webgene-search-form-block {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+  .propertySearchMain .searchSection .searchPanel .search-title-wrapper {
+    display: table-cell;
+    width: 20%;
+    height: 100px;
+    vertical-align: middle;
+  }
+  .propertySearchMain .searchSection .searchPanel .search-area-wrapper {
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+  }
+}
+.propertySearchMain .infoSection {
+  padding: 0 0 120px;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item {
+  padding: 20px;
+  letter-spacing: 0;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .photo {
+  position: relative;
+  margin: 0 0 20px;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .cate p {
+  display: inline-block;
+  min-width: 90px;
+  padding: 1px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #1c234d;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .txt01 {
+  margin: 10px 0 0;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .txt01 p + p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .priceBox {
+  margin: 10px 0 0;
+  padding: 0 0 3px;
+  border-bottom: 1px solid #aec5c9;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .priceBox em {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  color: #d37f13;
+  line-height: 1;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .priceBox span {
+  display: inline-block;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .txt02 {
+  margin: 10px 0 0;
+}
+.propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item a {
+  display: block;
+  width: 140px;
+  margin: 20px auto 0;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}
+@media (min-width: 1025px) {
+  .propertySearchMain .infoSection .searchListPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item {
+    width: calc(25% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .photo {
+    height: 160px;
+  }
+  .propertySearchMain .infoSection .searchListPanel .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.propertySearchMain .infoSection .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.propertySearchMain .infoSection .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.propertySearchMain .infoSection .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.propertySearchMain .infoSection .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  background: #cdcdcd;
+}
+.propertySearchMain .infoSection .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.propertySearchMain .infoSection .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.propertySearchMain .infoSection .webgene-pagination ul .selected a {
+  background: #0f0b09;
+}
+@media (min-width: 1025px) {
+  .propertySearchMain .infoSection .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .propertySearchMain .infoSection .webgene-pagination ul .prev {
+    float: left;
+  }
+  .propertySearchMain .infoSection .webgene-pagination ul .next {
+    float: right;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	property
+///////////////////////////////////////////////////////////*/
+.propertyMain .topSection {
+  padding: 60px 0;
+  text-align: center;
+}
+.propertyMain .propertySection {
+  padding: 0 0 120px;
+}
+.propertyMain .propertySection .propertyContainer {
+  padding: 60px;
+  border: 1px solid #aec5c9;
+}
+.propertyMain .propertySection .webgene-header {
+  display: none;
+}
+.propertyMain .propertySection .titlePanel {
+  margin: 0 0 30px;
+}
+.propertyMain .propertySection .titlePanel ul li {
+  display: inline-block;
+  min-width: 90px;
+  padding: 0 15px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+}
+.propertyMain .propertySection .titlePanel ul .cate01 {
+  background: #1c234d;
+}
+.propertyMain .propertySection .titlePanel ul .cate02 {
+  background: #a2a5b6;
+}
+.propertyMain .propertySection .titlePanel .title {
+  margin: 20px 0 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .propertyMain .propertySection .topPanel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .propertyMain .propertySection .topPanel .photoBox {
+    width: 45%;
+  }
+  .propertyMain .propertySection .topPanel .txtBox {
+    width: 50%;
+  }
+}
+.propertyMain .propertySection .photoPanel {
+  margin: 30px 0 0;
+}
+.propertyMain .propertySection .photoPanel ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -20px;
+}
+.propertyMain .propertySection .photoPanel ul li {
+  width: calc(25% - 20px);
+  margin: 0 0 0 20px;
+}
+.propertyMain .propertySection .detailPanel {
+  margin: 30px 0 0;
+}
+.propertyMain .propertySection .infoBox {
+  border-top: 1px solid #aec5c9;
+}
+.propertyMain .propertySection .infoBox dl {
+  padding: 10px 0;
+  letter-spacing: 0;
+  border-bottom: 1px solid #aec5c9;
+}
+.propertyMain .propertySection .infoBox dl dt {
+  padding: 15px 10px;
+  text-align: center;
+  background: #e5e5e5;
+}
+.propertyMain .propertySection .infoBox dl dd {
+  padding: 15px 40px;
+}
+.propertyMain .propertySection .infoBox dl dd em {
+  font-size: 26px;
+  color: #d37f13;
+}
+@media (min-width: 1025px) {
+  .propertyMain .propertySection .infoBox dl {
+    display: flex;
+  }
+  .propertyMain .propertySection .infoBox dl dt {
+    width: 40%;
+    max-width: 215px;
+  }
+}
+.propertyMain .propertySection .btnBack {
+  width: 160px;
+  margin: 60px auto 0;
+}
+.propertyMain .propertySection .btnBack a {
+  display: block;
+  padding: 10px 0 10px 60px;
+  letter-spacing: 0.1em;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/btn_back_icon.png) left center no-repeat;
+  background-size: 50px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .balloonTtl {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+.contactMain .topSection {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+.contactMain .topSection .topTxt {
+  margin: 0 0 30px;
+}
+.contactMain .topSection .telPanel {
+  padding: 30px 20px;
+  color: #ffffff;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/contact_tel_panel_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .topSection .telPanel .ttl {
+  margin: 0 0 20px;
+  font-size: 30px;
+  color: #d4af37;
+}
+.contactMain .topSection .telPanel .tel > * {
+  vertical-align: middle;
+}
+.contactMain .topSection .telPanel .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 34px;
+  color: #ffffff;
+  background: url(https://total-consultant-japan.co.jp/system_panel/uploads/images/contact_tel_icon.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.contactMain .topSection .telPanel .tel > p {
+  display: inline-block;
+  padding: 0 15px;
+  background: #32395f;
+}
+.contactMain .topSection .telPanel .txt {
+  display: inline-block;
+  margin: 10px 0 0;
+  line-height: 1.6;
+  text-align: left;
+}
+.contactMain .secContact {
+  padding: 60px 0 120px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 10px 15px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #282931;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #d4af37;
+  background: #d4af37;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #1c234d;
+  border-right: 3px solid #1c234d;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #1c234d;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 240px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #aec5c9;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+  letter-spacing: 0;
+}
+.formMain .contactForm .formBox {
+  border-top: 1px solid #aec5c9;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid #aec5c9;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 20px 0;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  padding: 15px 20px 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #1c234d;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 370px);
+  padding: 5px 0;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #aec5c9;
+  background: #f6f6f6;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  text-align: center;
+}
+.complete .btnMore a {
+  display: inline-block;
+  min-width: 140px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  background: #d4af37;
+}

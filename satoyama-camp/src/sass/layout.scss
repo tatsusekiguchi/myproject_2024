@@ -1,0 +1,2658 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    position: relative;
+    padding: 0 0 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 500px;
+      height: 160px;
+      z-index: 1;
+      background: url("../image/top/kv_bg_01.png") left bottom no-repeat;
+      background-size: 100% auto;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      bottom: 0;
+      width: 400px;
+      height: 160px;
+      z-index: 1;
+      background: url("../image/top/kv_bg_02.png") left bottom no-repeat;
+      background-size: 100% auto;
+    }
+    .topKv {
+      position: relative;
+      height: 800px;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url("../image/top/kv_01.png") center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url("../image/top/kv_02.png") center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url("../image/top/kv_03.png") center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvContents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    .kvTitlePanel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      z-index: 1;
+      .kvTitle {
+        padding: 30px 20px;
+        h1 {
+          font-size: 44px;
+          font-weight: bold;
+        }
+      }
+    }
+    // .kvBnr {
+    //   position: fixed;
+    //   top: 150px;
+    //   right: 0;
+    //   width: 160px;
+    //   z-index: 99;
+    //   a {
+    //     display: block;
+    //   }
+    // }
+  }
+  .topLogoBox {
+    display: none;
+  }
+  .sec01 {
+    padding: 40px 0 80px;
+    .secPanel {
+      .secBox {
+        position: relative;
+        .txtBox {
+          .ttl {
+            margin: 0 0 20px;
+            font-size: clamp(20px, 2vw, 40px);
+            font-weight: bold;
+            color: #6c4123;
+            em {
+              color: #d7760c;
+            }
+          }
+          .txt {
+            margin: 0 0 30px;
+          }
+          .btnReserve {
+            max-width: 600px;
+            a {
+              display: block;
+            }
+          }
+        }
+        .accessMapBox {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          z-index: 1;
+          .accessBtn {
+            position: relative;
+            z-index: -1;
+            a {
+              display: block;
+            }
+          }
+          .map {
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          .txtBox {
+            .ttl {
+              width: 62%;
+              max-width: 1100px;
+              padding: 0 0 0 60px;
+            }
+            .txt {
+              width: 47%;
+              max-width: 660px;
+              padding: 0 0 0 60px;
+            }
+            .btnReserve {
+              width: 40%;
+            }
+          }
+          .accessMapBox {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            .accessBtn {
+              position: absolute;
+              left: 60px;
+              bottom: 60px;
+              width: 150px;
+            }
+            .map {
+              width: 350px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        .secBox {
+          .accessMapBox {
+            width: 700px;
+            .accessBtn {
+              position: absolute;
+              left: 20px;
+              bottom: 60px;
+              width: 250px;
+            }
+            .map {
+              width: 550px;
+            }
+          }
+        }
+      }
+    }
+    .weatherPanel {
+      max-width: 1000px;
+      margin: 80px auto 0;
+    }
+  }
+  .sec02 {
+    padding: 60px 0;
+    .pageSecTtlBox {
+      h2 {
+        padding-left: 150px;
+        padding-right: 150px;
+        background: url("../image/top/blog_ttl_bg_01.png") left bottom no-repeat,
+          url("../image/top/blog_ttl_bg_02.png") right bottom no-repeat;
+        background-size: 120px auto, 120px auto;
+      }
+    }
+    .postListPanel {
+      margin: -20px 0 40px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 0 -15px;
+        li {
+          width: calc((100% / 4) - 15px);
+          margin: 0 0 0 15px;
+          a {
+            display: block;
+            min-height: 350px;
+            padding: 30px 30px 20px;
+            color: #f3e7e0;
+            border-radius: 10px;
+            background: url("../image/top/blog_post_bg.png") center no-repeat;
+            background-size: cover;
+          }
+          .photo {
+            position: relative;
+            height: 0;
+            margin: 0 0 10px;
+            padding: 0 0 66%;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            img {
+              @include cover-image;
+              border-radius: 10px;
+            }
+          }
+          .infoBox {
+            max-width: 260px;
+            margin: 0 auto;
+            text-align: left;
+          }
+          .info {
+            margin: 0 0 10px;
+            .time {
+              display: inline-block;
+              margin: 0 10px 0 0;
+              color: #d3a285;
+            }
+            .cate {
+              display: inline-block;
+              padding: 0 5px;
+              text-align: center;
+              border-radius: 4px;
+              background: #5c3219;
+            }
+          }
+          .ttl {
+            text-decoration: underline;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* 2行まで表示 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal; /* 必要に応じて改行を許可 */
+          }
+        }
+      }
+    }
+    .bnrList {
+      margin: 100px 0 0;
+      ul {
+        li {
+          a {
+            display: block;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -30px 0 0;
+          li {
+            width: calc((100% / 2) - 20px);
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 60px 0;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 35px;
+        padding-left: 110px;
+        padding-right: 160px;
+        background: url("../image/top/facility_ttl_bg_01.png") left top
+            no-repeat,
+          url("../image/top/facility_ttl_bg_02.png") right bottom no-repeat;
+        background-size: 80px auto, 150px auto;
+      }
+    }
+    .listContainer {
+      margin: -20px 0 0;
+      padding: 80px 0 0;
+      background: url("../image/top/facility_bg_01.png") center bottom no-repeat
+        #ffffff;
+      background-size: 100% auto;
+      .listWrap {
+        padding: 0 0 40px;
+        background: url("../image/top/facility_bg_02.png") right 10% bottom 20%
+          no-repeat;
+        background-size: 55% auto;
+      }
+      .listBox {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -30px;
+          .ttl {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+          }
+          li {
+            position: relative;
+            width: calc((100% / 4) - 30px);
+            margin: 60px 0 0 15px;
+            .photo {
+              position: relative;
+              height: 0;
+              margin: 0 0 10px;
+              padding: 0 0 66%;
+              border-radius: 10px;
+              border: 2px solid #ffffff;
+              box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+              img {
+                @include cover-image;
+              }
+            }
+            .txt {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 60px 0 0;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 30px;
+        padding-left: 150px;
+        padding-right: 200px;
+        background: url("../image/top/schedule_ttl_bg_01.png") left bottom
+            no-repeat,
+          url("../image/top/schedule_ttl_bg_02.png") right center no-repeat;
+        background-size: 130px auto, 180px auto;
+      }
+    }
+    .calendarContainer {
+      padding: 0 0 100px;
+    }
+    .mapPanel {
+      position: relative;
+      .accessBox {
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        width: 100%;
+        max-width: 350px;
+        z-index: 2;
+        dl {
+          border-radius: 10px;
+          dt {
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 10px 10px 0 0;
+            background: #6c4123;
+          }
+          dd {
+            padding: 20px 30px;
+            border-radius: 0 0 10px 10px;
+            background: #ffffff;
+            .txt {
+              margin: 0 0 10px;
+            }
+            a {
+              display: block;
+              max-width: 280px;
+              padding: 10px;
+              text-align: center;
+              color: #ffffff;
+              border-radius: 4px;
+              background: #6c4123;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about {
+  .pageKvPanel {
+    background: url("../image/about/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    padding: 80px 0 100px;
+    .secPanel {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 40px 0;
+      background: url("../image/about/main_bg_02.png") right top no-repeat;
+      background-size: 55%;
+      .ttlBox {
+        font-size: 40px;
+        font-weight: bold;
+        color: #6c4123;
+        em {
+          color: #d7760c;
+        }
+      }
+    }
+    .secBox {
+      margin: 80px 0 0;
+      .photo {
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 10px;
+        }
+      }
+      .txtBox {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 42%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 0 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 35px;
+        padding-left: 190px;
+        padding-right: 190px;
+        background: url("../image/about/sec01_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/about/sec01_ttl_bg_02.png") right center no-repeat;
+        background-size: 180px auto, 180px auto;
+      }
+    }
+    .listContainer {
+      margin: -20px 0 0;
+      padding: 80px 0 0;
+      background: url("../image/about/main_bg_01.png") center bottom no-repeat
+        #ffffff;
+      background-size: 100% auto;
+      .listWrap {
+        padding: 0 0 300px;
+        background: url("../image/about/main_bg_02.png") right 10% bottom 2%
+          no-repeat;
+        background-size: 55% auto;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 80px 0 0;
+      }
+      .photo {
+        border: 2px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      }
+      .txtBox {
+        padding: 20px 30px 0;
+        .ttl {
+          margin: 0 0 30px;
+          font-size: 40px;
+          color: #6c4123;
+        }
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+      &:nth-child(odd) {
+        .photo,
+        img {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+      &:nth-child(even) {
+        .photo,
+        img {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 42%;
+        }
+        .txtBox {
+          width: 55%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+#price {
+  padding: 0 0 150px;
+  .pageKvPanel {
+    background: url("../image/price/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .topContainer {
+    padding: 60px 0 100px;
+    .pagingList {
+      ul {
+        display: flex;
+        li {
+          width: 25%;
+          padding: 0 0 10px;
+          background: url("../image/price/price_paging_arrow.png") center bottom
+            no-repeat;
+          background-size: 8px auto;
+
+          + li {
+            border-left: 1px solid #d2cbbc;
+          }
+          a {
+            display: block;
+            padding: 120px 10px 10px;
+            text-align: center;
+          }
+          &:nth-child(1) {
+            a {
+              background: url("../image/price/price_paging_img_01.png") center
+                top no-repeat;
+              background-size: 120px auto;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background: url("../image/price/price_paging_img_02.png") center
+                top no-repeat;
+              background-size: 120px auto;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background: url("../image/price/price_paging_img_03.png") center
+                top no-repeat;
+              background-size: 120px auto;
+            }
+          }
+          &:nth-child(4) {
+            a {
+              background: url("../image/price/price_paging_img_04.png") center
+                top no-repeat;
+              background-size: 120px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section {
+    + .section {
+      margin: 120px 0 0;
+    }
+    .secContainer {
+      margin: -20px 0 0;
+      padding: 100px 20px;
+      background: #ffffff;
+      .cntInner {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+    }
+    .secPanel {
+      + .secPanel {
+        margin: 120px 0 0;
+      }
+      .pTtl {
+        position: relative;
+        margin: 0 0 40px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto 0;
+          border-top: 2px dashed #6c4123;
+        }
+        h3 {
+          position: relative;
+          display: inline-block;
+          padding: 0 40px 0 0;
+          font-size: 30px;
+          color: #6c4123;
+          background: #ffffff;
+        }
+      }
+      .pTtlBox {
+        margin: 0 0 20px;
+        .pTtl {
+          margin: 0;
+        }
+      }
+      .subTtl {
+        margin: 0 0 20px;
+        padding: 0 0 5px;
+        font-size: 18px;
+        border-bottom: 1px solid #23150c;
+        span {
+          display: inline-block;
+          &:nth-child(1) {
+            margin: 0 20px 0 0;
+          }
+          + span {
+            font-size: 14px;
+          }
+        }
+        small {
+          display: inline-block;
+          font-size: 12px;
+        }
+      }
+      aside {
+        margin: 5px 0 0;
+        font-size: 13px;
+      }
+    }
+  }
+  .sec01 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 0;
+        padding-left: 190px;
+        padding-right: 170px;
+        background: url("../image/price/sec01_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/price/sec01_ttl_bg_02.png") right center no-repeat;
+        background-size: 150px auto, 160px auto;
+      }
+    }
+    .topPriceBox {
+      max-width: 700px;
+      table {
+        width: 100%;
+        border: 1px solid #797470;
+        tr {
+          + tr {
+            border-top: 1px solid #797470;
+          }
+          th {
+            width: 35%;
+            padding: 20px 40px;
+            vertical-align: middle;
+            background: #f2ede3;
+          }
+          td {
+            padding: 20px 80px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .topBox {
+      margin: 0 0 60px;
+      .slickSlide {
+        .slider {
+          .li {
+            > div {
+              overflow: hidden;
+              position: relative;
+              padding: 0 0 65%;
+            }
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 5px;
+        }
+        .slideNav {
+          max-width: 480px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .slick-prev {
+          background: url("../image/common/slider_prev.png") center no-repeat;
+          background-size: 8px auto;
+        }
+        .slick-next {
+          background: url("../image/common/slider_next.png") center no-repeat;
+          background-size: 8px auto;
+        }
+      }
+      .txtBox {
+        .detailBox {
+          margin: 0 0 20px;
+          table {
+            width: 100%;
+            border: 1px solid #797470;
+            tr {
+              th {
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #797470;
+                background: #f2ede3;
+                &:nth-child(1) {
+                  width: 200px;
+                  border-right: 1px solid #797470;
+                }
+              }
+              td {
+                padding: 10px;
+                text-align: center;
+                vertical-align: middle;
+                &:nth-child(1) {
+                  border-right: 1px solid #797470;
+                }
+                + td {
+                  border-bottom: 1px solid #797470;
+                }
+              }
+            }
+          }
+          &.col3 {
+            table {
+              th {
+                &:nth-child(1) {
+                  width: 80px;
+                }
+                &:nth-child(2) {
+                  border-right: 1px solid #797470;
+                }
+              }
+              td {
+                + td {
+                  width: 42%;
+                  text-align: left;
+                  vertical-align: top;
+                }
+                &:nth-child(2) {
+                  border-right: 1px solid #797470;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .topBox {
+        display: flex;
+        justify-content: space-between;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 48%;
+        }
+      }
+    }
+    .listBox {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        dl {
+          text-align: center;
+          dt {
+            padding: 10px 5px;
+            background: #f2ede3;
+          }
+          dd {
+            padding: 10px 5px;
+          }
+        }
+      }
+      &.col2 {
+        border: 1px solid #797470;
+        li {
+          width: calc(100% / 2);
+          + li {
+            border-left: 1px solid #797470;
+          }
+        }
+        dl {
+          dt {
+            border-bottom: 1px solid #797470;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        &.col3 {
+          border: 1px solid #797470;
+          li {
+            width: calc(100% / 3);
+            + li {
+              border-left: 1px solid #797470;
+            }
+          }
+          dl {
+            dt {
+              border-bottom: 1px solid #797470;
+            }
+          }
+        }
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        .multiTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 10px;
+          font-size: 20px;
+          line-height: 1.1;
+          border-left: 3px solid #e5dfd4;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .multiBoxList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -40px 0 0;
+        .multiBox {
+          margin: 40px 0 0;
+          &:nth-child(odd) {
+            width: 45%;
+          }
+          &:nth-child(even) {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .table01 {
+      table {
+        width: 100%;
+        border: 1px solid #797470;
+        tr {
+          + tr {
+            border-top: 1px solid #797470;
+          }
+          th {
+            width: 200px;
+            padding: 20px 40px;
+            vertical-align: middle;
+            border-right: 1px solid #797470;
+            background: #f2ede3;
+          }
+          td {
+            padding: 20px 80px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .itemList {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px 0 0 -10px;
+        li {
+          width: calc((100% / 6) - 10px);
+          margin: 10px 0 0 10px;
+          text-align: center;
+          p {
+            margin: 5px 0 0;
+            font-size: 13px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+    .floorPlan {
+      .img02 {
+        max-width: 330px;
+        margin: 10px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 0;
+        padding-left: 140px;
+        padding-right: 70px;
+        background: url("../image/price/sec02_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/price/sec02_ttl_bg_02.png") right center no-repeat;
+        background-size: 120px auto, 60px auto;
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        .multiTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 10px;
+          font-size: 20px;
+          line-height: 1.1;
+          border-left: 3px solid #e5dfd4;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .multiBoxList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -40px 0 0;
+        .multiBox {
+          margin: 40px 0 0;
+          &:nth-child(odd) {
+            width: 49%;
+          }
+          &:nth-child(even) {
+            width: 49%;
+          }
+        }
+      }
+    }
+    .listBox01 {
+      margin: 0 0 60px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px 0 0 -50px;
+        li {
+          width: calc((100% / 4) - 50px);
+          margin: 30px 0 0 50px;
+        }
+        dl {
+          margin: 10px 0 0;
+          dt {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #6c4123;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .listBox02 {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px 0 0 -30px;
+        li {
+          width: calc((100% / 2) - 30px);
+          margin: 30px 0 0 30px;
+        }
+      }
+    }
+    .innerBoxList {
+      .innerBox {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          li {
+            width: calc((100% / 2) - 30px);
+            margin: 30px 0 0 30px;
+          }
+          .txt {
+            margin: 5px 0 0;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+  .sec03,
+  .sec04,
+  .sec05,
+  .sec06,
+  .sec07,
+  .sec08 {
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 20px;
+        padding-left: 100px;
+        padding-right: 140px;
+        background: url("../image/price/sec03_ttl_bg_01.png") left top no-repeat,
+          url("../image/price/sec03_ttl_bg_02.png") right center no-repeat;
+        background-size: 70px auto, 120px auto;
+      }
+    }
+    .multiBoxList {
+      .multiBox {
+        .multiTtl {
+          margin: 0 0 20px;
+          padding: 0 0 0 10px;
+          font-size: 20px;
+          line-height: 1.1;
+          border-left: 3px solid #e5dfd4;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .multiBoxList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -40px 0 0;
+        .multiBox {
+          margin: 40px 0 0;
+          &:nth-child(odd) {
+            width: 49%;
+          }
+          &:nth-child(even) {
+            width: 49%;
+          }
+        }
+      }
+    }
+    .innerBoxList {
+      .innerBox {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          li {
+            width: calc((100% / 2) - 30px);
+            margin: 30px 0 0 30px;
+          }
+          .photo {
+            margin: 0 0 10px;
+          }
+          .txt {
+            margin: 10px 0 0;
+            line-height: 1.7;
+          }
+        }
+        .price {
+          table {
+            width: 100%;
+            border: 1px solid #797470;
+            tr {
+              + tr {
+                border-top: 1px solid #797470;
+              }
+              th {
+                width: 120px;
+                padding: 10px;
+                text-align: center;
+                vertical-align: middle;
+                border-right: 1px solid #797470;
+                background: #f2ede3;
+              }
+              td {
+                padding: 10px;
+                text-align: center;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .accordPanel {
+    .pTtl {
+      cursor: pointer;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	terms
+///////////////////////////////////////////////////////////*/
+#terms {
+  .pageKvPanel {
+    background: url("../image/terms/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 35px;
+        padding-left: 110px;
+        padding-right: 160px;
+        background: url("../image/terms/page_ttl_bg_01.png") left top no-repeat,
+          url("../image/terms/page_ttl_bg_02.png") right bottom no-repeat;
+        background-size: 80px auto, 150px auto;
+      }
+    }
+    .secContainer {
+      margin: -20px 0 0;
+      padding: 100px 20px;
+      background: #ffffff;
+      .cntInner {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+    }
+    .topTxt {
+      margin: 0 0 60px;
+    }
+    .secTtl {
+      position: relative;
+      margin: 0 0 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        margin: auto 0;
+        border-top: 2px dashed #6c4123;
+      }
+      h3 {
+        position: relative;
+        display: inline-block;
+        padding: 0 40px 0 0;
+        font-size: 30px;
+        color: #6c4123;
+        background: #ffffff;
+      }
+    }
+  }
+  .secPanelList {
+    .secPanel {
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #dfdbd4;
+      background: #fcf9f3;
+      + .secPanel {
+        margin: 20px 0 0;
+      }
+      .pTtl {
+        margin: 0 0 20px;
+        font-size: 24px;
+      }
+      .subTtl {
+        margin: 0 0 20px;
+        padding: 0 0 5px;
+        font-size: 20px;
+        border-bottom: 1px solid #23150c;
+        span {
+          display: inline-block;
+          &:nth-child(1) {
+            margin: 0 20px 0 0;
+          }
+          + span {
+            font-size: 14px;
+          }
+        }
+        small {
+          display: inline-block;
+          font-size: 12px;
+        }
+      }
+      aside {
+        margin: 5px 0 0;
+        font-size: 13px;
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .multiBoxList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -40px 0 0;
+      .multiBox {
+        width: 49%;
+        margin: 40px 0 0;
+      }
+    }
+  }
+  .cancelTtlBox {
+    margin: 0 0 40px;
+    .cancelTtl {
+      margin: 0 0 20px;
+      font-size: 24px;
+      color: #6c4123;
+    }
+  }
+  .guideTtl {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #6c4123;
+  }
+  .table01 {
+    table {
+      width: 100%;
+      border: 1px solid #797470;
+      tr {
+        + tr {
+          border-top: 1px solid #797470;
+        }
+        th {
+          width: 35%;
+          padding: 20px 40px;
+          vertical-align: middle;
+          background: #f2ede3;
+        }
+        td {
+          padding: 20px 80px;
+          vertical-align: middle;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+  .table02 {
+    table {
+      width: 100%;
+      border: 1px solid #797470;
+      tr {
+        + tr {
+          border-top: 1px solid #797470;
+        }
+        th {
+          width: 30%;
+          padding: 20px 40px;
+          vertical-align: middle;
+          background: #f2ede3;
+        }
+        td {
+          padding: 20px 40px;
+          vertical-align: middle;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+  .listBox {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      dl {
+        text-align: center;
+        dt {
+          padding: 10px 5px;
+          background: #f2ede3;
+        }
+        dd {
+          padding: 10px 5px;
+          background: #ffffff;
+        }
+      }
+    }
+    &.col2 {
+      border: 1px solid #797470;
+      li {
+        width: calc(100% / 2);
+        + li {
+          border-left: 1px solid #797470;
+        }
+      }
+      dl {
+        dt {
+          border-bottom: 1px solid #797470;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      &.col3 {
+        border: 1px solid #797470;
+        li {
+          width: calc(100% / 3);
+          + li {
+            border-left: 1px solid #797470;
+          }
+        }
+        dl {
+          dt {
+            border-bottom: 1px solid #797470;
+          }
+        }
+      }
+    }
+  }
+  .timeBox {
+    margin: 40px 0 0;
+  }
+  .cautionRed {
+    color: #d81900;
+  }
+  .prohibitedList {
+    margin: 40px 0 0;
+    .multiBoxList {
+      + .multiBox {
+        margin: 40px 0 0;
+      }
+    }
+    .subTtl {
+      color: #6c4123;
+    }
+  }
+  .btmMessage {
+    margin: 40px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+#guide {
+  .pageKvPanel {
+    background: url("../image/guide/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 5px;
+        padding-left: 130px;
+        padding-right: 130px;
+        background: url("../image/guide/page_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/guide/page_ttl_bg_02.png") right center no-repeat;
+        background-size: 110px auto, 110px auto;
+      }
+    }
+    .topTxt {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    .section {
+      + .section {
+        margin: 60px 0 0;
+      }
+      .secTtl {
+        padding: 10px;
+        font-size: 26px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 6px 6px 0 0;
+      }
+      .secTtl01 {
+        background: #7b543a;
+      }
+      .secTtl02 {
+        background: #95b879;
+      }
+      .mapLink {
+        display: inline-block;
+        padding: 0 0 4px 16px;
+        color: #823b0a;
+        line-height: 1;
+        background: url("../image/guide/map_icon_pin.png") left bottom no-repeat;
+        background-size: 12px auto;
+        span {
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+    }
+    .section01 {
+      .cntBody {
+        padding: 10px 20px;
+        border-radius: 6px;
+        background: #ffffff;
+      }
+    }
+    .section02 {
+      .cntBody {
+        padding: 40px 60px;
+        border-radius: 6px;
+        background: #ffffff;
+      }
+    }
+    .accessList01 {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+        + ul {
+          border-top: 2px dashed #6c4123;
+        }
+        li {
+          &:nth-child(1) {
+            width: 320px;
+          }
+          &:nth-child(2) {
+            width: 260px;
+          }
+          &:nth-child(3) {
+            width: 160px;
+            margin: 0 0 0 auto;
+          }
+          &:nth-child(4) {
+            width: 160px;
+          }
+        }
+      }
+    }
+    .accessList02 {
+      ul {
+        .photo {
+          margin: 0 0 10px;
+          img {
+            border-radius: 10px;
+          }
+        }
+        .ttl {
+          margin: 0 0 10px;
+          font-size: 24px;
+          color: #6c4123;
+          text-align: center;
+        }
+        .mapLinkBtn {
+          margin: 0 0 20px;
+          text-align: center;
+        }
+      }
+      @media (min-width: 1025px) {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -40px;
+          li {
+            width: calc((100% / 3) - 40px);
+            margin: 40px 0 0 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	access
+///////////////////////////////////////////////////////////*/
+#access {
+  .pageKvPanel {
+    background: url("../image/access/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 25px;
+        padding-left: 70px;
+        padding-right: 140px;
+        background: url("../image/access/page_ttl_bg_01.png") left top no-repeat,
+          url("../image/access/page_ttl_bg_02.png") right center no-repeat;
+        background-size: 60px auto, 120px auto;
+      }
+    }
+    .secContainer {
+      margin: -20px 0 0;
+      padding: 100px 20px;
+      background: #ffffff;
+      .cntInner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+    .message {
+      margin: 0 0 40px;
+      font-size: 30px;
+      color: #6c4123;
+      text-align: center;
+      em {
+        color: #d7760c;
+      }
+    }
+    .signboardBox {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 30px 20px;
+      border-radius: 10px;
+      border: 1px solid #dfdbd4;
+      background: #fcf9f3;
+      .signboard {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 200px;
+      }
+      .txt {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+    .accessRoute {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+  .mapPanel {
+    position: relative;
+    .accessBox {
+      position: absolute;
+      top: 150px;
+      left: 10%;
+      width: 100%;
+      max-width: 350px;
+      z-index: 2;
+      dl {
+        border-radius: 10px;
+        dt {
+          padding: 10px;
+          font-size: 24px;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 10px 10px 0 0;
+          background: #6c4123;
+        }
+        dd {
+          padding: 20px 30px;
+          border-radius: 0 0 10px 10px;
+          background: #ffffff;
+          .txt {
+            margin: 0 0 10px;
+          }
+          a {
+            display: block;
+            max-width: 280px;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 4px;
+            background: #6c4123;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reservation
+///////////////////////////////////////////////////////////*/
+#reservation {
+  .pageKvPanel {
+    background: url("../image/reservation/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 35px;
+        padding-left: 110px;
+        padding-right: 160px;
+        background: url("../image/reservation/sec01_ttl_bg_01.png") left top
+            no-repeat,
+          url("../image/reservation/sec01_ttl_bg_02.png") right bottom no-repeat;
+        background-size: 80px auto, 150px auto;
+      }
+    }
+    .secContainer {
+      margin: -20px 0 0;
+      padding: 100px 20px;
+      background: #ffffff;
+      .cntInner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+    .secBox {
+      padding: 0 0 30px;
+      + .secBox {
+        padding: 30px 0;
+        border-top: 1px dashed #6c4123;
+      }
+      .ttl {
+        margin: 0 0 10px;
+        font-size: 30px;
+        color: #6c4123;
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 35px;
+        padding-left: 110px;
+        padding-right: 160px;
+        background: url("../image/reservation/sec02_ttl_bg_01.png") left top
+            no-repeat,
+          url("../image/reservation/sec02_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 150px auto;
+      }
+      + p {
+        margin: 0 0 40px;
+        text-align: center;
+      }
+    }
+    .itemList {
+      max-width: 1200px;
+      margin: 0 auto;
+      .itemBox {
+        padding: 4px;
+        text-align: center;
+        border-radius: 10px;
+        dl {
+          dt {
+            padding: 5px;
+            font-size: 25px;
+            color: #ffffff;
+          }
+          dd {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 102px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+        }
+      }
+      .itemBox01 {
+        background: #db8323;
+        dl {
+          dd {
+            a {
+              display: inline-block;
+              font-size: 40px;
+              color: #db8323;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+      .itemBox02 {
+        background: #6c4123;
+        dl {
+          dd {
+            a {
+              font-size: 30px;
+              color: #6c4123;
+            }
+            .icon01 {
+              position: absolute;
+              left: -80px;
+              bottom: 5px;
+              width: 220px;
+            }
+            .icon02 {
+              position: absolute;
+              right: -10px;
+              bottom: 0;
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .itemList {
+        display: flex;
+        justify-content: space-between;
+        .itemBox {
+          width: calc((100% / 2) - 40px);
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 0 0 120px;
+    .schedulePanel {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+  .sec04 {
+    padding: 0 0 120px;
+    .pageSecTtlBox {
+      h2 {
+        position: relative;
+        left: 25px;
+        padding-left: 110px;
+        padding-right: 110px;
+        background: url("../image/reservation/sec04_ttl_bg_01.png") left center
+            no-repeat,
+          url("../image/reservation/sec04_ttl_bg_02.png") right center no-repeat;
+        background-size: 80px auto, 80px auto;
+      }
+    }
+    .secContainer {
+      margin: -20px 0 0;
+      padding: 100px 20px;
+      background: #ffffff;
+      .cntInner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+    .topBox {
+      margin: 0 0 60px;
+      .ttl {
+        margin: 0 0 10px;
+        font-size: 30px;
+        color: #6c4123;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .subTtl {
+        margin: 0 0 10px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid #23150c;
+      }
+    }
+    .table01 {
+      max-width: 800px;
+      table {
+        width: 100%;
+        border: 1px solid #797470;
+        tr {
+          + tr {
+            border-top: 1px solid #797470;
+          }
+          th {
+            width: 35%;
+            padding: 20px 40px;
+            vertical-align: middle;
+            background: #f2ede3;
+          }
+          td {
+            padding: 20px 80px;
+            vertical-align: middle;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	faq
+///////////////////////////////////////////////////////////*/
+#faq {
+  .pageKvPanel {
+    background: url("../image/faq/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 200px;
+    .section {
+      + .section {
+        margin: 100px 0 0;
+      }
+    }
+    .secTtl {
+      position: relative;
+      margin: 0 0 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        margin: auto 0;
+        border-top: 2px dashed #6c4123;
+      }
+      h3 {
+        position: relative;
+        display: inline-block;
+        padding: 0 40px 0 0;
+        font-size: 30px;
+        color: #6c4123;
+        background: #fcf9f3;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 40px 0 0;
+      }
+      dl {
+        dt {
+          display: flex;
+          align-items: center;
+          padding: 0 50px 5px 0;
+          border-bottom: 1px solid #23150c;
+          cursor: pointer;
+          background: url("../image/common/accord_down.png") right 20px center
+            no-repeat;
+          background-size: 10px auto;
+          &.active {
+            background: url("../image/common/accord_up.png") right 20px center
+              no-repeat;
+            background-size: 10px auto;
+          }
+          .num span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 15px 0 0;
+            font-size: 20px;
+            line-height: 1;
+            color: #fcf9f3;
+            border-radius: 50%;
+            background: #6c4123;
+          }
+          .ttl {
+            display: block;
+            font-size: 24px;
+          }
+        }
+        dd {
+          display: none;
+          padding: 10px 0 0;
+          .txt {
+            padding: 20px 40px;
+            border-radius: 10px;
+            background: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+#news {
+  .pageKvPanel {
+    background: url("../image/news/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .newsSection {
+    padding: 80px 0 200px;
+  }
+  .cateList {
+    margin: 0 0 40px;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        width: 280px;
+        + li {
+          margin: 0 0 0 20px;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 80px;
+          font-size: 20px;
+          background: url("../image/common/btn_more_bg.png") center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+  .blogContainer {
+    padding: 40px 20px;
+    background: #ffffff;
+  }
+  .postListPanel {
+    max-width: 1300px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -40px 0 0 -30px;
+      li {
+        width: calc((100% / 3) - 30px);
+        margin: 40px 0 0 30px;
+        a {
+          display: block;
+          min-height: 380px;
+          padding: 20px 20px 20px;
+          color: #f3e7e0;
+          border-radius: 10px;
+          background: url("../image/news/post_bg.png") center no-repeat;
+          background-size: cover;
+        }
+        .photo {
+          position: relative;
+          max-width: 300px;
+          height: 0;
+          margin: 0 auto 10px;
+          padding: 0 0 60%;
+          border-radius: 10px;
+          border: 2px solid #ffffff;
+          img {
+            @include cover-image;
+            border-radius: 10px;
+          }
+        }
+        .infoBox {
+          max-width: 300px;
+          margin: 0 auto;
+          text-align: left;
+        }
+        .info {
+          margin: 0 0 10px;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            color: #d3a285;
+          }
+          .cate {
+            display: inline-block;
+            padding: 0 5px;
+            text-align: center;
+            border-radius: 4px;
+            background: #5c3219;
+          }
+        }
+        .ttl {
+          text-decoration: underline;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; /* 2行まで表示 */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal; /* 必要に応じて改行を許可 */
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0;
+    li {
+      margin: 0 10px;
+      a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        color: #ffffff;
+        border-radius: 4px;
+        background: #e7dabf;
+      }
+      &.current {
+        a {
+          color: #ffffff;
+          background: #5c3219;
+        }
+      }
+      &.previous {
+        a {
+          &:before {
+            content: "<";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 15px;
+            height: 15px;
+            margin: auto;
+            font-size: 15px;
+            line-height: 1;
+            color: #ffffff;
+          }
+        }
+      }
+      &.next {
+        a {
+          &:before {
+            content: ">";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 15px;
+            height: 15px;
+            margin: auto;
+            font-size: 15px;
+            line-height: 1;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .detail {
+    &__news {
+      max-width: 1100px;
+      margin: 0 auto;
+      .titleHeader {
+        margin: 0 0 20px;
+        .infoBox {
+          margin: 0 0 10px;
+        }
+        .time {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          color: #d3a285;
+        }
+        .cate {
+          display: inline-block;
+          padding: 0 5px;
+          color: #f3e7e0;
+          text-align: center;
+          border-radius: 4px;
+          background: #5c3219;
+        }
+        .title {
+          font-size: 34px;
+          color: #6c4123;
+        }
+      }
+      .thumbnailBox {
+        max-width: 960px;
+        border-radius: 4px;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+        img {
+          border-radius: 4px;
+        }
+      }
+      .postContents {
+        margin: 20px 0 0;
+        line-height: 2;
+        img {
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+    &__back {
+      margin: 60px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact {
+  .pageKvPanel {
+    background: url("../image/contact/kv.png") center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 120px;
+    .telBox {
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      dl {
+        padding: 4px;
+        text-align: center;
+        border-radius: 10px;
+        background: #db8323;
+        dt {
+          font-size: 26px;
+          color: #ffffff;
+        }
+        dd {
+          background: #ffffff;
+          a {
+            display: inline-block;
+            font-size: 40px;
+            color: #db8323;
+            line-height: 1.2;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        dl {
+          display: table;
+          width: 100%;
+          dt {
+            display: table-cell;
+            width: 400px;
+            vertical-align: middle;
+          }
+          dd {
+            display: table-cell;
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .topTxt {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    letter-spacing: 0.1em;
+    + dl {
+      margin: 25px 0 0;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    background: #e9e3d7;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    background: #e9e3d7;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    resize: none;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: 0;
+    border: 1px solid #005eae;
+  }
+  select {
+    display: inline-block;
+    width: auto;
+    padding: 11px 15px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5em;
+    border-radius: 6px;
+    border: 1px solid #d6d6d6;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    + span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+  .birthBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #000000;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        position: relative;
+        width: 100px;
+        + li {
+          padding: 0 0 0 20px;
+          &:before {
+            content: "／";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            color: #7d7c2c;
+          }
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 10px;
+      text-align: center;
+      border: none;
+    }
+  }
+  .agreeCheck {
+    margin: 0 0 60px;
+    text-align: center;
+  }
+  .checkItem {
+    display: inline-block;
+    > label {
+      position: relative;
+      display: block;
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+    }
+    > span {
+      display: block;
+      padding-left: 35px;
+      position: relative;
+      line-height: 1;
+    }
+    > span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      margin: auto 0;
+      border-radius: 6px;
+      border: 2px solid #ffffff;
+      background: #e9e3d7;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    }
+    input:checked + span::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -8px;
+      left: 4px;
+      width: 10px;
+      height: 16px;
+      transform: rotate(40deg);
+      border-bottom: 2px solid #0c4028;
+      border-right: 2px solid #0c4028;
+    }
+  }
+  form .mwform-radio-field {
+    display: inline-block;
+    + .mwform-radio-field {
+      margin: 0 0 0 15px;
+    }
+    label {
+      position: relative;
+      display: inline-block;
+    }
+    input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      z-index: 1;
+      cursor: pointer;
+    }
+    .mwform-radio-field-text {
+      display: inline-block;
+      padding: 0 0 0 24px;
+      background: url("../image/common/form_radio_off.png") left center
+        no-repeat;
+      background-size: 14px auto;
+    }
+    input[type="radio"]:checked + .mwform-radio-field-text {
+      background: url("../image/common/form_radio_on.png") left center no-repeat;
+      background-size: 14px auto;
+    }
+  }
+  .nameBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    > dl {
+      width: 49%;
+      dt {
+        margin: 0 0 5px;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        em {
+          display: inline-block;
+          margin: 0 0 0 5px;
+          padding: 0 3px;
+          font-size: 12px;
+          color: #ffffff;
+          vertical-align: middle;
+          border-radius: 6px;
+          background: #db8323;
+        }
+      }
+    }
+  }
+  form > dl {
+    border-bottom: 1px dashed #6c4123;
+    + dl {
+      margin: 0;
+    }
+    dt {
+      margin: 0 0 5px;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      em {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        padding: 0 3px;
+        font-size: 12px;
+        color: #ffffff;
+        vertical-align: middle;
+        border-radius: 5px;
+        background: #db8323;
+      }
+    }
+  }
+  .itemCheckPanel {
+    .itemCheck {
+      .mwform-checkbox-field {
+        margin: 0 15px 10px 0;
+      }
+    }
+  }
+  .dateSelectBox {
+    display: inline-block;
+  }
+  @media (min-width: 1025px) {
+    form > dl {
+      display: flex;
+      justify-content: space-between;
+      line-height: 2;
+      &:not(.msg) {
+        align-items: center;
+      }
+      dt {
+        overflow: hidden;
+        width: 260px;
+        margin: 0;
+        padding: 5px 10px;
+        span {
+          float: left;
+        }
+        em {
+          float: right;
+          margin: 5px 0 0;
+        }
+      }
+      dd {
+        width: calc(100% - 262px);
+        padding: 5px 10px;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .itemCheckPanel {
+      .itemCheck {
+        display: inline-block;
+        margin: 0 40px 0 0;
+      }
+      > p {
+        display: inline-block;
+      }
+    }
+  }
+  .privacy {
+    margin: 50px auto 30px;
+    border-radius: 6px;
+    border-radius: 10px;
+    background: #f1eee8;
+    .agreeBox {
+      overflow: scroll;
+      height: 350px;
+      padding: 20px;
+    }
+    .box {
+      + .box {
+        margin: 20px 0 0;
+      }
+    }
+    dl {
+      dt {
+        margin: 0 0 3px;
+      }
+    }
+    a {
+      display: inline-block;
+      color: #000000;
+    }
+    .tel {
+      p,
+      a {
+        display: inline-block;
+      }
+    }
+  }
+  .submitButton {
+    position: relative;
+    text-align: center;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 280px;
+    height: 80px;
+    margin: 50px auto 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c3219;
+    cursor: pointer;
+    border: none;
+    background: url("../image/common/btn_more_bg.png") center no-repeat;
+    background-size: 100% auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &[disabled] {
+      cursor: default;
+      opacity: 0.3;
+    }
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__contact {
+    padding: 200px 0 250px;
+    .contactContainer {
+      padding: 0 0 50px;
+    }
+    .secTitleBox {
+      margin: 0 0 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+    @media (min-width: 1025px) {
+      .secTitleBox {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+  }
+  .formConfirm {
+    max-width: 1060px;
+    margin: 0 auto;
+    .selectList + p,
+    .privacy,
+    .checkTxt,
+    .agreeCheck {
+      display: none;
+    }
+    .nameBox {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 20px;
+      padding: 10px 0;
+      border-bottom: 1px dashed #000000;
+      > dl {
+        width: 49%;
+        font-size: 16px;
+        dt {
+          margin: 0 0 5px;
+          em {
+            color: red;
+          }
+        }
+      }
+    }
+    form > dl {
+      padding: 10px 0;
+      font-size: 16px;
+      letter-spacing: 0.15em;
+      border-bottom: 1px dashed #000000;
+      + dl {
+        margin: 15px 0 0;
+      }
+      dt {
+        margin: 0 0 5px;
+        em {
+          color: red;
+        }
+      }
+    }
+    .dateFormPanel {
+      margin: 40px 0 0;
+      .ttl {
+        font-size: 20px;
+      }
+    }
+    .submitButton {
+      position: relative;
+      text-align: center;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 260px;
+      height: 50px;
+      margin: 50px auto 0;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      background: #5e935e;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &[disabled] {
+        cursor: default;
+        opacity: 0.3;
+      }
+    }
+    button.btnBack {
+      display: block;
+      width: 260px;
+      height: 50px;
+      margin: 30px auto 0;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      background: #000000;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .birthBox {
+      ul {
+        li {
+          display: inline-block;
+          &:nth-child(1) {
+            &::after {
+              content: "年";
+            }
+          }
+          &:nth-child(2) {
+            &::after {
+              content: "月";
+            }
+          }
+          &:nth-child(3) {
+            &::after {
+              content: "日";
+            }
+          }
+        }
+      }
+    }
+  }
+  .btnToTop {
+    margin: 40px auto 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+}

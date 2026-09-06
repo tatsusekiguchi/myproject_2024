@@ -1,0 +1,728 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topTitlePanel {
+    padding: 60px 0 30px;
+  }
+  .topMain .topTitlePanel .secWrap01 {
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/top_kv_star.png) right 15px top no-repeat;
+    background-size: 100px auto;
+  }
+  .topMain .topTitlePanel .topTitle {
+    margin: 0 0 30px;
+    font-size: 30px;
+  }
+  .topMain .topTitlePanel .dl .dt {
+    font-size: 20px;
+  }
+  .topMain .topKvPanel .topKv {
+    height: 250px;
+  }
+  .topMain .bnrPanel {
+    padding: 60px 0;
+  }
+  .topMain .secTtlBox {
+    margin: 0 0 40px;
+    padding: 0 0 15px;
+  }
+  .topMain .secTtlBox:after {
+    width: 60px;
+  }
+  .topMain .secTtlBox .secTtl {
+    font-size: 24px;
+  }
+  .topMain .sec01 {
+    margin: 0 0 40px;
+    padding: 0 0 40px;
+  }
+  .topMain .sec01::before {
+    display: none;
+  }
+  .topMain .sec01 .secBox .photoBox .photo {
+    max-width: 600px;
+  }
+  .topMain .sec01 .secBox .txtBox {
+    padding: 20px 0 0;
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec01_icon.png) right 20px bottom no-repeat;
+    background-size: 100px auto;
+  }
+  .topMain .sec01 .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .topMain .sec01 .secBox .txtBox .txt {
+    margin: 0 0 20px;
+  }
+  .topMain .sec01 .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .topMain .slidePanel {
+    margin: 0 0 80px;
+  }
+  .topMain .slidePanel .slideBox .ul .li {
+    width: 50%;
+  }
+  .topMain .sec02 {
+    margin: 0 0 40px;
+    padding: 0 0 40px;
+  }
+  .topMain .sec02::before {
+    display: none;
+  }
+  .topMain .sec02 .secBox .photoBox .photo {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    padding: 20px 0 0;
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec02_icon.png) right bottom 100px no-repeat;
+    background-size: 100px auto;
+  }
+  .topMain .sec02 .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .topMain .sec02 .secBox .txtBox .txt {
+    margin: 0 0 20px;
+  }
+  .topMain .sec02 .secBox .txtBox .txt p + p {
+    margin: 15px 0 0;
+  }
+  .topMain .sec02 .secBox .txtBox .btnMore {
+    margin: 0 auto;
+  }
+  .topMain .sec02 .secBox .txtBox .btnMore + .btnMore {
+    margin: 20px auto 0;
+  }
+  .topMain .sec03 .secTtlBox {
+    top: 30px;
+  }
+  .topMain .sec03 .btnMore {
+    top: 0;
+    margin: 20px auto 0;
+  }
+  .topMain .sec04 {
+    padding: 50px 0;
+  }
+  .topMain .sec04 .listBox {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .topMain .sec04 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .topMain .sec04 .listBox .ul .ttl {
+    margin: 10px 0 15px;
+    font-size: 20px;
+  }
+  .topMain .sec04 .btnMore {
+    margin: 50px auto 0;
+  }
+  .topMain .sec05 {
+    padding: 50px 0;
+  }
+  .topMain .sec05 .listBox {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .topMain .sec05 .listBox .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .topMain .sec05 .btnMore {
+    margin: 50px auto 0;
+  }
+  .topMain .sec06 {
+    padding: 60px 0;
+  }
+  .topMain .sec06 .secBox .ttlBox {
+    margin: 0 0 30px;
+  }
+  .topMain .sec06 .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+    font-size: 22px;
+  }
+  .topMain .sec07 {
+    padding: 60px 0;
+  }
+  .topMain .sec07 .secWrap01 {
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec07_icon.png) left bottom no-repeat;
+    background-size: 100px auto;
+  }
+  .topMain .sec07 .newsListBox .webgene-item {
+    padding: 15px 0;
+  }
+  .topMain .sec07 .newsListBox .webgene-item .dl {
+    display: block;
+  }
+  .topMain .sec07 .newsListBox .webgene-item .dl > * {
+    display: block;
+  }
+  .topMain .sec07 .newsListBox .webgene-item .dl .dt {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .topMain .sec07 .btnMore {
+    margin: 50px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	crafts
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .craftsMain .sec01 {
+    padding: 40px 0 80px;
+  }
+  .craftsMain .sec01 .topTxt {
+    margin: 0 0 30px;
+  }
+  .craftsMain .sec01 .listBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .craftsMain .sec01 .listBox .ul .li + .li {
+    margin: 50px 0 0;
+  }
+  .craftsMain .sec01 .listBox .secBox {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .craftsMain .sec01 .listBox .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .craftsMain .sec01 .listBox .secBox .txtBox .txt + .txt {
+    margin: 20px 0 0;
+  }
+  .craftsMain .sec01 .listBox .secBox .txtBox .btnMoreDl {
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .craftsMain .sec01 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -60px 0 0;
+  }
+  .craftsMain .sec01 .listBox .ul .li {
+    width: 48%;
+    margin: 60px 0 0;
+  }
+  .craftsMain .sec01 .listBox .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .craftsMain .sec01 .listBox .secBox .photo {
+    width: 40%;
+  }
+  .craftsMain .sec01 .listBox .secBox .txtBox {
+    width: 55%;
+  }
+}
+@media (max-width: 1024px) {
+  .craftsMain .sec02 {
+    padding: 0 0 80px;
+  }
+  .craftsMain .sec02 .secContainer {
+    padding: 50px 0;
+  }
+  .craftsMain .sec02 .secPanel01 .secBox .photoBox {
+    max-width: 600px;
+  }
+  .craftsMain .sec02 .secPanel01 .secBox .txtBox {
+    padding: 20px 0 0;
+  }
+  .craftsMain .sec02 .secPanel01 .secBox .txtBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .craftsMain .sec02 .secPanel01 .secBox .txtBox .ttlBox .ttl02 {
+    font-size: 20px;
+  }
+  .craftsMain .sec02 .secPanel01 .secBox .txtBox .txt {
+    margin: 0 0 30px;
+  }
+  .craftsMain .sec02 .secPanel02 .ttlBox {
+    max-width: 400px;
+  }
+  .craftsMain .sec02 .secPanel02 .ttlBox .ttl {
+    padding: 0 15px;
+    font-size: 20px;
+  }
+  .craftsMain .sec02 .secPanel02 .listBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .craftsMain .sec02 .secPanel02 .listBox .ul .li + .li {
+    margin: 40px 0 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .guideMain .topSection {
+    padding: 40px 0;
+  }
+  .guideMain .topSection .ttl {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  .guideMain .topSection .secBox {
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/top_sec01_icon.png) right 20px bottom no-repeat;
+    background-size: 80px auto;
+  }
+  .guideMain .topSection .secBox .txt p + p {
+    margin: 20px 0 0;
+  }
+  .guideMain .sec01 {
+    padding: 40px 0 0;
+  }
+  .guideMain .sec01 .secPanelList {
+    padding: 0 0 60px;
+  }
+  .guideMain .sec01 .secPanel + .secPanel {
+    margin: 50px 0 0;
+  }
+  .guideMain .sec01 .secPanel:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    width: 50vw;
+    height: 300px;
+    background: #fff5f7;
+  }
+  .guideMain .sec01 .secPanel:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 50vw;
+    height: 300px;
+    background: #fff5f7;
+  }
+  .guideMain .sec01 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox {
+    display: block;
+    margin: 0 0 15px;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox .num {
+    width: 80px;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox .num:after {
+    display: none;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox .num .span {
+    font-size: 14px;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox .num .em {
+    font-size: 24px;
+  }
+  .guideMain .sec01 .secBox .txtBox .ttlBox .ttl {
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+  }
+  .guideMain .sec01 .optionContainer {
+    padding: 60px 0;
+  }
+  .guideMain .sec01 .optionContainer .ttlBox {
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  .guideMain .sec01 .optionContainer .ttlBox .ttl {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    background: #fff5f8;
+  }
+  .guideMain .sec01 .optionContainer .ttlBox .ttl::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 180px;
+    height: 85px;
+    margin: 0 auto;
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/guide_option_ttl_bg.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .guideMain .sec01 .optionContainer .listBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .guideMain .sec01 .optionContainer .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .guideMain .sec01 .optionContainer .listBox .ul .dl .dt {
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain .sec01 {
+    padding: 40px 0;
+  }
+  .flowMain .sec01 .secBox .photoBox .photo {
+    max-width: 180px;
+  }
+  .flowMain .sec01 .secBox .txtBox {
+    padding: 30px 0 0;
+  }
+  .flowMain .sec01 .secBox .txtBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .flowMain .sec01 .secBox .txtBox .ttlBox .num .span {
+    font-size: 14px;
+  }
+  .flowMain .sec01 .secBox .txtBox .ttlBox .num .em {
+    font-size: 24px;
+  }
+  .flowMain .sec01 .secBox .txtBox .ttlBox .ttl {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+  }
+  .flowMain .sec02 {
+    padding: 40px 0;
+  }
+  .flowMain .sec02 .secBox + .secBox {
+    margin: 40px 0 0;
+  }
+  .flowMain .sec02 .secBox .ttlBox {
+    padding: 10px 20px;
+  }
+  .flowMain .sec02 .secBox .ttlBox .ttl01 {
+    margin: 0 20px 0 0;
+  }
+  .flowMain .sec02 .secBox .txt {
+    padding: 20px;
+  }
+  .flowMain .sec03 {
+    padding: 40px 0 80px;
+  }
+  .flowMain .sec03 .secWrap01 {
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/flow_sec03_icon.png) right bottom no-repeat;
+    background-size: 80px auto;
+  }
+}
+@media (max-width: 1024px) and (max-width: 767px) {
+  .flowMain .sec03 .infoBox .dl {
+    display: block;
+    padding: 20px;
+  }
+  .flowMain .sec03 .infoBox .dl .dt {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .sec01 {
+    padding: 60px 0;
+  }
+  .companyMain .sec01 .name {
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .companyMain .sec01 .name .em {
+    font-size: 26px;
+  }
+  .companyMain .sec02 {
+    padding: 60px 0;
+  }
+  .companyMain .sec02 .secWrap01 {
+    background: url(https://horie-works.co.jp/system_panel/uploads/images/company_sec02_icon.png) right bottom no-repeat;
+    background-size: 80px auto;
+  }
+}
+@media (max-width: 1024px) and (max-width: 767px) {
+  .companyMain .sec02 .infoBox .dl {
+    display: block;
+    padding: 20px;
+  }
+  .companyMain .sec02 .infoBox .dl .dt {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .contactSec {
+    padding: 60px 0;
+  }
+  .contactMain .contactSec .topTxt {
+    margin: 0 0 30px;
+  }
+  .contactMain .contactSec .telBox .ttl {
+    font-size: 18px;
+  }
+  .contactMain .contactSec .telBox .tel a p {
+    font-size: 20px;
+  }
+  .contactMain .contactSec .telBox .tel a .em {
+    font-size: 30px;
+  }
+  .contactMain .contactSec .telBox > p {
+    font-size: 12px;
+  }
+  .contactMain .contactSec .snsBox .ttl {
+    font-size: 18px;
+  }
+  .contactMain .contactSec .snsBox .ul {
+    max-width: 240px;
+  }
+  .contactMain .sec01 {
+    padding: 60px 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl:after {
+    width: 100%;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogSection {
+    padding: 60px 0 80px;
+  }
+  .newsMain .catePanel {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-header {
+    margin: 0 auto 10px;
+    padding: 0 0 10px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    padding: 10px 10px 30px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog {
+    padding: 15px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    display: block;
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .btnBack {
+    margin: 60px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	item
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .itemMain .searchSection {
+    padding: 60px 0;
+  }
+  .itemMain .searchSection .searchPanel {
+    padding: 20px;
+  }
+  .itemMain .searchSection .webgene-search-form-block + .webgene-search-form-block {
+    margin: 40px 0 0;
+  }
+  .itemMain .searchSection .search-title-wrapper {
+    margin: 0 0 10px;
+    padding: 10px 0;
+  }
+  .itemMain .searchSection .search-title-wrapper::before {
+    width: 80px;
+  }
+  .itemMain .searchSection .search-contents-wrapper > label {
+    display: block;
+    margin: 0;
+  }
+  .itemMain .searchSection .search-contents-wrapper > label + label {
+    margin: 15px 0 0;
+  }
+  .itemMain .searchSection .btnItems {
+    display: block;
+    max-width: 220px;
+    margin: 40px auto 0;
+  }
+  .itemMain .searchSection .search-clear {
+    margin: 0 0 20px;
+  }
+  .itemMain .blogSection {
+    padding: 60px 0 80px;
+  }
+  .itemMain .catePanel .dl + .dl {
+    margin: 30px 0 0;
+  }
+  .itemMain .catePanel .dl .dt {
+    font-size: 18px;
+  }
+  .itemMain .blogPanel--list .webgene-blog .webgene-item {
+    padding: 10px 10px 30px;
+  }
+  .itemMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .itemMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .itemMain .blogPanel--detail .leftPanel {
+    margin: 0 0 30px;
+  }
+  .itemMain .blogPanel--detail .rightPanel .secBox .ttl {
+    font-size: 20px;
+  }
+  .itemMain .btnBack {
+    margin: 60px auto 0;
+  }
+}

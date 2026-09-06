@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="price">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logo"><a href="/">
+					<div><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+				</a></div>
+			<div class="navBox">
+				<div class="navContainer">
+					<div class="leftBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="logoSmall"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo_small.png" alt=""></div>
+							<div class="txt">
+								<p>〒589-0023<br>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+									<div>
+										<p>TEL：072-247-4234</p>
+									</div>
+								</a>
+								<p>受付時間：10:00 ～ 19:00<br>定休日：月（祝日は営業）</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="concept">
+										<div>
+											<p>コンセプト</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="facial">
+										<div>
+											<p>フェイシャル</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="slimming">
+										<div>
+											<p>痩身</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="eyelash">
+										<div>
+											<p>まつげパーマ</p>
+										</div>
+									</a></div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="removal">
+										<div>
+											<p>脱毛</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="price">
+										<div>
+											<p>料金表</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="voice">
+										<div>
+											<p>お客様の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="info">
+										<div>
+											<p>サロン紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="btnList">
+							<div class="ul">
+								<div class="li"><a class="tel" href="tel:0722474234">
+										<div class="dl">
+											<div class="dt">
+												<p>お電話でご予約</p>
+											</div>
+											<div class="dd futura">
+												<p class="span">tel.</p>
+												<p class="em">072-247-4234</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a class="mail" href="contact">
+										<div class="dl">
+											<div class="dt">
+												<p>メールでご予約</p>
+											</div>
+											<div class="dd futura">
+												<p>WEB FORM</p>
+											</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="instaBox"><a href="#" target="_blank" rel="noopener">
+								<div>
+									<p>Lapis公式</p>
+								</div>
+							</a>
+							<div class="txt">
+								<p>フォローリクエストをいただきましたら<br>承認後御覧いただけます。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburgerBox">
+				<div class="hamburger">
+					<div class="span"></div>
+					<div class="span"></div>
+				</div>
+				<div class="hamburgerTxt">
+					<p>MENU</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="priceMain main pageMain">
+		<div class="pageKvContainer">
+			<div class="bg"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/page_kv_bg.png" alt=""></div>
+			<div class="pageKvWrap">
+				<div class="pageKvTitle">
+					<h1 class="futura">PRICE</h1>
+				</div>
+				<div class="pageKvPhoto"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/price_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="priceSection">
+			<div class="secWrap01">
+				<div class="pageSecTtl">
+					<p class="futura">PRICE</p>
+					<h2>料金</h2>
+				</div>
+				<div class="pagerList">
+					<div class="ul">
+						<div class="li"><a href="#price01">
+								<div>
+									<p class="em futura">FACIAL</p>
+									<p class="span">フェイシャル</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#price02">
+								<div>
+									<p class="em futura">SLIMMING</p>
+									<p class="span">痩身</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#price03">
+								<div>
+									<p class="em futura">EYELASH PERM</p>
+									<p class="span">まつ毛パーマ</p>
+								</div>
+							</a></div>
+						<div class="li"><a href="#price04">
+								<div>
+									<p class="em futura">HAIR REMOVAL</p>
+									<p class="span">脱毛</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+				<div class="priceContainerList">
+					<div class="price01 priceContainer" id="price01">
+						<div class="sectionTitle">
+							<p>PHOTOFACIAL</p>
+							<h3 class="mincho">フォトフェイシャル</h3>
+						</div>
+						<div class="pricePanel">
+							<div class="priceList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>1回</p>
+											</div>
+											<div class="dd">
+												<p>￥22,000</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>6回コース</p>
+											</div>
+											<div class="dd">
+												<p>￥112,200<br>（1回あたり　￥18,700）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>12回コース</p>
+											</div>
+											<div class="dd">
+												<p>￥211,200<br>（1回あたり　￥17,600）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>1回</p>
+											</div>
+											<div class="dd">
+												<p>￥22,000</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pricePanel">
+							<div class="ttl mincho">
+								<h4>オプション</h4>
+							</div>
+							<div class="priceList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>ハイフォーカス1回</p>
+											</div>
+											<div class="dd">
+												<p>￥15,000</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>エレクトロポレーション</p>
+											</div>
+											<div class="dd">
+												<p>￥33,000</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>首を追加</p>
+											</div>
+											<div class="dd">
+												<p>￥5,500</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>手の甲を追加</p>
+											</div>
+											<div class="dd">
+												<p>￥5,500</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price02 priceContainer" id="price02">
+						<div class="sectionTitle">
+							<p>SLIMMING</p>
+							<h3 class="mincho">フ痩身</h3>
+						</div>
+						<div class="priceList">
+							<div class="ul">
+								<div class="li">
+									<div class="dl">
+										<div class="dt">
+											<p>ハイフォーカス<br>1パーツ</p>
+										</div>
+										<div class="dd">
+											<p>￥17,380 ～</p>
+										</div>
+									</div>
+									<div class="aside">
+										<p>※お客様の骨格、体型によりパーツサイズ、価格の変動がございます。<br>S＝1 パーツ　M＝1.5 パーツ　L＝3 パーツ</p>
+									</div>
+								</div>
+								<div class="li">
+									<div class="dl">
+										<div class="dt">
+											<p>10パーツ</p>
+										</div>
+										<div class="dd">
+											<p>￥151,800 ～</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btnMore"><a href="slimming">
+								<div>
+									<p>詳しくはこちら</p>
+								</div>
+							</a></div>
+					</div>
+					<div class="price03 priceContainer" id="price03">
+						<div class="sectionTitle">
+							<p>EYELASH PERM</p>
+							<h3 class="mincho">まつ毛パーマ</h3>
+						</div>
+						<div class="pricePanel">
+							<div class="priceList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>1回</p>
+											</div>
+											<div class="dd">
+												<p>￥3,300</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>2回</p>
+											</div>
+											<div class="dd">
+												<p>￥5,500<br>（1回あたり　￥2,500）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>パリジェンヌラッシュリフト</p>
+											</div>
+											<div class="dd">
+												<p>￥0000</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price04 priceContainer" id="price04">
+						<div class="sectionTitle">
+							<p>HAIR REMOVAL</p>
+							<h3 class="mincho">脱毛</h3>
+						</div>
+						<div class="pricePanel">
+							<div class="priceList">
+								<div class="ul">
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>ワキ</p>
+											</div>
+											<div class="dd">
+												<p>￥2,750</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>口回り</p>
+											</div>
+											<div class="dd">
+												<p>￥2,750</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>手指・甲</p>
+											</div>
+											<div class="dd">
+												<p>各￥2,750</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>足指・甲</p>
+											</div>
+											<div class="dd">
+												<p>各￥2,750</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>V・I・O</p>
+											</div>
+											<div class="dd">
+												<p>各￥3,300</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>眉回り</p>
+											</div>
+											<div class="dd">
+												<p>￥3,300<br>（眉カット込）</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>膝上・下</p>
+											</div>
+											<div class="dd">
+												<p>各￥8,800</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>ひじ上・下</p>
+											</div>
+											<div class="dd">
+												<p>各￥8,800</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>お腹周り</p>
+											</div>
+											<div class="dd">
+												<p>￥8,800</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>胸回り</p>
+											</div>
+											<div class="dd">
+												<p>￥8,800</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>背中</p>
+											</div>
+											<div class="dd">
+												<p>￥8,800</p>
+											</div>
+										</div>
+									</div>
+									<div class="li">
+										<div class="dl">
+											<div class="dt">
+												<p>腰</p>
+											</div>
+											<div class="dd">
+												<p>￥8,800</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContactContainer">
+			<div class="footContactPanel">
+				<div class="pageSecTtl">
+					<p class="futura">CONTACT</p>
+					<h2>来店予約・お問い合わせ</h2>
+				</div>
+				<div class="contactItemBox">
+					<div class="contactItem tel"><a class="futura" href="tel:0722474234">
+							<div>
+								<p class="span">tel.</p>
+								<p class="em">072-247-4234</p>
+							</div>
+						</a>
+						<div class="info">
+							<p>OPEN：10:00～19:00<br>CLOSE：MON（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="contactItem insta"><a class="futura" href="#" target="_blank" rel="noopener">
+							<div>
+								<p>INSTAGRAM</p>
+							</div>
+						</a>
+						<p>DMにて承ります</p>
+					</div>
+					<div class="contactItem mail"><a class="futura" href="contact">
+							<div>
+								<p>WEB FORM</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="txtBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="txt">
+							<p>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+								<div>
+									<p>TEL：072-247-4234</p>
+								</div>
+							</a>
+							<p>OPEN： 10:00 ～ 19:00<br>CLOSE：月曜日（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="copy">
+						<p>&copy; 2023 Lapis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

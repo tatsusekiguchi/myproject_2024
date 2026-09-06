@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .pageMain {
+    margin: -25px 0 0;
+  }
+  .pageTopTitle {
+    h1 {
+      min-width: 240px;
+      padding: 10px 20px;
+      font-size: 24px;
+    }
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    .footContact {
+      padding: 50px 0;
+      .secTtl {
+        max-width: 280px;
+        margin: 0 auto 40px;
+      }
+      .itemList {
+        max-width: 500px;
+        .itemBox {
+          background: #edf8e3;
+          + .itemBox {
+            margin: 20px 0 0;
+          }
+          .ttl01 {
+            max-width: 200px;
+            margin: 0 auto 20px;
+          }
+          .ttl02 {
+            max-width: 260px;
+            margin: 0 auto 20px;
+          }
+          .ttl03 {
+            max-width: 200px;
+            margin: 0 auto 20px;
+          }
+          .tel {
+            a {
+              font-size: 40px;
+            }
+          }
+          .btnMail {
+            max-width: 240px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .itemList {
+          display: flex;
+          justify-content: space-between;
+          .itemBox {
+            width: calc((100% / 3) - 20px);
+          }
+        }
+      }
+    }
+    .footPanel {
+      padding: 40px 0 100px;
+      .pagetop {
+        top: 0;
+        right: 20px;
+        width: 60px;
+      }
+      .logo {
+        max-width: 200px;
+        margin: 0 0 20px;
+      }
+      .copy {
+        margin: 120px 0 0;
+        text-align: left;
+      }
+    }
+  }
+}

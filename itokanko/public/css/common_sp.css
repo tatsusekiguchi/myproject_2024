@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header .headBox .logo {
+    width: 150px;
+  }
+  .header .headBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+  .header.fixed {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    text-align: center;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 0;
+  }
+  .navBox .navList .ul {
+    border-bottom: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li {
+    border-top: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .navBox .navList .ul .li .em {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .navBox .navList .ul .li .span {
+    font-size: 11px;
+  }
+  .navBox .navItem {
+    width: 200px;
+    margin: 30px auto 0;
+  }
+  .navBox .navItem a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(125deg, #1e5fb5, #277cbd);
+  }
+  .navBox .navItem a div {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right center no-repeat;
+  }
+  .navBox .navItem a p {
+    display: inline-block;
+    padding: 0 25px;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/header_mail.png) left center no-repeat;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 200px;
+    padding: 40px 20px;
+  }
+  .pageKvPanel .pageKvTtl {
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl p {
+    font-size: 50px;
+  }
+  .pageSecTtlBox .pageSecTtl h2 {
+    font-size: 10px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .btnMore {
+    width: 210px;
+  }
+  .btnMore a {
+    font-size: 12px;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 40px;
+  }
+  .footer .footContact .contactBox {
+    max-width: 500px;
+  }
+  .footer .footContact .contactBox .contactItem {
+    min-height: 100px;
+  }
+  .footer .footContact .contactBox .contactItem + .contactItem {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .contactBox .contactItem .tel a {
+    padding: 0 0 0 25px;
+    font-size: 26px;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .footer .footPanel {
+    padding: 60px 0 20px;
+  }
+  .footer .footPanel .logoBox {
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .logoBox .logo {
+    display: block;
+    width: 180px;
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .txt {
+    font-size: 14px;
+  }
+  .footer .footPanel .txt a {
+    display: inline-block;
+    color: #ffffff;
+  }
+  .footer .footPanel .copy {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+}

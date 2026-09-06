@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    height: 70px;
+    padding: 10px 20px;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 140px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    top: 70px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 70px 0;
+  }
+
+  .pageKvContainer .pageKvPanel {
+    height: 200px;
+  }
+  .pageKvContainer .pageKvPanel .pageKvTitle {
+    min-width: 250px;
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox .pageSecTtl {
+    padding: 50px 0 15px;
+    font-size: 20px;
+    background: url(https://shueikomuten240208.smooooth.jp/system_panel/uploads/images/page_sec_ttl_icon.png) center top no-repeat;
+    background-size: 40px auto;
+  }
+  .pageSecTtlBox .pageSecTtl:after {
+    width: 40px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .roofContactContainer .roofContactPanel {
+    position: relative;
+    padding: 80px 20px 20px;
+  }
+  .roofContactContainer .roofContactPanel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    border-radius: 0 0 20px 20px;
+    background: #0071a9;
+  }
+  .roofContactContainer .roofContactBox {
+    position: relative;
+    padding: 30px 15px;
+  }
+  .roofContactContainer .itemList {
+    max-width: 350px;
+  }
+  .roofContactContainer .itemList .itemBox .ttl {
+    font-size: 16px;
+  }
+  .roofContactContainer .itemList .itemBox01 {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #333333;
+  }
+  .roofContactContainer .itemList .itemBox02 {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #333333;
+  }
+  .roofContactContainer .itemList .itemBox02 .tel {
+    margin: 15px 0 0;
+  }
+  .roofContactContainer .itemList .itemBox03 .qr {
+    width: 60px;
+    margin: 10px auto 0;
+  }
+  .roofContactContainer .itemList .itemBox03 .qr a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .roofContactContainer {
+    margin: 0 0 60px;
+  }
+  .footer .footContainer .footPanel {
+    padding: 40px 15px 15px;
+  }
+  .footer .footContainer .footBox {
+    margin: 0 0 30px;
+  }
+  .footer .footContainer .footBox .leftBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContainer .footBox .leftBox .logo {
+    width: 150px;
+  }
+  .footer .footContainer .footBox .rightBox .txt br {
+    display: none;
+  }
+}

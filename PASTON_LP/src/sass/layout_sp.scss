@@ -1,0 +1,605 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  #mainContainer {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .topKvPanel {
+    .topKv {
+      height: 100svh;
+      img {
+        @include cover-image;
+      }
+    }
+    .topKvTitle {
+      position: absolute;
+      left: 0;
+      bottom: 130px;
+      max-width: 2650px;
+      width: 80%;
+    }
+  }
+  .secTitleBox {
+    margin: 0 0 20px;
+    p {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 11px;
+    }
+  }
+  #mainContainer .section {
+    &__top {
+      padding: 0 40px 0 0;
+      border-bottom: 40px solid #708167;
+      .photoBox {
+        .title01 {
+          position: absolute;
+          top: 20px;
+          right: 25px;
+          width: 26px;
+        }
+        .title02 {
+          position: absolute;
+          left: 25px;
+          bottom: 25px;
+          width: 100%;
+          max-width: 340px;
+        }
+      }
+      .txtBox {
+        padding: 30px 30px;
+        background: url("../image/top/top_illust.png") right bottom 40px
+          no-repeat;
+        background-size: 70px auto;
+        .txt {
+          font-family: "Zen Kaku Gothic New";
+          color: #708167;
+        }
+      }
+    }
+    &__about {
+      overflow: hidden;
+      padding: 60px 25px 0;
+      &__container {
+        padding: 60px 30px 0;
+      }
+      .secTitleBox {
+        top: -10px;
+      }
+      .secTitle {
+        margin: 0 0 30px;
+        text-align: center;
+        h3 {
+          padding: 15px 0 0;
+          font-size: 16px;
+          background: url("../image/top/about_title_icon.png") left 10px top
+            no-repeat;
+          background-size: 25px auto;
+        }
+      }
+      .areaContainer {
+        .areaPanel {
+          .title {
+            margin: 0 0 10px;
+            font-size: 15px;
+          }
+          ul {
+            li {
+              padding: 0 0 0 20px;
+              background: url("../image/top/about_map_check.png") left top 7px
+                no-repeat;
+              background-size: 13px auto;
+              + li {
+                margin: 15px 0 0;
+              }
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .areaMap {
+          right: 25px;
+          max-width: 375px;
+        }
+      }
+      &__bottomPhoto {
+        margin: -100px -25px 0;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 25px;
+          bottom: -5px;
+          width: 278px;
+          height: 70px;
+        }
+      }
+    }
+    &__works {
+      &__container {
+        padding: 60px 30px 40px;
+      }
+      .listBox {
+        max-width: 315px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -35px 0 0 -35px;
+          li {
+            width: calc((100% / 2) - 35px);
+            margin: 35px 0 0 35px;
+          }
+        }
+      }
+      .shopSection {
+        &__container {
+          padding: 40px 30px 30px;
+        }
+        .titleOpen {
+          margin: 0 0 20px;
+          font-size: 14px;
+        }
+        .mvShop {
+          max-width: 320px;
+          margin: 0 auto 25px;
+        }
+        .shopLogo {
+          max-width: 220px;
+          margin: 0 auto 25px;
+        }
+        .shopLogo01 {
+          max-width: 220px;
+          margin: 0 auto 25px;
+        }
+        .shopLogo02 {
+          max-width: 220px;
+          margin: 0 auto 25px;
+        }
+        .sns {
+          a {
+            padding: 0 0 0 20px;
+            font-size: 14px;
+            background: url("../image/top/works_icon_insta.png") left top 6px
+              no-repeat;
+            background-size: 12px auto;
+          }
+        }
+        .site {
+          dl {
+            dt {
+              margin: 0 0 8px;
+              padding: 0 0 5px;
+              font-size: 14px;
+            }
+            dd {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      .shopListSection {
+        .listBox {
+          max-width: 320px;
+          padding: 40px 0;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -25px 0 0 -25px;
+            li {
+              width: calc((100% / 2) - 25px);
+              margin: 25px 0 0 25px;
+            }
+            .photo {
+              height: 90px;
+              margin: 0 0 15px;
+              img {
+                @include cover-image;
+              }
+            }
+            .logo {
+              max-width: 110px;
+            }
+            .logo01 {
+              max-width: 50px;
+            }
+            .logo02 {
+              max-width: 110px;
+            }
+            .logo03 {
+              max-width: 35px;
+            }
+            .logo04 {
+              max-width: 55px;
+            }
+          }
+        }
+      }
+      .volunteerSection {
+        .listImage {
+          max-width: 320px;
+          margin: 0 auto 60px;
+        }
+        .sdgsImage {
+          max-width: 320px;
+        }
+      }
+    }
+    &__people {
+      .topMv {
+        .mvTitle {
+          top: 40px;
+          left: 40px;
+          width: 200px;
+        }
+      }
+      .titlePanel {
+        padding: 50px 25px;
+      }
+      .staffIntroduction {
+        padding: 0 0 50px;
+      }
+      .staffContainer {
+        padding: 45px 0 0;
+        &::before {
+          height: 80px;
+        }
+        .introPanel {
+          top: 0;
+          padding: 0 25px 60px;
+          .introBox {
+            max-width: 290px;
+            dl {
+              dt {
+                + dd {
+                  font-size: 20px;
+                }
+              }
+            }
+            .sns {
+              a {
+                padding: 0 0 0 20px;
+                font-size: 14px;
+                background: url("../image/top/works_icon_insta.png") left top
+                  6px no-repeat;
+                background-size: 12px auto;
+              }
+            }
+          }
+        }
+        .interviewPanel {
+          padding: 0 25px;
+          .interviewBox {
+            padding: 60px 15px;
+          }
+          .interviewTitle {
+            max-width: 290px;
+            height: 85px;
+            font-size: 25px;
+          }
+          .interviewPhoto {
+            .photo {
+              max-width: 220px;
+              margin: 0 auto 80px;
+            }
+          }
+          .interviewSlider {
+            .sliderBox {
+              .photo {
+                max-width: 220px;
+                margin: 0 auto 80px;
+              }
+              .detailBox {
+                dl {
+                  color: #d38a8a;
+                  letter-spacing: 0.1em;
+                  dt {
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    span {
+                      max-width: 320px;
+                      padding: 0 12px;
+                      background: url("../image/top/people_interview_title_circle.png")
+                          left center no-repeat,
+                        url("../image/top/people_interview_title_circle.png")
+                          right center no-repeat;
+                      background-size: 8px auto, 8px auto;
+                    }
+                  }
+                  dd {
+                    max-width: 320px;
+                  }
+                }
+              }
+            }
+          }
+          .slick-prev {
+            left: 80px;
+          }
+          .slick-next {
+            right: 80px;
+          }
+        }
+      }
+    }
+    &__mamasWorker {
+      .workingWayPanel {
+        padding: 30px 25px;
+        .title {
+          max-width: 250px;
+          height: 76px;
+          margin: 0 auto 30px;
+          font-size: 18px;
+        }
+        .holiday {
+          max-width: 250px;
+        }
+        .explain {
+          max-width: 320px;
+          aside {
+            margin: 10px 0 0;
+            p {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    &__entry {
+      &__title {
+        a {
+          padding: 20px 10px;
+          font-size: 20px;
+          span {
+            padding: 0 25px 0 0;
+            background: url("../image/top/entry_sec_title_icon.png") right top
+              7px no-repeat;
+            background-size: 18px auto;
+          }
+          @media (min-width: 1025px) {
+            &:hover {
+              opacity: 1;
+              background: #d4d6ca;
+            }
+          }
+        }
+      }
+    }
+    &__recruit {
+      padding: 0 25px;
+      &__container {
+        padding: 50px 30px 60px;
+      }
+      .itemList {
+        + .itemList {
+          margin: 30px 0 0;
+        }
+        .title {
+          margin: 0 0 20px;
+        }
+        ul {
+          li {
+            padding: 20px 0;
+          }
+          dl {
+            width: calc(100% - 100px);
+            dt {
+              font-size: 20px;
+            }
+            dd {
+              font-size: 11px;
+            }
+          }
+          .btnMore {
+            width: 85px;
+            padding: 4px;
+            font-size: 13px;
+            color: #ffffff;
+            background: #6b8dd9;
+          }
+        }
+      }
+      .btnEntry {
+        max-width: 290px;
+        margin: 50px auto 0;
+        a {
+          height: 87px;
+          font-size: 25px;
+        }
+      }
+    }
+    &__data {
+      .topMv {
+        .mvTitle {
+          top: 60px;
+          left: 65px;
+          width: 138px;
+        }
+      }
+      .titlePanel {
+        padding: 50px 25px;
+      }
+      .dataTable {
+        table {
+          td {
+            padding: 25px 20px 40px;
+            dl {
+              dt {
+                margin: 0 0 15px;
+                font-size: 16px;
+              }
+            }
+          }
+          .icon {
+            &.icon01 {
+              width: 62px;
+              margin: 0 auto 20px;
+            }
+            &.icon02 {
+              width: 53px;
+              margin: 0 auto 10px;
+            }
+            &.icon03 {
+              width: 54px;
+              margin: 0 auto;
+            }
+            &.icon04 {
+              width: 70px;
+              margin: 0 auto;
+            }
+          }
+          .numBox {
+            max-width: 150px;
+            + .numBox {
+              margin: 5px auto 0;
+            }
+            small {
+              top: 20px;
+              font-size: 12px;
+            }
+            em {
+              min-width: 70px;
+              margin: 0 5px 0 0;
+              font-size: 80px;
+            }
+            span {
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+    &__company {
+      &__container {
+        max-width: 100%;
+        padding: 50px 30px;
+      }
+      .infoBox {
+        max-width: 445px;
+        margin: 0 auto;
+        text-align: center;
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .site {
+        dl {
+          dt {
+            margin: 0 0 8px;
+            padding: 0 0 5px;
+            font-size: 14px;
+          }
+          dd {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    &__instagram {
+      padding: 80px 0 0;
+      .secTitleBox {
+        margin: 0 0 80px;
+      }
+      &__container {
+        padding: 0 40px 70px;
+      }
+      .instagramFeedPanel {
+        top: -55px;
+        max-width: 100%;
+        .instaHeader {
+          a {
+            .img {
+              width: 115px;
+              height: 115px;
+              margin: 0 auto 25px;
+            }
+          }
+        }
+      }
+      .sns {
+        a {
+          padding: 0 0 4px 15px;
+          font-size: 14px;
+          background: url("../image/top/works_icon_insta.png") left top 4px
+            no-repeat;
+          background-size: 11px auto;
+        }
+      }
+    }
+    &__contact {
+      &__container {
+        padding: 60px 40px 40px;
+      }
+      .contactPanel {
+        max-width: 100%;
+        .txt {
+          font-size: 13px;
+        }
+      }
+      .buttonList {
+        margin: 40px 0 0;
+        .buttonLink {
+          + .buttonLink {
+            margin: 20px 0 0;
+          }
+          a {
+            padding: 15px;
+            font-size: 20px;
+          }
+        }
+      }
+      .imageBox {
+        margin: 50px 0 0;
+        .img {
+          width: 35px;
+        }
+      }
+    }
+    &__pastone {
+      padding: 70px 25px;
+      background: #ffffff;
+      &__container {
+        max-width: 100%;
+        padding: 40px 30px 30px;
+        background: url("../image/top/pastone_sec_bg_01.png") left top no-repeat,
+          url("../image/top/pastone_sec_bg_02.png") right bottom no-repeat;
+        background-size: 50px auto, 50px auto;
+      }
+      .secBox {
+        max-width: 320px;
+        .logo {
+          max-width: 194px;
+          margin: 0 auto 25px;
+        }
+        .photo {
+          margin: 0 auto 25px;
+        }
+        .site {
+          dl {
+            dt {
+              margin: 0 0 8px;
+              padding: 0 0 5px;
+              font-size: 14px;
+            }
+            dd {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

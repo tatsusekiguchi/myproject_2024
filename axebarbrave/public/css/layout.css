@@ -1,0 +1,904 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvContainer {
+  position: relative;
+}
+#top .topKvContainer .topKvTitleBox {
+  color: #ffffff;
+  text-align: right;
+}
+#top .topKvContainer .topKvTitleBox .topKvTitle {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  width: 100%;
+  z-index: 1;
+}
+#top .topKvContainer .topKvTitleBox .topKvTitle h1 {
+  font-size: 50px;
+}
+#top .topKvContainer .topKvTitleBox .sub {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  width: 100%;
+  font-size: clamp(40px, 5vw, 80px);
+  color: #eae8e2;
+  line-height: 1;
+  z-index: 1;
+}
+#top .topKvContainer .topKvPanel .topKv {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#top .topKvContainer .kvSliderPanel {
+  overflow: hidden;
+  width: 100%;
+}
+#top .topKvContainer .kvSlider {
+  object-fit: cover;
+}
+#top .topKvContainer .add-animation {
+  animation: zoom-fade 10s both;
+}
+#top .sec01 {
+  padding: 120px 0;
+}
+#top .sec01 .secPanel {
+  padding: 0 0 0 5%;
+}
+#top .sec01 .secPanel .secBox .secTtl {
+  margin: 0 0 40px;
+}
+#top .sec01 .secPanel .secBox .secTtl h2 {
+  font-size: 55px;
+}
+#top .sec01 .secPanel .secBox .secTtl p {
+  font-size: 18px;
+  color: #e83228;
+}
+@media (min-width: 1025px) {
+  #top .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #top .sec01 .secPanel .photo {
+    width: 45%;
+  }
+  #top .sec01 .secPanel .secBox {
+    width: 50%;
+  }
+}
+#top .sec02 {
+  padding: 120px 0;
+  background: url("../image/top/sec02_bg.png");
+}
+#top .sec02 .secWrap {
+  position: relative;
+}
+#top .sec02 .listBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#top .sec02 .listBox ul li .title {
+  min-height: 70px;
+  padding: 10px;
+  color: #000000;
+}
+#top .sec02 .listBox ul li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #000000;
+  border-bottom: 1px solid #0c0b0a;
+  background: url("../image/common/read_more_arrow.png") right 10px center no-repeat;
+}
+@media (min-width: 1025px) {
+  #top .sec02 .listBox ul {
+    display: flex;
+    margin: 0 0 0 -60px;
+  }
+  #top .sec02 .listBox ul li {
+    width: calc(33.3333333333% - 60px);
+    margin: 0 0 0 60px;
+  }
+  #top .sec02 .listBox ul li .photo {
+    position: relative;
+    height: 0;
+    padding: 0 0 120%;
+  }
+  #top .sec02 .listBox ul li .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#top .sec02 .btnMore {
+  width: 170px;
+  margin: 40px auto 0;
+}
+#top .sec02 .btnMore a {
+  color: #252525;
+}
+@media (min-width: 1680px) {
+  #top .sec02 .btnMore {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+#top .sec03 {
+  padding: 120px 0;
+}
+#top .sec03 .message {
+  max-width: 1400px;
+  margin: 0 0 50px -50px;
+}
+#top .sec03 .secContainer .secPanel .secBox {
+  background: #100f0e;
+}
+#top .sec03 .secContainer .secPanel .secBox .txtBox {
+  padding: 20px;
+}
+#top .sec03 .secContainer .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-size: 26px;
+}
+#top .sec03 .secContainer .secPanel .secBox .txtBox .ttl em {
+  margin: 0 5px 0 0;
+  color: #e83228;
+}
+@media (min-width: 1025px) {
+  #top .sec03 .secContainer {
+    display: flex;
+  }
+  #top .sec03 .secContainer .secPanel {
+    width: 50%;
+  }
+  #top .sec03 .secContainer .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #top .sec03 .secContainer .secPanel .secBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  #top .sec03 .secContainer .secPanel .secBox .photo {
+    width: 50%;
+  }
+  #top .sec03 .secContainer .secPanel .secBox .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  #top .sec03 .secContainer .secPanel .secBox .txtBox .inner {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+#top .sec04 {
+  padding: 120px 0;
+}
+#top .sec04 .experiencePanel {
+  max-width: 1200px;
+  min-height: 250px;
+  margin: 0 auto 60px;
+  padding: 40px 20px 20px;
+  text-align: center;
+  background: url("../image/top/first_bg.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .experiencePanel .ttl {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+#top .sec04 .experiencePanel .ttl em {
+  color: #d83024;
+}
+#top .sec04 .experiencePanel .secBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#top .sec04 .experiencePanel .secBox .firstTtl {
+  width: 300px;
+  margin: 0 20px 0 0;
+}
+#top .sec04 .experiencePanel .secBox span {
+  display: inline-block;
+  font-size: 30px;
+}
+#top .sec04 .experiencePanel .secBox em {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 60px;
+  line-height: 1;
+}
+#top .sec04 .message {
+  margin: 0 0 40px;
+  font-size: 40px;
+  text-align: center;
+}
+#top .sec04 .listBox ul li {
+  text-align: center;
+}
+#top .sec04 .listBox ul li:nth-child(1) {
+  background: url("../image/top/sec04_list_bg_01.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .listBox ul li:nth-child(2) {
+  background: url("../image/top/sec04_list_bg_02.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .listBox ul li:nth-child(3) {
+  background: url("../image/top/sec04_list_bg_03.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .listBox ul li:nth-child(4) {
+  background: url("../image/top/sec04_list_bg_04.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .listBox ul li:nth-child(5) {
+  background: url("../image/top/sec04_list_bg_05.png") no-repeat;
+  background-size: cover;
+}
+#top .sec04 .listBox ul .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 400px;
+  padding: 40px 20px;
+}
+#top .sec04 .listBox ul .box .time {
+  margin: 0 0 15px;
+}
+#top .sec04 .listBox ul .box .ttl {
+  margin: 0 0 20px;
+  text-align: left;
+  writing-mode: vertical-rl;
+}
+#top .sec04 .listBox ul .box .price {
+  font-size: 20px;
+}
+#top .sec04 .listBox ul .box .price em {
+  margin: 0 5px 0 0;
+  font-size: 34px;
+}
+@media (min-width: 1025px) {
+  #top .sec04 .listBox ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top .sec04 .listBox ul li {
+    width: calc(20% - 20px);
+  }
+}
+#top .sec04 .btnMore {
+  margin: 80px 0 0;
+  text-align: center;
+}
+#top .sec05 {
+  padding: 120px 0;
+  background: url("../image/top/sec05_bg.png");
+}
+#top .sec05 .message {
+  margin: 0 0 40px;
+  font-size: 40px;
+  text-align: center;
+}
+#top .sec05 .listBox ol li {
+  position: relative;
+  text-align: center;
+}
+#top .sec05 .listBox ol .ttl {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  color: #e83228;
+}
+#top .sec05 .listBox ol .ttl em {
+  margin: 0 0 0 5px;
+  font-size: 30px;
+}
+#top .sec05 .listBox ol dl dt {
+  margin: 0 0 15px;
+  font-size: 24px;
+}
+#top .sec05 .listBox ol dl dd {
+  text-align: left;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  #top .sec05 .listBox ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  #top .sec05 .listBox ol li {
+    width: calc(33.3333333333% - 60px);
+  }
+  #top .sec05 .listBox ol li + li::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -60px;
+    width: 35px;
+    height: 50px;
+    background: url("../image/top/sec05_arrow_01.png") no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	features
+///////////////////////////////////////////////////////////*/
+#features .sec01 {
+  padding: 120px 0;
+}
+#features .sec01 .secPanel {
+  padding: 0 0 0 5%;
+}
+#features .sec01 .secPanel .secBox .secTtl {
+  margin: 0 0 40px;
+}
+#features .sec01 .secPanel .secBox .secTtl h2 {
+  font-size: 55px;
+}
+#features .sec01 .secPanel .secBox .secTtl p {
+  font-size: 18px;
+  color: #e83228;
+}
+@media (min-width: 1025px) {
+  #features .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #features .sec01 .secPanel .photo {
+    width: 45%;
+  }
+  #features .sec01 .secPanel .secBox {
+    width: 50%;
+  }
+}
+#features .sec02 {
+  padding: 120px 0;
+}
+#features .sec02 .listBox ul li {
+  background: #100f0e;
+}
+#features .sec02 .listBox ul .txtBox {
+  padding: 20px;
+}
+#features .sec02 .listBox ul .txtBox .ttl {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+#features .sec02 .listBox ul .txtBox .ttl em {
+  margin: 0 5px 0 0;
+  color: #e83228;
+}
+@media (min-width: 1025px) {
+  #features .sec02 .listBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #features .sec02 .listBox ul li {
+    width: calc(25% - 40px);
+  }
+}
+#features .sec03 {
+  padding: 120px 0;
+  background: url("../image/features/sec03_bg.png");
+}
+#features .sec03 .faqPanel dl + dl {
+  margin: 40px 0 0;
+}
+#features .sec03 .faqPanel dl dt {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 26px;
+  cursor: pointer;
+  border-bottom: 1px solid #535b5e;
+  background: url("../image/common/accord_plus.png") right 10px center no-repeat;
+  background-size: 20px auto;
+}
+#features .sec03 .faqPanel dl dt.active {
+  background: url("../image/common/accord_minus.png") right 10px center no-repeat;
+  background-size: 20px auto;
+}
+#features .sec03 .faqPanel dl dt em {
+  margin: 0 20px 0 0;
+  color: #e83228;
+  text-align: center;
+}
+#features .sec03 .faqPanel dl dt span {
+  padding: 0 30px 0 0;
+}
+#features .sec03 .faqPanel dl dd {
+  display: none;
+  padding: 20px 0 0;
+}
+#features .sec04 {
+  padding: 120px 0;
+}
+#features .termsContainer .c1 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+  height: 20px;
+}
+#features .termsContainer .c3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*////////////////////////////////////////////////////////////
+	plan
+///////////////////////////////////////////////////////////*/
+#plan .sec01 {
+  padding: 120px 0;
+}
+#plan .sec01 .topContainer {
+  margin: 0 0 100px;
+}
+#plan .sec01 .topContainer .txt {
+  margin: 15px 0 0;
+  text-align: center;
+}
+#plan .sec01 .experiencePanel {
+  max-width: 1200px;
+  min-height: 250px;
+  margin: 0 auto 60px;
+  padding: 40px 20px 20px;
+  text-align: center;
+  background: url("../image/top/first_bg.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .experiencePanel .ttl {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+#plan .sec01 .experiencePanel .ttl em {
+  color: #d83024;
+}
+#plan .sec01 .experiencePanel .secBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#plan .sec01 .experiencePanel .secBox .firstTtl {
+  width: 300px;
+  margin: 0 20px 0 0;
+}
+#plan .sec01 .experiencePanel .secBox span {
+  display: inline-block;
+  font-size: 30px;
+}
+#plan .sec01 .experiencePanel .secBox em {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 60px;
+  line-height: 1;
+}
+#plan .sec01 .entryPanel {
+  background: url("../image/plan/entry_bg.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .entryPanel dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1px;
+}
+#plan .sec01 .entryPanel dl dt {
+  width: 30%;
+  padding: 19px 20px;
+  font-size: 24px;
+  background: #0d0b0a;
+}
+#plan .sec01 .entryPanel dl dd {
+  width: 70%;
+  padding: 19px 20px;
+  font-size: 22px;
+}
+#plan .sec01 .entryPanel dl dd em {
+  font-size: 40px;
+}
+#plan .sec01 .planListPanel + .planListPanel {
+  margin: 100px 0 0;
+}
+#plan .sec01 .planListPanel.planListPanel01 .planTitle {
+  background: url("../image/plan/plan_title_bg_01.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .planListPanel.planListPanel02 .planTitle {
+  background: url("../image/plan/plan_title_bg_02.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .planListPanel.planListPanel03 .planTitle {
+  background: url("../image/plan/plan_title_bg_03.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .planListPanel.planListPanel04 .planTitle {
+  background: url("../image/plan/plan_title_bg_04.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .planListPanel.planListPanel05 .planTitle {
+  background: url("../image/plan/plan_title_bg_05.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec01 .planListPanel .planTitle {
+  padding: 30px 20px;
+  text-align: center;
+}
+#plan .sec01 .planListPanel .planTitle .title {
+  margin: 0 auto;
+}
+#plan .sec01 .planListPanel .planTitle .title01 {
+  max-width: 330px;
+}
+#plan .sec01 .planListPanel .planTitle .title02 {
+  max-width: 380px;
+}
+#plan .sec01 .planListPanel .planTitle .title03 {
+  max-width: 450px;
+}
+#plan .sec01 .planListPanel .planTitle .title04 {
+  max-width: 450px;
+}
+#plan .sec01 .planListPanel .planTitle .title05 {
+  max-width: 250px;
+}
+#plan .sec01 .planListPanel .time {
+  font-size: 24px;
+  text-align: center;
+}
+#plan .sec01 .planListPanel .secBox {
+  margin: 40px 0 0;
+}
+#plan .sec01 .planListPanel .secBox .leftBox .ttl {
+  padding: 15px 20px;
+  font-size: 26px;
+  border-bottom: 1px solid #535b5e;
+}
+#plan .sec01 .planListPanel .secBox .leftBox .txt {
+  padding: 10px 20px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox .ttl {
+  padding: 9px 20px;
+  text-align: right;
+  font-size: 20px;
+  border-bottom: 1px solid #535b5e;
+}
+#plan .sec01 .planListPanel .secBox .rightBox .ttl em {
+  margin: 0 5px;
+  font-size: 34px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox ul li {
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #535b5e;
+}
+#plan .sec01 .planListPanel .secBox .rightBox ul dl dt {
+  color: #a19e9c;
+}
+#plan .sec01 .planListPanel .secBox .rightBox ul dl dd {
+  text-align: right;
+}
+@media (min-width: 1025px) {
+  #plan .sec01 .planListPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  #plan .sec01 .planListPanel .secBox > * {
+    width: 48%;
+  }
+  #plan .sec01 .planListPanel .secBox .rightBox ul dl {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#plan .sec02 {
+  padding: 120px 0;
+}
+#plan .sec02 .rentalContainer .entryPanel {
+  background: url("../image/plan/entry_bg.png") no-repeat;
+  background-size: cover;
+}
+#plan .sec02 .rentalContainer .entryPanel + .entryPanel {
+  margin: 20px 0 0;
+}
+#plan .sec02 .rentalContainer .entryPanel dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  padding: 1px;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dt {
+  width: 30%;
+  padding: 22px 20px 22px;
+  font-size: 24px;
+  background: #0d0b0a;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dd {
+  width: 70%;
+  padding: 22px 20px 22px;
+  font-size: 22px;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dd em {
+  font-size: 34px;
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about .topSection {
+  padding: 100px 0;
+  text-align: center;
+}
+#about .topSection .ttlBox {
+  margin: 0 0 30px;
+  font-size: 40px;
+}
+#about .topSection .ttlBox em {
+  color: #d83024;
+}
+#about .sec01 {
+  padding: 120px 0;
+  background: url("../image/about/sec01_bg.png");
+}
+#about .sec01 .listBox ul dl {
+  margin: 15px 0 0;
+}
+#about .sec01 .listBox ul dl dt {
+  margin: 0 0 10px;
+  font-size: 24px;
+  text-align: center;
+}
+#about .sec01 .listBox ul dl dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  #about .sec01 .listBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -60px 0 0 -40px;
+  }
+  #about .sec01 .listBox ul li {
+    width: calc(33.3333333333% - 40px);
+    margin: 60px 0 0 40px;
+  }
+}
+#about .sec02 {
+  padding: 120px 0;
+}
+#about .sec02 .pageSecTtlBox {
+  text-align: left;
+}
+#about .sec02 .infoBox {
+  margin: 0 0 60px;
+}
+#about .sec02 .infoBox dl {
+  display: flex;
+  line-height: 2;
+}
+#about .sec02 .infoBox dl dt {
+  width: 280px;
+  padding: 20px 60px;
+  color: #b6b6b6;
+  border-bottom: 1px solid #c22a22;
+}
+#about .sec02 .infoBox dl dd {
+  width: calc(100% - 280px);
+  padding: 20px 60px;
+  border-bottom: 1px solid #272523;
+}
+#about .sec02 .mapBox iframe {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+#blog {
+  background: url("../image/blog/blog_main_bg.png");
+}
+#blog .sec01 {
+  padding: 60px 0 120px;
+}
+#blog .sec01 .cateList {
+  margin: 0 0 60px;
+}
+#blog .sec01 .cateList ul {
+  text-align: center;
+}
+#blog .sec01 .cateList ul li {
+  display: inline-block;
+  min-width: 220px;
+  margin: 0 10px 0 0;
+}
+#blog .sec01 .cateList ul li a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  background: #d5ceb9;
+}
+#blog .sec01 .listBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#blog .sec01 .listBox ul li .title {
+  min-height: 70px;
+  padding: 10px;
+  color: #000000;
+}
+#blog .sec01 .listBox ul li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #000000;
+  border-bottom: 1px solid #0c0b0a;
+  background: url("../image/common/read_more_arrow.png") right 10px center no-repeat;
+}
+@media (min-width: 1025px) {
+  #blog .sec01 .listBox ul {
+    display: flex;
+    margin: 0 0 0 -60px;
+  }
+  #blog .sec01 .listBox ul li {
+    width: calc(33.3333333333% - 60px);
+    margin: 0 0 0 60px;
+  }
+  #blog .sec01 .listBox ul li .photo {
+    position: relative;
+    height: 0;
+    padding: 0 0 120%;
+  }
+  #blog .sec01 .listBox ul li .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#blog .sec01 .list__pagination {
+  margin: 100px 0 0;
+}
+#blog .sec01 .list__pagination .pagination {
+  display: flex;
+  justify-content: center;
+}
+#blog .sec01 .list__pagination .pagination li {
+  margin: 0 10px;
+}
+#blog .sec01 .list__pagination .pagination li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: #d5ceb9;
+}
+#blog .sec01 .list__pagination .pagination li.current a {
+  background: #000000;
+}
+#blog .sec01 .list__pagination .pagination li.previous a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 9px;
+  height: 8px;
+  margin: auto;
+  background: url("../image/common/pagination_prev.png") no-repeat;
+  background-size: 100%;
+}
+#blog .sec01 .list__pagination .pagination li.next a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 9px;
+  height: 8px;
+  margin: auto;
+  background: url("../image/common/pagination_next.png") no-repeat;
+  background-size: 100%;
+}
+#blog .sec01 .detailPanel {
+  padding: 30px 0 0;
+}
+#blog .sec01 .detailPanel .title {
+  margin: 0 0 40px;
+  padding: 0 20px 10px;
+  font-size: 30px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+#blog .sec01 .detailPanel .slickSlide {
+  margin: 0 0 40px;
+}
+#blog .sec01 .detailPanel .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 120%;
+}
+#blog .sec01 .detailPanel .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#blog .sec01 .detailPanel .slick-list {
+  margin: 0 0 10px;
+}
+#blog .sec01 .detailPanel .thumb-item {
+  max-width: 660px;
+  margin: 0 0 10px;
+}
+#blog .sec01 .detailPanel .slick-slide {
+  margin: 0 5px;
+}
+#blog .sec01 .detailPanel .slideNav .slick-slide {
+  margin: 0 5px;
+}
+#blog .sec01 .detailPanel .postContents {
+  line-height: 2;
+  color: #000000;
+}
+#blog .sec01 .detailPanel .postContents img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+#blog .sec01 .detailPanel .postContents a {
+  color: #000000;
+}
+#blog .sec01 .btnBack {
+  max-width: 220px;
+  margin: 100px auto 0;
+}
+#blog .sec01 .btnBack a {
+  display: block;
+  padding: 5px;
+  color: #000000;
+  text-align: center;
+  background: #d5ceb9;
+}

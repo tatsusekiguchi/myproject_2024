@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+    background: rgba(34, 32, 32, 0.8);
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span {
+    background: #ffffff;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 60px;
+    z-index: 999;
+    opacity: 0;
+    background: rgba(34, 32, 32, 0.8);
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 0;
+    opacity: 1;
+  }
+  .navBox .navList {
+    border-top: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li {
+    padding: 10px 20px;
+  }
+  .navBox .navList .ul .li + .li {
+    border-top: 1px solid #ffffff;
+  }
+  .navBox .navList .ul .li a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .navList .ul .li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #5d5d5d;
+  }
+  .navBox .navList .ul .li .btnMore {
+    margin: 0 auto;
+  }
+  .navBox .navList .ul .li .btnMore a {
+    display: block;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    height: 200px;
+    padding: 40px 20px;
+  }
+  .pageKvPanel .pageKvTitle {
+    font-size: 26px;
+  }
+
+  .pageSecTitleBox .pageSecTitle01 {
+    padding: 30px 0 0;
+  }
+  .pageSecTitleBox .pageSecTitle01::before {
+    height: 20px;
+  }
+  .pageSecTitleBox .pageSecTitle02 {
+    margin: 20px 0 0;
+    font-size: 26px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .videoBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 60px 0;
+  }
+  .footer .footContact .secBox .ttl {
+    margin: 0 0 20px;
+    font-size: 26px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 15px;
+  }
+  .footer .footPanel .logo {
+    margin: 0 0 15px;
+    font-size: 26px;
+  }
+  .footer .footPanel .copy {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+}

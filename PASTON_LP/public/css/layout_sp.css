@@ -1,0 +1,510 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top #mainContainer {
+  max-width: 430px;
+  margin: 0 auto;
+}
+#top .topKvPanel .topKv {
+  height: 100svh;
+}
+#top .topKvPanel .topKv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top .topKvPanel .topKvTitle {
+  position: absolute;
+  left: 0;
+  bottom: 130px;
+  max-width: 2650px;
+  width: 80%;
+}
+#top .secTitleBox {
+  margin: 0 0 20px;
+}
+#top .secTitleBox p {
+  font-size: 20px;
+}
+#top .secTitleBox h2 {
+  font-size: 11px;
+}
+#top #mainContainer .section__top {
+  padding: 0 40px 0 0;
+  border-bottom: 40px solid #708167;
+}
+#top #mainContainer .section__top .photoBox .title01 {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 26px;
+}
+#top #mainContainer .section__top .photoBox .title02 {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  width: 100%;
+  max-width: 340px;
+}
+#top #mainContainer .section__top .txtBox {
+  padding: 30px 30px;
+  background: url("../image/top/top_illust.png") right bottom 40px no-repeat;
+  background-size: 70px auto;
+}
+#top #mainContainer .section__top .txtBox .txt {
+  font-family: "Zen Kaku Gothic New";
+  color: #708167;
+}
+#top #mainContainer .section__about {
+  overflow: hidden;
+  padding: 60px 25px 0;
+}
+#top #mainContainer .section__about__container {
+  padding: 60px 30px 0;
+}
+#top #mainContainer .section__about .secTitleBox {
+  top: -10px;
+}
+#top #mainContainer .section__about .secTitle {
+  margin: 0 0 30px;
+  text-align: center;
+}
+#top #mainContainer .section__about .secTitle h3 {
+  padding: 15px 0 0;
+  font-size: 16px;
+  background: url("../image/top/about_title_icon.png") left 10px top no-repeat;
+  background-size: 25px auto;
+}
+#top #mainContainer .section__about .areaContainer .areaPanel .title {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+#top #mainContainer .section__about .areaContainer .areaPanel ul li {
+  padding: 0 0 0 20px;
+  background: url("../image/top/about_map_check.png") left top 7px no-repeat;
+  background-size: 13px auto;
+}
+#top #mainContainer .section__about .areaContainer .areaPanel ul li + li {
+  margin: 15px 0 0;
+}
+#top #mainContainer .section__about .areaContainer .areaPanel ul li span {
+  font-size: 16px;
+}
+#top #mainContainer .section__about .areaContainer .areaMap {
+  right: 25px;
+  max-width: 375px;
+}
+#top #mainContainer .section__about__bottomPhoto {
+  margin: -100px -25px 0;
+}
+#top #mainContainer .section__about__bottomPhoto:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: -5px;
+  width: 278px;
+  height: 70px;
+}
+#top #mainContainer .section__works__container {
+  padding: 60px 30px 40px;
+}
+#top #mainContainer .section__works .listBox {
+  max-width: 315px;
+}
+#top #mainContainer .section__works .listBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -35px 0 0 -35px;
+}
+#top #mainContainer .section__works .listBox ul li {
+  width: calc(50% - 35px);
+  margin: 35px 0 0 35px;
+}
+#top #mainContainer .section__works .shopSection__container {
+  padding: 40px 30px 30px;
+}
+#top #mainContainer .section__works .shopSection .titleOpen {
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+#top #mainContainer .section__works .shopSection .mvShop {
+  max-width: 320px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__works .shopSection .shopLogo {
+  max-width: 220px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__works .shopSection .shopLogo01 {
+  max-width: 220px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__works .shopSection .shopLogo02 {
+  max-width: 220px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__works .shopSection .sns a {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  background: url("../image/top/works_icon_insta.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+#top #mainContainer .section__works .shopSection .site dl dt {
+  margin: 0 0 8px;
+  padding: 0 0 5px;
+  font-size: 14px;
+}
+#top #mainContainer .section__works .shopSection .site dl dd {
+  font-size: 11px;
+}
+#top #mainContainer .section__works .shopListSection .listBox {
+  max-width: 320px;
+  padding: 40px 0;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -25px 0 0 -25px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul li {
+  width: calc(50% - 25px);
+  margin: 25px 0 0 25px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .photo {
+  height: 90px;
+  margin: 0 0 15px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .logo {
+  max-width: 110px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .logo01 {
+  max-width: 50px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .logo02 {
+  max-width: 110px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .logo03 {
+  max-width: 35px;
+}
+#top #mainContainer .section__works .shopListSection .listBox ul .logo04 {
+  max-width: 55px;
+}
+#top #mainContainer .section__works .volunteerSection .listImage {
+  max-width: 320px;
+  margin: 0 auto 60px;
+}
+#top #mainContainer .section__works .volunteerSection .sdgsImage {
+  max-width: 320px;
+}
+#top #mainContainer .section__people .topMv .mvTitle {
+  top: 40px;
+  left: 40px;
+  width: 200px;
+}
+#top #mainContainer .section__people .titlePanel {
+  padding: 50px 25px;
+}
+#top #mainContainer .section__people .staffIntroduction {
+  padding: 0 0 50px;
+}
+#top #mainContainer .section__people .staffContainer {
+  padding: 45px 0 0;
+}
+#top #mainContainer .section__people .staffContainer::before {
+  height: 80px;
+}
+#top #mainContainer .section__people .staffContainer .introPanel {
+  top: 0;
+  padding: 0 25px 60px;
+}
+#top #mainContainer .section__people .staffContainer .introPanel .introBox {
+  max-width: 290px;
+}
+#top #mainContainer .section__people .staffContainer .introPanel .introBox dl dt + dd {
+  font-size: 20px;
+}
+#top #mainContainer .section__people .staffContainer .introPanel .introBox .sns a {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  background: url("../image/top/works_icon_insta.png") left top 6px no-repeat;
+  background-size: 12px auto;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel {
+  padding: 0 25px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewBox {
+  padding: 60px 15px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewTitle {
+  max-width: 290px;
+  height: 85px;
+  font-size: 25px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewPhoto .photo {
+  max-width: 220px;
+  margin: 0 auto 80px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewSlider .sliderBox .photo {
+  max-width: 220px;
+  margin: 0 auto 80px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewSlider .sliderBox .detailBox dl {
+  color: #d38a8a;
+  letter-spacing: 0.1em;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewSlider .sliderBox .detailBox dl dt {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewSlider .sliderBox .detailBox dl dt span {
+  max-width: 320px;
+  padding: 0 12px;
+  background: url("../image/top/people_interview_title_circle.png") left center no-repeat, url("../image/top/people_interview_title_circle.png") right center no-repeat;
+  background-size: 8px auto, 8px auto;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .interviewSlider .sliderBox .detailBox dl dd {
+  max-width: 320px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .slick-prev {
+  left: 80px;
+}
+#top #mainContainer .section__people .staffContainer .interviewPanel .slick-next {
+  right: 80px;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel {
+  padding: 30px 25px;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel .title {
+  max-width: 250px;
+  height: 76px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel .holiday {
+  max-width: 250px;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel .explain {
+  max-width: 320px;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel .explain aside {
+  margin: 10px 0 0;
+}
+#top #mainContainer .section__mamasWorker .workingWayPanel .explain aside p {
+  font-size: 11px;
+}
+#top #mainContainer .section__entry__title a {
+  padding: 20px 10px;
+  font-size: 20px;
+}
+#top #mainContainer .section__entry__title a span {
+  padding: 0 25px 0 0;
+  background: url("../image/top/entry_sec_title_icon.png") right top 7px no-repeat;
+  background-size: 18px auto;
+}
+@media (min-width: 1025px) {
+  #top #mainContainer .section__entry__title a:hover {
+    opacity: 1;
+    background: #d4d6ca;
+  }
+}
+#top #mainContainer .section__recruit {
+  padding: 0 25px;
+}
+#top #mainContainer .section__recruit__container {
+  padding: 50px 30px 60px;
+}
+#top #mainContainer .section__recruit .itemList + .itemList {
+  margin: 30px 0 0;
+}
+#top #mainContainer .section__recruit .itemList .title {
+  margin: 0 0 20px;
+}
+#top #mainContainer .section__recruit .itemList ul li {
+  padding: 20px 0;
+}
+#top #mainContainer .section__recruit .itemList ul dl {
+  width: calc(100% - 100px);
+}
+#top #mainContainer .section__recruit .itemList ul dl dt {
+  font-size: 20px;
+}
+#top #mainContainer .section__recruit .itemList ul dl dd {
+  font-size: 11px;
+}
+#top #mainContainer .section__recruit .itemList ul .btnMore {
+  width: 85px;
+  padding: 4px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6b8dd9;
+}
+#top #mainContainer .section__recruit .btnEntry {
+  max-width: 290px;
+  margin: 50px auto 0;
+}
+#top #mainContainer .section__recruit .btnEntry a {
+  height: 87px;
+  font-size: 25px;
+}
+#top #mainContainer .section__data .topMv .mvTitle {
+  top: 60px;
+  left: 65px;
+  width: 138px;
+}
+#top #mainContainer .section__data .titlePanel {
+  padding: 50px 25px;
+}
+#top #mainContainer .section__data .dataTable table td {
+  padding: 25px 20px 40px;
+}
+#top #mainContainer .section__data .dataTable table td dl dt {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#top #mainContainer .section__data .dataTable table .icon.icon01 {
+  width: 62px;
+  margin: 0 auto 20px;
+}
+#top #mainContainer .section__data .dataTable table .icon.icon02 {
+  width: 53px;
+  margin: 0 auto 10px;
+}
+#top #mainContainer .section__data .dataTable table .icon.icon03 {
+  width: 54px;
+  margin: 0 auto;
+}
+#top #mainContainer .section__data .dataTable table .icon.icon04 {
+  width: 70px;
+  margin: 0 auto;
+}
+#top #mainContainer .section__data .dataTable table .numBox {
+  max-width: 150px;
+}
+#top #mainContainer .section__data .dataTable table .numBox + .numBox {
+  margin: 5px auto 0;
+}
+#top #mainContainer .section__data .dataTable table .numBox small {
+  top: 20px;
+  font-size: 12px;
+}
+#top #mainContainer .section__data .dataTable table .numBox em {
+  min-width: 70px;
+  margin: 0 5px 0 0;
+  font-size: 80px;
+}
+#top #mainContainer .section__data .dataTable table .numBox span {
+  font-size: 23px;
+}
+#top #mainContainer .section__company__container {
+  max-width: 100%;
+  padding: 50px 30px;
+}
+#top #mainContainer .section__company .infoBox {
+  max-width: 445px;
+  margin: 0 auto;
+  text-align: center;
+}
+#top #mainContainer .section__company .infoBox ul li {
+  font-size: 14px;
+}
+#top #mainContainer .section__company .site dl dt {
+  margin: 0 0 8px;
+  padding: 0 0 5px;
+  font-size: 14px;
+}
+#top #mainContainer .section__company .site dl dd {
+  font-size: 11px;
+}
+#top #mainContainer .section__instagram {
+  padding: 80px 0 0;
+}
+#top #mainContainer .section__instagram .secTitleBox {
+  margin: 0 0 80px;
+}
+#top #mainContainer .section__instagram__container {
+  padding: 0 40px 70px;
+}
+#top #mainContainer .section__instagram .instagramFeedPanel {
+  top: -55px;
+  max-width: 100%;
+}
+#top #mainContainer .section__instagram .instagramFeedPanel .instaHeader a .img {
+  width: 115px;
+  height: 115px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__instagram .sns a {
+  padding: 0 0 4px 15px;
+  font-size: 14px;
+  background: url("../image/top/works_icon_insta.png") left top 4px no-repeat;
+  background-size: 11px auto;
+}
+#top #mainContainer .section__contact__container {
+  padding: 60px 40px 40px;
+}
+#top #mainContainer .section__contact .contactPanel {
+  max-width: 100%;
+}
+#top #mainContainer .section__contact .contactPanel .txt {
+  font-size: 13px;
+}
+#top #mainContainer .section__contact .buttonList {
+  margin: 40px 0 0;
+}
+#top #mainContainer .section__contact .buttonList .buttonLink + .buttonLink {
+  margin: 20px 0 0;
+}
+#top #mainContainer .section__contact .buttonList .buttonLink a {
+  padding: 15px;
+  font-size: 20px;
+}
+#top #mainContainer .section__contact .imageBox {
+  margin: 50px 0 0;
+}
+#top #mainContainer .section__contact .imageBox .img {
+  width: 35px;
+}
+#top #mainContainer .section__pastone {
+  padding: 70px 25px;
+  background: #ffffff;
+}
+#top #mainContainer .section__pastone__container {
+  max-width: 100%;
+  padding: 40px 30px 30px;
+  background: url("../image/top/pastone_sec_bg_01.png") left top no-repeat, url("../image/top/pastone_sec_bg_02.png") right bottom no-repeat;
+  background-size: 50px auto, 50px auto;
+}
+#top #mainContainer .section__pastone .secBox {
+  max-width: 320px;
+}
+#top #mainContainer .section__pastone .secBox .logo {
+  max-width: 194px;
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__pastone .secBox .photo {
+  margin: 0 auto 25px;
+}
+#top #mainContainer .section__pastone .secBox .site dl dt {
+  margin: 0 0 8px;
+  padding: 0 0 5px;
+  font-size: 14px;
+}
+#top #mainContainer .section__pastone .secBox .site dl dd {
+  font-size: 11px;
+}

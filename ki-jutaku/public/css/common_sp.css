@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    z-index: 999;
+    border-radius: 10px 10px 0 0;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    top: 40px;
+    right: 20px;
+  }
+  .header.fixed .hamburger {
+    top: 20px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    padding: 85px 0 0;
+  }
+
+  .pageKvContainer {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .pageKvContainer .pageKvPanel {
+    padding: 40px 0 80px;
+    background: url(https://ki-jutaku240228.smooooth.jp/system_panel/uploads/images/page_kv_bg_sp.png) center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .pageKvContainer .kvTitle {
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox .pageSecTtl {
+    font-size: 22px;
+  }
+  .pageSecTtlBox .sub {
+    font-size: 12px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    overflow: hidden;
+  }
+  .footer:after {
+    bottom: 0;
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(https://ki-jutaku240228.smooooth.jp/system_panel/uploads/images/footer_btm_img.png) center no-repeat;
+    background-size: 100% auto;
+  }
+  .footer .footContact .footContactPanel {
+    padding: 60px 0;
+    background: url(https://ki-jutaku240228.smooooth.jp/system_panel/uploads/images/footer_contact_bg.png) center top no-repeat;
+    background-size: cover;
+  }
+  .footer .footContact .btnList {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footContact .btnList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+  .footer .footPanel {
+    padding: 60px 0 120px;
+  }
+  .footer .footPanel .footBox .leftBox {
+    text-align: center;
+  }
+  .footer .footPanel .footBox .leftBox .logo {
+    max-width: 120px;
+    margin: 0 auto 10px;
+  }
+  .footer .footPanel .footBox .leftBox .txt {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .footBox .leftBox .dl {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer .footPanel .footBox .leftBox .dl + .dl {
+    margin: 15px auto 0;
+  }
+  .footer .footPanel .footBox .rightBox {
+    display: none;
+  }
+}

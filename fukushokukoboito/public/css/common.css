@@ -1,0 +1,520 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Zen Maru Gothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+.futura {
+  font-family: Futura, "Century Gothic", "游ゴシック体", "YuGothic";
+  font-weight: normal;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "BIZ UDGothic";
+    z-index: 999;
+  }
+  .header .headTop {
+    padding: 20px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .headTop .headBox {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header .headTop .headBox .headTtl {
+    margin: 0 0 5px;
+    font-size: 12px;
+  }
+  .header .headTop .headBox .logo {
+    width: 260px;
+  }
+  .header .headTop .headBox .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .navBox {
+    padding: 0 20px;
+    background: #5daa04;
+  }
+  .navBox .navWrap {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .navBox .navList {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .navBox .navList a {
+    color: #ffffff;
+  }
+  .navBox .navList > .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBox .navList > .ul > .li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .navBox .navList > .ul > .li .link01 {
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_01.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li .link02 {
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_02.png) left center no-repeat;
+    background-size: 16px auto;
+  }
+  .navBox .navList > .ul > .li .link03 {
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_03.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li .link04 {
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_04.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li .link05 {
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_icon_05.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navList > .ul > .li .linkTxt {
+    position: relative;
+  }
+  .navBox .navList > .ul > .li .linkTxt a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .navBox .navList > .ul > .li > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .navBox .navList > .ul > .li.spBreak {
+    display: none;
+  }
+  .navBox .navList > .ul .pulldown {
+    overflow: hidden;
+  }
+  .navBox .navList > .ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList > .ul .pulldown:hover .subList {
+    top: 50px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 40px;
+    left: -25px;
+    width: 200px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    background: #5daa04;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 10px 30px;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 15px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_nav_arrow.png) left center no-repeat;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #5daa04;
+    background: #ffffff;
+  }
+  .navBox .navItem {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+  }
+  .navBox .navItem .telBox {
+    width: 200px;
+  }
+  .navBox .navItem .telBox a {
+    display: block;
+    padding: 8px 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.1;
+    background: #559a06;
+  }
+  .navBox .navItem .telBox a .em {
+    display: inline-block;
+    margin: 0 0 3px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_tel.png) left top no-repeat;
+    background-size: 10px auto;
+  }
+  .navBox .navItem .telBox a .span {
+    font-size: 12px;
+    color: #beccae;
+  }
+  .navBox .navItem .orderBox {
+    width: 200px;
+  }
+  .navBox .navItem .orderBox a {
+    display: block;
+    padding: 14px 10px;
+    color: #ffffff;
+    text-align: center;
+    background: #e60213;
+  }
+  .navBox .navItem .orderBox a p {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/header_cart.png) left center no-repeat;
+    background-size: 22px auto;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+  margin: 159px 0 0;
+}
+
+.pageSecTtlBox {
+  margin: 0 0 50px;
+  color: #f3ab01;
+  text-align: center;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/page_sec_ttl_line_03.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.pageSecTtlBox .pageSecTtl01 {
+  position: relative;
+  font-size: 12px;
+}
+.pageSecTtlBox .pageSecTtl01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(50% - 120px);
+  height: 4px;
+  margin: auto 0;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/page_sec_ttl_line_01.png) no-repeat;
+  background-size: 100% auto;
+}
+.pageSecTtlBox .pageSecTtl01::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(50% - 120px);
+  height: 4px;
+  margin: auto 0;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/page_sec_ttl_line_02.png) no-repeat;
+  background-size: 100% auto;
+}
+.pageSecTtlBox .pageSecTtl02 {
+  padding: 0 10px 5px;
+  font-size: 34px;
+}
+
+.secWrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 280px;
+  margin: 0 auto;
+}
+.btnMore a {
+  display: block;
+  padding: 12px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  background: #e60213;
+}
+.btnMore a p {
+  display: inline-block;
+}
+.btnMore.cloth {
+  width: 220px;
+}
+.btnMore.cloth a p {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/btn_icon_cloth.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.btnMore.cart a p {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/btn_icon_cart.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.btnMore.price a p {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/btn_icon_price.png) left center no-repeat;
+  background-size: 18px auto;
+}
+.btnMore.faq a p {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/btn_icon_faq.png) left center no-repeat;
+  background-size: 18px auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  padding: 90px 0 30px;
+  color: #ffffff;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_bg.png);
+}
+.footer .footBox {
+  margin: 0 0 80px;
+}
+.footer .footBox .leftBox .ttl {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.footer .footBox .leftBox .logo {
+  max-width: 300px;
+  margin: 0 0 80px;
+}
+.footer .footBox .rightBox .footNav {
+  margin: 0 0 40px;
+}
+.footer .footBox .rightBox .footNav .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -30px 0 0;
+}
+.footer .footBox .rightBox .footNav .ul .li {
+  width: 50%;
+  margin: 30px 0 0;
+}
+.footer .footBox .rightBox .footNav .ul .li a {
+  display: inline-block;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_nav_arrow.png) left center no-repeat;
+}
+.footer .footBox .rightBox .navItem {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  font-family: "BIZ UDGothic";
+}
+.footer .footBox .rightBox .navItem .telBox {
+  width: 200px;
+}
+.footer .footBox .rightBox .navItem .telBox a {
+  display: block;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.1;
+  background: #559a06;
+}
+.footer .footBox .rightBox .navItem .telBox a .em {
+  display: inline-block;
+  margin: 0 0 3px;
+  padding: 0 0 0 15px;
+  font-size: 18px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_tel.png) left top no-repeat;
+  background-size: 10px auto;
+}
+.footer .footBox .rightBox .navItem .telBox a .span {
+  font-size: 12px;
+  color: #beccae;
+}
+.footer .footBox .rightBox .navItem .contactBox {
+  width: 200px;
+}
+.footer .footBox .rightBox .navItem .contactBox a {
+  display: block;
+  padding: 14px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #e60213;
+}
+.footer .footBox .rightBox .navItem .contactBox a p {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footBox .leftBox {
+    width: 40%;
+  }
+  .footer .footBox .rightBox {
+    width: 50%;
+  }
+}
+.footer .copy {
+  text-align: center;
+}

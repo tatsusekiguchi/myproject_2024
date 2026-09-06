@@ -1,0 +1,1642 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	login
+///////////////////////////////////////////////////////////*/
+#loginMain {
+  padding: 100px 10px;
+}
+#loginMain h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+#loginMain .loginBox {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 30px 20px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #dadae9;
+  background: #ffffff;
+}
+#loginMain .loginBox #wpmem_login,
+#loginMain .loginBox #wpmem_reg {
+  font-size: 12px !important;
+}
+#loginMain .loginBox #wpmem_login fieldset,
+#loginMain .loginBox #wpmem_reg fieldset {
+  margin: 0 !important;
+}
+#loginMain .loginBox legend {
+  display: none;
+}
+#loginMain .loginBox .div_text {
+  width: 100% !important;
+  margin: 5px 0 10px;
+}
+#loginMain .loginBox .button_div {
+  width: 100% !important;
+  position: relative;
+  padding: 5px 0 0 !important;
+  text-align: left !important;
+}
+#loginMain .loginBox .button_div input[type=checkbox] {
+  display: inline-block;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+#loginMain .loginBox .button_div label {
+  display: inline-block;
+  vertical-align: middle;
+}
+#loginMain .loginBox input[type=text],
+#loginMain .loginBox input[type=password] {
+  border: 1px solid #e2e2e2;
+  background: #fbfbfb;
+}
+#loginMain .loginBox input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 140px;
+  padding: 5px 10px;
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #167397;
+  background: #2ea1ce;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#loginMain .subLink {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+/*////////////////////////////////////////////////////////////
+	topmenu
+///////////////////////////////////////////////////////////*/
+#topMenuMain {
+  padding: 80px 10px;
+}
+#topMenuMain .menuListBox {
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+#topMenuMain .menuListBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px 0 0;
+}
+#topMenuMain .menuListBox ul:after {
+  display: block;
+  content: "";
+  width: calc(33.3333333333% - 20px);
+}
+#topMenuMain .menuListBox ul li {
+  width: calc(33.3333333333% - 20px);
+  margin: 20px 0 0;
+}
+#topMenuMain .infoListBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#topMenuMain .infoListBox .titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#topMenuMain .infoListBox h2 {
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+#topMenuMain .infoListBox .more a {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  background: #353290;
+}
+#topMenuMain .infoListBox ul {
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid #bae0fb;
+  background: #ffffff;
+}
+#topMenuMain .infoListBox ul li {
+  display: table;
+  width: 100%;
+}
+#topMenuMain .infoListBox ul li + li {
+  margin-top: 10px;
+}
+#topMenuMain .infoListBox ul li > * {
+  display: table-cell;
+}
+#topMenuMain .infoListBox ul li .time {
+  width: 150px;
+}
+#topMenuMain .infoListBox ul li .time p {
+  display: inline-block;
+  padding: 0 10px;
+  color: #ffffff;
+  background: #20409a;
+}
+#topMenuMain .infoListBox ul li .txt a {
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////
+	recordlist
+///////////////////////////////////////////////////////////*/
+#recordListMain {
+  padding: 80px 10px;
+}
+#recordListMain .recordListBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#recordListMain .recordListBox h2 {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+#recordListMain .recordListBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px 0 0;
+}
+#recordListMain .recordListBox ul:before, #recordListMain .recordListBox ul:after {
+  display: block;
+  content: "";
+  width: calc(25% - 5px);
+  order: 1;
+}
+#recordListMain .recordListBox ul li {
+  width: calc(25% - 5px);
+  margin: 20px 0 0;
+}
+#recordListMain .recordListBox .ttlBox {
+  position: relative;
+}
+#recordListMain .recordListBox .ttlBox h2 {
+  max-width: 800px;
+}
+#recordListMain .recordListBox .ttlBox a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 190px;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container {
+  padding: 30px;
+  background: #ffffff;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container h2,
+#recordListMain .recordListBox .wpuf-dashboard-container .post_count {
+  display: none;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table {
+  width: 100%;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table thead {
+  display: none;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table tbody td {
+  padding: 10px;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table tbody td:nth-child(1) a {
+  color: #353290;
+  text-decoration: underline;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table tbody td:nth-child(2) {
+  display: none;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table tbody td:nth-child(3) {
+  text-align: right;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .items-table tbody td:nth-child(3) a {
+  display: inline-block;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .search-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0 15px;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .search-container dl {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .search-container dl dt {
+  width: 40px;
+}
+#recordListMain .recordListBox .wpuf-dashboard-container .search-container dl dd {
+  width: 150px;
+}
+#recordListMain .recordListBox .wpuf-author {
+  display: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	recordpdf
+///////////////////////////////////////////////////////////*/
+#recordPdfMain {
+  padding: 80px 10px;
+}
+#recordPdfMain .recordPdfBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#recordPdfMain .recordPdfBox h2 {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+#recordPdfMain .recordPdfBox ul {
+  padding: 30px 40px;
+  border-radius: 6px;
+  border: 1px solid #bae0fb;
+  background: #ffffff;
+}
+#recordPdfMain .recordPdfBox ul li {
+  display: table;
+  width: 100%;
+}
+#recordPdfMain .recordPdfBox ul li + li {
+  margin-top: 20px;
+}
+#recordPdfMain .recordPdfBox ul li > * {
+  display: table-cell;
+}
+#recordPdfMain .recordPdfBox ul li .time {
+  width: 190px;
+}
+#recordPdfMain .recordPdfBox ul li .time p {
+  display: inline-block;
+  width: 170px;
+  padding: 6px 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: url(../image/common/time_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+#recordPdfMain .recordPdfBox ul li .txt {
+  width: 580px;
+}
+#recordPdfMain .recordPdfBox ul li .txt a {
+  text-decoration: underline;
+}
+#recordPdfMain .recordPdfBox ul li .dl a {
+  display: inline-block;
+  width: 170px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: url(../image/common/dl_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+#recordPdfMain .recordPdfBox ul li .dl a span {
+  display: inline-block;
+  padding: 5px 0 5px 30px;
+  background: url(../image/common/icon_pdf.png) left top 3px no-repeat;
+  background-size: 20px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	total_*
+///////////////////////////////////////////////////////////*/
+#totalMain {
+  padding: 80px 10px;
+}
+#totalMain .totalBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#totalMain .totalBox h2 {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+#totalMain .totalBox .resultBox {
+  padding: 20px;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	record_*
+///////////////////////////////////////////////////////////*/
+.registRecordMain {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+.registRecordMain h2 {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+.registRecordMain .formBox {
+  padding: 20px;
+  background: #ffffff;
+}
+.registRecordMain .inputItem {
+  display: table;
+  width: 100%;
+  max-width: 480px;
+  min-height: 40px;
+}
+.registRecordMain .inputItem dt {
+  display: table-cell;
+  width: 140px;
+  padding: 0 5px;
+  color: #ffffff;
+  text-align: right;
+  vertical-align: middle;
+  background: #747474;
+}
+.registRecordMain .inputItem dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.registRecordMain .inputItem .unit {
+  width: 275px;
+}
+.registRecordMain .radioList li {
+  display: inline-block;
+}
+.registRecordMain .selectDate {
+  position: relative;
+}
+.registRecordMain .selectDate .selectBox {
+  max-width: 40px;
+}
+.registRecordMain .selectDate .year {
+  max-width: 55px;
+}
+.registRecordMain .selectDate .inputSubTxt {
+  font-size: 12px;
+}
+.registRecordMain .datepickerDisplay {
+  display: none;
+}
+.registRecordMain .ui-datepicker-trigger {
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  width: 25px;
+  cursor: pointer;
+}
+.registRecordMain .datepickerCal + .ui-datepicker-trigger {
+  position: static;
+  display: inline-block;
+}
+.registRecordMain .wardBox {
+  padding: 20px;
+}
+.registRecordMain .schoolInfoBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ececec;
+}
+.registRecordMain .schoolInfoBox .inputItemList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px 0 0;
+}
+.registRecordMain .schoolInfoBox .inputItem {
+  width: calc(50% - 15px);
+  margin: 15px 0 0;
+}
+.registRecordMain .attentionBox {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.registRecordMain .attentionBox .left {
+  float: left;
+  width: 49%;
+}
+.registRecordMain .attentionBox .right {
+  float: right;
+  width: 49%;
+}
+.registRecordMain .attentionBox h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.registRecordMain .attentionBox ul li {
+  position: relative;
+  padding-left: 1em;
+  font-size: 13px;
+  line-height: 2;
+}
+.registRecordMain .attentionBox ul li:before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.registRecordMain .attentionBox dl {
+  display: table;
+  width: 100%;
+  font-size: 13px;
+  line-height: 2;
+}
+.registRecordMain .attentionBox dl dt {
+  display: table-cell;
+  width: 80px;
+}
+.registRecordMain .attentionBox dl dd {
+  position: relative;
+  display: table-cell;
+  padding-left: 1em;
+}
+.registRecordMain .attentionBox dl dd:before {
+  content: "：";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.registRecordMain .ttlCoaching {
+  font-weight: bold;
+}
+.registRecordMain .btnListBox {
+  position: relative;
+  margin: 20px 0 0;
+}
+.registRecordMain .btnSubmit {
+  display: block;
+  width: 165px;
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: url(../image/common/submit_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.registRecordMain .btnPrint {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 165px;
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: url(../image/common/print_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.registRecordMain button {
+  transition: 0.6s;
+}
+.registRecordMain button:hover {
+  opacity: 0.6;
+}
+.registRecordMain .txtFieldBox {
+  padding: 9px 5px;
+  font-size: 0;
+  border: 1px solid #747474;
+  background: #ffffff;
+}
+.registRecordMain .txtFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+.registRecordMain .txtFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+.registRecordMain .wpuf-form-add {
+  display: none;
+}
+
+.registRecordMain .confirmPostBox .sealBox {
+  overflow: hidden;
+  padding: 0 20px;
+}
+.registRecordMain .confirmPostBox .sealBox > p {
+  margin: 0 0 5px;
+  text-align: right;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl {
+  float: right;
+  display: table;
+  width: calc(100% - 650px);
+  border: 1px solid #747474;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl {
+  display: table-cell;
+  text-align: center;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl dt {
+  padding: 3px 0;
+  color: #ffffff;
+  background: #747474;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl dd {
+  padding: 15px 10px;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl + dl {
+  width: 60px;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl + dl dt {
+  border-left: 1px solid #ffffff;
+}
+.registRecordMain .confirmPostBox .sealBox .sealTbl dl + dl dd {
+  border-left: 1px solid #747474;
+}
+.registRecordMain .confirmPostBox .wardBox .inputItem {
+  max-width: 435px;
+}
+
+/*////////////////////////////////////////////////////////////
+	学校水泳プール水質定期検査表
+///////////////////////////////////////////////////////////*/
+#registPool {
+  /* 実質使用日数 */
+}
+#registPool .useDays input[type=text] {
+  width: 220px;
+}
+#registPool .registPoolTable {
+  margin-bottom: 20px;
+}
+#registPool .registPoolTable table {
+  width: 100%;
+  border: 1px solid #747474;
+}
+#registPool .registPoolTable table thead th {
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #747474;
+}
+#registPool .registPoolTable table thead th + th {
+  border-left: 1px solid #ffffff;
+}
+#registPool .registPoolTable table tbody tr + tr {
+  border-top: 1px solid #747474;
+}
+#registPool .registPoolTable table tbody th {
+  min-width: 65px;
+  text-align: center;
+  vertical-align: middle;
+  background: #ececec;
+}
+#registPool .registPoolTable table tbody th.row {
+  border-right: 1px solid #747474;
+}
+#registPool .registPoolTable table tbody th + th {
+  width: 65px;
+}
+#registPool .registPoolTable table tbody td {
+  width: 180px;
+  padding: 5px 10px;
+  border-left: 1px solid #747474;
+}
+#registPool .registPoolTable table tbody td + th {
+  border-left: 1px solid #747474;
+}
+#registPool .registPoolTable .temperature input {
+  width: 110px;
+}
+#registPool .registPoolTable .amount input {
+  width: 80px;
+}
+#registPool .registPoolTable .deposition .radioList li + li {
+  margin-left: 40px;
+}
+#registPool .registPoolTable .water_change.radioList li + li,
+#registPool .registPoolTable .shower.radioList li + li {
+  margin-left: 40px;
+}
+#registPool .registPoolTable .tblFieldBox {
+  padding: 9px 0;
+  font-size: 0;
+  text-align: center;
+}
+#registPool .registPoolTable .tblFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+#registPool .registPoolTable .tblFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+
+/*////////////////////////////////////////////////////////////
+	保健室定期検査表
+///////////////////////////////////////////////////////////*/
+#registDispensary .dispensaryBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ececec;
+}
+#registDispensary .dispensaryBox .inputItemBox01 {
+  margin-bottom: 30px;
+}
+#registDispensary .dispensaryBox .inputItemList01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: -15px 0 0;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem {
+  max-width: 100%;
+  margin: 15px 0 0;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(odd) {
+  width: calc(100% - 420px);
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(odd) .inputSubTxt {
+  padding: 0 0 0 5px;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(odd) .radioList {
+  display: inline-block;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(odd) .unit {
+  width: 100px;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(even) {
+  width: 400px;
+}
+#registDispensary .dispensaryBox .inputItemList01 .inputItem:nth-child(even) .unit {
+  width: 240px;
+}
+#registDispensary .dispensaryBox .inputItemBox02 {
+  margin-bottom: 30px;
+}
+#registDispensary .dispensaryBox .inputItemList02,
+#registDispensary .dispensaryBox .inputItemList03 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px 0 0;
+}
+#registDispensary .dispensaryBox .inputItemList02 .inputItem,
+#registDispensary .dispensaryBox .inputItemList03 .inputItem {
+  width: calc(50% - 15px);
+  margin: 15px 0 0;
+}
+#registDispensary .dispensaryBox .inputItemList02 .inputSubTxt,
+#registDispensary .dispensaryBox .inputItemList03 .inputSubTxt {
+  padding: 0 0 0 5px;
+}
+#registDispensary .dispensaryBox .inputItemList02 .inputItem dt {
+  width: 220px;
+}
+#registDispensary .dispensaryBox .inputItemList02 .unit {
+  width: 100px;
+}
+#registDispensary .dispensaryBox .inputItemList03 .unit {
+  width: 200px;
+}
+
+/*////////////////////////////////////////////////////////////
+	教室の騒音定期検査表
+///////////////////////////////////////////////////////////*/
+#registNoise .noiseBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ececec;
+}
+#registNoise .noiseBox .inputItemBox01 {
+  margin-bottom: 15px;
+}
+#registNoise .noiseBox .inputItemBox02 {
+  margin-bottom: 30px;
+}
+#registNoise .noiseBox .inputItemList01,
+#registNoise .noiseBox .inputItemList02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px 0 0;
+}
+#registNoise .noiseBox .inputItemList01 .inputItem,
+#registNoise .noiseBox .inputItemList02 .inputItem {
+  width: calc(50% - 15px);
+  margin: 15px 0 0;
+}
+#registNoise .noiseBox .inputItemList01 .inputSubTxt,
+#registNoise .noiseBox .inputItemList02 .inputSubTxt {
+  padding: 0 0 0 5px;
+}
+#registNoise .noiseBox .inputItemList01 .unit,
+#registNoise .noiseBox .inputItemList02 .unit {
+  width: 100px;
+}
+#registNoise .noiseBox .inputItemList01 .radioList,
+#registNoise .noiseBox .inputItemList02 .radioList {
+  display: inline-block;
+}
+#registNoise .noiseBox .inputItemList01 .txtFieldBox .inputSubTxt,
+#registNoise .noiseBox .inputItemList02 .txtFieldBox .inputSubTxt {
+  padding: 0;
+}
+#registNoise .noiseBox .inputItemList02 .inputItem dt {
+  width: 270px;
+}
+#registNoise .noiseBox .inputItemList03 {
+  margin: -15px 0 0;
+}
+#registNoise .noiseBox .inputItemList03 .inputItem {
+  max-width: 100%;
+  margin: 15px 0 0;
+}
+#registNoise .noiseBox .inputItemList03 .inputItem dt {
+  width: 270px;
+}
+#registNoise .noiseBox .inputItemList03 .radioList {
+  display: inline-block;
+}
+#registNoise .noiseBox .inputItemList03 .particular {
+  margin: 0 0 0 50px;
+}
+#registNoise .noiseBox .inputItemList03 .unit {
+  width: 334px;
+}
+#registNoise .noiseBox .inputItemList03 .txtField + .txtField {
+  margin: 0 0 0 30px;
+}
+#registNoise .registNoiseTable {
+  margin-bottom: 20px;
+}
+#registNoise .registNoiseTable table {
+  width: 100%;
+  border: 1px solid #747474;
+}
+#registNoise .registNoiseTable table thead th {
+  width: 33%;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #747474;
+}
+#registNoise .registNoiseTable table thead th + th {
+  border-left: 1px solid #ffffff;
+}
+#registNoise .registNoiseTable table tbody tr + tr {
+  border-top: 1px solid #747474;
+}
+#registNoise .registNoiseTable table tbody th {
+  min-width: 65px;
+  text-align: center;
+  vertical-align: middle;
+  background: #ececec;
+}
+#registNoise .registNoiseTable table tbody td {
+  padding: 5px 10px;
+  vertical-align: middle;
+  border-left: 1px solid #747474;
+}
+#registNoise .registNoiseTable table tbody td + th {
+  border-left: 1px solid #747474;
+}
+#registNoise .registNoiseTable table tbody td .unit {
+  width: 220px;
+}
+#registNoise .registNoiseTable .tblFieldBox {
+  padding: 9px 0;
+  font-size: 0;
+  text-align: center;
+}
+#registNoise .registNoiseTable .tblFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+#registNoise .registNoiseTable .tblFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+#registNoise .registNoiseTable .inputWindowCnt {
+  display: flex;
+  align-items: center;
+}
+#registNoise .registNoiseTable .inputWindowCnt > p {
+  width: 10px;
+  text-align: center;
+}
+#registNoise .registNoiseTable .inputWindowBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registNoise .registNoiseTable .inputWindowBox .inputWindow {
+  width: 70px;
+}
+#registNoise .registNoiseTable .inputWindowBox .inputWindow + span {
+  width: 10px;
+  text-align: center;
+}
+#registNoise #noiseFormBoxWinter .schoolInfoBox {
+  margin-bottom: 0;
+  padding: 20px 20px 15px;
+}
+#registNoise #noiseFormBoxWinter .noiseBox {
+  padding: 0 20px 20px;
+}
+#registNoise #noiseFormBoxWinter .examDate {
+  display: none;
+}
+#registNoise #noiseFormBoxWinter .registNoiseTable .classroom {
+  width: calc(100% - 65px);
+  border-right: 1px solid #747474;
+}
+
+/*////////////////////////////////////////////////////////////
+	教室の夏季空気検査表
+///////////////////////////////////////////////////////////*/
+#registAir .schoolInfoBox .heating {
+  width: 100%;
+  max-width: 100%;
+}
+#registAir .schoolInfoBox .inputItem dt {
+  width: 150px;
+}
+#registAir .schoolInfoBox .radioList {
+  display: inline-block;
+}
+#registAir .schoolInfoBox .unit {
+  width: 250px;
+}
+#registAir .schoolInfoBox .unitTime {
+  width: 175px;
+}
+#registAir .schoolInfoBox .unitRoom {
+  width: 100px;
+}
+#registAir .airBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ececec;
+}
+#registAir .airBox .inputItemList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px 0 0;
+}
+#registAir .airBox .inputItemList .inputSubTxt {
+  padding: 0 0 0 5px;
+}
+#registAir .airBox .inputItemList .radioList {
+  display: inline-block;
+}
+#registAir .airBox .inputItemList .txtFieldBox .inputSubTxt {
+  padding: 0;
+}
+#registAir .airBox01 .inputItem {
+  width: calc(50% - 15px);
+  margin: 15px 0 0;
+}
+#registAir .airBox01 .inputItem dt {
+  width: 150px;
+}
+#registAir .airBox01 .unit {
+  width: 260px;
+}
+#registAir .airBox02 .inputItemList + .inputItemList {
+  margin: 0;
+}
+#registAir .airBox02 .inputItemList:after {
+  content: "";
+  display: block;
+  width: calc(33.3333333333% - 10px);
+}
+#registAir .airBox02 .inputItemList.inputDustYear {
+  margin: 15px 0 0;
+}
+#registAir .airBox02 .inputItemList.inputDustYear:after {
+  display: none;
+}
+#registAir .airBox02 .inputItemList.inputDustYear .inputItem {
+  width: 100%;
+  max-width: 100%;
+}
+#registAir .airBox02 .inputItemList.inputDustYear .inputItem .unit {
+  margin: 0 5px;
+}
+#registAir .airBox02 .inputItem {
+  width: calc(33.3333333333% - 10px);
+  margin: 15px 0 0;
+}
+#registAir .airBox02 .inputItem dt {
+  width: 150px;
+}
+#registAir .airBox02 .inputItem > p {
+  position: relative;
+  bottom: 15px;
+  padding: 10px 30px;
+  font-size: 12px;
+  background: #cccccc;
+}
+#registAir .airBox02 .unit {
+  width: 80px;
+}
+#registAir .airBox02 aside {
+  padding: 10px 10px 0;
+  font-size: 12px;
+  text-align: right;
+}
+
+#registAir .airBox02 aside.winter {
+  padding: 10px 10px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+#registAir .airBox02 aside.winter p:before {
+  content: "　　　　";
+}
+
+/*////////////////////////////////////////////////////////////
+	照度及び照明環境定期検査表
+///////////////////////////////////////////////////////////*/
+#registLighting .schoolInfoBox .heating {
+  width: 100%;
+  max-width: 100%;
+}
+#registLighting .schoolInfoBox .inputItem dt {
+  width: 150px;
+}
+#registLighting .schoolInfoBox .radioList {
+  display: inline-block;
+}
+#registLighting .schoolInfoBox .unit {
+  width: 250px;
+}
+#registLighting .schoolInfoBox .unitTime {
+  width: 175px;
+}
+#registLighting .lightingBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ececec;
+}
+#registLighting .lightingBox .inputItemBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#registLighting .lightingBox .inputItemBox > * {
+  width: calc(50% - 15px);
+}
+#registLighting .lightingBox .redioBtn label {
+  padding: 8px 0 8px 25px;
+}
+#registLighting .lightingBox .leftBox .unit {
+  width: 115px;
+}
+#registLighting .lightingBox .leftBox .blackboardLight li {
+  width: 100%;
+}
+#registLighting .lightingBox .rightBox .lightList li + li {
+  margin-top: 15px;
+}
+#registLighting .lightingBox .rightBox .unit {
+  width: 170px;
+}
+#registLighting .lightingBox .rightBox .inputSubTxt {
+  width: 80px;
+  padding: 0 0 0 5px;
+}
+#registLighting .lightingBox .rightBox .unit + .inputSubTxt {
+  width: 20px;
+}
+#registLighting .lightingBox .inputItem + .inputItem {
+  margin-top: 15px;
+}
+#registLighting .lightingBox .inputItem dt {
+  width: 150px;
+}
+#registLighting .lightingBox .radioList {
+  display: inline-block;
+}
+#registLighting .lightingBox .radioList li {
+  margin: 0 5px 0 0;
+}
+#registLighting .lightingBox .lightItemBox {
+  padding: 0 0 0 5px;
+}
+#registLighting .lightingBox .lightItemBox + .lightItemBox {
+  margin: 5px 0 0;
+}
+#registLighting .lightingBox .lightItemBox .inputSubTxt {
+  min-width: 15px;
+}
+#registLighting .lightingBox aside {
+  line-height: 2;
+}
+#registLighting .lightingBox aside .reasonBox p {
+  display: inline-block;
+}
+#registLighting .lightingBox aside .reasonBox input {
+  width: 715px;
+}
+#registLighting .figureBox {
+  margin-bottom: 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	給食調理場衛生検査表
+///////////////////////////////////////////////////////////*/
+#registKitchen .schoolInfoBox .unitFan {
+  width: 120px;
+}
+#registKitchen .registKitchenTable {
+  margin-bottom: 20px;
+}
+#registKitchen .registKitchenTable h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#registKitchen .registKitchenTable table {
+  width: 100%;
+  border: 1px solid #747474;
+}
+#registKitchen .registKitchenTable table thead th {
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #747474;
+}
+#registKitchen .registKitchenTable table thead th + th {
+  border-left: 1px solid #ffffff;
+}
+#registKitchen .registKitchenTable table tbody tr + tr {
+  border-top: 1px solid #747474;
+}
+#registKitchen .registKitchenTable table tbody th {
+  width: 85px;
+  text-align: center;
+  vertical-align: middle;
+  background: #ececec;
+}
+#registKitchen .registKitchenTable table tbody td {
+  padding: 5px 10px;
+  border-left: 1px solid #747474;
+}
+#registKitchen .registKitchenTable table tbody td + th {
+  border-left: 1px solid #747474;
+}
+#registKitchen .registKitchenTable table tbody td .unit {
+  width: 220px;
+}
+#registKitchen .registKitchenTable .tableware .unitResidue {
+  width: 170px;
+}
+#registKitchen .registKitchenTable .lighting .light .unit {
+  width: 110px;
+}
+#registKitchen .registKitchenTable .lighting .lightItem + .lightItem {
+  margin: 5px 0 0;
+}
+#registKitchen .registKitchenTable .lighting .lightItem .inputSubTxt {
+  min-width: 15px;
+}
+#registKitchen .registKitchenTable .lighting .luminosity .unit {
+  width: 200px;
+}
+#registKitchen .registKitchenTable .tblFieldBox {
+  padding: 9px 0;
+  font-size: 0;
+  text-align: center;
+}
+#registKitchen .registKitchenTable .tblFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+#registKitchen .registKitchenTable .tblFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+
+/*////////////////////////////////////////////////////////////
+	学校環境衛生検査票「黒板面の色彩」
+///////////////////////////////////////////////////////////*/
+#registBlackboard .inputItem dt {
+  width: 160px;
+}
+#registBlackboard .schoolInfoBox .dateTime,
+#registBlackboard .schoolInfoBox .appearance,
+#registBlackboard .schoolInfoBox .status,
+#registBlackboard .schoolInfoBox .wipe,
+#registBlackboard .schoolInfoBox .cleaner,
+#registBlackboard .schoolInfoBox .color {
+  width: 100%;
+  max-width: 100%;
+}
+#registBlackboard .schoolInfoBox .radioList {
+  display: inline-block;
+}
+#registBlackboard .schoolInfoBox .unitType01 {
+  width: 255px;
+}
+#registBlackboard .schoolInfoBox .unitType02 {
+  width: 100px;
+}
+#registBlackboard .schoolInfoBox .unitType03 {
+  width: 100px;
+}
+#registBlackboard .schoolInfoBox .unitType04 {
+  width: 40px;
+}
+#registBlackboard .schoolInfoBox .unitType05 {
+  width: 90px;
+}
+#registBlackboard .schoolInfoBox .unitType06 {
+  width: 100px;
+}
+#registBlackboard .schoolInfoBox .unitType07 {
+  width: 100px;
+}
+#registBlackboard .schoolInfoBox .unitType08 {
+  width: 200px;
+}
+#registBlackboard .schoolInfoBox .unitType09 {
+  width: 60px;
+}
+#registBlackboard .schoolInfoBox .unitType10 {
+  width: 180px;
+}
+#registBlackboard .schoolInfoBox .checkList {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+}
+#registBlackboard .schoolInfoBox .checkList + .checkList {
+  margin: 10px 5px 0 0;
+}
+#registBlackboard .schoolInfoBox .checkList + .checkList + input {
+  margin: 10px 0 0;
+  vertical-align: middle;
+}
+#registBlackboard .schoolInfoBox .checkList li + li {
+  margin: 0 0 0 10px;
+}
+#registBlackboard .schoolInfoBox .positionTxt {
+  display: inline-block;
+  padding: 0 0 0 5px;
+  font-size: 10px;
+  width: 120px;
+  vertical-align: middle;
+}
+#registBlackboard .schoolInfoBox .appearance .checkList:nth-child(1) {
+  width: 100%;
+}
+#registBlackboard .schoolInfoBox .statusBox {
+  display: inline-block;
+  padding: 0 0 0 10px;
+}
+#registBlackboard .schoolInfoBox .statusBox > p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#registBlackboard .schoolInfoBox .statusBox .checkList {
+  width: 400px;
+}
+#registBlackboard .schoolInfoBox .color .inputSubTxt {
+  margin: 0 0 0 10px;
+}
+#registBlackboard .schoolInfoBox .color small {
+  font-size: 12px;
+}
+#registBlackboard .registBlackboardTable {
+  margin-bottom: 20px;
+}
+#registBlackboard .registBlackboardTable h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#registBlackboard .registBlackboardTable table {
+  width: 100%;
+  border: 1px solid #747474;
+}
+#registBlackboard .registBlackboardTable table thead th {
+  width: 33%;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: #747474;
+}
+#registBlackboard .registBlackboardTable table thead th + th {
+  border-left: 1px solid #ffffff;
+}
+#registBlackboard .registBlackboardTable table tbody tr + tr {
+  border-top: 1px solid #747474;
+}
+#registBlackboard .registBlackboardTable table tbody > tr > th {
+  text-align: center;
+  vertical-align: middle;
+  background: #ececec;
+}
+#registBlackboard .registBlackboardTable table tbody td {
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #747474;
+}
+#registBlackboard .registBlackboardTable table tbody td + th {
+  border-left: 1px solid #747474;
+}
+#registBlackboard .registBlackboardTable table tbody td > p {
+  text-align: left;
+  line-height: 2;
+}
+#registBlackboard .registBlackboardTable table tbody td > p + p {
+  margin-top: 15px;
+}
+#registBlackboard .registBlackboardTable table tbody td .colorTxtBox {
+  margin-bottom: 5px;
+  text-align: right;
+}
+#registBlackboard .registBlackboardTable table tbody td .unitType01 {
+  width: 305px;
+}
+#registBlackboard .registBlackboardTable .tableware .unitResidue {
+  width: 170px;
+}
+#registBlackboard .registBlackboardTable .innerTbl .unitType02 {
+  width: 70px;
+}
+#registBlackboard .registBlackboardTable .tblFieldBox {
+  padding: 9px 0;
+  font-size: 0;
+  text-align: center;
+}
+#registBlackboard .registBlackboardTable .tblFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+#registBlackboard .registBlackboardTable .tblFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+
+/*////////////////////////////////////////////////////////////
+	ネズミ、衛生害虫等検査表
+///////////////////////////////////////////////////////////*/
+#registPest .schoolInfoBox .recordStatus dt {
+  width: 280px;
+}
+#registPest .registPestTable {
+  margin-bottom: 20px;
+}
+#registPest .registPestTable table {
+  width: 100%;
+  border: 1px solid #747474;
+}
+#registPest .registPestTable table tbody tr + tr th {
+  border-top: 1px solid #ffffff;
+}
+#registPest .registPestTable table tbody tr + tr td {
+  border-top: 1px solid #747474;
+}
+#registPest .registPestTable table tbody th {
+  width: 160px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background: #747474;
+}
+#registPest .registPestTable table tbody td {
+  padding: 5px 10px;
+  vertical-align: middle;
+  border-left: 1px solid #747474;
+}
+#registPest .registPestTable table tbody td > p {
+  padding: 10px 0;
+}
+#registPest .registPestTable table tbody .confirmPointBlock {
+  padding: 0;
+}
+#registPest .registPestTable table tbody .confirmPointBox {
+  display: table;
+  width: 100%;
+}
+#registPest .registPestTable table tbody .confirmPointBox > * {
+  width: 50%;
+  display: table-cell;
+  vertical-align: top;
+}
+#registPest .registPestTable table tbody .confirmPointBox .leftBox > dl:nth-child(3) {
+  height: 427px;
+}
+#registPest .registPestTable table tbody .confirmPointBox .rightBox {
+  border-left: 1px solid #747474;
+}
+#registPest .registPestTable table tbody .confirmPointBox dl {
+  display: table;
+  width: 100%;
+}
+#registPest .registPestTable table tbody .confirmPointBox dl + dl {
+  border-top: 1px solid #747474;
+}
+#registPest .registPestTable table tbody .confirmPointBox dl dt {
+  display: table-cell;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #747474;
+  background: #ececec;
+}
+#registPest .registPestTable table tbody .confirmPointBox dl dt span {
+  display: inline-block;
+  text-align: left;
+}
+#registPest .registPestTable table tbody .confirmPointBox dl dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul li {
+  display: table;
+  width: 100%;
+  min-height: 60px;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul li + li {
+  border-top: 1px solid #747474;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .checkCell {
+  display: table-cell;
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #747474;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .checkCell .checkBox {
+  display: block;
+  height: 60px;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .checkCell .checkBox input[type=checkbox] {
+  z-index: 1;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .checkCell .checkBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-position: center;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .checkCell .checkBoxDisp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .txtCell {
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+}
+#registPest .registPestTable table tbody .confirmPointBox ul .unit {
+  width: 120px;
+}
+#registPest .registPestTable .tblFieldBox {
+  padding: 9px 0;
+  font-size: 0;
+  text-align: center;
+}
+#registPest .registPestTable .tblFieldBox .txtField {
+  display: inline-block;
+  font-size: 14px;
+}
+#registPest .registPestTable .tblFieldBox .inputSubTxt {
+  margin: 0;
+  font-size: 13px;
+}
+#registPest .registPestTableConfirm table tbody .confirmPointBox .leftBox > dl:nth-child(3) {
+  height: auto;
+}
+#registPest .registPestTableConfirm table tbody .confirmPointBox ul li.adjustment {
+  height: 61px;
+}
+
+/*////////////////////////////////////////////////////////////
+	新着情報
+///////////////////////////////////////////////////////////*/
+#newsMain {
+  padding: 80px 10px;
+}
+#newsMain .newsContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#newsMain .newsContainer h2 {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  border-left: 4px solid #1f1f1f;
+}
+#newsMain .newsContainer .newsPanel {
+  padding: 30px 50px 60px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #bae0fb;
+  background: #ffffff;
+}
+#newsMain .newsContainer .newsBox {
+  display: flex;
+  justify-content: space-between;
+}
+#newsMain .newsContainer .newsBox .leftBox {
+  width: calc(100% - 250px);
+}
+#newsMain .newsContainer .newsBox .rightBox {
+  width: 220px;
+}
+#newsMain .newsContainer .cateLust {
+  text-align: center;
+}
+#newsMain .newsContainer .cateLust dl dt {
+  margin: 0 0 5px;
+  padding: 5px;
+  color: #ffffff;
+  background: #141414;
+}
+#newsMain .newsContainer .cateLust dl dd ul li + li {
+  margin: 5px 0 0;
+}
+#newsMain .newsContainer .cateLust dl dd ul li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  background: url(../image/common/category_btn_bg.png) no-repeat;
+  background-size: cover;
+}
+#newsMain .newsContainer .cateLust dl dd ul li a.active, #newsMain .newsContainer .cateLust dl dd ul li a:hover {
+  opacity: 1;
+  background: url(../image/common/category_btn_bg_active.png) no-repeat;
+  background-size: cover;
+}
+#newsMain .newsContainer .newsList ul li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px dashed #c9c9c9;
+}
+#newsMain .newsContainer .newsList ul .time {
+  width: 120px;
+  margin: 0 10px 0 0;
+}
+#newsMain .newsContainer .newsList ul .time p {
+  padding: 4px;
+  color: #ffffff;
+  text-align: center;
+  background: #20409a;
+}
+#newsMain .newsContainer .newsList ul .cate {
+  width: 120px;
+  margin: 0 20px 0 0;
+}
+#newsMain .newsContainer .newsList ul .cate p {
+  padding: 4px;
+  color: #ffffff;
+  text-align: center;
+  background: #ff6d1e;
+}
+#newsMain .newsContainer .newsList ul .title {
+  width: calc(100% - 280px);
+  padding: 5px 0 0;
+}
+#newsMain .newsContainer .newsList ul .title a {
+  display: inline-block;
+  text-decoration: underline;
+}
+#newsMain .newsContainer .list__pagination {
+  margin: 100px 0 0;
+}
+#newsMain .newsContainer .list__pagination .pagination {
+  display: flex;
+  justify-content: center;
+}
+#newsMain .newsContainer .list__pagination .pagination li {
+  margin: 0 10px;
+}
+#newsMain .newsContainer .list__pagination .pagination li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+  background: #cdcdcd;
+}
+#newsMain .newsContainer .list__pagination .pagination li.current a {
+  background: #0f0b09;
+}
+#newsMain .newsContainer .list__pagination .pagination li.previous a:before {
+  content: "<";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 22px;
+  margin: auto;
+}
+#newsMain .newsContainer .list__pagination .pagination li.next a:before {
+  content: ">";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 22px;
+  margin: auto;
+  text-align: center;
+}
+#newsMain .newsContainer .newsDetail .infoTop {
+  display: flex;
+  margin: 0 0 20px;
+}
+#newsMain .newsContainer .newsDetail .infoTop .time {
+  width: 120px;
+  margin: 0 10px 0 0;
+}
+#newsMain .newsContainer .newsDetail .infoTop .time p {
+  padding: 4px;
+  color: #ffffff;
+  text-align: center;
+  background: #20409a;
+}
+#newsMain .newsContainer .newsDetail .infoTop .cate {
+  width: 120px;
+}
+#newsMain .newsContainer .newsDetail .infoTop .cate p {
+  padding: 4px;
+  color: #ffffff;
+  text-align: center;
+  background: #ff6d1e;
+}
+#newsMain .newsContainer .newsDetail .title {
+  margin: 0 0 30px;
+  padding: 0 0 15px;
+  font-size: 26px;
+  border-bottom: 1px dashed #c9c9c9;
+}
+#newsMain .newsContainer .newsDetail .postContents {
+  padding: 0 0 100px;
+  font-size: 16px;
+  line-height: 2;
+  border-bottom: 1px dashed #c9c9c9;
+}
+#newsMain .newsContainer .btnBack {
+  width: 190px;
+  margin: 40px auto 0;
+}
+#newsMain .newsContainer .btnBack a {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #0f0b09;
+}

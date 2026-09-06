@@ -1,0 +1,907 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvContainer {
+  height: 400px;
+  padding: 0 20px;
+}
+#top .topKvContainer .topKvTitleBox {
+  max-width: 255px;
+  min-height: 200px;
+}
+#top .topKvContainer .topKvTitleBox .logo {
+  width: 85px;
+  margin: 0 auto 20px;
+}
+#top .topKvContainer .topKvTitleBox h1 {
+  font-size: 15px;
+}
+#top .topKvContainer .topKvScroll {
+  display: none;
+}
+#top .topSection .secBox {
+  padding: 60px 0 100px;
+}
+#top .topSection .secBox h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  line-height: 2;
+}
+#top .worrySection {
+  padding: 0 0 60px;
+}
+#top .worrySection .photoBox {
+  padding: 0 40px 0 0;
+}
+#top .worrySection .photoBox .photo {
+  width: 100%;
+}
+#top .worrySection .checkPanel {
+  position: relative;
+  max-width: 670px;
+  margin: -40px 0 0;
+  padding: 40px 20px;
+}
+#top .worrySection .checkPanel .inner {
+  max-width: 560px;
+}
+#top .worrySection .checkPanel h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#top .worrySection .checkPanel ul li {
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 5px no-repeat;
+  background-size: 16px auto;
+}
+#top .messageContainer .messagePanel {
+  padding: 15px 20px;
+  font-size: 24px;
+}
+#top .secTitleBox {
+  margin: 0 0 40px;
+}
+#top .secTitleBox h2 {
+  font-size: 28px;
+}
+#top .serviceSection {
+  padding: 60px 0 120px;
+}
+#top .serviceSection .topTxt {
+  margin: 0 0 60px;
+  text-align: left;
+}
+#top .serviceSection .planPanel {
+  margin: 0 0 25px;
+  padding: 60px 20px;
+}
+#top .serviceSection .planPanel h3 {
+  font-size: 24px;
+}
+#top .serviceSection .planPanel .setPanel {
+  padding: 30px 15px;
+}
+#top .serviceSection .planPanel .setPanel h4 {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 16px;
+}
+#top .serviceSection .planPanel .setPanel .setBox dl dt {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+#top .serviceSection .planPanel .setPanel .setBox dl dt + dd {
+  display: inline-block;
+}
+#top .serviceSection .planPanel .setPanel .setBox dl dd + dd {
+  margin: 10px 0 0;
+}
+#top .serviceSection .planPanel aside {
+  margin: 15px 0 0;
+  font-size: 12px;
+}
+#top .serviceSection .planPanel .btnMore {
+  margin: 35px auto 0;
+}
+#top .serviceSection .planList {
+  margin: 0 0 40px;
+}
+#top .serviceSection .planList ul li + li {
+  margin: 25px 0 0;
+}
+#top .serviceSection .timeContainer {
+  padding: 0 15px;
+}
+#top .serviceSection .timeContainer .accordHead {
+  padding: 25px 0;
+  font-size: 20px;
+  background: url("../image/common/accord_arrow_01.png") right center no-repeat;
+  background-size: 15px auto;
+}
+#top .serviceSection .timeContainer .accordHead.active {
+  background: url("../image/common/accord_arrow_02.png") right center no-repeat;
+  background-size: 15px auto;
+}
+#top .serviceSection .timeContainer .accordBody {
+  padding: 0 0 35px;
+}
+#top .serviceSection .timeContainer .planBox {
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+#top .serviceSection .timeContainer .planBox + .planBox {
+  margin: 25px 0 0;
+}
+#top .serviceSection .timeContainer .planBox h4 {
+  margin: 0 0 20px;
+}
+#top .serviceSection .timeContainer .planBox .timeBox .box + .box {
+  margin: 20px 0 0;
+}
+#top .serviceSection .timeContainer .planBox .timeBox .box dl {
+  display: flex;
+}
+#top .serviceSection .timeContainer .planBox .timeBox .box dl + dl {
+  margin: 20px 0 0;
+}
+#top .serviceSection .timeContainer .planBox .timeBox .box dl dt {
+  width: 135px;
+  margin: 0 20px 0 0;
+}
+#top .serviceSection .timeContainer aside {
+  font-size: 12px;
+}
+#top .newSection {
+  padding: 0 0 80px;
+}
+#top .newSection .newServiceList .newServiceItem + .newServiceItem {
+  margin: 25px 0 0;
+}
+#top .newSection .newServiceList .newServiceItem .photoBox {
+  padding: 0 0 20px;
+  font-size: 16px;
+}
+#top .newSection .newServiceList .newServiceItem .photoBox .band {
+  max-width: 290px;
+  height: 40px;
+  padding: 0 15px;
+}
+#top .newSection .newServiceList .newServiceItem .txtBox {
+  padding: 25px 15px 35px;
+}
+#top .newSection .newServiceList .newServiceItem .txtBox h3 {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+#top .newSection .newServiceList .newServiceItem .txtBox .price {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+#top .newSection .newServiceList .newServiceItem .txtBox .txt {
+  font-size: 12px;
+}
+#top .newSection .newServiceList .newServiceItem .txtBox aside {
+  font-size: 12px;
+}
+#top .infoSection {
+  padding: 0 0 80px;
+}
+#top .infoSection .btnMore {
+  margin: 40px auto 0;
+}
+#top .voiceSection {
+  padding: 80px 0 65px;
+}
+#top .voiceSection .voicePanel + .voicePanel {
+  margin: 30px 0 0;
+  padding: 20px 0 0;
+}
+#top .voiceSection .voicePanel .voiceBox01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+#top .voiceSection .voicePanel .voiceBox01 .photo {
+  width: 40px;
+  height: 40px;
+}
+#top .voiceSection .voicePanel .voiceBox01 dl {
+  width: calc(100% - 60px);
+  font-size: 16px;
+}
+#top .voiceSection .voicePanel .voiceBox01 dl dt {
+  font-weight: 500;
+}
+#top .faqSection {
+  padding: 120px 0;
+}
+#top .faqSection .faqPanel + .faqPanel {
+  margin: 30px 0 0;
+  padding: 20px 0 0;
+}
+#top .faqSection .faqPanel dl dt {
+  margin: 0 7px 0 0;
+  font-size: 20px;
+  line-height: 1;
+}
+#top .faqSection .faqPanel dl dd {
+  font-size: 14px;
+  line-height: 1.7;
+}
+#top .faqSection .faqPanel dl + dl {
+  margin: 15px 0 0;
+}
+#top .faqSection .faqPanel dl + dl dt {
+  padding: 2px 0 0;
+}
+#top .faqSection .faqPanel dl + dl dd {
+  font-size: 14px;
+}
+#top .cautionSection {
+  padding: 0 0 60px;
+}
+#top .cautionSection .cautionPanel {
+  padding: 30px 20px;
+}
+#top .cautionSection .cautionPanel ul li {
+  position: relative;
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 6px no-repeat;
+  background-size: 16px auto;
+}
+#top .cautionSection .cautionPanel ul li + li {
+  margin: 15px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+#service .topSection {
+  padding: 60px 0 120px;
+}
+#service .topSection .topTxt {
+  margin: 0 0 30px;
+  text-align: center;
+}
+#service .topSection .pagingList {
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+#service .topSection .pagingList ul li {
+  width: 50%;
+}
+#service .topSection .pagingList ul li a {
+  padding: 10px 30px 10px 20px;
+  font-size: 13px;
+  background: url("../image/service/service_top_arrow.png") right 20px center no-repeat;
+  background-size: 10px auto;
+}
+#service .topSection .bnrList ul {
+  display: block;
+}
+#service .topSection .bnrList ul li {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+#service .topSection .bnrList ul li + li {
+  margin: 20px auto 0;
+}
+#service .planSection {
+  padding: 0 0 120px;
+}
+#service .planSection .pageSecTitleBox {
+  padding: 0 0 30px;
+}
+#service .planSection .mv + .planContainer {
+  margin: -40px 0 0;
+}
+#service .planSection .planContainer + .planContainer {
+  margin: 50px 0 0;
+}
+#service .planSection .planContainer .planCntTitle {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#service .planSection .planPanel {
+  padding: 40px 20px;
+}
+#service .planSection .planPanel .infoBox .ttl {
+  min-height: 0;
+}
+#service .planSection .planPanel .infoBox .ttl h3 {
+  font-size: 18px;
+}
+#service .planSection .planPanel .infoBox .ttl p {
+  font-size: 12px;
+}
+#service .planSection .planPanel .infoBox dl dt {
+  width: 100px;
+  padding: 20px;
+}
+#service .planSection .planPanel .infoBox dl dd {
+  width: calc(100% - 105px);
+  padding: 20px;
+}
+#service .planSection .planPanel .infoBox dl dd span {
+  font-size: 12px;
+}
+#service .planSection .planPanel .infoBox dl dd em {
+  font-size: 18px;
+}
+#service .planSection .planPanel .infoBox dl dd .box + .box {
+  margin: 20px 0 0;
+}
+#service .planSection .planPanel aside {
+  font-size: 12px;
+}
+#service .planSection .planPanel .multiBox .infoBox + .infoBox {
+  margin: 40px 0 0;
+}
+#service .planSection .timeContainer {
+  padding: 0 15px;
+}
+#service .planSection .timeContainer .accordHead {
+  padding: 25px 0;
+  font-size: 20px;
+  background: url("../image/common/accord_arrow_01.png") right center no-repeat;
+  background-size: 15px auto;
+}
+#service .planSection .timeContainer .accordHead.active {
+  background: url("../image/common/accord_arrow_02.png") right center no-repeat;
+  background-size: 15px auto;
+}
+#service .planSection .timeContainer .accordBody {
+  padding: 0 0 35px;
+}
+#service .planSection .timeContainer .planBox {
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+#service .planSection .timeContainer .planBox + .planBox {
+  margin: 25px 0 0;
+}
+#service .planSection .timeContainer .planBox h4 {
+  margin: 0 0 20px;
+}
+#service .planSection .timeContainer .planBox .timeBox .box + .box {
+  margin: 20px 0 0;
+}
+#service .planSection .timeContainer .planBox .timeBox .box dl {
+  display: flex;
+}
+#service .planSection .timeContainer .planBox .timeBox .box dl + dl {
+  margin: 20px 0 0;
+}
+#service .planSection .timeContainer .planBox .timeBox .box dl dt {
+  width: 135px;
+  margin: 0 20px 0 0;
+}
+#service .planSection .timeContainer aside {
+  font-size: 12px;
+}
+#service .planSection .caution {
+  padding: 20px;
+}
+#service .planSection .caution .ttl {
+  margin: 0 0 15px;
+  font-size: 17px;
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about .pageSecTitleBox {
+  margin: 0 0 40px;
+}
+#about .sec01 {
+  padding: 80px 0;
+}
+#about .sec01 .secBox {
+  max-width: 580px;
+  margin: 0 auto;
+}
+#about .sec01 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+#about .sec02 {
+  padding: 0 0 100px;
+}
+#about .sec02 .secBox {
+  margin: 0 0 100px;
+}
+#about .sec02 .secBox .photo {
+  max-width: 600px;
+}
+#about .sec02 .secBox .txtBox {
+  margin: 20px 0 0;
+  padding: 40px 20px;
+}
+#about .sec02 .secBox .infoBox .ttl {
+  min-height: 0;
+}
+#about .sec02 .secBox .infoBox .ttl h3 {
+  font-size: 18px;
+}
+#about .sec02 .secBox .infoBox .ttl p {
+  font-size: 12px;
+}
+#about .sec02 .secBox .infoBox dl dt {
+  width: 100px;
+  padding: 20px;
+}
+#about .sec02 .secBox .infoBox dl dd {
+  width: calc(100% - 105px);
+  padding: 20px;
+}
+#about .sec02 .secBox .infoBox dl dd span {
+  font-size: 12px;
+}
+#about .sec02 .secBox .infoBox dl dd em {
+  font-size: 18px;
+}
+#about .sec02 .secBox .infoBox dl dd .box + .box {
+  margin: 20px 0 0;
+}
+#about .slidePanel .slideBox ul li {
+  width: 50%;
+  margin: 0 10px;
+  padding: 0 0 60%;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#company .pageSecTitleBox {
+  margin: 0 0 40px;
+}
+#company .sec01 {
+  padding: 80px 0;
+}
+#company .sec01 .infoPanel {
+  padding: 30px 20px;
+}
+#company .sec01 .infoBox .ttl {
+  min-height: 0;
+}
+#company .sec01 .infoBox .ttl h3 {
+  font-size: 18px;
+}
+#company .sec01 .infoBox .ttl p {
+  font-size: 12px;
+}
+#company .sec01 .infoBox dl dt {
+  width: 100px;
+  padding: 20px;
+}
+#company .sec01 .infoBox dl dd {
+  width: calc(100% - 105px);
+  padding: 20px;
+}
+#company .sec01 .infoBox dl dd span {
+  font-size: 12px;
+}
+#company .sec01 .infoBox dl dd em {
+  font-size: 18px;
+}
+#company .sec01 .infoBox dl dd .box + .box {
+  margin: 20px 0 0;
+}
+#company .sec02 {
+  padding: 0 0 100px;
+}
+#company .sec02 .cautionPanel {
+  padding: 30px 20px;
+}
+#company .sec02 .cautionPanel ul li {
+  position: relative;
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 6px no-repeat;
+  background-size: 16px auto;
+}
+#company .sec02 .cautionPanel ul li + li {
+  margin: 15px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact .contactSection {
+  margin: 0 0 80px;
+}
+#contact .secTtl {
+  margin: 0 0 30px;
+  padding: 0 0 0 15px;
+  font-size: 18px;
+  border-left: 4px solid #005eae;
+}
+#contact .secTtl h2 {
+  line-height: 1.3;
+}
+#contact .section + .section {
+  margin: 60px 0 0;
+}
+#contact .sec01 .topTxt {
+  margin: 0 0 40px;
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox form > dl {
+  font-size: 12px;
+}
+.formBox .radioForm {
+  display: flex;
+}
+.formBox .radioForm dt {
+  width: 85px;
+}
+.formBox .radioForm dd {
+  width: calc(100% - 85px);
+}
+.formBox ::placeholder {
+  font-size: 12px;
+}
+.formBox input[type=text],
+.formBox input[type=email],
+.formBox input[type=tel] {
+  padding: 0 10px;
+  font-size: 16px;
+}
+.formBox textarea {
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+.formBox .birthBox {
+  padding: 0 10px;
+}
+.formBox .birthBox ul li {
+  width: 70px;
+}
+.formBox .birthBox ul li + li {
+  padding: 0 0 0 15px;
+}
+.formBox .birthBox input {
+  height: 30px;
+  padding: 0 5px;
+}
+.formBox .checkItem {
+  margin: 0 0 40px;
+}
+.formBox .checkItem span {
+  padding-left: 30px;
+}
+.formBox form .mwform-radio-field {
+  display: block;
+}
+.formBox form .mwform-radio-field + .mwform-radio-field {
+  margin: 10px 0 0;
+}
+.formBox .privacy {
+  margin: 35px auto 20px;
+}
+.formBox .privacy .agreeBox {
+  height: 250px;
+}
+.formBox .privacy .box + .box {
+  margin: 5px 0 0;
+}
+
+#contactConfirm #section__contact,
+#contactComplete #section__contact {
+  padding: 90px 0 0;
+}
+#contactConfirm #section__contact .contactContainer,
+#contactComplete #section__contact .contactContainer {
+  padding: 40px 0 60px;
+}
+#contactConfirm #section__contact .secWrap01,
+#contactComplete #section__contact .secWrap01 {
+  padding: 0 30px;
+}
+#contactConfirm #section__contact .secTitleBox,
+#contactComplete #section__contact .secTitleBox {
+  margin: 0 0 20px;
+}
+#contactConfirm #section__contact .secTitleBox p,
+#contactComplete #section__contact .secTitleBox p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+#contactConfirm #section__contact .secTitleBox h2,
+#contactComplete #section__contact .secTitleBox h2 {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+#contactConfirm #section__contact .topTxt,
+#contactComplete #section__contact .topTxt {
+  margin: 0 0 40px;
+}
+#contactConfirm #section__contact .topTxt .txt,
+#contactComplete #section__contact .topTxt .txt {
+  letter-spacing: 0;
+}
+#contactConfirm .btnToTop,
+#contactComplete .btnToTop {
+  font-size: 14px;
+}
+
+/* --------------------------------------------------
+	POST
+-------------------------------------------------- */
+.postMain .postPanel {
+  padding: 30px 0 80px;
+}
+.postMain .categoryList {
+  margin: 0 0 40px;
+}
+.postMain .categoryList ul {
+  display: block;
+  margin: 0;
+}
+.postMain .categoryList ul li {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.postMain .categoryList ul li + li {
+  margin: 15px auto 0;
+}
+.postMain .list__news__section .txtBox {
+  padding: 15px 0 0;
+}
+.postMain .list__news__section .txtBox .title {
+  font-size: 18px;
+}
+.postMain .list__pagination {
+  margin: 50px 0 0;
+}
+.postMain .detail__news .titleHeader {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+}
+.postMain .detail__news .titleHeader .title {
+  font-size: 20px;
+}
+.postMain .detail__back {
+  margin: 100px 0 0;
+}
+
+/* --------------------------------------------------
+	baby
+-------------------------------------------------- */
+#baby .pageSecTitleBox {
+  margin: 0 0 40px;
+}
+#baby .secTitleBox {
+  margin: 0 0 40px;
+}
+#baby .secTitleBox h2 {
+  font-size: 28px;
+}
+#baby .sec01 {
+  padding: 80px 0;
+}
+#baby .sec01 .secBox {
+  max-width: 580px;
+  margin: 0 auto;
+}
+#baby .sec01 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+#baby .sec01 .secBox .txtBox h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#baby .sec01 .secBox .txtBox ul li {
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 5px no-repeat;
+  background-size: 16px auto;
+}
+#baby .sec02 {
+  padding: 40px 0;
+}
+#baby .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: left;
+}
+#baby .sec02 .planPanel {
+  padding: 60px 20px;
+}
+#baby .sec02 .planPanel h3 {
+  font-size: 24px;
+}
+#baby .sec02 .planPanel ul li {
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 5px no-repeat;
+  background-size: 16px auto;
+}
+#baby .sec03 {
+  padding: 40px 0;
+}
+#baby .sec03 .listBox {
+  margin: 0 0 40px;
+}
+#baby .sec03 .listBox ul {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#baby .sec03 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#baby .sec03 .listBox ul dl dt {
+  font-size: 18px;
+}
+#baby .sec03 .planPanel {
+  padding: 60px 20px;
+}
+#baby .sec03 .planPanel h3 {
+  font-size: 24px;
+}
+#baby .sec03 .planPanel .setPanel {
+  padding: 30px 15px;
+}
+#baby .sec03 .planPanel .setPanel h4 {
+  margin: 0 0 30px;
+  padding: 0 0 10px;
+  font-size: 16px;
+}
+#baby .sec03 .planPanel .setPanel .setBox dl dt {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+#baby .sec03 .planPanel .setPanel .setBox dl dt + dd {
+  display: inline-block;
+}
+#baby .sec03 .planPanel .setPanel .setBox dl dd + dd {
+  margin: 10px 0 0;
+}
+#baby .sec03 .planPanel aside {
+  margin: 15px 0 0;
+  font-size: 12px;
+}
+#baby .sec04 {
+  padding: 40px 0;
+}
+#baby .sec04 .planPanel {
+  padding: 40px 20px;
+}
+#baby .sec04 .planPanel .infoBox .ttl {
+  min-height: 0;
+}
+#baby .sec04 .planPanel .infoBox .ttl h3 {
+  font-size: 18px;
+}
+#baby .sec04 .planPanel .infoBox .ttl p {
+  font-size: 12px;
+}
+#baby .sec04 .planPanel .infoBox dl dt {
+  width: 100px;
+  padding: 20px;
+}
+#baby .sec04 .planPanel .infoBox dl dd {
+  width: calc(100% - 105px);
+  padding: 20px;
+}
+#baby .sec04 .planPanel .infoBox dl dd span {
+  font-size: 12px;
+}
+#baby .sec04 .planPanel .infoBox dl dd em {
+  font-size: 18px;
+}
+#baby .sec04 .planPanel .infoBox dl dd .box + .box {
+  margin: 20px 0 0;
+}
+#baby .sec04 .planPanel aside {
+  font-size: 12px;
+}
+#baby .faqSection {
+  padding: 60px 0;
+}
+#baby .faqSection .faqPanel + .faqPanel {
+  margin: 30px 0 0;
+  padding: 20px 0 0;
+}
+#baby .faqSection .faqPanel dl dt {
+  margin: 0 7px 0 0;
+  font-size: 20px;
+  line-height: 1;
+}
+#baby .faqSection .faqPanel dl dd {
+  font-size: 14px;
+  line-height: 1.7;
+}
+#baby .faqSection .faqPanel dl + dl {
+  margin: 15px 0 0;
+}
+#baby .faqSection .faqPanel dl + dl dt {
+  padding: 2px 0 0;
+}
+#baby .faqSection .faqPanel dl + dl dd {
+  font-size: 14px;
+}
+#baby .cautionSection {
+  padding: 0 0 60px;
+}
+#baby .cautionSection .cautionPanel {
+  padding: 30px 20px;
+}
+#baby .cautionSection .cautionPanel ul li {
+  position: relative;
+  padding: 0 0 0 22px;
+  background: url("../image/common/list_check_pink.png") left top 6px no-repeat;
+  background-size: 16px auto;
+}
+#baby .cautionSection .cautionPanel ul li + li {
+  margin: 15px 0 0;
+}
+
+/* --------------------------------------------------
+	office
+-------------------------------------------------- */
+#office .pageSecTitleBox {
+  margin: 0 0 40px;
+}
+#office .secTitleBox {
+  margin: 0 0 40px;
+}
+#office .secTitleBox h2 {
+  font-size: 28px;
+}
+#office .sec01 {
+  padding: 80px 0;
+}
+#office .sec02 {
+  padding: 40px 0 80px;
+}
+#office .sec02 .listBox {
+  margin: 0 0 40px;
+}
+#office .sec02 .listBox ul {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#office .sec02 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#office .sec02 .listBox ul dl dt {
+  font-size: 18px;
+}
+#office .sec02 .planPanel {
+  padding: 60px 20px;
+}
+#office .sec02 .planPanel h3 {
+  font-size: 24px;
+}
+#office .sec02 .planPanel .setPanel {
+  padding: 30px 15px;
+}
+#office .sec02 .planPanel .setPanel .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+}
+#office .sec02 .planPanel .setPanel h4 {
+  font-size: 16px;
+}
+#office .sec02 .planPanel .setPanel .setBox dl dt {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+#office .sec02 .planPanel .setPanel .setBox dl dt + dd {
+  display: inline-block;
+}
+#office .sec02 .planPanel .setPanel .setBox dl dd + dd {
+  margin: 10px 0 0;
+}
+#office .sec02 .planPanel aside {
+  margin: 15px 0 0;
+  font-size: 12px;
+}

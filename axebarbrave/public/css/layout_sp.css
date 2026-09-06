@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top .topKvContainer .topKvTitleBox .topKvTitle h1 {
+  font-size: 20px;
+}
+#top .topKvContainer .topKvTitleBox .sub {
+  font-size: clamp(30px, 5vw, 40px);
+}
+#top .topKvContainer .topKvPanel .topKv {
+  height: 300px;
+}
+#top .sec01 {
+  padding: 80px 0;
+}
+#top .sec01 .secPanel {
+  padding: 0;
+}
+#top .sec01 .secPanel .secBox {
+  padding: 20px;
+}
+#top .sec01 .secPanel .secBox .secTtl {
+  margin: 0 0 30px;
+}
+#top .sec01 .secPanel .secBox .secTtl h2 {
+  font-size: 30px;
+}
+#top .sec01 .secPanel .secBox .secTtl p {
+  font-size: 16px;
+}
+@media (min-width: 1025px) {
+  #top .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #top .sec01 .secPanel .photo {
+    width: 45%;
+  }
+  #top .sec01 .secPanel .secBox {
+    width: 50%;
+  }
+}
+#top .sec02 {
+  padding: 60px 0;
+}
+#top .sec02 .listBox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#top .sec02 .listBox ul li + li {
+  margin: 30px 0 0;
+}
+#top .sec02 .listBox ul li .title {
+  min-height: 0;
+}
+#top .sec03 {
+  padding: 60px 0;
+}
+#top .sec03 .message {
+  max-width: 1000px;
+  margin: 0 0 40px -20px;
+}
+#top .sec03 .secContainer .secPanel .secBox {
+  background: #100f0e;
+}
+#top .sec03 .secContainer .secPanel .secBox .txtBox {
+  padding: 20px 20px 40px;
+}
+#top .sec03 .secContainer .secPanel .secBox .txtBox .ttl {
+  font-size: 20px;
+}
+#top .sec04 {
+  padding: 60px 0;
+}
+#top .sec04 .experiencePanel {
+  max-width: 600px;
+  min-height: 0;
+  margin: 0 auto 40px;
+  padding: 20px 20px;
+  border: 1px solid #9ba0a2;
+}
+#top .sec04 .experiencePanel .ttl {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+#top .sec04 .experiencePanel .secBox {
+  display: block;
+}
+#top .sec04 .experiencePanel .secBox .firstTtl {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 20px;
+}
+#top .sec04 .experiencePanel .secBox span {
+  font-size: 20px;
+}
+#top .sec04 .experiencePanel .secBox em {
+  font-size: 40px;
+}
+#top .sec04 .message {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+#top .sec04 .listBox {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#top .sec04 .listBox ul li + li {
+  margin: 20px 0 0;
+}
+#top .sec04 .listBox ul .box {
+  min-height: 360px;
+  padding: 30px 20px;
+}
+#top .sec04 .listBox ul .box .time {
+  margin: 0 0 10px;
+}
+#top .sec04 .listBox ul .box .ttl {
+  margin: 0 0 15px;
+}
+#top .sec04 .listBox ul .box .price {
+  font-size: 18px;
+}
+#top .sec04 .listBox ul .box .price em {
+  font-size: 28px;
+}
+#top .sec04 .btnMore {
+  margin: 50px 0 0;
+}
+#top .sec05 {
+  padding: 60px 0;
+}
+#top .sec05 .message {
+  margin: 0 0 30px;
+  font-size: 20px;
+}
+#top .sec05 .listBox {
+  max-width: 330px;
+  margin: 0 auto;
+}
+#top .sec05 .listBox ol li + li {
+  margin: 90px 0 0;
+}
+#top .sec05 .listBox ol li + li::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  width: 45px;
+  height: 38px;
+  margin: 0 auto;
+  background: url("../image/top/sec05_arrow_02.png") no-repeat;
+  background-size: 100% auto;
+}
+#top .sec05 .listBox ol .ttl {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+#top .sec05 .listBox ol .ttl em {
+  font-size: 26px;
+}
+#top .sec05 .listBox ol dl dt {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+/*////////////////////////////////////////////////////////////
+	features
+///////////////////////////////////////////////////////////*/
+#features .sec01 {
+  padding: 80px 0;
+}
+#features .sec01 .secPanel {
+  padding: 0;
+}
+#features .sec01 .secPanel .secBox {
+  padding: 20px;
+}
+#features .sec01 .secPanel .secBox .secTtl {
+  margin: 0 0 30px;
+}
+#features .sec01 .secPanel .secBox .secTtl h2 {
+  font-size: 30px;
+}
+#features .sec01 .secPanel .secBox .secTtl p {
+  font-size: 16px;
+}
+@media (min-width: 1025px) {
+  #features .sec01 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #features .sec01 .secPanel .photo {
+    width: 45%;
+  }
+  #features .sec01 .secPanel .secBox {
+    width: 50%;
+  }
+}
+#features .sec02 {
+  padding: 60px 0;
+}
+#features .sec02 .listBox {
+  max-width: 360px;
+  margin: 0 auto;
+}
+#features .sec02 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#features .sec02 .listBox ul .txtBox {
+  padding: 15px;
+}
+#features .sec02 .listBox ul .txtBox .ttl {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+#features .sec03 {
+  padding: 60px 0;
+}
+#features .sec03 .faqPanel dl dt {
+  font-size: 18px;
+}
+#features .sec03 .faqPanel dl dt em {
+  margin: 0 15px 0 0;
+}
+#features .sec03 .faqPanel dl dt span {
+  padding: 0 25px 0 0;
+}
+#features .sec03 .faqPanel dl dd {
+  padding: 15px 0 40;
+}
+#features .sec04 {
+  padding: 60px 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	plan
+///////////////////////////////////////////////////////////*/
+#plan .sec01 {
+  padding: 60px 0;
+}
+#plan .sec01 .experiencePanel {
+  max-width: 600px;
+  min-height: 0;
+  margin: 0 auto 40px;
+  padding: 20px 20px;
+  border: 1px solid #9ba0a2;
+}
+#plan .sec01 .experiencePanel .ttl {
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+#plan .sec01 .experiencePanel .secBox {
+  display: block;
+}
+#plan .sec01 .experiencePanel .secBox .firstTtl {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 20px;
+}
+#plan .sec01 .experiencePanel .secBox span {
+  font-size: 20px;
+}
+#plan .sec01 .experiencePanel .secBox em {
+  font-size: 40px;
+}
+#plan .sec01 .entryPanel {
+  border: 1px solid #9ba0a2;
+}
+#plan .sec01 .entryPanel dl {
+  display: block;
+}
+#plan .sec01 .entryPanel dl dt {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+#plan .sec01 .entryPanel dl dd {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+#plan .sec01 .entryPanel dl dd em {
+  font-size: 30px;
+}
+#plan .sec01 .planListPanel + .planListPanel {
+  margin: 60px 0 0;
+}
+#plan .sec01 .planListPanel .planTitle {
+  padding: 20px 15px;
+}
+#plan .sec01 .planListPanel .planTitle .title01 {
+  max-width: 230px;
+}
+#plan .sec01 .planListPanel .planTitle .title02 {
+  max-width: 280px;
+}
+#plan .sec01 .planListPanel .planTitle .title03 {
+  max-width: 350px;
+}
+#plan .sec01 .planListPanel .planTitle .title04 {
+  max-width: 350px;
+}
+#plan .sec01 .planListPanel .planTitle .title05 {
+  max-width: 200px;
+}
+#plan .sec01 .planListPanel .time {
+  font-size: 18px;
+}
+#plan .sec01 .planListPanel .secBox {
+  margin: 20px 0 0;
+}
+#plan .sec01 .planListPanel .secBox .leftBox .ttl {
+  padding: 15px;
+  font-size: 18px;
+}
+#plan .sec01 .planListPanel .secBox .leftBox .txt {
+  padding: 10px 15px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox {
+  padding: 20px 0 0;
+}
+#plan .sec01 .planListPanel .secBox .rightBox .ttl {
+  padding: 9px 15px;
+  font-size: 18px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox .ttl em {
+  font-size: 26px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox ul li {
+  padding: 15px 15px 10px;
+}
+#plan .sec01 .planListPanel .secBox .rightBox ul dl dt {
+  margin: 0 0 5px;
+}
+#plan .sec02 {
+  padding: 60px 0;
+}
+#plan .sec02 .rentalContainer .entryPanel {
+  border: 1px solid #9ba0a2;
+}
+#plan .sec02 .rentalContainer .entryPanel dl {
+  display: block;
+  height: auto;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dt {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dd {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+#plan .sec02 .rentalContainer .entryPanel dl dd em {
+  font-size: 26px;
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about .topSection {
+  padding: 60px 0;
+}
+#about .sec01 {
+  padding: 60px 0;
+}
+#about .sec01 .listBox {
+  max-width: 520px;
+  margin: 0 auto;
+}
+#about .sec01 .listBox ul li + li {
+  margin: 40px 0 0;
+}
+#about .sec01 .listBox ul dl dt {
+  font-size: 20px;
+}
+#about .sec02 {
+  padding: 60px 0;
+}
+#about .sec02 .infoBox {
+  margin: 0 0 40px;
+}
+#about .sec02 .infoBox dl {
+  display: block;
+}
+#about .sec02 .infoBox dl dt {
+  width: 100%;
+  padding: 15px 20px;
+}
+#about .sec02 .infoBox dl dd {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+#blog .sec01 {
+  padding: 40px 0 60px;
+}
+#blog .sec01 .cateList {
+  margin: 0 0 50px;
+}
+#blog .sec01 .cateList ul li {
+  display: block;
+  max-width: 380px;
+  min-width: 220px;
+  margin: 0 auto 10px;
+}
+#blog .sec01 .listBox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#blog .sec01 .listBox ul li + li {
+  margin: 30px 0 0;
+}
+#blog .sec01 .listBox ul li .title {
+  min-height: 0;
+}
+#blog .sec01 .list__pagination {
+  margin: 60px 0 0;
+}
+#blog .sec01 .detailPanel .title {
+  margin: 0 0 20px;
+  padding: 0 10px 5px;
+  font-size: 20px;
+}
+#blog .sec01 .btnBack {
+  margin: 80px auto 0;
+}

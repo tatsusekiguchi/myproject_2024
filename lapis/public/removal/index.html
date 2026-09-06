@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="removal">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logo"><a href="/">
+					<div><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+				</a></div>
+			<div class="navBox">
+				<div class="navContainer">
+					<div class="leftBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="logoSmall"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo_small.png" alt=""></div>
+							<div class="txt">
+								<p>〒589-0023<br>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+									<div>
+										<p>TEL：072-247-4234</p>
+									</div>
+								</a>
+								<p>受付時間：10:00 ～ 19:00<br>定休日：月（祝日は営業）</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="concept">
+										<div>
+											<p>コンセプト</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="facial">
+										<div>
+											<p>フェイシャル</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="slimming">
+										<div>
+											<p>痩身</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="eyelash">
+										<div>
+											<p>まつげパーマ</p>
+										</div>
+									</a></div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="removal">
+										<div>
+											<p>脱毛</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="price">
+										<div>
+											<p>料金表</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="voice">
+										<div>
+											<p>お客様の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="info">
+										<div>
+											<p>サロン紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="btnList">
+							<div class="ul">
+								<div class="li"><a class="tel" href="tel:0722474234">
+										<div class="dl">
+											<div class="dt">
+												<p>お電話でご予約</p>
+											</div>
+											<div class="dd futura">
+												<p class="span">tel.</p>
+												<p class="em">072-247-4234</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a class="mail" href="contact">
+										<div class="dl">
+											<div class="dt">
+												<p>メールでご予約</p>
+											</div>
+											<div class="dd futura">
+												<p>WEB FORM</p>
+											</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="instaBox"><a href="#" target="_blank" rel="noopener">
+								<div>
+									<p>Lapis公式</p>
+								</div>
+							</a>
+							<div class="txt">
+								<p>フォローリクエストをいただきましたら<br>承認後御覧いただけます。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburgerBox">
+				<div class="hamburger">
+					<div class="span"></div>
+					<div class="span"></div>
+				</div>
+				<div class="hamburgerTxt">
+					<p>MENU</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="removalMain main pageMain">
+		<div class="pageKvContainer">
+			<div class="bg"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/page_kv_bg.png" alt=""></div>
+			<div class="pageKvWrap">
+				<div class="pageKvTitle">
+					<h1 class="futura">HAIR REMOVAL</h1>
+				</div>
+				<div class="pageKvPhoto"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/removal_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageIntroSection">
+			<div class="secContainer">
+				<div class="secWrap">
+					<div class="secPanel">
+						<div class="leftBox">
+							<div class="secTtl">
+								<p class="futura">ABOUT REMOVAL</p>
+								<h2>Lapisの脱毛について</h2>
+							</div>
+							<div class="photo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/removal_top_img.png" alt=""></div>
+						</div>
+						<div class="rightBox">
+							<div class="txtBox">
+								<h3 class="mincho">高い技術と質の良いサービスを<br>実感してください。</h3>
+								<div class="txt">
+									<p>Lapisの脱毛は、お客さまに満足いただけるサービスを提供しております。<br>お顔の産毛、口周りなど、貴方のご要望･お悩みにフィットするさまざまな脱毛プランを提案いたします。<br>他店で一通り全身脱毛を行ったけど残っているところが気になる。<br>お顔の脱毛に通っているが思ったような効果が出ていない。<br>そんな方に是非Lapisの脱毛を体感いただければと思います。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p class="futura">SERVICE</p>
+					<h2>サービス紹介</h2>
+				</div>
+				<div class="secContainer">
+					<div class="section01 section">
+						<div class="secBox">
+							<div class="ttlBox">
+								<div class="secTtl">
+									<p class="futura">FACIAL HAIR REMOVAL</p>
+									<h3>お顔脱毛</h3>
+								</div>
+								<h4 class="mincho">お顔のうぶ毛、ひげ脱毛で<br>自己処理いらずのお肌に</h4>
+							</div>
+							<div class="txt">
+								<p>意外と目立つ顔のうぶ毛。<br>ケアすることでメイクのノリがアップしたり、顔の印象が明るくなります。<br>Lapisでは毛質・毛量・肌質に合わせて1 本1 本丁寧に処理していきます。<br>処理完了後は自己処理いらずの肌に生まれ変わります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="section02 section">
+						<div class="sectionTitle mincho">
+							<h4>対応部位</h4>
+						</div>
+						<div class="partsBox">
+							<div class="chartBox">
+								<div class="chart chart01"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/removal_sec01_chart_01.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="labelBox labelBox01">
+									<p>女性：額、口まわり、頬、眉、全体</p>
+								</div>
+								<div class="txt">
+									<p>現在、お顔の産毛、口周りの脱毛治療をご希望される方が多くいらっしゃいます。<br>顔の産毛をカミソリで処理することを繰り返すと、<br>肌荒れや色素沈着になってしまうこともあり、肌にもあまりよくありません。<br>Lapisの脱毛法は毛穴を引き締め美肌効果があり、お顔の脱毛で美顔になります。<br>お顔脱毛は、お化粧のりも良くなりメイクもやり易くなります。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section03 section">
+						<div class="sectionTitle mincho">
+							<h4>Lapisの眉毛周りの脱毛</h4>
+						</div>
+						<div class="secBox">
+							<div class="photo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_03.png" alt=""></div>
+							<div class="txtBox">
+								<div class="txt">
+									<p>Lapisでは眉毛の周りの脱毛を他店よりもしっかり行っております。<br>眉毛の形は人それぞれです。<br>脱毛と併せて最適な形になるようサービスでまゆげのデザインカットを行わせていただいております。</p>
+								</div>
+								<div class="labelBox">
+									<p>【こんな方におすすめです】<br>・自分だけの美眉になりたい。<br>・メイクの時間短縮をしたい。<br>・左右の眉毛をきれいに揃えたい。<br>・たれ眉をあげ眉にしたい。</p>
+								</div>
+							</div>
+						</div>
+						<div class="listBox">
+							<div class="ul">
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_01.png" alt=""></div>
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_01.png" alt=""></div>
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_01.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="btnMore"><a href="price">
+							<div>
+								<p>料金はこちら</p>
+							</div>
+						</a></div>
+				</div>
+				<div class="secContainer">
+					<div class="section01 section">
+						<div class="secBox">
+							<div class="ttlBox">
+								<div class="secTtl">
+									<p class="futura">BODY HAIR REMOVAL</p>
+									<h3>各所脱毛</h3>
+								</div>
+								<h4 class="mincho">お手入れ不要の<br>清潔感あるつや肌に</h4>
+							</div>
+							<div class="txt">
+								<p>女性の脱毛人気部位の上位3箇所は<br>「わき毛脱毛」、足の「ひざ下脱毛」、腕の「ひじ下脱毛」です。</p>
+								<p>女性にとってご年齢関係なく、ムダ毛の処理は非常に大切です。<br>脱毛をご希望されご利用されるお客様が多くいらっしゃいます。<br>脱毛施術を行うことによって、ツルツルお肌で清潔感もUPします。</p>
+							</div>
+						</div>
+					</div>
+					<div class="section02 section">
+						<div class="sectionTitle mincho">
+							<h4>対応部位</h4>
+						</div>
+						<div class="partsBox">
+							<div class="chartBox">
+								<div class="chart chart02"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/removal_sec01_chart_02.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="labelBox labelBox02">
+									<p>両脇・うなじ・両ヒジ上・両ヒジ下・両ヒザ上<br>・両ヒザ下・背中・おしり・バスト～お腹まわり<br>・VIO</p>
+								</div>
+								<div class="txt">
+									<p>ご自分では処理の難しい背中やお腹脱毛、手足はもちろん、お顔のうぶ毛などデリケートな場所でも脱毛できます。<br>Lapisの脱毛は皮膚へのダメージが少ないので、全身どの部位でも照射可能です。<br>脇やビキニライン、皮膚に負担が少ないためアトピーの方や皮膚の弱い方でも安心して脱毛することができます。<br>Lapisでは部位に合わせて打ち方を変えております。<br>さらに１つ１つの部位の打ち方が細かいので結果に自信があります。<br>脱毛がしっかりされた部位は毛穴が目立たなくなり肌のキメがさらに細かくなるためスベスベで綺麗な肌になります。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btnMore"><a href="price">
+							<div>
+								<p>料金はこちら</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContactContainer">
+			<div class="footContactPanel">
+				<div class="pageSecTtl">
+					<p class="futura">CONTACT</p>
+					<h2>来店予約・お問い合わせ</h2>
+				</div>
+				<div class="contactItemBox">
+					<div class="contactItem tel"><a class="futura" href="tel:0722474234">
+							<div>
+								<p class="span">tel.</p>
+								<p class="em">072-247-4234</p>
+							</div>
+						</a>
+						<div class="info">
+							<p>OPEN：10:00～19:00<br>CLOSE：MON（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="contactItem insta"><a class="futura" href="#" target="_blank" rel="noopener">
+							<div>
+								<p>INSTAGRAM</p>
+							</div>
+						</a>
+						<p>DMにて承ります</p>
+					</div>
+					<div class="contactItem mail"><a class="futura" href="contact">
+							<div>
+								<p>WEB FORM</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="txtBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="txt">
+							<p>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+								<div>
+									<p>TEL：072-247-4234</p>
+								</div>
+							</a>
+							<p>OPEN： 10:00 ～ 19:00<br>CLOSE：月曜日（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="copy">
+						<p>&copy; 2023 Lapis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

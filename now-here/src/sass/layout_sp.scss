@@ -1,0 +1,712 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      .topKvTitlePanel {
+        .topKvTitleBox {
+          padding: 0 0 20px;
+          background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/top_kv_bg.png)
+            center bottom no-repeat;
+          background-size: 100% auto;
+          .topKvTitle {
+            p {
+              font-size: 20px;
+            }
+            .em {
+              font-size: 30px;
+            }
+          }
+          .txt {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .kvBtn {
+        max-width: 240px;
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .secBox {
+        .leftBox {
+          .list {
+            max-width: 500px;
+            margin: 0 auto;
+            .ul {
+              .li {
+                padding: 0 0 0 30px;
+                background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/top_sec01_check.png)
+                  left center no-repeat;
+                background-size: 20px auto;
+                + .li {
+                  margin: 12px 0 0;
+                }
+              }
+            }
+          }
+        }
+        .rightBox {
+          padding: 20px 0 0;
+          .img {
+            max-width: 280px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secBox {
+        max-width: 700px;
+        .txtBox {
+          padding: 20px 0 0;
+          .txt {
+            margin: 0 0 30px;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .secBox {
+        .photoBox {
+          max-width: 440px;
+          padding: 0 40px 0 0;
+          .photo {
+            max-width: 400px;
+          }
+          .balloon {
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            width: 90px;
+          }
+        }
+        .txtBox {
+          padding: 30px 0 0;
+          .name {
+            margin: 0 0 15px;
+            padding: 10px 0 0;
+            font-size: 24px;
+            &::before {
+              width: 80px;
+            }
+          }
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      .contactBox {
+        .ttl {
+          font-size: 24px;
+        }
+        .contactItem {
+          padding: 20px;
+          .ul {
+            max-width: 640px;
+            margin: 0 auto;
+            .li {
+              a {
+                padding: 0 0 0 30px;
+                font-size: 24px;
+              }
+            }
+            .mail {
+              margin: 0 0 10px;
+              a {
+                background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/top_icon_mail.png)
+                  left center no-repeat;
+                background-size: 20px auto;
+              }
+            }
+            .tel {
+              a {
+                background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/top_icon_tel.png)
+                  left center no-repeat;
+                background-size: 20px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 60px 0;
+      .secBoxList {
+        .secBox {
+          padding: 15px;
+          + .secBox {
+            margin: 30px 0 0;
+          }
+          .photo {
+            max-width: 330px;
+            margin: 0 auto;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 20px;
+              padding: 10px 15px;
+              font-size: 16px;
+            }
+            .box {
+              .dl {
+                line-height: 2;
+                .dt {
+                  margin: 0 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec05 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .secBox {
+        .secTtl {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+      }
+      .listBox {
+        .ul {
+          max-width: 330px;
+          margin: 0 auto;
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+        }
+      }
+      .pointTxt {
+        margin: 30px 0 40px;
+        padding: 5px 80px 5px 0;
+        font-size: 18px;
+        background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/top_pointer.png)
+          right center no-repeat;
+        background-size: 70px auto;
+      }
+      .secPanel {
+        margin: 0 0 40px;
+        padding: 15px;
+        .topBox {
+          margin: 0 0 30px;
+          .photo {
+            max-width: 330px;
+            margin: 0 auto;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 20px;
+              padding: 10px 15px;
+              font-size: 16px;
+            }
+          }
+        }
+        .section {
+          padding: 30px 0;
+          .photo {
+            max-width: 330px;
+            margin: 0 auto;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .sec06 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+    .sliderContainer {
+      padding: 60px 0;
+    }
+    .sec07 {
+      padding: 60px 0;
+      .infoBox {
+        margin: 0 0 60px;
+        color: #ffffff;
+        .dl {
+          display: block;
+          + .dl {
+            margin: 15px 0 0;
+          }
+          .dt {
+            width: 100%;
+            margin: 0 0 5px;
+          }
+        }
+      }
+      .logo {
+        width: 150px;
+      }
+    }
+    .secProcess {
+      padding: 50px 0;
+      .listBox {
+        max-width: 200px;
+        margin: 0 auto 20px;
+        .ul {
+          display: block;
+          .li {
+            width: 100%;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 40px 0 80px;
+    }
+    .catePanel {
+      max-width: 400px;
+      margin: 0 auto 40px;
+      .webgene-header {
+        margin: 0 0 15px;
+        text-align: center;
+        > * {
+          font-size: 18px;
+        }
+      }
+      .webgene-item {
+        text-align: center;
+        + .webgene-item {
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 60px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          .ttlBox {
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	consult
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .consultMain {
+    .topSection {
+      .secContainer {
+        padding: 60px 0 100px;
+        .ttl01 {
+          margin: 0 0 15px;
+          font-size: 20px;
+        }
+        .listBox {
+          .list {
+            .ul {
+              max-width: 600px;
+              .li {
+                padding: 5px 7px;
+                p {
+                  padding: 0 0 0 25px;
+                  font-size: 14px;
+                  background: url(https://s-9835852.smooooth.jp/system_panel/uploads/images/consult_top_check.png)
+                    left center no-repeat;
+                  background-size: 18px auto;
+                }
+              }
+            }
+          }
+          .img {
+            position: static;
+            width: 180px;
+            margin: 20px auto 0;
+          }
+        }
+      }
+      .messageContainer {
+        padding: 30px 0 0;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0;
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .secPanelList {
+        margin: 0 0 40px;
+      }
+      .secPanel {
+        padding: 15px;
+        + .secPanel {
+          margin: 30px 0 0;
+        }
+        .pTtl {
+          margin: 0 0 20px;
+          padding: 10px 15px;
+          font-size: 16px;
+        }
+        .secBox01 {
+          margin: 0 0 20px;
+          .dl {
+            .dt {
+              margin: 0 0 10px;
+            }
+          }
+        }
+        .secBox02 {
+          padding: 15px;
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              padding: 2px 15px;
+            }
+          }
+        }
+      }
+      .btmBox {
+        .txtBox {
+          padding: 20px 0 0;
+          .ttl {
+            margin: 0 0 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .secBox {
+        padding: 20px;
+        .ttlBox {
+          margin: 0 0 15px;
+          padding: 10px 20px 10px 60px;
+          .num {
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+          }
+        }
+        .multiBox {
+          .img {
+            margin: 20px auto 0;
+          }
+          .img01 {
+            max-width: 200px;
+          }
+          .img02 {
+            max-width: 200px;
+          }
+          .img03 {
+            max-width: 200px;
+          }
+          .img04 {
+            max-width: 140px;
+          }
+          .img05 {
+            max-width: 130px;
+          }
+        }
+        .listBox {
+          .ul {
+            .li {
+              + .li {
+                margin: 30px 0 0;
+              }
+            }
+            .dl {
+              .dt {
+                min-height: 0;
+                margin: 0 0 10px;
+                padding: 0 0 10px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 50px;
+        margin: 0 auto 10px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 60px 0;
+    }
+    .sec02 {
+      padding: 60px 0;
+      .tel {
+        a {
+          font-size: 26px;
+        }
+        + p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 0 0 60px;
+      .secBox {
+        .ttl {
+          font-size: 20px;
+        }
+      }
+      .lineBox {
+        padding: 15px 20px;
+        text-align: center;
+        .txtBox {
+          margin: 0 0 15px;
+          .ttl {
+            font-size: 16px;
+          }
+        }
+        .qr {
+          width: 80px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          &:after {
+            width: 100%;
+          }
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

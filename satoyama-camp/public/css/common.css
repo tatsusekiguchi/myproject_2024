@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Kiwi Maru", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #23150c;
+  font-size: 16px;
+  background: #fcf9f3;
+  transition: 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #23150c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #6c4123;
+    z-index: 999;
+    transition: 0.6s;
+  }
+  .header.fixed {
+    background: #ffffff;
+  }
+  .header .headBox {
+    padding: 20px 20px 10px;
+  }
+  .header .logo {
+    max-width: 300px;
+    width: 25%;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburgerBox {
+    display: none;
+  }
+}
+.kvBnr {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  width: 160px;
+  z-index: 99;
+}
+.kvBnr a {
+  display: block;
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox .navList {
+  padding: 10px 20px;
+}
+.navBox .navList ul {
+  display: flex;
+  justify-content: center;
+}
+.navBox .navList ul li + li {
+  margin: 0 0 0 20px;
+}
+.navBox .navList ul li a {
+  display: inline-block;
+  color: #6c4123;
+}
+.navBox .navList ul li:nth-child(1) span {
+  padding: 0 0 0 25px;
+  background: url("../image/common/nav_icon_01.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.navBox .navList ul li:nth-child(2) span {
+  padding: 0 0 0 25px;
+  background: url("../image/common/nav_icon_02.png") left center no-repeat;
+  background-size: 18px auto;
+}
+.navBox .navList ul li:nth-child(3) span {
+  padding: 0 0 0 20px;
+  background: url("../image/common/nav_icon_03.png") left center no-repeat;
+  background-size: 15px auto;
+}
+.navBox .navList ul li:nth-child(4) span {
+  padding: 0 0 0 25px;
+  background: url("../image/common/nav_icon_04.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.navBox .navList ul li:nth-child(5) span {
+  padding: 0 0 0 25px;
+  background: url("../image/common/nav_icon_05.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.navBox .navList ul li:nth-child(6) span {
+  padding: 0 0 0 25px;
+  background: url("../image/common/nav_icon_06.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.navBox .navList ul li:nth-child(7) span {
+  padding: 0 0 0 20px;
+  background: url("../image/common/nav_icon_07.png") left center no-repeat;
+  background-size: 15px auto;
+}
+@media (min-width: 1025px) {
+  .navBox .navItem {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    text-align: center;
+  }
+  .navBox .navItem .telBox {
+    padding: 10px 20px 0 0;
+  }
+  .navBox .navItem .telBox p {
+    font-size: 14px;
+  }
+  .navBox .navItem .telBox a {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-size: 24px;
+    line-height: 1;
+    background: url("../image/common/header_tel.png") left center no-repeat;
+    background-size: 20px auto;
+  }
+  .navBox .navItem .qaBox {
+    margin: 0 10px 0 0;
+  }
+  .navBox .navItem .qaBox a {
+    padding: 10px 10px 5px;
+    display: block;
+    font-size: 14px;
+    color: #b4d4da;
+    border-radius: 0 0 10px 10px;
+    background: #7bb6c0;
+  }
+  .navBox .navItem .qaBox a span {
+    display: block;
+    padding: 30px 0 0;
+    background: url("../image/common/header_qa.png") center top no-repeat;
+    background-size: 30px auto;
+  }
+  .navBox .navItem .reserveBox a {
+    padding: 10px 10px 5px;
+    display: block;
+    font-size: 14px;
+    color: #d7ebd7;
+    border-radius: 0 0 10px 10px;
+    background: #5e935e;
+  }
+  .navBox .navItem .reserveBox a span {
+    display: block;
+    padding: 30px 0 0;
+    background: url("../image/common/header_cal.png") center top no-repeat;
+    background-size: 22px auto;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  overflow: hidden;
+}
+
+.pageKvContainer {
+  position: relative;
+  padding: 0 0 20px;
+}
+.pageKvContainer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 500px;
+  height: 160px;
+  z-index: 1;
+  background: url("../image/top/kv_bg_01.png") left bottom no-repeat;
+  background-size: 100% auto;
+}
+.pageKvContainer::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  width: 400px;
+  height: 160px;
+  z-index: 1;
+  background: url("../image/top/kv_bg_02.png") left bottom no-repeat;
+  background-size: 100% auto;
+}
+.pageKvContainer .pageKvPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+.pageKvContainer .pageKvTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pageSecTtlBox {
+  position: relative;
+  text-align: center;
+  background: url("../image/common/page_sec_ttl_bg.png") center top no-repeat;
+  background-size: 150px auto;
+}
+.pageSecTtlBox h2 {
+  display: inline-block;
+  padding: 40px 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #6c4123;
+}
+.pageSecTtlBox h2 em {
+  color: #d7760c;
+}
+
+.pageLogoBox {
+  display: none;
+}
+
+.secWrap {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 33%;
+  z-index: 1;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 280px;
+  margin: 0 auto;
+}
+.btnMore a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  background: url("../image/common/btn_more_bg.png") center no-repeat;
+  background-size: 100% auto;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  position: relative;
+  margin: -20px 0 0;
+  padding: 100px 0 50px;
+  color: #fcf9f3;
+  text-align: center;
+  z-index: 1;
+  background: url("../image/common/footer_bg.png") center top no-repeat;
+  background-size: cover;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  width: 320px;
+  height: 120px;
+  background: url("../image/common/footer_icon_01.png") no-repeat;
+  background-size: 100% auto;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: 12%;
+  width: 440px;
+  height: 140px;
+  background: url("../image/common/footer_icon_02.png") no-repeat;
+  background-size: 100% auto;
+}
+.footer .secWrap {
+  position: relative;
+}
+.footer .pagetop {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 80px;
+  cursor: pointer;
+}
+.footer .footBox .logo {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+.footer .footBox .txt {
+  margin: 0 0 30px;
+}
+.footer .footBox .txt a {
+  display: inline-block;
+  color: #fcf9f3;
+}
+.footer .footBox .insta dl dt {
+  margin: 0 0 5px;
+  font-size: 12px;
+  color: #ab8164;
+}
+.footer .footBox .insta dl dd a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-size: 18px;
+  color: #fcf9f3;
+  background: url("../image/common/footer_insta.png") left center no-repeat;
+  background-size: 20px auto;
+}
+.footer .footItem {
+  max-width: 260px;
+}
+.footer .footItem .business {
+  padding: 10px;
+  font-size: 18px;
+  color: #66391a;
+  border-radius: 4px;
+  background: #efe5dd;
+}
+.footer .footItem .copy {
+  margin: 20px 0 0;
+  text-align: right;
+}
+@media (min-width: 1025px) {
+  .footer .footItem {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    width: 260px;
+  }
+}
+
+/* --------------------------------------------------
+	fadeAnimation
+-------------------------------------------------- */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値では非表示 */
+  -webkit-transition: opacity 0.8s ease;
+  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+
+/*body要素に.fadeoutセレクタがある場合には、レイヤーが表示されるようにopacityを１に設定します。*/
+body.fadeout::after {
+  opacity: 1;
+}
+
+/*お好みで、.fadeoutセレクタ以下の他の要素にもアニメーション用のCSSを定義します*/
+/*DEMOではページ遷移時にarticle要素のスケールもアニメーションさせています*/
+body.fadeout article {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

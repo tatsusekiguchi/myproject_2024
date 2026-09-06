@@ -1,0 +1,1707 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer .topKv {
+  position: relative;
+  padding: 0 20px;
+  height: 800px;
+}
+.topMain .topKvContainer .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvContainer .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topMain .topKvContainer .kvBox .kv01 {
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvBox .kv02 {
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvBox .kv03 {
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvTtl {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #ffffff;
+  z-index: 1;
+}
+.topMain .topKvContainer .kvTtl h1 {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-shadow: 2px 3px 9px rgba(60, 66, 73, 0.8);
+}
+.topMain .sec01 {
+  padding: 100px 0 160px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .secWrap {
+  max-width: 1340px;
+}
+.topMain .sec01 .ttlBox {
+  margin: 0 0 40px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 900;
+  color: #2f4350;
+}
+.topMain .sec01 .ttlBox .ttl01 {
+  font-style: italic;
+}
+.topMain .sec01 .ttlBox .ttl02 {
+  font-size: 60px;
+  font-style: italic;
+}
+.topMain .sec01 .txt p + p {
+  margin: 30px 0 0;
+}
+.topMain .sec02 {
+  padding: 120px 0;
+  color: #ffffff;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png) no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.topMain .sec02 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 45px;
+}
+.topMain .sec02 .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec02 .secBox .photo {
+    width: 50%;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    width: 40%;
+  }
+}
+.topMain .sec03 {
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png) top no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .secTop {
+  padding: 40px 20px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_sec03_bg_arrow.png) center bottom no-repeat;
+  background-size: cover;
+}
+.topMain .sec03 .secTop .ttl {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .sec03 .secContainer {
+  padding: 150px 0;
+}
+.topMain .sec03 .secPanel {
+  position: relative;
+  max-width: 1100px;
+  padding: 40px 20px;
+  background: #ffffff;
+}
+.topMain .sec03 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.topMain .sec03 .secPanel .photo {
+  max-width: 500px;
+}
+.topMain .sec03 .secPanel .secBox {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.topMain .sec03 .secPanel .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+}
+.topMain .sec03 .secPanel .secBox .txtBox .ttl p {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: italic;
+  color: #446378;
+}
+.topMain .sec03 .secPanel .secBox .txtBox .ttl h3 {
+  display: inline-block;
+  color: #566878;
+}
+.topMain .sec03 .secPanel .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+.topMain .sec03 .secPanel .secBox .txtBox .btnMore {
+  max-width: 200px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secPanel .secBox .txtBox {
+    width: 57%;
+  }
+  .topMain .sec03 .secPanel:nth-child(odd) {
+    left: 100px;
+  }
+  .topMain .sec03 .secPanel:nth-child(odd) .photo {
+    position: absolute;
+    top: -50px;
+    left: -100px;
+  }
+  .topMain .sec03 .secPanel:nth-child(odd) .secBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .topMain .sec03 .secPanel:nth-child(even) .photo {
+    position: absolute;
+    top: -50px;
+    right: -100px;
+  }
+}
+.topMain .sec04 {
+  padding: 120px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .txt {
+  margin: 0 0 30px;
+}
+.topMain .sec04 .photo {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.topMain .sec04 .btnMore {
+  margin: 0 auto;
+}
+.topMain .sec04 .btnMore a {
+  background-color: #2b485b;
+}
+.topMain .sec05 {
+  padding: 120px 0;
+  background: #fff6e3;
+}
+.topMain .sec05 .webgene-blog {
+  margin: 0 0 60px;
+}
+.topMain .sec05 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec05 .webgene-blog .webgene-item a {
+  display: block;
+}
+.topMain .sec05 .webgene-blog .webgene-item .photo {
+  margin: 0 0 10px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .photo img {
+  border-radius: 6px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox {
+  margin: 0 0 10px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: #566878;
+}
+.topMain .sec05 .webgene-blog .webgene-item .infoBox .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 2px 15px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: #f08200;
+}
+.topMain .sec05 .webgene-blog .webgene-item .title {
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .webgene-blog {
+    display: flex;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item {
+    width: calc(25% - 15px);
+    margin: 0 0 0 15px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item .photo {
+    position: relative;
+    height: 200px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec05 .btnMore {
+  margin: 0 auto;
+}
+.topMain .sec05 .btnMore a {
+  background-color: #2b485b;
+}
+.topMain .sec06 {
+  padding: 120px 0;
+  color: #ffffff;
+  background: #9cacb6;
+}
+.topMain .sec06 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.topMain .sec06 .secBox .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 45px;
+}
+.topMain .sec06 .secBox .txtBox .txt {
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec06 .secBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec06 .secBox .photo {
+    width: 50%;
+  }
+  .topMain .sec06 .secBox .txtBox {
+    width: 40%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain .strengthContainer {
+  padding: 100px 0 120px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/strength_page_bg.png) no-repeat;
+  background-size: cover;
+}
+.strengthMain .pageSecTtlBox {
+  margin: 0 0 30px;
+  color: #ffffff;
+}
+.strengthMain .topTxt {
+  margin: 0 0 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.strengthMain .secPanel {
+  position: relative;
+  padding: 40px 60px;
+  background: #ffffff;
+  box-shadow: 3px 3px 12px rgba(70, 64, 57, 0.6);
+}
+.strengthMain .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.strengthMain .secPanel .photo {
+  max-width: 500px;
+}
+.strengthMain .secPanel .secBox .txtBox .ttlBox {
+  margin: 0 0 20px;
+}
+.strengthMain .secPanel .secBox .txtBox .ttlBox .ttl01 {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  font-style: italic;
+  color: #446378;
+}
+.strengthMain .secPanel .secBox .txtBox .ttlBox .ttl02 {
+  font-size: 34px;
+}
+@media (min-width: 1025px) {
+  .strengthMain .secPanel {
+    min-height: 400px;
+  }
+  .strengthMain .secPanel .secBox .txtBox {
+    width: 60%;
+  }
+  .strengthMain .secPanel:nth-child(odd) .photo {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    width: 40%;
+  }
+  .strengthMain .secPanel:nth-child(odd) .secBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .strengthMain .secPanel:nth-child(even) .photo {
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    width: 40%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain .serviceContainer {
+  padding: 100px 0 120px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/service_page_bg.png) no-repeat;
+  background-size: cover;
+}
+.serviceMain .pageSecTtlBox {
+  margin: 0 0 30px;
+}
+.serviceMain .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.serviceMain .secPanel {
+  position: relative;
+  padding: 40px 60px;
+  background: #ffffff;
+  box-shadow: 3px 3px 12px rgba(70, 64, 57, 0.6);
+}
+.serviceMain .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.serviceMain .secPanel .photo {
+  max-width: 450px;
+}
+.serviceMain .secPanel .txtBox .ttl {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+.serviceMain .secPanel .txtBox .btnList {
+  margin: 20px 0 0;
+}
+.serviceMain .secPanel .txtBox .btnList .btnMore.stock a {
+  background-color: #446378;
+}
+@media (min-width: 1025px) {
+  .serviceMain .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .serviceMain .secPanel .photo {
+    position: relative;
+    left: 100px;
+    width: 43%;
+  }
+  .serviceMain .secPanel .txtBox {
+    width: 60%;
+    max-width: 620px;
+  }
+  .serviceMain .secPanel .txtBox .btnList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .serviceMain .secPanel .txtBox .btnList .btnMore {
+    width: 49%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sales
+///////////////////////////////////////////////////////////*/
+.salesMain .topSection {
+  padding: 100px 0;
+  background: #9cacb6;
+}
+.salesMain .topSection .pageSecTtlBox {
+  margin: 0 0 30px;
+  color: #ffffff;
+}
+.salesMain .topSection .topTxt {
+  margin: 0 0 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.salesMain .topSection .salesPanel {
+  padding: 30px 40px;
+  background: #ffffff;
+  box-shadow: 3px 3px 12px rgba(70, 64, 57, 0.6);
+}
+.salesMain .topSection .salesPanel .pTtl {
+  margin: 0 0 20px;
+  padding: 10px;
+  font-size: 34px;
+  color: #ffffff;
+  text-align: center;
+  background: #202020;
+}
+.salesMain .topSection .salesPanel .listBox .ul .li {
+  padding: 10px;
+  border: 1px solid #9cacb6;
+}
+.salesMain .topSection .salesPanel .listBox .ul .photo {
+  margin: 0 0 20px;
+}
+.salesMain .topSection .salesPanel .listBox .ul .ttl {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #566878;
+  text-align: center;
+}
+.salesMain .topSection .salesPanel .listBox .ul .info {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.salesMain .topSection .salesPanel .listBox .ul .info .dl {
+  display: flex;
+  justify-content: space-between;
+}
+.salesMain .topSection .salesPanel .listBox .ul .btnMore {
+  max-width: 190px;
+  margin: 20px auto 0;
+}
+@media (min-width: 1025px) {
+  .salesMain .topSection .salesPanel .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+  }
+  .salesMain .topSection .salesPanel .listBox .ul .li {
+    width: calc(25% - 10px);
+    margin: 10px 0 0 10px;
+  }
+}
+.salesMain .topSection .salesPanel + .btnMore {
+  margin: 40px auto 0;
+}
+.salesMain .topSection .salesPanel + .btnMore a {
+  background-color: #202020;
+}
+.salesMain .flowSection {
+  padding: 120px 0;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/sales_flow_bg.png) no-repeat;
+  background-size: cover;
+}
+.salesMain .flowSection .secPanel {
+  position: relative;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 3px 3px 12px rgba(70, 64, 57, 0.6);
+}
+.salesMain .flowSection .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.salesMain .flowSection .secPanel .photo {
+  max-width: 450px;
+}
+.salesMain .flowSection .secPanel .txtBox .ttlBox {
+  position: relative;
+  left: -62px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.salesMain .flowSection .secPanel .txtBox .ttlBox .step {
+  width: 140px;
+  height: 49px;
+  margin: 0 10px 0 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/sales_step_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.salesMain .flowSection .secPanel .txtBox .ttlBox .ttl {
+  font-size: 34px;
+}
+.salesMain .flowSection .secPanel .txtBox .btnMore {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .salesMain .flowSection .secPanel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .salesMain .flowSection .secPanel .photo {
+    width: 42%;
+  }
+  .salesMain .flowSection .secPanel .txtBox {
+    width: 50%;
+  }
+  .salesMain .flowSection .secPanel .txtBox .inner {
+    padding: 0 0 0 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	stock
+///////////////////////////////////////////////////////////*/
+.stockMain .stockContainer {
+  padding: 100px 0 120px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/service_page_bg.png) no-repeat;
+  background-size: cover;
+}
+.stockMain .pageSecTtlBox {
+  margin: 0 0 30px;
+}
+.stockMain .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+.stockMain .secPanel {
+  padding: 30px 50px 60px;
+  background: #ffffff;
+  box-shadow: 3px 3px 3px rgba(70, 64, 57, 0.1);
+}
+.stockMain .secPanel + .secPanel {
+  margin: 50px 0 0;
+}
+.stockMain .secPanel .pTtl {
+  margin: 0 0 20px;
+  padding: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  background: #202020;
+}
+.stockMain .itemPanel .itemInfoBox {
+  padding: 15px 0;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox {
+  display: flex;
+  margin: 0 0 30px;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox .dl {
+  margin: 0 40px 0 0;
+  font-size: 18px;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox .dl .dt {
+  margin: 0 0 5px;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox .dl .dd p {
+  display: inline;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox .dl .dd .em {
+  font-size: 34px;
+  line-height: 1.1;
+}
+.stockMain .itemPanel .itemInfoBox .priceBox .dl .dd .orange {
+  color: #c76c00;
+}
+.stockMain .itemPanel .itemInfoBox .infoBox {
+  margin: -20px 0 0;
+}
+.stockMain .itemPanel .itemInfoBox .infoBox .dl {
+  display: flex;
+  margin: 20px 0 0;
+}
+.stockMain .itemPanel .itemInfoBox .infoBox .dl .dt {
+  width: 110px;
+}
+.stockMain .itemPanel .itemInfoBox .infoBox .dl .dt p {
+  width: 90px;
+  padding: 2px;
+  text-align: center;
+  background: #f4f4f4;
+}
+.stockMain .itemPanel .itemInfoBox .infoBox .dl .dd {
+  width: calc(100% - 110px);
+}
+.stockMain .itemPanel .thumb-item {
+  margin: 0 0 10px;
+}
+.stockMain .itemPanel .thumb-item img {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1025px) {
+  .stockMain .itemPanel .thumb-item img {
+    display: block;
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+.stockMain .itemPanel .slick-slide {
+  margin: 0 5px;
+}
+.stockMain .itemPanel .slideNav {
+  width: 100%;
+}
+.stockMain .itemPanel .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 66%;
+}
+.stockMain .itemPanel .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .stockMain .itemPanel .slickSlide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stockMain .itemPanel .slickSlide .thumb-item {
+    width: 55%;
+  }
+  .stockMain .itemPanel .slickSlide .itemInfoBox {
+    width: 42%;
+  }
+  .stockMain .itemPanel .slickSlide .itemInfoBox .infoBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stockMain .itemPanel .slickSlide .itemInfoBox .infoBox .dl {
+    width: 45%;
+  }
+  .stockMain .itemPanel .slickSlide .itemInfoBox .infoBox .dl:nth-child(even) {
+    width: 53%;
+  }
+}
+.stockMain .section {
+  margin: 50px 0 0;
+}
+.stockMain .section .secTtl {
+  margin: 0 0 30px;
+  padding: 0 0 0 15px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  border-left: 8px solid #000000;
+}
+.stockMain .section .txt + .txt {
+  margin: 30px 0 0;
+}
+.stockMain .btnMore {
+  margin: 60px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	qa
+///////////////////////////////////////////////////////////*/
+.qaMain .qaContainer {
+  padding: 100px 0 120px;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/qa_page_bg.png) no-repeat;
+  background-size: cover;
+}
+.qaMain .pageSecTtlBox {
+  margin: 0 0 30px;
+  color: #ffffff;
+}
+.qaMain .topTxt {
+  margin: 0 0 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.qaMain .secPanel {
+  position: relative;
+  padding: 30px;
+  background: #ffffff;
+}
+.qaMain .secPanel + .secPanel {
+  margin: 20px 0 0;
+}
+.qaMain .secPanel .ttlBox {
+  position: relative;
+  left: -42px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.qaMain .secPanel .ttlBox .icon {
+  width: 100px;
+  margin: 0 15px 0 0;
+}
+.qaMain .secPanel .ttlBox .ttl {
+  width: calc(100% - 115px);
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.qaMain .secPanel .inner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.qaMain .secPanel .docBox {
+  margin: 40px 0 0;
+}
+.qaMain .secPanel .docBox .dl {
+  max-width: 620px;
+}
+.qaMain .secPanel .docBox .dl .ul {
+  max-width: 380px;
+}
+.qaMain .secPanel .docBox .dl .ul .li {
+  width: 48%;
+}
+.qaMain .secPanel .docBox .dl .ul .li a {
+  display: block;
+  padding: 10px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.qaMain .secPanel .docBox .dl .ul .li .btn01 {
+  background: #c76c00;
+}
+.qaMain .secPanel .docBox .dl .ul .li .btn02 {
+  background: #a7a7a7;
+}
+@media (min-width: 1025px) {
+  .qaMain .secPanel .docBox .dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .qaMain .secPanel .docBox .dl .dt {
+    width: 160px;
+  }
+  .qaMain .secPanel .docBox .dl .dd {
+    width: 380px;
+  }
+  .qaMain .secPanel .docBox .dl .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px 0 0;
+  }
+  .qaMain .secPanel .docBox .dl .ul .li {
+    margin: 15px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+.shopMain .topSection {
+  padding: 100px 0;
+  background: #9cacb6;
+}
+.shopMain .topSection .pageSecTtlBox {
+  margin: 0 0 30px;
+  color: #ffffff;
+}
+.shopMain .topSection .topTxt {
+  margin: 0 0 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.shopMain .topSection .secBox {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.shopMain .topSection .secBox .txtBox .ttl {
+  margin: 0 0 15px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 700;
+  font-size: 40px;
+}
+.shopMain .topSection .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .shopMain .topSection .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shopMain .topSection .secBox .photoBox {
+    width: 43%;
+  }
+  .shopMain .topSection .secBox .txtBox {
+    width: 52%;
+  }
+}
+.shopMain .companySection {
+  padding: 120px 0;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/shop_sec_bg.png) no-repeat;
+  background-size: cover;
+}
+.shopMain .companySection .secPanel {
+  padding: 40px 20px;
+  background: #ffffff;
+  box-shadow: 3px 3px 6px rgba(70, 64, 57, 0.2);
+}
+.shopMain .companySection .secPanel .infoBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.shopMain .companySection .secPanel .infoBox .dl {
+  padding: 10px;
+  border-bottom: 1px solid #111111;
+}
+.shopMain .companySection .secPanel .infoBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.shopMain .companySection .secPanel .infoBox .dl .dt {
+  width: 160px;
+}
+.shopMain .companySection .secPanel .infoBox .dl .dd {
+  width: calc(100% - 160px);
+}
+.shopMain .companySection .secPanel .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .shopMain .companySection .secPanel .infoBox .dl {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .contactContainer {
+  padding: 100px 0;
+  background: #f4f4f4;
+}
+.contactMain .pageSecTtlBox {
+  margin: 0 0 30px;
+  color: #446378;
+}
+.contactMain .sec01 {
+  margin: 0 0 100px;
+}
+.contactMain .sec01 .telPanel {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #4c6378;
+}
+.contactMain .sec01 .telPanel .ttl {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: italic;
+  color: #fff6e3;
+}
+.contactMain .sec01 .telPanel .btnTel {
+  margin: 5px 0;
+}
+.contactMain .sec01 .telPanel .btnTel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 1.1;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/footer_tel.png) left center no-repeat;
+  background-size: 25px auto;
+}
+.contactMain .sec02 .topTxt {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  resize: none;
+  box-shadow: 0 1px 1px rgba(60, 66, 73, 0.1);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #ffb53a;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #c76c00;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 {
+  padding: 10px 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList02 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #171a1c;
+  border-right: 3px solid #171a1c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #171a1c;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 8px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl + .dl .dd {
+  border-top: none;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+.formMain .contactForm .formBox > .dl.dash {
+  border-bottom: 1px dashed #d8dee6;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 280px;
+  padding: 20px;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #ffffff;
+  vertical-align: middle;
+  border-radius: 10px;
+  background: #f08200;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 285px);
+  padding: 10px 0 10px 20px;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox {
+  border: 1px solid #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .ttl {
+  max-width: 220px;
+  padding: 3px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .txt {
+  padding: 10px 20px;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl > .dd .dogBox > p {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #e3e3e3;
+  background: #e3e3e3;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 32%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 65%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox + p {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .blogSection {
+  padding: 80px 0 100px;
+  background: #fff6e3;
+}
+@media (min-width: 1025px) {
+  .newsMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsMain .postContainer .catePanel {
+    width: 200px;
+  }
+  .newsMain .postContainer .blogPanel {
+    width: calc(100% - 260px);
+  }
+}
+.newsMain .catePanel .webgene-blog .webgene-header {
+  padding: 0 0 30px;
+}
+.newsMain .catePanel .webgene-blog .webgene-header h2,
+.newsMain .catePanel .webgene-blog .webgene-header h3 {
+  position: relative;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  color: #446378;
+}
+.newsMain .catePanel .webgene-blog .webgene-item {
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.newsMain .catePanel .webgene-blog .webgene-item::before {
+  content: "-";
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 15px 5px;
+  background: url(https://office-tmk240201.smooooth.jp/system_panel/uploads/images/cate_more.png) right 10px center no-repeat;
+  background-size: 5px auto;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  min-height: 300px;
+  padding: 0 0 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+  border-radius: 6px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  margin: 0 10px 0 0;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: #f08200;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .title {
+  padding: 0 0 15px;
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 220px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  background: #cdcdcd;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #446378;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: #f08200;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .blogPanel--detail .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .blogPanel .btnBack {
+  max-width: 300px;
+  margin: 100px auto 0;
+}
+.newsMain .blogPanel .btnBack a {
+  display: block;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  background: url(https://cars-coco240221.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left 15px center no-repeat #446378;
+}

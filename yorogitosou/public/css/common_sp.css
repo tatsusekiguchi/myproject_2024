@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvContainer .pageKvTitle {
+    padding: 15px 0;
+    font-size: 24px;
+  }
+
+  .pageSecTtlBox .pageSecTtl {
+    padding: 30px 30px 15px;
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    margin: 0 0 40px;
+    padding: 40px 0;
+  }
+  .footer .footContact .secBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .footer .footContact .secBox .leftBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .secBox .leftBox .ttl {
+    margin: 0 0 15px;
+    font-size: 20px;
+    background: url(https://s-9216557.smooooth.jp/system_panel/uploads/images/footer_contact_ttl_bg.png) right bottom no-repeat;
+    background-size: 70px auto;
+  }
+  .footer .footContact .secBox .rightBox .contactBox {
+    padding: 20px;
+  }
+  .footer .footPanel {
+    padding: 80px 0 20px;
+    text-align: center;
+  }
+  .footer .footPanel .secBox .leftBox {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .secBox .leftBox .logo {
+    width: 200px;
+    margin: 0 auto 20px;
+  }
+  .footer .footPanel .secBox .leftBox .txt a {
+    display: inline-block;
+    color: #f8faf3;
+  }
+  .footer .footPanel .secBox .rightBox .areaBox {
+    padding: 20px;
+  }
+  .footer .footPanel .secBox .rightBox .areaBox .ttl {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .footer .footPanel .secBox .rightBox .areaBox .ul .li {
+    min-width: 80px;
+    padding: 2px 10px;
+    font-size: 12px;
+  }
+  .footer .footPanel .copy {
+    margin: 15px 0 0;
+    text-align: center;
+  }
+}

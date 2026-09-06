@@ -1,0 +1,808 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvContainer {
+      padding: 0 0 0 80px;
+      .topKvPanel {
+        height: 400px;
+      }
+      .topKvTitlePanel {
+        position: absolute;
+        top: 30%;
+        left: 20px;
+        width: 90%;
+        max-width: 440px;
+        .topKvTitleBox {
+          margin: 0 0 20px;
+          .topKvTitle {
+            max-width: 420px;
+            p {
+              font-size: 18px;
+            }
+          }
+          .topKvTitle01 {
+            max-width: 300px;
+          }
+        }
+        .subTitleBox {
+          .subTitle {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .topSecTitleBox {
+      margin: 0 0 30px;
+      .sub {
+        font-size: 16px;
+        &:after {
+          width: 50px;
+        }
+      }
+      .topSecTitle {
+        p {
+          font-size: 20px;
+          -webkit-text-stroke-width: 1px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 40px 0 60px;
+      .topSecTitleBox {
+        .topSecTitle {
+          &::before {
+            display: none;
+          }
+        }
+      }
+      .chartPhoto {
+        margin: 0 0 20px;
+      }
+    }
+    .sec02 {
+      padding: 40px 0 60px;
+      .ttlPanel {
+        margin: 0 0 20px;
+        .ttlBox01 {
+          padding: 0 10px 20px;
+          font-size: 16px;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png)
+            center bottom no-repeat;
+          background-size: 120px auto;
+        }
+        .ttlBox02 {
+          .ttl {
+            p {
+              font-size: 18px;
+              -webkit-text-stroke-width: 1px;
+            }
+          }
+        }
+        .ttlBox03 {
+          margin: 0 0 10px;
+          .em {
+            font-size: 24px;
+          }
+          .span {
+            display: block;
+            font-size: 18px;
+          }
+        }
+      }
+      .secBox {
+        .photo {
+          max-width: 450px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 40px 0 60px;
+      .listBox {
+        text-align: center;
+        .ul {
+          .li {
+            + .li {
+              margin: 50px 0 0;
+            }
+          }
+          .photo {
+            margin: -35px 0 0;
+          }
+          .ttl {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 40px 0 60px;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+      .listBox {
+        .ul {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .reasonMain {
+    .topSection {
+      padding: 60px 0;
+      .topKvTitleBox {
+        margin: 0 0 20px;
+        .topKvTitle {
+          max-width: 420px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .topKvTitle01 {
+          max-width: 200px;
+        }
+        .topKvTitle02 {
+          max-width: 300px;
+        }
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .slidePanel {
+      margin: 15px 0;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 3);
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 40px 0 60px;
+      .topSecTitleBox {
+        margin: 0 0 30px;
+        &::before {
+          display: none;
+        }
+        .topSecTitle {
+          margin: 0 0 5px;
+          padding: 0 30px;
+          color: #ffffff;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png)
+              left bottom 5px no-repeat,
+            url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png)
+              right bottom 5px no-repeat;
+          background-size: 15px auto, 15px auto;
+          p {
+            font-size: 20px;
+            -webkit-text-stroke-width: 1px;
+          }
+        }
+      }
+      .secPanel {
+        + .secPanel {
+          margin: 40px 0 0;
+        }
+        .num {
+          width: 60px;
+          height: 60px;
+          > * {
+            font-size: 20px;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 30px;
+          &:after {
+            width: 50px;
+          }
+          p,
+          h2 {
+            font-size: 20px;
+          }
+        }
+        .secBox {
+          .photo {
+            margin: 0 0 10px;
+          }
+          .txtBox {
+            .box {
+              padding: 0;
+            }
+            .inner {
+              padding: 15px;
+            }
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 40px 0 60px;
+      .topSecTitleBox {
+        margin: 0 0 30px;
+        &::before {
+          display: none;
+        }
+        .topSecTitle {
+          margin: 0 0 5px;
+          padding: 0 30px;
+          color: #ffffff;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_01.png)
+              left bottom 5px no-repeat,
+            url(http://yamabiko.cc/system_panel/uploads/images/reason_sec01_ttl_slash_02.png)
+              right bottom 5px no-repeat;
+          background-size: 15px auto, 15px auto;
+          p {
+            font-size: 20px;
+            -webkit-text-stroke-width: 1px;
+          }
+        }
+      }
+      .messagePanel {
+        margin: 0 0 60px;
+        .messageBox {
+          .message {
+            padding: 5px 10px;
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .secContainer {
+        + .secContainer {
+          margin: 80px 0 0;
+        }
+        .secBox {
+          margin: 0 0 30px;
+          .txtBox {
+            margin: 0 0 20px;
+            .box {
+              margin: 0 0 10px;
+            }
+            .inner {
+              padding: 25px 15px 15px;
+            }
+            .ttl01 {
+              font-size: 13px;
+            }
+            .ttl02 {
+              margin: 5px 0 0;
+              p,
+              h2 {
+                font-size: 20px;
+              }
+            }
+            .num {
+              position: absolute;
+              top: -40px;
+              left: -10px;
+            }
+          }
+        }
+        .listBox {
+          padding: 20px;
+          .ul {
+            font-size: 16px;
+            .li {
+              padding: 0 0 0 30px;
+              background: url(http://yamabiko.cc/system_panel/uploads/images/service_sec01_check.png)
+                left center no-repeat;
+              background-size: 25px auto;
+              + .li {
+                margin: 15px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slidePanel {
+      margin: 30px 0 0;
+      .slideBox {
+        .ul {
+          .li {
+            width: calc(100% / 3);
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 40px 0 60px;
+      .ttlPanel {
+        margin: 0 0 20px;
+        .ttlBox01 {
+          padding: 0 10px 20px;
+          font-size: 16px;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/top_sec02_ttl_line.png)
+            center bottom no-repeat;
+          background-size: 120px auto;
+        }
+        .ttlBox02 {
+          .ttl {
+            p {
+              font-size: 18px;
+              -webkit-text-stroke-width: 1px;
+            }
+          }
+        }
+        .ttlBox03 {
+          margin: 0 0 10px;
+          .em {
+            font-size: 24px;
+          }
+          .span {
+            display: block;
+            font-size: 18px;
+          }
+        }
+      }
+      .secBox {
+        .photo {
+          max-width: 450px;
+          margin: 0 auto;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+        }
+      }
+    }
+    .sec03 {
+      padding: 40px 0 60px;
+      .secBox {
+        max-width: 900px;
+        .img {
+          width: 70px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          .topSecTitleBox {
+            .topSecTitle {
+              p {
+                font-size: 20px;
+                -webkit-text-stroke-width: 1px;
+              }
+            }
+          }
+          .box {
+            padding: 15px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .topSection {
+      .secBox {
+        max-width: 900px;
+        .img {
+          width: 70px;
+          margin: 0 auto 20px;
+        }
+        .txtBox {
+          .topSecTitleBox {
+            .topSecTitle {
+              p {
+                font-size: 20px;
+                -webkit-text-stroke-width: 1px;
+              }
+            }
+          }
+          .box {
+            padding: 15px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .stepSection {
+      padding: 0 0 60px;
+      .secPanel {
+        padding: 20px;
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -30px;
+            width: 50px;
+            height: 40px;
+            margin: 0 auto;
+            background: url(http://yamabiko.cc/system_panel/uploads/images/flow_step_arrow.png)
+              no-repeat;
+            background-size: 100% auto;
+          }
+        }
+      }
+      .secBox {
+        .txtBox {
+          padding: 15px 0 0;
+          .ttl {
+            padding: 0 10px 5px;
+            font-size: 20px;
+          }
+          .inner {
+            padding: 0 10px;
+          }
+          .telBox {
+            max-width: 340px;
+            margin: 15px 0 0;
+            padding: 15px;
+            > p {
+              font-size: 14px;
+            }
+            .tel {
+              a {
+                padding: 0 0 0 25px;
+                font-size: 30px;
+                background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png)
+                  left top 6px no-repeat;
+                background-size: 22px auto;
+              }
+              > p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 60px 0 0;
+      .secContainer {
+        padding: 0 0 40px;
+        .secTtl01 {
+          top: -20px;
+          max-width: 500px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .secTtl02 {
+          margin: 0 0 30px;
+          padding: 0 30px;
+          background: url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_01.png)
+              left center no-repeat,
+            url(http://yamabiko.cc/system_panel/uploads/images/contact_top_slash_02.png)
+              right center no-repeat;
+          background-size: 20px auto, 20px auto;
+          p {
+            font-size: 20px;
+          }
+        }
+        .listBox {
+          max-width: 300px;
+          .ul {
+            margin: -30px 0 0;
+            .li {
+              width: calc((100% / 2) - 10px);
+              margin: 30px 0 0;
+            }
+            p {
+              margin: 10px 0 0;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .telSection {
+      padding: 120px 0 50px;
+      .telPanel {
+        position: relative;
+        max-width: 460px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-align: center;
+        background: #3e4e30;
+        .img {
+          position: absolute;
+          top: -100px;
+          left: 0;
+          right: 0;
+          width: 50px;
+          margin: 0 auto;
+        }
+        .telBox {
+          > p {
+            font-size: 18px;
+          }
+          .tel {
+            a {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              font-size: 30px;
+              color: #ffffff;
+              line-height: 1;
+              background: url(http://yamabiko.cc/system_panel/uploads/images/footer_contact_tel.png)
+                left top 6px no-repeat;
+              background-size: 25px auto;
+            }
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .topSecTitleBox {
+      margin: 0 0 30px;
+      .sub {
+        font-size: 16px;
+        &:after {
+          width: 50px;
+        }
+      }
+      .topSecTitle {
+        p {
+          font-size: 20px;
+          -webkit-text-stroke-width: 1px;
+        }
+      }
+    }
+    .sec01 {
+      padding: 50px 0 80px;
+      .topTxt {
+        margin: 0 0 40px;
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .infoBox {
+        .dl {
+          + .dl {
+            margin: 15px 0 0;
+          }
+          .dt {
+            padding: 10px 15px;
+          }
+          .dd {
+            padding: 10px 15px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 5px 0;
+
+          &.line {
+            .dt {
+              height: auto;
+              padding: 0 0 5px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 0 0 5px;
+            .inner {
+              width: 250px;
+            }
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 15px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            border-top: none;
+          }
+        }
+
+        .otherTtl {
+          padding: 20px 10px 5px;
+        }
+
+        .otherRadio {
+          .dt {
+            text-align: left;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadPanel {
+        padding: 20px 0;
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          display: block;
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          width: 100%;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

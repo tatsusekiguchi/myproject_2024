@@ -1,0 +1,2394 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer .topKvPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: calc(100vh - 100px);
+}
+.topMain .topKvContainer .topKvPanel:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvContainer .kvTtlBox {
+  position: relative;
+  padding: 0 5%;
+  color: #ffffff;
+}
+.topMain .topKvContainer .kvTtlBox .kvTtl {
+  max-width: 900px;
+}
+.topMain .topKvContainer .kvTtlBox .kvContact {
+  position: absolute;
+  top: -100px;
+  right: 10%;
+  width: 140px;
+}
+.topMain .topKvContainer .kvTtlBox .kvContact a {
+  display: block;
+}
+.topMain .sec01 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec01 .pageSecTtlBox {
+  margin: 0;
+}
+.topMain .sec01 .secBox {
+  position: relative;
+  margin: -60px 0 40px;
+  padding: 140px 0 100px;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_img.png) right center no-repeat;
+  background-size: 60% auto;
+}
+.topMain .sec01 .secBox .checkTxt .ul .li {
+  padding: 0 0 0 30px;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_check.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.topMain .sec01 .secBox .checkTxt .ul .li + .li {
+  margin: 20px 0 0;
+}
+.topMain .sec01 .balloon {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+.topMain .sec01 .txtBox {
+  text-align: center;
+}
+.topMain .sec01 .txtBox .txt p {
+  display: inline;
+}
+.topMain .sec01 .txtBox .txt .em {
+  color: #ff0000;
+}
+.topMain .sec02 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec02_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec02 .secPanelList,
+.topMain .sec06 .secPanelList {
+  margin: 0 0 60px;
+}
+.topMain .sec02 .secPanel,
+.topMain .sec06 .secPanel {
+  position: relative;
+}
+.topMain .sec02 .secPanel + .secPanel,
+.topMain .sec06 .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.topMain .sec02 .secPanel .secBox,
+.topMain .sec06 .secPanel .secBox {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.topMain .sec02 .secPanel .secBox .txtBox,
+.topMain .sec06 .secPanel .secBox .txtBox {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .ttlBg,
+.topMain .sec06 .secPanel .secBox .txtBox .ttlBg {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 300px;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .inner,
+.topMain .sec06 .secPanel .secBox .txtBox .inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .inner02,
+.topMain .sec06 .secPanel .secBox .txtBox .inner02 {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .ttl,
+.topMain .sec06 .secPanel .secBox .txtBox .ttl {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 0;
+  font-family: "Yomogi";
+}
+.topMain .sec02 .secPanel .secBox .txtBox .ttl p,
+.topMain .sec06 .secPanel .secBox .txtBox .ttl p {
+  display: inline;
+  font-size: 32px;
+  letter-spacing: -0.1em;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .ttl .em,
+.topMain .sec06 .secPanel .secBox .txtBox .ttl .em {
+  color: #ff0000;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .txt p,
+.topMain .sec06 .secPanel .secBox .txtBox .txt p {
+  display: inline;
+}
+.topMain .sec02 .secPanel .secBox .txtBox .txt .em,
+.topMain .sec06 .secPanel .secBox .txtBox .txt .em {
+  background: linear-gradient(transparent 60%, #fffaae 0%);
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secPanel .photo,
+.topMain .sec06 .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  .topMain .sec02 .secPanel .photo img,
+.topMain .sec06 .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec02 .secPanel .secBox,
+.topMain .sec06 .secPanel .secBox {
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+  }
+  .topMain .sec02 .secPanel:nth-child(odd) .photo,
+.topMain .sec06 .secPanel:nth-child(odd) .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .topMain .sec02 .secPanel:nth-child(odd) .photo img,
+.topMain .sec06 .secPanel:nth-child(odd) .photo img {
+    border-radius: 0 6px 6px 0;
+  }
+  .topMain .sec02 .secPanel:nth-child(odd) .secBox,
+.topMain .sec06 .secPanel:nth-child(odd) .secBox {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .topMain .sec02 .secPanel:nth-child(even) .photo,
+.topMain .sec06 .secPanel:nth-child(even) .photo {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+  .topMain .sec02 .secPanel:nth-child(even) .photo img,
+.topMain .sec06 .secPanel:nth-child(even) .photo img {
+    border-radius: 6px 0 0 6px;
+  }
+}
+.topMain .sec02 .btnMore,
+.topMain .sec06 .btnMore {
+  margin: 0 auto;
+}
+.topMain .sec03 {
+  padding: 120px 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+.topMain .sec03 .secPanel .photo img {
+  border-radius: 6px 0 0 6px;
+}
+.topMain .sec03 .secPanel .txtBox {
+  padding: 20px;
+}
+.topMain .sec03 .secPanel .txtBox .ttlBox {
+  margin: 0 0 20px;
+}
+.topMain .sec03 .secPanel .txtBox .ttlBox .ttl {
+  font-size: 0;
+  font-family: "Yomogi";
+}
+.topMain .sec03 .secPanel .txtBox .ttlBox .ttl p {
+  display: inline;
+  font-size: 34px;
+}
+.topMain .sec03 .secPanel .txtBox .ttlBox .ttl .em {
+  color: #ff0000;
+}
+.topMain .sec03 .secPanel .txtBox .txt {
+  margin: 0 0 40px;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec03 .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  .topMain .sec03 .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .topMain .sec03 .secPanel .txtBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+  }
+}
+.topMain .sec04 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec04_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .listBox .ul .li {
+  border-radius: 6px;
+  background: #ffffff;
+}
+.topMain .sec04 .listBox .ul .txtBox {
+  padding: 30px 20px;
+}
+.topMain .sec04 .listBox .ul .txtBox .dl {
+  text-align: center;
+}
+.topMain .sec04 .listBox .ul .txtBox .dl .dt {
+  margin: 0 0 20px;
+  font-family: "Yomogi";
+  font-size: 30px;
+}
+.topMain .sec04 .listBox .ul .txtBox .dl .dd {
+  line-height: 2.5;
+}
+.topMain .sec04 .listBox .ul .txtBox .btnMore {
+  margin: 30px auto 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .listBox .ul .li {
+    width: calc(50% - 20px);
+  }
+}
+.topMain .sec04 .iconBox {
+  margin: 60px 0 0;
+}
+.topMain .sec04 .iconBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topMain .sec04 .iconBox .ul .li {
+  width: calc(20% - 40px);
+}
+.topMain .sec05 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/top_sec05_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec05 .webgene-blog {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.topMain .sec05 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec05 .webgene-blog .webgene-item {
+  display: flex;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #dcdbda;
+}
+.topMain .sec05 .webgene-blog .webgene-item .info {
+  width: 270px;
+}
+.topMain .sec05 .webgene-blog .webgene-item .info .time {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.topMain .sec05 .webgene-blog .webgene-item .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffc97d;
+}
+.topMain .sec05 .webgene-blog .webgene-item .title a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.topMain .sec05 .webgene-blog .webgene-item + .webgene-item {
+  margin: 30px 0 0;
+}
+.topMain .sec05 .btnMore {
+  margin: 60px auto 0;
+}
+.topMain .sec06 {
+  padding: 120px 0 60px;
+  background: rgba(248, 233, 233, 0.6);
+}
+.topMain .sec07 {
+  padding: 60px 0 120px;
+  background: rgba(248, 233, 233, 0.6);
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain .strengthContainer {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/strength_cnt_bg.png) no-repeat;
+  background-size: cover;
+}
+.strengthMain .strengthContainer .secPanel {
+  position: relative;
+}
+.strengthMain .strengthContainer .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.strengthMain .strengthContainer .secPanel .secBox {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox {
+  position: relative;
+  max-width: 740px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .inner02 {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .num {
+  position: absolute;
+  top: -80px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #2d2d2d;
+  transform: rotate(45deg);
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .num .span {
+  position: relative;
+  font-size: 14px;
+  color: #ffb53a;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .num .em {
+  position: relative;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .ttl {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 0;
+  font-family: "Yomogi";
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .ttl p {
+  display: inline;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .ttl .em {
+  color: #ff0000;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .txt p {
+  display: inline;
+}
+.strengthMain .strengthContainer .secPanel .secBox .txtBox .txt .em {
+  background: linear-gradient(transparent 60%, #fffaae 0%);
+}
+@media (min-width: 1025px) {
+  .strengthMain .strengthContainer .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  .strengthMain .strengthContainer .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 440px;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(odd) .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(odd) .photo img {
+    border-radius: 6px 0 0 6px;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(odd) .secBox .txtBox .num {
+    left: 20px;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(even) .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(even) .photo img {
+    border-radius: 0 6px 6px 0;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(even) .secBox {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .strengthMain .strengthContainer .secPanel:nth-child(even) .secBox .txtBox .num {
+    right: 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+.businessMain .businessContainer {
+  padding: 100px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/business_cnt_bg.png) no-repeat;
+  background-size: cover;
+}
+.businessMain .businessContainer .secPanel {
+  position: relative;
+}
+.businessMain .businessContainer .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.businessMain .businessContainer .secPanel .secBox {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .inner02 {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .ttl {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 0;
+  font-family: "Yomogi";
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .ttl p {
+  display: inline;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .ttl .em {
+  color: #ff0000;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .txt + .txt {
+  margin: 20px 0 0;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .txt p {
+  display: inline;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .txt .em {
+  background: linear-gradient(transparent 60%, #fffaae 0%);
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox .btnMore {
+  margin: 30px 0 0;
+}
+.businessMain .businessContainer .secPanel .secBox .txtBox02 {
+  max-width: 800px;
+}
+@media (min-width: 1025px) {
+  .businessMain .businessContainer .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  .businessMain .businessContainer .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .businessMain .businessContainer .secPanel .secBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 440px;
+  }
+  .businessMain .businessContainer .secPanel .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .businessMain .businessContainer .secPanel .photo img {
+    border-radius: 6px 0 0 6px;
+  }
+  .businessMain .businessContainer .secPanel .secBox .txtBox .num {
+    left: 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	consulting
+///////////////////////////////////////////////////////////*/
+.consultingMain .sec01 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec01_bg.png) center no-repeat;
+  background-size: cover;
+}
+.consultingMain .sec01 .pageSecTtlBox {
+  margin: 0;
+}
+.consultingMain .sec01 .secBox {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 100px 0 60px;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec01_img.png) right 25% bottom no-repeat;
+  background-size: 45% auto;
+}
+.consultingMain .sec01 .secBox .checkTxt .ul .li {
+  padding: 0 0 0 30px;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.consultingMain .sec01 .secBox .checkTxt .ul .li + .li {
+  margin: 20px 0 0;
+}
+.consultingMain .sec01 .balloon {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+.consultingMain .sec01 .txtBox {
+  text-align: center;
+}
+.consultingMain .sec01 .txtBox .txt p {
+  display: inline;
+}
+.consultingMain .sec01 .txtBox .txt .em {
+  color: #ff0000;
+}
+.consultingMain .sec01 .btnMore {
+  margin: 50px auto 0;
+}
+.consultingMain .sec02 {
+  padding: 120px 0;
+  text-align: center;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec02_bg.png) center no-repeat;
+  background-size: cover;
+}
+.consultingMain .sec02 .txt p + p {
+  margin: 30px 0 0;
+}
+.consultingMain .sec02 .messageBox {
+  margin: 60px 0 0;
+  line-height: 2;
+}
+.consultingMain .sec02 .messageBox .message {
+  font-size: 0;
+}
+.consultingMain .sec02 .messageBox .message p {
+  display: inline;
+  font-family: "Yomogi";
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #090909;
+}
+.consultingMain .sec02 .messageBox .message .em {
+  color: #ff0000;
+}
+.consultingMain .sec02 .messageBox .message .mark {
+  background: linear-gradient(transparent 70%, #fffaae 0%);
+}
+.consultingMain .sec02 .listBox {
+  max-width: 1100px;
+  margin: 60px auto 0;
+}
+.consultingMain .sec02 .listBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -50px;
+}
+.consultingMain .sec02 .listBox .ul .li {
+  width: calc(25% - 50px);
+  margin: 30px 0 0 50px;
+}
+.consultingMain .sec02 .listBox .ul .li p {
+  margin: 10px 0 0;
+}
+.consultingMain .sec03 {
+  padding: 120px 0;
+  text-align: center;
+}
+.consultingMain .sec03 .topTxtBox {
+  margin: 0 0 60px;
+  line-height: 2;
+}
+.consultingMain .sec03 .topTxtBox .topTxt {
+  font-size: 0;
+}
+.consultingMain .sec03 .topTxtBox .topTxt p {
+  display: inline;
+  font-family: "Yomogi";
+  font-size: 26px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #090909;
+}
+.consultingMain .sec03 .topTxtBox .topTxt .em {
+  color: #ff0000;
+  background: linear-gradient(transparent 70%, #fffaae 0%);
+}
+.consultingMain .sec03 .listBox .ul .li .img {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.consultingMain .sec03 .listBox .ul .li p {
+  margin: 10px 0 0;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .consultingMain .sec03 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .consultingMain .sec03 .listBox .ul .li {
+    width: calc(33.3333333333% - 50px);
+  }
+}
+.consultingMain .sec04 {
+  padding: 120px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec04_bg.png) center no-repeat;
+  background-size: cover;
+}
+.consultingMain .sec04 .secPanel {
+  position: relative;
+  padding: 40px 20px 60px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.consultingMain .sec04 .secPanel + .secPanel {
+  margin: 80px 0 0;
+}
+.consultingMain .sec04 .secPanel .num {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.consultingMain .sec04 .secPanel .num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #2d2d2d;
+  transform: rotate(45deg);
+}
+.consultingMain .sec04 .secPanel .num .span {
+  position: relative;
+  font-size: 14px;
+  color: #ffb53a;
+}
+.consultingMain .sec04 .secPanel .num .em {
+  position: relative;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.consultingMain .sec04 .secPanel .pTop {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.consultingMain .sec04 .secPanel .pTop .ttl {
+  margin: 0 0 20px;
+  padding: 0 0 0 60px;
+  font-family: "Yomogi";
+  font-size: 30px;
+  font-weight: 400;
+  color: #090909;
+  text-shadow: 0 0 1px #090909;
+}
+.consultingMain .sec04 .secPanel .btnList {
+  margin: 20px 0 0;
+}
+.consultingMain .sec04 .secPanel .btnList .ul .li {
+  width: 240px;
+}
+.consultingMain .sec04 .secPanel .btnList .ul .li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #ffb53a;
+  background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow_black.png) right 15px center no-repeat #fffbb3;
+}
+@media (min-width: 1025px) {
+  .consultingMain .sec04 .secPanel .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+}
+.consultingMain .sec04 .secPanel .cntBody {
+  max-width: 1060px;
+  margin: 40px auto 0;
+}
+.consultingMain .sec04 .secPanel01 .cntBody .img {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.consultingMain .sec04 .secPanel01 .cntBody .message {
+  font-size: 0;
+  text-align: center;
+}
+.consultingMain .sec04 .secPanel01 .cntBody .message p {
+  display: inline;
+  font-family: "Yomogi";
+  font-size: 26px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #090909;
+  background: linear-gradient(transparent 70%, #fffaae 0%);
+}
+.consultingMain .sec04 .secPanel01 .cntBody .message .em {
+  color: #ff0000;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox {
+  padding: 40px 0;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .leftBox .img {
+  max-width: 350px;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .ttl {
+  max-width: 340px;
+  margin: 0 auto 20px;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt {
+  padding: 40px;
+  border-radius: 6px;
+  background: #fcf1f1;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt .ul .li {
+  padding: 0 0 0 30px;
+  background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt .ul .li + .li {
+  margin: 20px 0 0;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .arrowDown {
+  width: 60px;
+  margin: -20px auto;
+}
+@media (min-width: 1025px) {
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .leftBox {
+    width: 40%;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_measures02_arrow_01.png) right top 100px no-repeat;
+    background-size: 60px auto;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox {
+    width: 55%;
+  }
+}
+.consultingMain .sec04 .secPanel02 .cntBody .btnImg {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.consultingMain .sec04 .secPanel02 .cntBody .btnMore {
+  width: 100%;
+  max-width: 340px;
+  margin: 40px auto 0;
+}
+.consultingMain .sec04 .secPanel03 .cntBox {
+  position: relative;
+  padding: 40px;
+  border-radius: 6px;
+  background: #fcf1f1;
+}
+.consultingMain .sec04 .secPanel03 .cntBox + .cntBox {
+  margin: 60px 0 0;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .icon {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  width: 15%;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .icon03 {
+  top: -20px;
+  right: 5%;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .ttlBox {
+  margin: 0 0 20px;
+  font-size: 0;
+  text-align: center;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .ttlBox p {
+  display: inline;
+  font-family: "Yomogi";
+  font-size: 26px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #090909;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .ttlBox .em {
+  color: #ff0000;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .topTxt {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li {
+  border-radius: 6px;
+  background: #ffffff;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li .dl .dt {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 6px 6px 0 0;
+  background: #fffbb3;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li .dl .dd {
+  min-height: 80px;
+  padding: 10px 20px;
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .consultingMain .sec04 .secPanel03 .cntBox .listBox .ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px 0 0;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li {
+    width: calc(50% - 10px);
+    margin: 10px 0 0;
+  }
+}
+.consultingMain .sec04 .secPanel03 .cntBox .optionList {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .optionList .option {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.consultingMain .sec04 .secPanel03 .cntBox .optionList .option .txt {
+  line-height: 2;
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+.flowMain .pagingList {
+  max-width: 1160px;
+  margin: 100px auto 0;
+}
+.flowMain .pagingList .ul .li a {
+  display: block;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  background: url(https://shitok.jp/system_panel/uploads/images/flow_link_arrow.png) right 15px center no-repeat #ffb53a;
+}
+@media (min-width: 1025px) {
+  .flowMain .pagingList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flowMain .pagingList .ul .li {
+    width: calc(25% - 20px);
+  }
+}
+.flowMain .section {
+  padding: 100px 0;
+}
+.flowMain .section .topBox {
+  position: relative;
+  margin: 0 0 40px;
+  text-align: center;
+}
+.flowMain .section .topBox .iconTtl01 {
+  width: 120px;
+}
+.flowMain .section .topBox .iconTtl02 {
+  width: 120px;
+}
+@media (min-width: 1025px) {
+  .flowMain .section .topBox .iconTtl01 {
+    position: absolute;
+    top: 0;
+    right: 60px;
+  }
+  .flowMain .section .topBox .iconTtl02 {
+    position: absolute;
+    top: 0;
+    left: 60px;
+  }
+}
+.flowMain .section .topBox .secTtl {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  font-family: "Yomogi";
+  font-size: 36px;
+  font-weight: 400;
+  text-shadow: 0 0 1px #090909;
+}
+.flowMain .section .topBox .secTtl:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 1px;
+  margin: 0 auto;
+  background: #090909;
+}
+.flowMain .section .topBox .txt {
+  min-height: 80px;
+}
+.flowMain .section .secPanel {
+  padding: 30px 20px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.flowMain .section .secPanel .inner {
+  position: relative;
+  max-width: 1040px;
+  min-height: 160px;
+  margin: 0 auto;
+}
+.flowMain .section .secPanel .icon {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 30px;
+}
+@media (min-width: 1025px) {
+  .flowMain .section .secPanel .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    height: 180px;
+    margin: auto 0;
+  }
+}
+.flowMain .section .secPanel .ttlBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.flowMain .section .secPanel .ttlBox .num {
+  width: 75px;
+  margin: 0 20px 0 0;
+}
+.flowMain .section .secPanel .ttlBox .ttl {
+  font-family: "Yomogi";
+  font-size: 30px;
+  font-weight: 400;
+}
+.flowMain .section .secPanel .txtBox {
+  max-width: 780px;
+}
+.flowMain .section .secPanel .txtBox .txt p {
+  display: inline;
+}
+.flowMain .section .secPanel .txtBox .txt .em {
+  background: linear-gradient(transparent 70%, #fffaae 0%);
+}
+.flowMain .section .secPanel .txtBox .txt .span {
+  font-size: 14px;
+}
+.flowMain .section .secPanel .txtBox .need {
+  max-width: 700px;
+  margin: 20px 0 0;
+  padding: 15px 30px;
+  line-height: 2;
+  border-radius: 6px;
+  border: 3px solid #ffb53a;
+}
+.flowMain .section .secPanel .txtBox .need .em {
+  text-decoration: underline;
+}
+.flowMain .section:nth-child(odd) {
+  background: url(https://shitok.jp/system_panel/uploads/images/flow_secbg_01.png) no-repeat;
+  background-size: cover;
+}
+.flowMain .section:nth-child(even) {
+  background: url(https://shitok.jp/system_panel/uploads/images/flow_secbg_02.png) no-repeat;
+  background-size: cover;
+}
+.flowMain .section .arrow {
+  width: 40px;
+  margin: 20px auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (min-width: 1025px) {
+  .companyMain .pageTopContainer .secBox .leftBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.companyMain .introContainer {
+  padding: 100px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/company_intro_bg.png) no-repeat;
+  background-size: cover;
+}
+.companyMain .introContainer .secPanel {
+  position: relative;
+}
+.companyMain .introContainer .secPanel + .secPanel {
+  margin: 100px 0 0;
+}
+.companyMain .introContainer .secPanel .secBox {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .ttlBg {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 300px;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .inner02 {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .ttl {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 0;
+  font-family: "Yomogi";
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .ttl p {
+  display: inline;
+  font-size: 32px;
+  letter-spacing: -0.1em;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .ttl .em {
+  color: #ff0000;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .txt p {
+  display: inline;
+}
+.companyMain .introContainer .secPanel .secBox .txtBox .txt .em {
+  background: linear-gradient(transparent 60%, #fffaae 0%);
+}
+@media (min-width: 1025px) {
+  .companyMain .introContainer .secPanel .photo {
+    position: relative;
+    width: 50%;
+    height: 400px;
+  }
+  .companyMain .introContainer .secPanel .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .companyMain .introContainer .secPanel .secBox {
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+  }
+  .companyMain .introContainer .secPanel:nth-child(odd) .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .companyMain .introContainer .secPanel:nth-child(odd) .photo img {
+    border-radius: 0 6px 6px 0;
+  }
+  .companyMain .introContainer .secPanel:nth-child(odd) .secBox {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .companyMain .introContainer .secPanel:nth-child(even) .photo {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+  .companyMain .introContainer .secPanel:nth-child(even) .photo img {
+    border-radius: 6px 0 0 6px;
+  }
+}
+.companyMain .infoContainer {
+  padding: 100px 0;
+}
+.companyMain .infoContainer .infoBox {
+  margin: 0 0 30px;
+}
+.companyMain .infoContainer .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.companyMain .infoContainer .infoBox .dl .dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #ffb53a;
+}
+.companyMain .infoContainer .infoBox .dl .dd {
+  width: calc(100% - 155px);
+  padding: 10px 20px;
+  border-top: 1px solid #ffb53a;
+  border-bottom: 1px solid #ffb53a;
+}
+.companyMain .infoContainer .infoBox .dl .dd .logoBox p {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+.companyMain .infoContainer .infoBox .dl .dd .logoBox .logo {
+  display: inline-block;
+  width: 120px;
+}
+.companyMain .infoContainer .infoBox .dl .dd a {
+  display: inline-block;
+}
+.companyMain .infoContainer .infoBox .dl + .dl .dd {
+  border-top: none;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .telContainer {
+  padding: 50px 0;
+  background: url(https://shitok.jp/system_panel/uploads/images/company_intro_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .telContainer .telPanel {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.contactMain .telContainer .secTtl {
+  margin: 0 0 20px;
+  font-family: "Yomogi";
+  font-size: 30px;
+  font-weight: 400;
+  color: #090909;
+  text-shadow: 0 0 1px #090909;
+}
+.contactMain .telContainer .tel {
+  margin: 0 0 15px;
+}
+.contactMain .telContainer .tel a {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  font-family: "Yomogi";
+  font-size: 40px;
+  font-weight: 400;
+  color: #090909;
+  line-height: 1;
+  background: url(https://shitok.jp/system_panel/uploads/images/contact_tel.png) left bottom 2px no-repeat;
+  background-size: 22px auto;
+  text-shadow: 0 0 1px #090909;
+}
+.contactMain .telContainer .txt {
+  line-height: 2;
+}
+.contactMain .sec01 {
+  padding: 120px 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+  resize: none;
+  box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #ffb53a;
+  background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #ffb53a;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 {
+  padding: 10px 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList02 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .checkList02 .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #171a1c;
+  border-right: 3px solid #171a1c;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #e9ecef;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #171a1c;
+}
+.formMain .contactForm .form .postalBox {
+  margin: 0 0 8px;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm {
+  padding: 40px 0 0;
+  text-align: left;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.formMain .contactForm .formBox > .dl + .dl .dd {
+  border-top: none;
+}
+.formMain .contactForm .formBox > .dl.line {
+  align-items: flex-start;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+.formMain .contactForm .formBox > .dl.dash {
+  border-bottom: 1px dashed #d8dee6;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  overflow: hidden;
+  width: 280px;
+  padding: 20px;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #ffb53a;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  float: right;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #ffb53a;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  width: calc(100% - 285px);
+  padding: 10px 0 10px 20px;
+  border-top: 1px solid #ffb53a;
+  border-bottom: 1px solid #ffb53a;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox {
+  border: 1px solid #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .ttl {
+  max-width: 220px;
+  padding: 3px;
+  color: #ffffff;
+  text-align: center;
+  background: #171a1c;
+}
+.formMain .contactForm .formBox > .dl > .dd .reserveBox .txt {
+  padding: 10px 20px;
+  line-height: 2;
+}
+.formMain .contactForm .formBox > .dl > .dd .dogBox > p {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox .otherTtl {
+  padding: 20px 20px 10px;
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .otherRadio .dt {
+  display: block;
+  text-align: right;
+}
+.formMain .contactForm .formBox .otherRadio .dt .span {
+  display: block;
+  max-width: 260px;
+  margin: 0;
+}
+.formMain .contactForm .formBox .otherRadio01 {
+  border-bottom: none;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 13px;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 30px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 6px;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadPanel {
+  padding: 20px;
+}
+.formMain .contactForm .fileUploadTtl {
+  margin: 0 0 15px;
+}
+.formMain .contactForm .fileUploadBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 32%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 65%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox + p {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .blogSection {
+  padding: 80px 0 100px;
+  background: url(https://shitok.jp/system_panel/uploads/images/news_cnt_bg.png) no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1025px) {
+  .newsMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsMain .postContainer .catePanel {
+    width: 200px;
+  }
+  .newsMain .postContainer .blogPanel {
+    width: calc(100% - 260px);
+  }
+}
+.newsMain .catePanel .webgene-blog .webgene-header {
+  padding: 0 0 30px;
+  border-bottom: 1px solid #a4a4a4;
+}
+.newsMain .catePanel .webgene-blog .webgene-header h2,
+.newsMain .catePanel .webgene-blog .webgene-header h3 {
+  position: relative;
+  font-size: 18px;
+}
+.newsMain .catePanel .webgene-blog .webgene-header h2:after,
+.newsMain .catePanel .webgene-blog .webgene-header h3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 130px);
+  height: 1px;
+  margin: auto 0;
+  background: #a4a4a4;
+}
+.newsMain .catePanel .webgene-blog .webgene-item {
+  border-bottom: 1px solid #a4a4a4;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 15px 5px;
+  background: url(https://shitok.jp/system_panel/uploads/images/cate_more.png) right 10px center no-repeat;
+  background-size: 5px auto;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item {
+  padding: 20px 20px 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  min-height: 300px;
+  padding: 0 0 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+  border-radius: 4px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffc97d;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .title {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #e4e4e4;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 220px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #000000;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog {
+  padding: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  display: inline-block;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffc97d;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .blogPanel--detail .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .blogPanel .btnBack {
+  width: 230px;
+  margin: 100px auto 0;
+}
+.newsMain .blogPanel .btnBack a {
+  display: block;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  background: url(https://shitok.jp/system_panel/uploads/images/btn_back_arrow.png) left 15px center no-repeat #ffb53a;
+}
+
+/*////////////////////////////////////////////////////////////
+	property
+///////////////////////////////////////////////////////////*/
+.propertyMain .searchSection {
+  padding: 80px 0 100px;
+  background: url(https://shitok.jp/system_panel/uploads/images/news_cnt_bg.png) no-repeat;
+  background-size: cover;
+}
+.propertyMain .searchSection .section + .section {
+  margin: 100px 0 0;
+}
+.propertyMain .searchSection .secTtl {
+  position: relative;
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+.propertyMain .searchSection .secTtl:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 140px);
+  height: 1px;
+  margin: auto 0;
+  background: #a4a4a4;
+}
+.propertyMain .searchSection .secTtl + p {
+  margin: 0 0 20px;
+}
+.propertyMain .searchSection .searchPanel .webgene-search-form-block + .webgene-search-form-block {
+  margin: 10px 0 0;
+}
+.propertyMain .searchSection .searchPanel .webgene-search-form-block .search-title-wrapper {
+  padding: 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.propertyMain .searchSection .searchPanel .webgene-search-form-block .search-area-wrapper {
+  padding: 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+@media (min-width: 1025px) {
+  .propertyMain .searchSection .searchPanel .webgene-search-form-block {
+    display: flex;
+  }
+  .propertyMain .searchSection .searchPanel .webgene-search-form-block .search-title-wrapper {
+    width: 340px;
+    margin: 0 10px 0 0;
+  }
+  .propertyMain .searchSection .searchPanel .webgene-search-form-block .search-area-wrapper {
+    width: calc(100% - 350px);
+  }
+}
+.propertyMain .searchSection .searchPanel .search-submit {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  margin: 30px auto 0;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #ffb53a;
+  background: url(https://shitok.jp/system_panel/uploads/images/btn_more_arrow.png) right 15px center no-repeat #ffb53a;
+  transition: 0.6s;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-header {
+  display: none;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item {
+  padding: 20px 20px 30px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .img img {
+  border-radius: 4px;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item > p {
+  line-height: 2;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .cate {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 0 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffc97d;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .price {
+  padding: 0 0 5px;
+  color: #ffb53a;
+  border-bottom: 1px solid #e4e4e4;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .price em {
+  font-size: 28px;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .price span {
+  font-size: 18px;
+}
+.propertyMain .searchSection .listPanel .webgene-blog .webgene-item .btnMore {
+  margin: 20px auto 0;
+}
+@media (min-width: 1025px) {
+  .propertyMain .searchSection .listPanel .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 220px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.propertyMain .searchSection .listPanel .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.propertyMain .searchSection .listPanel .webgene-pagination ul .selected a {
+  color: #ffffff;
+  background: #000000;
+}
+@media (min-width: 1025px) {
+  .propertyMain .searchSection .listPanel .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-pagination ul .prev {
+    float: left;
+  }
+  .propertyMain .searchSection .listPanel .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.propertyMain .detailSection {
+  padding: 80px 0 100px;
+}
+.propertyMain .detailSection .webgene-blog .webgene-header {
+  display: none;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item img {
+  border-radius: 6px;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl {
+  display: flex;
+  line-height: 2;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px 5px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background: #ffb53a;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd {
+  width: calc(100% - 155px);
+  padding: 10px 20px;
+  border-top: 1px solid #ffb53a;
+  border-bottom: 1px solid #ffb53a;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd .logoBox p {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd .logoBox .logo {
+  display: inline-block;
+  width: 120px;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd a {
+  display: inline-block;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl + .dl .dd {
+  border-top: none;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox .info {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox .info .cate01 {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #ffc97d;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox .info .cate02 {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px 0 0;
+  padding: 0 10px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  background: #000000;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox .ttlBox {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #ffb53a;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .listBox {
+  margin: 20px 0;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .listBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .listBox ul li {
+  position: relative;
+  width: calc(25% - 10px);
+  height: 0;
+  margin: 10px 0 0 10px;
+  padding: 0 0 17%;
+}
+.propertyMain .detailSection .webgene-blog .webgene-item .listBox ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .propertyMain .detailSection .webgene-blog .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .propertyMain .detailSection .webgene-blog .secBox .leftBox {
+    width: 63%;
+  }
+  .propertyMain .detailSection .webgene-blog .secBox .rightBox {
+    width: 35%;
+  }
+  .propertyMain .detailSection .webgene-blog .secBox .rightBox .photo {
+    position: relative;
+  }
+}
+.propertyMain .detailSection .btnBack {
+  width: 230px;
+  margin: 100px auto 0;
+}
+.propertyMain .detailSection .btnBack a {
+  display: block;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 6px;
+  background: url(https://shitok.jp/system_panel/uploads/images/btn_back_arrow.png) left 15px center no-repeat #ffb53a;
+}

@@ -1,0 +1,235 @@
+// ▽メイン▽
+main#terms.main
+    .pageKvContainer
+        .pageKvPanel
+            .pageKvTitle
+                h1 ご利用案内
+    .pageLogoBox
+        .logo
+            img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+    .sec01
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | ご
+                    em 利
+                    | 用ガイド
+            .secContainer
+                .cntInner
+                    .topTxt.txt
+                        p 当キャンプ場は里山の方々に迷惑の掛からないよう、配慮したルールとなっております。<br>学生・団体やサークル仲間等での６名以上でのご利用は、ご遠慮いただいております。<br>キャンプ場内・外においても、近隣の方に迷惑となる騒音や投光、写真、動画撮影などは行わないようにして下さい。<br>特に、夜9時過ぎ～早朝には大声で騒がない、大きな音を出さない等ご配慮をお願い致します。
+                    .section
+                        .secTtl
+                            h3 ご予約時の注意事項
+                        .secPanelList
+                            .secPanel
+                                .pTtl
+                                    h4 ①ご予約時の注意事項
+                                .multiBoxList
+                                    .multiBox
+                                        .subTtl
+                                            p ●大人の利用は5名まで
+                                        .txt
+                                            p 大人の人数が6名以上のグループではご利用いただけません。<br>※各施設の定員を超えたご利用はできません。
+                                    .multiBox
+                                        .subTtl
+                                            p ●グループやご家族でのご利用は2サイトまで
+                                        .txt
+                                            p 一度にご利用頂けるサイトは、グループやご家族でのご利用は2サイトまでとなります。
+                                        aside
+                                            p ※テントサイト、バンガローなど全ての施設を合わせて２サイトまでとなります。
+                                            p ※他の方のお名前でご予約いただいた場合でも、グループで合計2サイトまでとなります。
+                            .secPanel
+                                .pTtl
+                                    h4 ②キャンセル料について
+                                .cancelTtlBox
+                                    .cancelTtl
+                                        p 予約の変更、キャンセルは電話またはメールにてご連絡お願いします。<br>ご利用日1週間前のキャンセルから、キャンセル料がかかります。
+                                    aside
+                                        p ※キャンセル料が発生する利用日から別日への変更はできません。
+                                        p ※天候不良や体調不良などのお客様都合でのキャンセルについても、通常通りキャンセル料は発生します。
+                                        p ※台風や災害、警報などでキャンプ場都合で閉鎖する場合は、キャンセル料はかかりません。
+                                        p ※食材のキャンセル料は、3日前から100％全額のご請求となります。
+                                .multiBoxList
+                                    .multiBox
+                                        .subTtl
+                                            p 宿泊（オートキャンプサイト）
+                                        .table01
+                                            table
+                                                tbody
+                                                    tr
+                                                        th 3日前〜前日
+                                                        td サイト料金の50%
+                                                    tr
+                                                        th ご利用日当日
+                                                        td サイト料金の100%
+                                    .multiBox
+                                        .subTtl
+                                            p 宿泊（バンガロー・コテージ）
+                                        .table01
+                                            table
+                                                tbody
+                                                    tr
+                                                        th 1週間〜4日前
+                                                        td サイト料金の30%
+                                                    tr
+                                                        th 3日前〜前日
+                                                        td サイト料金の50%
+                                                    tr
+                                                        th ご利用日当日
+                                                        td サイト料金の100%
+                                    .multiBox
+                                        .subTtl
+                                            p 日帰り
+                                        .table01
+                                            table
+                                                tbody
+                                                    tr
+                                                        th 3日前〜前日
+                                                        td サイト料金の50%
+                                                    tr
+                                                        th ご利用日当日
+                                                        td サイト料金の100%
+                            .secPanel
+                                .pTtl
+                                    h4 ③ご利用ガイド
+                                .guideTtl
+                                    p ○ご利用について
+                                .multiBoxList
+                                    .multiBox
+                                        .subTtl
+                                            p 【テントサイト】
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 13:00〜16:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜11:00
+                                    .multiBox
+                                        .subTtl
+                                            p 【バンガロー】
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 13:00〜16:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜11:00
+                                    .multiBox
+                                        .subTtl
+                                            p 【コテージ】
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 13:00〜16:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜11:00
+                                .timeBox
+                                    .subTtl
+                                        p 各施設利用時間
+                                    .table02
+                                        table
+                                            tbody
+                                                tr
+                                                    th ゲート閉門
+                                                    td
+                                                        p ゲート閉門　21:00~翌8:00
+                                                tr
+                                                    th 消灯時間
+                                                    td
+                                                        p 21:00
+                                                        p.cautionRed !!里山につき近隣にお住まいの方の迷惑にならないよう厳守して下さい!!
+                                                        p 消灯後はランタンの灯り、小声での会話を厳守して下さい。
+                                                        p 21時の消灯に向けて２０時以降は静かにお願いいたします。
+                                                tr
+                                                    th 管理棟「はなれ」営業時間
+                                                    td 8:00~19:00
+                                                tr
+                                                    th シャワー　無料
+                                                    td 8:00～21:00
+                            .secPanel
+                                .pTtl
+                                    h4 ④禁止事項
+                                .txt.cautionRed
+                                    p !!里山につき近隣にお住まいの方の迷惑にならないよう厳守して下さい!!
+                                .prohibitedList
+                                    .multiBoxList
+                                        .multiBox
+                                            .subTtl
+                                                p 音楽や大声を出す、騒ぐなどの騒音につながる行為
+                                            .txt
+                                                p 山間の為、音が響きます。<br>特に日が暮れてからは気を付けて下さい。
+                                        .multiBox
+                                            .subTtl
+                                                p キャンプ場付近での動画撮影や近隣の住宅や人の撮影
+                                            .txt
+                                                p 場外での撮影は一切禁止とします。
+                                        .multiBox
+                                            .subTtl
+                                                p 他のお客様や近隣の住宅や人が写り込んだ動画や写真などのSNSへの投稿
+                                            .txt
+                                                p トラブルの発生を防ぐため、他の方や近隣の住宅が写り込んだ動画や写真のSNSへの投稿は禁止とします。
+                                        .multiBox
+                                            .subTtl
+                                                p 花火
+                                            .txt
+                                                p 花火は禁止とします。
+                                        .multiBox
+                                            .subTtl
+                                                p 定員を超えての利用
+                                            .txt
+                                                p 各施設の定員を超えての利用はできません。
+                                        .multiBox
+                                            .subTtl
+                                                p 1つのサイトにテントを複数設営
+                                            .txt
+                                                p 1つのサイトにテントは1張でお願いいたします。
+                                        .multiBox
+                                            .subTtl
+                                                p 直火での焚火
+                                            .txt
+                                                p 地面へのダメージを防ぐ為、焚火台を使用してください。
+                                        .multiBox
+                                            .subTtl
+                                                p ペットの同伴
+                                            .txt
+                                                p 場内全ての施設においてペットの同伴はお断りしております。
+                                        .multiBox
+                                            .subTtl
+                                                p 指定場所以外での喫煙
+                                            .txt
+                                                p 建物内・サイト内・歩きタバコは禁止です。<br>サニタリー1・2の喫煙場所をご利用ください。
+                                        .multiBox
+                                            .subTtl
+                                                p 発電機・投光機
+                                            .txt
+                                                p 明るすぎる光や音の出る発電機は禁止とします。
+                                        .multiBox
+                                            .subTtl
+                                                p ドローンの使用
+                                            .txt
+                                                p 全面禁止です。
+                                        .multiBox
+                                            .subTtl
+                                                p エンジンのかけっぱなし
+                                            .txt
+                                                p 車両は駐車後、すみやかにエンジンを停止して下さい。
+                                    .multiBox
+                                        .subTtl
+                                            p その他の注意事項
+                                        .txt
+                                            p 自然・施設・備品などを壊す行為、他のお客様が迷惑と感じる行為は禁止いたします。<br>暴力団組織に関係する方・泥酔・刺青・薬物使用・法定伝染病の方はご入場できません。<br>周辺道路への路上駐車、生活道路への進入は禁止です。発見した場合は通報します。
+                        .btmMessage.cautionRed
+                            p 上記項目をお守りいただけない場合は、ご退場いただきます。また、次回以降のご予約もお断りいたします。
+// △メイン△

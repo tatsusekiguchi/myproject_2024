@@ -1,0 +1,994 @@
+// ▽メイン▽
+main#price.main
+    .pageKvContainer
+        .pageKvPanel
+            .pageKvTitle
+                h1 施設・料金のご案内
+    .pageLogoBox
+        .logo
+            img(src=(root_path || '') + "image/common/header_logo.png", alt="")
+    .topContainer
+        .secWrap
+            .mapPanel
+            .pagingList
+                ul
+                    li
+                        a(href="#sec01")
+                            span 宿泊
+                    li
+                        a(href="#sec02")
+                            span その他の設備
+                    li
+                        a(href="#sec03")
+                            span レンタル品
+                    li
+                        a(href="#sec04")
+                            span 食材セット
+    #sec01.sec01.section
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | 宿
+                    em 泊
+                    | 施設
+            .secContainer
+                .cntInner
+                    .secPanelList
+                        .secPanel
+                            .pTtl
+                                h3 共通：施設利用料（宿泊）
+                            .topPriceBox
+                                table
+                                    tbody
+                                        tr
+                                            th 大人（高校生以上）
+                                            td 660円/1人
+                                        tr
+                                            th 小人（3歳〜中学生）
+                                            td 330円/1人
+                        .secPanel
+                            .pTtl
+                                h3 オートテントサイト
+                            .topBox
+                                .photoBox.photoSlide
+                                    .slickSlide
+                                        .slider.thumb-item
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_1_1.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_1_2.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_1_3.png", alt="")
+                                        .slideNav
+                                            .slider.thumb-item-nav
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_1_1.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_1_2.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_1_3.png", alt="")
+                                .txtBox
+                                    .detailBox
+                                        table
+                                            thead
+                                                tr
+                                                    th 区画数
+                                                    th 広さ
+                                            tbody
+                                                tr
+                                                    td(rowspan="2") 11区画
+                                                    td 110㎡(駐車スペース含む)
+                                                tr
+                                                    td ちっちゃめサイト：80㎡(駐車スペース含む)
+                                    .checkInOutBox
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 14:00〜17:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜11:00
+                            .listSection01
+                                .subTtl
+                                    h4 宿泊料金（1泊1区画（テント1張・車1台）<br class="spBreak">定員6名までの料金です）
+                                .multiBoxList
+                                    .multiBox
+                                        .multiTtl
+                                            p レギュラーサイト
+                                        .listBox.col3
+                                            ul
+                                                li
+                                                    dl
+                                                        dt バリューシーズン
+                                                        dd 4400円
+                                                li
+                                                    dl
+                                                        dt レギュラーシーズン
+                                                        dd 5500円
+                                                li
+                                                    dl
+                                                        dt ハイシーズン
+                                                        dd 6600円
+                                    .multiBox
+                                        .multiTtl
+                                            p ちっちゃめサイト
+                                        .listBox.col3
+                                            ul
+                                                li
+                                                    dl
+                                                        dt バリューシーズン
+                                                        dd 3000円
+                                                li
+                                                    dl
+                                                        dt レギュラーシーズン
+                                                        dd 3500円
+                                                li
+                                                    dl
+                                                        dt ハイシーズン
+                                                        dd 4500円
+                                    .multiBox
+                                        .subTtl
+                                            p 電源
+                                        .table01
+                                            table
+                                                tbody
+                                                    tr
+                                                        th 電源使用料
+                                                        td 別途 330円/1泊
+                                    .multiBox
+                                        .subTtl
+                                            p アーリー料金
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt アーリーチェックイン　10:00～
+                                                        dd 1100円
+                                                li
+                                                    dl
+                                                        dt レイトチェックアウト　～16:00
+                                                        dd 1100円
+                                        aside
+                                            p ※ハイシーズンおよび、春休み、夏休み、冬休み、ＧＷなど長期休暇中はご利用いただけません。
+                        .secPanel
+                            .pTtl
+                                h3 バンガロー
+                            .topBox
+                                .photoBox.photoSlide
+                                    .slickSlide
+                                        .slider.thumb-item
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_2_1.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_2_2.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_2_3.png", alt="")
+                                        .slideNav
+                                            .slider.thumb-item-nav
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_2_1.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_2_2.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_2_3.png", alt="")
+                                .txtBox
+                                    .detailBox
+                                        table
+                                            thead
+                                                tr
+                                                    th 棟数
+                                                    th 設備
+                                            tbody
+                                                tr
+                                                    td(rowspan="2") 4棟
+                                                    td 和を感じることのできる8畳の畳間
+                                                tr
+                                                    td エアコン、暖房（冬季）、照明、AC電源
+                                    .checkInOutBox
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 14:00〜16:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜10:00
+                            .listSection01
+                                .multiBoxList
+                                    .multiBox
+                                        .subTtl
+                                            p 宿泊料金<br class="spBreak">（1泊1棟、車1台、最大定員5名までの金額です）
+                                        .listBox.col3
+                                            ul
+                                                li
+                                                    dl
+                                                        dt バリューシーズン
+                                                        dd 7700円
+                                                li
+                                                    dl
+                                                        dt レギュラーシーズン
+                                                        dd 8800円
+                                                li
+                                                    dl
+                                                        dt ハイシーズン
+                                                        dd 9900円
+                                    .multiBox
+                                        .subTtl
+                                            p アーリー料金
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt アーリーチェックイン　10:00～
+                                                        dd 2200円
+                                                li
+                                                    dl
+                                                        dt レイトチェックアウト　～16:00
+                                                        dd 2200円
+                                        aside
+                                            p ※ハイシーズンおよび、春休み、夏休み、冬休み、ＧＷなど長期休暇中はご利用いただけません。
+                                    .multiBox
+                                        .subTtl
+                                            p お持ちいただいた方がよいもの
+                                        .itemList
+                                            ul
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_01.png", alt="")
+                                                    p アメニティ
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_02.png", alt="")
+                                                    p 調理道具
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_03.png", alt="")
+                                                    p 食器
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_04.png", alt="")
+                                                    p 寝具
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_05.png", alt="")
+                                                    p クーラー<br>ボックス
+                                    .multiBox
+                                        .subTtl
+                                            p 間取り
+                                        .floorPlan
+                                            .img01
+                                                img(src=(root_path || '') + "image/price/sec01_floor_plan_1_1.png", alt="")
+                                            .img02
+                                                img(src=(root_path || '') + "image/price/sec01_floor_plan_1_2.png", alt="")
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 コテージ
+                                p 樹のぬくもりを感じ、広々デッキでアウトドアを満喫
+                            .topBox
+                                .photoBox.photoSlide
+                                    .slickSlide
+                                        .slider.thumb-item
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_3_1.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_3_2.png", alt="")
+                                            .photo
+                                                img(src=(root_path || '') + "image/price/sec01_img_3_3.png", alt="")
+                                        .slideNav
+                                            .slider.thumb-item-nav
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_3_1.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_3_2.png", alt="")
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec01_img_3_3.png", alt="")
+                                .txtBox
+                                    .detailBox.col3
+                                        table
+                                            thead
+                                                tr
+                                                    th 棟数
+                                                    th 設備（室内）
+                                                    th 設備（室外）
+                                            tbody
+                                                tr
+                                                    td 2棟
+                                                    td 9帖程度の畳敷きフローリングに4帖のロフト付きエアコン、暖房（冬季）、照明、AC電源、マット5枚（シングルサイズ）
+                                                    td 屋根付きウッドデッキ、シンク、テーブル、イス、照明、AC電源
+                                    .checkInOutBox
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt チェックイン
+                                                        dd 14:00〜16:00
+                                                li
+                                                    dl
+                                                        dt チェックアウト
+                                                        dd 8:00〜10:00
+                            .listSection01
+                                .multiBoxList
+                                    .multiBox
+                                        .subTtl
+                                            p 宿泊料金<br class="spBreak">（1泊1棟、車1台、最大定員5名までの金額です）
+                                        .listBox.col3
+                                            ul
+                                                li
+                                                    dl
+                                                        dt バリューシーズン
+                                                        dd 13200円
+                                                li
+                                                    dl
+                                                        dt レギュラーシーズン
+                                                        dd 16500円
+                                                li
+                                                    dl
+                                                        dt ハイシーズン
+                                                        dd 17600円
+                                    .multiBox
+                                        .subTtl
+                                            p アーリー料金
+                                        .listBox.col2
+                                            ul
+                                                li
+                                                    dl
+                                                        dt アーリーチェックイン　10:00～
+                                                        dd 4400円
+                                                li
+                                                    dl
+                                                        dt レイトチェックアウト　～16:00
+                                                        dd 4400円
+                                        aside
+                                            p ※ハイシーズンおよび、春休み、夏休み、冬休み、ＧＷなど長期休暇中はご利用いただけません。
+                                    .multiBox
+                                        .subTtl
+                                            p お持ちいただいた方がよいもの
+                                        .itemList
+                                            ul
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_01.png", alt="")
+                                                    p アメニティ
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_02.png", alt="")
+                                                    p 調理道具
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_03.png", alt="")
+                                                    p 食器
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_04.png", alt="")
+                                                    p 寝具
+                                                li
+                                                    .img
+                                                        img(src=(root_path || '') + "image/price/sec01_item_05.png", alt="")
+                                                    p クーラー<br>ボックス
+                                    .multiBox
+                                        .subTtl
+                                            p 間取り
+                                        .floorPlan
+                                            .img01
+                                                img(src=(root_path || '') + "image/price/sec01_floor_plan_2_1.png", alt="")
+                                            .img02
+                                                img(src=(root_path || '') + "image/price/sec01_floor_plan_2_2.png", alt="")
+    #sec02.sec02.section
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | その
+                    em 他
+                    | の設備
+            .secContainer
+                .cntInner
+                    .secPanelList
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 施設案内
+                                p 充実した施設で皆様のキャンプライフをサポートします。
+                            .subTtl
+                                h4 母屋
+                            .listBox01
+                                ul
+                                    li
+                                        .photo
+                                            img(src=(root_path || '') + "image/price/sec02_img01_1_1.png", alt="")
+                                        dl
+                                            dt 外観
+                                            dd ご自由にご利用いただけます。<br>旅の疲れをまずは癒してください。
+                                    li
+                                        .photo
+                                            img(src=(root_path || '') + "image/price/sec02_img01_1_2.png", alt="")
+                                        dl
+                                            dt 和室
+                                            dd 和と自然を感じながらの休憩やイベントに利用
+                                    li
+                                        .photo
+                                            img(src=(root_path || '') + "image/price/sec02_img01_1_3.png", alt="")
+                                        dl
+                                            dt 縁側
+                                            dd 縁側でほっこりイベントやります！！
+                            .multiBoxList
+                                .multiBox
+                                    .subTtl
+                                        p
+                                            span 管理棟
+                                            span （チェックイン等受付はこちらで承ります）
+                                    .listBox02
+                                        ul
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_2_1.png", alt="")
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_2_2.png", alt="")
+                                .multiBox
+                                    .subTtl
+                                        p
+                                            span 受付・売店
+                                            span （燃料、生活雑貨、駄菓子などを販売）
+                                    .listBox02
+                                        ul
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_2_1.png", alt="")
+                                .multiBox
+                                    .subTtl
+                                        p
+                                            span レンタル倉庫
+                                            span （キャンプ用品や調理道具などを、見てさわって借りられます）
+                                    .listBox02
+                                        ul
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_4_1.png", alt="")
+                                .multiBox
+                                    .subTtl
+                                        p
+                                            span ～あずま屋～
+                                            span イベント広場
+                                    .listBox02
+                                        ul
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_5_1.png", alt="")
+                                            li
+                                                .photo
+                                                    img(src=(root_path || '') + "image/price/sec02_img01_5_2.png", alt="")
+                        .secPanel
+                            .pTtl
+                                h3 サニタリー案内
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p 炊事場・洗い場
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_1.png", alt="")
+                                                    .txt
+                                                        p ご自由にご利用いただけます。<br>旅の疲れをまずは癒してください。
+                                                li
+                                                    .subTtl
+                                                        p 分別ゴミ箱
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_2.png", alt="")
+                                                    .txt
+                                                        p 燃えるゴミやリサイクル等、資源ゴミを回収しています。
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p 貸切り家族風呂
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_3.png", alt="")
+                                                    .txt
+                                                        p 9時から11時、15時から21時まで。<br>45分貸切りで1800円。<br>バスタオル、ドライヤー、シャンプー、ボディーソープ付き。
+                                                li
+                                                    .subTtl
+                                                        p シャワ－ルーム
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_4.png", alt="")
+                                                    .txt
+                                                        p ９時から２１時の間、無料でご利用いただけます。
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p 水洗トイレ
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_5.png", alt="")
+                                                    .txt
+                                                        p ウォシュレット付き洋式水洗トイレ。
+                                                li
+                                                    .subTtl
+                                                        p 車イストイレ
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_6.png", alt="")
+                                                    .txt
+                                                        p 車イスにも対応するゆったりスペ－スの洋式。
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p 自動販売機
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_7.png", alt="")
+                                                    .txt
+                                                        p 管理棟前に自動販売機がございます。
+                                                li
+                                                    .subTtl
+                                                        p 灰捨場
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec02_img02_8.png", alt="")
+                                                    .txt
+                                                        p 完全に鎮火した『灰』のみ捨ててください。燃え残りの炭や薪はNG
+    #sec03.sec03.section
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    | レンタル
+                    em 品
+            .secContainer
+                .cntInner
+                    .secPanelList.accordPanel
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 キャンプセット
+
+                                .txt
+                                    p ビギナーキャンパーも安心・快適に！まとめて借りるとお得です！<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img01_1.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ドームテント<br>・フォールディングテーブル<br>・チェア×人数分（最大6人分）<br>・電池式ランタン（燃料込）<br>・ランタンスタンド<br>・簡単タープ
+                                                li
+                                                    .subTtl
+                                                        p お料理セット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img01_2.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 3000円
+                                                    .txt
+                                                        p ・ガスツーバーナー（燃料込み）<br>・ナベ（中）<br>・ナベ（小）<br>・フライパン<br>・ライスクッカー<br>・包丁、まな板<br>・ザル、ボール<br>・しゃもじ、ヘラ、フライ返し<br>・お玉、トング、菜ばし<br>・ピーラー、キッチンバサミ
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p ソロキャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img01_3.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 6000円
+                                                    .txt
+                                                        p ・テント（パンダTC）<br>・チェア<br>・シングルバーナー（燃料付）<br>・コッヘル<br>・LEDランタン（燃料込）<br>・テーブル<br>・ハンマー<br>・寝袋<br>・マット
+                                                li
+                                                    .subTtl
+                                                        p 自転車キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img01_4.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ツーリングテント<br>・チェア<br>・テーブル<br>・シュラフ<br>・ウレタンマット<br>・シングルバーナー<br>・クッカー(フライパン+鍋)<br>・ランタン＋ヘッドライト<br>・モバイルバッテリー(20,000mA)<br>・サンダル(返却不要）<br>（※自転車来場者のみレンタル可能）
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 テント・タープ
+                                .txt
+                                    p これがなきゃはじまらない！<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p
+                                                            | ド－ムテント
+                                                            small （ムーンライトテント7型）
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_1.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 4000円
+                                                    .txt
+                                                        p 簡単設営、ファミリーにぴったりのテント。（ペグ・ハンマー付き）フロアサイズ：280×280cm。
+                                                li
+                                                    .subTtl
+                                                        p
+                                                            | ツールームテント
+                                                            small （2ルームハウス MDX）
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_2.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 7000円
+                                                    .txt
+                                                        p クロスフレームで建てやすくワイドスペースのリビングを備えた2ルーム（ペグ・ハンマー付き）
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p サーカスTC
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_3.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 4000円
+                                                    .txt
+                                                        p 抜群の遮光性と通気性を兼ね備えた綿混紡のテンマクデザインの超人気テント。（インナー、グラウンドシートは付きません）（ペグ・ハンマー付）
+                                                li
+                                                    .subTtl
+                                                        p ツーリングドームLX
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_4.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 2500円
+                                                    .txt
+                                                        p 設営が簡単な1〜2人向けのテントです。<br>（ペグ・ハンマー付）
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p タ－プ
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_5.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 2500円
+                                                    .txt
+                                                        p ファミリーにぴったりサイズ。雨や、強い日差しを遮ります。<br>(ポール・ペグ・ハンマー付）
+                                                li
+                                                    .subTtl
+                                                        p 簡単タ－プ
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img02_6.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 2500円
+                                                    .txt
+                                                        p 設営が簡単な4本足のタープ。<br>(ポール・ペグ・ハンマー付）
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p アルティメットハンマ－
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 300円
+                                                    .txt
+                                                        p 確実にペグを叩き込む専用ハンマー。
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 シュラフ・マット
+                                .txt
+                                    p ぐっすり眠る為に…<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p
+                                                            | シュラフ
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_1.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 600円
+                                                    .txt
+                                                        p 快適睡眠温度<br>［封筒型:１０℃～ マミー型:７℃～］
+                                                li
+                                                    .subTtl
+                                                        p
+                                                            | 電気毛布
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_2.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 800円
+                                                    .txt
+                                                        p 敷いても掛けても使用できるあったかアイテム。
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p 毛布
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_3.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 500円
+                                                    .txt
+                                                        p シングルサイズ。もう1枚欲しい時に。
+                                                li
+                                                    .subTtl
+                                                        p テントインナ－マット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_4.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 500円
+                                                    .txt
+                                                        p 200×265cm。クッション性があり、地面からの冷気も防ぎます。
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p ウレタンマット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_5.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 300円
+                                                    .txt
+                                                        p 180cm×50cmのシングルサイズ。<br>厚みがあり、快適に眠れます。
+                                                li
+                                                    .subTtl
+                                                        p ベキッズマット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec03_img03_6.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 500円
+                                                    .txt
+                                                        p 120cm×70cm×3cm。<br>保育園や介護施設用の商品を展開している『コーベベビー株式会社』により開発された寝心地抜群のマットです。<br>小さなお子様でも安心して使用できます。
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 ランタン
+                                .txt
+                                    p 夜を素敵に楽しもう…<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+    #sec04.sec04.section
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    em 食材
+                    | セット
+            .secContainer
+                .cntInner
+                    .secPanelList
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 キャンプセット
+
+                                .txt
+                                    p ビギナーキャンパーも安心・快適に！まとめて借りるとお得です！<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_1.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ドームテント<br>・フォールディングテーブル<br>・チェア×人数分（最大6人分）<br>・電池式ランタン（燃料込）<br>・ランタンスタンド<br>・簡単タープ
+                                                li
+                                                    .subTtl
+                                                        p お料理セット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_2.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 3000円
+                                                    .txt
+                                                        p ・ガスツーバーナー（燃料込み）<br>・ナベ（中）<br>・ナベ（小）<br>・フライパン<br>・ライスクッカー<br>・包丁、まな板<br>・ザル、ボール<br>・しゃもじ、ヘラ、フライ返し<br>・お玉、トング、菜ばし<br>・ピーラー、キッチンバサミ
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p ソロキャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_3.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 6000円
+                                                    .txt
+                                                        p ・テント（パンダTC）<br>・チェア<br>・シングルバーナー（燃料付）<br>・コッヘル<br>・LEDランタン（燃料込）<br>・テーブル<br>・ハンマー<br>・寝袋<br>・マット
+                                                li
+                                                    .subTtl
+                                                        p 自転車キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_4.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ツーリングテント<br>・チェア<br>・テーブル<br>・シュラフ<br>・ウレタンマット<br>・シングルバーナー<br>・クッカー(フライパン+鍋)<br>・ランタン＋ヘッドライト<br>・モバイルバッテリー(20,000mA)<br>・サンダル(返却不要）<br>（※自転車来場者のみレンタル可能）
+    #sec05.sec05.section
+        .secWrap
+            .pageSecTtlBox
+                h2
+                    em 体験
+                    | セット
+            .secContainer
+                .cntInner
+                    .secPanelList
+                        .secPanel
+                            .pTtlBox
+                                .pTtl
+                                    h3 キャンプセット
+
+                                .txt
+                                    p ビギナーキャンパーも安心・快適に！まとめて借りるとお得です！<br>数量に限りがありますので、必要なものは事前にご予約して下さい。<br>料金は全て1泊分（税込）となっています。
+                            .multiBoxList
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_1.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ドームテント<br>・フォールディングテーブル<br>・チェア×人数分（最大6人分）<br>・電池式ランタン（燃料込）<br>・ランタンスタンド<br>・簡単タープ
+                                                li
+                                                    .subTtl
+                                                        p お料理セット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_2.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 3000円
+                                                    .txt
+                                                        p ・ガスツーバーナー（燃料込み）<br>・ナベ（中）<br>・ナベ（小）<br>・フライパン<br>・ライスクッカー<br>・包丁、まな板<br>・ザル、ボール<br>・しゃもじ、ヘラ、フライ返し<br>・お玉、トング、菜ばし<br>・ピーラー、キッチンバサミ
+                                .multiBox
+                                    .innerBoxList
+                                        .innerBox
+                                            ul
+                                                li
+                                                    .subTtl
+                                                        p ソロキャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_3.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 6000円
+                                                    .txt
+                                                        p ・テント（パンダTC）<br>・チェア<br>・シングルバーナー（燃料付）<br>・コッヘル<br>・LEDランタン（燃料込）<br>・テーブル<br>・ハンマー<br>・寝袋<br>・マット
+                                                li
+                                                    .subTtl
+                                                        p 自転車キャンプセット
+                                                    .photo
+                                                        img(src=(root_path || '') + "image/price/sec04_img01_4.png", alt="")
+                                                    .price
+                                                        table
+                                                            tbody
+                                                                tr
+                                                                    th 価格
+                                                                    td 8000円
+                                                    .txt
+                                                        p ・ツーリングテント<br>・チェア<br>・テーブル<br>・シュラフ<br>・ウレタンマット<br>・シングルバーナー<br>・クッカー(フライパン+鍋)<br>・ランタン＋ヘッドライト<br>・モバイルバッテリー(20,000mA)<br>・サンダル(返却不要）<br>（※自転車来場者のみレンタル可能）
+// △メイン△

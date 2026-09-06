@@ -1,0 +1,1088 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvPanel {
+    .topKv {
+      height: 450px;
+      padding: 60px 20px 0;
+    }
+    .kvTitlePanel {
+      max-width: 400px;
+      padding: 20px;
+      .kvTitle {
+        h1 {
+          margin: 0 0 10px;
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .secTtlBox {
+    h2 {
+      margin: 0 0 3px;
+      font-size: 22px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .sec01 {
+    padding: 60px 0;
+    .secPanel {
+      .leftBox {
+        width: 100%;
+      }
+      .rightBox {
+        padding: 20px 0 0;
+        ul {
+          li {
+            display: block;
+            padding: 15px 0;
+            time {
+              width: 100%;
+              margin: 0 0 5px;
+            }
+            .box {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 80px 0;
+    .secTtlBox {
+      margin: 0 0 40px;
+    }
+    .secBox {
+      margin: 0 0 40px;
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+    }
+    .listBox {
+      margin: 0 0 40px;
+      ul {
+        max-width: 380px;
+        margin: 0 auto;
+        li {
+          padding: 15px;
+          + li {
+            margin: 20px 0 0;
+          }
+        }
+        .photo {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 120px 0;
+    .secPanel01 {
+      margin: 0 0 30px;
+      .secTtlBox {
+        margin: 0 0 40px;
+      }
+      .secBox {
+        padding: 20px 0 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+    .secPanel02 {
+      ul {
+        li {
+          dl {
+            dt {
+              font-size: 18px;
+            }
+            dd {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 80px 0;
+    .secPanel01 {
+      margin: 0 0 30px;
+      .secTtlBox {
+        margin: 0 0 30px;
+      }
+      .secBox {
+        padding: 20px 0 0;
+        .txt {
+          margin: 0 0 30px;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+      .btnItem {
+        max-width: 400px;
+        ul {
+          li {
+            a {
+              padding: 15px 50px 20px 15px;
+              background: url("../image/common/btn_more_blue.png") right 10px
+                bottom 13px no-repeat;
+              background-size: 35px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 120px 0;
+    .secPanel01 {
+      margin: 0 0 30px;
+      .secPanel {
+        max-width: 500px;
+        padding: 30px 20px;
+      }
+      .secTtlBox {
+        margin: 0 0 30px;
+      }
+      .secBox {
+        padding: 20px 0 0;
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	feature
+///////////////////////////////////////////////////////////*/
+#feature {
+  .topSection {
+    margin: 0 0 80px;
+    .kv {
+      margin: 0 0 30px;
+    }
+  }
+  .sec01 {
+    .secContainer {
+      padding: 0 0 80px;
+    }
+    .secPanel01 {
+      position: relative;
+      margin: 0 0 40px;
+      .secBox {
+        padding: 20px 0 0;
+        .ttl02 {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+      }
+    }
+    .secPanel02 {
+      padding: 20px;
+      .ttl {
+        margin: 0 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .txtBox {
+        .txt {
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 80px 0;
+      &::before {
+        width: calc(100%);
+      }
+    }
+    .secPanel01 {
+      margin: 0 0 40px;
+      .secBox {
+        padding: 20px 0 0;
+        .ttl02 {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+      }
+    }
+    .secPanel02 {
+      padding: 20px;
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 18px;
+      }
+      .list {
+        ul {
+          margin: -10px 0 0 -10px;
+          li {
+            width: calc((100% / 2) - 10px);
+            margin: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 80px;
+    .secBox {
+      margin: 0 0 30px;
+      .ttl02 {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 80px 0;
+      &::before {
+        width: calc(100%);
+      }
+    }
+    .secPanel {
+      .secBox {
+        padding: 20px 0;
+        .ttl02 {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+#service {
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .topSection {
+    margin: 0 0 80px;
+    .secPanel {
+      .pagerLink {
+        ul {
+          li {
+            dl {
+              dt {
+                font-size: 18px;
+              }
+              dd {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .photoBox {
+        .photo {
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 60px 0;
+      &::before {
+        width: 100%;
+      }
+    }
+    .topPanel {
+      margin: 0 0 80px;
+      .chartBox {
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+      .txtBox {
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+    .section {
+      .sectionTtl {
+        margin: 0 auto 40px;
+        font-size: 18px;
+      }
+      .secBox01 {
+        margin: 0 0 50px;
+        .chart {
+          max-width: 400px;
+          margin: 0 auto 30px;
+        }
+      }
+      .secBox02 {
+        margin: 0 0 50px;
+        > * {
+          + * {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .secBox03,
+      .secBox04 {
+        .list {
+          max-width: 340px;
+          ul {
+            li + li {
+              margin: 40px 0 0;
+            }
+          }
+        }
+      }
+      .secBox03 {
+        margin: 0 0 50px;
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 80px;
+    .secBox {
+      + .secBox {
+        margin: 40px 0 0;
+      }
+      .photo {
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 60px 0;
+      &::before {
+        width: 100%;
+      }
+    }
+    .topPanel {
+      margin: 0 0 80px;
+      .chartBox {
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+      .txtBox {
+        .txt {
+          margin: 0 0 30px;
+        }
+      }
+    }
+    .section {
+      .sectionTtl {
+        margin: 0 auto 40px;
+        font-size: 18px;
+      }
+      .secBox01,
+      .secBox06 {
+        margin: 0 0 50px;
+        > * {
+          + * {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .secBox02 {
+        margin: 0 0 50px;
+        .photoBox {
+          .photo {
+            max-width: 400px;
+            margin: 0 0 30px;
+          }
+        }
+      }
+      .secBox03 {
+        margin: 0 0 50px;
+        .photoBox {
+          margin: 0 0 30px;
+        }
+      }
+      .secBox04 {
+        margin: 0 0 50px;
+        .photoBox {
+          margin: 0 0 30px;
+        }
+      }
+      .secBox05 {
+        margin: 0 0 50px;
+      }
+      .secBox07 {
+        > dl {
+          margin: 0 0 40px;
+        }
+        .listBox {
+          + .listBox {
+            margin: 40px 0 0;
+          }
+          .ttl {
+            position: relative;
+            max-width: 300px;
+          }
+        }
+        .list {
+          max-width: 500px;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px 0 0 -10px;
+            li {
+              width: calc((100% / 2) - 10px);
+              margin: 10px 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 80px;
+    .secBox {
+      margin: 0 0 60px;
+      .photo {
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+    }
+    .listBox {
+      margin: 0 0 80px;
+      ul {
+        li {
+          max-width: 400px;
+          margin: 0 auto;
+          + li {
+            margin: 20px auto 0;
+          }
+          &:nth-child(2) {
+            max-width: 260px;
+          }
+        }
+      }
+    }
+    .sectionTtl {
+      margin: 0 auto 40px;
+      font-size: 18px;
+    }
+    .bnrList {
+      max-width: 500px;
+      margin: 0 auto;
+      ul {
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#company {
+  .topSection {
+    margin: 0 0 70px;
+    .kv {
+      margin: 0 0 50px;
+    }
+    .secBox {
+      .photoBox {
+        max-width: 340px;
+        margin: 0 auto 30px;
+        .name {
+          margin: 15px 0 0;
+          em {
+            font-size: 20px;
+          }
+        }
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 18px;
+        }
+        .txt {
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .sec01 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 80px 0;
+      &::before {
+        width: 100%;
+      }
+    }
+    .topLabel {
+      margin: 0 0 20px;
+      font-size: 18px;
+      .box {
+        padding: 15px;
+      }
+      + .txt {
+        margin: 0 0 40px;
+      }
+    }
+    ol {
+      dl {
+        dt {
+          padding: 15px;
+          font-size: 18px;
+        }
+        dd {
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 80px;
+    .infoBox {
+      margin: 0 0 50px;
+      dl {
+        + dl {
+          margin: 15px 0 0;
+        }
+        dt {
+          width: 100px;
+        }
+        dd {
+          width: calc(100% - 105px);
+          padding: 10px;
+        }
+      }
+    }
+    .listBox {
+      max-width: 350px;
+      margin: 0 auto 60px;
+      ul {
+        li {
+          + li {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 80px;
+    .flowList {
+      ul {
+        margin-left: 0;
+        li {
+          &::before {
+            top: 6px;
+          }
+          span {
+            left: 15px;
+          }
+          p {
+            padding: 0 0 0 80px;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 80px;
+    .secBox {
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .ttl {
+        max-width: 120px;
+        margin: 0 0 15px;
+      }
+      .infoPanel {
+        margin: 0 0 15px;
+        .infoBox {
+          + .infoBox {
+            margin: 15px 0 0;
+          }
+        }
+      }
+      .infoBox {
+        dl {
+          font-size: 13px;
+          dt {
+            width: 90px;
+          }
+          dd {
+            padding: 10px;
+          }
+        }
+      }
+      .listBox {
+        max-width: 350px;
+        margin: 30px auto 0;
+        ul {
+          li {
+            + li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+#recruit {
+  .topSection {
+    margin: 0 0 80px;
+    .kv {
+      margin: 0 0 50px;
+    }
+    .topLabel {
+      font-size: 18px;
+      .box {
+        padding: 15px;
+      }
+    }
+  }
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .sec01 {
+    margin: 0 0 80px;
+    .secBox {
+      margin: 0 0 60px;
+      .photo {
+        max-width: 520px;
+        margin: 0 auto 30px;
+      }
+    }
+    .slidePanel {
+      .slideBox {
+        ul {
+          li {
+            width: calc(100% / 2);
+            padding: 0 0 40%;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 80px 0;
+      &::before {
+        width: 100%;
+      }
+    }
+    .listBox {
+      ul {
+        li + li {
+          margin: 40px 0 0;
+        }
+        .logo {
+          width: 160px;
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 80px;
+    .secPanelList {
+      padding: 40px 40px 0;
+    }
+    .secPanel {
+      padding: 30px;
+      .circle {
+        top: -40px;
+        left: -40px;
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 80px;
+    .secContainer {
+      padding: 80px 0;
+      &::before {
+        width: 100%;
+      }
+    }
+    .voicePanel {
+      + .voicePanel {
+        margin: 80px 0 0;
+      }
+    }
+    .voiceBox {
+      + .voiceBox {
+        margin: 50px 0 0;
+      }
+      .photo {
+        max-width: 350px;
+        margin: 0 auto 30px;
+      }
+      .txtBox {
+        .nameBox {
+          display: block;
+          .name {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    margin: 0 0 80px;
+    .secPanel {
+      margin: 0 0 60px;
+      .flowBox {
+        margin: 0 0 30px;
+        ol {
+          &::before {
+            left: 40px;
+            width: 1px;
+            height: 95%;
+          }
+          li {
+            + li {
+              margin: 70px 0 0;
+            }
+          }
+          .circle {
+            width: 80px;
+            height: 80px;
+            font-size: 12px;
+          }
+          dl {
+            width: calc(100% - 100px);
+          }
+        }
+      }
+    }
+    .section {
+      .sectionTtl {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+#flow {
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .flowSection {
+    margin: 0 0 180px;
+    .secBoxList {
+      padding: 30px 0 0;
+    }
+    .secBox {
+      + .secBox {
+        margin: 50px 0 0;
+      }
+      .photo {
+        max-width: 520px;
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        .ttl02 {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	policy
+///////////////////////////////////////////////////////////*/
+#policy {
+  .policySection {
+    margin: 0 0 80px;
+    .topTxt {
+      margin: 0 0 40px;
+    }
+    .section {
+      + .section {
+        margin: 50px 0 0;
+      }
+    }
+    h2 {
+      margin: 0 0 20px;
+      font-size: 18px;
+    }
+    .txt {
+      font-size: 13px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact {
+  .contactSection {
+    margin: 0 0 80px;
+  }
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .section {
+    + .section {
+      margin: 60px 0 0;
+    }
+  }
+  .sec01 {
+    .secPanel {
+      text-align: center;
+    }
+    .secBox {
+      .leftBox {
+        margin: 0 0 20px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .rightBox {
+        max-width: 340px;
+        margin: 0 auto;
+        .tel {
+          a {
+            padding: 0 0 0 25px;
+            font-size: 24px;
+            background: url("../image/contact/contact_tel_icon.png") left center
+              no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftBox {
+          width: calc(100% - 360px);
+        }
+        .rightBox {
+          width: 340px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    .topTxt {
+      margin: 0 0 40px;
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    font-size: 12px;
+  }
+  .radioForm {
+    display: flex;
+    dt {
+      width: 85px;
+    }
+    dd {
+      width: calc(100% - 85px);
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 0 0 40px;
+    span {
+      padding-left: 30px;
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    margin: 35px auto 20px;
+    .agreeBox {
+      height: 250px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__contact {
+    padding: 90px 0 0;
+    .contactContainer {
+      padding: 40px 0 60px;
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .secTitleBox {
+      margin: 0 0 20px;
+      p {
+        margin: 0 0 5px;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      .txt {
+        letter-spacing: 0;
+      }
+    }
+  }
+  .btnToTop {
+    font-size: 14px;
+  }
+}
+
+.businessVideo {
+  width: 100%;
+}
+.mokubox .photo_moku {
+  width: 100%;
+}
+
+.bannerbox,
+.sdgsbox {
+  display: block;
+  width: 100%;
+}
+
+#service .sec04 .listBox,
+#flow .sec04 .listBox {
+  margin-bottom: 100px;
+}
+
+.sdgs {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#flow .secWrap03 {
+  max-width: 100%;
+}

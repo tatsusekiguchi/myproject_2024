@@ -1,0 +1,3187 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 660px;
+      height: 100%;
+      z-index: 1;
+      background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_kv_bg.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .topKv {
+      position: relative;
+      height: 900px;
+      padding: 0 20px;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .kv01 {
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvContents {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: #ffffff;
+      z-index: 1;
+      h1 {
+        margin: 0 0 10px;
+        font-size: 50px;
+        + p {
+          margin: 0 0 40px;
+          font-size: 18px;
+        }
+      }
+      .txtList {
+        padding: 0 20px;
+        .box {
+          position: relative;
+          width: 100%;
+          max-width: 550px;
+          padding: 20px 30px;
+          font-size: 26px;
+          text-align: left;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            transform: skew(-15deg);
+            background: rgba(136, 129, 99, 0.6);
+          }
+          + .box {
+            margin: 20px 0 0;
+          }
+          p {
+            position: relative;
+            display: inline-block;
+          }
+        }
+        .box01 {
+          color: #dedacb;
+        }
+        .box02 {
+          color: #f0eee6;
+          &::before {
+            background: rgba(136, 129, 99, 0.8);
+          }
+        }
+      }
+    }
+  }
+  .topSection {
+    padding: 80px 0;
+    text-align: center;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_top_bg.png)
+      no-repeat;
+    background-size: cover;
+    .title {
+      margin: 0 0 40px;
+      p {
+        display: inline-block;
+        font-size: 34px;
+      }
+      .span {
+        margin: 0 20px;
+        color: #f3b238;
+      }
+    }
+  }
+  .secTtl {
+    margin: 0 0 40px;
+    p {
+      font-size: 34px;
+    }
+  }
+  .listContainer {
+    margin: 0 0 200px;
+    padding: 200px 0 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_list_cnt_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      color: #ffffff;
+    }
+    .listPanel {
+      + .listPanel {
+        margin: 100px 0 0;
+      }
+      .photo {
+        max-width: 1150px;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        .txtBox {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_list_bg.png)
+              no-repeat;
+            background-size: cover;
+          }
+          .inner {
+            position: relative;
+            padding: 50px;
+            background: #ffffff;
+          }
+          .ttlBox {
+            margin: 0 0 20px;
+            padding: 0 10px;
+            border-bottom: 1px solid #000000;
+            .num {
+              display: inline-block;
+              margin: 0 10px 0 0;
+              font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+                "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝",
+                serif;
+              font-size: 50px;
+              color: #aa9c83;
+              line-height: 1;
+              vertical-align: middle;
+            }
+            .ttl {
+              display: inline-block;
+              font-size: 30px;
+              vertical-align: middle;
+            }
+          }
+          .txt {
+            padding: 0 0 30px;
+          }
+          .btnMore {
+            margin: auto 0 0;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .listPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 600px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          .txtBox {
+            max-width: 620px;
+            .inner {
+              display: flex;
+              flex-direction: column;
+              min-height: 400px;
+            }
+          }
+        }
+        &:nth-child(even) {
+          align-items: flex-end;
+          .secBox {
+            .txtBox {
+              position: absolute;
+              left: 80px;
+              bottom: 100px;
+            }
+          }
+        }
+        &:nth-child(odd) {
+          .secBox {
+            .txtBox {
+              position: absolute;
+              right: 80px;
+              bottom: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    padding: 120px 0;
+    color: #ffffff;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .listBox {
+      .ul {
+        display: flex;
+        justify-content: space-between;
+        .li {
+          width: calc((100% / 3) - 20px);
+          a {
+            position: relative;
+            display: block;
+            border: 1px solid #ffffff;
+          }
+          .photo {
+            position: relative;
+            height: 300px;
+            img {
+              @include cover-image;
+            }
+          }
+          .ttl {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    .webgene-blog {
+      .webgene-header {
+        display: none;
+      }
+      .webgene-item {
+        display: flex;
+        .info {
+          width: 270px;
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 10px 0 0;
+            padding: 2px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            background: #f2aa22;
+          }
+          .time {
+            display: inline-block;
+            color: #888163;
+          }
+        }
+        .title {
+          a {
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+        + .webgene-item {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 0 0 120px;
+    .secPanel {
+      padding: 80px 20px;
+      color: #ffffff;
+      text-align: center;
+      background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png)
+        center no-repeat;
+      background-size: cover;
+      .titleBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 660px;
+        margin: 0 auto 10px;
+        .ttl01 {
+          width: 250px;
+        }
+        .ttl02 {
+          font-size: 34px;
+        }
+      }
+      .btnMore {
+        margin: 30px auto 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	reason
+///////////////////////////////////////////////////////////*/
+.reasonMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    padding: 150px 0;
+    background: #191919;
+    .secPanel {
+      position: relative;
+      .photo {
+        max-width: 1020px;
+      }
+      .secBox {
+        .txtBox {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_top_box_bg.png)
+              no-repeat;
+            background-size: cover;
+          }
+          .inner {
+            position: relative;
+            padding: 40px 60px;
+            background: #ffffff;
+          }
+          .titleBox {
+            .title {
+              p {
+                display: inline;
+                font-size: 26px;
+              }
+              .em {
+                color: #f2aa22;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: relative;
+          width: 45%;
+          height: 550px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          position: absolute;
+          top: 0;
+          left: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          width: 60%;
+          max-width: 800px;
+          min-height: 580px;
+          padding: 0 20px;
+          .txtBox {
+            width: 100%;
+          }
+          .txt {
+            padding: 0 0 0 15%;
+          }
+        }
+      }
+    }
+    .txt {
+      max-width: 1200px;
+      margin: 40px auto 0;
+      color: #ffffff;
+    }
+  }
+  .secTtl {
+    margin: 0 0 40px;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 150px 0 200px;
+    background: #f3f2ea;
+    .secPanel {
+      + .secPanel {
+        margin: 120px 0 0;
+      }
+      .mvBox {
+        .secWrap01 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 400px;
+        }
+        .inner {
+          max-width: 450px;
+          width: 100%;
+        }
+        .title {
+          position: relative;
+          top: 2px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 110px;
+          padding: 15px;
+          font-size: 26px;
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_sec01_title_bg.png)
+            no-repeat;
+          background-size: 100% auto;
+        }
+      }
+      .txtBox {
+        margin: 40px 0 0;
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .mvBox {
+          .secWrap01 {
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+    .secPanel01 {
+      .mvBox {
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_sec01_img_01.png)
+          no-repeat;
+        background-size: cover;
+      }
+    }
+    .secPanel02 {
+      .mvBox {
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_sec01_img_02.png)
+          no-repeat;
+        background-size: cover;
+      }
+    }
+    .secPanel03 {
+      .mvBox {
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_sec01_img_03.png)
+          no-repeat;
+        background-size: cover;
+      }
+    }
+    .secPanel04 {
+      .mvBox {
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/reason_sec01_img_04.png)
+          no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	carCoating
+///////////////////////////////////////////////////////////*/
+.carCoatingMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 150px;
+    .topContainer {
+      margin: 0 0 100px;
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ttlBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 45%;
+            padding: 20px 5% 20px 0;
+            border-right: 1px solid #000000;
+            .ttl {
+              font-size: 30px;
+              font-size: clamp(1.25rem, 0.1359rem + 1.7391vw, 1.875rem);
+              text-align: right;
+            }
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .beforeAfterContainer {
+      position: relative;
+      margin: 0 0 150px;
+      padding: 80px 0 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 90px);
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+          no-repeat;
+        background-size: cover;
+      }
+      .secWrap02 {
+        position: relative;
+      }
+      .title {
+        margin: 0 0 40px;
+        text-align: center;
+        p {
+          display: inline-block;
+          font-size: 34px;
+        }
+        .em {
+          color: #f3b238;
+        }
+      }
+      .before_after_slider {
+        position: relative;
+        overflow: hidden;
+      }
+      .box_before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        border-right: 5px solid rgba(255, 255, 255, 0.7);
+        box-shadow: 10px 0 15px -13px #000;
+      }
+      .box_before img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+      }
+      .box_before::before {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: -30px;
+        bottom: 0;
+        width: 45px;
+        height: 45px;
+        margin: auto;
+        border: 5px solid rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        box-shadow: 10px 0 15px -13px #000;
+      }
+      .slider_range {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        cursor: col-resize;
+      }
+    }
+    .mvContainer {
+      margin: 0 0 100px;
+      .title {
+        max-width: 700px;
+        margin: 0 auto 40px;
+        padding: 0 60px;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png)
+            left center no-repeat,
+          url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png)
+            right center no-repeat;
+        background-size: 45px auto, 45px auto;
+        .em {
+          color: #f3b238;
+        }
+      }
+      .mv {
+        margin: 0 0 40px;
+      }
+      .dl {
+        max-width: 1200px;
+        margin: 0 auto;
+        .dt {
+          margin: 0 0 30px;
+          font-size: 34px;
+        }
+      }
+    }
+    .performanceContainer {
+      .title {
+        max-width: 460px;
+        margin: 0 auto 60px;
+        padding: 0 0 5px;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid #000000;
+      }
+      .listBox {
+        max-width: 1500px;
+        margin: 0 auto;
+        .ul {
+          .txtBox {
+            .dl {
+              max-width: 420px;
+              .dt {
+                margin: 0 0 20px;
+                font-size: 26px;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -40px 0 0;
+            .li {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 50%;
+              margin: 40px 0 0;
+            }
+            .photo {
+              width: 240px;
+            }
+            .txtBox {
+              width: calc(100% - 280px);
+            }
+          }
+        }
+      }
+      .chart {
+        max-width: 900px;
+        margin: 80px auto 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .listBox {
+      .ul {
+        .li {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding: 40px;
+          border: 1px solid #e3e1d3;
+          background: #ffffff;
+        }
+        .photoBox {
+          position: relative;
+          .ttl {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 75px;
+            color: #ffffff;
+            text-align: center;
+            z-index: 1;
+          }
+          .ttl01 {
+            background: #888163;
+          }
+          .ttl02 {
+            background: #f2aa22;
+          }
+          .photo {
+            position: relative;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+        .photoBox01 {
+          width: 40%;
+          .photo {
+            height: 255px;
+          }
+        }
+        .photoBox02 {
+          width: 50%;
+          .photo {
+            height: 320px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 2) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .priceTable {
+      overflow: auto;
+      .table {
+        width: 1200px;
+        text-align: center;
+        border: 1px solid #888163;
+        border-bottom: none;
+        .tr {
+          display: table;
+          width: 100%;
+          border-bottom: 1px solid #888163;
+          > * {
+            display: table-cell;
+            width: 260px;
+            vertical-align: middle;
+          }
+        }
+        .thead {
+          .th {
+            padding: 10px 5px;
+            color: #ffffff;
+            background: #888163;
+            &:nth-child(1) {
+              width: 380px;
+            }
+            + .th {
+              border-left: 1px solid #cdbfaf;
+            }
+          }
+        }
+        .tbody {
+          .th {
+            padding: 20px 5px;
+            width: 380px;
+            background: #f8f3ed;
+          }
+          .td {
+            padding: 20px 5px;
+            border-left: 1px solid #888163;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 0 0 150px;
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .listBox {
+      .ul {
+        .dl {
+          margin: 10px 0 0;
+          text-align: center;
+          .dd {
+            margin: 5px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -20px;
+          .li {
+            width: calc((100% / 4) - 20px);
+            margin: 30px 0 0 20px;
+          }
+          .photo {
+            position: relative;
+            height: 410px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	ceiling
+///////////////////////////////////////////////////////////*/
+.ceilingMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 150px;
+    .topContainer {
+      margin: 0 0 100px;
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ttlBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 45%;
+            padding: 20px 5% 20px 0;
+            border-right: 1px solid #000000;
+            .ttl {
+              font-size: 30px;
+              font-size: clamp(1.25rem, 0.1359rem + 1.7391vw, 1.875rem);
+              text-align: right;
+            }
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .section {
+      + .section {
+        margin: 150px 0 0;
+      }
+    }
+    .secContainer {
+      position: relative;
+      max-width: 1200px;
+      margin: -15px auto 0;
+    }
+    .pointPanel {
+      .point {
+        width: 150px;
+        margin: 0 0 40px;
+        font-size: 0;
+        color: #ffffff;
+        text-align: center;
+        background: #888163;
+        p {
+          display: inline;
+          font-size: 16px;
+        }
+        .em {
+          font-size: 22px;
+        }
+      }
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 34px;
+      }
+      .txt {
+        p + p {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    .checkPanel {
+      margin: 60px 0 0;
+      padding: 20px;
+      background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_bg.png)
+        no-repeat;
+      background-size: cover;
+      .secBox {
+        padding: 30px 20px;
+        background: #ffffff;
+        .title {
+          max-width: 380px;
+          margin: 0 auto 40px;
+          padding: 0 40px;
+          font-size: 20px;
+          text-align: center;
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_slash_01.png)
+              left center no-repeat,
+            url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_slash_02.png)
+              right center no-repeat;
+          background-size: 30px auto, 30px auto;
+        }
+        .listBox {
+          max-width: 1000px;
+          margin: 0 auto;
+          .ul {
+            .li {
+              padding: 0 15px 10px;
+              font-size: 18px;
+              border-bottom: 1px solid #000000;
+              p {
+                padding: 3px 0 3px 50px;
+                background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/ceiling_check_icon.png)
+                  left center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            .ul {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin: -20px 0 0;
+              .li {
+                width: calc((100% / 2) - 20px);
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pricePanel {
+      margin: 60px 0 0;
+      .ttl {
+        margin: 0 0 30px;
+        font-size: 26px;
+        text-align: center;
+      }
+    }
+    .priceTable {
+      overflow: auto;
+      .table {
+        width: 1200px;
+        text-align: center;
+        border: 1px solid #888163;
+        border-bottom: none;
+        .tr {
+          display: table;
+          width: 100%;
+          border-bottom: 1px solid #888163;
+          > * {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+        .tbody {
+          .th {
+            padding: 20px 5px;
+            width: 380px;
+            background: #f8f3ed;
+          }
+          .td {
+            padding: 20px 5px;
+            border-left: 1px solid #888163;
+          }
+          .price {
+            max-width: 580px;
+            margin: 0 auto;
+            text-align: left;
+            .ul {
+              display: flex;
+              justify-content: space-between;
+              .em {
+                color: #8d8b8b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sdc
+///////////////////////////////////////////////////////////*/
+.sdcMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/sdc_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 0;
+    .topContainer {
+      margin: 0 0 100px;
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ttlBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 45%;
+            padding: 20px 5% 20px 0;
+            border-right: 1px solid #000000;
+            .ttl {
+              font-size: 30px;
+              font-size: clamp(1.25rem, 0.1359rem + 1.7391vw, 1.875rem);
+              text-align: right;
+            }
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .mvContainer {
+      margin: 0 0 100px;
+      .mv {
+        margin: 0 0 40px;
+      }
+      .dl {
+        max-width: 1200px;
+        margin: 0 auto;
+        .dt {
+          margin: 0 0 30px;
+          font-size: 34px;
+        }
+      }
+    }
+    .performanceContainer {
+      .title {
+        max-width: 340px;
+        margin: 0 auto 60px;
+        padding: 0 0 5px;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid #000000;
+      }
+      .listBox {
+        max-width: 1500px;
+        margin: 0 auto;
+        .ul {
+          .txtBox {
+            .dl {
+              max-width: 420px;
+              .dt {
+                margin: 0 0 20px;
+                font-size: 26px;
+              }
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -40px 0 0;
+            .li {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 50%;
+              margin: 40px 0 0;
+            }
+            .photo {
+              width: 240px;
+            }
+            .txtBox {
+              width: calc(100% - 280px);
+            }
+          }
+        }
+      }
+    }
+    .effectContainer {
+      max-width: 1200px;
+      margin: 100px auto 0;
+      .title {
+        max-width: 550px;
+        margin: 0 auto 40px;
+        padding: 0 60px;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png)
+            left bottom no-repeat,
+          url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png)
+            right bottom no-repeat;
+        background-size: 45px auto, 45px auto;
+      }
+      .listBox {
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -20px 0 0 -20px;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc((100% / 5) - 20px);
+            height: 100px;
+            margin: 20px 0 0 20px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            background: #191919;
+          }
+        }
+      }
+    }
+    .effectTable {
+      overflow: auto;
+      .table {
+        width: 1200px;
+        text-align: center;
+        border: 1px solid #888163;
+        border-bottom: none;
+        .tr {
+          display: table;
+          width: 100%;
+          border-bottom: 1px solid #888163;
+          > * {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+          }
+        }
+        .thead {
+          .th {
+            padding: 20px 5px;
+            color: #ffffff;
+            background: #888163;
+            + .th {
+              border-left: 1px solid #cdbfaf;
+            }
+          }
+        }
+        .tbody {
+          .td {
+            padding: 20px 5px;
+            border-left: 1px solid #888163;
+          }
+        }
+      }
+    }
+    .targetContainer {
+      margin: 100px 0 0;
+      padding: 80px 0;
+      background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+        no-repeat;
+      background-size: cover;
+      .ttl {
+        max-width: 160px;
+        margin: 0 0 40px;
+        padding: 0 0 5px;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid #000000;
+      }
+      .listBox {
+        max-width: 1200px;
+        margin: 0 auto;
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -20px 0 0 -20px;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc((100% / 4) - 20px);
+            margin: 20px 0 0 20px;
+            p {
+              margin: 10px 0 0;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .priceTable {
+      overflow: auto;
+      .table {
+        width: 1200px;
+        text-align: center;
+        border: 1px solid #888163;
+        border-bottom: none;
+        .tr {
+          display: table;
+          width: 100%;
+          border-bottom: 1px solid #888163;
+          > * {
+            display: table-cell;
+            width: 260px;
+            vertical-align: middle;
+          }
+        }
+        .thead {
+          .th {
+            padding: 10px 5px;
+            color: #ffffff;
+            background: #888163;
+            &:nth-child(1) {
+              width: 380px;
+            }
+            + .th {
+              border-left: 1px solid #cdbfaf;
+            }
+          }
+        }
+        .tbody {
+          .th {
+            padding: 20px 5px;
+            width: 380px;
+            background: #f8f3ed;
+          }
+          .td {
+            padding: 20px 5px;
+            border-left: 1px solid #888163;
+          }
+          .multi,
+          .empty {
+            border-left: none;
+          }
+          .multi {
+            p + p {
+              margin: 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    margin: 0 0 150px;
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .listBox {
+      .ul {
+        .dl {
+          margin: 10px 0 0;
+          text-align: center;
+          .dd {
+            margin: 5px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -20px;
+          .li {
+            width: calc((100% / 4) - 20px);
+            margin: 30px 0 0 20px;
+          }
+          .photo {
+            position: relative;
+            height: 410px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	repair
+///////////////////////////////////////////////////////////*/
+.repairMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/repair_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 150px;
+    .topContainer {
+      margin: 0 0 100px;
+      @media (min-width: 1025px) {
+        .secPanel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ttlBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 45%;
+            padding: 20px 3% 20px 0;
+            border-right: 1px solid #000000;
+            .ttl {
+              font-size: 30px;
+              font-size: clamp(1.25rem, 0.1359rem + 1.7391vw, 1.875rem);
+              text-align: right;
+            }
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .troubleContainer {
+      max-width: 1200px;
+      margin: 0 auto 100px;
+      .ttl {
+        max-width: 650px;
+        margin: 0 auto 40px;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        background: #f8f3ed;
+      }
+      .listBox {
+        max-width: 1200px;
+        margin: 0 auto;
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -40px 0 0 -20px;
+          .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc((100% / 3) - 20px);
+            margin: 40px 0 0 20px;
+            p {
+              margin: 10px 0 0;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .mvContainer {
+      .title {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        padding: 0 60px;
+        font-size: 20px;
+        text-align: center;
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_01.png)
+            left center no-repeat,
+          url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec01_ttl_slash_02.png)
+            right center no-repeat;
+        background-size: 45px auto, 45px auto;
+        .em {
+          display: inline-block;
+          color: #f3b238;
+        }
+        .span {
+          display: inline-block;
+        }
+      }
+      .mv {
+        margin: 0 0 40px;
+      }
+      .dl {
+        max-width: 1200px;
+        margin: 0 auto;
+        .dt {
+          margin: 0 0 30px;
+          font-size: 34px;
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .listBox {
+      .ul {
+        .li {
+          padding: 40px;
+          border: 1px solid #e3e1d3;
+          background: #ffffff;
+        }
+        .ba02 {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+        .photoBox {
+          position: relative;
+          .ttl {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 75px;
+            color: #ffffff;
+            text-align: center;
+            z-index: 1;
+          }
+          .ttl01 {
+            background: #888163;
+          }
+          .ttl02 {
+            background: #f2aa22;
+          }
+          .photo {
+            position: relative;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+        .photoBox01 {
+          width: 41%;
+          .photo {
+            height: 285px;
+          }
+        }
+        .photoBox02 {
+          width: 51%;
+          .photo {
+            height: 355px;
+          }
+        }
+        .txt {
+          margin: 15px 0 0;
+          padding: 20px;
+          background: #f8f3ed;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 2) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 120px 0;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .priceTable {
+      overflow: auto;
+      .table {
+        width: 1200px;
+        text-align: center;
+        border: 1px solid #888163;
+        border-bottom: none;
+        .tr {
+          display: table;
+          width: 100%;
+          border-bottom: 1px solid #888163;
+          > * {
+            display: table-cell;
+            width: calc(100% / 3);
+            vertical-align: middle;
+          }
+        }
+        .thead {
+          .th {
+            padding: 20px 5px;
+            color: #ffffff;
+            background: #888163;
+            + .th {
+              border-left: 1px solid #cdbfaf;
+            }
+          }
+        }
+        .tbody {
+          .th {
+            padding: 20px 5px;
+            background: #f8f3ed;
+          }
+          .td {
+            padding: 20px 5px;
+            border-left: 1px solid #888163;
+          }
+        }
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+      text-align: right;
+    }
+  }
+  .sec04 {
+    margin: 0 0 150px;
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/carCoating_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      + .txt {
+        margin: 0 0 60px;
+        text-align: center;
+      }
+    }
+    .listBox {
+      .ul {
+        .dl {
+          margin: 10px 0 0;
+          text-align: center;
+          .dd {
+            margin: 5px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -20px;
+          .li {
+            width: calc((100% / 4) - 20px);
+            margin: 30px 0 0 20px;
+          }
+          .photo {
+            position: relative;
+            height: 410px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+.recruitMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 80px;
+    color: #ffffff;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_sec01_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .secTtl {
+      margin: 0 0 30px;
+      text-align: left;
+    }
+    h3 {
+      margin: 0 0 20px;
+      font-size: 30px;
+    }
+    .name {
+      margin: 20px 0 0;
+      text-align: right;
+      p {
+        display: inline-block;
+      }
+      .em {
+        font-size: 26px;
+      }
+    }
+  }
+  .sec02 {
+    padding: 150px 0;
+    .listBox {
+      .ul {
+        .txtBox {
+          padding: 20px 15px;
+        }
+        .ttlBox {
+          margin: 0 0 15px;
+          .ttl {
+            + .ttl {
+              margin: 5px 0 0;
+            }
+            p {
+              display: inline-block;
+              padding: 0 10px;
+              font-size: 26px;
+              color: #ffffff;
+              background: #888163;
+            }
+          }
+        }
+        .txt {
+          padding: 0 10px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: 49%;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 150px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTitle {
+      max-width: 640px;
+      margin: 0 auto 60px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      background: #ffffff;
+    }
+    .secBox {
+      + .secBox {
+        margin: 80px 0 0;
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 30px;
+          font-size: 30px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  .sec04 {
+    padding: 150px 0;
+    .topTitle {
+      max-width: 540px;
+      margin: 0 auto 60px;
+      padding: 30px 10px;
+      text-align: center;
+      border: 2px solid #f8f3ed;
+    }
+    .infoBox {
+      border: 1px solid #888163;
+      .dl {
+        display: table;
+        width: 100%;
+        line-height: 1.7;
+        > * {
+          display: table-cell;
+          height: 70px;
+          vertical-align: middle;
+          padding: 20px 40px;
+        }
+        .dt {
+          width: 350px;
+          text-align: center;
+          border-right: 1px solid #888163;
+          background: #f8f3ed;
+        }
+        .dd {
+          .box {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            vertical-align: top;
+          }
+        }
+        + .dl {
+          border-top: 1px solid #888163;
+        }
+        &.line {
+          .dt {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+  .sec05 {
+    margin: 0 0 120px;
+    padding: 150px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .entryTtl {
+      max-width: 340px;
+      padding: 20px 20px 0;
+      font-size: 24px;
+      text-align: center;
+      border-top: 1px solid #000000;
+    }
+    .topPanel {
+      margin: 0 0 30px;
+      .secBox {
+        padding: 40px 10px;
+        text-align: center;
+        background: #ffffff;
+        .entryTtl {
+          margin: 0 auto 20px;
+        }
+        .telBox {
+          max-width: 400px;
+          margin: 40px auto 0;
+          a {
+            display: block;
+            padding: 20px 10px;
+            color: #ffffff;
+            background: #e79700;
+          }
+          .em {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            line-height: 1.2;
+            background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_entry_tel.png)
+              left center no-repeat;
+            background-size: 24px auto;
+          }
+          .span {
+            font-size: 13px;
+            color: #f8e1b6;
+          }
+        }
+        .lineBox {
+          max-width: 400px;
+          margin: 10px auto 0;
+          a {
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            background: #e79700;
+            > div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              max-width: 300px;
+              margin: 0 auto;
+            }
+            .qr {
+              width: 80px;
+            }
+            p {
+              width: calc(100% - 100px);
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .topPanel {
+        display: flex;
+        justify-content: space-between;
+        > * {
+          width: calc((100% / 2) - 20px);
+        }
+      }
+    }
+    .formContainer {
+      padding: 60px 20px 100px;
+      background: #ffffff;
+      .topBox {
+        max-width: 1060px;
+        margin: 0 auto 60px;
+        .entryTtlBox {
+          max-width: 1000px;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/company_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .sec01 {
+    padding: 100px 0 120px;
+    .mvContainer {
+      .title {
+        margin: 0 0 40px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .mv {
+        margin: 0 0 30px;
+      }
+      .secPanel {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .secBox {
+        margin: 30px 0 0;
+        .photoBox {
+          .name {
+            margin: 20px 0 0;
+            text-align: right;
+            p {
+              display: inline-block;
+            }
+            .em {
+              font-size: 20px;
+            }
+          }
+        }
+        .txtBox {
+          padding: 30px 0 0;
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          .photoBox {
+            width: 36%;
+          }
+          .txtBox {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 120px 0 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/recruit_sec_bg.png)
+      no-repeat;
+    background-size: cover;
+    .infoBox {
+      border: 1px solid #888163;
+      .dl {
+        display: table;
+        width: 100%;
+        line-height: 1.7;
+        > * {
+          display: table-cell;
+          height: 70px;
+          vertical-align: middle;
+          padding: 20px 40px;
+        }
+        .dt {
+          width: 350px;
+          text-align: center;
+          border-right: 1px solid #888163;
+          background: #f8f3ed;
+        }
+        .dd {
+          background: #ffffff;
+          a {
+            display: inline-block;
+          }
+        }
+        + .dl {
+          border-top: 1px solid #888163;
+        }
+        &.line {
+          .dt {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .mapBox {
+      margin: 100px 0 0;
+    }
+  }
+  .sec03 {
+    padding: 150px 0 200px;
+    .secBox {
+      + .secBox {
+        margin: 30px 0 0;
+      }
+      .txtBox {
+        padding: 30px 0 0;
+        .title {
+          margin: 0 0 30px;
+          font-size: 30px;
+          padding: 0 5px 5px;
+          border-bottom: 1px solid #000000;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          position: relative;
+          width: 45%;
+          height: 440px;
+          img {
+            @include cover-image;
+          }
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .secTtl {
+    margin: 0 0 60px;
+    text-align: center;
+    p {
+      font-size: 34px;
+    }
+  }
+  .topSection {
+    padding: 100px 0 150px;
+    .secPanel {
+      position: relative;
+      padding: 0 0 150px;
+      .photo {
+        max-width: 1150px;
+      }
+      .secBox {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        .txtBox {
+          position: relative;
+          padding: 20px;
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_form_bg.png)
+            no-repeat;
+          background-size: cover;
+          .inner {
+            position: relative;
+            padding: 40px;
+            background: #ffffff;
+          }
+        }
+        .listBox {
+          .ul {
+            .li {
+              padding: 0 15px 10px;
+              font-size: 18px;
+              border-bottom: 1px solid #000000;
+              + .li {
+                margin: 20px 0 0;
+              }
+              p {
+                padding: 3px 0 3px 50px;
+                background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_top_check.png)
+                  left center no-repeat;
+                background-size: 30px auto;
+              }
+            }
+          }
+        }
+      }
+      .telBox {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        background: #e79700;
+        .dl {
+          padding: 30px 20px;
+          border: 1px solid #ffffff;
+          .dt {
+            margin: 0 0 10px;
+            font-size: 30px;
+          }
+          .dd {
+            a {
+              display: block;
+              color: #ffffff;
+              background: #e79700;
+            }
+            .em {
+              display: inline-block;
+              padding: 0 0 0 35px;
+              font-size: 40px;
+              line-height: 1.2;
+              background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_top_tel.png)
+                left center no-repeat;
+              background-size: 30px auto;
+            }
+            .span {
+              font-size: 14px;
+              color: #f8e1b6;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .photo {
+          position: relative;
+          width: 50%;
+          height: 600px;
+          img {
+            @include cover-image;
+          }
+        }
+        .secBox {
+          .txtBox {
+            position: absolute;
+            left: 80px;
+            bottom: 100px;
+            max-width: 720px;
+            .inner {
+              display: flex;
+              flex-direction: column;
+              min-height: 300px;
+            }
+          }
+        }
+        .telBox {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 80px;
+        }
+      }
+    }
+    .linePanel {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #49a45c;
+      .ttl {
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        + p {
+          margin: 0 0 30px;
+          color: #f8e1b6;
+          text-align: center;
+        }
+      }
+      .qrBox {
+        max-width: 780px;
+        margin: 0 auto;
+        .qr {
+          a {
+            display: block;
+          }
+        }
+        .txtBox {
+          position: relative;
+          padding: 20px;
+          background: #ffffff;
+          .txt {
+            position: relative;
+            padding: 0 0 0 1.5em;
+          }
+          .span {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .qrBox {
+          display: flex;
+          justify-content: space-between;
+          .qr {
+            width: 30%;
+          }
+          .txtBox {
+            width: 62%;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -40px;
+              bottom: 0;
+              width: 40px;
+              height: 25px;
+              margin: auto 0;
+              background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_top_line_arrow.png)
+                no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec01 {
+    margin: 0 0 120px;
+    padding: 120px 0;
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/contact_form_bg.png)
+      no-repeat;
+    background-size: cover;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .formContainer {
+      padding: 60px 20px 100px;
+      background: #ffffff;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #e3e1d3;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e3e1d3;
+    background: #ffffff;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #808080;
+    background: #888163;
+    transition: 0.6s;
+    span {
+      position: relative;
+      display: block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        height: 8px;
+        margin: auto 0;
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          no-repeat;
+        transition: 0.6s;
+      }
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #e3e1d3;
+        background: #ffffff;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #000000;
+        border-right: 3px solid #000000;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #e3e1d3;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #000000;
+      }
+    }
+
+    .postalBox {
+      border-bottom: none !important;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 20px;
+        border-bottom: 1px solid #888163;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 0 0;
+          }
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          width: 310px;
+          padding: 15px 0 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #f2aa22;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+      .otherTtl {
+        padding: 20px 20px 10px;
+        border-bottom: none;
+      }
+      .otherRadio {
+        .dt {
+          display: block;
+          text-align: right;
+          .span {
+            display: block;
+            max-width: 260px;
+            margin: 0;
+          }
+        }
+      }
+      .otherRadio01 {
+        border-bottom: none;
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #e3e1d3;
+          background: #f8f8f8;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadPanel {
+      padding: 20px;
+    }
+    .fileUploadTtl {
+      margin: 0 0 15px;
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-bottom: 1px solid #888163;
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #dadada;
+          background: #f8f8f8;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	blog
+///////////////////////////////////////////////////////////*/
+.blogMain {
+  .pageKvPanel {
+    background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/blog_kv.png)
+      no-repeat;
+    background-size: cover;
+  }
+  .blogSection {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0 150px;
+  }
+  .catePanel {
+    margin: 0 0 60px;
+    .categoryBox {
+      padding: 15px 0;
+    }
+    .webgene-header {
+      display: none;
+    }
+    .allItem,
+    .webgene-item {
+      a {
+        display: block;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          right 15px center no-repeat #888163;
+      }
+      // .active {
+      //   background: #d10b14;
+      // }
+    }
+    @media (min-width: 1025px) {
+      .categoryBox,
+      .webgene-blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .allItem,
+        .webgene-item {
+          width: 250px;
+        }
+        .webgene-header {
+          margin: 0;
+        }
+        .webgene-item {
+          margin: 0 0 0 40px;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          padding: 0 0 20px;
+          a {
+            display: block;
+            font-size: 15px;
+          }
+          .photo {
+            margin: 0 0 10px;
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            margin: 0 0 15px;
+            .cate {
+              min-width: 100px;
+              margin: 0 10px 0 0;
+              padding: 0 10px;
+              color: #ffffff;
+              text-align: center;
+              background: #f2aa22;
+            }
+          }
+          .title {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -60px 0 0 -50px;
+          .webgene-item {
+            width: calc((100% / 3) - 50px);
+            margin: 60px 0 0 50px;
+            .photo {
+              position: relative;
+              height: 280px;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              background: #cdcdcd;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+          }
+          .selected {
+            a {
+              background: #f2aa22;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      max-width: 1100px;
+      margin: 0 auto;
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          .cate {
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 10px 0 0;
+            padding: 0 10px;
+            color: #ffffff;
+            text-align: center;
+            background: #f2aa22;
+          }
+          .time {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          font-size: 24px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 auto 10px;
+          @media (min-width: 1025px) {
+            img {
+              display: block;
+              width: auto;
+              max-height: 600px;
+              // margin: 0 auto;
+              object-fit: cover;
+            }
+          }
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 40px;
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+          .postTxt {
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+          .pdfArea {
+            margin: 40px 0 0;
+            a {
+              color: #2151a3;
+            }
+          }
+        }
+      }
+      .btnBackBox {
+        margin: 80px 0 0;
+        text-align: center;
+      }
+      .btnBack {
+        display: inline-block;
+        width: 220px;
+        margin: 0 5px;
+        a {
+          display: block;
+          padding: 15px 10px;
+          color: #ffffff;
+          text-align: center;
+          background: url(https://recelljapan240116.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png)
+            left 15px center no-repeat #888163;
+          background-size: 6px auto;
+        }
+      }
+      .webgene-item-aroundPageLink {
+        display: inline-block;
+        a {
+          display: block;
+          width: 40px;
+          color: #ffffff;
+          line-height: 44px;
+          border-radius: 20px;
+          background: #d10b14;
+        }
+      }
+    }
+  }
+}

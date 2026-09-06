@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  z-index: 999;
+  .logo {
+    max-width: 215px;
+    a {
+      display: block;
+    }
+  }
+  .hamburger {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+    cursor: pointer;
+    width: 22px;
+    height: 15px;
+    z-index: 9999;
+  }
+  .hamburger span {
+    background: #707070;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .hamburger span:nth-of-type(1) {
+    top: 0;
+  }
+  .hamburger span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hamburger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .is-open.hamburger span:nth-of-type(1) {
+    transform: translate(-50%, 7px) rotate(-45deg);
+  }
+  .is-open.hamburger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .is-open.hamburger span:nth-of-type(3) {
+    transform: translate(-50%, -7px) rotate(45deg);
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+.navBox {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 430px;
+  // height: calc(100vh - 90px);
+  margin: 0 auto;
+  overscroll-behavior: none;
+  z-index: 999;
+  background: #f7e6e7;
+  .nav {
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 90px);
+    }
+    &__inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 40px 20px;
+      font-family: "Quicksand";
+      font-weight: 500;
+    }
+    &__logo {
+      width: 178px;
+      margin: 0 0 30px;
+      a {
+        display: block;
+      }
+    }
+    &__category {
+      .ttl {
+        margin: 0 0 20px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+      }
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 330px;
+        ul {
+          li {
+            + li {
+              margin: 15px 0 0;
+            }
+            a {
+              display: inline-block;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    &__bottom {
+      margin: auto 0 0;
+      padding: 20px 0 0;
+    }
+    &__img {
+      position: absolute;
+      right: 50px;
+      bottom: 65px;
+      width: 86px;
+    }
+    &__sns {
+      margin: 0 0 30px;
+      dl {
+        dt {
+          margin: 0 0 15px;
+          font-size: 18px;
+          letter-spacing: 0.1em;
+        }
+        ul {
+          li {
+            display: inline-block;
+            width: 22px;
+            + li {
+              margin: 0 0 0 20px;
+            }
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    &__copy {
+      padding: 0 20px 0 0;
+      font-size: 16px;
+      font-size: clamp(0.625rem, -0.0417rem + 1.0417vw, 1rem);
+      font-weight: 400;
+    }
+    &__photo {
+      margin: auto 0 0;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+  }
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+
+/* --------------------------------------------------
+	modal
+-------------------------------------------------- */
+.overlay,
+.itemModal {
+  max-width: 430px;
+}
+.modalBox {
+  padding: 50px 25px;
+}
+.modalBoxInner {
+  max-width: 320px;
+  .titleBox {
+    p {
+      min-width: 96px;
+    }
+    dl {
+      dt {
+        font-size: 20px;
+      }
+      dd {
+        font-size: 11px;
+      }
+    }
+  }
+  .infoBox {
+    font-size: 11px;
+    ul {
+      li {
+        padding: 20px 0;
+        > dl {
+          > dt {
+            width: 85px;
+          }
+          > dd {
+            width: calc(100% - 85px);
+          }
+        }
+      }
+    }
+  }
+  .planBox {
+    dl {
+      dt {
+        width: 35px;
+        + dd {
+          width: 100px;
+        }
+      }
+    }
+    aside {
+      font-size: 10px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 430px;
+    &__items {
+      max-width: 430px;
+    }
+    &__container {
+      padding: 100px 40px 120px;
+    }
+    &__panel {
+      max-width: 290px;
+    }
+    &__category {
+      .ttl {
+        margin: 0 0 35px;
+        font-size: 17px;
+      }
+      .listBox {
+        margin: 0 0 50px;
+        ul {
+          + ul {
+            padding: 80px 0 0;
+            background: url("../image/common/footer_umbrella.png") center top
+              no-repeat;
+            background-size: 45px auto;
+          }
+          li {
+            + li {
+              margin: 15px 0 0;
+            }
+            a {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+    &__sns {
+      max-width: 280px;
+      margin: 0 0 55px;
+      dl {
+        dt {
+          font-size: 17px;
+        }
+        ul {
+          li {
+            width: 22px;
+          }
+        }
+      }
+    }
+    &__logo {
+      max-width: 237px;
+      margin: 0 0 30px;
+    }
+    &__copy {
+      font-size: 11px;
+    }
+    &__pagetop {
+      position: absolute;
+      right: 20px;
+      bottom: 120px;
+      width: 20px;
+      max-width: 20px;
+    }
+  }
+}

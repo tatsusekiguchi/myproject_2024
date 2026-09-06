@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+
+  .imgPc {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    z-index: 999;
+    background: url(https://ohtsuki-tosou.com/system_panel/uploads/images/header_bg.png) no-repeat;
+    background-size: cover;
+  }
+  .header .headTitle {
+    display: none;
+  }
+  .header .logo {
+    width: 150px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    top: 10px;
+    right: 15px;
+  }
+  .header.pageHeader {
+    background: url(https://ohtsuki-tosou.com/system_panel/uploads/images/header_bg_black.png) no-repeat;
+    background-size: cover;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox.active {
+    top: 55px;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageKvPanel {
+    justify-content: center;
+    padding: 60px 20px 20px;
+    height: 250px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 40px;
+  }
+
+  .pageTitleBox {
+    margin: 0 0 40px;
+    text-align: center;
+  }
+  .pageTitleBox .secTtl {
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 80px 0 60px;
+  }
+  .footer .footContact .ttl {
+    margin: 0 0 50px;
+  }
+  .footer .footContact .listBox {
+    max-width: 400px;
+  }
+  .footer .footContact .listBox .list {
+    padding: 0 0 0 25px;
+    background: url(https://ohtsuki-tosou.com/system_panel/uploads/images/footer_contact_arrow.png) left center no-repeat;
+    background-size: 15px auto;
+  }
+  .footer .footContact .listBox .list + .list {
+    margin: 30px 0 0;
+  }
+  .footer .footContact .listBox .list .mail a {
+    width: 220px;
+  }
+  .footer .footPanel {
+    padding: 50px 0 20px;
+  }
+  .footer .footPanel .logo {
+    max-width: 240px;
+  }
+  .footer .footPanel .tel a {
+    font-size: 30px;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+    text-align: center;
+  }
+}

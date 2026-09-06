@@ -1,0 +1,1291 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvPanel {
+  position: relative;
+}
+.topMain .topKvPanel .topKv {
+  position: relative;
+  height: 100vh;
+}
+.topMain .topKvPanel .topKv .kvBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topMain .topKvPanel .topKv .kvBox .kv01 {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/top_kv_01.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv02 {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/top_kv_02.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .topKv .kvBox .kv03 {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/top_kv_03.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .topKvPanel .kvTitleBox {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 70%;
+  max-width: 500px;
+  z-index: 1;
+}
+.topMain .topSection {
+  padding: 60px 0;
+}
+.topMain .sec01 {
+  padding: 60px 0 120px;
+}
+.topMain .sec01 .listBox .ul .li {
+  position: relative;
+}
+.topMain .sec01 .listBox .ul .dl {
+  padding: 20px 0 0;
+}
+.topMain .sec01 .listBox .ul .dl .dt {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.topMain .sec01 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec01 .listBox .ul .li {
+    width: calc(33.3333333333% - 45px);
+  }
+  .topMain .sec01 .listBox .ul .li + .li::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    bottom: 20px;
+    width: 1px;
+    height: 180px;
+    background: #d7d7d7;
+  }
+  .topMain .sec01 .listBox .ul .photo {
+    position: relative;
+    height: 260px;
+  }
+  .topMain .sec01 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec01 .btnMore {
+  margin: 60px auto 0;
+}
+.topMain .sec02 {
+  padding: 80px 0;
+  background: #efebe8;
+}
+.topMain .sec02 .secBox .txtBox .btnMore {
+  margin: 80px auto 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec02 .secBox {
+    display: flex;
+    align-items: center;
+  }
+  .topMain .sec02 .secBox .photo {
+    width: 50%;
+  }
+  .topMain .sec02 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.topMain .sec03 {
+  padding: 80px 0;
+  background: #ccede0;
+}
+.topMain .sec03 .secBox .txtBox .btnMore {
+  margin: 80px auto 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .secBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec03 .secBox .photo {
+    width: 50%;
+  }
+  .topMain .sec03 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.topMain .sec04 {
+  padding: 120px 0;
+  color: #ffffff;
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .sec04 .listBox .ul .li {
+  position: relative;
+}
+.topMain .sec04 .listBox .ul .dl {
+  padding: 20px 0 0;
+}
+.topMain .sec04 .listBox .ul .dl .dt {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.topMain .sec04 .listBox .ul .dl .dd {
+  line-height: 2;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topMain .sec04 .listBox .ul .li {
+    width: calc(50% - 50px);
+  }
+  .topMain .sec04 .listBox .ul .photo {
+    position: relative;
+    height: 300px;
+  }
+  .topMain .sec04 .listBox .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.topMain .sec04 .btnMoreGrey {
+  margin: 30px auto 0;
+}
+.topMain .sec05 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.topMain .sec05 .secBox .infoBox .dl {
+  display: flex;
+  list-style: 2px;
+}
+.topMain .sec05 .secBox .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.topMain .sec05 .secBox .infoBox .dl .dt {
+  width: 100px;
+}
+.topMain .sec05 .secBox .infoBox .dl .dd {
+  position: relative;
+  width: calc(100% - 100px);
+  padding: 0 0 0 10px;
+}
+.topMain .sec05 .secBox .infoBox .dl .dd::before {
+  content: ":";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.topMain .sec05 .secBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+.topMain .sec05 .secBox .btnMore {
+  margin: 40px auto 0;
+}
+@media (min-width: 1025px) {
+  .topMain .sec05 .secBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .topMain .sec05 .secBox .photo {
+    width: 50%;
+    max-width: 500px;
+  }
+  .topMain .sec05 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.topMain .sec06 {
+  padding: 120px 0;
+}
+.topMain .sec06 .webgene-blog {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.topMain .sec06 .webgene-blog .webgene-header {
+  display: none;
+}
+.topMain .sec06 .webgene-blog .webgene-item {
+  display: flex;
+}
+.topMain .sec06 .webgene-blog .webgene-item + .webgene-item {
+  margin: 20px 0 0;
+}
+.topMain .sec06 .webgene-blog .webgene-item .infoBox {
+  width: 340px;
+}
+.topMain .sec06 .webgene-blog .webgene-item .infoBox > * {
+  display: inline-block;
+  min-width: 150px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.topMain .sec06 .webgene-blog .webgene-item .infoBox .cate {
+  margin: 0 10px 0 0;
+  background: #005e37;
+}
+.topMain .sec06 .webgene-blog .webgene-item .infoBox .time {
+  background: #231815;
+}
+.topMain .sec06 .webgene-blog .webgene-item .title {
+  width: calc(100% - 340px);
+  padding: 2px 0 0;
+}
+.topMain .sec06 .webgene-blog .webgene-item .title a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.topMain .sec06 .btnMore {
+  margin: 60px auto 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+.aboutMain .topSection {
+  padding: 60px 0;
+}
+.aboutMain .sec01 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.aboutMain .sec01 .secPanel + .secPanel {
+  margin: 80px 0 0;
+}
+.aboutMain .sec01 .secPanel h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+.aboutMain .sec01 .secPanel .txt {
+  margin: 0 0 20px;
+}
+.aboutMain .sec01 .secPanel .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutMain .sec01 .secPanel .listBox .ul .li {
+  width: calc(50% - 15px);
+}
+
+/*////////////////////////////////////////////////////////////
+	history
+///////////////////////////////////////////////////////////*/
+.historyMain .topSection {
+  padding: 60px 0;
+}
+.historyMain .sec01 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.historyMain .sec01 .secBox {
+  margin: 0 0 30px;
+}
+.historyMain .sec01 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.historyMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .historyMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .historyMain .sec01 .secBox .photo {
+    width: 49%;
+  }
+  .historyMain .sec01 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.historyMain .sec01 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.historyMain .sec01 .listBox .ul .li {
+  width: calc(33.3333333333% - 15px);
+}
+
+/*////////////////////////////////////////////////////////////
+	menu
+///////////////////////////////////////////////////////////*/
+.menuMain .topSection {
+  padding: 60px 0;
+}
+.menuMain .sec01 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.menuMain .sec01 .topTxt {
+  margin: 0 0 100px;
+  text-align: center;
+}
+.menuMain .sec01 .secPanel {
+  padding: 0 0 30px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.menuMain .sec01 .secPanel + .secPanel {
+  margin: 80px 0 0;
+}
+.menuMain .sec01 .secPanel h3 {
+  margin: 0 0 60px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.menuMain .sec01 .secPanel .secBox .photoBox p {
+  padding: 10px 10px 0;
+  font-size: 14px;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox {
+  font-size: 20px;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox .dl {
+  display: flex;
+  justify-content: space-between;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox .dl + * {
+  margin: 15px 0 0;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox .dl .dd p {
+  display: inline;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox .dl .dd .span {
+  font-size: 14px;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox p + .dl {
+  margin: 15px 0 0;
+}
+.menuMain .sec01 .secPanel .secBox .menuBox .dl + .span {
+  font-size: 14px;
+}
+.menuMain .sec01 .secPanel .secBox .txtBox {
+  padding: 10px 0 0;
+}
+.menuMain .sec01 .secPanel .secBox .txtBox .txt {
+  margin: 20px 0 0;
+}
+.menuMain .sec01 .secPanel .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+@media (min-width: 1025px) {
+  .menuMain .sec01 .secPanel .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuMain .sec01 .secPanel .secBox .photoBox {
+    width: 49%;
+  }
+  .menuMain .sec01 .secPanel .secBox .txtBox {
+    width: 47%;
+  }
+  .menuMain .sec01 .secPanel:nth-child(even) .secBox {
+    flex-direction: row-reverse;
+  }
+}
+.menuMain .sec02 .menuBox,
+.menuMain .sec03 .menuBox,
+.menuMain .sec04 .menuBox {
+  font-size: 20px;
+}
+.menuMain .sec02 .menuBox .dl,
+.menuMain .sec03 .menuBox .dl,
+.menuMain .sec04 .menuBox .dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0 0 10px 10px;
+}
+.menuMain .sec02 .menuBox .dl + *,
+.menuMain .sec03 .menuBox .dl + *,
+.menuMain .sec04 .menuBox .dl + * {
+  margin: 15px 0 0;
+}
+.menuMain .sec02 .menuBox .dl .dt p,
+.menuMain .sec02 .menuBox .dl .dd p,
+.menuMain .sec03 .menuBox .dl .dt p,
+.menuMain .sec03 .menuBox .dl .dd p,
+.menuMain .sec04 .menuBox .dl .dt p,
+.menuMain .sec04 .menuBox .dl .dd p {
+  display: inline;
+}
+.menuMain .sec02 .menuBox .dl .dt .span,
+.menuMain .sec02 .menuBox .dl .dd .span,
+.menuMain .sec03 .menuBox .dl .dt .span,
+.menuMain .sec03 .menuBox .dl .dd .span,
+.menuMain .sec04 .menuBox .dl .dt .span,
+.menuMain .sec04 .menuBox .dl .dd .span {
+  font-size: 14px;
+}
+.menuMain .sec02 .menuBox p + .dl,
+.menuMain .sec03 .menuBox p + .dl,
+.menuMain .sec04 .menuBox p + .dl {
+  margin: 15px 0 0;
+}
+.menuMain .sec02 .menuBox .dl + .span,
+.menuMain .sec03 .menuBox .dl + .span,
+.menuMain .sec04 .menuBox .dl + .span {
+  font-size: 14px;
+}
+.menuMain .sec02 {
+  padding: 120px 0;
+}
+.menuMain .sec02 .menuBoxList {
+  margin: 0 0 60px;
+}
+@media (min-width: 1025px) {
+  .menuMain .sec02 .menuBoxList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuMain .sec02 .menuBoxList > * {
+    width: calc(50% - 20px);
+  }
+}
+.menuMain .sec02 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.menuMain .sec02 .listBox .ul .li {
+  width: calc(33.3333333333% - 15px);
+}
+.menuMain .sec03 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.menuMain .sec03 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+@media (min-width: 1025px) {
+  .menuMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .menuMain .sec03 .secBox .photo {
+    width: 40%;
+  }
+  .menuMain .sec03 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.menuMain .sec04 {
+  padding: 120px 0;
+}
+.menuMain .sec04 .menuBox + .menuBox {
+  margin: 40px 0 0;
+}
+.menuMain .sec04 .menuBox .ttl {
+  margin: 0 0 15px;
+}
+@media (min-width: 1025px) {
+  .menuMain .sec04 .menuContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuMain .sec04 .menuContainer > * {
+    width: calc(50% - 20px);
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	seasons
+///////////////////////////////////////////////////////////*/
+.seasonsMain .topSection {
+  padding: 60px 0;
+}
+.seasonsMain .sec01 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.seasonsMain .sec01 .secBox + .secBox {
+  margin: 60px 0 0;
+  padding: 60px 0 0;
+  border-top: 1px solid #d7d7d7;
+}
+.seasonsMain .sec01 .secBox .txtBox {
+  display: flex;
+  justify-content: space-between;
+}
+.seasonsMain .sec01 .secBox .txtBox .ttlBox {
+  width: 80px;
+  line-height: 1;
+}
+.seasonsMain .sec01 .secBox .txtBox .ttlBox .dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seasonsMain .sec01 .secBox .txtBox .ttlBox .dl .dt {
+  margin: 0 0 15px;
+  padding: 0 10px 15px;
+  font-size: 50px;
+  writing-mode: vertical-lr;
+  border-bottom: 1px solid #202020;
+}
+.seasonsMain .sec01 .secBox .txtBox .ttlBox .dl .dd {
+  font-size: 25px;
+  writing-mode: vertical-lr;
+}
+.seasonsMain .sec01 .secBox .txtBox .txt {
+  width: calc(100% - 140px);
+}
+.seasonsMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 20px 0 0;
+}
+.seasonsMain .sec01 .secBox .photoBox {
+  position: relative;
+}
+.seasonsMain .sec01 .secBox .photoBox .photo {
+  width: 100%;
+  max-width: 340px;
+}
+.seasonsMain .sec01 .secBox .photoBox .photo01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.seasonsMain .sec01 .secBox .photoBox .photo02 {
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
+}
+.seasonsMain .sec01 .secBox .photoBox .photo03 {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  z-index: 2;
+}
+.seasonsMain .sec01 .secBox:nth-child(even) .txtBox {
+  flex-direction: row-reverse;
+}
+@media (min-width: 1025px) {
+  .seasonsMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    min-height: 380px;
+  }
+  .seasonsMain .sec01 .secBox + .secBox {
+    min-height: 440px;
+  }
+  .seasonsMain .sec01 .secBox .txtBox {
+    width: 45%;
+  }
+  .seasonsMain .sec01 .secBox .photoBox {
+    width: 50%;
+  }
+  .seasonsMain .sec01 .secBox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.seasonsMain .sec02 {
+  padding: 120px 0;
+}
+.seasonsMain .sec02 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.seasonsMain .sec02 .listBox .ul .li {
+  width: calc(33.3333333333% - 15px);
+}
+.seasonsMain .sec02 .listBox .ul a {
+  display: block;
+}
+.seasonsMain .sec02 .listBox .ul p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////
+	group
+///////////////////////////////////////////////////////////*/
+.groupMain .topSection {
+  padding: 60px 0;
+}
+.groupMain .topSection .telItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 560px;
+  margin: 30px auto;
+}
+.groupMain .topSection .telItem .tel a {
+  display: inline-block;
+  font-weight: bold;
+}
+.groupMain .topSection .telItem .tel p {
+  display: inline-block;
+  font-size: 20px;
+}
+.groupMain .topSection .telItem .tel .em {
+  font-size: 34px;
+}
+.groupMain .topSection .telItem .info {
+  line-height: 1.7;
+}
+.groupMain .topSection .caution {
+  border: 1px solid #ccede0;
+}
+.groupMain .topSection .caution .ttl {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: #ccede0;
+}
+.groupMain .topSection .caution .box {
+  padding: 20px;
+}
+.groupMain .topSection .caution .ul {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 2.5;
+}
+.groupMain .sec01 {
+  padding: 60px 0;
+}
+.groupMain .sec01 .secBox {
+  padding: 30px 60px;
+  background: #efebe8;
+}
+.groupMain .sec01 .secBox + .secBox {
+  margin: 20px 0 0;
+}
+.groupMain .sec01 .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media (min-width: 1025px) {
+  .groupMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .groupMain .sec01 .secBox .photo {
+    width: 330px;
+  }
+  .groupMain .sec01 .secBox .txtBox {
+    width: calc(100% - 400px);
+  }
+}
+.groupMain .sec02 {
+  padding: 60px 0 120px;
+}
+.groupMain .sec02 .listBox .ul .dl {
+  padding: 10px 10px 0;
+}
+.groupMain .sec02 .listBox .ul .dl .dt {
+  margin: 0 0 10px;
+  font-size: 0;
+  text-align: center;
+}
+.groupMain .sec02 .listBox .ul .dl .dt p {
+  display: inline-block;
+  font-size: 20px;
+}
+.groupMain .sec02 .listBox .ul .dl .dt .span {
+  font-size: 14px;
+}
+@media (min-width: 1025px) {
+  .groupMain .sec02 .listBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -60px 0 0;
+  }
+  .groupMain .sec02 .listBox .ul .li {
+    width: calc(50% - 30px);
+    margin: 60px 0 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	shop
+///////////////////////////////////////////////////////////*/
+.shopMain .topSection {
+  padding: 60px 0;
+}
+.shopMain .section {
+  padding: 100px 0;
+}
+.shopMain .sec01 {
+  background: #efebe8;
+}
+.shopMain .sec01 .secBox .txtBox {
+  padding: 20px 0 0;
+}
+.shopMain .sec01 .secBox .txtBox .txt p + p {
+  margin: 30px 0 0;
+}
+.shopMain .sec01 .secBox .txtBox .name {
+  margin: 30px 0 0;
+  text-align: right;
+}
+.shopMain .sec01 .secBox .txtBox .name p {
+  display: inline-block;
+}
+.shopMain .sec01 .secBox .txtBox .name .em {
+  margin: 0 0 0 10px;
+  font-size: 30px;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec01 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shopMain .sec01 .secBox .photo {
+    width: 45%;
+  }
+  .shopMain .sec01 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.shopMain .sec02 {
+  padding: 100px 0 0;
+}
+.shopMain .sec02 .secBox {
+  margin: 0 0 40px;
+}
+.shopMain .sec02 .secBox .infoBox .dl {
+  display: flex;
+  list-style: 2px;
+}
+.shopMain .sec02 .secBox .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.shopMain .sec02 .secBox .infoBox .dl .dt {
+  width: 100px;
+}
+.shopMain .sec02 .secBox .infoBox .dl .dd {
+  position: relative;
+  width: calc(100% - 100px);
+  padding: 0 0 0 10px;
+}
+.shopMain .sec02 .secBox .infoBox .dl .dd::before {
+  content: ":";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shopMain .sec02 .secBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec02 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shopMain .sec02 .secBox .photo {
+    width: 50%;
+  }
+  .shopMain .sec02 .secBox .txtBox {
+    width: 45%;
+  }
+}
+.shopMain .sec02 .listBox {
+  margin: 0 0 80px;
+}
+.shopMain .sec02 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.shopMain .sec02 .listBox .ul .li {
+  width: calc(33.3333333333% - 15px);
+}
+.shopMain .sec02 .accessList {
+  padding: 0 0 80px;
+}
+.shopMain .sec02 .accessBox + .accessBox {
+  margin: 60px 0 0;
+}
+.shopMain .sec02 .accessBox h3 {
+  margin: 0 0 30px;
+  padding: 0 60px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.shopMain .sec02 .accessBox .accessImg {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.shopMain .sec02 .accessBox01 h3 {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/shop_sec02_car.png) left 20px top 5px no-repeat;
+  background-size: 30px auto;
+}
+.shopMain .sec02 .accessBox02 h3 {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/shop_sec02_train.png) left 20px top no-repeat;
+  background-size: 25px auto;
+}
+.shopMain .sec03 .topTxt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.shopMain .sec03 .listBox .ul {
+  display: flex;
+  justify-content: space-between;
+}
+.shopMain .sec03 .listBox .ul .li {
+  width: calc(33.3333333333% - 15px);
+}
+.shopMain .sec04 {
+  background: #efebe8;
+}
+.shopMain .sec04 .secBox {
+  margin: 0 0 40px;
+}
+.shopMain .sec04 .secBox .infoBox .dl {
+  display: flex;
+  list-style: 2px;
+}
+.shopMain .sec04 .secBox .infoBox .dl + .dl {
+  margin: 15px 0 0;
+}
+.shopMain .sec04 .secBox .infoBox .dl .dt {
+  width: 100px;
+}
+.shopMain .sec04 .secBox .infoBox .dl .dd {
+  position: relative;
+  width: calc(100% - 100px);
+  padding: 0 0 0 10px;
+}
+.shopMain .sec04 .secBox .infoBox .dl .dd::before {
+  content: ":";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shopMain .sec04 .secBox .infoBox .dl .dd a {
+  display: inline-block;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .shopMain .sec04 .secBox .photo {
+    width: 50%;
+  }
+  .shopMain .sec04 .secBox .txtBox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.shopMain .sec04 .intro .logoBox {
+  max-width: 380px;
+}
+.shopMain .sec04 .intro .txt {
+  line-height: 2.5;
+}
+@media (min-width: 1025px) {
+  .shopMain .sec04 .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shopMain .sec04 .intro .logoBox {
+    width: 35%;
+  }
+  .shopMain .sec04 .intro .txt {
+    width: 62%;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .topSection {
+  padding: 60px 0;
+}
+.contactMain .topSection .groupMenu {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+.contactMain .topSection .groupMenu .dl .dt {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 15px;
+  font-size: 24px;
+  color: #005e37;
+}
+.contactMain .topSection .groupMenu .dl .dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 1px;
+  margin: 0 auto;
+  background: #202020;
+}
+.contactMain .topSection .telItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 560px;
+  margin: 30px auto;
+}
+.contactMain .topSection .telItem .tel a {
+  display: inline-block;
+  font-weight: bold;
+}
+.contactMain .topSection .telItem .tel p {
+  display: inline-block;
+  font-size: 20px;
+}
+.contactMain .topSection .telItem .tel .em {
+  font-size: 34px;
+}
+.contactMain .topSection .telItem .info {
+  line-height: 1.7;
+}
+.contactMain .topSection .caution {
+  border: 1px solid #ccede0;
+}
+.contactMain .topSection .caution .ttl {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: #ccede0;
+}
+.contactMain .topSection .caution .box {
+  padding: 20px;
+}
+.contactMain .topSection .caution .ul {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 2.5;
+}
+.contactMain .sec01 {
+  padding: 120px 0;
+  background: #efebe8;
+}
+.contactMain .sec01 .secPanel + .secPanel {
+  margin: 15px 0 0;
+}
+.contactMain .sec01 .secPanel .ttlBox {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  color: #ffffff;
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/contact_sec01_ttl_bg.png) no-repeat;
+  background-size: cover;
+}
+.contactMain .sec01 .secPanel .ttlBox .icon {
+  margin: 0 15px 0 0;
+  font-size: 26px;
+}
+.contactMain .sec01 .secPanel .ttlBox .ttl {
+  font-size: 18px;
+}
+.contactMain .sec01 .secPanel .txtBox {
+  padding: 20px 70px;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain .blogSection {
+  padding: 80px 0 100px;
+}
+@media (min-width: 1025px) {
+  .newsMain .postContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsMain .postContainer .catePanel {
+    width: 200px;
+  }
+  .newsMain .postContainer .blogPanel {
+    width: calc(100% - 260px);
+  }
+}
+.newsMain .catePanel .webgene-blog .webgene-header {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  text-align: center;
+  border-bottom: 1px solid #202020;
+}
+.newsMain .catePanel .webgene-blog .webgene-header h2,
+.newsMain .catePanel .webgene-blog .webgene-header h3 {
+  position: relative;
+  font-size: 24px;
+  color: #005e37;
+}
+.newsMain .catePanel .webgene-blog .webgene-item {
+  position: relative;
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 0 0 0 10px;
+}
+.newsMain .catePanel .webgene-blog .webgene-item::before {
+  content: "-";
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+.newsMain .catePanel .webgene-blog .webgene-item a {
+  display: block;
+  padding: 10px 5px;
+}
+.newsMain .blogPanel--list {
+  padding: 10px 0 0;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item a {
+  display: block;
+  min-height: 300px;
+  padding: 0 0 15px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox > * {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .cate {
+  margin: 0 10px 0 0;
+  background: #005e37;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .infoBox .time {
+  background: #231815;
+}
+.newsMain .blogPanel--list .webgene-blog .webgene-item .title {
+  padding: 0 0 15px;
+  text-decoration: underline;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    width: calc(33.3333333333% - 20px);
+    margin: 20px 0 0 20px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img {
+    position: relative;
+    height: 220px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsMain .blogPanel--list .webgene-pagination {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px auto 0;
+  font-size: 14px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul li a {
+  display: block;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  background: #cdcdcd;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .prev {
+  margin: 0 2px 0 0;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .next {
+  position: relative;
+  margin: 0 0 0 2px;
+}
+.newsMain .blogPanel--list .webgene-pagination ul .selected a {
+  background: #0f0b09;
+}
+@media (min-width: 1025px) {
+  .newsMain .blogPanel--list .webgene-pagination ul li {
+    margin: 0 5px;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .prev {
+    float: left;
+  }
+  .newsMain .blogPanel--list .webgene-pagination ul .next {
+    float: right;
+  }
+}
+.newsMain .blogPanel--detail .webgene-blog .webgene-header {
+  display: none;
+}
+.newsMain .blogPanel--detail .webgene-blog .info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.newsMain .blogPanel--detail .webgene-blog .info > * {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .cate {
+  margin: 0 10px 0 0;
+  background: #005e37;
+}
+.newsMain .blogPanel--detail .webgene-blog .info .time {
+  background: #231815;
+}
+.newsMain .blogPanel--detail .webgene-blog .ttlBox {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide {
+  max-width: 600px;
+  margin: 0 0 40px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 65%;
+}
+.newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-list {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .thumb-item {
+  margin: 0 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slick-slide {
+  margin: 0 10px;
+}
+.newsMain .blogPanel--detail .webgene-blog .slideNav .slick-slide {
+  margin: 0 5px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo {
+  margin-bottom: 20px;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .photo img {
+  width: auto;
+  max-width: 100%;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt {
+  line-height: 2;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt p + p {
+  margin: 30px 0 0;
+}
+.newsMain .blogPanel--detail .webgene-blog .postBox .postTxt img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.newsMain .blogPanel--detail .pdfArea {
+  margin: 40px 0 0;
+}
+.newsMain .blogPanel--detail .pdfArea a {
+  color: #2151a3;
+}
+.newsMain .btnBack {
+  max-width: 200px;
+  margin: 100px auto 0;
+}
+.newsMain .btnBack a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/btn_more_bg.png) no-repeat;
+  background-size: cover;
+}
+.newsMain .btnBack a p {
+  background: url(https://yamadayayasuo240401.smooooth.jp/system_panel/uploads/images/btn_back_arrow.png) left center no-repeat;
+}

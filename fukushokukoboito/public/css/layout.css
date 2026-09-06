@@ -1,0 +1,1739 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain .topKvContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: #e6326b;
+}
+.topMain .topKvContainer .topKvPanel {
+  padding: 140px 10px 0;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/top_kv_bg.png) center top -80px no-repeat #ffffff;
+  background-size: 100% auto;
+}
+.topMain .topKvContainer .topKvPanel .kvBox {
+  position: relative;
+}
+.topMain .topKvContainer .topKvPanel .kvBox h1 {
+  position: absolute;
+  color: #ffffff;
+  z-index: -1;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .txtBox {
+  padding: 0 0 30px;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .txtBox .ttlBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .txtBox .ttlBox .ttl {
+  width: 70%;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .txtBox .ttlBox .circle {
+  position: relative;
+  top: -25px;
+  width: 20%;
+}
+.topMain .topKvContainer .topKvPanel .kvBox .txtBox .txt {
+  max-width: 650px;
+}
+@media (min-width: 1025px) {
+  .topMain .topKvContainer .topKvPanel .kvBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .topMain .topKvContainer .topKvPanel .kvBox .photo {
+    position: absolute;
+    left: -5px;
+    bottom: -40px;
+    width: 39%;
+  }
+  .topMain .topKvContainer .topKvPanel .kvBox .txtBox {
+    width: 60%;
+  }
+}
+.topMain .topKvContainer .kvCaution {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  color: #ffffff;
+}
+.topMain .topKvContainer .kvCaution .caution {
+  width: 60%;
+  max-width: 650px;
+}
+.topMain .topNavBox {
+  padding: 20px 0 60px;
+}
+.topMain .topNavBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px 0 0 -25px;
+}
+.topMain .topNavBox .ul .li {
+  width: calc(33.3333333333% - 25px);
+  margin: 20px 0 0 25px;
+}
+.topMain .topNavBox .ul .li a {
+  display: block;
+}
+.topMain .sec01 {
+  padding: 0 0 80px;
+}
+.topMain .sec01 .rankBox {
+  margin: 0 0 60px;
+  padding: 0 25px;
+}
+.topMain .sec01 .rankBox .ul .li .photoBox {
+  position: relative;
+}
+.topMain .sec01 .rankBox .ul .li .photoBox .num {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  color: #ffffff;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/top_sec01_num_bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.topMain .sec01 .rankBox .ul .li .txtBox {
+  padding: 5px;
+  line-height: 1.7;
+}
+.topMain .sec01 .rankBox .ul a {
+  display: block;
+  padding: 5px;
+  border: 3px solid transparent;
+}
+@media (min-width: 1025px) {
+  .topMain .sec01 .rankBox .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -55px;
+  }
+  .topMain .sec01 .rankBox .ul .li {
+    width: calc(33.3333333333% - 55px);
+    margin: 40px 0 0 55px;
+  }
+  .topMain .sec01 .rankBox .ul a:hover {
+    opacity: 1;
+    border: 3px solid #f3ab01;
+  }
+}
+.topMain .sec02 {
+  padding: 80px 0;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png);
+}
+.topMain .sec02 .chart {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+.topMain .sec03 {
+  padding: 80px 0;
+}
+.topMain .sec03 .priceBox {
+  margin: 0 0 50px;
+  padding: 50px 20px;
+  text-align: center;
+  border: 10px solid #5daa04;
+  background: #fffded;
+}
+.topMain .sec03 .priceBox .ttl {
+  margin: 0 0 40px;
+  font-size: 22px;
+}
+.topMain .sec03 .priceBox .chart {
+  max-width: 1080px;
+  margin: 0 auto 50px;
+}
+.topMain .sec03 .bnrList {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.topMain .sec03 .bnrList .ul .li a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .topMain .sec03 .bnrList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -30px 0 0 -30px;
+  }
+  .topMain .sec03 .bnrList .ul .li {
+    width: calc(50% - 30px);
+    margin: 30px 0 0 30px;
+  }
+}
+.topMain .sec04 {
+  position: relative;
+  margin: 0 0 100px;
+  padding: 80px 0 0;
+}
+.topMain .sec04::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 55px);
+  z-index: -1;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png);
+}
+.topMain .sec04 .topTxt {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.topMain .sec04 .slidePanel .slideBox .ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topMain .sec04 .slidePanel .slideBox .ul .li {
+  position: relative;
+  width: 20%;
+  margin: 0 5px;
+  padding: 0 0 17%;
+}
+.topMain .sec04 .slidePanel .slideBox .ul .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .topMain .sec04 .btnMore {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+.topMain .bottomContainer {
+  padding: 0 0 100px;
+}
+.topMain .bottomContainer .bottomPanel {
+  padding: 50px 20px;
+  color: #ffffff;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/top_bottom_bg.png) center no-repeat;
+  background-size: cover;
+}
+.topMain .bottomContainer .bottomPanel .ttl {
+  margin: 0 0 40px;
+  font-size: 34px;
+  text-align: center;
+}
+.topMain .bottomContainer .bottomPanel .txt {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////
+	item
+///////////////////////////////////////////////////////////*/
+.itemMain .itemSection {
+  padding: 80px 0 150px;
+}
+.itemMain .itemSection01 {
+  margin: 0 0 150px;
+}
+.itemMain .itemSection01 .topPageLink {
+  margin: 0 0 60px;
+}
+.itemMain .itemSection01 .topPageLink .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px 0 0 -15px;
+}
+.itemMain .itemSection01 .topPageLink .ul .li {
+  width: calc(20% - 15px);
+  margin: 15px 0 0 15px;
+}
+.itemMain .itemSection01 .topPageLink .ul .li a {
+  display: block;
+}
+.itemMain .itemSection01 .itemContainer + .itemContainer {
+  margin: 120px 0 0;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle {
+  margin: 0 0 40px;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle > * {
+  padding: 5px 10px;
+  font-size: 30px;
+  border: 1px solid #ffffff;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle.itemTitle01 {
+  background: #009fe0;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle.itemTitle02 {
+  background: #e60180;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle.itemTitle03 {
+  background: #cbbe00;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle.itemTitle04 {
+  background: #00974a;
+}
+.itemMain .itemSection01 .itemContainer .itemTitle.itemTitle05 {
+  background: #e51c1d;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel + .itemPanel {
+  margin: 80px 0 0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slickSlide .li {
+  border: 1px solid #d9d9d9;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slick-list {
+  margin: 0 0 10px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .thumb-item {
+  margin: 0 0 10px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .thumb-item img {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1025px) {
+  .itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .thumb-item img {
+    display: block;
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slick-slide {
+  margin: 0 5px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slideNav .slider .li > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 100%;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slideNav .slider .li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .leftBox .slideNav .selected {
+  border: 1px solid #f3ab01;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox .ttl {
+  font-size: 24px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox .hurry p {
+  display: inline-block;
+  min-width: 110px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox01 {
+  border-bottom: 1px solid #009fe0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox01 .ttl {
+  color: #009fe0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox01 .hurry p {
+  background: #009fe0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox02 {
+  border-bottom: 1px solid #e60180;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox02 .ttl {
+  color: #e60180;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox02 .hurry p {
+  background: #e60180;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox03 {
+  border-bottom: 1px solid #cbbe00;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox03 .ttl {
+  color: #cbbe00;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox03 .hurry p {
+  background: #cbbe00;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox04 {
+  border-bottom: 1px solid #00974a;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox04 .ttl {
+  color: #00974a;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox04 .hurry p {
+  background: #00974a;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox05 {
+  border-bottom: 1px solid #e51c1d;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox05 .ttl {
+  color: #e51c1d;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .ttlBox.ttlBox05 .hurry p {
+  background: #e51c1d;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .itemNum {
+  margin: 0 0 30px;
+  color: #b9b9b9;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox {
+  margin: 30px 0 0;
+  padding: 20px 30px;
+  border: 1px dotted #000000;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox .dl {
+  display: flex;
+  align-items: center;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox .dl + .dl {
+  margin: 20px 0 0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox .dl .dt {
+  width: 110px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox .dl .dd p {
+  display: inline-block;
+  font-size: 20px;
+  color: #e10000;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox .dl .dd .em {
+  font-size: 34px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .priceBox + .txt {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .btnList {
+  max-width: 480px;
+  margin: 30px 0 0;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .btnList .ul .li .btnMore {
+  width: 230px;
+}
+.itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .btnList .ul .li .btnMore.price a {
+  background: #009fe0;
+}
+@media (min-width: 1025px) {
+  .itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .itemMain .itemSection01 .itemPanelList .itemPanel .rightBox .btnList .ul .li {
+    width: 230px;
+  }
+}
+@media (min-width: 1025px) {
+  .itemMain .itemSection01 .itemPanelList .itemPanel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .itemMain .itemSection01 .itemPanelList .itemPanel .leftBox {
+    width: 46%;
+  }
+  .itemMain .itemSection01 .itemPanelList .itemPanel .rightBox {
+    width: 50%;
+  }
+}
+.itemMain .itemSection01 .printPanel {
+  margin: 60px 0 0;
+  background: #fffef2;
+}
+.itemMain .itemSection01 .printPanel + * {
+  margin: 120px 0 0;
+}
+.itemMain .itemSection01 .printPanel .ttl {
+  padding: 10px;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  background: #f3ab01;
+}
+.itemMain .itemSection01 .printPanel .secBox {
+  padding: 60px 20px;
+}
+.itemMain .itemSection01 .printPanel .secBox .chart {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.itemMain .itemSection01 .printPanel .secBox .txt {
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+.itemMain .itemSection02 .caseList .ul .photo {
+  margin: 0 0 10px;
+}
+.itemMain .itemSection02 .caseList .ul .dl .dt {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+.itemMain .itemSection02 .caseList .ul .dl .dd {
+  font-size: 14px;
+  color: #585858;
+  line-height: 1.7;
+}
+@media (min-width: 1025px) {
+  .itemMain .itemSection02 .caseList .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 0 0 -30px;
+  }
+  .itemMain .itemSection02 .caseList .ul .li {
+    width: calc(33.3333333333% - 30px);
+    margin: 50px 0 0 30px;
+  }
+  .itemMain .itemSection02 .caseList .ul .photo {
+    position: relative;
+    height: 260px;
+  }
+  .itemMain .itemSection02 .caseList .ul .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	guide
+///////////////////////////////////////////////////////////*/
+.guideMain .guideSection {
+  padding: 80px 0 150px;
+}
+.guideMain .topPageLink {
+  margin: 0 0 60px;
+}
+.guideMain .topPageLink .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px 0 0 -15px;
+}
+.guideMain .topPageLink .ul .li {
+  width: calc(20% - 15px);
+  margin: 15px 0 0 15px;
+}
+.guideMain .topPageLink .ul .li a {
+  display: block;
+}
+.guideMain .section + .section {
+  margin: 200px 0 0;
+}
+.guideMain .section .guideTitle {
+  margin: 0 0 40px;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+.guideMain .section .guideTitle > * {
+  padding: 5px 10px;
+  font-size: 30px;
+  border: 1px solid #ffffff;
+}
+.guideMain .section .guideTitle.guideTitle01 {
+  background: #009fe0;
+}
+.guideMain .section .guideTitle.guideTitle02 {
+  background: #e60180;
+}
+.guideMain .section .guideTitle.guideTitle03 {
+  background: #cbbe00;
+}
+.guideMain .section .guideTitle.guideTitle04 {
+  background: #00974a;
+}
+.guideMain .section .guideTitle.guideTitle05 {
+  background: #e51c1d;
+}
+.guideMain .sec01 .stepPanel + .stepPanel {
+  margin: 60px 0 0;
+}
+.guideMain .sec01 .stepPanel .ttlBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.guideMain .sec01 .stepPanel .ttlBox .numBox {
+  position: relative;
+  width: 60px;
+}
+.guideMain .sec01 .stepPanel .ttlBox .numBox .step {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 10px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.guideMain .sec01 .stepPanel .ttlBox .numBox .num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #009fe0;
+}
+.guideMain .sec01 .stepPanel .ttlBox .ttl {
+  width: calc(100% - 80px);
+  font-size: 22px;
+}
+.guideMain .sec01 .stepPanel .secBox {
+  padding: 30px;
+  background: #eff8fb;
+}
+.guideMain .sec01 .stepPanel .secBox .btnMore {
+  margin: 20px 0 0;
+}
+.guideMain .sec01 .stepPanel .secBox .contactBox {
+  width: 200px;
+  margin: 20px 0 0;
+  font-family: "BIZ UDGothic";
+}
+.guideMain .sec01 .stepPanel .secBox .contactBox a {
+  display: block;
+  padding: 14px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: #e60213;
+}
+.guideMain .sec01 .stepPanel .secBox .contactBox a p {
+  padding: 0 0 0 20px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_mail.png) left center no-repeat;
+  background-size: 15px auto;
+}
+.guideMain .sec01 .stepPanel .secBox .printList {
+  margin: 30px 0 0;
+}
+.guideMain .sec01 .stepPanel .secBox .printList .ul {
+  max-width: 880px;
+}
+@media (min-width: 1025px) {
+  .guideMain .sec01 .stepPanel .secBox .printList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .guideMain .sec01 .stepPanel .secBox .printList .ul .li {
+    width: 260px;
+  }
+}
+.guideMain .sec01 .stepPanel .secBox .cautionBox {
+  margin: 20px 0 0;
+  padding: 30px;
+  border: 1px dotted #000000;
+  background: #ffffff;
+}
+.guideMain .sec01 .stepPanel .secBox .cautionBox .ttl {
+  margin: 0 0 20px;
+  padding: 0 0 0 30px;
+  font-size: 22px;
+  color: #e20000;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/guide_sec01_caution.png) left center no-repeat;
+  background-size: 22px auto;
+}
+.guideMain .sec02 .secBox + .secBox {
+  margin: 60px 0 0;
+}
+.guideMain .sec02 .secBox .ttl {
+  padding: 0 0 5px;
+  border-bottom: 1px solid #000000;
+}
+.guideMain .sec02 .secBox .ttl p {
+  display: inline-block;
+}
+.guideMain .sec02 .secBox .ttl .em {
+  font-size: 24px;
+  color: #e60180;
+}
+.guideMain .sec02 .secBox .ttl + .flow {
+  margin: 25px 0 0;
+}
+.guideMain .sec02 .secBox .aside {
+  margin: 10px 0 20px;
+}
+.guideMain .sec02 .secBox .aside p {
+  display: inline-block;
+  font-size: 14px;
+}
+.guideMain .sec02 .secBox .aside .em {
+  margin: 0 2px;
+  padding: 0 10px;
+  color: #ffffff;
+  background: #e60180;
+}
+.guideMain .sec02 .secBox .flow {
+  max-width: 850px;
+}
+.guideMain .sec03 .secBox .photoBox {
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+}
+.guideMain .sec03 .secBox .photoBox .photo {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.guideMain .sec03 .secBox .txtBox {
+  padding: 30px 0 0;
+}
+.guideMain .sec03 .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 24px;
+  color: #cbbe00;
+  border-bottom: 1px solid #cbbe00;
+}
+.guideMain .sec03 .secBox .txtBox .dl {
+  margin: 40px 0 0;
+}
+.guideMain .sec03 .secBox .txtBox .dl .dt {
+  max-width: 160px;
+  padding: 3px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #cbbe00;
+}
+.guideMain .sec03 .secBox .txtBox .dl .dd {
+  padding: 20px;
+  border: 1px dotted #000000;
+}
+.guideMain .sec03 .secBox .txtBox .dl .ul .li {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/guide_sec03_list_icon_01.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.guideMain .sec03 .secBox .txtBox .dl .ul .li + .li {
+  margin: 15px 0 0;
+}
+@media (min-width: 1025px) {
+  .guideMain .sec03 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .guideMain .sec03 .secBox .photoBox {
+    width: 45%;
+  }
+  .guideMain .sec03 .secBox .txtBox {
+    width: 50%;
+  }
+}
+.guideMain .sec04 .secBox + .secBox {
+  margin: 120px 0 0;
+}
+.guideMain .sec04 .secBox .photoBox .photo01 {
+  max-width: 180px;
+  margin: 0 auto;
+}
+.guideMain .sec04 .secBox .txtBox {
+  padding: 30px 0 0;
+}
+.guideMain .sec04 .secBox .txtBox h3 {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 24px;
+  color: #00974b;
+  border-bottom: 1px solid #00974b;
+}
+.guideMain .sec04 .secBox .txtBox .dl {
+  margin: 40px 0 0;
+}
+.guideMain .sec04 .secBox .txtBox .dl .dt {
+  max-width: 180px;
+  padding: 3px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #00974b;
+}
+.guideMain .sec04 .secBox .txtBox .dl .dd {
+  padding: 20px;
+  border: 1px dotted #000000;
+}
+.guideMain .sec04 .secBox .txtBox .dl .ul .li {
+  padding: 0 0 0 30px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/guide_sec04_list_icon_01.png) left center no-repeat;
+  background-size: 20px auto;
+}
+.guideMain .sec04 .secBox .txtBox .dl .ul .li + .li {
+  margin: 15px 0 0;
+}
+.guideMain .sec04 .secBox .txtBox .listBox {
+  margin: 40px 0 10px;
+}
+.guideMain .sec04 .secBox .txtBox .listBox .ul .li {
+  padding: 0 0 0 20px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/guide_sec04_list_icon_02.png) left center no-repeat;
+  background-size: 14px auto;
+}
+.guideMain .sec04 .secBox .txtBox .listBox .ul .li + .li {
+  margin: 10px 0 0;
+}
+@media (min-width: 1025px) {
+  .guideMain .sec04 .secBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .guideMain .sec04 .secBox .photoBox {
+    width: 45%;
+  }
+  .guideMain .sec04 .secBox .txtBox {
+    width: 50%;
+  }
+  .guideMain .sec04 .secBox01 {
+    align-items: center;
+  }
+  .guideMain .sec04 .secBox02 {
+    align-items: center;
+  }
+}
+.guideMain .sec05 .secBox {
+  padding: 20px 0;
+  background: #fdeded;
+}
+.guideMain .sec05 .secBox + .secBox {
+  margin: 30px 0 0;
+}
+.guideMain .sec05 .secBox .ttlHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 60px 10px 40px;
+  cursor: pointer;
+}
+.guideMain .sec05 .secBox .ttlHead:after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 35px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+.guideMain .sec05 .secBox .ttlHead .icon {
+  margin: 0 10px 0 0;
+  font-size: 22px;
+  color: #e51c1d;
+}
+.guideMain .sec05 .secBox .ttlHead .ttl {
+  font-size: 22px;
+}
+.guideMain .sec05 .secBox .ttlHead.active:after {
+  content: "-";
+}
+.guideMain .sec05 .secBox .cntBody {
+  padding: 15px 40px;
+}
+.guideMain .sec05 .secBox .cntBody .txt {
+  padding: 20px 30px;
+  border: 1px dotted #000000;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	price
+///////////////////////////////////////////////////////////*/
+.priceMain .priceSection {
+  padding: 80px 0 150px;
+}
+.priceMain .topPageLink {
+  margin: 0 0 60px;
+}
+.priceMain .topPageLink .ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px 0 0 -15px;
+}
+.priceMain .topPageLink .ul .li {
+  width: calc(20% - 15px);
+  margin: 15px 0 0 15px;
+}
+.priceMain .topPageLink .ul .li a {
+  display: block;
+}
+.priceMain .section + .section {
+  margin: 150px 0 0;
+}
+.priceMain .section .priceTitle {
+  margin: 0 0 40px;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+.priceMain .section .priceTitle > * {
+  padding: 5px 10px;
+  font-size: 30px;
+  border: 1px solid #ffffff;
+}
+.priceMain .section .priceTitle.priceTitle01 {
+  background: #009fe0;
+}
+.priceMain .section .priceTitle.priceTitle02 {
+  background: #e60180;
+}
+.priceMain .section .priceTitle.priceTitle03 {
+  background: #cbbe00;
+}
+.priceMain .section .priceTitle.priceTitle04 {
+  background: #00974a;
+}
+.priceMain .section .priceTitle.priceTitle05 {
+  background: #e51c1d;
+}
+.priceMain .sec01 .listBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.priceMain .sec01 .listBox .ul .bnr {
+  margin: 0 0 15px;
+}
+.priceMain .sec01 .listBox .ul .txtBox {
+  text-align: center;
+}
+.priceMain .sec01 .listBox .ul .txtBox .txt p {
+  display: inline-block;
+}
+.priceMain .sec01 .listBox .ul .txtBox .txt .em {
+  font-size: 20px;
+  color: #e50000;
+}
+@media (min-width: 1025px) {
+  .priceMain .sec01 .listBox .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceMain .sec01 .listBox .ul .li {
+    width: 48%;
+  }
+}
+.priceMain .sec02 .priceBox {
+  padding: 50px 20px;
+  text-align: center;
+  border: 10px solid #5daa04;
+  background: #fffded;
+}
+.priceMain .sec02 .priceBox .ttl {
+  margin: 0 0 40px;
+  font-size: 22px;
+}
+.priceMain .sec02 .priceBox .chart {
+  max-width: 1080px;
+  margin: 0 auto 50px;
+}
+.priceMain .sec03 .btnMore {
+  width: 260px;
+  margin: 20px 0;
+}
+.priceMain .sec03 .secBox .ttl {
+  margin: 0 0 10px;
+}
+.priceMain .sec03 .priceTable {
+  overflow: auto;
+}
+.priceMain .sec03 .priceTable .table {
+  width: 600px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+}
+.priceMain .sec03 .priceTable .table .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.priceMain .sec03 .priceTable .table .tr > * {
+  display: table-cell;
+  width: 25%;
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+.priceMain .sec03 .priceTable .table .tr .th {
+  background: #f7f6e6;
+}
+.priceMain .sec03 .priceTable .table .tr .th + .th {
+  border-left: 1px solid #d9d9d9;
+}
+.priceMain .sec03 .priceTable .table .thead .dl .dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.priceMain .sec03 .priceTable .table .tbody .td {
+  border-left: 1px solid #d9d9d9;
+}
+.priceMain .sec03 .aside {
+  margin: 30px 0 0;
+  font-size: 14px;
+  color: #848484;
+}
+.priceMain .sec04 .bnr {
+  max-width: 450px;
+  margin: 0 auto 40px;
+}
+.priceMain .sec04 .secBox {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.priceMain .sec04 .priceTable {
+  overflow: auto;
+}
+.priceMain .sec04 .priceTable .table {
+  width: 880px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+}
+.priceMain .sec04 .priceTable .table .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.priceMain .sec04 .priceTable .table .tr > * {
+  display: table-cell;
+  width: 120px;
+  padding: 15px 5px;
+  vertical-align: middle;
+}
+.priceMain .sec04 .priceTable .table .tr .th {
+  background: #e6faf0;
+}
+.priceMain .sec04 .priceTable .table .tr .th + .th {
+  border-left: 1px solid #d9d9d9;
+}
+.priceMain .sec04 .priceTable .table .thead .th:nth-child(1) {
+  width: 160px;
+}
+.priceMain .sec04 .priceTable .table .thead .th + .th {
+  font-size: 12px;
+}
+.priceMain .sec04 .priceTable .table .tbody .th {
+  width: 160px;
+}
+.priceMain .sec04 .priceTable .table .tbody .td {
+  border-left: 1px solid #d9d9d9;
+}
+.priceMain .sec04 .priceTable .table .tbody .td .em {
+  color: #e90101;
+}
+.priceMain .sec05 .secPanelList {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.priceMain .sec05 .secPanel {
+  padding: 40px 20px;
+  background: #fdeded;
+}
+.priceMain .sec05 .secPanel + .secPanel {
+  margin: 30px 0 0;
+}
+.priceMain .sec05 .secPanel .secBox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.priceMain .sec05 .secPanel .ttl {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #e51c1d;
+}
+.priceMain .sec05 .secPanel .table01 {
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+}
+.priceMain .sec05 .secPanel .table01 .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.priceMain .sec05 .secPanel .table01 .tr > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.priceMain .sec05 .secPanel .table01 .th {
+  width: 140px;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #fa9b9b;
+}
+.priceMain .sec05 .secPanel .table01 .td {
+  padding: 15px 40px;
+  border-left: 1px solid #d9d9d9;
+  background: #ffffff;
+}
+.priceMain .sec05 .secPanel .table02 {
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+}
+.priceMain .sec05 .secPanel .table02 .tr {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.priceMain .sec05 .secPanel .table02 .tr > * {
+  display: table-cell;
+  width: 50%;
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+.priceMain .sec05 .secPanel .table02 .tr > * + * {
+  border-left: 1px solid #d9d9d9;
+}
+.priceMain .sec05 .secPanel .table02 .th {
+  color: #ffffff;
+  background: #fa9b9b;
+}
+.priceMain .sec05 .secPanel .table02 .td {
+  background: #ffffff;
+}
+.priceMain .sec05 .secPanel .aside {
+  margin: 10px 0 0;
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain .contactSection {
+  padding: 80px 0 150px;
+}
+.contactMain .topSection {
+  margin: 0 0 80px;
+  text-align: center;
+}
+.contactMain .topSection .topTxt {
+  margin: 0 0 40px;
+}
+.contactMain .topSection .ttl {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 5px 20px;
+  color: #ffffff;
+  background: #d70000;
+}
+.contactMain .topSection .telBox {
+  max-width: 260px;
+  margin: 0 auto 60px;
+}
+.contactMain .topSection .telBox a {
+  display: block;
+  padding: 10px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.1;
+  background: #559a06;
+}
+.contactMain .topSection .telBox a .em {
+  display: inline-block;
+  margin: 0 0 3px;
+  padding: 0 0 0 15px;
+  font-size: 24px;
+  background: url(https://fukushokukoboito231227.smooooth.jp/system_panel/uploads/images/footer_tel.png) left top 3px no-repeat;
+  background-size: 10px auto;
+}
+.contactMain .topSection .telBox a .span {
+  font-size: 12px;
+  color: #beccae;
+}
+.contactMain .topSection .btnList {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.contactMain .topSection .btnList .ul .li .btnMore {
+  width: 230px;
+}
+@media (min-width: 1025px) {
+  .contactMain .topSection .btnList .ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactMain .topSection .btnList .ul .li {
+    width: 230px;
+  }
+}
+.contactMain .formContainer .formSection + .formSection {
+  margin: 60px 0 0;
+}
+.contactMain .formContainer .formSection .formTtl {
+  max-width: 160px;
+  margin: 0 0 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background: #e8e8e8;
+}
+.contactMain .formContainer .formSection .topTxt {
+  margin: 0 0 20px;
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  /*テキストエリア*/
+}
+.formMain .contactForm input[type=text],
+.formMain .contactForm input[type=email],
+.formMain .contactForm input[type=tel] {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  border: 1px solid #d6d6d6;
+  background: #fafafa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm textarea {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #d6d6d6;
+  background: #fafafa;
+  resize: none;
+}
+.formMain .contactForm input[type=text]:focus,
+.formMain .contactForm input[type=email]:focus,
+.formMain .contactForm input[type=tel]:focus,
+.formMain .contactForm textarea:focus {
+  outline: 0;
+  border: 2px solid #90cefd;
+}
+.formMain .contactForm button[type=submit] {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid #e60213;
+  background: #e60213;
+  background-size: 6px auto;
+  transition: 0.6s;
+}
+.formMain .contactForm button[type=submit][disabled] {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.formMain .contactForm .form .checkList .ul + .ul {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList .ul .li + .li {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .form .checkList01 .ul .li {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkList01 .ul .li + .li {
+  margin: 0 0 0 10px;
+}
+.formMain .contactForm .form .checkList01 .checkItem {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+.formMain .contactForm .form .checkList01 .checkItem + input {
+  display: inline-block;
+  width: 150px;
+}
+.formMain .contactForm .form .checkList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .checkItem + .checkItem {
+  margin-top: 10px;
+}
+.formMain .contactForm .form .checkItem > label {
+  position: relative;
+  display: block;
+}
+.formMain .contactForm .form .checkItem input {
+  position: absolute;
+  opacity: 0;
+}
+.formMain .contactForm .form .checkItem span {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+.formMain .contactForm .form .checkItem span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d7d7d7;
+  background: #fafafa;
+}
+.formMain .contactForm .form .checkItem input:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #e51c1d;
+  border-right: 3px solid #e51c1d;
+}
+.formMain .contactForm .form .checkItem.agreeCheck > label {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioList01 {
+  padding: 10px 0 0;
+}
+.formMain .contactForm .form .radioList01 .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .form .radioList01 .otherTxt {
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox .radio {
+  position: relative;
+  display: inline-block;
+}
+.formMain .contactForm .form .radioBox input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.formMain .contactForm .form .radioBox label {
+  position: relative;
+  padding: 5px 0 5px 35px;
+}
+.formMain .contactForm .form .radioBox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+.formMain .contactForm .form .radioBox input[type=radio]:checked + label:before {
+  border: 8px solid #e51c1d;
+}
+.formMain .contactForm .form .postalBox input {
+  width: 90px;
+}
+.formMain .contactForm .form .postalBox input + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .postalBox .postalTxt {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .form .selectBox {
+  display: inline-block;
+  width: 200px;
+}
+.formMain .contactForm .form .selectBox select {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5em;
+  border-radius: 0;
+  border: 1px solid #deebe4;
+  border-radius: 15px;
+  background: #f7f7f7;
+  background-size: 10px auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .form .selectBox + .span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox + .formBox {
+  margin-top: 60px;
+}
+.formMain .contactForm .formBox > .dl {
+  display: table;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+}
+.formMain .contactForm .formBox > .dl + .dl {
+  border-top: none;
+}
+.formMain .contactForm .formBox > .dl > * {
+  min-height: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl.line > .dt {
+  padding: 20px 20px 0 0;
+  vertical-align: top;
+}
+.formMain .contactForm .formBox > .dl > .dt {
+  display: table-cell;
+  width: 260px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #d9d9d9;
+  background: #f9f9f5;
+}
+.formMain .contactForm .formBox > .dl > .dt .span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox > .dl > .dt .em {
+  display: inline-block;
+  min-width: 40px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background: #e51c1d;
+}
+.formMain .contactForm .formBox > .dl > .dt .small {
+  font-size: 12px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox > .dl > .dt .aside p {
+  font-size: 14px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.formMain .contactForm .formBox > .dl > .dd {
+  padding: 10px;
+}
+.formMain .contactForm .formBox .datePanel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.formMain .contactForm .formBox .datePanel + .datePanel {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel > * {
+  display: flex;
+  align-items: center;
+}
+.formMain .contactForm .formBox .datePanel input {
+  width: 70px;
+  border-radius: 15px;
+}
+.formMain .contactForm .formBox .datePanel .selectBox {
+  width: 70px;
+}
+.formMain .contactForm .formBox .datePanel .dateTtl {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .datePanel .dateTxt {
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+  display: table;
+  width: 100%;
+}
+.formMain .contactForm .formBox .addressBox .dl + .dl,
+.formMain .contactForm .formBox .dateBox .dl + .dl {
+  margin-top: 10px;
+}
+.formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+  display: table-cell;
+  width: 60px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .ageInput input {
+  display: inline-block;
+  width: 120px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .ageInput > p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox {
+  margin: 0 0 20px;
+}
+.formMain .contactForm .formBox .meetingBox .radioList {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .meetingBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .dateBox {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox + .txt {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .dateBox input[type=text] {
+  width: 90px;
+}
+.formMain .contactForm .formBox .dateBox .em {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .dateBox .span {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.formMain .contactForm .formBox .dateBox .radioList {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+.formMain .contactForm .formBox .dateBox .radioList .list {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.formMain .contactForm .formBox .caution {
+  margin-top: 10px;
+  color: #d20000;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox {
+  padding: 10px 10px 40px;
+  font-size: 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+.formMain .contactForm .formBox .telBox > * {
+  display: inline-block;
+  font-size: 14px;
+}
+.formMain .contactForm .formBox .telTxt {
+  padding: 10px 10px 0;
+}
+.formMain .contactForm .formBox .place input {
+  display: inline-block;
+  width: 200px;
+  margin: 0 5px 0 0;
+}
+.formMain .contactForm .formBox .place p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .sizeList + .sizeList {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .formBox .sizeList .size {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .formBox .sizeList .size input {
+  display: inline-block;
+  width: 70px;
+  margin: 0 5px;
+}
+.formMain .contactForm .formBox .sizeList .size p {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy {
+  margin: 50px auto 0;
+  text-align: center;
+}
+.formMain .contactForm .formBox .privacy > p {
+  margin: 0 0 20px;
+  text-align: left;
+}
+.formMain .contactForm .formBox .privacy .agreeBox {
+  overflow: scroll;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: left;
+  background: #f2f2f2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box + .box {
+  margin: 30px 0 0;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .box .link a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy .agreeBox p {
+  line-height: 2;
+}
+.formMain .contactForm .formBox .privacy .agreeBox .tel p,
+.formMain .contactForm .formBox .privacy .agreeBox .tel a {
+  display: inline-block;
+}
+.formMain .contactForm .formBox .privacy + .checkItem {
+  margin: 40px 0;
+  text-align: center;
+}
+.formMain .contactForm .fileUploadBox .ttl {
+  margin: 0 0 10px;
+  line-height: 2;
+}
+.formMain .contactForm .fileUploadBox .fileArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formMain .contactForm .fileUploadBox .fileArea + .fileArea {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile {
+  position: relative;
+  width: 28%;
+  font-size: 16px;
+  color: #b4d2be;
+  text-align: center;
+  border: 1px solid #41ab6d;
+  background: #ffffff;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formMain .contactForm .fileUploadBox .fileArea .inputFile p {
+  padding: 12px 10px;
+}
+.formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+  width: 70%;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt p {
+  display: inline-block;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .fileName {
+  margin: 0 10px 0 0;
+}
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt .attention {
+  font-size: 13px;
+  color: #54765f;
+}
+.formMain .contactForm .fileUploadBox .txt {
+  line-height: 2;
+}
+.formMain .contactForm .aside {
+  margin: 10px 0 0;
+}
+.formMain .contactForm .fileUploadTitleBox {
+  margin: 60px 0 30px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle {
+  position: relative;
+  max-width: 440px;
+  margin: 0 0 20px;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  background: #000000;
+}
+.formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+}
+.complete .txt {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 3;
+}
+.complete .btnMore {
+  margin: 0 auto;
+}

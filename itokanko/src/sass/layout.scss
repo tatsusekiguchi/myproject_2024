@@ -1,0 +1,1290 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  .topKvPanel {
+    height: 1000px;
+    padding: 20px;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+      center no-repeat;
+    background-size: cover;
+    .kvWrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1600px;
+      margin: 0 auto;
+      height: 100%;
+    }
+    .kvTitleBox {
+      color: #ffffff;
+      .kvTitleBox01 {
+        margin: 0 0 20px;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        font-family: "Mrs Saint Delafield";
+        font-size: 34px;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+  .sec01 {
+    padding: 200px 0;
+    color: #ffffff;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/top_sec01_bg.png)
+      center no-repeat;
+    background-size: cover;
+    h2 {
+      margin: 0 0 40px;
+      font-size: 40px;
+    }
+    .txt {
+      margin: 0 0 60px;
+    }
+  }
+  .sec02 {
+    padding: 200px 0;
+    .secPanel {
+      position: relative;
+      .txtBox {
+        padding: 60px 0;
+        .txt {
+          margin: 0 0 60px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 46%;
+        }
+        .txtBox {
+          width: 52%;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 200px 0;
+    color: #ffffff;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/top_sec03_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .secBox {
+      .txtBox {
+        .txt {
+          margin: 0 0 80px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 50%;
+        }
+        .txtBox {
+          width: 45%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    margin: 200px 0;
+    .secWrap01 {
+      position: relative;
+    }
+    .slidePanel {
+      .slideBox {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .li {
+            position: relative;
+            width: calc(100% / 4);
+            margin: 0 3px;
+            padding: 0 0 20%;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .btnMore {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    }
+  }
+  .bottomContainer {
+    .secBox {
+      color: #ffffff;
+      text-align: center;
+    }
+    .secBox01 {
+      background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/top_bottom_bg_01.png)
+        no-repeat;
+      .pageSecTtl {
+        h2 {
+          text-indent: 3em;
+        }
+      }
+    }
+    .secBox02 {
+      background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/top_bottom_bg_02.png)
+        no-repeat;
+    }
+  }
+  @media (min-width: 1025px) {
+    .bottomContainer {
+      display: flex;
+      .secBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 400px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  .pageKvPanel {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .strengthSection {
+    padding: 150px 0;
+  }
+  .numberPanel {
+    .ttlBox {
+      h3 {
+        position: relative;
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 0 30px 0 0;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 20px;
+          height: 1px;
+          margin: auto 0;
+          background: #1c1c1c;
+        }
+      }
+      p {
+        font-family: "Mrs Saint Delafield";
+        font-size: 60px;
+        line-height: 0.9em;
+      }
+    }
+    .txtBox {
+      h4 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .btnMore {
+        margin: 40px 0 0;
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .numberPanel {
+      display: flex;
+      justify-content: space-between;
+      .ttlBox {
+        width: 35%;
+        padding: 10px 0 0;
+      }
+      .txtBox {
+        width: 65%;
+      }
+    }
+  }
+  .topSecTtlContainer {
+    .pageSecTtlBox {
+      text-align: center;
+      .pageSecTtl {
+        p {
+          margin: 0 0 15px;
+        }
+      }
+    }
+  }
+  .listContainer {
+    margin: 60px 0 0;
+    padding: 100px 0;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_bg.png)
+      center no-repeat;
+    background-size: cover;
+    .listPanel {
+      padding: 60px 40px;
+      color: #ffffff;
+      background: rgba(33, 72, 142, 0.8);
+      .ol {
+        .li {
+          position: relative;
+          padding: 110px 0 0;
+          .dl {
+            text-align: center;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .dd {
+              text-align: left;
+              line-height: 2;
+            }
+          }
+        }
+        .list01 {
+          background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_icon_01.png)
+            center top 5px no-repeat;
+          background-size: 80px auto;
+        }
+        .list02 {
+          background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_icon_02.png)
+            center top no-repeat;
+          background-size: 80px auto;
+        }
+        .list03 {
+          background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_icon_03.png)
+            center top no-repeat;
+          background-size: 100px auto;
+        }
+        .list04 {
+          background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_icon_04.png)
+            center top 20px no-repeat;
+          background-size: 100px auto;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ol {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: calc((100% / 4) - 35px);
+            + .li {
+              &:before {
+                content: "";
+                position: absolute;
+                top: 80px;
+                left: -35px;
+                width: 16px;
+                height: 26px;
+                background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/strength_list_arrow_01.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .stepSecContainer {
+    margin: 200px 0 0;
+  }
+  .photoListPanel {
+    padding: 80px 20px 0;
+    .photoList {
+      max-width: 1500px;
+      margin: 0 auto;
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            position: relative;
+            width: calc((100% / 3) - 5px);
+            height: 355px;
+            img {
+              @include cover-image;
+            }
+          }
+        }
+      }
+    }
+  }
+  .photoMap {
+    margin: 80px 0 0;
+  }
+  @media (min-width: 1025px) {
+    .photoMap {
+      display: flex;
+      justify-content: space-between;
+      .photo {
+        width: 40%;
+      }
+      .map {
+        position: relative;
+        top: -100px;
+        width: 35%;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  .pageKvPanel {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/service_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .pageSecTtlBox {
+    text-align: center;
+  }
+  .section {
+    padding: 180px 0;
+  }
+  .sec01 {
+    .secBox {
+      + .secBox {
+        margin: 100px 0 0;
+      }
+      h3 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .txt {
+        margin: 0 0 30px;
+      }
+    }
+  }
+  .sec02 {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/service_sec02_bg.png);
+    .topTxt {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    .photo {
+      margin: 0 0 80px;
+    }
+    .listPanel {
+      padding: 60px 20px;
+      background: #ffffff;
+      h3 {
+        margin: 0 0 40px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .listBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+          }
+          .dl {
+            display: flex;
+            .dd {
+              margin: 0 0 0 auto;
+            }
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px 0 0 -40px;
+            .li {
+              width: calc((100% / 2) - 40px);
+              margin: 10px 0 0 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .galleryPanel {
+      margin: 0 0 80px;
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px 0 0 -15px;
+        .li {
+          position: relative;
+          width: calc((100% / 3) - 15px);
+          margin: 15px 0 0 15px;
+          padding: 0 0 32%;
+          img {
+            @include cover-image;
+          }
+        }
+      }
+    }
+    .listPanel {
+      padding: 60px 20px;
+      color: #ffffff;
+      background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/service_sec03_list_bg.png)
+        center no-repeat;
+      background-size: cover;
+      h3 {
+        margin: 0 0 40px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .listBox {
+        max-width: 1000px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+          }
+        }
+        @media (min-width: 1025px) {
+          .ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px 0 0 -40px;
+            .li {
+              width: calc((100% / 2) - 40px);
+              margin: 10px 0 0 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+.companyMain {
+  .pageKvPanel {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/company_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .pageSecTtlBox {
+    text-align: center;
+  }
+  .section {
+    padding: 180px 0;
+  }
+  .sec01 {
+    .secBox {
+      .txtBox {
+        padding: 30px 0 0;
+        h3 {
+          margin: 0 0 40px;
+          font-size: 34px;
+        }
+        .txt {
+          p + p {
+            margin: 30px 0 0;
+          }
+        }
+        .nameBox {
+          margin: 60px 0 0;
+          text-align: right;
+          p {
+            display: inline-block;
+            font-size: 14px;
+          }
+          .em {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .photo {
+          width: 30%;
+        }
+        .txtBox {
+          width: 65%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/company_sec_bg.png);
+  }
+  .infoPanel {
+    padding: 60px 20px;
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/company_info_bg.png);
+    .infoBox {
+      max-width: 1000px;
+      margin: 0 auto;
+      .dl {
+        display: flex;
+        padding: 15px 20px;
+        border-bottom: 1px solid #616161;
+        + .dl {
+          margin: 15px 0 0;
+        }
+        .dt {
+          width: 250px;
+        }
+        .dd {
+          width: calc(100% - 250px);
+          a {
+            display: inline-block;
+          }
+          > p + p {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    .secBox {
+      padding: 0 0 100px;
+      .info {
+        .dl {
+          display: flex;
+          padding: 15px 30px;
+          border-bottom: 1px solid #e0e0e0;
+          .dt {
+            width: 150px;
+          }
+          + .dl {
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .btnMore {
+        margin: 60px auto 0;
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 50%;
+        }
+        .txtBox {
+          width: 45%;
+        }
+      }
+    }
+  }
+  .sec04 {
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+    .qrList {
+      .ul {
+        .li {
+          width: 240px;
+          a {
+            display: block;
+            text-align: center;
+          }
+          .qr {
+            max-width: 200px;
+            margin: 0 auto 20px;
+          }
+          .account {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 20px;
+            .icon {
+              width: 28px;
+              margin: 0 10px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              margin: 0 0 20px;
+              font-weight: bold;
+            }
+            .dd {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .sec05 {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/company_sec_bg.png);
+    h3 {
+      margin: 0 0 60px;
+      font-size: 34px;
+      text-align: center;
+    }
+    .secContainer01 {
+      margin: 0 0 150px;
+      .secBox {
+        margin: 0 0 150px;
+      }
+      @media (min-width: 1025px) {
+        .secBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .photo {
+            width: 45%;
+          }
+          .txtBox {
+            width: 50%;
+          }
+        }
+      }
+      h4 {
+        margin: 0 0 40px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .mail {
+        width: 240px;
+        margin: 60px auto 0;
+        a {
+          display: block;
+          padding: 10px 15px;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          background: linear-gradient(125deg, #1e5fb5, #277cbd);
+          div {
+            background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+              right center no-repeat;
+          }
+          p {
+            display: inline-block;
+            padding: 0 25px;
+            background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/header_mail.png)
+              left center no-repeat;
+          }
+        }
+      }
+    }
+    .secContainer02 {
+      .txt {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  .pageKvPanel {
+    background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/contact_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .contactSection {
+    padding: 150px 0;
+    .pageSecTtlBox {
+      text-align: center;
+    }
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: center;
+    }
+  }
+  .contactFormContainer {
+    padding: 60px 20px;
+    background: #f8f8f8;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #1c1c1c;
+    background: #ededed;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1c1c1c;
+    background: #ededed;
+    resize: none;
+    box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 260px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #808080;
+    background: linear-gradient(125deg, #1e5fb5, #277cbd);
+    transition: 0.6s;
+    span {
+      position: relative;
+      display: block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        height: 8px;
+        margin: auto 0;
+        background: url(https://itokanko231128.smooooth.jp/system_panel/uploads/images/btn_more_arrow.png)
+          no-repeat;
+        transition: 0.6s;
+      }
+    }
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #1c1c1c;
+        background: #ededed;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #1e5fb5;
+        border-right: 3px solid #1e5fb5;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #1c1c1c;
+        background: #ededed;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #1e5fb5;
+      }
+    }
+
+    .postalBox {
+      // margin: 0 0 20px;
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    padding: 40px 0 0;
+    text-align: left;
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px solid #616161;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 0 0;
+          }
+        }
+
+        > .dt {
+          display: flex;
+          justify-content: space-between;
+          width: 310px;
+          padding: 15px 0 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            background: #1e5fb5;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #1c1c1c;
+          background: #ffffff;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 100px 0;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .btnMore {
+    margin: 0 auto;
+  }
+}

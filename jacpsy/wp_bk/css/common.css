@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 870px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+  color: #231815;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+/*リンク */
+a {
+  color: #231815;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  header {
+    border-top: 10px solid #409cbf;
+  }
+  header .headTop {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 35px 10px;
+  }
+  header .headTop .logo {
+    width: 380px;
+  }
+  header .headTop .btnBox {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  nav {
+    border-top: 1px solid #cdcdcd;
+  }
+  nav #pcNav {
+    display: table;
+    width: 100%;
+    height: 70px;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 19px;
+  }
+  nav #pcNav li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  nav #pcNav li:first-child {
+    width: 8%;
+  }
+  nav #pcNav li:first-child img {
+    width: 23px;
+  }
+  nav #pcNav li + li {
+    border-left: 1px solid #cdcdcd;
+  }
+  nav #pcNav li.current {
+    border-bottom: 5px solid #22a096;
+  }
+  nav #pcNav li a {
+    display: block;
+  }
+  nav #pcNav li a span {
+    display: block;
+    font-size: 16px;
+  }
+  nav #spNav {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	kv
+-------------------------------------------------- */
+.kv {
+  padding: 100px 0;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+  text-align: right;
+  background: url("../image/common/kv.png") center no-repeat;
+  background-size: cover;
+}
+
+.kv > div {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.kv h1 {
+  display: inline-block;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.kv h1 span {
+  display: block;
+  font-size: 13px;
+}
+
+#top .kv {
+  padding: 151px 0;
+  max-width:1500px;
+  margin:0 auto;
+  height:400px;
+}
+
+/* --------------------------------------------------
+	topicPath
+-------------------------------------------------- */
+.topicPath {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 20px 10px 40px;
+}
+
+.topicPath li {
+  position: relative;
+  display: inline-block;
+}
+
+.topicPath li + li {
+  margin-left: 15px;
+  padding-left: 25px;
+}
+
+.topicPath li + li:before {
+  content: '> ';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topicPath li a {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+.main {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page .main > section > h2 {
+  padding: 10px;
+  font-size: 30px;
+  border-top: 5px solid #22a096;
+  background: #f6f6f6;
+}
+
+.page .main .cntBox {
+  padding: 30px 10px 80px;
+}
+
+#pagetop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 90px;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  #sideNav {
+    position: fixed;
+    top: 210px;
+    right: 0;
+    width: 100px;
+  }
+  #sideNav li + li {
+    margin-top: 20px;
+  }
+  
+  #top #sideNav {
+	  display:none;
+  }  
+  
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (min-width: 1025px) {
+  footer {
+    background: #f6f6f6;
+  }
+  footer .footBox {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 60px 10px;
+  }
+  footer .logoBox {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  footer .logoBox div {
+    width: 380px;
+  }
+  footer ul {
+    overflow: hidden;
+    display: table-cell;
+    width: 42%;
+    margin: -30px 0 0;
+  }
+  footer ul li {
+    float: left;
+    width: 50%;
+    margin: 30px 0 0;
+  }
+  footer ul li:nth-child(even) {
+    float: right;
+    width: 140px;
+  }
+  footer ul li span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  footer ul li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    text-decoration: underline;
+  }
+  footer ul li a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 9px;
+    margin: auto 0;
+    background: url("../image/common/footer_link_arrow.png") no-repeat;
+  }
+}
+
+footer .copy {
+  padding: 20px 10px;
+  color: #ffffff;
+  text-align: center;
+  background: #22a096;
+}
+
+/* --------------------------------------------------
+  en
+-------------------------------------------------- */
+.enLink {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: inline-block;
+}
+
+.enLink a {
+  display: block;
+  padding: 0 10px;
+  color: #ffffff;
+  background: #409cbf;
+}
+
+.enPage #about #sec05 ul li {
+    font-size: 16px;
+}
+
+.enPage #journal #sec03 ol li .line {
+  text-decoration: underline;
+}

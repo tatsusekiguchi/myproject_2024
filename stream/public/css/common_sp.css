@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .pageMain {
+    margin: -25px 0 0;
+  }
+
+  .pageTopTitle h1 {
+    min-width: 240px;
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 50px 0;
+  }
+  .footer .footContact .secTtl {
+    max-width: 280px;
+    margin: 0 auto 40px;
+  }
+  .footer .footContact .itemList {
+    max-width: 500px;
+  }
+  .footer .footContact .itemList .itemBox {
+    background: #edf8e3;
+  }
+  .footer .footContact .itemList .itemBox + .itemBox {
+    margin: 20px 0 0;
+  }
+  .footer .footContact .itemList .itemBox .ttl01 {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .itemList .itemBox .ttl02 {
+    max-width: 260px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .itemList .itemBox .ttl03 {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .itemList .itemBox .tel a {
+    font-size: 40px;
+  }
+  .footer .footContact .itemList .itemBox .btnMail {
+    max-width: 240px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .footer .footContact .itemList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .itemList .itemBox {
+    width: calc(33.3333333333% - 20px);
+  }
+}
+@media (max-width: 1024px) {
+  .footer .footPanel {
+    padding: 40px 0 100px;
+  }
+  .footer .footPanel .pagetop {
+    top: 0;
+    right: 20px;
+    width: 60px;
+  }
+  .footer .footPanel .logo {
+    max-width: 200px;
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .copy {
+    margin: 120px 0 0;
+    text-align: left;
+  }
+}

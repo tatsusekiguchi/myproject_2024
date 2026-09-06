@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- css-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/validationEngine.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
+    />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/common_sp.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      type="text/css"
+      href="../css/layout_sp.css"
+    />
+    <link rel="stylesheet" href="../css/attach.css" />
+    <!-- js-->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/infiniteslide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/scrollAnimation.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/validateJa.js"></script>
+    <script src="../js/jpostal.js"></script>
+    <script src="../js/autokana.js"></script>
+    <script src="../js/formContact.js"></script>
+    <!-- title-->
+    <title></title>
+  </head>
+
+  <body class="page" id="buildings">
+    <!-- ▽header▽-->
+    <div class="header">
+      <div class="headWrap">
+        <div class="logoBox">
+          <div class="logo">
+            <a href="/">
+              <div>
+                <img
+                  src="https://ogatakougyou.co.jp/system_panel/uploads/images/header_logo.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="headItem">
+          <div class="contact">
+            <a href="contact">
+              <div>
+                <p>お問い合わせ</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="hamburger">
+          <div class="span"></div>
+          <div class="span"></div>
+        </div>
+      </div>
+      <div class="navBox">
+        <div class="navContainer">
+          <div class="navPanel01">
+            <div class="leftBox">
+              <div class="logo">
+                <img
+                  src="https://ogatakougyou.co.jp/system_panel/uploads/images/header_nav_logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <div class="txt">
+                  <p>〒274-0067<br />千葉県船橋市大穴南1-13-14</p>
+                </div>
+                <div class="txt">
+                  <a href="tel:0474626751">
+                    <div>
+                      <p>TEL.047-462-6751（代表）</p>
+                    </div>
+                  </a>
+                  <p>受付時間：9:00～17:00　　定休日：日</p>
+                </div>
+              </div>
+            </div>
+            <div class="rightBox">
+              <div class="navList">
+                <div class="ul">
+                  <div class="li">
+                    <a href="/">
+                      <div>
+                        <p>HOME</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="about">
+                      <div>
+                        <p>選ばれる理由</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="service">
+                      <div>
+                        <p>事業紹介</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="residential">
+                      <div>
+                        <p>個人様向け左官工事</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="buildings">
+                      <div>
+                        <p>法人様向け左官工事</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li sub">
+                    <a href="traditional">
+                      <div>
+                        <p>社寺などの伝統工法</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="ul">
+                  <div class="li">
+                    <a href="workslist">
+                      <div>
+                        <p>施工事例</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="newslist">
+                      <div>
+                        <p>新着情報</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="recruit">
+                      <div>
+                        <p>採用情報</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="company">
+                      <div>
+                        <p>会社概要</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="staff">
+                      <div>
+                        <p>スタッフ紹介</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="li">
+                    <a href="contact">
+                      <div>
+                        <p>お問い合わせ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navPanel02">
+            <div class="contactItem">
+              <div class="telBox">
+                <div class="dl">
+                  <div class="dt">
+                    <p>お電話で相談してみる</p>
+                  </div>
+                  <div class="dd">
+                    <a href="tel:0474626751">
+                      <div>
+                        <p class="span">tel.</p>
+                        <p class="em">047-462-6751</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mailBox">
+                <div class="dl">
+                  <div class="dt">
+                    <p>WEBから相談してみる</p>
+                  </div>
+                  <div class="dd">
+                    <a href="contact">
+                      <div>
+                        <p>無料相談受付中</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △header△-->
+    <!-- ▽メイン▽-->
+    <div class="buildingsMain main constructionPage">
+      <div class="pageHeaderPanel">
+        <div class="pageHeaderBox">
+          <h1>ビルなどの左官工事</h1>
+        </div>
+      </div>
+      <div class="sec01">
+        <div class="secWrap01">
+          <div class="pageSecTtlBox fadeUp">
+            <p>Plastering work for buildings</p>
+            <div class="pageSecTtl">
+              <h2>
+                大規模な人工の要るビルやマンションの左官工事は<br />尾形工業株式会社にお任せ下さい。
+              </h2>
+            </div>
+          </div>
+          <div class="secBoxList">
+            <div class="secBox">
+              <div class="photo">
+                <img
+                  src="https://ogatakougyou.co.jp/system_panel/uploads/images/buildings_sec01_img_01.png"
+                  alt=""
+                />
+              </div>
+              <div class="txtBox fadeUp">
+                <div class="txt">
+                  <p>
+                    尾形工業ではマンションやビルの内部や外部の補修材による補修、断面修復、コンクリート色合わせ、排水溝モルタル仕上、階段モルタル仕上などを承っております。
+                  </p>
+                  <p>
+                    大規模な建築物のモルタルの下地処理は、その後の仕上げ処理を行う上で品質がとても重要です。<br />尾形工業株式会社では豊富な経験、高い技術を有する職人が多数在籍しており、大規模なビルなどの工事を得意としております。
+                  </p>
+                  <p>
+                    弊社の長年蓄積したノウハウと左官職人の技術力で、建築物の完成度を向上させます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="secBox">
+              <div class="photo">
+                <img
+                  src="https://ogatakougyou.co.jp/system_panel/uploads/images/buildings_sec01_img_02.png"
+                  alt=""
+                />
+              </div>
+              <div class="txtBox fadeUp">
+                <div class="txt">
+                  <p>
+                    弊社はこれまで千葉県内の図書館の意匠表現など高度な技術が求められる施工も行ってまいりました。<br />新築工事時の左官工事のご用命だけでなく、経年劣化によるコンクリート素地の補修やリフォーム時の大規模修繕など、尾形工業株式会社の組織力でお客様の様々な課題を解決いたします。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec02">
+        <div class="secWrap01">
+          <div class="section">
+            <div class="secTtl fadeUp">
+              <h2>あらゆる法人の左官工事承ります。</h2>
+            </div>
+            <div class="listBox">
+              <div class="list fadeUp">
+                <div class="photo">
+                  <img
+                    src="https://ogatakougyou.co.jp/system_panel/uploads/images/buildings_sec02_img_01.png"
+                    alt=""
+                  />
+                </div>
+                <div class="dl">
+                  <div class="dt">
+                    <p>ビル・マンションの左官工事</p>
+                  </div>
+                  <div class="dd">
+                    <p>
+                      鉄骨・鉄筋コンクリート造りの建物には、内外壁、天井、床や階段に至るまで、下地工事に左官の技術が用いられています。<br />当社では50年以上に渡る長年の経験をもとに、一つひとつの現場に合わせて最適な施工をご提供。<br />気温や湿度の変化にも臨機応変に対応し、いつでも質の高いサービスをお届けできるよう心がけています。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="list fadeUp">
+                <div class="photo">
+                  <img
+                    src="https://ogatakougyou.co.jp/system_panel/uploads/images/buildings_sec02_img_02.png"
+                    alt=""
+                  />
+                </div>
+                <div class="dl">
+                  <div class="dt">
+                    <p>工場・倉庫の左官工事</p>
+                  </div>
+                  <div class="dd">
+                    <p>
+                      工場や倉庫などの建築物は大規模な床面積を持つことが多く、精度の高い不陸調整が必要です。<br />尾形工業株式会社では工場・倉庫の左官工事依頼も多く、大規模な床面積の案件に対しても自信を持って対応いたします。<br />「こういう仕上げにしたいんだけどできる？」などどんなご要望もまずはご相談ください。<br />最適な施工を提案させていただきます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="list fadeUp">
+                <div class="photo">
+                  <img
+                    src="https://ogatakougyou.co.jp/system_panel/uploads/images/buildings_sec02_img_03.png"
+                    alt=""
+                  />
+                </div>
+                <div class="dl">
+                  <div class="dt">
+                    <p>幼稚園・学校・病院・商業施設の左官工事</p>
+                  </div>
+                  <div class="dd">
+                    <p>
+                      幼稚園や学校、病院、商業施設などの左官工事は、大きな規模の左官作業が必要となりますので、人工を用意できる弊社のような左官職人の数を確保できる必要があります。<br />また、高い技術が求められる施工も数多く行ってまいりました。<br />納期対応・技術レベルの対応、どちらも自信を持って承ります。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec03">
+        <div class="secWrap01">
+          <div class="secPanel">
+            <div class="leftBox">
+              <div class="pageSecTtlBox fadeUp">
+                <p>Works</p>
+                <div class="pageSecTtl">
+                  <h2>事例紹介</h2>
+                </div>
+              </div>
+              <div class="btnMore fadeUp">
+                <a href="workslist">
+                  <div>
+                    <p>view more</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="rightBox fadeUp">
+              <section class="webgene-blog">
+                <div class="webgene-header">
+                  <h3>事例紹介一覧</h3>
+                </div>
+                <div class="webgene-item">
+                  <a href="">
+                    <div class="photo">
+                      <img
+                        src="https://smooooth10-site-one.ssl-link.jp/aoiesuteto230823/uploads/blog/26/65c87f6e376e626_l.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txtBox">
+                      <div class="title">
+                        <p>タイトルが入ります。</p>
+                      </div>
+                      <div class="readMore">
+                        <p>read more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="webgene-item">
+                  <a href="">
+                    <div class="photo">
+                      <img
+                        src="https://smooooth10-site-one.ssl-link.jp/aoiesuteto230823/uploads/blog/26/65c87f6e376e626_l.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txtBox">
+                      <div class="title">
+                        <p>タイトルが入ります。</p>
+                      </div>
+                      <div class="readMore">
+                        <p>read more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="webgene-item">
+                  <a href="">
+                    <div class="photo">
+                      <img
+                        src="https://smooooth10-site-one.ssl-link.jp/aoiesuteto230823/uploads/blog/26/65c87f6e376e626_l.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="txtBox">
+                      <div class="title">
+                        <p>タイトルが入ります。</p>
+                      </div>
+                      <div class="readMore">
+                        <p>read more</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △メイン△-->
+    <!-- ▽footer▽-->
+    <div class="footer">
+      <div class="footContact">
+        <div class="secWrap01">
+          <div class="pageSecTtlBox fadeUp">
+            <p>Contact</p>
+            <div class="pageSecTtl">
+              <h2>お問い合わせ</h2>
+            </div>
+          </div>
+          <div class="ttl fadeUp">
+            <p>左官工事は尾形工業にお任せ下さい。</p>
+          </div>
+          <div class="contactPanel fadeUp">
+            <div class="contactItem">
+              <div class="telBox">
+                <div class="dl">
+                  <div class="dt">
+                    <p>お電話で相談してみる</p>
+                  </div>
+                  <div class="dd">
+                    <a href="tel:0474626751">
+                      <div>
+                        <p class="span">tel.</p>
+                        <p class="em">047-462-6751</p>
+                      </div>
+                    </a>
+                    <div class="aside">
+                      <p>受付時間：9:00～17:00　定休日：日</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mailBox">
+                <div class="dl">
+                  <div class="dt">
+                    <p>WEBから相談してみる</p>
+                  </div>
+                  <div class="dd">
+                    <a href="contact">
+                      <div>
+                        <p>相談メールフォーム</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footPanel">
+        <div class="secWrap01">
+          <div class="pagetop linkBtn" data-target="main">
+            <img
+              src="https://ogatakougyou.co.jp/system_panel/uploads/images/pagetop.png"
+              alt=""
+            />
+          </div>
+          <div class="leftBox">
+            <div class="logo">
+              <img
+                src="https://ogatakougyou.co.jp/system_panel/uploads/images/footer_logo.png"
+                alt=""
+              />
+            </div>
+            <div class="info">
+              <div class="txt">
+                <p>〒274-0067　千葉県船橋市大穴南1-13-14</p>
+              </div>
+              <div class="txt">
+                <a href="tel:0474626751">
+                  <div>
+                    <p>TEL：047-462-6751（代表）</p>
+                  </div>
+                </a>
+                <p>受付時間：9:00～17:00　定休日：日</p>
+              </div>
+            </div>
+          </div>
+          <div class="snsContainer">
+            <div class="snsList">
+              <div class="snsBox">
+                <a href="#" target="_blank" rel="noopener">
+                  <div class="fb">
+                    <p>facebook</p>
+                  </div>
+                </a>
+              </div>
+              <div class="snsBox">
+                <a href="#" target="_blank" rel="noopener">
+                  <div class="insta">
+                    <p>Instagram</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="copy">
+            <p>© 2024 尾形工業株式会社.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- △footer△-->
+  </body>
+</html>

@@ -1,0 +1,795 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      .topKv {
+        height: calc(100vh - 70px);
+      }
+      .kvTitleBox {
+        padding: 20px;
+        h1 {
+          font-size: 26px;
+        }
+      }
+    }
+    .topSection {
+      padding: 60px 0;
+      .secWrap01 {
+        background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/top_top_logo.png)
+          right 40px top no-repeat;
+        background-size: 80px auto;
+      }
+      .secBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 24px;
+        }
+        .txtBox {
+          .txt {
+            p + p {
+              margin: 20px 0 0;
+            }
+          }
+        }
+        .btnBox {
+          width: 160px;
+          margin: 40px auto 0;
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0 0;
+      .secPanel {
+        .secBox {
+          padding: 40px 20px;
+          .txtBox {
+            h3 {
+              margin: 0 0 20px;
+              font-size: 24px;
+            }
+            .btnMore {
+              margin: 30px auto 0;
+            }
+          }
+        }
+      }
+    }
+    .sec02,
+    .sec04,
+    .sec05 {
+      padding: 60px 0;
+      .secBox {
+        .photo {
+          height: 250px;
+        }
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 20px;
+            font-size: 20px;
+          }
+          .btnMore {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0;
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .btnMore {
+        margin: 40px auto 0;
+      }
+    }
+    .sec04 {
+      .secBox {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .aboutMain {
+    .topSection {
+      padding: 60px 0;
+      h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec01 {
+      padding: 0 0 80px;
+      .section {
+        + .section {
+          margin: 50px 0 0;
+        }
+        &:nth-child(odd) {
+          .secContainer {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(even) {
+          .secContainer {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+      .secPanel {
+        padding: 0 20px 40px;
+        .secBox {
+          .txtBox {
+            .ttlBox {
+              .num {
+                width: 40px;
+                .span {
+                  font-size: 12px;
+                }
+                .em {
+                  font-size: 26px;
+                }
+              }
+              .ttl {
+                width: calc(100% - 50px);
+                padding: 10px 0 0;
+                font-size: 20px;
+              }
+            }
+            .txt {
+              p + p {
+                margin: 30px 0 0;
+              }
+            }
+          }
+        }
+      }
+      .otherPanel01 {
+        .otherBox {
+          padding: 20px;
+          .photo {
+            max-width: 400px;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .otherPanel02 {
+        .otherBox {
+          padding: 20px;
+          .photo {
+            max-width: 400px;
+          }
+          .txtBox {
+            padding: 20px 0 0;
+            .ttl {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .topSection {
+      padding: 60px 0 80px;
+      &:before {
+        display: none;
+      }
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          h2 {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .txt {
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .pointSection {
+      padding: 60px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secPanel {
+        padding: 30px 20px;
+      }
+      .secBox {
+        .txtBox {
+          .ttlBox {
+            display: block;
+            margin: 0 0 15px;
+            .ttl01 {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+            .ttl02 {
+              font-size: 20px;
+            }
+          }
+          .txt {
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .optionSection {
+      padding: 60px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secBox {
+        + .secBox {
+          margin: 30px 0 0;
+        }
+        .txtBox {
+          padding: 15px 20px 0;
+          h3 {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .planSection {
+      padding: 60px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 40px 0 0;
+            }
+          }
+          .dl {
+            margin: 5px 0 0;
+            .dt {
+              margin: 0 0 5px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .worksSection {
+      padding: 60px 0 80px;
+      .webgene-blog {
+        .webgene-item {
+          + .webgene-item {
+            margin: 40px 0 0;
+          }
+        }
+      }
+      .btnMore {
+        margin: 40px auto 0;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .secPanel {
+        padding: 30px 20px;
+      }
+      .secBox {
+        .txtBox {
+          .ttlBox {
+            .num {
+              width: 40px;
+              .span {
+                font-size: 12px;
+              }
+              .em {
+                font-size: 26px;
+              }
+            }
+            .ttl {
+              width: calc(100% - 50px);
+              padding: 10px 0 0;
+              font-size: 20px;
+            }
+          }
+          .txt {
+            p + p {
+              margin: 15px 0 0;
+            }
+          }
+        }
+      }
+      .btnContact {
+        max-width: 260px;
+        margin: 30px 0 0;
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0 80px;
+      .topTxt {
+        margin: 0 0 30px;
+      }
+      .secPanel {
+        .ttlBox {
+          padding: 10px 20px;
+          .icon {
+            margin: 0 10px 0 0;
+            font-size: 20px;
+          }
+          .ttl {
+            font-size: 16px;
+          }
+        }
+        .txtBox {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .section {
+      padding: 60px 0 80px;
+    }
+    .sec01 {
+      .listBox {
+        .ul {
+          .li {
+            + .li {
+              margin: 20px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              min-height: 0;
+              font-size: 18px;
+            }
+            .dd {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+    .sec02 {
+      .listBox {
+        max-width: 400px;
+        .ul {
+          .li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            + .li {
+              margin: 40px 0 0;
+              &::before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 0;
+                right: 0;
+                width: 40px;
+                height: 20px;
+                margin: 0 auto;
+                background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/recruit_sec02_arrow_02.png)
+                  no-repeat;
+                background-size: 100% auto;
+              }
+            }
+          }
+          .num {
+            margin: 0 10px 0 0;
+            .span {
+              font-size: 12px;
+            }
+            .em {
+              font-size: 26px;
+            }
+          }
+          .ttl {
+            min-width: 130px;
+            font-size: 18px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .sec03 {
+      .infoBox {
+        .dl {
+          padding: 20px 10px 10px;
+        }
+      }
+    }
+    .sec04 {
+      .topTxt {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      .secPanel {
+        padding: 0;
+        &:before {
+          display: none;
+        }
+        .secBox {
+          .photoBox {
+            .inner {
+              width: 100%;
+              max-width: 550px;
+            }
+            .name {
+              font-size: 13px;
+              .em {
+                font-size: 20px;
+              }
+            }
+          }
+          .txtBox {
+            padding: 20px 0 0;
+          }
+        }
+      }
+    }
+    .sec02 {
+      padding: 0 0 60px;
+      .infoBox {
+        margin: 0 0 40px;
+        .dl {
+          padding: 20px 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .topSection {
+      padding: 50px 0;
+      .topTxt {
+        margin: 0 0 20px;
+      }
+      .secBox {
+        padding: 20px;
+        .ttl {
+          font-size: 20px;
+        }
+        .tel {
+          a {
+            padding: 0 0 0 30px;
+            font-size: 30px;
+            background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/contact_tel.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+        }
+      }
+    }
+    .sec01 {
+      padding: 60px 0 80px;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+
+          &.line {
+            .dt {
+              height: auto;
+              padding: 0 0 5px;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 0 0 5px;
+            border-bottom: none;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 15px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            border-top: none;
+          }
+        }
+
+        .otherTtl {
+          padding: 20px 10px 5px;
+        }
+
+        .otherRadio {
+          .dt {
+            text-align: left;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadPanel {
+        padding: 20px 0;
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          display: block;
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          width: 100%;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain {
+    .blogSection {
+      padding: 60px 0 80px;
+    }
+    .catePanel {
+      max-width: 300px;
+      margin: 0 auto 40px;
+      .webgene-blog {
+        .webgene-header {
+          margin: 0 auto 10px;
+          padding: 0 0 10px;
+        }
+      }
+    }
+    .blogPanel {
+      &--list {
+        .webgene-blog {
+          .webgene-item {
+            + .webgene-item {
+              margin: 40px 0 0;
+            }
+          }
+        }
+        .webgene-pagination {
+          margin: 60px auto 0;
+        }
+      }
+      &--detail {
+        .webgene-blog {
+          padding: 15px;
+          .info {
+            display: block;
+            margin: 0 0 10px;
+            .cate {
+              margin: 0 0 5px;
+            }
+            .time {
+              text-align: right;
+            }
+          }
+          .ttlBox {
+            margin: 0 0 15px;
+            font-size: 20px;
+          }
+          .slickSlide {
+            margin: 0 0 40px;
+            .slider {
+              .li {
+                > div {
+                  padding: 0 0 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btnBack {
+      margin: 60px auto 0;
+    }
+  }
+}

@@ -1,0 +1,689 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap");
+/* CSS Document */
+/*===================================================
+	共通CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	共通設定
+///////////////////////////////////////////////////////////*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.txt {
+  line-height: 2;
+}
+
+/*リンク */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 画像幅 */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.spBreak {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  a {
+    transition: 0.6s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.fax a {
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (min-width: 1261px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headWrap {
+    display: flex;
+    justify-content: space-between;
+    min-height: 95px;
+    padding: 0 0 0 5%;
+  }
+  .header .headWrap .leftBox {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    padding: 5px 0;
+  }
+  .header .headWrap .leftBox .headTtl {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .header .headWrap .leftBox .logo {
+    width: 150px;
+    margin: 30px 0 0;
+  }
+  .header .headWrap .leftBox .logo a {
+    display: block;
+  }
+  .header .headWrap .rightBox {
+    width: 85%;
+  }
+  .header .headWrap .rightBox .itemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .header .headWrap .rightBox .telBox {
+    width: 60%;
+    min-height: 100px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #ffffff;
+    background: #32a44a;
+  }
+  .header .headWrap .rightBox .telBox a {
+    display: block;
+    color: #ffffff;
+  }
+  .header .headWrap .rightBox .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    background: url("../image/common/header_tel.png") left bottom 4px no-repeat;
+    background-size: 15px auto;
+  }
+  .header .headWrap .rightBox .mailBox {
+    width: 40%;
+    height: 100%;
+  }
+  .header .headWrap .rightBox .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #005eae;
+  }
+  .header .headWrap .rightBox .mailBox p {
+    display: inline-block;
+    padding: 40px 0 0;
+    font-size: 14px;
+    background: url("../image/common/header_mail.png") center top 5px no-repeat;
+    background-size: 30px auto;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 1260px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logo {
+    width: 115px;
+  }
+  .header .logo a {
+    display: block;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (min-width: 1261px) {
+  .navBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navBox .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: calc(100% - 400px);
+  }
+  .navBox .navList ul {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .navBox .navList ul > li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 16.6666666667%;
+    height: 95px;
+    padding: 0 0 20px;
+    text-align: center;
+  }
+  .navBox .navList ul > li > a {
+    display: block;
+  }
+  .navBox .navList ul > li.spBreak {
+    display: none;
+  }
+  .navBox .navList ul .pulldown {
+    background: url("../image/common/header_nav_arrow.png") center bottom 15px no-repeat;
+  }
+  .navBox .navList ul .linkTxt {
+    position: relative;
+    display: block;
+  }
+  .navBox .navList ul .pulldown:hover {
+    overflow: visible;
+  }
+  .navBox .navList ul .pulldown:hover .subList {
+    top: 95px;
+    height: auto;
+    opacity: 1;
+    z-index: 9999;
+  }
+  .navBox .navList .subList {
+    position: absolute;
+    top: 70px;
+    left: -90px;
+    width: 300px;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    border: 1px solid #000000;
+    background: #ffffff;
+    transition: 0.6s;
+  }
+  .navBox .navList .subList .li + li {
+    border-top: 1px solid #000000;
+  }
+  .navBox .navList .subList .li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+  }
+  .navBox .navList .subList .li a p {
+    position: relative;
+    display: inline-block;
+  }
+  .navBox .navList .subList .li a:hover {
+    opacity: 1;
+    color: #ffffff !important;
+    background: #fe0000;
+  }
+}
+@media (max-width: 1260px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 60px;
+    z-index: 999;
+    background: #ffffff;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .navBox.active {
+    top: 62px;
+    opacity: 1;
+    z-index: 999;
+  }
+  .navBox .navList {
+    border-top: 1px solid #34363d;
+    border-bottom: 1px solid #34363d;
+  }
+  .navBox .navList ul {
+    font-weight: bold;
+  }
+  .navBox .navList ul li {
+    padding: 10px 20px;
+  }
+  .navBox .navList ul li + li {
+    border-top: 1px solid #34363d;
+  }
+  .navBox .navList ul li a {
+    display: block;
+  }
+  .navBox .navList ul li a .span {
+    margin: 3px 0 0;
+    font-size: 11px;
+  }
+  .navBox .itemBox {
+    margin: 30px 0 0;
+  }
+  .navBox .telBox {
+    margin: 0 0 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background: #32a44a;
+  }
+  .navBox .telBox > p {
+    font-weight: bold;
+  }
+  .navBox .telBox a {
+    display: block;
+    color: #ffffff;
+  }
+  .navBox .telBox .em {
+    display: inline-block;
+    padding: 0 0 0 25px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    background: url("../image/common/header_tel.png") left bottom 4px no-repeat;
+    background-size: 18px auto;
+  }
+  .navBox .telBox .span {
+    padding: 0 0 0 30px;
+  }
+  .navBox .mailBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #005eae;
+  }
+  .navBox .mailBox p {
+    display: inline-block;
+    padding: 40px 0 0;
+    font-size: 14px;
+    background: url("../image/common/header_mail.png") center top 5px no-repeat;
+    background-size: 30px auto;
+  }
+  .navBox .spBreak {
+    display: block;
+  }
+  .navBox .spHidden {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  overflow: hidden;
+  margin: 100px 0 0;
+}
+
+.pageTitlePanel {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 100px 20px 50px;
+}
+.pageTitlePanel .pageTitle {
+  font-weight: bold;
+}
+.pageTitlePanel .pageTitle h1 {
+  margin: 0 0 5px;
+  font-size: 34px;
+}
+.pageTitlePanel .pageTitle h1 span {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.pageTitlePanel .pageTitle p {
+  color: #2063a7;
+}
+
+.secWrap {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap01 {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.secWrap02 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mapBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 45%;
+}
+.mapBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.btnMore {
+  width: 180px;
+}
+.btnMore a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnMore a .icon {
+  width: 45px;
+}
+.btnMore a .more {
+  width: 120px;
+  padding: 0 0 5px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+.btnMore.white a {
+  color: #ffffff;
+}
+.btnMore.white a .more {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer .footContact {
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  background: url("../image/common/footer_contact_bg.png") center no-repeat;
+  background-size: cover;
+}
+.footer .footContact .secTtl {
+  margin: 0 0 40px;
+  font-weight: bold;
+}
+.footer .footContact .secTtl h2 {
+  margin: 0 0 5px;
+  font-size: 34px;
+}
+.footer .footContact .secTtl p {
+  color: #aabfd4;
+}
+.footer .footContact .secTtl + .txt {
+  margin: 0 0 60px;
+}
+.footer .footContact .contactItem {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox {
+  padding: 20px;
+  border-top: 1px solid #7591ae;
+  border-bottom: 1px solid #7591ae;
+}
+.footer .footContact .contactItem .itemBox dl dt {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #bdcddd;
+}
+.footer .footContact .contactItem .itemBox .tel a {
+  display: inline-block;
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer .footContact .contactItem .itemBox .mail {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.footer .footContact .contactItem .itemBox .mail a {
+  display: block;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url("../image/common/footer_contact_mail_bg.png") center no-repeat;
+  background-size: cover;
+}
+.footer .footContact .contactItem .itemBox .mail a span {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  background: url("../image/common/footer_contact_mail.png") left center no-repeat;
+  background-size: 18px auto;
+}
+@media (min-width: 1025px) {
+  .footer .footContact .contactItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footContact .contactItem .itemBox {
+    width: 440px;
+  }
+}
+.footer .footPanel {
+  padding: 100px 0 50px;
+  color: #ffffff;
+  background: #312b2a;
+}
+.footer .footPanel .footBox {
+  margin: 0 0 60px;
+}
+.footer .footPanel .footBox .leftBox .logo {
+  width: 180px;
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .leftBox .txt {
+  margin: 0 0 30px;
+}
+.footer .footPanel .footBox .leftBox .txt .telFax > * {
+  display: inline-block;
+}
+.footer .footPanel .footBox .leftBox .txt a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer .footPanel .footBox .leftBox .bnr {
+  width: 160px;
+}
+.footer .footPanel .footBox .leftBox .bnr a {
+  display: block;
+}
+.footer .footPanel .footBox .rightBox .footNav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footPanel .footBox .rightBox .footNav ul {
+  width: 160px;
+}
+.footer .footPanel .footBox .rightBox .footNav ul li {
+  padding: 0 0 0 15px;
+  background: url("../image/common/footer_nav_arrow.png") left center no-repeat;
+}
+.footer .footPanel .footBox .rightBox .footNav ul li + li {
+  margin: 30px 0 0;
+}
+.footer .footPanel .footBox .rightBox .footNav ul li a {
+  display: inline-block;
+  color: #ffffff;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 480px;
+  }
+  .footer .footPanel .footBox .rightBox {
+    width: 420px;
+  }
+}
+.footer .footPanel .footBtm .bnrList ul li a {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .footer .footPanel .footBtm {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer .footPanel .footBtm .bnrList {
+    width: 50%;
+  }
+  .footer .footPanel .footBtm .bnrList ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .footBtm .bnrList ul li {
+    width: 49%;
+  }
+}
+
+/* --------------------------------------------------
+	newsTabList
+-------------------------------------------------- */
+.newsTabList {
+  display: flex;
+  max-width: 400px;
+  margin: 0 0 30px;
+}
+.newsTabList .tabBtn {
+  width: 50%;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  background: #f1f1f1;
+}
+.newsTabList .tabBtn.active {
+  pointer-events: none;
+  color: #ffffff;
+  background: #005eae;
+}

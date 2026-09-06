@@ -1,0 +1,40 @@
+// ▽メイン▽
+main#blog.postMain
+    .pageTitlePanel
+        .pageTitle
+            h1 ブログ
+            p Blog
+    .postPanel
+        .secWrap01
+            .categoryList
+                ul
+                    li
+                        a(href="") ALL
+                    li
+                        a(href="") 新着情報
+                    li
+                        a(href="") コラム
+            .detail__news
+                .titleHeader
+                    .infoBox
+                        p.time 2022.12.01
+                        p.cate お知らせ
+                    .title
+                        h3 タイトルが入ります。
+                .thumbnailBox
+                    img(src=(root_path || '') + "image/top/top_news_img.png", alt="")
+                .postContents
+                    p 平素よりお掃除プロをご愛顧いただき、誠にありがとうございます。
+                    p 誠に勝手ながら、以下の期間を年末年始休業とさせていただきます。
+                    p ーーーーーーーーーーーーーーーーーーーーーーーー
+                    p 休業期間：2022年12月30日(金)～2023年1月3日(火)
+                    p ーーーーーーーーーーーーーーーーーーーーーーーー
+                    p ご不便をお掛けいたしますが、何卒ご理解いただきますようお願い致します。
+                    p 期間中の電話でのお問い合わせについてはお休みさせていただきます。
+                    p なお、メールでいただきましたお問い合わせにつきましては、2023年1月4日(水)以降に順次対応させていただきます。
+                    p 来年も引き続き、変わらぬご愛顧を賜りますようお願い申し上げます。
+            .detail__back
+                .btnBack
+                    a(href="")
+                        span 戻る
+// △メイン△

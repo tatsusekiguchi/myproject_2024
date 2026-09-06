@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/* --------------------------------------------------
+	header
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .header .headBox {
+    height: auto;
+    padding: 15px 80px 15px 20px;
+  }
+  .header .logoBox .logo {
+    width: 120px;
+  }
+  .header .hamburger {
+    top: 10px;
+    right: 20px;
+  }
+  .header .sideNavPanel {
+    display: none;
+  }
+  .header .language {
+    font-size: 11px;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .navBox .navWrap {
+    max-width: 600px;
+    padding: 60px 20px;
+  }
+  .navBox .navContainer .leftPanel {
+    margin: 0 0 30px;
+  }
+  .navBox .navContainer .leftPanel .logo {
+    width: 150px;
+  }
+  .navBox .navContainer .leftPanel .addressBox {
+    display: none;
+  }
+  .navBox .navContainer .rightPanel .navList {
+    margin: 0 0 40px;
+  }
+  .navBox .navContainer .rightPanel .navList .box + .box {
+    margin: 25px 0 0;
+  }
+  .navBox .navContainer .rightPanel .navList .ul .li + .li {
+    margin: 25px 0 0;
+  }
+  .navBox .navContainer .rightPanel .navList .snsList {
+    margin: 30px 0 0;
+  }
+  .navBox .navContainer .rightPanel .navList .pulldown {
+    display: inline-block;
+    padding: 0 30px 20px 0;
+    cursor: pointer;
+    background: url(https://file-g.com/system_panel/uploads/images/nav_arrow_white.png) right 10px top 8px no-repeat;
+  }
+  .navBox .navContainer .rightPanel .navList .pulldown.active {
+    background: url(https://file-g.com/system_panel/uploads/images/nav_arrow_up_white.png) right 10px top 8px no-repeat;
+  }
+  .navBox .navContainer .rightPanel .navList .pulldown + .ul {
+    display: none;
+    padding: 0 0 0 1em;
+  }
+  .navBox .navContainer .rightPanel .navList .pulldown + .ul .li {
+    position: relative;
+    padding: 0 0 0 1em;
+  }
+  .navBox .navContainer .rightPanel .navList .pulldown + .ul .li::before {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .navBox .navContainer .rightPanel .bnrList {
+    max-width: 200px;
+  }
+  .navBox .navContainer .rightPanel .bnrList .ul .li + .li {
+    margin: 20px 0 0;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 62px 0 0;
+  }
+
+  .pageTitlePanel {
+    padding: 25px 20px;
+  }
+  .pageTitlePanel h1 {
+    font-size: 20px;
+  }
+
+  .pageSecTtl .secTtl {
+    font-size: 12px;
+  }
+  .pageSecTtl p {
+    font-size: 20px;
+  }
+
+  .mainContainer {
+    padding: 50px 0 100px;
+  }
+
+  .secWrap {
+    padding: 0 20px;
+  }
+
+  .secWrap01 {
+    padding: 0 20px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+
+  .caseSliderPanel .counterBox {
+    position: static;
+    margin: 0 0 10px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .caseSliderPanel .counterBox .slick-counter p {
+    font-size: 30px;
+  }
+  .caseSliderPanel .caseSlider .slick-slide {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .caseSliderPanel .caseSlider .slick-slide img {
+    height: 60vw;
+  }
+  .caseSliderPanel .caseSlider .slick-current img {
+    border: 10px solid #ffffff;
+  }
+  .caseSliderPanel .caseSlider .is-active-next img {
+    border: 10px solid #ffffff;
+  }
+
+  .reserveFooter {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .reserveFooter .pageSecTtl {
+    width: 200px;
+    margin: 0 auto 20px !important;
+  }
+  .reserveFooter .telLink {
+    margin: 0 0 20px;
+  }
+  .reserveFooter .contactLink a {
+    width: 180px;
+    background: url(https://file-g.com/system_panel/uploads/images/footer_contact_arrow.png) right center no-repeat;
+    background-size: 60px auto;
+  }
+  .reserveFooter .contactLink a p {
+    display: inline-block;
+    padding: 0 40px 0 0;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 0;
+  }
+  .footer .footContact {
+    padding: 30px 20px;
+  }
+  .footer .footContact .secBox {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .footer .footContact .pageSecTtl {
+    width: 240px;
+    margin: 0 auto 20px;
+  }
+  .footer .footContact .contactLink {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer .footContact .contactLink a {
+    background: url(https://file-g.com/system_panel/uploads/images/footer_contact_arrow.png) right center no-repeat;
+    background-size: 80px auto;
+  }
+  .footer .footPanel {
+    padding: 60px 20px 40px 20px;
+  }
+  .footer .footPanel .footBox .leftBox .logo {
+    width: 120px;
+    margin: 0 0 30px;
+  }
+  .footer .footPanel .footBox .leftBox .snsList {
+    margin: 40px 0 0;
+  }
+  .footer .footPanel .footBox .rightBox .addressList {
+    display: none;
+  }
+  .footer .footPanel .footBox .rightBox .footBtm {
+    display: block;
+    margin: 40px 0 0;
+  }
+  .footer .footPanel .footBox .rightBox .footBtm .bnr {
+    max-width: 330px;
+    width: 100%;
+  }
+  .footer .footPanel .footBox .rightBox .footBtm .copy {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1025px) {
+  .footer .footPanel .footBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footPanel .footBox .leftBox {
+    width: 25%;
+  }
+  .footer .footPanel .footBox .rightBox {
+    width: 70%;
+  }
+}

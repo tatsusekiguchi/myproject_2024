@@ -1,0 +1,15 @@
+- title = ''
+- description = ''
+- keywords = ''
+- root_path = '../'
+- page_name = 'record_dispensary'
+doctype html
+//- サイトの設定の読み込み
+include /site.pug
+html(lang='ja')
+  head
+    include /common/head.pug
+  body#record_dispensary.page
+    include /common/header.pug
+    include ../../layouts/record_dispensary.pug
+    include /common/footer.pug

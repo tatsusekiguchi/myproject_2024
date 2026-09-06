@@ -1,0 +1,49 @@
+/* Javascript */
+
+$(document).ready(function(){
+
+    if($('.registPostMain').length > 0 ) {
+        if($('.wpuf-form-add').length > 0 ) {
+            $('.confirmPostBox, .wpuf-form-add').hide();
+            $('.confirmPostBox').hide();
+        }
+        else {
+            $('.editPostBox, .btnSubmit').hide();
+        }
+    }
+
+    $('.btnPrint').on('click', function() {
+        window.print();
+    });
+
+});
+
+//======================================================================================================
+// setSchoolSelect( )
+// 機能  ：区に連動した学校フォーム生成
+// 引数  ：select_id, ward_id, school_type
+// 戻り値：なし
+//======================================================================================================
+function setSchoolSelect(select_id, ward_id, school_type) {
+
+    $('.select_ward').on('change', function() {
+        $('.select_school option:nth-child(n+2)').remove(); // 学校フォームクリア
+        const obj = document.getElementById(select_id);
+        const obj_ward_id = document.getElementById(ward_id);
+        let index = obj.selectedIndex;
+        let select_ward = ('00' + index).slice(-2);
+        let key = Number(index)-1;
+        $.getJSON('/membersite/aggregate/wp-content/themes/nagoya-yakuzaishi-aggregate/js/school_list.json', function(data) {
+            for(var i=0; i<data[key][select_ward].school.length; i++){
+                $('.select_school').append('<option value="'+data[key][select_ward].school[i].name+'" data-type="'+data[key][select_ward].school[i].type+'">'+data[key][select_ward].school[i].name+'</option>');
+            }
+        });
+        obj_ward_id.value = select_ward;
+    });
+
+    $('.select_school').on('change', function() {
+        $('#' + school_type).val($('.select_school option:selected').data('type'));
+    });
+
+}
+

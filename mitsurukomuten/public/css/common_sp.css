@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+
+  .spBreak {
+    display: block;
+  }
+
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+
+  .spHidden {
+    display: none;
+  }
+
+  #sideBtn {
+    display: none;
+  }
+
+  .topicPath {
+    display: none;
+  }
+}
+/*--------------------------------------------------
+  header
+--------------------------------------------------*/
+@media (max-width: 1180px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    z-index: 999;
+    background: #ffffff;
+  }
+  .header .headTtl {
+    display: none;
+  }
+  .header .logoBox {
+    position: relative;
+    top: 10px;
+    z-index: 9999;
+    width: 260px;
+    display: flex;
+    align-items: center;
+  }
+  .header .logoBox a {
+    display: block;
+  }
+  .header .logoBox .logo {
+    max-width: 200px;
+    margin: 0 15px 0 0;
+  }
+  .header .logoBox .sns {
+    width: 20px;
+  }
+  .header .hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 17px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 10000;
+  }
+  .header .hamburger .span {
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+  .header .hamburger .span:nth-of-type(1) {
+    top: 10px;
+  }
+  .header .hamburger .span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .hamburger .span:nth-of-type(3) {
+    bottom: 10px;
+  }
+  .header .hamburger.is-open .span:nth-of-type(1) {
+    transform: translate(-50%, 9px) rotate(-45deg);
+  }
+  .header .hamburger.is-open .span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header .hamburger.is-open .span:nth-of-type(3) {
+    transform: translate(-50%, -9px) rotate(45deg);
+  }
+
+  .header .sideNav {
+    top: 100px;
+    width: 30px;
+  }
+  .header .sideNav a {
+    padding: 15px 8px;
+    font-size: 13px;
+  }
+  .header .sideNav a p {
+    padding: 20px 0 0;
+    background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/header_consult.png) center top no-repeat;
+    background-size: 20px auto;
+  }
+}
+/* --------------------------------------------------
+	nav
+-------------------------------------------------- */
+@media (max-width: 1180px) {
+  .navBox {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 120px;
+    text-align: center;
+    z-index: 999;
+    background: #ffffff;
+    transition: 0.6s;
+    overflow: auto;
+  }
+  .navBox.active {
+    top: 70px;
+  }
+  .navBox .navList .ul .li {
+    position: relative;
+  }
+  .navBox .navList .ul .li a {
+    font-size: 15px;
+  }
+  .navBox .navList .ul .li p {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .navBox .navList .ul a {
+    display: block;
+    padding: 8px 0;
+  }
+  .navBox .navList > .ul {
+    border-top: 1px solid #373737;
+  }
+  .navBox .navList > .ul > .li {
+    border-bottom: 1px solid #373737;
+  }
+}
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .main {
+    margin: 70px 0 0;
+  }
+
+  .pageKvPanel .pageKvTitle {
+    height: 200px;
+    padding: 0 20px;
+  }
+  .pageKvPanel .pageKvTitle h1 {
+    font-size: 26px;
+  }
+
+  .pageSecTtlBox {
+    margin: 0 0 40px;
+  }
+  .pageSecTtlBox h2 {
+    font-size: 20px;
+  }
+  .pageSecTtlBox h2:after {
+    width: 60px;
+  }
+  .pageSecTtlBox p {
+    font-size: 13px;
+  }
+
+  .mapBox {
+    padding: 0 0 70%;
+  }
+}
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer .footContact {
+    padding: 30px 0;
+  }
+  .footer .footContact .secPanel {
+    padding: 30px 20px;
+  }
+  .footer .footContact .pageSecTtlBox {
+    margin: 0 0 20px;
+  }
+  .footer .footContact .txt {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  .footer .footContact .itemList {
+    max-width: 320px;
+  }
+  .footer .footContact .itemList .itemBox + .itemBox {
+    margin: 30px 0 0;
+  }
+  .footer .footContact .itemList .itemBox a {
+    height: 50px;
+  }
+  .footer .footContact .itemList .itemBox .tel {
+    font-size: 24px;
+  }
+  .footer .footContact .itemList .itemBox .tel p {
+    padding: 0 0 0 25px;
+    background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/footer_contact_tel.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footContact .itemList .itemBox .mail {
+    font-size: 18px;
+  }
+  .footer .footContact .itemList .itemBox .mail p {
+    padding: 0 0 0 25px;
+    background: url(https://mitsurukomuten240417.smooooth.jp/system_panel/uploads/images/footer_contact_mail.png) left center no-repeat;
+    background-size: 20px auto;
+  }
+  .footer .footContact .itemList .itemBox .info .ul .li {
+    font-size: 13px;
+  }
+  .footer .footContact .itemList .itemBox .info .ul .li p:nth-child(1) {
+    width: 60px;
+  }
+  .footer .footPanel {
+    padding: 40px 0 20px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox {
+    margin: 0 0 20px;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox .logo {
+    width: 220px;
+    margin: 0 15px 0 0;
+  }
+  .footer .footPanel .footBox .leftBox .logoBox .sns {
+    width: 20px;
+  }
+  .footer .footPanel .footBox .leftBox .info .dl {
+    display: flex;
+    font-size: 14px;
+  }
+  .footer .footPanel .footBox .leftBox .info .dl .dt {
+    width: 60px;
+  }
+  .footer .footPanel .footBox .rightBox .footNav {
+    display: none;
+  }
+  .footer .footPanel .copy {
+    margin: 30px 0 0;
+  }
+}

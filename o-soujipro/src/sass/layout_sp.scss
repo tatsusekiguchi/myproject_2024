@@ -1,0 +1,1060 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+#top {
+  .topKvContainer {
+    height: 400px;
+    padding: 0 20px;
+    .topKvTitleBox {
+      max-width: 255px;
+      min-height: 200px;
+      .logo {
+        width: 85px;
+        margin: 0 auto 20px;
+      }
+      h1 {
+        font-size: 15px;
+      }
+    }
+    .topKvScroll {
+      display: none;
+    }
+  }
+  .topSection {
+    .secBox {
+      padding: 60px 0 100px;
+      h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+        line-height: 2;
+      }
+    }
+  }
+  .worrySection {
+    padding: 0 0 60px;
+    .photoBox {
+      padding: 0 40px 0 0;
+      .photo {
+        width: 100%;
+      }
+    }
+    .checkPanel {
+      position: relative;
+      max-width: 670px;
+      margin: -40px 0 0;
+      padding: 40px 20px;
+      .inner {
+        max-width: 560px;
+      }
+      h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      ul {
+        li {
+          padding: 0 0 0 22px;
+          background: url("../image/common/list_check_pink.png") left top 5px
+            no-repeat;
+          background-size: 16px auto;
+        }
+      }
+    }
+  }
+  .messageContainer {
+    .messagePanel {
+      padding: 15px 20px;
+      font-size: 24px;
+    }
+  }
+  .secTitleBox {
+    margin: 0 0 40px;
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .serviceSection {
+    padding: 60px 0 120px;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: left;
+    }
+    .planPanel {
+      margin: 0 0 25px;
+      padding: 60px 20px;
+      h3 {
+        font-size: 24px;
+      }
+      .setPanel {
+        padding: 30px 15px;
+        h4 {
+          margin: 0 0 30px;
+          padding: 0 0 10px;
+          font-size: 16px;
+        }
+        .setBox {
+          dl {
+            dt {
+              display: inline-block;
+              margin: 0 30px 0 0;
+              + dd {
+                display: inline-block;
+              }
+            }
+            dd {
+              + dd {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        margin: 15px 0 0;
+        font-size: 12px;
+      }
+      .btnMore {
+        margin: 35px auto 0;
+      }
+    }
+    .planList {
+      margin: 0 0 40px;
+      ul {
+        li {
+          + li {
+            margin: 25px 0 0;
+          }
+        }
+      }
+    }
+    .timeContainer {
+      padding: 0 15px;
+      .accordHead {
+        padding: 25px 0;
+        font-size: 20px;
+        background: url("../image/common/accord_arrow_01.png") right center
+          no-repeat;
+        background-size: 15px auto;
+        &.active {
+          background: url("../image/common/accord_arrow_02.png") right center
+            no-repeat;
+          background-size: 15px auto;
+        }
+      }
+      .accordBody {
+        padding: 0 0 35px;
+      }
+      .planBox {
+        padding: 30px 15px;
+        border-radius: 10px;
+        + .planBox {
+          margin: 25px 0 0;
+        }
+        h4 {
+          margin: 0 0 20px;
+        }
+        .timeBox {
+          .box {
+            + .box {
+              margin: 20px 0 0;
+            }
+            dl {
+              display: flex;
+              + dl {
+                margin: 20px 0 0;
+              }
+              dt {
+                width: 135px;
+                margin: 0 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        font-size: 12px;
+      }
+    }
+  }
+  .newSection {
+    padding: 0 0 80px;
+    .newServiceList {
+      .newServiceItem {
+        + .newServiceItem {
+          margin: 25px 0 0;
+        }
+        .photoBox {
+          padding: 0 0 20px;
+          font-size: 16px;
+          .band {
+            max-width: 290px;
+            height: 40px;
+            padding: 0 15px;
+          }
+        }
+        .txtBox {
+          padding: 25px 15px 35px;
+          h3 {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+          .price {
+            margin: 0 0 15px;
+            font-size: 16px;
+          }
+          .txt {
+            font-size: 12px;
+          }
+          aside {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .infoSection {
+    padding: 0 0 80px;
+    .btnMore {
+      margin: 40px auto 0;
+    }
+  }
+  .voiceSection {
+    padding: 80px 0 65px;
+    .voicePanel {
+      + .voicePanel {
+        margin: 30px 0 0;
+        padding: 20px 0 0;
+      }
+      .voiceBox01 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 10px;
+        .photo {
+          width: 40px;
+          height: 40px;
+        }
+        dl {
+          width: calc(100% - 60px);
+          font-size: 16px;
+          dt {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .faqSection {
+    padding: 120px 0;
+    .faqPanel {
+      + .faqPanel {
+        margin: 30px 0 0;
+        padding: 20px 0 0;
+      }
+      dl {
+        dt {
+          margin: 0 7px 0 0;
+          font-size: 20px;
+          line-height: 1;
+        }
+        dd {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+        + dl {
+          margin: 15px 0 0;
+          dt {
+            padding: 2px 0 0;
+          }
+          dd {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .cautionSection {
+    padding: 0 0 60px;
+    .cautionPanel {
+      padding: 30px 20px;
+      ul {
+        li {
+          position: relative;
+          padding: 0 0 0 22px;
+          background: url("../image/common/list_check_pink.png") left top 6px
+            no-repeat;
+          background-size: 16px auto;
+          + li {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+#service {
+  .topSection {
+    padding: 60px 0 120px;
+    .topTxt {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    .pagingList {
+      max-width: 480px;
+      margin: 0 auto 40px;
+      ul {
+        li {
+          width: calc((100% / 2));
+          a {
+            padding: 10px 30px 10px 20px;
+            font-size: 13px;
+            background: url("../image/service/service_top_arrow.png") right 20px
+              center no-repeat;
+            background-size: 10px auto;
+          }
+        }
+      }
+    }
+    .bnrList {
+      ul {
+        display: block;
+        li {
+          width: 100%;
+          max-width: 450px;
+          margin: 0 auto;
+          + li {
+            margin: 20px auto 0;
+          }
+        }
+      }
+    }
+  }
+  .planSection {
+    padding: 0 0 120px;
+    .pageSecTitleBox {
+      padding: 0 0 30px;
+    }
+    .mv + .planContainer {
+      margin: -40px 0 0;
+    }
+    .planContainer {
+      + .planContainer {
+        margin: 50px 0 0;
+      }
+      .planCntTitle {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+    }
+    .planPanel {
+      padding: 40px 20px;
+      .infoBox {
+        .ttl {
+          min-height: 0;
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        dl {
+          dt {
+            width: 100px;
+            padding: 20px;
+          }
+          dd {
+            width: calc(100% - 105px);
+            padding: 20px;
+            span {
+              font-size: 12px;
+            }
+            em {
+              font-size: 18px;
+            }
+            .box {
+              + .box {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        font-size: 12px;
+      }
+      .multiBox {
+        .infoBox + .infoBox {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    .timeContainer {
+      padding: 0 15px;
+      .accordHead {
+        padding: 25px 0;
+        font-size: 20px;
+        background: url("../image/common/accord_arrow_01.png") right center
+          no-repeat;
+        background-size: 15px auto;
+        &.active {
+          background: url("../image/common/accord_arrow_02.png") right center
+            no-repeat;
+          background-size: 15px auto;
+        }
+      }
+      .accordBody {
+        padding: 0 0 35px;
+      }
+      .planBox {
+        padding: 30px 15px;
+        border-radius: 10px;
+        + .planBox {
+          margin: 25px 0 0;
+        }
+        h4 {
+          margin: 0 0 20px;
+        }
+        .timeBox {
+          .box {
+            + .box {
+              margin: 20px 0 0;
+            }
+            dl {
+              display: flex;
+              + dl {
+                margin: 20px 0 0;
+              }
+              dt {
+                width: 135px;
+                margin: 0 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        font-size: 12px;
+      }
+    }
+    .caution {
+      padding: 20px;
+      .ttl {
+        margin: 0 0 15px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	about
+///////////////////////////////////////////////////////////*/
+#about {
+  .pageSecTitleBox {
+    margin: 0 0 40px;
+  }
+  .sec01 {
+    padding: 80px 0;
+    .secBox {
+      max-width: 580px;
+      margin: 0 auto;
+
+      .txtBox {
+        padding: 20px 0 0;
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 100px;
+    .secBox {
+      margin: 0 0 100px;
+      .photo {
+        max-width: 600px;
+      }
+      .txtBox {
+        margin: 20px 0 0;
+        padding: 40px 20px;
+      }
+      .infoBox {
+        .ttl {
+          min-height: 0;
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        dl {
+          dt {
+            width: 100px;
+            padding: 20px;
+          }
+          dd {
+            width: calc(100% - 105px);
+            padding: 20px;
+            span {
+              font-size: 12px;
+            }
+            em {
+              font-size: 18px;
+            }
+            .box {
+              + .box {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slidePanel {
+    .slideBox {
+      ul {
+        li {
+          width: calc(100% / 2);
+          margin: 0 10px;
+          padding: 0 0 60%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+#company {
+  .pageSecTitleBox {
+    margin: 0 0 40px;
+  }
+  .sec01 {
+    padding: 80px 0;
+    .infoPanel {
+      padding: 30px 20px;
+    }
+    .infoBox {
+      .ttl {
+        min-height: 0;
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      dl {
+        dt {
+          width: 100px;
+          padding: 20px;
+        }
+        dd {
+          width: calc(100% - 105px);
+          padding: 20px;
+          span {
+            font-size: 12px;
+          }
+          em {
+            font-size: 18px;
+          }
+          .box {
+            + .box {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 0 0 100px;
+    .cautionPanel {
+      padding: 30px 20px;
+      ul {
+        li {
+          position: relative;
+          padding: 0 0 0 22px;
+          background: url("../image/common/list_check_pink.png") left top 6px
+            no-repeat;
+          background-size: 16px auto;
+          + li {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+#contact {
+  .contactSection {
+    margin: 0 0 80px;
+  }
+  .secTtl {
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    border-left: 4px solid #005eae;
+    h2 {
+      line-height: 1.3;
+    }
+  }
+  .section {
+    + .section {
+      margin: 60px 0 0;
+    }
+  }
+  .sec01 {
+    .topTxt {
+      margin: 0 0 40px;
+    }
+  }
+}
+
+/*===================================================
+	フォーム
+===================================================*/
+.formBox {
+  form > dl {
+    font-size: 12px;
+  }
+  .radioForm {
+    display: flex;
+    dt {
+      width: 85px;
+    }
+    dd {
+      width: calc(100% - 85px);
+    }
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .birthBox {
+    padding: 0 10px;
+    ul {
+      li {
+        width: 70px;
+        + li {
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    input {
+      height: 30px;
+      padding: 0 5px;
+    }
+  }
+  .checkItem {
+    margin: 0 0 40px;
+    span {
+      padding-left: 30px;
+    }
+  }
+  form .mwform-radio-field {
+    display: block;
+    + .mwform-radio-field {
+      margin: 10px 0 0;
+    }
+  }
+  .privacy {
+    margin: 35px auto 20px;
+    .agreeBox {
+      height: 250px;
+    }
+    .box {
+      + .box {
+        margin: 5px 0 0;
+      }
+    }
+  }
+}
+
+#contactConfirm,
+#contactComplete {
+  #section__contact {
+    padding: 90px 0 0;
+    .contactContainer {
+      padding: 40px 0 60px;
+    }
+    .secWrap01 {
+      padding: 0 30px;
+    }
+    .secTitleBox {
+      margin: 0 0 20px;
+      p {
+        margin: 0 0 5px;
+        font-size: 11px;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+      }
+    }
+    .topTxt {
+      margin: 0 0 40px;
+      .txt {
+        letter-spacing: 0;
+      }
+    }
+  }
+  .btnToTop {
+    font-size: 14px;
+  }
+}
+
+/* --------------------------------------------------
+	POST
+-------------------------------------------------- */
+.postMain {
+  .postPanel {
+    padding: 30px 0 80px;
+  }
+  .categoryList {
+    margin: 0 0 40px;
+    ul {
+      display: block;
+      margin: 0;
+      li {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        + li {
+          margin: 15px auto 0;
+        }
+      }
+    }
+  }
+  .list {
+    &__news {
+      &__section {
+        .txtBox {
+          padding: 15px 0 0;
+          .title {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    &__pagination {
+      margin: 50px 0 0;
+    }
+  }
+  .detail {
+    &__news {
+      .titleHeader {
+        margin: 0 0 20px;
+        padding: 0 0 10px;
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+    &__back {
+      margin: 100px 0 0;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	baby
+-------------------------------------------------- */
+#baby {
+  .pageSecTitleBox {
+    margin: 0 0 40px;
+  }
+  .secTitleBox {
+    margin: 0 0 40px;
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .sec01 {
+    padding: 80px 0;
+    .secBox {
+      max-width: 580px;
+      margin: 0 auto;
+
+      .txtBox {
+        padding: 20px 0 0;
+        h2 {
+          margin: 0 0 20px;
+          font-size: 20px;
+        }
+        ul {
+          li {
+            padding: 0 0 0 22px;
+            background: url("../image/common/list_check_pink.png") left top 5px
+              no-repeat;
+            background-size: 16px auto;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 40px 0;
+    .topTxt {
+      margin: 0 0 60px;
+      text-align: left;
+    }
+    .planPanel {
+      padding: 60px 20px;
+      h3 {
+        font-size: 24px;
+      }
+      ul {
+        li {
+          padding: 0 0 0 22px;
+          background: url("../image/common/list_check_pink.png") left top 5px
+            no-repeat;
+          background-size: 16px auto;
+        }
+      }
+    }
+  }
+  .sec03 {
+    padding: 40px 0;
+    .listBox {
+      margin: 0 0 40px;
+      ul {
+        max-width: 500px;
+        margin: 0 auto;
+        li {
+          + li {
+            margin: 40px 0 0;
+          }
+        }
+        dl {
+          dt {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .planPanel {
+      padding: 60px 20px;
+      h3 {
+        font-size: 24px;
+      }
+      .setPanel {
+        padding: 30px 15px;
+        h4 {
+          margin: 0 0 30px;
+          padding: 0 0 10px;
+          font-size: 16px;
+        }
+        .setBox {
+          dl {
+            dt {
+              display: inline-block;
+              margin: 0 30px 0 0;
+              + dd {
+                display: inline-block;
+              }
+            }
+            dd {
+              + dd {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        margin: 15px 0 0;
+        font-size: 12px;
+      }
+    }
+  }
+  .sec04 {
+    padding: 40px 0;
+    .planPanel {
+      padding: 40px 20px;
+      .infoBox {
+        .ttl {
+          min-height: 0;
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        dl {
+          dt {
+            width: 100px;
+            padding: 20px;
+          }
+          dd {
+            width: calc(100% - 105px);
+            padding: 20px;
+            span {
+              font-size: 12px;
+            }
+            em {
+              font-size: 18px;
+            }
+            .box {
+              + .box {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        font-size: 12px;
+      }
+    }
+  }
+  .faqSection {
+    padding: 60px 0;
+    .faqPanel {
+      + .faqPanel {
+        margin: 30px 0 0;
+        padding: 20px 0 0;
+      }
+      dl {
+        dt {
+          margin: 0 7px 0 0;
+          font-size: 20px;
+          line-height: 1;
+        }
+        dd {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+        + dl {
+          margin: 15px 0 0;
+          dt {
+            padding: 2px 0 0;
+          }
+          dd {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .cautionSection {
+    padding: 0 0 60px;
+    .cautionPanel {
+      padding: 30px 20px;
+      ul {
+        li {
+          position: relative;
+          padding: 0 0 0 22px;
+          background: url("../image/common/list_check_pink.png") left top 6px
+            no-repeat;
+          background-size: 16px auto;
+          + li {
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------
+	office
+-------------------------------------------------- */
+#office {
+  .pageSecTitleBox {
+    margin: 0 0 40px;
+  }
+  .secTitleBox {
+    margin: 0 0 40px;
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .sec01 {
+    padding: 80px 0;
+  }
+  .sec02 {
+    padding: 40px 0 80px;
+    .listBox {
+      margin: 0 0 40px;
+      ul {
+        max-width: 500px;
+        margin: 0 auto;
+        li {
+          + li {
+            margin: 40px 0 0;
+          }
+        }
+        dl {
+          dt {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .planPanel {
+      padding: 60px 20px;
+      h3 {
+        font-size: 24px;
+      }
+      .setPanel {
+        padding: 30px 15px;
+        .ttlBox {
+          margin: 0 0 20px;
+          padding: 0 0 10px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+        .setBox {
+          dl {
+            dt {
+              display: inline-block;
+              margin: 0 30px 0 0;
+              + dd {
+                display: inline-block;
+              }
+            }
+            dd {
+              + dd {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+      aside {
+        margin: 15px 0 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

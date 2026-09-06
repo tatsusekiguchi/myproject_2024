@@ -1,0 +1,2752 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+.topMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .topKvPanel {
+    position: relative;
+    .topKv {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 900px;
+      .kvBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0 0 35% 35%;
+        }
+        .kv01 {
+          background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_kv_01.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv02 {
+          background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_kv_02.png)
+            center no-repeat;
+          background-size: cover;
+        }
+        .kv03 {
+          background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_kv_03.png)
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .kvTtl {
+      padding: 20px 10px;
+      color: #b8f7b1;
+      text-align: center;
+      border-radius: 10px;
+      background: #42200c;
+    }
+    @media (min-width: 1025px) {
+      .kvTtl {
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+  .sec01 {
+    margin: -60px 0 0;
+    padding: 0 0 60px;
+    .newsPanel {
+      .ttlBox {
+        background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_news_ttl_bg.png)
+          left top no-repeat;
+        background-size: 300px auto;
+        .ttl {
+          width: 160px;
+          margin: 0 auto;
+        }
+      }
+      .newsBox {
+        .webgene-blog {
+          .webgene-header {
+            display: none;
+          }
+          .webgene-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px;
+            color: #3f1a0a;
+            background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_news_line.png)
+              left bottom no-repeat;
+            background-size: 100% auto;
+            .infoBox {
+              width: 240px;
+              > * {
+                display: inline-block;
+                font-size: 14px;
+              }
+              .cate {
+                min-width: 110px;
+                margin: 0 0 0 10px;
+                padding: 0 10px;
+                text-align: center;
+                background: #ffcc00;
+              }
+            }
+            .title {
+              width: calc(100% - 240px);
+              a {
+                display: inline-block;
+                color: #3f1a0a;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .newsPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ttlBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30%;
+          min-height: 400px;
+        }
+        .newsBox {
+          width: 60%;
+          padding: 80px 0 20px;
+        }
+      }
+    }
+    .alcPanel {
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 150px;
+          .icon {
+            transform-origin: center bottom;
+            animation: yurayura 2s linear infinite;
+          }
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 44px;
+          color: #547650;
+          line-height: 1.2;
+          p {
+            display: inline;
+          }
+          .em {
+            font-size: 70px;
+          }
+        }
+        .dl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 20px;
+          font-size: 0;
+          .dt {
+            margin: 0 40px 0 0;
+            font-size: 40px;
+          }
+          .dd {
+            p {
+              display: inline-block;
+              font-size: 40px;
+            }
+            .span {
+              font-size: 30px;
+            }
+          }
+        }
+        .aside {
+          margin: 20px 0 0;
+          font-size: 14px;
+          color: #6b563b;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .alcPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec02_img.png)
+        right 100px top 50px no-repeat,
+      url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec02_bg.png)
+        center top no-repeat;
+    background-size: 350px auto, cover;
+    .secBox {
+      padding: 120px 0 60px;
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          top: -20px;
+          right: -100px;
+          width: 300px;
+          .icon {
+            transform-origin: center bottom;
+            animation: yurayura 2s linear infinite;
+          }
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          p,
+          h2 {
+            display: inline;
+            font-size: 44px;
+            line-height: 1.2;
+          }
+          .em {
+            font-size: 70px;
+          }
+          .red {
+            color: #d56f01;
+          }
+        }
+        .btnMore {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .txtBox {
+          width: 55%;
+        }
+        .photoBox {
+          width: 40%;
+          padding: 60px 0 0;
+        }
+      }
+    }
+  }
+  .sec03 {
+    .secWrap01 {
+      max-width: 1340px;
+    }
+    .secBox {
+      position: relative;
+      padding: 80px 0 40px;
+      text-align: center;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec03_img_icon_bg.png)
+          right top -250px no-repeat,
+        url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec03_img_icon_bg.png)
+          left 200px bottom -250px no-repeat;
+      background-size: 300px auto, 300px auto;
+      .ttlBox {
+        position: relative;
+        margin: 0 0 30px;
+        font-family: "Zen Kaku Gothic New";
+        font-size: 30px;
+        color: #547650;
+        line-height: 1.2;
+        p {
+          display: inline;
+        }
+        .em {
+          font-size: 70px;
+        }
+      }
+      .btnMore {
+        margin: 40px auto 0;
+      }
+      .photoList {
+        .photo {
+          max-width: 350px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .photoList {
+          .photo01 {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+          }
+          .photo02 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec04_bg.png)
+      center top no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      padding: 150px 0 200px;
+    }
+    .ttlBox {
+      position: relative;
+      margin: 0 0 30px;
+      padding: 0 0 0 150px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 0;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec04_ttl.png)
+        left center no-repeat;
+      background-size: 140px auto;
+      .ttl01 {
+        color: #9e810c;
+      }
+      p {
+        display: inline;
+        font-size: 34px;
+        line-height: 1.2;
+      }
+      .em {
+        font-size: 70px;
+      }
+      .red {
+        color: #d56f01;
+      }
+    }
+    .btnMore {
+      margin: 40px 0 0;
+    }
+    .photo {
+      position: absolute;
+      left: 30%;
+      bottom: -50px;
+      width: 70%;
+      max-width: 700px;
+    }
+  }
+  .sec05 {
+    padding: 100px 0;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      max-width: 1080px;
+      margin: 0 auto;
+      .txtBox {
+        .ttlBox {
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 70px;
+          color: #547650;
+        }
+        .btnMore {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: 52%;
+        }
+        .txtBox {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .sec06 {
+    padding: 100px 0;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec06_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      .txtBox {
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          .ttl01 {
+            color: #f7cab9;
+          }
+          p {
+            display: inline;
+            font-size: 30px;
+            line-height: 1.2;
+          }
+          h2 {
+            font-size: 60px;
+            color: #ffcc00;
+            letter-spacing: -0.1em;
+          }
+        }
+        .txt {
+          color: #ffffff;
+        }
+        .btnMore {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .sec07 {
+    padding: 100px 0;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_sec05_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      max-width: 1080px;
+      margin: 0 auto;
+      .txtBox {
+        .ttlBox {
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 70px;
+          color: #547650;
+        }
+        .infoBox {
+          .dl {
+            display: flex;
+            padding: 20px;
+            line-height: 2;
+            border-bottom: 1px solid #000000;
+            .dt {
+              width: 120px;
+            }
+            .dd {
+              width: calc(100% - 120px);
+            }
+            .btnMap {
+              width: 150px;
+              a {
+                display: block;
+              }
+            }
+          }
+        }
+        .btnMore {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 30%;
+        }
+        .txtBox {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+.serviceMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .topSection {
+    position: relative;
+    z-index: 2;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 100px 0 260px;
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          top: -50px;
+          right: 0;
+          width: 160px;
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          z-index: 1;
+          p,
+          h2 {
+            display: inline;
+            font-size: 44px;
+            line-height: 1.4;
+          }
+          .em {
+            font-size: 70px;
+          }
+          .red {
+            color: #d56f01;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photo {
+          position: absolute;
+          top: 60px;
+          right: 5%;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 0 0 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -300px;
+      left: 15%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/service_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secBox {
+      position: relative;
+      + .secBox {
+        margin: 60px 0 0;
+      }
+      .txtBox {
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          color: #547650;
+          p,
+          h2 {
+            display: inline;
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: -0.1em;
+          }
+          .em {
+            font-size: 60px;
+          }
+        }
+        .btnMore {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photoBox {
+          width: 40%;
+        }
+        .txtBox {
+          width: 56%;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          max-width: 1100px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+.strengthMain {
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/strength_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    .secBox {
+      .txtBox {
+        .iconBox {
+          position: absolute;
+          top: -50px;
+          right: 0;
+          width: 160px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	sports
+///////////////////////////////////////////////////////////*/
+.sportsMain {
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/sports_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	menu
+///////////////////////////////////////////////////////////*/
+.menuMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    position: relative;
+    z-index: 2;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 100px 0 260px;
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          top: -50px;
+          right: 0;
+          width: 160px;
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          z-index: 1;
+          p,
+          h2 {
+            display: inline;
+            font-size: 44px;
+            line-height: 1.4;
+          }
+          .em {
+            font-size: 70px;
+          }
+          .red {
+            color: #d56f01;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .photo {
+          position: absolute;
+          top: 60px;
+          right: 5%;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 0 0 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -400px;
+      left: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      right: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secWrap01 {
+      position: relative;
+      z-index: 1;
+    }
+    .secTtlBox {
+      margin: 0 0 20px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 44px;
+    }
+    .topTxt {
+      margin: 0 0 30px;
+      font-size: 14px;
+      color: #6b563b;
+    }
+    .alcPanel {
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 150px;
+          .icon {
+            transform-origin: center bottom;
+            animation: yurayura 2s linear infinite;
+          }
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 44px;
+          color: #547650;
+          line-height: 1.2;
+          p {
+            display: inline;
+          }
+          .em {
+            font-size: 70px;
+          }
+        }
+        .dl {
+          display: flex;
+          align-items: center;
+          margin: 0 0 20px;
+          font-size: 0;
+          .dt {
+            margin: 0 40px 0 0;
+            font-size: 40px;
+          }
+          .dd {
+            p {
+              display: inline-block;
+              font-size: 40px;
+            }
+            .span {
+              font-size: 30px;
+            }
+          }
+        }
+        .aside {
+          margin: 20px 0 0;
+          font-size: 14px;
+          color: #6b563b;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .alcPanel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+    .secPanelList {
+      padding: 120px 0 0;
+    }
+    .secPanel {
+      position: relative;
+      + .secPanel {
+        margin: 100px 0 0;
+      }
+      .photo {
+        max-width: 640px;
+      }
+      .secBox {
+        border-radius: 30px;
+        background: #fef3e4;
+        .txtBox {
+          position: relative;
+          padding: 80px 30px 30px;
+          .balloon {
+            position: absolute;
+            top: -100px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 190px;
+            background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_balloon.png)
+              no-repeat;
+            background-size: 100% auto;
+            p {
+              padding: 0 0 10px 10px;
+              font-size: 24px;
+              text-align: center;
+              line-height: 1;
+            }
+          }
+          .ttlBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 20px;
+            .ttl {
+              font-size: 36px;
+            }
+            .price {
+              display: inline-block;
+              min-width: 100px;
+              padding: 0 15px;
+              background: #232323;
+              p {
+                display: inline-block;
+                color: #f5dec1;
+              }
+              .em {
+                font-size: 24px;
+              }
+              .span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secPanel {
+        .photo {
+          width: 52%;
+        }
+        .secBox {
+          display: flex;
+          flex-direction: column;
+          .txtBox {
+            width: 55%;
+            max-width: 550px;
+            min-height: 440px;
+          }
+        }
+        &:nth-child(odd) {
+          padding: 0 0 0 150px;
+          .photo {
+            position: absolute;
+            top: -40px;
+            left: 0;
+          }
+          .secBox {
+            align-items: flex-end;
+          }
+        }
+        &:nth-child(even) {
+          padding: 0 150px 0 0;
+          .photo {
+            position: absolute;
+            top: -40px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtlBox {
+      margin: 0 0 50px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+      text-align: center;
+    }
+    .section {
+      + .section {
+        margin: 80px 0 0;
+      }
+      h3 {
+        margin: 0 0 40px;
+        font-family: "Zen Kaku Gothic New";
+        font-size: 40px;
+      }
+    }
+    .photoList {
+      margin: 0 0 60px;
+      .ul {
+        .dl {
+          margin: -15px 0 0;
+          padding: 0 20px;
+          text-align: right;
+          .dt {
+            margin: 0 0 10px;
+            p {
+              display: inline-block;
+              padding: 2px 15px;
+              color: #ffffff;
+              background: #232323;
+            }
+          }
+          .dd {
+            font-size: 18px;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 3) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+    .menuList {
+      .dl {
+        .dt {
+          margin: 0 0 10px;
+          padding: 3px 10px;
+          color: #ffffff;
+          text-align: center;
+          background: #232323;
+        }
+      }
+      .ul {
+        .li {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px;
+          border-bottom: 1px dashed #484238;
+        }
+      }
+    }
+    .menuList02 {
+      .dl {
+        + .dl {
+          margin: 50px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .menuList01 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px 0 0 -30px;
+        .dl {
+          width: calc((100% / 3) - 30px);
+          margin: 50px 0 0 30px;
+        }
+      }
+      .menuList02 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -50px 0 0 -30px;
+        .menuBox {
+          width: calc((100% / 3) - 30px);
+          margin: 50px 0 0 30px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	intro
+///////////////////////////////////////////////////////////*/
+.introMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/intro_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    position: relative;
+    z-index: 2;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/page_top_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 100px 0 260px;
+      .txtBox {
+        position: relative;
+        .iconBox {
+          position: absolute;
+          bottom: -80px;
+          right: -100px;
+          width: 160px;
+          z-index: 1;
+        }
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          z-index: 1;
+          p,
+          h2 {
+            display: inline;
+            font-size: 38px;
+            line-height: 1.4;
+          }
+          .em {
+            font-size: 60px;
+          }
+          .red {
+            color: #d56f01;
+          }
+        }
+        .txt {
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .txtBox {
+          width: 50%;
+        }
+        .photo {
+          position: absolute;
+          top: 60px;
+          right: 5%;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 0 0 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -220px;
+      right: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secTtlBox {
+      margin: 0 0 50px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+    }
+    .listBox {
+      max-width: 1100px;
+      margin: 0 auto 120px;
+      .ul {
+        .photoBox {
+          max-width: 500px;
+          margin: 0 0 5px;
+        }
+        .txt {
+          max-width: 480px;
+          margin: 0 auto;
+          padding: 0 0 0 10px;
+          font-size: 15px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          justify-content: space-between;
+          .li {
+            width: 49%;
+            &:nth-child(2) {
+              position: relative;
+              top: 60px;
+            }
+          }
+        }
+      }
+    }
+    .mapImg {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+  }
+  .sec02 {
+    padding: 100px 0;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtlBox {
+      margin: 0 0 50px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+      text-align: center;
+    }
+    .secBox01 {
+      margin: 0 0 60px;
+      .txtBox {
+        position: relative;
+        .balloon {
+          position: absolute;
+          top: -170px;
+          left: -130px;
+          width: 240px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox01 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photo {
+          width: calc(100% - 400px);
+        }
+        .txtBox {
+          width: 350px;
+        }
+      }
+    }
+    .secBox02 {
+      max-width: 1060px;
+      margin: 0 auto;
+      .txtBox {
+        position: relative;
+        .balloon {
+          width: 220px;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox02 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: calc(100% - 400px);
+        }
+        .txtBox {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	info
+///////////////////////////////////////////////////////////*/
+.infoMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/info_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    position: relative;
+    z-index: 2;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/info_top_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secBox {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 100px 0 260px;
+      .txtBox {
+        position: relative;
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          z-index: 1;
+          p,
+          h2 {
+            display: inline;
+            font-size: 38px;
+            line-height: 1.4;
+          }
+          .em {
+            font-size: 60px;
+          }
+          .red {
+            color: #d56f01;
+          }
+        }
+        .txt {
+          position: relative;
+          z-index: 1;
+          p + p {
+            margin: 20px 0 0;
+          }
+        }
+        .name {
+          margin: 20px 0 0;
+          text-align: right;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        .txtBox {
+          .txt {
+            width: 60%;
+          }
+          .name {
+            width: 60%;
+          }
+        }
+        .photo {
+          position: absolute;
+          top: 200px;
+          right: 0;
+          width: 40%;
+        }
+      }
+    }
+  }
+  .sec01 {
+    position: relative;
+    padding: 0 0 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 220px;
+      left: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secWrap01 {
+      position: relative;
+      z-index: 1;
+    }
+    .secTtlBox {
+      margin: 0 0 50px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+    }
+    .secBox {
+      margin: 0 0 60px;
+      .leftBox {
+        .infoBox {
+          max-width: 600px;
+          margin: 0 auto;
+          .dl {
+            display: flex;
+            padding: 10px 20px;
+            border-bottom: 1px solid #000000;
+            .dt {
+              width: 110px;
+            }
+            .dd {
+            }
+          }
+        }
+      }
+      .rightBox {
+        .telBox {
+          max-width: 340px;
+          padding: 15px 30px;
+          background: #471705;
+          > p {
+            color: #6b9b5f;
+          }
+          .tel {
+            a {
+              display: inline-block;
+              padding: 0 0 0 30px;
+              font-size: 28px;
+              color: #f4c51f;
+              line-height: 1.2;
+              background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/header_tel.png)
+                left center no-repeat;
+              background-size: 20px auto;
+            }
+          }
+        }
+        .photo {
+          margin: 30px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: calc(100% - 350px);
+        }
+        .rightBox {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	rental
+///////////////////////////////////////////////////////////*/
+.rentalMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/top_main_bg_01.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    position: relative;
+    padding: 100px 0;
+    z-index: 2;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_top_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secBox {
+      max-width: 1100px;
+      margin: 0 auto;
+      .txtBox {
+        .ttlBox {
+          position: relative;
+          margin: 0 0 30px;
+          font-family: "Zen Kaku Gothic New";
+          font-size: 0;
+          .ttl01 {
+            color: #f7cab9;
+          }
+          p {
+            display: inline;
+            font-size: 30px;
+            line-height: 1.2;
+          }
+          h2 {
+            font-size: 60px;
+            color: #ffcc00;
+            letter-spacing: -0.1em;
+          }
+        }
+        .txt {
+          color: #ffffff;
+        }
+        .btnMore {
+          margin: 40px 0 0;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        .photo {
+          width: 40%;
+        }
+        .txtBox {
+          width: 58%;
+        }
+      }
+    }
+    .boxList {
+      position: relative;
+      .box {
+        padding: 20px;
+        text-align: center;
+        background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_top_box_bg.png)
+          no-repeat;
+        background-size: cover;
+        .dl {
+          .dt {
+            margin: 0 0 10px;
+            font-family: "Zen Kaku Gothic New";
+            font-size: 30px;
+            color: #3e6f36;
+          }
+          .ul {
+            max-width: 360px;
+            margin: 0 auto;
+            text-align: left;
+            .li {
+              line-height: 1.7;
+              + .li {
+                margin: 10px 0 0;
+              }
+              .span {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+      .box01 {
+        border: 7px solid #bcbcbc;
+      }
+      .box02 {
+        border: 7px solid #ffa60c;
+      }
+      .arrow01 {
+        position: relative;
+        width: 50px;
+        margin: 0 0 0 -5px;
+        img {
+          width: 65px;
+        }
+      }
+      .arrow02 {
+        display: none;
+        width: 60px;
+      }
+    }
+    @media (min-width: 1025px) {
+      .boxList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .sec02 {
+    position: relative;
+    padding: 0 0 120px;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -220px;
+      right: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secBox {
+      + .secBox {
+        margin: 80px 0 0;
+      }
+      .dl {
+        .dt {
+          display: flex;
+          align-items: center;
+          font-family: "Zen Kaku Gothic New";
+          line-height: 1;
+          .num {
+            margin: 0 30px 0 0;
+            font-size: 80px;
+            color: #d56f01;
+          }
+          .ttl {
+            font-size: 40px;
+            color: #547650;
+          }
+        }
+        .dd {
+          line-height: 2;
+        }
+      }
+      @media (min-width: 1025px) {
+        .dl {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .dt {
+            width: 45%;
+            padding: 20px 0;
+            border-right: 1px solid #000000;
+          }
+          .dd {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .sec03 {
+    position: relative;
+    padding: 100px 0 280px;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec02_bg.png)
+      no-repeat;
+    background-size: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 40px;
+      left: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secWrap01 {
+      position: relative;
+      z-index: 1;
+    }
+    .secTtlBox {
+      margin: 0 0 50px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+    }
+    .secBox {
+      margin: 0 0 60px;
+      .leftBox {
+        .infoBox {
+          max-width: 750px;
+          .dl {
+            display: flex;
+            padding: 10px 20px;
+            border-bottom: 1px solid #000000;
+            .dt {
+              width: 110px;
+            }
+            .dd {
+            }
+          }
+        }
+      }
+      .rightBox {
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        .leftBox {
+          width: calc(100% - 350px);
+        }
+        .rightBox {
+          width: 350px;
+        }
+      }
+    }
+    .photoList {
+      .ul {
+        .dl {
+          margin: -15px 0 0;
+          padding: 0 20px;
+          text-align: right;
+          .dt {
+            p {
+              display: inline-block;
+              padding: 2px 15px;
+              color: #ffffff;
+              background: #232323;
+            }
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -30px 0 0 -30px;
+          .li {
+            width: calc((100% / 3) - 30px);
+            margin: 30px 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .sec04 {
+    position: relative;
+    margin: -200px 0 0;
+    padding: 120px 0;
+    z-index: 1;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_sec04_bg.png)
+      center top no-repeat;
+    background-size: cover;
+    .ttlBox {
+      position: relative;
+      margin: 0 0 30px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 0;
+      z-index: 1;
+      p,
+      h2 {
+        display: inline;
+        font-size: 38px;
+        line-height: 1.4;
+      }
+      .em {
+        font-size: 60px;
+      }
+      .red {
+        color: #d56f01;
+      }
+    }
+    .secBox {
+      + .secBox {
+        margin: 50px 0 0;
+      }
+      .txtBox {
+        .ttl {
+          margin: 0 0 20px;
+          font-size: 40px;
+          color: #9e810c;
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .secBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .photoBox {
+          width: 45%;
+        }
+        .txtBox {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .sec05 {
+    padding: 80px 0;
+    text-align: center;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_contact_bg.png)
+      no-repeat;
+    background-size: cover;
+    .secTtlBox {
+      margin: 0 0 20px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+    }
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .itemList {
+      max-width: 700px;
+      margin: 0 auto;
+      .telBox {
+        padding: 15px 30px;
+        background: #471705;
+        > p {
+          font-size: 20px;
+          color: #6b9b5f;
+        }
+        .tel {
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 28px;
+            color: #f4c51f;
+            line-height: 1.2;
+            background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/header_tel.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          + p {
+            margin: 5px 0 0;
+            font-size: 12px;
+          }
+        }
+      }
+      .mailBox {
+        padding: 15px 30px;
+        background: #471705;
+        > p {
+          margin: 0 0 20px;
+          font-size: 20px;
+          color: #6b9b5f;
+        }
+        .btnContact {
+          width: 190px;
+          margin: 0 auto;
+          a {
+            display: block;
+            padding: 7px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #000000;
+            p {
+              display: inline-block;
+              padding: 0 0 0 20px;
+              background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/rental_contact_mail.png)
+                left center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .itemList {
+        display: flex;
+        justify-content: space-between;
+        > * {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+.contactMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/contact_main_bg.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/contact_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .sec01 {
+    padding: 80px 0 200px;
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/contact_sec01_bg.png)
+      center bottom no-repeat;
+    background-size: cover;
+    .secTtlBox {
+      margin: 0 0 30px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+    }
+    .topTxt {
+      margin: 0 0 30px;
+    }
+    .itemList {
+      max-width: 800px;
+      .telBox {
+        margin: 0 0 20px;
+        padding: 30px 60px;
+        background: #471705;
+        > p {
+          font-size: 26px;
+          color: #6b9b5f;
+        }
+        .box {
+          max-width: 260px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .tel {
+          a {
+            display: inline-block;
+            padding: 0 0 0 30px;
+            font-size: 28px;
+            color: #f4c51f;
+            line-height: 1.2;
+            background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/header_tel.png)
+              left center no-repeat;
+            background-size: 20px auto;
+          }
+          + p {
+            margin: 5px 0 0;
+            font-size: 12px;
+            color: #6b9b5f;
+          }
+        }
+      }
+      .mailBox {
+        padding: 30px 60px;
+        background: #471705;
+        > p {
+          font-size: 26px;
+          color: #6b9b5f;
+        }
+        .box {
+          text-align: center;
+        }
+        .btnContact {
+          width: 160px;
+          margin: 0 auto;
+          a {
+            display: block;
+            padding: 7px 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            background: #000000;
+          }
+        }
+      }
+    }
+    @media (min-width: 1025px) {
+      .itemList {
+        > * {
+          display: flex;
+          align-items: center;
+          > p {
+            width: 200px;
+          }
+        }
+        .mailBox {
+          .box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            > * {
+              width: calc((100% / 3) - 10px);
+              max-width: 160px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec02 {
+    position: relative;
+    padding: 0 0 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 100px;
+      left: 5%;
+      width: 300px;
+      height: 500px;
+      background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/menu_sec01_bg_icon.png)
+        no-repeat;
+      background-size: 100% auto;
+    }
+    .secWrap01 {
+      position: relative;
+      z-index: 1;
+    }
+    .secTtlBox {
+      margin: 0 0 30px;
+      font-family: "Zen Kaku Gothic New";
+      font-size: 60px;
+      color: #537650;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+.formMain {
+  /* 入力項目
+  --------------------------------------*/
+  /*テキストボックス・メール・電話*/
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /*テキストエリア*/
+  .contactForm textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    resize: none;
+    // box-shadow: 0 1px 2px rgba(3, 0, 11, 0.14);
+  }
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm input[type="tel"]:focus,
+  .contactForm textarea:focus {
+    outline: 0;
+    border: 2px solid #90cefd;
+  }
+  .contactForm button[type="submit"] {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    background: #000000;
+    transition: 0.6s;
+  }
+  .contactForm button[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+  }
+  .contactForm .form {
+    .checkList {
+      .ul {
+        + .ul {
+          margin: 10px 0 0;
+        }
+        .li {
+          + .li {
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+    .checkList01 {
+      .ul {
+        .li {
+          display: inline-block;
+          + .li {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+      .checkItem {
+        display: inline-block;
+        padding: 0 5px 0 0;
+        + input {
+          display: inline-block;
+          width: 150px;
+        }
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+    .checkItem {
+      + .checkItem {
+        margin-top: 10px;
+      }
+      > label {
+        position: relative;
+        display: block;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+      span {
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+      }
+      input:checked + span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        transform: rotate(40deg);
+        border-bottom: 3px solid #000000;
+        border-right: 3px solid #000000;
+      }
+      &.agreeCheck {
+        > label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .radioList01 {
+      .list {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+      .otherTxt {
+        display: inline-block;
+      }
+    }
+
+    .radioBox {
+      .radio {
+        position: relative;
+        display: inline-block;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      label {
+        position: relative;
+        padding: 5px 0 5px 35px;
+      }
+
+      label:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        margin: auto 0;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"]:checked + label:before {
+        border: 8px solid #164e70;
+      }
+    }
+
+    .postalBox {
+      input {
+        width: 90px;
+      }
+
+      input + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .postalTxt {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+
+    .selectBox {
+      display: inline-block;
+      width: 200px;
+      select {
+        display: block;
+        width: 100%;
+        padding: 11px 20px;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5em;
+        border-radius: 0;
+        border: 1px solid #deebe4;
+        border-radius: 15px;
+        background: #f7f7f7;
+        background-size: 10px auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      + .span {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+  .contactForm {
+    .formBox {
+      + .formBox {
+        margin-top: 60px;
+      }
+
+      > .dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px solid #000000;
+
+        &.line {
+          align-items: flex-start;
+          > .dt {
+            padding: 20px 20px 0;
+          }
+        }
+
+        > .dt {
+          width: 310px;
+          padding: 15px 20px 10px;
+
+          .span {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .em {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #ffffff;
+            vertical-align: middle;
+            border-radius: 4px;
+            background: #000000;
+          }
+
+          .small {
+            font-size: 12px;
+          }
+
+          .aside {
+            margin-top: 10px;
+
+            p {
+              font-size: 14px;
+              padding-left: 1em;
+              text-indent: -1em;
+            }
+          }
+        }
+
+        > .dd {
+          width: calc(100% - 330px);
+          padding: 5px 0;
+        }
+      }
+      .datePanel {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        + .datePanel {
+          margin: 10px 0 0;
+        }
+        > * {
+          display: flex;
+          align-items: center;
+        }
+        input {
+          width: 70px;
+          border-radius: 15px;
+        }
+        .selectBox {
+          width: 70px;
+        }
+        .dateTtl {
+          margin: 0 10px 0 0;
+        }
+        .dateTxt {
+          margin: 0 5px;
+        }
+      }
+      .addressBox,
+      .dateBox {
+        .dl {
+          display: table;
+          width: 100%;
+
+          + .dl {
+            margin-top: 10px;
+          }
+
+          .dt {
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+          }
+
+          .dd {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      .ageInput {
+        input {
+          display: inline-block;
+          width: 120px;
+          margin: 0 5px 0 0;
+        }
+        > p {
+          display: inline-block;
+        }
+      }
+      .meetingBox {
+        margin: 0 0 20px;
+        .radioList {
+          display: inline-block;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .dateBox {
+        + .dateBox {
+          margin: 10px 0 0;
+        }
+        + .txt {
+          margin: 10px 0 0;
+        }
+        input[type="text"] {
+          width: 90px;
+        }
+
+        .em {
+          display: inline-block;
+        }
+
+        .span {
+          display: inline-block;
+          margin: 0 5px;
+          vertical-align: middle;
+        }
+        .radioList {
+          display: inline-block;
+          margin: 0 0 0 40px;
+
+          .list {
+            display: inline-block;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .caution {
+        margin-top: 10px;
+        color: #d20000;
+        line-height: 2;
+      }
+      .telBox {
+        padding: 10px 10px 40px;
+        font-size: 0;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2;
+        > * {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .telTxt {
+        padding: 10px 10px 0;
+      }
+      .privacy {
+        max-width: 1000px;
+        margin: 30px auto 0;
+        text-align: center;
+
+        > p {
+          margin: 0 0 20px;
+          text-align: left;
+        }
+
+        .agreeBox {
+          overflow: scroll;
+          height: 500px;
+          padding: 20px;
+          font-weight: 400;
+          text-align: left;
+          border-radius: 6px;
+          background: #eee5d8;
+          .box {
+            + .box {
+              margin: 30px 0 0;
+            }
+            .link {
+              a {
+                display: inline-block;
+              }
+            }
+          }
+          p {
+            line-height: 2;
+          }
+          .tel {
+            p,
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .privacy + .checkItem {
+        margin: 40px 0;
+        text-align: center;
+      }
+    }
+    .fileUploadBox {
+      .ttl {
+        margin: 0 0 10px;
+        line-height: 2;
+      }
+      .fileBox {
+      }
+      .fileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        + .fileArea {
+          margin: 10px 0 0;
+        }
+
+        .inputFile {
+          position: relative;
+          width: 28%;
+          font-size: 16px;
+          color: #b4d2be;
+          text-align: center;
+          border: 1px solid #41ab6d;
+          background: #ffffff;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          p {
+            padding: 12px 10px;
+          }
+        }
+
+        > p,
+        .fileTxt {
+          width: 70%;
+        }
+        .fileTxt {
+          p {
+            display: inline-block;
+          }
+          .fileName {
+            margin: 0 10px 0 0;
+          }
+          .attention {
+            font-size: 13px;
+            color: #54765f;
+          }
+        }
+      }
+      .txt {
+        line-height: 2;
+      }
+    }
+    .aside {
+      margin: 10px 0 0;
+    }
+    .fileUploadTitleBox {
+      margin: 60px 0 30px;
+      .fileUploadTitle {
+        position: relative;
+        max-width: 440px;
+        margin: 0 0 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          margin: auto;
+          background: #000000;
+        }
+        p {
+          position: relative;
+          display: inline-block;
+          padding: 0 20px 0 0;
+          font-size: 30px;
+          font-weight: bold;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	complete
+///////////////////////////////////////////////////////////*/
+.complete {
+  padding: 60px 0 100px;
+  .txt {
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 3;
+  }
+  .btnMore {
+    margin: 0 auto;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+.newsMain {
+  background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_main_bg.png);
+  .pageKvPanel {
+    background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_kv.png)
+      center no-repeat;
+    background-size: cover;
+  }
+  .blogSection {
+    padding: 80px 0 100px;
+  }
+  @media (min-width: 1025px) {
+    .postContainer {
+      display: flex;
+      justify-content: space-between;
+      .catePanel {
+        width: 240px;
+      }
+      .blogPanel {
+        width: calc(100% - 340px);
+      }
+    }
+  }
+  .catePanel {
+    .webgene-blog {
+      .webgene-header {
+        margin: 0 0 5px;
+        h2,
+        h3 {
+          padding: 10px;
+          color: #6b9b5f;
+          text-align: center;
+          background: #471705;
+        }
+      }
+      .webgene-item {
+        position: relative;
+        border-bottom: 1px solid #000000;
+        a {
+          display: block;
+          padding: 15px;
+          background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_cate_arrow.png)
+            right 10px center no-repeat;
+          background-size: 5px auto;
+        }
+      }
+    }
+  }
+  .blogPanel {
+    &--list {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .webgene-item {
+          border-bottom: 1px solid #000000;
+          a {
+            display: block;
+            padding: 25px 10px 25px 30px;
+            color: #3f1a0a;
+            background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_list_arrow.png)
+              right 5px center no-repeat;
+            background-size: 30px auto;
+          }
+          .infoBox {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            .time {
+              margin: 0 10px 0 0;
+            }
+            .cate {
+              min-width: 120px;
+              padding: 0 10px;
+              text-align: center;
+              background: #ffcc00;
+            }
+          }
+          .title {
+            padding: 0 40px 0 0;
+          }
+        }
+      }
+      @media (min-width: 1025px) {
+        .webgene-blog {
+          .webgene-item {
+            a {
+              display: flex;
+            }
+            .infoBox {
+              width: 240px;
+            }
+            .title {
+              width: calc(100% - 240px);
+            }
+          }
+        }
+      }
+      .webgene-pagination {
+        overflow: hidden;
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 14px;
+        ul {
+          max-width: 700px;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 0 2px;
+            vertical-align: middle;
+            a {
+              display: block;
+              width: 45px;
+              color: #ffffff;
+              line-height: 45px;
+              text-align: center;
+              border-radius: 50%;
+              background: #bd9c8e;
+            }
+          }
+          .prev {
+            margin: 0 2px 0 0;
+            a {
+              height: 45px;
+              background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_list_prev.png)
+                center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+          .next {
+            position: relative;
+            margin: 0 0 0 2px;
+            a {
+              height: 45px;
+              background: url(https://kitchennanoka240327.smooooth.jp/system_panel/uploads/images/news_list_next.png)
+                center no-repeat;
+              background-size: 15px auto;
+            }
+          }
+          .selected {
+            a {
+              background: #0f0b09;
+            }
+          }
+          @media (min-width: 1025px) {
+            .prev {
+              float: left;
+            }
+            .next {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    &--detail {
+      .webgene-blog {
+        .webgene-header {
+          display: none;
+        }
+        .info {
+          margin: 0 0 15px;
+          padding: 0 20px 10px;
+          font-size: 14px;
+          color: #3f1a0a;
+          border-bottom: 1px solid #000000;
+          .time {
+            display: inline-block;
+            margin: 0 10px 0 0;
+          }
+          .cate {
+            display: inline-block;
+            min-width: 120px;
+            padding: 0 10px;
+            text-align: center;
+            background: #ffcc00;
+          }
+        }
+        .ttlBox {
+          margin: 0 0 20px;
+          padding: 0 0 10px;
+          font-size: 24px;
+        }
+        .slickSlide {
+          margin: 0 0 40px;
+          .slider {
+            .li {
+              > div {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 65%;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .slick-list {
+          margin: 0 0 10px;
+        }
+        .thumb-item {
+          margin: 0 0 10px;
+        }
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .slideNav {
+          // max-width: 940px;
+          .slick-slide {
+            margin: 0 5px;
+          }
+        }
+        .postBox {
+          .photo {
+            margin-bottom: 20px;
+            img {
+              width: auto;
+              max-width: 100%;
+              border-radius: 6px;
+            }
+          }
+          .postTxt {
+            color: #3f1a0a;
+            line-height: 2;
+            p + p {
+              margin: 30px 0 0;
+            }
+            img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .pdfArea {
+        margin: 40px 0 0;
+        a {
+          color: #2151a3;
+        }
+      }
+    }
+  }
+  .btnBack {
+    max-width: 240px;
+    margin: 100px auto 0;
+    a {
+      display: block;
+      padding: 14px;
+      font-size: 15px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 25px;
+      background: #000000;
+    }
+  }
+}

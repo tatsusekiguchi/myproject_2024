@@ -1,0 +1,816 @@
+@charset "UTF-8";
+/* CSS Document */
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain .topKvContainer .topKvPanel {
+    height: calc(100svh - 62px);
+  }
+  .topMain .topKvContainer .topKvPanel:after {
+    height: 100svh;
+  }
+  .topMain .topKvContainer .kvTtlBox {
+    padding: 0 20px 100px;
+  }
+  .topMain .topKvContainer .kvTtlBox .kvTtl {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .topKvContainer .kvTtlBox .kvContact {
+    position: absolute;
+    top: -95px;
+    right: 20px;
+    width: 100px;
+  }
+  .topMain .sec01 {
+    padding: 60px 0;
+  }
+  .topMain .sec01 .secBox {
+    margin: 0 0 40px;
+    padding: 0 0 150px;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_img.png) right bottom no-repeat;
+    background-size: 70% auto;
+  }
+  .topMain .sec01 .secBox .checkTxt .ul .li {
+    padding: 0 0 0 25px;
+    background: url(https://shitok.jp/system_panel/uploads/images/top_sec01_check.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .topMain .sec01 .secBox .checkTxt .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .topMain .sec01 .balloon {
+    max-width: 400px;
+    margin: 0 auto 30px;
+  }
+  .topMain .sec02 {
+    padding: 60px 0;
+  }
+  .topMain .sec02 .secPanelList,
+.topMain .sec06 .secPanelList {
+    margin: 0 0 40px;
+  }
+  .topMain .sec02 .secPanel + .secPanel,
+.topMain .sec06 .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .topMain .sec02 .secPanel .secBox,
+.topMain .sec06 .secPanel .secBox {
+    padding: 40px 20px 20px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox,
+.topMain .sec06 .secPanel .secBox .txtBox {
+    padding: 20px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox .ttlBg,
+.topMain .sec06 .secPanel .secBox .txtBox .ttlBg {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 140px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox .inner,
+.topMain .sec06 .secPanel .secBox .txtBox .inner {
+    max-width: 400px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox .inner02,
+.topMain .sec06 .secPanel .secBox .txtBox .inner02 {
+    max-width: 500px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox .ttl,
+.topMain .sec06 .secPanel .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+  }
+  .topMain .sec02 .secPanel .secBox .txtBox .ttl p,
+.topMain .sec06 .secPanel .secBox .txtBox .ttl p {
+    font-size: 20px;
+  }
+  .topMain .sec03 {
+    padding: 60px 0;
+  }
+  .topMain .sec03 .secPanel .txtBox {
+    padding: 20px;
+  }
+  .topMain .sec03 .secPanel .txtBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .topMain .sec03 .secPanel .txtBox .ttlBox .ttl p {
+    font-size: 20px;
+  }
+  .topMain .sec03 .secPanel .txtBox .txt {
+    margin: 0 0 30px;
+  }
+  .topMain .sec04 {
+    padding: 60px 0;
+  }
+  .topMain .sec04 .listBox {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .topMain .sec04 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .topMain .sec04 .listBox .ul .txtBox {
+    padding: 20px;
+  }
+  .topMain .sec04 .listBox .ul .txtBox .dl .dt {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .topMain .sec04 .listBox .ul .txtBox .btnMore {
+    margin: 20px auto 0;
+  }
+  .topMain .sec04 .iconBox {
+    max-width: 440px;
+    margin: 40px auto 0;
+  }
+  .topMain .sec04 .iconBox .ul {
+    margin: -30px 0 0;
+  }
+  .topMain .sec04 .iconBox .ul .li {
+    width: calc(50% - 10px);
+    margin: 30px 0 0;
+  }
+  .topMain .sec05 {
+    padding: 60px 0;
+  }
+  .topMain .sec05 .webgene-blog {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item {
+    display: block;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item .info {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+  .topMain .sec05 .webgene-blog .webgene-item + .webgene-item {
+    margin: 20px 0 0;
+  }
+  .topMain .sec05 .btnMore {
+    margin: 40px auto 0;
+  }
+  .topMain .sec06 {
+    padding: 60px 0 30px;
+  }
+  .topMain .sec07 {
+    padding: 30px 0 60px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	strength
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .strengthMain .strengthContainer {
+    padding: 60px 0;
+  }
+  .strengthMain .strengthContainer .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox {
+    padding: 40px 20px 20px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox {
+    padding: 20px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox .num {
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox .num .span {
+    font-size: 12px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox .num .em {
+    font-size: 22px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+  }
+  .strengthMain .strengthContainer .secPanel .secBox .txtBox .ttl p {
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	business
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .businessMain .businessContainer {
+    padding: 60px 0;
+  }
+  .businessMain .businessContainer .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .businessMain .businessContainer .secPanel .secBox {
+    padding: 40px 20px 20px;
+  }
+  .businessMain .businessContainer .secPanel .secBox .txtBox {
+    padding: 20px;
+  }
+  .businessMain .businessContainer .secPanel .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+  }
+  .businessMain .businessContainer .secPanel .secBox .txtBox .ttl p {
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	consulting
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .consultingMain .sec01 {
+    padding: 60px 0;
+  }
+  .consultingMain .sec01 .secBox {
+    margin: 20px 0 40px;
+    padding: 200px 0 0;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_sec01_img.png) center top no-repeat;
+    background-size: 260px auto;
+  }
+  .consultingMain .sec01 .secBox .checkTxt .ul .li {
+    padding: 0 0 0 25px;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .consultingMain .sec01 .secBox .checkTxt .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .consultingMain .sec01 .balloon {
+    max-width: 400px;
+    margin: 0 auto 30px;
+  }
+  .consultingMain .sec02 {
+    padding: 60px 0;
+  }
+  .consultingMain .sec02 .txt p + p {
+    margin: 20px 0 0;
+  }
+  .consultingMain .sec02 .messageBox {
+    margin: 40px 0 0;
+  }
+  .consultingMain .sec02 .messageBox .message p {
+    font-size: 20px;
+  }
+  .consultingMain .sec02 .listBox {
+    max-width: 400px;
+    margin: 40px auto 0;
+  }
+  .consultingMain .sec02 .listBox .ul {
+    margin: -30px 0 0 -10px;
+  }
+  .consultingMain .sec02 .listBox .ul .li {
+    width: calc(50% - 10px);
+    margin: 30px 0 0 10px;
+  }
+  .consultingMain .sec03 {
+    padding: 60px 0;
+  }
+  .consultingMain .sec03 .topTxtBox {
+    margin: 0 0 40px;
+  }
+  .consultingMain .sec03 .topTxtBox .topTxt p {
+    font-size: 18px;
+  }
+  .consultingMain .sec03 .listBox {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .consultingMain .sec03 .listBox .ul .li + .li {
+    margin: 30px 0 0;
+  }
+  .consultingMain .sec04 {
+    padding: 60px 0;
+  }
+  .consultingMain .sec04 .secPanel {
+    padding: 40px 20px 50px;
+  }
+  .consultingMain .sec04 .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .consultingMain .sec04 .secPanel .num {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .consultingMain .sec04 .secPanel .num .span {
+    font-size: 12px;
+  }
+  .consultingMain .sec04 .secPanel .num .em {
+    font-size: 22px;
+  }
+  .consultingMain .sec04 .secPanel .pTop .ttl {
+    margin: 0 0 15px;
+    padding: 0 0 0 60px;
+    font-size: 20px;
+  }
+  .consultingMain .sec04 .secPanel .btnList {
+    margin: 20px 0 0;
+  }
+  .consultingMain .sec04 .secPanel .btnList .ul .li {
+    width: 220px;
+  }
+  .consultingMain .sec04 .secPanel .btnList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .consultingMain .sec04 .secPanel .cntBody {
+    margin: 30px auto 0;
+  }
+  .consultingMain .sec04 .secPanel01 .cntBody .img {
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  .consultingMain .sec04 .secPanel01 .cntBody .message p {
+    font-size: 18px;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox {
+    padding: 40px 0;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .leftBox {
+    margin: 0 0 20px;
+    padding: 0 0 60px;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_measures02_arrow_02.png) center bottom no-repeat;
+    background-size: 50px auto;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .leftBox .img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .ttl {
+    max-width: 280px;
+    margin: 0 auto 15px;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt {
+    padding: 20px;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt .ul .li {
+    padding: 0 0 0 25px;
+    background: url(https://shitok.jp/system_panel/uploads/images/consulting_check.png) left center no-repeat;
+    background-size: 18px auto;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .checkTxt .ul .li + .li {
+    margin: 15px 0 0;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .secBox .rightBox .arrowDown {
+    width: 50px;
+    margin: -15px auto;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .btnImg {
+    max-width: 600px;
+  }
+  .consultingMain .sec04 .secPanel02 .cntBody .btnMore {
+    max-width: 320px;
+    margin: 30px auto 0;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox {
+    padding: 40px 20px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox + .cntBox {
+    margin: 80px 0 0;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .icon {
+    position: absolute;
+    top: -70px;
+    right: 20px;
+    width: 80px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .icon03 {
+    top: -40px;
+    right: 20px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .ttlBox {
+    margin: 0 0 15px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .ttlBox p {
+    font-size: 18px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .topTxt {
+    margin: 0 0 15px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li + .li {
+    margin: 10px 0 0;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .listBox .ol .li .dl .dt {
+    font-size: 18px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .optionList {
+    max-width: 440px;
+    padding: 30px 20px;
+  }
+  .consultingMain .sec04 .secPanel03 .cntBox .optionList .option {
+    max-width: 360px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	flow
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .flowMain .pagingList {
+    max-width: 240px;
+    margin: 60px auto 0;
+  }
+  .flowMain .pagingList .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .flowMain .section {
+    padding: 60px 0;
+  }
+  .flowMain .section .topBox {
+    margin: 0 0 30px;
+  }
+  .flowMain .section .topBox .iconTtl01 {
+    width: 100px;
+    margin: 0 auto 15px;
+  }
+  .flowMain .section .topBox .iconTtl02 {
+    width: 100px;
+    margin: 0 auto 15px;
+  }
+  .flowMain .section .topBox .secTtl {
+    margin: 0 0 15px;
+    padding: 0 0 10px;
+    font-size: 20px;
+  }
+  .flowMain .section .topBox .secTtl:after {
+    width: 120px;
+  }
+  .flowMain .section .secPanel .inner {
+    position: relative;
+    max-width: 1040px;
+    min-height: 160px;
+    margin: 0 auto;
+  }
+  .flowMain .section .secPanel .icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+  }
+  .flowMain .section .secPanel .ttlBox {
+    margin: 0 0 20px;
+  }
+  .flowMain .section .secPanel .ttlBox .num {
+    width: 50px;
+    margin: 0 10px 0 0;
+  }
+  .flowMain .section .secPanel .ttlBox .ttl {
+    font-size: 20px;
+  }
+  .flowMain .section .secPanel .txtBox .need {
+    padding: 15px 20px;
+  }
+  .flowMain .section .arrow {
+    width: 35px;
+    margin: 20px auto;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain .introContainer {
+    padding: 60px 0;
+  }
+  .companyMain .introContainer .secPanel + .secPanel {
+    margin: 60px 0 0;
+  }
+  .companyMain .introContainer .secPanel .secBox {
+    padding: 40px 20px 20px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox {
+    padding: 20px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox .ttlBg {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 140px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox .inner {
+    max-width: 400px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox .inner02 {
+    max-width: 500px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox .ttl {
+    margin: 0 0 15px;
+  }
+  .companyMain .introContainer .secPanel .secBox .txtBox .ttl p {
+    font-size: 20px;
+  }
+  .companyMain .infoContainer {
+    padding: 60px 0;
+  }
+  .companyMain .infoContainer .infoBox {
+    margin: 0 0 20px;
+  }
+  .companyMain .infoContainer .infoBox .dl .dt {
+    width: 90px;
+  }
+  .companyMain .infoContainer .infoBox .dl .dd {
+    width: calc(100% - 95px);
+    padding: 10px 15px;
+  }
+  .companyMain .infoContainer .infoBox .dl .dd .logoBox p {
+    margin: 0 20px 0 0;
+  }
+  .companyMain .infoContainer .infoBox .dl .dd .logoBox .logo {
+    width: 110px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain .telContainer {
+    padding: 40px 0;
+  }
+  .contactMain .telContainer .telPanel {
+    max-width: 600px;
+    padding: 20px;
+  }
+  .contactMain .telContainer .secTtl {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .contactMain .telContainer .tel a {
+    padding: 0 0 0 25px;
+    font-size: 34px;
+    background: url(https://shitok.jp/system_panel/uploads/images/contact_tel.png) left bottom 2px no-repeat;
+    background-size: 20px auto;
+  }
+  .contactMain .sec01 {
+    padding: 60px 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain .contactForm .formBox + .formBox {
+    margin-top: 40px;
+  }
+  .formMain .contactForm .formBox h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .formMain .contactForm .formBox > .dl {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl.line .dt {
+    height: auto;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span {
+    width: auto;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .span br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .em {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside {
+    margin-top: 5px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p {
+    font-size: 12px;
+  }
+  .formMain .contactForm .formBox > .dl > .dt .aside p br {
+    display: none;
+  }
+  .formMain .contactForm .formBox > .dl > .dd {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-top: none;
+  }
+  .formMain .contactForm .formBox .otherTtl {
+    padding: 20px 10px 5px;
+  }
+  .formMain .contactForm .formBox .otherRadio .dt {
+    text-align: left;
+  }
+  .formMain .contactForm .formBox .radioList01 .list {
+    display: block;
+    margin: 0;
+  }
+  .formMain .contactForm .formBox .radioList01 .list + .list {
+    margin: 20px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li {
+    display: block;
+  }
+  .formMain .contactForm .formBox .checkList01 .ul .li + .li {
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem {
+    display: inline-block;
+    padding: 0 5px 0 0;
+  }
+  .formMain .contactForm .formBox .checkList01 .checkItem + input {
+    display: inline-block;
+    width: 150px;
+  }
+  .formMain .contactForm .formBox .addressBox .dl,
+.formMain .contactForm .formBox .dateBox .dl {
+    display: block;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dt,
+.formMain .contactForm .formBox .dateBox .dl .dt {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .formBox .addressBox .dl .dd,
+.formMain .contactForm .formBox .dateBox .dl .dd {
+    display: block;
+  }
+  .formMain .contactForm .formBox .dateBox input[type=text] {
+    width: 70px;
+  }
+  .formMain .contactForm .formBox .dateBox .radioList {
+    display: block;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .formBox .selectBox {
+    width: 180px;
+  }
+  .formMain .contactForm .formBox .privacy .agreeBox {
+    height: 250px;
+    padding: 20px 10px;
+  }
+  .formMain .contactForm .fileUploadPanel {
+    padding: 20px 0;
+  }
+  .formMain .contactForm .fileUploadBox {
+    display: block;
+  }
+  .formMain .contactForm .fileUploadBox .fileBox {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea {
+    display: block;
+    width: 100%;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea .inputFile {
+    width: 200px;
+  }
+  .formMain .contactForm .fileUploadBox .fileArea > p,
+.formMain .contactForm .fileUploadBox .fileArea .fileTxt {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .formMain .contactForm .fileUploadTitleBox {
+    margin: 40px 0 20px;
+  }
+  .formMain .contactForm .fileUploadTitleBox .fileUploadTitle p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	news
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .newsMain .blogSection {
+    padding: 60px 0 80px;
+  }
+  .newsMain .catePanel {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  .newsMain .catePanel .webgene-blog .webgene-header {
+    margin: 0 auto 10px;
+    padding: 0 0 15px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item {
+    padding: 10px 10px 30px;
+  }
+  .newsMain .blogPanel--list .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .newsMain .blogPanel--list .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .newsMain .blogPanel--detail .webgene-blog {
+    padding: 15px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info .cate {
+    margin: 0 0 5px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .info .time {
+    text-align: right;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .ttlBox {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide {
+    margin: 0 0 40px;
+  }
+  .newsMain .blogPanel--detail .webgene-blog .slickSlide .slider .li > div {
+    padding: 0 0 70%;
+  }
+  .newsMain .blogPanel .btnBack {
+    margin: 60px auto 0;
+  }
+}
+/*////////////////////////////////////////////////////////////
+	property
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .propertyMain .searchSection {
+    padding: 60px 0 80px;
+  }
+  .propertyMain .searchSection .section + .section {
+    margin: 60px 0 0;
+  }
+  .propertyMain .searchSection .secTtl {
+    font-size: 18px;
+  }
+  .propertyMain .searchSection .secTtl:after {
+    width: calc(100% - 120px);
+  }
+  .propertyMain .searchSection .secTtl + p {
+    margin: 0 0 15px;
+  }
+  .propertyMain .searchSection .searchPanel .webgene-search-form-block .search-title-wrapper {
+    margin: 0 0 10px;
+    padding: 20px;
+  }
+  .propertyMain .searchSection .searchPanel .webgene-search-form-block .search-area-wrapper {
+    padding: 20px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-blog .webgene-item {
+    padding: 10px 10px 30px;
+  }
+  .propertyMain .searchSection .listPanel .webgene-blog .webgene-item + .webgene-item {
+    margin: 40px 0 0;
+  }
+  .propertyMain .searchSection .listPanel .webgene-pagination {
+    margin: 60px auto 0;
+  }
+  .propertyMain .detailSection {
+    padding: 60px 0 80px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item img {
+    border-radius: 6px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dt {
+    width: 90px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd {
+    width: calc(100% - 95px);
+    padding: 10px 15px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd .logoBox p {
+    margin: 0 20px 0 0;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .infoBox .dl .dd .logoBox .logo {
+    width: 110px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox {
+    margin: 0 0 20px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .secBox .leftBox .ttlBox {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .listBox {
+    margin: 15px 0;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .listBox ul {
+    margin: -5px 0 0 -5px;
+  }
+  .propertyMain .detailSection .webgene-blog .webgene-item .listBox ul li {
+    width: calc(25% - 5px);
+    margin: 5px 0 0 5px;
+    padding: 0 0 17%;
+  }
+  .propertyMain .detailSection .btnBack {
+    width: 220px;
+    margin: 60px auto 0;
+  }
+}

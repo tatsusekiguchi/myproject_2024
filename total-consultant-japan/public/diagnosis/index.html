@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="diagnosis">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logoBox">
+				<div class="ttl">
+					<p>トータルコンサルタントジャパン株式会社｜岐阜市で不動産・経営・品質コンサルなど多事業展開</p>
+				</div>
+				<div class="logo"><a href="/">
+						<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+					</a></div>
+			</div>
+			<div class="headItem">
+				<div class="search"><a href="propertySearch?wgsearch=property">
+						<div>
+							<p>物件検索</p>
+						</div>
+					</a></div>
+				<div class="contact"><a href="contact">
+						<div>
+							<p>お問い合わせ</p>
+						</div>
+					</a></div>
+			</div>
+		</div>
+		<div class="navBox">
+			<div class="navContainer">
+				<div class="navPanel01">
+					<div class="leftBox">
+						<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="txt">
+								<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+							</div>
+							<div class="txt"><a href="tel:0583370600">
+									<div>
+										<p>TEL. 058-337-0600</p>
+									</div>
+								</a>
+								<p>受付時間：10:00～18:00<br>定休日：土・日・祝</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li">
+									<p>事業紹介</p>
+								</div>
+								<div class="subList">
+									<div class="li"><a href="sales?wgsearch=property">
+											<div>
+												<p>不動産売買</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="maintenance?wgsearch=property">
+											<div>
+												<p>土地・建物のメンテナンス</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="diagnosis">
+											<div>
+												<p>家相・間取り診断</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="company">
+											<div>
+												<p>法人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="individual">
+											<div>
+												<p>個人向けコンサルタント</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="stone">
+											<div>
+												<p>天然石卸</p>
+											</div>
+										</a></div>
+									<div class="li"><a href="shower">
+											<div>
+												<p>シャワーヘッド販売</p>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="propertySearch?wgsearch=property">
+										<div>
+											<p>物件検索</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navPanel02">
+					<div class="contactItem">
+						<div class="telBox"><a href="tel:0583370600">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">電話</p>
+										<p class="span">で相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>058-337-0600</p>
+									</div>
+								</div>
+							</a></div>
+						<div class="mailBox"><a href="contact">
+								<div class="dl">
+									<div class="dt">
+										<p class="em">WEB</p>
+										<p class="span">から相談してみる</p>
+									</div>
+									<div class="dd">
+										<p>無料相談受付中</p>
+									</div>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger">
+			<div class="span"></div>
+			<div class="span"></div>
+			<div class="span"></div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="diagnosisMain main">
+		<div class="pageKvContainer">
+			<div class="pageKvPanel"></div>
+		</div>
+		<div class="topSection">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">D</p>
+						<p class="span">iagnosis</p>
+					</div>
+					<div class="pageSecTtl">
+						<h1>家相・間取り診断</h1>
+					</div>
+				</div>
+				<div class="ttl">
+					<p>現在の、</p>
+					<p class="em">お住まいや家のリフォーム</p>
+					<p>にあたって<br></p>
+					<p>こんな疑問や不安はありませんか？</p>
+				</div>
+				<div class="txtBox">
+					<div class="ul">
+						<div class="li">
+							<p>家の間取りが、家相的に問題はないか確認をしてほしい。</p>
+						</div>
+						<div class="li">
+							<p>間取りを見直して運気アップできるようにリフォームしたい！</p>
+						</div>
+						<div class="li">
+							<p>リフォーム業者につくってもらった図面が、なぜかしっくりこない。</p>
+						</div>
+						<div class="li">
+							<p>費用を抑えたいけど、いい業者の判断がつかなくて困っている。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aboutSection">
+			<div class="secWrap01">
+				<div class="topTtl">
+					<p class="em">そんな不安や疑問を解消できるのは</p>
+					<p>トータルコンサルタントジャパンの家相・間取り診断！</p>
+				</div>
+				<div class="balloonTtl">
+					<h2>家相とは</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_about.png" alt="">
+				</div>
+			</div>
+			<div class="secContainerList">
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_about_img_01.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlBox">
+									<div class="ttl">
+										<p>家相と風水の違い</p>
+									</div>
+								</div>
+								<div class="txt">
+									<p>家相は家の位置や間取りから、吉凶を判断する日本独自の考え方です。<br>もともとは風水を起源としています。<br>風水とは自然エネルギーを生活に取り入れ、運気を上げようとします。<br>一方、家相はその家に住むことで、どんな生活になるか考えることです。<br>また家相は日々の生活体験から生まれた統計学とされています。<br>そのため縁起だけでなく、科学的根拠も取り入れております。<br>当社では家相よりもさらに精度が高い霊能家相診断をしております。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secContainer">
+					<div class="secWrap">
+						<div class="secPanel">
+							<div class="photoBox">
+								<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_about_img_02.png" alt=""></div>
+							</div>
+							<div class="txtBox">
+								<div class="ttlBox">
+									<div class="ttl">
+										<p>間取りで変わる暮らし！</p>
+									</div>
+								</div>
+								<div class="txt">
+									<p>生活の拠点となるマイホーム。<br>良くも悪くも居住者の人生に大きく影響を及ぼします。<br>リフォームはもちろん、ちょっとした対策でも気の流れを変えることができます。</p>
+									<p>当社は家相・間取り診断を通して、お客様のマイホームを正しく判定！<br>どのように対応したらいいのかまでお伝えいたします。<br>リフォームのご相談もお任せ下さい！</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="meritSection">
+			<div class="secWrap">
+				<div class="balloonTtl">
+					<h2>当社で診断するメリット</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_merit.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>トータルコンサルタントジャパンで家相・間取り診断をするメリットをご紹介します。</p>
+				</div>
+				<div class="listBox">
+					<div class="ul">
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_merit_img_01.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>現地での正確な診断！</p>
+								</div>
+								<div class="dd">
+									<p>当社は家相診断では診断するお客様の家にご訪問し、<br>正確な診断をいたします。<br>お客様に最善のご診断をお約束します。</p>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_merit_img_02.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>霊能家相診断に対応！</p>
+								</div>
+								<div class="dd">
+									<p>当社では通常の下層よりも幅広く診断ができる<br>霊能家相診断を行っております。<br>間取りだけでなく、お墓も診断可能です。</p>
+								</div>
+							</div>
+						</div>
+						<div class="li">
+							<div class="img"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_merit_img_03.png" alt=""></div>
+							<div class="dl">
+								<div class="dt">
+									<p>リフォーム業者様の紹介も対応！</p>
+								</div>
+								<div class="dd">
+									<p>当社では希望の方に信頼のおける<br>リフォーム業者様の紹介もできます。<br>安心してご相談ください。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="floorSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>家相・間取り診断</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_floor.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>トータルコンサルタントジャパンでは現地での家相・間取り診断を行っております。</p>
+				</div>
+				<div class="section01 section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_floor_ttl_01.png" alt=""></div>
+					<div class="txt">
+						<p>トータルコンサルタントジャパンでは霊能家相診断に対応しております。<br>通常の下層や風水よりも幅広く診断ができます！</p>
+					</div>
+					<div class="tableBox">
+						<div class="table">
+							<div class="thead">
+								<div class="tr">
+									<div class="th">
+										<p>&nbsp;</p>
+									</div>
+									<div class="th">
+										<p>土地</p>
+									</div>
+									<div class="th">
+										<p>間取り</p>
+									</div>
+									<div class="th">
+										<p>インテリア</p>
+									</div>
+									<div class="th">
+										<p>仏壇</p>
+									</div>
+									<div class="th">
+										<p>庭</p>
+									</div>
+									<div class="th">
+										<p>外構</p>
+									</div>
+									<div class="th">
+										<p>墓</p>
+									</div>
+								</div>
+							</div>
+							<div class="tbody">
+								<div class="tr">
+									<div class="th">
+										<p>家相</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>&nbsp;</p>
+									</div>
+								</div>
+								<div class="tr">
+									<div class="th">
+										<p>風水</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>&nbsp;</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>○</p>
+									</div>
+									<div class="td">
+										<p>&nbsp;</p>
+									</div>
+								</div>
+								<div class="tr last">
+									<div class="th">
+										<p>霊能家相</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>◎</p>
+									</div>
+									<div class="td">
+										<p>&nbsp;</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section02 section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_floor_ttl_02.png" alt=""></div>
+					<div class="txt">
+						<p>繁栄、実り、幸運、金運、順調、交際うん、好環境等<br>不慮の死、病気・奇病、不運、運なし、いざこざ、家族不仲、家族離散等</p>
+					</div>
+				</div>
+				<div class="section03 section">
+					<div class="secTtl"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_floor_ttl_03.png" alt=""></div>
+					<div class="txtBox">
+						<div class="priceBox">
+							<p>診断料金：</p>
+							<p class="em">0000</p>
+							<p>円（税込）</p>
+						</div>
+						<p>滞在時間：○時間</p>
+					</div>
+					<div class="txt">
+						<p>※現地往復交通費は別途必要となります。<br>※出張の場合は、追加○○○○円も必要となります。<br>※遠方で日帰り不可の場合は宿泊費も別途請求させていただきます。<br>※ご延長は○○○○円／1時間 で承っております。</p>
+					</div><a href="contact">
+						<div>
+							<p>家相・間取り診断のご依頼</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="flowSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>ご依頼の流れ</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_flow.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>岐阜市及び関ケ原町などで物件をお探しの方は、当社にご相談ください。<br>お客様のニーズに沿った物件をご紹介いたします。<br>まずは当社取扱の物件をご確認ください。</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_img_01.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="num">
+									<p>01</p>
+								</div>
+								<div class="ttl">
+									<p>お問い合わせ</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>まずはお問い合わせよりお電話もしくはメールでご連絡ください。<br>お打ち合わせ日を設定し、お客様のご要望を確認致します。</p>
+							</div>
+							<div class="btnContact"><a href="contact">
+									<div>
+										<p>お問い合わせはこちら</p>
+									</div>
+								</a></div>
+						</div>
+					</div>
+					<div class="arrow"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_arrow.png" alt=""></div>
+					<div class="secBox">
+						<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_img_02.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="num">
+									<p>02</p>
+								</div>
+								<div class="ttl">
+									<p>日程や料金の確認</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>家相・間取り診断の日程や診断場所、料金などの確認をいたします。<br>内容にお間違えなければ、正式にご予約完了となります。<br>また事前に診断場所の図面をお送りください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="arrow"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_arrow.png" alt=""></div>
+					<div class="secBox">
+						<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_img_03.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="num">
+									<p>03</p>
+								</div>
+								<div class="ttl">
+									<p>お支払い</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>当日、家相・間取り診断前にお支払いをお願いします。<br>現金決済のみ対応しております。<br>ご了承ください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="arrow"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_arrow.png" alt=""></div>
+					<div class="secBox">
+						<div class="photo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_flow_img_04.png" alt=""></div>
+						<div class="txtBox">
+							<div class="ttlBox">
+								<div class="num">
+									<p>04</p>
+								</div>
+								<div class="ttl">
+									<p>家相・間取り診断</p>
+								</div>
+							</div>
+							<div class="txt">
+								<p>実際に家相・間取り診断を行います。<br>診断内容及び、対策などをお伝えいたします。<br>ご不明点があれば、ご質問ください。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="voiceSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>お客様の声</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_voice.png" alt="">
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="ttl">
+								<p>タイトルが入ります</p>
+							</div>
+						</div>
+						<div class="nameBox">
+							<p>○○県　○代(女性)　○・○さん</p>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+								<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="ttl">
+								<p>タイトルが入ります</p>
+							</div>
+						</div>
+						<div class="nameBox">
+							<p>○○県　○代(女性)　○・○さん</p>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="faqSection">
+			<div class="secWrap01">
+				<div class="balloonTtl">
+					<h2>よくあるお問い合わせ</h2><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/diagnosis_ttl_faq.png" alt="">
+				</div>
+				<div class="topTxt txt">
+					<p>トータルコンサルタントジャパンでいただくご相談をまとめております。<br>不動産についてのご参考ください。</p>
+				</div>
+				<div class="secBoxList">
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>リフォーム業者に作成頂いた図面から家相診断も可能でしょうか。</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>はい、図面からの家相診断も承っております。<br>実際の家を見ての診断が一番確実ですが、図面からでもご相談いただけます。<br>当社では戸建てで暮らしているお客さまやリフォームを検討中のお客様からのご相談を多くいただいております。<br>リフォームでお悩みの方は一度ご相談ください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="secBox">
+						<div class="ttlBox">
+							<div class="icon">
+								<p>Q</p>
+							</div>
+							<div class="ttl">
+								<p>家族にトラブルが続いています。いろいろ調べていますが、家の間取りも関係ありますか？</p>
+							</div>
+						</div>
+						<div class="txtBox">
+							<div class="txt">
+								<p>一度診断をしてみなければ分かりませんが、運気が悪い1つの原因に家の間取りが関係している可能性はございます。<br>家相は家の間取りから運気の向上を図っており、お客様の運気向上のヒントをお伝えできるかもしれません。<br>お悩みの際は、当社に一度ご相談ください。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContact">
+			<div class="secWrap01">
+				<div class="pageSecTtlBox">
+					<div class="sub">
+						<p class="em">C</p>
+						<p class="span">ontact</p>
+					</div>
+					<div class="pageSecTtl">
+						<h2>お問い合わせ</h2>
+					</div>
+				</div>
+				<div class="ttl">
+					<p>お客様の</p>
+					<p class="em">しあわせ</p>
+					<p>について一緒に考えてみませんか？</p>
+				</div>
+				<div class="contactPanel">
+					<div class="contactItem">
+						<div class="telBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">電話</p>
+									<p>で相談してみる</p>
+								</div>
+								<div class="dd"><a href="tel:0583370600">
+										<div>
+											<p>058-337-0600</p>
+										</div>
+									</a>
+									<div class="aside">
+										<p>受付時間：10:00～18:00</p>
+									</div>
+									<p>定休日：土・日・祝</p>
+								</div>
+							</div>
+						</div>
+						<div class="mailBox">
+							<div class="dl">
+								<div class="dt">
+									<p class="em">WEB</p>
+									<p>から相談してみる</p>
+								</div>
+								<div class="dd"><a href="contact">
+										<div>
+											<p>相談メールフォーム</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap01">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="logo"><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_logo.png" alt=""></div>
+				<div class="txt">
+					<p>〒502-0046<br>岐阜県岐阜市長良杉乃町4丁目9番地</p>
+				</div>
+				<div class="sns">
+					<div class="ul">
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_fb.png" alt=""></div>
+							</a></div>
+						<div class="li"><a href="#" target="_blank" rel="noopener">
+								<div><img src="https://total-consultant-japan.co.jp/system_panel/uploads/images/footer_insta.png" alt=""></div>
+							</a></div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>&copy; 2024 トータルコンサルタントジャパン株式会社.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

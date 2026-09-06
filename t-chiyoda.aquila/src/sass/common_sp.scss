@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	共通CSS（SMP）
+===================================================*/
+
+/* --------------------------------------------------
+	base
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    min-width: 0;
+    font-size: $SPfontSize;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  /*改行*/
+  .pcBreak {
+    display: none;
+  }
+  .spBreak {
+    display: block;
+  }
+  /*spのみ表示*/
+  .pcHidden {
+    display: block;
+  }
+  .spHidden {
+    display: none;
+  }
+  #sideBtn {
+    display: none;
+  }
+  .topicPath {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+	main
+-------------------------------------------------- */
+main {
+  margin: 62px 0 0;
+}
+.pageTitlePanel {
+  padding: 60px 20px 40px;
+  .pageTitle {
+    h1 {
+      margin: 0 0 3px;
+      font-size: 22px;
+      span {
+        font-size: 12px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+.mapBox {
+  padding: 0 0 70%;
+}
+.btnMore {
+  width: 160px;
+  a {
+    .icon {
+      width: 40px;
+    }
+    .more {
+      width: 110px;
+      font-size: 13px;
+    }
+  }
+}
+
+/* --------------------------------------------------
+	footer
+-------------------------------------------------- */
+.footer {
+  .footContact {
+    padding: 60px 0;
+    .secTtl {
+      margin: 0 0 30px;
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 12px;
+      }
+      + .txt {
+        margin: 0 0 40px;
+      }
+    }
+    .contactItem {
+      max-width: 600px;
+      margin: 0 auto;
+      .itemBox {
+        + .itemBox {
+          margin: 20px 0 0;
+        }
+        dl {
+          dt {
+            margin: 0 0 15px;
+            font-size: 18px;
+          }
+        }
+        .tel {
+          a {
+            font-size: 30px;
+          }
+        }
+        .mail {
+          max-width: 260px;
+          a {
+            font-size: 16px;
+            span {
+              padding: 0 0 0 24px;
+              background: url("../image/common/footer_contact_mail.png") left
+                center no-repeat;
+              background-size: 16px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footPanel {
+    padding: 60px 0 30px;
+    text-align: center;
+    .footBox {
+      margin: 0 0 30px;
+      .leftBox {
+        .logo {
+          width: 150px;
+          margin: 0 auto 20px;
+        }
+        .txt {
+          margin: 0 0 30px;
+        }
+        .bnr {
+          width: 150px;
+          margin: 0 auto;
+        }
+      }
+      .rightBox {
+        display: none;
+      }
+    }
+
+    .footBtm {
+      .bnrList {
+        max-width: 280px;
+        margin: 0 auto 60px;
+        ul {
+          li {
+            + li {
+              margin: 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

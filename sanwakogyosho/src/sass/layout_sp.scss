@@ -1,0 +1,663 @@
+@charset "UTF-8";
+@import "./mixin";
+@import "./mod";
+/* CSS Document */
+
+/*===================================================
+	画面用CSS（PC/SMP）
+===================================================*/
+
+/*////////////////////////////////////////////////////////////
+	TOP
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .topMain {
+    .topKvPanel {
+      margin: 0 0 40px;
+      padding: 0 0 0 50px;
+      .topKv {
+        height: calc(100vh - 70px);
+      }
+      .kvTitleBox {
+        max-width: 600px;
+        bottom: 35%;
+        .kvTitle {
+          padding: 10px 15px;
+          p {
+            font-size: 22px;
+          }
+        }
+        .kvTitle01 {
+          max-width: 340px;
+        }
+        .kvTitle02 {
+          max-width: 300px;
+        }
+      }
+      .scrollBox {
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        width: 8px;
+        height: 90px;
+        text-align: center;
+      }
+    }
+    .sec01 {
+      .titlePanel {
+        padding: 30px 0;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .txtPanel {
+        padding: 30px 0;
+        .btnMore {
+          margin: 20px auto 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 50px 0 80px;
+      .titlePanel {
+        margin: 0 0 40px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .secBox {
+        + .secBox {
+          margin: 40px 0 0;
+        }
+        .ttlBox {
+          margin: 0 0 10px;
+          font-size: 60px;
+          p {
+            display: inline-block;
+            font-size: 10vw;
+            white-space: noWrap;
+          }
+        }
+        .listBox {
+          max-width: 600px;
+          .ul {
+            .li {
+              width: calc((100% / 2) - 10px);
+            }
+            .ttl {
+              width: 30px;
+              p {
+                padding: 15px 10px;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 50px 0 80px;
+      .titlePanel {
+        margin: 0 0 30px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            position: relative;
+            + .li {
+              margin: 20px 0 0;
+            }
+            .dl {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: calc(100% - 20px);
+              height: calc(100% - 20px);
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              .dt {
+                font-size: 26px;
+                + .dd {
+                  margin: 0 0 30px;
+                }
+              }
+            }
+            .btnMore {
+              a {
+                border: 1px solid #6f615d;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec04 {
+      padding: 50px 0 80px;
+      .secBox {
+        .txtBox {
+          padding: 20px 0 0;
+          h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+          }
+          .btnList {
+            margin: 30px 0 0;
+            .btnMore {
+              margin: 0 auto;
+              + .btnMore {
+                margin: 15px auto 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	service
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .serviceMain {
+    .sec01 {
+      padding: 50px 0;
+      h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .logo {
+        max-width: 220px;
+        margin: 0 auto 30px;
+      }
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            padding: 10px 0 0;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	recruit
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .recruitMain {
+    .sec01 {
+      padding: 50px 0;
+      h3 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0;
+      .logo {
+        max-width: 220px;
+        margin: 0 auto 30px;
+      }
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            padding: 10px 0 0;
+            .dt {
+              margin: 0 0 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 30px 0 60px;
+      .listBox {
+        max-width: 380px;
+        margin: 0 auto;
+        .ul {
+          .li {
+            padding: 20px;
+            + .li {
+              margin: 30px 0 0;
+            }
+          }
+          .dl {
+            .dt {
+              max-width: 140px;
+              margin: 0 auto 15px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	schedule
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .scheduleMain {
+    .sec01 {
+      padding: 60px 0 80px;
+      h2 {
+        margin: 0 0 30px;
+        font-size: 20px;
+      }
+      .flowListPanel {
+        padding: 30px 0 0;
+
+        .flowListTtl {
+          margin: 0 0 30px;
+        }
+
+        .flowListBox {
+          padding: 0 20px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 1px;
+            height: 100%;
+            background: #a7cedb;
+          }
+        }
+
+        .flowList {
+          + .flowList {
+            margin: 20px 0 0;
+          }
+        }
+
+        .itemBox {
+          + .itemBox {
+            margin: 20px 0 0;
+          }
+        }
+
+        .time {
+          position: relative;
+          text-align: right;
+
+          .em {
+            display: none;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -18px;
+            bottom: 0;
+            width: 14px;
+            height: 14px;
+            margin: auto 0;
+            background: url(https://sanwakogyosho240401.smooooth.jp/system_panel/uploads/images/schedule_sec01_circle.png)
+              no-repeat;
+            background-size: 14px auto;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: calc(100% - 60px);
+            height: 1px;
+            margin: auto 0;
+            background: #a7cedb;
+          }
+        }
+
+        .dl {
+          .dt {
+            display: block;
+            margin: 0 0 5px;
+            font-size: 16px;
+          }
+
+          .img {
+            max-width: 340px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	entry
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .entryMain {
+    .sec01 {
+      padding: 50px 0;
+      h3 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0 80px;
+      .infoBox {
+        .dl {
+          display: block;
+          .dt,
+          .dd {
+            display: block;
+            padding: 15px;
+          }
+          .dt {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .sec03 {
+      padding: 60px 0 80px;
+    }
+    .sec04 {
+      padding: 50px 0;
+      .secBox {
+        .ttl {
+          font-size: 18px;
+        }
+        .telBox {
+          margin: 0 0 5px;
+          a {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	company
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .companyMain {
+    .sec01 {
+      padding: 50px 0;
+      h3 {
+        margin: 0 0 20px;
+        font-size: 20px;
+      }
+      .txt {
+        p + p {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .sec02 {
+      padding: 60px 0 80px;
+      .infoBox {
+        .dl {
+          display: block;
+          .dt,
+          .dd {
+            display: block;
+            padding: 15px;
+          }
+          .dt {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	contact
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .contactMain {
+    .sec01 {
+      padding: 60px 0 80px;
+    }
+    .sec02,
+    .sec03 {
+      padding: 50px 0;
+      .secBox {
+        .ttl {
+          font-size: 18px;
+        }
+        .telBox {
+          margin: 0 0 5px;
+          a {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+	form
+///////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  .formMain {
+    .contactForm {
+      .formBox {
+        + .formBox {
+          margin-top: 40px;
+        }
+
+        > .dl {
+          display: block;
+          width: 100%;
+          padding: 10px;
+
+          &.line {
+            .dt {
+              padding: 10px 0;
+            }
+          }
+
+          > .dt {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+
+            .span {
+              width: auto;
+              margin-right: 10px;
+              font-size: 16px;
+
+              br {
+                display: none;
+              }
+            }
+
+            .em {
+              font-size: 12px;
+              vertical-align: middle;
+            }
+
+            .aside {
+              margin-top: 5px;
+
+              p {
+                font-size: 12px;
+
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          > .dd {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .radioList01 {
+          .list {
+            display: block;
+            margin: 0;
+            + .list {
+              margin: 20px 0 0;
+            }
+          }
+        }
+
+        .checkList01 {
+          .ul {
+            .li {
+              display: block;
+              + .li {
+                margin: 10px 0 0;
+              }
+            }
+          }
+          .checkItem {
+            display: inline-block;
+            padding: 0 5px 0 0;
+            + input {
+              display: inline-block;
+              width: 150px;
+            }
+          }
+        }
+
+        .addressBox,
+        .dateBox {
+          .dl {
+            display: block;
+
+            .dt {
+              display: block;
+              width: 100%;
+            }
+
+            .dd {
+              display: block;
+            }
+          }
+        }
+
+        .datePanel {
+          display: block;
+          font-size: 14px;
+          + .datePanel {
+            margin: 20px 0 0;
+          }
+          > * {
+            padding: 0 0 5px;
+          }
+          input {
+            width: 60px;
+          }
+          .selectBox {
+            width: 60px;
+          }
+          .dateTtl {
+            margin: 0 10px 0 0;
+          }
+          .dateTxt {
+            margin: 0 5px;
+          }
+        }
+
+        .dateBox {
+          input[type="text"] {
+            width: 70px;
+          }
+
+          .radioList {
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+
+        .selectBox {
+          width: 180px;
+        }
+
+        .privacy {
+          .agreeBox {
+            height: 250px;
+            padding: 20px 10px;
+          }
+        }
+      }
+      .fileUploadBox {
+        display: block;
+        .fileBox {
+          width: 100%;
+        }
+        .fileArea {
+          display: block;
+          .inputFile {
+            width: 200px;
+          }
+          > p,
+          .fileTxt {
+            width: 100%;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .fileUploadTitleBox {
+        margin: 40px 0 20px;
+        .fileUploadTitle {
+          p {
+            padding: 0 15px 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

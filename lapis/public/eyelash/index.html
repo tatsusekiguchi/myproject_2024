@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/validationEngine.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/common_sp.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../css/layout_sp.css">
+	<link rel="stylesheet" href="../css/attach.css">
+	<!-- js-->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/scrollAnimation.js"></script>
+	<script src="../js/validate.js"></script>
+	<script src="../js/validateJa.js"></script>
+	<script src="../js/jpostal.js"></script>
+	<script src="../js/autokana.js"></script>
+	<script src="../js/formContact.js"></script>
+	<!-- title-->
+	<title></title>
+</head>
+
+<body class="page" id="eyelash">
+	<!-- ▽header▽-->
+	<div class="header">
+		<div class="headWrap">
+			<div class="logo"><a href="/">
+					<div><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_logo.png" alt=""></div>
+				</a></div>
+			<div class="navBox">
+				<div class="navContainer">
+					<div class="leftBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="info">
+							<div class="logoSmall"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo_small.png" alt=""></div>
+							<div class="txt">
+								<p>〒589-0023<br>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+									<div>
+										<p>TEL：072-247-4234</p>
+									</div>
+								</a>
+								<p>受付時間：10:00 ～ 19:00<br>定休日：月（祝日は営業）</p>
+							</div>
+						</div>
+					</div>
+					<div class="rightBox">
+						<div class="navList">
+							<div class="ul">
+								<div class="li"><a href="/">
+										<div>
+											<p>HOME</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="concept">
+										<div>
+											<p>コンセプト</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="facial">
+										<div>
+											<p>フェイシャル</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="slimming">
+										<div>
+											<p>痩身</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="eyelash">
+										<div>
+											<p>まつげパーマ</p>
+										</div>
+									</a></div>
+							</div>
+							<div class="ul">
+								<div class="li"><a href="removal">
+										<div>
+											<p>脱毛</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="price">
+										<div>
+											<p>料金表</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="voice">
+										<div>
+											<p>お客様の声</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="info">
+										<div>
+											<p>サロン紹介</p>
+										</div>
+									</a></div>
+								<div class="li"><a href="contact">
+										<div>
+											<p>お問い合わせ</p>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="btnList">
+							<div class="ul">
+								<div class="li"><a class="tel" href="tel:0722474234">
+										<div class="dl">
+											<div class="dt">
+												<p>お電話でご予約</p>
+											</div>
+											<div class="dd futura">
+												<p class="span">tel.</p>
+												<p class="em">072-247-4234</p>
+											</div>
+										</div>
+									</a></div>
+								<div class="li"><a class="mail" href="contact">
+										<div class="dl">
+											<div class="dt">
+												<p>メールでご予約</p>
+											</div>
+											<div class="dd futura">
+												<p>WEB FORM</p>
+											</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+						<div class="instaBox"><a href="#" target="_blank" rel="noopener">
+								<div>
+									<p>Lapis公式</p>
+								</div>
+							</a>
+							<div class="txt">
+								<p>フォローリクエストをいただきましたら<br>承認後御覧いただけます。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburgerBox">
+				<div class="hamburger">
+					<div class="span"></div>
+					<div class="span"></div>
+				</div>
+				<div class="hamburgerTxt">
+					<p>MENU</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △header△-->
+	<!-- ▽メイン▽-->
+	<div class="eyelashMain main pageMain">
+		<div class="pageKvContainer">
+			<div class="bg"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/page_kv_bg.png" alt=""></div>
+			<div class="pageKvWrap">
+				<div class="pageKvTitle">
+					<h1 class="futura">EYELASH PERM</h1>
+				</div>
+				<div class="pageKvPhoto"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/eyelash_kv.png" alt=""></div>
+			</div>
+		</div>
+		<div class="pageIntroSection">
+			<div class="secContainer">
+				<div class="secWrap">
+					<div class="secPanel">
+						<div class="leftBox">
+							<div class="secTtl">
+								<p class="futura">ABOUT EYELASH PERM</p>
+								<h2>Lapisのまつげパーマについて</h2>
+							</div>
+							<div class="photo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/eyelash_top_img.png" alt=""></div>
+						</div>
+						<div class="rightBox">
+							<div class="txtBox">
+								<h3 class="mincho">根元から立ち上げるから<br>褒められる目元へ導きます。</h3>
+								<div class="txt">
+									<p>Lapisのまつげパーマは貴方にぴったりな目元に仕上げてまいります。<br>まつエクが主流になってきている今、まつげパーマの施術をおこなっている店舗が少なくなってきています。<br>Lapisではまつげパーマのメリットである日々のお手入れのし易さを大切に、ご自身のまつ毛で最大限の美しさを引き出すお手伝いをいたします。<br>経験豊富なスタッフによる施術は、まつ毛に自信のない方にも褒められる目力へと導いてまいります。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec01">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p class="futura">SERVICE</p>
+					<h2>サービス紹介</h2>
+				</div>
+				<div class="secContainer">
+					<div class="secTtl">
+						<p class="futura">Lapis EYELASH PERM</p>
+						<h3>独自のアイラッシュ</h3>
+					</div>
+					<div class="section01 section">
+						<div class="secBox">
+							<h4 class="mincho">まつげを根元から立ち上げ<br>自然で美しい目元に導きます</h4>
+							<div class="txt">
+								<p>まつげはお一人おひとりでまったく異なります。<br>目の形、毛質、まつ毛の量、まつ毛の生え変わり周期によっても変わってきます。Lapisのアイラッシュは20年以上の経験を生かした独自のアイラッシュ技術でまつ毛を根元から立ち上げます。<br>一番の特徴は貴方の目に最適なカールになるということです。<br>いわば世界に１つだけのまつ毛パーマ。<br>是非Lapisでご体感ください。</p>
+							</div>
+						</div>
+						<div class="troubleBox">
+							<div class="ttl mincho">
+								<p>こんなお悩みはありませんか？</p>
+							</div>
+							<div class="ul">
+								<div class="li">
+									<p>・目力が欲しい。</p>
+								</div>
+								<div class="li">
+									<p>・下がりまつ毛、逆さまつげを改善したい。</p>
+								</div>
+								<div class="li">
+									<p>・顔の印象をはっきりさせたい。</p>
+								</div>
+								<div class="li">
+									<p>・ビューラーが苦手</p>
+								</div>
+								<div class="li">
+									<p>・自まつ毛を最大限に生かしたい。</p>
+								</div>
+								<div class="li">
+									<p>・「マツエク」や「つけまつげ」よりナチュラルでパッチリさせたい。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="beforeAfter">
+						<div class="ttl mincho">
+							<p>そのお悩みLapisが解決いたします。</p>
+						</div>
+						<div class="beforeAfterList">
+							<div class="ul">
+								<div class="li">
+									<div class="photo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+									<p class="futura">BEFORE</p>
+								</div>
+								<div class="li">
+									<div class="photo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+									<p class="futura">AFTER</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec02">
+			<div class="secWrap">
+				<div class="pageSecTtl">
+					<p class="futura">FEATURES</p>
+					<h2>Lapisの特徴</h2>
+				</div>
+				<div class="secPanelList">
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="leftBox">
+								<div class="num futura">
+									<p>1</p>
+								</div>
+								<div class="ttl mincho">
+									<h3>オーダーメイドのまつげパーマで<br>貴方にぴったりな目元へ導きます</h3>
+								</div>
+							</div>
+							<div class="rightBox rightBox01">
+								<div class="txt">
+									<p>Lapisでは、初回のカウンセリングにしっかり時間をいただきます。<br>同じお客様の右目と左目でも目の形、毛質、まつ毛の量、まつ毛の生え変わり周期(毛周期) が変わってくるため、同じカールを掛けた場合でも右目と左目でカールのデザインやモチが変わってくるケースがあります。<br>貴方のまつげの状態をしっかり確認した上で、お目元にあったカール器を使用し、お好みの角度で仕上げます。<br>まさに「オーダーメイド」のまつげパーマで褒められる目元へと導きます</p>
+								</div>
+							</div>
+						</div>
+						<div class="listBox">
+							<div class="ul">
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="secPanel">
+						<div class="secBox">
+							<div class="leftBox">
+								<div class="num futura">
+									<p>2</p>
+								</div>
+								<div class="ttl mincho">
+									<h3>高い技術力と高いセンスで<br>他店では叶えられない目力を</h3>
+								</div>
+							</div>
+							<div class="rightBox">
+								<div class="txt">
+									<p>まつげパーマは、経験の浅いエステティシャンが行ってもある程度までは綺麗に仕上げることができます。<br>しかし仕上がりやモチが思うような結果に結びつかなかったという経験をお持ちの方も多いのではないでしょうか。<br>Lapisでは20年の経験を生かし他店では叶えられなかったご要望に結果でお応えしております。またまつげパーマの仕上がりには「センス」が大切だと常々考えております。<br>これは長年こなしたから身につくものでもありません。常に美意識に対しアンテナを張り続ける事でのみ磨かれてまいります。豊富な経験と知識、そして高いセンスで貴方を目元から変えてまいります。</p>
+								</div>
+							</div>
+						</div>
+						<div class="listBox">
+							<div class="ul">
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+								<div class="li"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/photo_dummy_02.png" alt=""></div>
+							</div>
+						</div>
+						<div class="btnMore"><a href="price">
+								<div>
+									<p>料金はこちら</p>
+								</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △メイン△-->
+	<!-- ▽footer▽-->
+	<div class="footer">
+		<div class="footContactContainer">
+			<div class="footContactPanel">
+				<div class="pageSecTtl">
+					<p class="futura">CONTACT</p>
+					<h2>来店予約・お問い合わせ</h2>
+				</div>
+				<div class="contactItemBox">
+					<div class="contactItem tel"><a class="futura" href="tel:0722474234">
+							<div>
+								<p class="span">tel.</p>
+								<p class="em">072-247-4234</p>
+							</div>
+						</a>
+						<div class="info">
+							<p>OPEN：10:00～19:00<br>CLOSE：MON（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="contactItem insta"><a class="futura" href="#" target="_blank" rel="noopener">
+							<div>
+								<p>INSTAGRAM</p>
+							</div>
+						</a>
+						<p>DMにて承ります</p>
+					</div>
+					<div class="contactItem mail"><a class="futura" href="contact">
+							<div>
+								<p>WEB FORM</p>
+							</div>
+						</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footPanel">
+			<div class="secWrap">
+				<div class="pagetop linkBtn" data-target="main"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/pagetop.png" alt=""></div>
+				<div class="footBox">
+					<div class="txtBox">
+						<div class="logo"><img src="https://lapis231213.smooooth.jp/system_panel/uploads/images/header_nav_logo.png" alt=""></div>
+						<div class="txt">
+							<p>大阪府大阪狭山市大野台5-12-3</p><a href="tel:0722474234">
+								<div>
+									<p>TEL：072-247-4234</p>
+								</div>
+							</a>
+							<p>OPEN： 10:00 ～ 19:00<br>CLOSE：月曜日（祝日は営業）</p>
+						</div>
+					</div>
+					<div class="copy">
+						<p>&copy; 2023 Lapis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- △footer△-->
+</body>
+
+</html>

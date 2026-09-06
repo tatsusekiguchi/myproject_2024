@@ -1,0 +1,110 @@
+<?php
+/*
+Template Name: 会員のひろば
+*/
+?>
+
+<?php get_header(); ?>
+
+<div id="member">
+
+	<!-- ▽kv▽-->
+	<div class="kv">
+		<div>
+			<h1>会員のひろば</h1>
+		</div>
+	</div>
+	<!-- △kv△-->
+	<!-- ▽ぱんくず▽-->
+	<ol class="topicPath">
+		<li><a href="../">TOP</a></li>
+		<li>会員のひろば</li>
+	</ol>
+	<!-- △ぱんくず△-->
+	<!-- ▽メイン▽-->
+	<div class="main">
+		<div id="infoBox">
+			<ul>
+				<li>
+					<a href="#boardList">掲示板</a>
+				</li>
+				<li><a href="#sec01">入会・会員情報について</a></li>
+			</ul>
+        </div>
+		<section id="boardList">
+			<h2>掲示板</h2>
+			<div class="cntBox">
+				<div class="postList ">
+					<ul>
+						<?php
+							$the_query = new WP_Query( array(
+							'paged'       => get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1,
+							'post_type'   => 'board',
+							'posts_per_page' => 6,
+							) ); ?>
+
+							<?php if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<li>
+								<a href="<?php the_permalink() ?>">
+									<div class="photoBox">
+										<div class="photo">
+										<?php if (has_post_thumbnail()) : ?>
+											<?php the_post_thumbnail('board'); ?>
+										<?php else : ?>
+											<img src="<?php echo get_template_directory_uri(); ?>/image/common/noimage.png" alt="no image">
+										<?php endif ; ?>
+										</div>
+									</div>
+									<div class="txtBox">
+										<span class="<?php $terms = wp_get_object_terms($post->ID,'board_cat'); foreach($terms as $term){echo $term->slug . '';} ?>">
+										<?php
+											if ($terms = get_the_terms($post->ID, 'board_cat')) {
+												foreach ( $terms as $term ) {
+													echo esc_html($term->name);
+												}
+											}
+										?>
+										</span>
+										<time datetime="<?php the_time("Y.m.d") ?>"><?php the_time("Y.m.d") ?></time>
+										<p><?php the_title(); ?></p>
+									</div>
+								</a>
+							</li>
+						<?php endwhile; ?>
+						<?php if ( !$the_query->have_posts() ) : ?>
+							<p>投稿がありません。</p>
+						<?php endif ; ?>
+					</ul>
+				</div>
+				<?php if ( $the_query->have_posts() ) : ?>
+					<div class="moveBtn"><a href="<?php echo home_url() ?>/boardlist/">一覧を見る</a></div>
+				<?php endif ; ?>
+			</div>
+		</section>
+		<section id="sec01">
+			<h2>入会・会員情報について</h2>
+			<div class="cntBox">
+				<p>会期と年会費は以下のように定められています。</p>
+			</div>
+			<section id="sec02">
+				<h3>資格要件</h3>
+				<p>会期と年会費は以下のように定められています。<br>第29条( 会費)　正会員の会費は年額6,000円とし、その年度の6月30日までに納入するものとする。<br>2　名誉会員からは、これを徴収しない。<br>第30条( 会計年度)　本会の会計年度は4月1日から翌年3月31日とする。</p>
+			</section>
+			<section id="sec03">
+				<h3>学会費納入の銀行口座</h3>
+				<p>以下のように変更になりました。お間違いのないようにお願いします。<br>銀行名　　　三井住友銀行<br>支店名　　　池袋東口支店<br>口座種類　　普通預金口座<br>口座番号　　8069331<br>口座名義　　日本犯罪心理学会<br>取引開始日　平成13年6月1日</p>
+			</section>
+			<section id="sec04">
+				<h3>会員情報の変更</h3>
+				<p><a href="https://iap-jp.org/jacp/mypage/login/login" target="_blank">会員情報ページ</a>から，ご自身でオンラインで行えます。ご自分のIDとパスワードをご用意の上，アクセスして下さい。<br>
+				<p>IDとパスワードは，会員の皆様に個別にお知らせしていますが，分からない場合には，事務局にお問合せください。<br>このページでは，会員名簿からの検索機能も備えています。公開可となっている情報から，当会会員を検索できます。<br></p>
+
+				<p>会員への情報発信ページです。今後，会員の皆様の交流を活発化させるための運営を計画しています。</p>
+			</section>
+		</section>
+	</div>
+	<!-- △メイン△-->
+
+</div>
+
+<?php get_footer(); ?>
